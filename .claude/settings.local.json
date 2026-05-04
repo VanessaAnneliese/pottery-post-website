@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Read(//private/tmp/**)",
+      "Bash(npx create-next-app@latest pottery-post --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(cp -r /tmp/pottery-post/. \"/Users/vanessawitkowski/Documents/💛🌼 I love Pottery Post/Pottery Post Website/\")",
+      "Bash(rm -rf \"/Users/vanessawitkowski/Documents/💛🌼 I love Pottery Post/Pottery Post Website/.git/COMMIT_EDITMSG\")",
+      "Bash(npm run *)",
+      "Bash(rm -rf node_modules)",
+      "Bash(npm install *)"
+    ]
+  }
+}

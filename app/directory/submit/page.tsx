@@ -1,0 +1,51 @@
+export default function SubmitPage() {
+  return (
+    <section className="py-20 px-6 max-w-2xl mx-auto">
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        The Potter&rsquo;s Directory
+      </p>
+      <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Add Your Listing</h1>
+      <p className="mb-10" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+        Submit your information to be listed in the directory. All submissions are reviewed before going live.
+      </p>
+      <form className="flex flex-col gap-6">
+        {[
+          { label: "Your Name or Studio Name", name: "name", type: "text" },
+          { label: "City & Province / State", name: "location", type: "text" },
+          { label: "Website (optional)", name: "website", type: "url" },
+          { label: "Email Address", name: "email", type: "email" },
+        ].map(({ label, name, type }) => (
+          <div key={name} className="flex flex-col gap-2">
+            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+              {label}
+            </label>
+            <input
+              type={type}
+              name={name}
+              className="border-b py-2 bg-transparent outline-none text-base"
+              style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+            />
+          </div>
+        ))}
+        <div className="flex flex-col gap-2">
+          <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Short Bio (optional)
+          </label>
+          <textarea
+            name="bio"
+            rows={4}
+            className="border-b py-2 bg-transparent outline-none text-base resize-none"
+            style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+          />
+        </div>
+        <button
+          type="submit"
+          className="mt-4 px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm self-start"
+          style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+        >
+          Submit listing
+        </button>
+      </form>
+    </section>
+  );
+}

@@ -1,65 +1,107 @@
-import Image from "next/image";
+import Link from "next/link";
+
+function PlaceholderPiece({ label }: { label: string }) {
+  return (
+    <div
+      className="flex items-center justify-center rounded-sm text-sm tracking-widest uppercase"
+      style={{ background: "#E8D5B7", color: "#9E8572", aspectRatio: "1 / 1", minHeight: "160px", fontFamily: "system-ui, sans-serif" }}
+    >
+      {label}
+    </div>
+  );
+}
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* Hero */}
+      <section className="py-24 px-6 text-center" style={{ background: "#D4622A" }}>
+        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#F5F0E8", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
+          Whitby, Ontario &middot; Canada
+        </p>
+        <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
+          Because things made<br />with love deserve<br />to be found.
+        </h1>
+        <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
+          A curated gallery, a potter&rsquo;s directory, and a select collection of pottery for sale.
+        </p>
+      </section>
+
+      {/* Featured Gallery Preview */}
+      <section className="py-20 px-6 max-w-6xl mx-auto">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+              Featured Collection
+            </p>
+            <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Gallery</h2>
+          </div>
+          <Link href="/gallery" className="text-sm tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+            View all
+          </Link>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <PlaceholderPiece label="Piece I" />
+          <PlaceholderPiece label="Piece II" />
+          <PlaceholderPiece label="Piece III" />
+          <PlaceholderPiece label="Piece IV" />
         </div>
-      </main>
-    </div>
+        <p className="mt-6 text-sm text-center" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+          The gallery rotates annually. These pieces are not for sale — they are here to be celebrated.
+        </p>
+      </section>
+
+      {/* Shop Preview */}
+      <section className="py-20 px-6" style={{ background: "#EDE4D5" }}>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+                Select Pieces For Sale
+              </p>
+              <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Shop</h2>
+            </div>
+            <Link href="/shop" className="text-sm tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+              Shop all
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {["Stoneware Mug", "Celadon Bowl", "Raku Vase"].map((name) => (
+              <div key={name} className="rounded-sm overflow-hidden" style={{ background: "#F5F0E8" }}>
+                <PlaceholderPiece label={name} />
+                <div className="p-4">
+                  <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{name}</p>
+                  <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Price TBD</p>
+                  <Link href="/shop" className="inline-block mt-3 text-xs tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+                    View piece
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Directory CTA */}
+      <section className="py-24 px-6 text-center" style={{ background: "#5C3D2E" }}>
+        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#9E8572", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
+          North America &mdash; Canada &amp; United States
+        </p>
+        <h2 className="text-4xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif" }}>
+          The Potter&rsquo;s Directory
+        </h2>
+        <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
+          The only directory of its kind — connecting potters, guilds, and the people who love their work. Are you a potter? Add your name.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>
+            Browse the directory
+          </Link>
+          <Link href="/directory/submit" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#F5F0E8", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Add your listing
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
