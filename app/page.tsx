@@ -20,10 +20,10 @@ export default function Home() {
           Whitby, Ontario &middot; Canada
         </p>
         <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
-          Because things made<br />with love deserve<br />to be found.
+          Where pottery is celebrated,<br />preserved, and passed on.
         </h1>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
-          A curated gallery, a potter&rsquo;s directory, and a select collection of pottery for sale.
+          A curated gallery, a potter&rsquo;s directory, and a select collection for sale.
         </p>
       </section>
 
