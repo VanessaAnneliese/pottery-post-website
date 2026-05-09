@@ -15,9 +15,9 @@ export default function Nav() {
         </Link>
         <div className="flex items-center gap-8">
           <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
-            <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
             <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
             <Link href="/shop" className="hover:text-white transition-colors">Pottery Shop</Link>
+            <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
           </nav>
           <SearchForm />
         </div>

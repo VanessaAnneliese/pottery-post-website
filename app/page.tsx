@@ -59,7 +59,7 @@ export default function Home() {
               <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
                 Select Pieces For Sale
               </p>
-              <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Shop</h2>
+              <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Pottery Shop</h2>
             </div>
             <Link href="/shop" className="text-sm tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
               Shop all

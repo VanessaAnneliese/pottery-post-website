@@ -14,9 +14,9 @@ export default function Footer() {
           <p className="mt-2 text-xs">Whitby, Ontario, Canada</p>
         </div>
         <nav className="flex gap-6 text-xs tracking-widest uppercase">
-          <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
           <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
           <Link href="/shop" className="hover:text-white transition-colors">Pottery Shop</Link>
+          <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
         </nav>
         <p className="text-xs">&copy; {new Date().getFullYear()} The Pottery Post</p>
       </div>
