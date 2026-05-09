@@ -83,6 +83,15 @@ export const guilds: Guild[] = [
     province: "Ontario",
     country: "CA",
   },
+  // Ontario (additional)
+  {
+    name: "Durham Potters' Guild",
+    city: "Whitby",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.durhampotters.com",
+    bio: "Founded over 30 years ago for potters in the Durham Region. 26 active members ranging from emerging to highly experienced, with annual Spring and Christmas Show & Sales.",
+  },
   // Prince Edward Island
   {
     name: "PEI Potters Studio Co-op",
@@ -311,6 +320,16 @@ export const potters: Potter[] = [
     website: "https://paulacooley.com",
     bio: "Full-time ceramics artist with an active studio practice since 1999, creating both functional pottery and sculptural ceramics.",
   },
+  // Vermont
+  {
+    name: "James Zilian",
+    studio: "Farmhouse Pottery",
+    city: "Woodstock",
+    province: "Vermont",
+    country: "US",
+    website: "https://www.farmhousepottery.com",
+    bio: "Founded in 2012 in Woodstock, Vermont. Every piece begins with skilled hands and a love for the craft.",
+  },
   // Oregon
   {
     name: "Sarah Wolf",
@@ -415,6 +434,46 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://frederichpottery.com",
     bio: "Over four decades of experience in hand-thrown stoneware and sculpture, based in Dublin, Ohio.",
+  },
+  // Arizona
+  {
+    name: "Mark Arnegard",
+    studio: "Arne Ceramics",
+    city: "Flagstaff",
+    province: "Arizona",
+    country: "US",
+    website: "https://www.azhandmade.com/mark-arne-arnegard.html",
+    bio: "Handmade ceramics studio on historic Route 66 in Flagstaff, Arizona.",
+  },
+  // Illinois
+  {
+    name: "Danielle Chutinthranond",
+    studio: "Monsoon Pottery",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://monsoonpottery.com",
+    bio: "Porcelain pottery inspired by Asian art history and food culture, made in Chicago's West Town neighbourhood. Hand-carved inlay work combining blue & white porcelain aesthetics.",
+  },
+  // Maine
+  {
+    name: "Amy Clark",
+    studio: "Ocean Fire Pottery",
+    city: "York",
+    province: "Maine",
+    country: "US",
+    website: "https://oceanfirepottery.com",
+    bio: "Wheel-thrown stoneware and wood-fired pottery from a studio and gallery in York Village, Maine. Open since 2009.",
+  },
+  // Pennsylvania
+  {
+    name: "Francis DeFabo",
+    studio: "fdp studio+shop",
+    city: "Pleasant Unity",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.fdpstudioshop.com",
+    bio: "Small-batch ceramics made in a restored historic building forty minutes east of Pittsburgh.",
   },
   // Texas
   {
