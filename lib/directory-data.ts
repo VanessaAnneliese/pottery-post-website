@@ -37,6 +37,15 @@ export const guilds: Guild[] = [
     country: "CA",
     website: "https://www.bcpotters.com",
   },
+  // Alberta
+  {
+    name: "Edmonton Potters' Guild",
+    city: "Edmonton",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.edmontonpottersguild.com",
+    bio: "A pottery studio and guild community in Edmonton, Alberta.",
+  },
   // Ontario
   {
     name: "Kawartha Potters' Guild",
@@ -137,6 +146,53 @@ export const guilds: Guild[] = [
 ];
 
 export const potters: Potter[] = [
+  // Alberta
+  {
+    name: "Heather",
+    studio: "Pottery By Heather",
+    city: "Bon Accord",
+    province: "Alberta",
+    country: "CA",
+    website: "https://potterybyheather.com",
+    bio: "Handmade pottery and functional art from a working studio just north of Edmonton. Open by appointment.",
+  },
+  {
+    name: "Linh Ly",
+    studio: "Starfishly Clay Works",
+    city: "Calgary",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.starfishlyclay.com",
+    bio: "Limited edition, artisan hand-thrown pottery with a modern twist. Based in Calgary.",
+  },
+  // British Columbia
+  {
+    name: "Kate Metten",
+    studio: "Kate Metten Ceramics",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.katemetten.com",
+    bio: "Wheel-thrown modernist pottery tableware glazed with hand-derived recipes from local materials. Studio on Main Street, Vancouver.",
+  },
+  {
+    name: "Mary Fox",
+    studio: "Mary Fox Pottery",
+    city: "Ladysmith",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://maryfoxpottery.ca",
+    bio: "Self-taught exploratory potter based in Ladysmith on Vancouver Island.",
+  },
+  {
+    name: "Sarah Pike",
+    studio: "Sarah Pike Pottery",
+    city: "Fernie",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.sarahpikepottery.com",
+    bio: "Full-time potter making functional slab-built pottery in a home studio on the edge of a ski town in Fernie, BC.",
+  },
   // Ontario
   {
     name: "Karen Gray",
@@ -146,6 +202,25 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://thepottersstudio.com",
     bio: "Original Canadian Sgraffito pottery made in Muskoka. Gallery and working pottery studio in downtown Huntsville.",
+  },
+  {
+    name: "Naomi Clement",
+    studio: "Naomi Clement Ceramics",
+    city: "Stratford",
+    province: "Ontario",
+    country: "CA",
+    website: "https://naomiclement.com",
+    bio: "Ceramic artist and workshop instructor creating functional ceramics from her home studio in Stratford, Ontario.",
+  },
+  // Quebec
+  {
+    name: "Céline Fafard",
+    studio: "Parceline Céramique",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://parcelineceramique.com",
+    bio: "Handmade pottery on the wheel from high-quality stoneware and porcelain. Studio open by appointment in Montreal.",
   },
 ];
 
