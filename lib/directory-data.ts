@@ -101,6 +101,15 @@ export const guilds: Guild[] = [
     website: "https://www.oregonpotters.org",
     bio: "An organization dedicated to educating, inspiring, and transforming lives through clay.",
   },
+  // Minnesota
+  {
+    name: "Northern Clay Center",
+    city: "Minneapolis",
+    province: "Minnesota",
+    country: "US",
+    website: "https://www.nccshop.org",
+    bio: "A leading ceramics arts organization in Minneapolis supporting studio potters across Minnesota.",
+  },
   // Colorado
   {
     name: "Colorado Potters Guild",
@@ -341,6 +350,71 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://samdoughertypottery.com",
     bio: "Full-time studio potter near Hanging Rock State Park, making functional handcrafted pottery and dinnerware with a wood-fired kiln.",
+  },
+  // Georgia
+  {
+    name: "Rebecca Wood",
+    studio: "R.Wood Studio",
+    city: "Athens",
+    province: "Georgia",
+    country: "US",
+    website: "https://rwoodstudio.com",
+    bio: "Handmade dinnerware and serving pieces crafted since 1991. One of the largest pottery studios in America, known for colourful, durable red earthenware.",
+  },
+  // Massachusetts
+  {
+    name: "Lucy Fagella",
+    city: "Greenfield",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.lucyfagella.com",
+    bio: "Handmade functional pottery for the home and heart, made one at a time in Greenfield, Massachusetts.",
+  },
+  {
+    name: "Kristen Kieffer",
+    studio: "Kieffer Ceramics",
+    city: "Templeton",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://kiefferceramics.com",
+    bio: "Functional pottery handmade in central Massachusetts. Known for intricate surface decoration and refined technique.",
+  },
+  {
+    name: "Jill Rosenwald",
+    city: "Boston",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.jillrosenwald.com",
+    bio: "Colorful handmade ceramic vases, lamps, and trays made in Boston.",
+  },
+  // Minnesota
+  {
+    name: "Joel Cherrico",
+    studio: "Cherrico Pottery",
+    city: "St. Joseph",
+    province: "Minnesota",
+    country: "US",
+    website: "https://cherricopottery.com",
+    bio: "Beautiful handmade pottery made in St. Joseph, Minnesota.",
+  },
+  // Ohio
+  {
+    name: "Gina DeSantis",
+    studio: "Gina DeSantis Ceramics",
+    city: "Lakewood",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.ginadesantisceramics.com",
+    bio: "Rustic yet refined handmade ceramic tableware made in Lakewood, Ohio. Featured in Food & Wine and sold through Anthropologie and Nordstrom.",
+  },
+  {
+    name: "Tim Frederich",
+    studio: "Frederich Pottery",
+    city: "Dublin",
+    province: "Ohio",
+    country: "US",
+    website: "https://frederichpottery.com",
+    bio: "Over four decades of experience in hand-thrown stoneware and sculpture, based in Dublin, Ohio.",
   },
   // Texas
   {
