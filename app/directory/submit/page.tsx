@@ -1,3 +1,5 @@
+"use client";
+
 export default function SubmitPage() {
   return (
     <section className="py-20 px-6 max-w-2xl mx-auto">
