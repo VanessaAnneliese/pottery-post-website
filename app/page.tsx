@@ -23,7 +23,7 @@ export default function Home() {
           Because things made<br />with love deserve<br />to be celebrated.
         </h1>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
-          This is a pottery lover&rsquo;s curated gallery, a North American potter&rsquo;s directory, and a select collection of pottery for resale.
+          A North American potter&rsquo;s directory, a pottery lover&rsquo;s curated gallery, and a select collection of pottery for resale.
         </p>
       </section>
 
