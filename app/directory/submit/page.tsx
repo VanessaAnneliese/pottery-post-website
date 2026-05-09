@@ -15,6 +15,7 @@ export default function SubmitPage() {
           { label: "City & Province / State", name: "location", type: "text" },
           { label: "Website (optional)", name: "website", type: "url" },
           { label: "Email Address", name: "email", type: "email" },
+          { label: "Phone Number (optional)", name: "phone", type: "tel" },
         ].map(({ label, name, type }) => (
           <div key={name} className="flex flex-col gap-2">
             <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
