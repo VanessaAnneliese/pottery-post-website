@@ -13,9 +13,9 @@ export default function Nav() {
           </span>
         </Link>
         <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
           <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
           <Link href="/shop" className="hover:text-white transition-colors">Shop</Link>
-          <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
         </nav>
       </div>
     </header>
