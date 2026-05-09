@@ -21,58 +21,131 @@ export type Potter = {
 };
 
 export const guilds: Guild[] = [
+  // British Columbia
   {
-    name: "Ontario Crafts Council",
-    city: "Toronto",
-    province: "Ontario",
-    country: "CA",
-    website: "https://ontariocrafts.ca",
-    bio: "Supporting craft and craft artists across Ontario.",
-  },
-  {
-    name: "Craft Council of British Columbia",
+    name: "Potters Guild of British Columbia",
     city: "Vancouver",
     province: "British Columbia",
     country: "CA",
-    website: "https://craftcouncilbc.ca",
+    website: "https://www.galleryofbcceramics.com",
+    bio: "Established in 1955, one of Canada's oldest and largest ceramic arts organizations.",
   },
   {
-    name: "New York Ceramics & Glass Fair",
-    city: "New York",
-    province: "New York",
+    name: "BCPotters Guild",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.bcpotters.com",
+  },
+  // Ontario
+  {
+    name: "Kawartha Potters' Guild",
+    city: "Peterborough",
+    province: "Ontario",
+    country: "CA",
+    website: "https://kawarthapottersguild.com",
+    bio: "Home of the Canadian Ceramics Directory & Showcase, celebrating contemporary Canadian clay artists.",
+  },
+  {
+    name: "Kingston Potters' Guild",
+    city: "Kingston",
+    province: "Ontario",
+    country: "CA",
+    website: "https://kingstonpottersguild.ca",
+    bio: "Established in 1967, one of the oldest pottery guilds in Ontario.",
+  },
+  {
+    name: "Mississauga Potters' Guild",
+    city: "Mississauga",
+    province: "Ontario",
+    country: "CA",
+    website: "https://mississaugapotters.com",
+  },
+  {
+    name: "Pine Tree Potters' Guild",
+    city: "Aurora",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.pinetreepotters.ca",
+  },
+  {
+    name: "Potters' Guild of Hamilton and Region",
+    city: "Hamilton",
+    province: "Ontario",
+    country: "CA",
+  },
+  // California
+  {
+    name: "Berkeley Potters Guild",
+    city: "Berkeley",
+    province: "California",
     country: "US",
+    website: "https://berkeleypotters.com",
+    bio: "A cooperative of professional local potters based in Berkeley.",
+  },
+  // Maryland
+  {
+    name: "Potters' Guild of Frederick",
+    city: "Frederick",
+    province: "Maryland",
+    country: "US",
+    website: "https://www.pottersguildoffrederick.com",
+  },
+  {
+    name: "Potters Guild of Baltimore",
+    city: "Baltimore",
+    province: "Maryland",
+    country: "US",
+    website: "https://www.pottersguild.org",
+  },
+  // Michigan
+  {
+    name: "The Potters Guild of Ann Arbor",
+    city: "Ann Arbor",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.pottersguild.net",
+    bio: "A cooperative non-profit organization comprising over fifty member potters.",
+  },
+  // New Jersey
+  {
+    name: "Potters Guild of New Jersey",
+    city: "New Jersey",
+    province: "New Jersey",
+    country: "US",
+    website: "https://pottersguildnj.org",
+    bio: "Founded in 1987 to promote the development of New Jersey's ceramic artists.",
+  },
+  // Virginia
+  {
+    name: "Blue Ridge Potters Guild",
+    city: "Blue Ridge",
+    province: "Virginia",
+    country: "US",
+    website: "https://www.blueridgepotters.com",
+    bio: "Celebrating pottery and ceramic arts across Virginia.",
+  },
+  // Washington
+  {
+    name: "Spokane Potters' Guild",
+    city: "Spokane",
+    province: "Washington",
+    country: "US",
+    website: "https://spokanepottersguild.org",
+    bio: "A non-profit, volunteer-based organization founded in 1977.",
   },
 ];
 
 export const potters: Potter[] = [
+  // Ontario
   {
-    name: "Jane Doe",
-    studio: "Earthen Studio",
-    city: "Whitby",
+    name: "Karen Gray",
+    studio: "The Potter's Studio & Gallery",
+    city: "Huntsville",
     province: "Ontario",
     country: "CA",
-    bio: "Wheel-thrown stoneware with a focus on functional everyday pieces.",
-  },
-  {
-    name: "Marie Tremblay",
-    city: "Montreal",
-    province: "Quebec",
-    country: "CA",
-    bio: "Hand-built vessels inspired by the St. Lawrence River.",
-  },
-  {
-    name: "Sam Park",
-    studio: "Park Ceramics",
-    city: "Vancouver",
-    province: "British Columbia",
-    country: "CA",
-  },
-  {
-    name: "Laura Chen",
-    city: "Portland",
-    province: "Oregon",
-    country: "US",
-    bio: "Raku and wood-fired ceramics.",
+    website: "https://thepottersstudio.com",
+    bio: "Original Canadian Sgraffito pottery made in Muskoka. Gallery and working pottery studio in downtown Huntsville.",
   },
 ];
 
