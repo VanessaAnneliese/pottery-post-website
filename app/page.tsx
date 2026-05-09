@@ -47,7 +47,7 @@ export default function Home() {
           <PlaceholderPiece label="Piece IV" />
         </div>
         <p className="mt-6 text-sm text-center" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-          The gallery rotates annually. These pieces are not for sale — they are here to be celebrated.
+          The gallery rotates periodically. These pieces are not for sale. They are here to be celebrated!
         </p>
       </section>
 
