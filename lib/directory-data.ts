@@ -101,6 +101,23 @@ export const guilds: Guild[] = [
     website: "https://www.oregonpotters.org",
     bio: "An organization dedicated to educating, inspiring, and transforming lives through clay.",
   },
+  // Colorado
+  {
+    name: "Colorado Potters Guild",
+    city: "Denver",
+    province: "Colorado",
+    country: "US",
+    website: "https://coloradopotters.org",
+  },
+  // New York
+  {
+    name: "Hudson River Potters",
+    city: "Hudson Valley",
+    province: "New York",
+    country: "US",
+    website: "https://www.hudsonriverpotters.net",
+    bio: "An organization encompassing over 40 potters living and working in New York's Hudson Valley.",
+  },
   // California
   {
     name: "Berkeley Potters Guild",
@@ -294,6 +311,46 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://wolfceramics.com",
     bio: "Woman-led handmade pottery studio making contemporary ceramic dinnerware from a production studio in Hood River, Oregon.",
+  },
+  // Colorado
+  {
+    name: "Curt Hammerly",
+    studio: "Hammerly Ceramics",
+    city: "Denver",
+    province: "Colorado",
+    country: "US",
+    website: "https://www.hammerlyceramics.com",
+    bio: "Designs and crafts one-of-a-kind porcelain mugs and ceramic art from a studio outside Denver.",
+  },
+  // New York
+  {
+    name: "Jessica Weinberg",
+    studio: "Firehouse Pottery Co.",
+    city: "Hudson Valley",
+    province: "New York",
+    country: "US",
+    website: "https://www.firehousepotteryco.com",
+    bio: "Handmade ceramics and tableware in regional stonewares and terra cotta, continuing the tradition of Americana makers in the Hudson Valley.",
+  },
+  // North Carolina
+  {
+    name: "Sam Dougherty",
+    studio: "Sam Dougherty Pottery",
+    city: "Stokes County",
+    province: "North Carolina",
+    country: "US",
+    website: "https://samdoughertypottery.com",
+    bio: "Full-time studio potter near Hanging Rock State Park, making functional handcrafted pottery and dinnerware with a wood-fired kiln.",
+  },
+  // Texas
+  {
+    name: "Stephen Salter",
+    studio: "Stephen Salter Pottery",
+    city: "Dallas",
+    province: "Texas",
+    country: "US",
+    website: "https://stephensalterpottery.com",
+    bio: "Brings meaningful handcrafted ceramics to the Oak Cliff community in Dallas. Started in 2018 after an apprenticeship at The Barn Pottery.",
   },
 ];
 
