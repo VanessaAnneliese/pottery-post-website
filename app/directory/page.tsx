@@ -153,7 +153,7 @@ export default function DirectoryPage() {
       {selectedCountry === "all" && <div className="mb-12" />}
 
       {/* Guilds */}
-      <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif" }}>Guilds</h2>
+      <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Guilds</h2>
       {guildsByProvince.length === 0 ? (
         <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No guild listings yet for this region.</p>
       ) : selectedCountry === "all" ? (
@@ -184,7 +184,7 @@ export default function DirectoryPage() {
       ))}
 
       {/* Potters */}
-      <h2 className="text-2xl font-bold mt-20 mb-2" style={{ fontFamily: "Georgia, serif" }}>Potters</h2>
+      <h2 className="text-2xl font-bold mt-20 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters</h2>
       {pottersByProvince.length === 0 ? (
         <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No potter listings yet for this region.</p>
       ) : selectedCountry === "all" ? (
