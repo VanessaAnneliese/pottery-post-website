@@ -91,7 +91,7 @@ export default function Home() {
           The Potter&rsquo;s Directory
         </h2>
         <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
-          The only directory of its kind — connecting potters, guilds, and the people who love their work. Are you a potter? Add your name.
+          A North American directory connecting potters, guilds, and the people who love their work. Are you a potter? Add your name.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>
