@@ -110,6 +110,15 @@ export const guilds: Guild[] = [
     website: "https://www.oregonpotters.org",
     bio: "An organization dedicated to educating, inspiring, and transforming lives through clay.",
   },
+  // New Mexico
+  {
+    name: "New Mexico Potters and Clay Artists",
+    city: "Santa Fe",
+    province: "New Mexico",
+    country: "US",
+    website: "https://www.nmpotters.org",
+    bio: "A virtual studio tour showcasing the work of contemporary ceramic artists across New Mexico.",
+  },
   // Minnesota
   {
     name: "Northern Clay Center",
@@ -320,6 +329,45 @@ export const potters: Potter[] = [
     website: "https://paulacooley.com",
     bio: "Full-time ceramics artist with an active studio practice since 1999, creating both functional pottery and sculptural ceramics.",
   },
+  // Montana
+  {
+    name: "Carl Sheehan",
+    studio: "Fire Hole Pottery",
+    city: "Bozeman",
+    province: "Montana",
+    country: "US",
+    website: "https://fireholepottery.com",
+    bio: "Resident potter at Yellowstone National Park for over 40 years. Handcrafted stoneware and porcelain inspired by Yellowstone and the Rocky Mountains.",
+  },
+  // New Mexico
+  {
+    name: "Theo Helmstadter",
+    studio: "Green River Pottery",
+    city: "Santa Fe",
+    province: "New Mexico",
+    country: "US",
+    website: "https://www.greenriverpottery.com",
+    bio: "Studio potter since 1998 in Santa Fe. Stoneware with an emphasis on everyday use — plates, bowls, teapots, platters, and vases.",
+  },
+  // Tennessee
+  {
+    name: "Melissa Bridgman",
+    studio: "Bridgman Pottery",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.bridgmanpottery.com",
+    bio: "Handmade porcelain and stoneware pottery for tables, kitchens, and gardens, made in Midtown Memphis.",
+  },
+  {
+    name: "Agnes Stark",
+    studio: "Agnes Stark Pottery",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://agnestarkpottery.com",
+    bio: "Functional stoneware and decorative porcelain widely recognized for its appealing originality.",
+  },
   // Vermont
   {
     name: "James Zilian",
@@ -329,6 +377,35 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://www.farmhousepottery.com",
     bio: "Founded in 2012 in Woodstock, Vermont. Every piece begins with skilled hands and a love for the craft.",
+  },
+  // Wisconsin
+  {
+    name: "Andrew Linderman",
+    studio: "Andrew Linderman Pottery",
+    city: "Arena",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.lindermanpottery.com",
+    bio: "Handcrafted functional ceramics inspired by the natural world, exploring glaze chemistry and atmospheric firing. Studio west of Madison.",
+  },
+  {
+    name: "Ashley Pfannenstiel",
+    studio: "Wilson Creek Pottery",
+    city: "Spring Green",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://wilsoncreekpottery.com",
+    bio: "Functional ceramics including mugs and bowls designed to fit into everyday life, made in Spring Green.",
+  },
+  // Wyoming
+  {
+    name: "Dustin Stephenson",
+    studio: "Stephenson Ceramics",
+    city: "Ten Sleep",
+    province: "Wyoming",
+    country: "US",
+    website: "https://www.stephensonceramics.net",
+    bio: "One-of-a-kind handmade pottery with western flair from a studio at the base of the Big Horn mountains in Ten Sleep, Wyoming.",
   },
   // Oregon
   {
