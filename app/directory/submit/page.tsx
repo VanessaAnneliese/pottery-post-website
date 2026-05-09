@@ -11,6 +11,7 @@ export default function SubmitPage() {
       <form className="flex flex-col gap-6">
         {[
           { label: "Your Name or Studio Name", name: "name", type: "text" },
+          { label: "Guild Name (optional)", name: "guild", type: "text" },
           { label: "City & Province / State", name: "location", type: "text" },
           { label: "Website (optional)", name: "website", type: "url" },
           { label: "Email Address", name: "email", type: "email" },
@@ -36,6 +37,28 @@ export default function SubmitPage() {
             rows={4}
             className="border-b py-2 bg-transparent outline-none text-base resize-none"
             style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+          />
+        </div>
+        <div className="flex flex-col gap-3">
+          <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Photos of Your Work — optional, up to 3 images
+          </label>
+          <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+            JPG or PNG. These will appear as thumbnails on your directory listing.
+          </p>
+          <input
+            type="file"
+            name="photos"
+            accept="image/jpeg,image/png"
+            multiple
+            className="text-sm"
+            style={{ color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+            onChange={(e) => {
+              if (e.target.files && e.target.files.length > 3) {
+                alert("Please select up to 3 images only.");
+                e.target.value = "";
+              }
+            }}
           />
         </div>
         <button
