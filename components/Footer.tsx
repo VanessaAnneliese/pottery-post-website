@@ -16,7 +16,7 @@ export default function Footer() {
         <nav className="flex gap-6 text-xs tracking-widest uppercase">
           <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
           <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
-          <Link href="/shop" className="hover:text-white transition-colors">Shop</Link>
+          <Link href="/shop" className="hover:text-white transition-colors">Pottery Shop</Link>
         </nav>
         <p className="text-xs">&copy; {new Date().getFullYear()} The Pottery Post</p>
       </div>
