@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { guilds, potters, groupByProvince, type Guild, type Potter } from "@/lib/directory-data";
 
@@ -49,13 +52,17 @@ function PotterCard({ potter }: { potter: Potter }) {
 }
 
 export default function DirectoryPage() {
-  const guildsByProvince = groupByProvince(guilds);
-  const pottersByProvince = groupByProvince(potters);
+  const [country, setCountry] = useState<"CA" | "US">("CA");
+
+  const filteredGuilds = guilds.filter((g) => g.country === country);
+  const filteredPotters = potters.filter((p) => p.country === country);
+  const guildsByProvince = groupByProvince(filteredGuilds);
+  const pottersByProvince = groupByProvince(filteredPotters);
 
   return (
     <section className="py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
-        North America — Canada &amp; United States
+        North America
       </p>
       <div className="flex items-end justify-between mb-4">
         <h1 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Potter&rsquo;s Directory</h1>
@@ -67,24 +74,46 @@ export default function DirectoryPage() {
           Add your listing
         </Link>
       </div>
-      <p className="mb-16 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+      <p className="mb-10 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         A directory of potters and potter&rsquo;s guilds across North America. Know a potter who should be here? Send them our way.
       </p>
 
+      {/* Country Toggle */}
+      <div className="flex gap-2 mb-16">
+        {(["CA", "US"] as const).map((c) => (
+          <button
+            key={c}
+            onClick={() => setCountry(c)}
+            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm transition-colors"
+            style={{
+              background: country === c ? "#5C3D2E" : "#E8D5B7",
+              color: country === c ? "#F5F0E8" : "#5C3D2E",
+              fontFamily: "system-ui, sans-serif",
+            }}
+          >
+            {c === "CA" ? "Canada" : "United States"}
+          </button>
+        ))}
+      </div>
+
       {/* Guilds */}
       <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif" }}>Guilds</h2>
-      {guildsByProvince.map(({ province, country, items }) => (
+      {guildsByProvince.length === 0 ? (
+        <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No guild listings yet for this region.</p>
+      ) : guildsByProvince.map(({ province, country: c, items }) => (
         <div key={province}>
-          <ProvinceSection province={province} country={country} />
+          <ProvinceSection province={province} country={c} />
           {items.map((guild) => <GuildCard key={guild.name} guild={guild} />)}
         </div>
       ))}
 
       {/* Potters */}
       <h2 className="text-2xl font-bold mt-20 mb-2" style={{ fontFamily: "Georgia, serif" }}>Potters</h2>
-      {pottersByProvince.map(({ province, country, items }) => (
+      {pottersByProvince.length === 0 ? (
+        <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No potter listings yet for this region.</p>
+      ) : pottersByProvince.map(({ province, country: c, items }) => (
         <div key={province}>
-          <ProvinceSection province={province} country={country} />
+          <ProvinceSection province={province} country={c} />
           {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
         </div>
       ))}
