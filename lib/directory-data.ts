@@ -83,6 +83,24 @@ export const guilds: Guild[] = [
     province: "Ontario",
     country: "CA",
   },
+  // Prince Edward Island
+  {
+    name: "PEI Potters Studio Co-op",
+    city: "Charlottetown",
+    province: "Prince Edward Island",
+    country: "CA",
+    website: "https://peipottersstudio.ca",
+    bio: "A cooperative pottery studio in the heart of Charlottetown, open to beginner and experienced ceramic artists alike.",
+  },
+  // Oregon
+  {
+    name: "Oregon Potters Association",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://www.oregonpotters.org",
+    bio: "An organization dedicated to educating, inspiring, and transforming lives through clay.",
+  },
   // California
   {
     name: "Berkeley Potters Guild",
@@ -222,6 +240,61 @@ export const potters: Potter[] = [
     website: "https://parcelineceramique.com",
     bio: "Handmade pottery on the wheel from high-quality stoneware and porcelain. Studio open by appointment in Montreal.",
   },
+  // Manitoba
+  {
+    name: "Crystal Nykoluk",
+    city: "Winnipeg",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://www.crystalnykoluk.com",
+    bio: "Ceramic artist and earthshaper living and working in Winnipeg.",
+  },
+  // Nova Scotia
+  {
+    name: "Joan Bruneau",
+    studio: "Nova Terra Cotta",
+    city: "Lunenburg",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://joanbruneau.com",
+    bio: "Established Nova Terra Cotta in Lunenburg in 1995. Work exhibited throughout North America and held in private and public collections.",
+  },
+  {
+    name: "Toni Losey",
+    city: "Dartmouth",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://www.toniloseypottery.com",
+    bio: "Creates complex, highly saturated organic ceramic sculptures through the abstraction and reinterpretation of common plant life.",
+  },
+  {
+    name: "Jessie Wright",
+    studio: "JAW Pottery",
+    city: "Halifax",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://jawpottery.com",
+    bio: "Self-taught potter creating modern handmade ceramics from a small-batch studio in Halifax.",
+  },
+  // Saskatchewan
+  {
+    name: "Paula Cooley",
+    city: "Saskatoon",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://paulacooley.com",
+    bio: "Full-time ceramics artist with an active studio practice since 1999, creating both functional pottery and sculptural ceramics.",
+  },
+  // Oregon
+  {
+    name: "Sarah Wolf",
+    studio: "Wolf Ceramics",
+    city: "Hood River",
+    province: "Oregon",
+    country: "US",
+    website: "https://wolfceramics.com",
+    bio: "Woman-led handmade pottery studio making contemporary ceramic dinnerware from a production studio in Hood River, Oregon.",
+  },
 ];
 
 export function groupByProvince<T extends { province: string; country: string }>(
@@ -240,8 +313,9 @@ export function groupByProvince<T extends { province: string; country: string }>
     province,
     country: items[0].country,
     items: items.sort((a, b) => {
-      const aName = "name" in a ? (a as { name: string }).name : "";
-      const bName = "name" in b ? (b as { name: string }).name : "";
+      const lastName = (n: string) => n.trim().split(" ").slice(-1)[0];
+      const aName = "name" in a ? lastName((a as { name: string }).name) : "";
+      const bName = "name" in b ? lastName((b as { name: string }).name) : "";
       return aName.localeCompare(bName);
     }),
   }));

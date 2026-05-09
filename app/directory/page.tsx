@@ -156,6 +156,26 @@ export default function DirectoryPage() {
       <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif" }}>Guilds</h2>
       {guildsByProvince.length === 0 ? (
         <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No guild listings yet for this region.</p>
+      ) : selectedCountry === "all" ? (
+        <>
+          {(["CA", "US"] as const).map((c) => {
+            const countryGroups = guildsByProvince.filter(g => g.country === c);
+            if (countryGroups.length === 0) return null;
+            return (
+              <div key={c}>
+                <h3 className="text-lg font-bold mt-8 mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+                  {c === "CA" ? "Canada" : "United States"}
+                </h3>
+                {countryGroups.map(({ province, country, items }) => (
+                  <div key={province}>
+                    <ProvinceSection province={province} country={country} />
+                    {items.map((guild) => <GuildCard key={guild.name} guild={guild} />)}
+                  </div>
+                ))}
+              </div>
+            );
+          })}
+        </>
       ) : guildsByProvince.map(({ province, country, items }) => (
         <div key={province}>
           <ProvinceSection province={province} country={country} />
@@ -167,6 +187,26 @@ export default function DirectoryPage() {
       <h2 className="text-2xl font-bold mt-20 mb-2" style={{ fontFamily: "Georgia, serif" }}>Potters</h2>
       {pottersByProvince.length === 0 ? (
         <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No potter listings yet for this region.</p>
+      ) : selectedCountry === "all" ? (
+        <>
+          {(["CA", "US"] as const).map((c) => {
+            const countryGroups = pottersByProvince.filter(p => p.country === c);
+            if (countryGroups.length === 0) return null;
+            return (
+              <div key={c}>
+                <h3 className="text-lg font-bold mt-8 mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+                  {c === "CA" ? "Canada" : "United States"}
+                </h3>
+                {countryGroups.map(({ province, country, items }) => (
+                  <div key={province}>
+                    <ProvinceSection province={province} country={country} />
+                    {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+                  </div>
+                ))}
+              </div>
+            );
+          })}
+        </>
       ) : pottersByProvince.map(({ province, country, items }) => (
         <div key={province}>
           <ProvinceSection province={province} country={country} />
