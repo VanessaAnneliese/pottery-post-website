@@ -49,20 +49,22 @@ export default function SubmitPage() {
           <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
             JPG or PNG. These will appear as thumbnails on your directory listing.
           </p>
-          <input
-            type="file"
-            name="photos"
-            accept="image/jpeg,image/png"
-            multiple
-            className="text-sm"
-            style={{ color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
-            onChange={(e) => {
-              if (e.target.files && e.target.files.length > 3) {
-                alert("Please select up to 3 images only.");
-                e.target.value = "";
-              }
-            }}
-          />
+          <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Choose Files
+            <input
+              type="file"
+              name="photos"
+              accept="image/jpeg,image/png"
+              multiple
+              className="hidden"
+              onChange={(e) => {
+                if (e.target.files && e.target.files.length > 3) {
+                  alert("Please select up to 3 images only.");
+                  e.target.value = "";
+                }
+              }}
+            />
+          </label>
         </div>
         <button
           type="submit"
