@@ -17,7 +17,7 @@ export default function DirectoryPage() {
         </Link>
       </div>
       <p className="mb-12 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        A directory of potters and potter&rsquo;s guilds across North America. The only one of its kind. Know a potter who should be here? Send them our way.
+        A directory of potters and potter&rsquo;s guilds across North America. Know a potter who should be here? Send them our way.
       </p>
       <p className="text-center py-20 text-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         Directory entries coming soon.
