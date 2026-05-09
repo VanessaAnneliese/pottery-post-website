@@ -131,6 +131,7 @@ export default function DirectoryPage() {
 
       {/* Country Navigation */}
       <div className="flex gap-2 mb-4">
+        <NavButton label="Full Directory" active={selectedCountry === "all"} onClick={() => { setSelectedCountry("all"); setSelectedProvince(null); }} />
         <NavButton label="Canada" active={selectedCountry === "CA"} onClick={() => handleCountryClick("CA")} />
         <NavButton label="United States" active={selectedCountry === "US"} onClick={() => handleCountryClick("US")} />
       </div>
