@@ -4,6 +4,22 @@ import { useState } from "react";
 import Link from "next/link";
 import { guilds, potters, groupByProvince, type Guild, type Potter } from "@/lib/directory-data";
 
+function NavButton({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
+  return (
+    <button
+      onClick={onClick}
+      className="px-5 py-2 text-xs tracking-widest uppercase font-bold rounded-sm transition-colors"
+      style={{
+        background: active ? "#5C3D2E" : "#E8D5B7",
+        color: active ? "#F5F0E8" : "#5C3D2E",
+        fontFamily: "system-ui, sans-serif",
+      }}
+    >
+      {label}
+    </button>
+  );
+}
+
 function ProvinceSection({ province, country }: { province: string; country: string }) {
   return (
     <h3 className="text-xs tracking-widest uppercase mt-10 mb-4 pb-2 border-b" style={{ color: "#9E8572", borderColor: "#E8D5B7", fontFamily: "system-ui, sans-serif", letterSpacing: "0.3em" }}>
@@ -52,12 +68,47 @@ function PotterCard({ potter }: { potter: Potter }) {
 }
 
 export default function DirectoryPage() {
-  const [country, setCountry] = useState<"CA" | "US">("CA");
+  const [selectedCountry, setSelectedCountry] = useState<"all" | "CA" | "US">("all");
+  const [selectedProvince, setSelectedProvince] = useState<string | null>(null);
 
-  const filteredGuilds = guilds.filter((g) => g.country === country);
-  const filteredPotters = potters.filter((p) => p.country === country);
+  const filteredGuilds = guilds.filter((g) =>
+    selectedCountry === "all" ? true : g.country === selectedCountry
+  ).filter((g) =>
+    selectedProvince ? g.province === selectedProvince : true
+  );
+
+  const filteredPotters = potters.filter((p) =>
+    selectedCountry === "all" ? true : p.country === selectedCountry
+  ).filter((p) =>
+    selectedProvince ? p.province === selectedProvince : true
+  );
+
   const guildsByProvince = groupByProvince(filteredGuilds);
   const pottersByProvince = groupByProvince(filteredPotters);
+
+  // Get sorted list of provinces for the selected country
+  const allItems = [...guilds, ...potters];
+  const provinces = Array.from(
+    new Set(
+      allItems
+        .filter((i) => selectedCountry === "all" ? true : i.country === selectedCountry)
+        .map((i) => i.province)
+    )
+  ).sort();
+
+  function handleCountryClick(c: "CA" | "US") {
+    if (selectedCountry === c) {
+      setSelectedCountry("all");
+      setSelectedProvince(null);
+    } else {
+      setSelectedCountry(c);
+      setSelectedProvince(null);
+    }
+  }
+
+  function handleProvinceClick(p: string) {
+    setSelectedProvince(selectedProvince === p ? null : p);
+  }
 
   return (
     <section className="py-20 px-6 max-w-4xl mx-auto">
@@ -78,31 +129,35 @@ export default function DirectoryPage() {
         A directory of potters and potter&rsquo;s guilds across North America. Know a potter who should be here? Send them our way.
       </p>
 
-      {/* Country Toggle */}
-      <div className="flex gap-2 mb-16">
-        {(["CA", "US"] as const).map((c) => (
-          <button
-            key={c}
-            onClick={() => setCountry(c)}
-            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm transition-colors"
-            style={{
-              background: country === c ? "#5C3D2E" : "#E8D5B7",
-              color: country === c ? "#F5F0E8" : "#5C3D2E",
-              fontFamily: "system-ui, sans-serif",
-            }}
-          >
-            {c === "CA" ? "Canada" : "United States"}
-          </button>
-        ))}
+      {/* Country Navigation */}
+      <div className="flex gap-2 mb-4">
+        <NavButton label="Canada" active={selectedCountry === "CA"} onClick={() => handleCountryClick("CA")} />
+        <NavButton label="United States" active={selectedCountry === "US"} onClick={() => handleCountryClick("US")} />
       </div>
+
+      {/* Province / State Navigation */}
+      {selectedCountry !== "all" && (
+        <div className="flex flex-wrap gap-2 mb-12 pt-4 border-t" style={{ borderColor: "#E8D5B7" }}>
+          {provinces.map((p) => (
+            <NavButton
+              key={p}
+              label={p}
+              active={selectedProvince === p}
+              onClick={() => handleProvinceClick(p)}
+            />
+          ))}
+        </div>
+      )}
+
+      {selectedCountry === "all" && <div className="mb-12" />}
 
       {/* Guilds */}
       <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif" }}>Guilds</h2>
       {guildsByProvince.length === 0 ? (
         <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No guild listings yet for this region.</p>
-      ) : guildsByProvince.map(({ province, country: c, items }) => (
+      ) : guildsByProvince.map(({ province, country, items }) => (
         <div key={province}>
-          <ProvinceSection province={province} country={c} />
+          <ProvinceSection province={province} country={country} />
           {items.map((guild) => <GuildCard key={guild.name} guild={guild} />)}
         </div>
       ))}
@@ -111,9 +166,9 @@ export default function DirectoryPage() {
       <h2 className="text-2xl font-bold mt-20 mb-2" style={{ fontFamily: "Georgia, serif" }}>Potters</h2>
       {pottersByProvince.length === 0 ? (
         <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No potter listings yet for this region.</p>
-      ) : pottersByProvince.map(({ province, country: c, items }) => (
+      ) : pottersByProvince.map(({ province, country, items }) => (
         <div key={province}>
-          <ProvinceSection province={province} country={c} />
+          <ProvinceSection province={province} country={country} />
           {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
         </div>
       ))}
