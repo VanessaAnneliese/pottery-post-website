@@ -16,6 +16,7 @@ export default function SubmitPage() {
           { label: "Guild Name (optional)", name: "guild", type: "text" },
           { label: "Country", name: "country", type: "text" },
           { label: "City & Region / Province / State", name: "location", type: "text" },
+          { label: "Street Address (optional)", name: "address", type: "text" },
           { label: "Website (optional)", name: "website", type: "url" },
           { label: "Email Address", name: "email", type: "email" },
           { label: "Phone Number (optional)", name: "phone", type: "tel" },
