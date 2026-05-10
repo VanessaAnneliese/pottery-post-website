@@ -6,7 +6,7 @@ export default function ShopPage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Shop</h1>
       <p className="mb-12 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        A select collection of pottery pieces available for purchase. Flat-rate shipping across Canada and the US. Some pieces are available for local pickup in Whitby, Ontario only.
+        A select collection of pottery pieces available for purchase. Flat-rate shipping across Canada and the US. Some pieces are available for local pickup in Whitby, Ontario, Canada.
       </p>
       <p className="text-center py-20 text-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         Collection coming soon.

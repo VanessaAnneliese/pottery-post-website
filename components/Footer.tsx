@@ -11,13 +11,19 @@ export default function Footer() {
           <p className="uppercase mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem", letterSpacing: "0.95em" }}>
             Purely Made Goods
           </p>
-          <p className="mt-2 text-xs">Whitby, Ontario, Canada</p>
         </div>
-        <nav className="flex gap-6 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
-          <Link href="/shop" className="hover:text-white transition-colors">Pottery Shop</Link>
-          <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
-        </nav>
+        <div className="flex flex-col items-center gap-3">
+          <nav className="flex gap-6 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
+            <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
+            <Link href="/shop" className="hover:text-white transition-colors">Pottery Shop</Link>
+            <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
+          </nav>
+          <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#7A6355" }}>
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
+          </nav>
+        </div>
         <p className="text-xs">&copy; {new Date().getFullYear()} The Pottery Post</p>
       </div>
     </footer>
