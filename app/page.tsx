@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="py-24 px-6 text-center" style={{ background: "#D4622A" }}>
+      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#D4622A" }}>
         <p className="text-xs tracking-widest uppercase mb-4 whitespace-nowrap" style={{ color: "#F5F0E8", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
           For Makers and Admirers
         </p>
-        <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
           Because things made<br />with love deserve<br />to be celebrated.
         </h1>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* Featured Gallery Preview */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
+      <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-8">
           <div>
             <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Shop Preview */}
-      <section className="py-20 px-6" style={{ background: "#EDE4D5" }}>
+      <section className="py-12 md:py-20 px-6" style={{ background: "#EDE4D5" }}>
         <div className="max-w-6xl mx-auto">
           <div className="flex items-end justify-between mb-8">
             <div>
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* Directory CTA */}
-      <section className="py-24 px-6 text-center" style={{ background: "#5C3D2E" }}>
+      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#5C3D2E" }}>
         <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#9E8572", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
           Canada &middot; United States &middot; Europe &middot; Australia
         </p>
