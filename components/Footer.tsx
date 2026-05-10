@@ -13,7 +13,7 @@ export default function Footer() {
           </p>
           <p className="mt-2 text-xs">Whitby, Ontario, Canada</p>
         </div>
-        <nav className="flex gap-6 text-xs tracking-widest uppercase">
+        <nav className="flex gap-6 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
           <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
           <Link href="/shop" className="hover:text-white transition-colors">Pottery Shop</Link>
           <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
