@@ -227,6 +227,15 @@ export const potters: Potter[] = [
     website: "https://www.starfishlyclay.com",
     bio: "Limited edition, artisan hand-thrown pottery with a modern twist. Based in Calgary.",
   },
+  {
+    name: "Moon Kim",
+    studio: "MoonK Studio",
+    city: "Edmonton",
+    province: "Alberta",
+    country: "CA",
+    website: "https://moonkstudiopottery.com",
+    bio: "Korean-influenced handmade pottery blending Korean style with Canadian inspiration, made in Edmonton.",
+  },
   // British Columbia
   {
     name: "Kate Metten",
@@ -254,6 +263,33 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://www.sarahpikepottery.com",
     bio: "Full-time potter making functional slab-built pottery in a home studio on the edge of a ski town in Fernie, BC.",
+  },
+  {
+    name: "Yuki Kianna",
+    studio: "Yuki Kianna Studio",
+    city: "Nelson",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://yukikiannastudio.com",
+    bio: "Handmade functional pottery inspired by the BC wilderness and Kootenay Lake. Soft colours and whimsical elements woven into every piece.",
+  },
+  // New Brunswick
+  {
+    name: "Tim Isaac",
+    city: "New Horton",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://timisaacpottery.com",
+    bio: "Raku-fired clay incorporating seashells, rocks, and fossils gathered near the Bay of Fundy. Offers workshops from a studio in New Horton, NB.",
+  },
+  {
+    name: "Krysta Oland",
+    studio: "Morning Sun Pottery",
+    city: "Harvey Station",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://morningsunpottery.com",
+    bio: "Functional pots for everyday use, handcrafted in Harvey Station. Juried member of the New Brunswick Crafts Council.",
   },
   // Ontario
   {
