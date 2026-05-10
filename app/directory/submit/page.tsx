@@ -14,8 +14,8 @@ export default function SubmitPage() {
         {[
           { label: "Your Name or Studio Name", name: "name", type: "text" },
           { label: "Guild Name (optional)", name: "guild", type: "text" },
-          { label: "City & Province / State", name: "location", type: "text" },
           { label: "Country", name: "country", type: "text" },
+          { label: "City & Region / Province / State", name: "location", type: "text" },
           { label: "Website (optional)", name: "website", type: "url" },
           { label: "Email Address", name: "email", type: "email" },
           { label: "Phone Number (optional)", name: "phone", type: "tel" },
