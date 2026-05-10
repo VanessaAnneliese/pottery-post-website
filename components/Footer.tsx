@@ -24,7 +24,12 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
           </nav>
         </div>
-        <p className="text-xs">&copy; {new Date().getFullYear()} The Pottery Post</p>
+        <p className="text-xs text-center md:text-right">
+          &copy; {new Date().getFullYear()} The Pottery Post
+          <span className="hidden md:inline">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <br className="md:hidden" />
+          Website Design by Anneliese Designs
+        </p>
       </div>
     </footer>
   );
