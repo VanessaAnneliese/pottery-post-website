@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer style={{ background: "#3B2314", color: "#9E8572" }} className="py-10 px-6 mt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
-        <div>
+        <div className="text-center md:text-left">
           <p className="font-bold uppercase" style={{ color: "#E8D5B7", fontFamily: "Georgia, serif", fontSize: "1.25rem", letterSpacing: "0.386em" }}>
             The Pottery Post
           </p>

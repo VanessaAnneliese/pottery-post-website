@@ -6,7 +6,7 @@ export default function GalleryPage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Gallery</h1>
       <p className="mb-12 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        A curated selection of pottery pieces, celebrated for their craft. The collection rotates annually. None of these pieces are for sale.
+        A curated selection of pottery pieces, celebrated for their craft. The collection rotates periodically. None of these pieces are for sale.
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {Array.from({ length: 6 }, (_, i) => (
