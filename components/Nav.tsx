@@ -9,7 +9,7 @@ export default function Nav() {
           <span className="text-2xl font-bold tracking-widest uppercase" style={{ fontFamily: "Georgia, serif", letterSpacing: "0.2em" }}>
             The Pottery Post
           </span>
-          <span className="text-xs tracking-widest uppercase" style={{ color: "#E8D5B7", letterSpacing: "0.35em" }}>
+          <span className="uppercase" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem", display: "block", textAlign: "justify", textAlignLast: "justify" }}>
             Purely Made Goods
           </span>
         </Link>
