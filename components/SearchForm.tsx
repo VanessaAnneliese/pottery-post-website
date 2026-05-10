@@ -56,7 +56,7 @@ export default function SearchForm() {
         <button
           onClick={handleOpen}
           className="text-sm tracking-widest uppercase"
-          style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}
+          style={{ color: "#FFFFFF", fontFamily: "system-ui, sans-serif" }}
           aria-label="Search"
         >
           Search
