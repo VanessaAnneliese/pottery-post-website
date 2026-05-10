@@ -1,8 +1,10 @@
+export type Country = "CA" | "US" | "EU" | "AU";
+
 export type Guild = {
   name: string;
   city: string;
   province: string;
-  country: "CA" | "US";
+  country: Country;
   website?: string;
   phone?: string;
   bio?: string;
@@ -14,7 +16,7 @@ export type Potter = {
   guild?: string;
   city: string;
   province: string;
-  country: "CA" | "US";
+  country: Country;
   website?: string;
   phone?: string;
   bio?: string;
@@ -204,6 +206,104 @@ export const guilds: Guild[] = [
     country: "US",
     website: "https://spokanepottersguild.org",
     bio: "A non-profit, volunteer-based organization founded in 1977.",
+  },
+  // England
+  {
+    name: "Craft Potters Association",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://www.craftpotters.com",
+    bio: "Founded in 1958, the national body representing studio potters and ceramic artists across the UK and Ireland, with over 300 members and a gallery in London opposite the British Museum.",
+  },
+  {
+    name: "Northern Potters Association",
+    city: "Northern England",
+    province: "England",
+    country: "EU",
+    website: "https://www.northern-potters.co.uk",
+    bio: "With over 800 members, the NPA supports studio pottery across northern England through exhibitions, workshops, a quarterly newsletter, and an annual Potters Camp.",
+  },
+  // Scotland
+  {
+    name: "Scottish Potters Association",
+    city: "Scotland",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.scottishpotters.org",
+    bio: "Founded in 1974, the SPA promotes handmade pottery and ceramics across Scotland through exhibitions, workshops, a member directory, and an annual symposium.",
+  },
+  // Ireland
+  {
+    name: "Ceramics Ireland",
+    city: "Ireland",
+    province: "Ireland",
+    country: "EU",
+    website: "https://www.ceramicsireland.ie",
+    bio: "Founded in 1977, Ceramics Ireland hosts exhibitions, workshops, and a biennial international festival with membership open to practitioners, students, and friends of ceramics.",
+  },
+  // France
+  {
+    name: "Henriot-Quimper",
+    city: "Quimper",
+    province: "France",
+    country: "EU",
+    website: "https://www.hb-henriot.com",
+    bio: "One of France's oldest active potteries, founded in 1690, continuing the living tradition of hand-painted Breton faience decorated by skilled faïenciers with traditional regional motifs.",
+  },
+  // Netherlands
+  {
+    name: "European Ceramic Work Centre",
+    city: "'s-Hertogenbosch",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://ekwc.nl",
+    bio: "A prestigious international artist-in-residence and research centre where artists, designers, and architects from around the world work with full technical support and state-of-the-art facilities.",
+  },
+  // Denmark
+  {
+    name: "Guldagergaard International Ceramic Research Center",
+    city: "Skælskør",
+    province: "Denmark",
+    country: "EU",
+    website: "https://ceramic.dk",
+    bio: "Founded in 1997, a world-leading international ceramics residency and research centre offering artist-in-residence stays, grant-funded programmes, and workshops for potters worldwide.",
+  },
+  // New South Wales
+  {
+    name: "The Australian Ceramics Association",
+    city: "Sydney",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://australianceramics.com",
+    bio: "The peak national body for Australian ceramics, connecting ceramicists across all states through membership, an open studios directory, the Journal of Australian Ceramics, and national events.",
+  },
+  // South Australia
+  {
+    name: "Studio Potters SA",
+    city: "Adelaide",
+    province: "South Australia",
+    country: "AU",
+    website: "https://www.studiopotters.com",
+    bio: "A South Australian organisation providing classes, exhibition opportunities, and inclusion in Adelaide arts festivals for local ceramicists.",
+  },
+  // Western Australia
+  {
+    name: "Ceramic Arts Association of Western Australia",
+    city: "Perth",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://www.ceramicartswa.asn.au",
+    bio: "A not-for-profit organisation with over 120 WA ceramicists promoting handmade pottery and ceramic sculpture through exhibitions, workshops, and the biennial Members Selective Exhibition.",
+  },
+  // Queensland
+  {
+    name: "Ceramic Arts Queensland",
+    city: "Brisbane",
+    province: "Queensland",
+    country: "AU",
+    website: "https://ceramicartsqld.org.au",
+    bio: "Founded in Brisbane in 1968, CAQ fosters an inclusive ceramic arts community across Queensland through the biennial Siliceous Award for Ceramic Excellence, workshops, and member exhibitions.",
   },
 ];
 
@@ -598,11 +698,247 @@ export const potters: Potter[] = [
     website: "https://stephensalterpottery.com",
     bio: "Brings meaningful handcrafted ceramics to the Oak Cliff community in Dallas. Started in 2018 after an apprenticeship at The Barn Pottery.",
   },
+  // England
+  {
+    name: "Edmund de Waal",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://www.edmunddewaal.com",
+    bio: "Internationally renowned potter and author of The Hare with Amber Eyes, creating luminous porcelain installations exploring themes of memory and place, exhibited at major institutions worldwide.",
+  },
+  {
+    name: "Florian Gadsby",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://www.floriangadsby.com",
+    bio: "A leading young British studio potter creating refined functional and decorative wheel-thrown vessels in stoneware glazes, known internationally through his popular YouTube channel and his 2023 book By My Hands.",
+  },
+  {
+    name: "Lisa Hammond",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://www.lisahammond-pottery.co.uk",
+    bio: "A celebrated soda-firing potter working from her Maze Hill Pottery — established in 1994 inside a Victorian railway ticket office — creating loose, gestural vessels fired in her atmospheric soda kiln.",
+  },
+  {
+    name: "Jim Malone",
+    city: "Cumbria",
+    province: "England",
+    country: "EU",
+    website: "http://www.jimmalonepottery.co.uk",
+    bio: "One of Britain's most respected studio potters, drawing from medieval English and Korean traditions to make wood-fired jugs, bottles, and Hakeme-decorated pieces from his remote Cumbrian studio for over forty years.",
+  },
+  {
+    name: "Simon Olley",
+    city: "Kent",
+    province: "England",
+    country: "EU",
+    website: "https://www.olleypottery.co.uk",
+    bio: "A Selected Member of the Craft Potters Association whose illustrated sgraffito ceramics honour the bond between humans and their dogs, hand-thrown in earthenware and stoneware with intricate scratched decoration.",
+  },
+  // Scotland
+  {
+    name: "Lotte Glob",
+    city: "Sutherland",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.lotteglob.co.uk",
+    bio: "A Danish-born ceramic artist who has lived and worked on Scotland's remote northwest coast for over 50 years, creating sculptural pieces deeply connected to the Highland landscape, geology, and weather.",
+  },
+  {
+    name: "Hannah McAndrew",
+    studio: "Fitch & McAndrew",
+    city: "Castle Douglas",
+    province: "Scotland",
+    country: "EU",
+    website: "https://fitchandmcandrew.co.uk",
+    bio: "An internationally recognised slipware potter working with partner Douglas Fitch in a rural studio with a wood-fired kiln, producing hand-thrown earthenware decorated with traditional slip-trailing and sgraffito.",
+  },
+  // Ireland
+  {
+    name: "Elaine Fallon",
+    studio: "Brookwood Pottery",
+    city: "Dublin",
+    province: "Ireland",
+    country: "EU",
+    website: "https://brookwoodpottery.com",
+    bio: "Established in 2012, Brookwood Pottery is a design studio and teaching space in Dublin making handcrafted functional ceramics and running classes for the local community.",
+  },
+  {
+    name: "Charlie Mahon",
+    city: "Cork",
+    province: "Ireland",
+    country: "EU",
+    website: "https://charliemahonceramicspottery.com",
+    bio: "An award-winning ceramic artist hand-painting and wheel-throwing vivid Irish-themed earthenware from his studio in Cork's English Market, with all pieces fired in his own kiln.",
+  },
+  {
+    name: "Amanda Murphy",
+    city: "Co. Waterford",
+    province: "Ireland",
+    country: "EU",
+    website: "https://amandamurphyceramics.com",
+    bio: "A coastal Co. Waterford potter whose hand-built and wheel-thrown pieces are inspired by the Irish landscape — vases, bowls, and platters textured with the colours of sea, sand, mountains, and rock.",
+  },
+  // France
+  {
+    name: "Maureen Stengel-Guillot",
+    studio: "MSG Céramique",
+    city: "Vallauris",
+    province: "France",
+    country: "EU",
+    website: "https://www.msg-ceramique.com",
+    bio: "Working in Vallauris — the pottery town made famous by Picasso — Maureen hand-builds all her pieces combining Limoges porcelain traditions with contemporary Provençal techniques.",
+  },
+  // Germany
+  {
+    name: "Elizaveta Barsega",
+    studio: "Barsega Studio",
+    city: "Berlin",
+    province: "Germany",
+    country: "EU",
+    website: "https://brsg-keramik.com",
+    bio: "A research-driven ceramics practice devoted to locally sourced natural minerals and wood ash glazes, making mindfully crafted vessels from wild-harvested materials with workshops in sustainable techniques.",
+  },
+  {
+    name: "Marilyne Blais",
+    city: "Berlin",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.marilyneblais.com",
+    bio: "A French-Canadian ceramic artist who founded her studio in Berlin in 2018, creating bold, colourful handmade vessels with vibrant airbrushed gradient glazes, alongside teaching wheel-throwing classes.",
+  },
+  // Netherlands
+  {
+    name: "Marjoke de Heer",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://marjokedeheer.com",
+    bio: "A studio potter and gallery-holder working from her Amsterdam riverside studio since 1994, creating one-of-a-kind stoneware, porcelain, and wild clay vessels using ancient glazes and contemporary design.",
+  },
+  {
+    name: "Lonny van Ryswyck",
+    studio: "AtelierNL",
+    city: "Eindhoven",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.ateliernl.com",
+    bio: "A design-led ceramics studio that digs local Dutch clays to make place-specific ceramics and glass, translating the geology and history of each location into objects. Dezeen Designer of the Year.",
+  },
+  {
+    name: "Camille Verbunt",
+    studio: "Made in Mokum",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.madeinmokum.com",
+    bio: "An Amsterdam-based potter who celebrates the character of handmade objects, throwing wonky stoneware bowls, vases, and pots with homebrew glazes — embracing imperfection as part of the work's personality.",
+  },
+  // Portugal
+  {
+    name: "Ian Fitzpatrick",
+    studio: "Olaria Pequena",
+    city: "Porches",
+    province: "Portugal",
+    country: "EU",
+    website: "https://www.olariapequena.com",
+    bio: "A Scottish-born potter who came to Portugal in 1981, this intimate Algarve studio produces handcrafted pottery and tiles blending traditional Portuguese craft with contemporary sensibility.",
+  },
+  {
+    name: "Gaëlle Van Branteghem",
+    studio: "Gaëlle Ceramica",
+    city: "Ericeira",
+    province: "Portugal",
+    country: "EU",
+    website: "https://www.gaelleceramica.com",
+    bio: "A Belgian-born ceramist who moved to Ericeira in 2017, creating wheel-thrown stoneware tableware and interior pieces inspired by the wild coastal landscapes near Lisbon.",
+  },
+  // Denmark
+  {
+    name: "Anne Black",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://www.anneblack.com",
+    bio: "A Danish ceramicist and designer who has worked exclusively in porcelain since graduating from the Danish Design School in 1996, creating handmade contemporary ceramics, jewellery, and homewares.",
+  },
+  {
+    name: "Eric Landon",
+    studio: "TORTUS Copenhagen",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://tortus.dk",
+    bio: "An American-born master potter based in Copenhagen who has taught over 10,000 students in 30+ countries, creating hand-thrown stoneware that blends timeless craftsmanship with a clean Scandinavian aesthetic.",
+  },
+  // New South Wales
+  {
+    name: "Daniel Lafferty",
+    studio: "Bandicoot Pottery",
+    city: "Cobargo",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.bandicootpottery.com.au",
+    bio: "A studio operating since 1990 in the Cobargo Valley, specialising in functional, decorative one-off wood-fired pieces and offering ceramics classes in a community-focused creative environment.",
+  },
+  // Victoria
+  {
+    name: "Jennifer Hodges",
+    studio: "Woolshed Ceramics",
+    city: "Wooragee",
+    province: "Victoria",
+    country: "AU",
+    website: "https://woolshedceramics.com.au",
+    bio: "A ceramic artist working from a converted 1940s shearing shed in Victoria's High Country, creating functional handmade wares in organic shapes with earthy glazes reflecting the Australian landscape.",
+  },
+  // South Australia
+  {
+    name: "Alison Arnold",
+    studio: "Red Bird Studio",
+    city: "Hawthorndene",
+    province: "South Australia",
+    country: "AU",
+    website: "https://redbirdstudioart.com",
+    bio: "A full-time studio potter and teacher with over 30 years of experience, trained at Adelaide's JamFactory, making sculptural and functional pottery inspired by Australian flora and fauna.",
+  },
+  // Western Australia
+  {
+    name: "Anika Kalotay",
+    studio: "Kura Studio",
+    city: "Perth",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://kurastudio.com",
+    bio: "A ceramics and creative practice making small-batch handmade ceramics — palm-fitting vases, topography-inspired jewellery trays, and paired everyday objects — focused on thoughtful, responsive design.",
+  },
+  {
+    name: "Danica Wichtemann",
+    studio: "Rediscover Ceramics",
+    city: "Perth",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://www.rediscovering.com.au",
+    bio: "A ceramic artist who carves Southern Ice Porcelain with detailed illustrations of native Australian flowers and birds, inlaying glazes for colour and texture. Work stocked at Fremantle Arts Centre.",
+  },
+  // Queensland
+  {
+    name: "Rowley Drysdale",
+    studio: "Quixotica Art Space",
+    city: "Cooroy",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.rowleydrysdale.com.au",
+    bio: "One of Australia's foremost wood-firing potters, born in western Queensland, drawing on the Australian bush as central inspiration and internationally connected with potters in South Korea, Japan, and Finland.",
+  },
 ];
 
-export function groupByProvince<T extends { province: string; country: string }>(
+export function groupByProvince<T extends { province: string; country: Country }>(
   items: T[]
-): { province: string; country: string; items: T[] }[] {
+): { province: string; country: Country; items: T[] }[] {
   const map = new Map<string, T[]>();
   const sorted = [...items].sort((a, b) =>
     a.province.localeCompare(b.province)

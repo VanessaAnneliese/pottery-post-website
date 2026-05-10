@@ -9,7 +9,11 @@
       "Bash(rm -rf \"/Users/vanessawitkowski/Documents/💛🌼 I love Pottery Post/Pottery Post Website/.git/COMMIT_EDITMSG\")",
       "Bash(npm run *)",
       "Bash(rm -rf node_modules)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(git config *)",
+      "Bash(git credential-osxkeychain *)",
+      "WebSearch",
+      "Bash(npx tsc *)"
     ]
   }
 }

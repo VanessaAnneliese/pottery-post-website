@@ -22,7 +22,7 @@ function GuildResult({ guild, query }: { guild: Guild; query: string }) {
       <p className="text-xs tracking-widest uppercase mb-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Guild</p>
       <p className="font-bold text-lg" style={{ fontFamily: "Georgia, serif" }}>{highlight(guild.name, query)}</p>
       <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        {guild.city}, {guild.province} &mdash; {guild.country === "CA" ? "Canada" : "United States"}
+        {guild.city}, {guild.province} &mdash; {guild.country === "CA" ? "Canada" : guild.country === "US" ? "United States" : guild.country === "EU" ? "Europe" : "Australia"}
       </p>
       {guild.bio && (
         <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{highlight(guild.bio, query)}</p>
@@ -44,7 +44,7 @@ function PotterResult({ potter, query }: { potter: Potter; query: string }) {
         {highlight(potter.name, query)}{potter.studio ? <span style={{ fontWeight: "normal" }}> — {highlight(potter.studio, query)}</span> : ""}
       </p>
       <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        {potter.city}, {potter.province} &mdash; {potter.country === "CA" ? "Canada" : "United States"}
+        {potter.city}, {potter.province} &mdash; {potter.country === "CA" ? "Canada" : potter.country === "US" ? "United States" : potter.country === "EU" ? "Europe" : "Australia"}
       </p>
       {potter.bio && (
         <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{highlight(potter.bio, query)}</p>
