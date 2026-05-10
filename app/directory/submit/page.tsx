@@ -37,9 +37,13 @@ export default function SubmitPage() {
           <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             Short Bio (optional)
           </label>
+          <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+            200 characters max — about 2 sentences describing your work or style.
+          </p>
           <textarea
             name="bio"
             rows={4}
+            maxLength={200}
             className="border-b py-2 bg-transparent outline-none text-base resize-none"
             style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
           />
