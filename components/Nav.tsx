@@ -12,10 +12,10 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4 gap-6">
         {/* Logo */}
         <Link href="/" className="flex flex-col leading-tight shrink-0" style={{ color: "#F5F0E8", textDecoration: "none" }} onClick={() => setMenuOpen(false)}>
-          <span className="text-2xl md:text-4xl font-bold uppercase" style={{ fontFamily: "Georgia, serif", letterSpacing: "0.2em" }}>
+          <span className="text-2xl md:text-3xl font-bold uppercase" style={{ fontFamily: "Georgia, serif", letterSpacing: "0.2em" }}>
             The Pottery Post
           </span>
-          <span className="uppercase text-center sm:text-left tracking-[0.4em] md:tracking-[0.72em] md:[word-spacing:0.25em]" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
+          <span className="uppercase text-center sm:text-left tracking-[0.4em] md:tracking-[1.05em] md:[word-spacing:0.35em]" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
             For Makers &amp; Admirers
           </span>
         </Link>
@@ -24,7 +24,6 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-8">
           <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
             <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
-            <Link href="/shop" className="hover:text-white transition-colors">Pottery Shop</Link>
             <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
           </nav>
           <SearchForm />
@@ -47,7 +46,6 @@ export default function Nav() {
         <div className="md:hidden border-t pb-6 pt-4" style={{ borderColor: "#4A3025" }}>
           <nav className="flex flex-col gap-5 text-sm tracking-widest uppercase mb-6" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
             <Link href="/gallery" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>Gallery</Link>
-            <Link href="/shop" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>Pottery Shop</Link>
             <Link href="/directory" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>Directory</Link>
           </nav>
           <SearchForm />

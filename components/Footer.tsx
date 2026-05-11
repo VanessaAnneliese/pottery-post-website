@@ -5,17 +5,16 @@ export default function Footer() {
     <footer style={{ background: "#3B2314", color: "#9E8572" }} className="py-10 px-6 mt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
         <div className="text-center md:text-left">
-          <p className="font-bold uppercase text-xl md:text-3xl" style={{ color: "#E8D5B7", fontFamily: "Georgia, serif", letterSpacing: "0.386em" }}>
+          <p className="font-bold uppercase text-xl md:text-2xl" style={{ color: "#E8D5B7", fontFamily: "Georgia, serif", letterSpacing: "0.386em" }}>
             The Pottery Post
           </p>
-          <p className="uppercase mt-1 tracking-[0.4em] md:tracking-[0.72em] md:[word-spacing:0.25em]" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
+          <p className="uppercase mt-1 tracking-[0.4em] md:tracking-[0.98em] md:[word-spacing:0.3em]" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
             For Makers &amp; Admirers
           </p>
         </div>
         <div className="flex flex-col items-center gap-3">
           <nav className="flex gap-6 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
             <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
-            <Link href="/shop" className="hover:text-white transition-colors">Pottery Shop</Link>
             <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
           </nav>
           <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#7A6355" }}>

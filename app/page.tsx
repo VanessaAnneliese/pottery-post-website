@@ -23,7 +23,7 @@ export default function Home() {
           Because things made<br />with love deserve<br />to be celebrated.
         </h1>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
-          A potter&rsquo;s directory spanning three continents, a pottery lover&rsquo;s curated gallery, and a select collection of pottery for resale.
+          A potter&rsquo;s directory spanning three continents and curated pottery gallery.
         </p>
       </section>
 
@@ -45,41 +45,14 @@ export default function Home() {
           <PlaceholderPiece label="Piece II" />
           <PlaceholderPiece label="Piece III" />
           <PlaceholderPiece label="Piece IV" />
+          <PlaceholderPiece label="Piece V" />
+          <PlaceholderPiece label="Piece VI" />
+          <PlaceholderPiece label="Piece VII" />
+          <PlaceholderPiece label="Piece VIII" />
         </div>
         <p className="mt-6 text-sm text-center" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
           The gallery rotates periodically. These pieces are not for sale. They are here to be celebrated!
         </p>
-      </section>
-
-      {/* Shop Preview */}
-      <section className="py-12 md:py-20 px-6" style={{ background: "#EDE4D5" }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-end justify-between mb-8">
-            <div>
-              <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
-                Select Pieces For Sale
-              </p>
-              <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Pottery Shop</h2>
-            </div>
-            <Link href="/shop" className="text-sm tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
-              Shop all
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {["Stoneware Mug", "Celadon Bowl", "Raku Vase"].map((name) => (
-              <div key={name} className="rounded-sm overflow-hidden" style={{ background: "#F5F0E8" }}>
-                <PlaceholderPiece label={name} />
-                <div className="p-4">
-                  <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{name}</p>
-                  <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Price TBD</p>
-                  <Link href="/shop" className="inline-block mt-3 text-xs tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
-                    View piece
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* Directory CTA */}
