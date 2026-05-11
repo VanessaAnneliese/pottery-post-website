@@ -61,7 +61,7 @@ export default function SubmitPage() {
             className="w-4 h-4 accent-[#5C3D2E]"
           />
           <label htmlFor="offersClasses" className="text-xs tracking-widest uppercase cursor-pointer" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-            I offer pottery classes or workshops
+            I also offer pottery classes or workshops
           </label>
         </div>
 
