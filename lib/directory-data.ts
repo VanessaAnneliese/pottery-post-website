@@ -743,6 +743,15 @@ export const potters: Potter[] = [
     website: "https://pavlopottery.com",
     bio: "Functional one-of-a-kind pottery made in the small village of Rockton, Ontario, a short drive from Hamilton and Cambridge.",
   },
+  {
+    name: "Sandra Silberman",
+    studio: "Dotti Potts",
+    city: "Barrie",
+    province: "Ontario",
+    country: "CA",
+    website: "https://dottipotts.com",
+    bio: "Ceramic artist with over 30 years of experience creating functional and decorative handmade pieces that blend clean modern design with playful textures, patterns, and dots. Also offers pottery workshops and private clay parties.",
+  },
   // Quebec
   {
     name: "Baie d'Urfé Potters' Guild",
