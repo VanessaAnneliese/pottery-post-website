@@ -15,8 +15,8 @@ export default function Nav() {
           <span className="text-2xl font-bold tracking-widest uppercase" style={{ fontFamily: "Georgia, serif", letterSpacing: "0.2em" }}>
             The Pottery Post
           </span>
-          <span className="hidden sm:block uppercase" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem", letterSpacing: "0.95em" }}>
-            For Makers and Admirers
+          <span className="uppercase text-center sm:text-left" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem", letterSpacing: "0.95em" }}>
+            For Makers<br className="sm:hidden" /> and Admirers
           </span>
         </Link>
 

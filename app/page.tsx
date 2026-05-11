@@ -16,8 +16,8 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#D4622A" }}>
-        <p className="text-xs tracking-widest uppercase mb-4 whitespace-nowrap" style={{ color: "#F5F0E8", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
-          Pottery Across Continents
+        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#F5F0E8", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
+          Pottery<br className="sm:hidden" /> Across Continents
         </p>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
           Because things made<br />with love deserve<br />to be celebrated.
