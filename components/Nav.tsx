@@ -18,6 +18,7 @@ export default function Nav() {
             tagColor="#E8D5B7"
             logoClassName="text-2xl md:text-3xl"
             logoLetterSpacing="0.2em"
+            className="items-start"
           />
         </Link>
 
