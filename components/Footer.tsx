@@ -8,7 +8,7 @@ export default function Footer() {
           <p className="font-bold uppercase text-xl md:text-2xl" style={{ color: "#E8D5B7", fontFamily: "Georgia, serif", letterSpacing: "0.386em" }}>
             The Pottery Post
           </p>
-          <p className="uppercase mt-1 tracking-[0.4em] md:tracking-[0.98em] md:[word-spacing:0.3em]" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
+          <p className="uppercase mt-1 tracking-[0.4em] md:tracking-[1.4em] md:[word-spacing:0.45em]" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
             For Makers &amp; Admirers
           </p>
         </div>
