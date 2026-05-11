@@ -1319,22 +1319,54 @@ export const suppliers: Supplier[] = [
     website: "https://theclaywarehouse.com",
     bio: "Pottery supplies, wheels, kilns, and materials serving potters across BC.",
   },
-  // Ontario
   {
-    name: "PSH / Euclid's",
-    city: "Oakville",
-    province: "Ontario",
+    name: "Greenbarn Potters' Supply",
+    city: "Surrey",
+    province: "British Columbia",
     country: "CA",
-    website: "https://www.psh.ca",
-    bio: "One of Canada's largest pottery supply houses, carrying clay, glazes, tools, wheels, and kilns.",
+    website: "https://greenbarn.com",
+    bio: "A BC institution for ceramic supplies, raw materials, kilns, and wheels — serving potters for decades.",
   },
   {
-    name: "Amaranth Stoneware",
-    city: "Kingston",
-    province: "Ontario",
+    name: "Vancouver Island Pottery Supply",
+    city: "Parksville",
+    province: "British Columbia",
     country: "CA",
-    website: "https://amaranthstoneware.com",
-    bio: "Supplies, raw materials, and equipment for studio potters in Eastern Ontario.",
+    website: "https://vipotterysupply.com",
+    bio: "Vancouver Island's go-to source for clay, glazes, tools, and equipment.",
+  },
+  // Alberta
+  {
+    name: "Plainsman Clays",
+    city: "Medicine Hat",
+    province: "Alberta",
+    country: "CA",
+    website: "https://plainsmanclays.com",
+    bio: "One of Canada's leading clay manufacturers, producing Plainsman clay bodies used by potters coast to coast.",
+  },
+  {
+    name: "Plainsman Pottery Supply",
+    city: "Edmonton",
+    province: "Alberta",
+    country: "CA",
+    website: "https://plainsmanpotterysupply.com",
+    bio: "Full-service pottery supply store in Edmonton carrying Plainsman clays, Skutt kilns, Brent and Shimpo wheels.",
+  },
+  {
+    name: "Ceramics Canada",
+    city: "Lethbridge",
+    province: "Alberta",
+    country: "CA",
+    bio: "Ceramic supplies, kiln equipment, and raw materials for Alberta potters.",
+  },
+  // Saskatchewan
+  {
+    name: "TREE Pottery Supply",
+    city: "Saskatoon",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://treesaskatoon.com",
+    bio: "Saskatoon's pottery supply store for over 37 years, stocking Plainsman clays, Skutt kilns, and Brent and Shimpo wheels.",
   },
   // Manitoba
   {
@@ -1345,13 +1377,30 @@ export const suppliers: Supplier[] = [
     website: "https://soundingstone.ca",
     bio: "Pottery supplies and ceramics equipment serving Manitoba and the Prairie provinces.",
   },
-  // Alberta
+  // Ontario
   {
-    name: "Ceramics Canada",
-    city: "Lethbridge",
-    province: "Alberta",
+    name: "PSH / Euclid's",
+    city: "Oakville",
+    province: "Ontario",
     country: "CA",
-    bio: "Ceramic supplies, kiln equipment, and raw materials for Alberta potters.",
+    website: "https://www.psh.ca",
+    bio: "One of Canada's largest pottery supply houses, carrying clay, glazes, tools, wheels, and kilns.",
+  },
+  {
+    name: "Tucker's Pottery Supplies",
+    city: "Richmond Hill",
+    province: "Ontario",
+    country: "CA",
+    website: "https://tuckerspot.com",
+    bio: "A well-stocked Ontario pottery supplier carrying a full range of clays, glazes, tools, wheels, and kilns.",
+  },
+  {
+    name: "Amaranth Stoneware",
+    city: "Kingston",
+    province: "Ontario",
+    country: "CA",
+    website: "https://amaranthstoneware.com",
+    bio: "Supplies, raw materials, and equipment for studio potters in Eastern Ontario.",
   },
   // Washington
   {
