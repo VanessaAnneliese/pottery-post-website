@@ -1,3 +1,4 @@
+import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
 
 export default function GalleryPage() {
@@ -23,7 +24,44 @@ export default function GalleryPage() {
         ))}
       </div>
     </section>
+
     <QuoteBlock quote="Fire decides what the hands began." />
+
+    {/* The Archive */}
+    <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto border-b" style={{ borderColor: "#E8D5B7" }}>
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        Past Collections
+      </p>
+      <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Archive</h2>
+      <p className="mb-8 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of The Pottery Post.
+      </p>
+      <Link
+        href="/gallery/archive"
+        className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block"
+        style={{ background: "#5C3D2E", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+      >
+        View past galleries
+      </Link>
+    </section>
+
+    {/* Submit Your Work */}
+    <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto">
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        Open to Submissions
+      </p>
+      <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Submit Your Work</h2>
+      <p className="mb-8 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+        Each new collection is open to submissions. If you&rsquo;re a potter and would like your work considered, here&rsquo;s how it works: begin by sending us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll be in touch — chosen pieces are shipped to The Pottery Post by a set date, where each one is verified in person before it goes live. Because everything in this gallery is the real thing: made by hand, verified by eye.
+      </p>
+      <Link
+        href="/gallery/submit"
+        className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block"
+        style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+      >
+        Submit a piece
+      </Link>
+    </section>
     </>
   );
 }
