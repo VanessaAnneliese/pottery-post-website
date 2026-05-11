@@ -28,6 +28,8 @@ export default function Home() {
         </p>
       </section>
 
+      <QuoteBlock quote="What's made by hand is made twice — once in the mind, once in the world." />
+
       {/* Featured Gallery Preview */}
       <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-8">
@@ -56,8 +58,6 @@ export default function Home() {
         </p>
       </section>
 
-      <QuoteBlock quote="Clay remembers every touch." />
-
       {/* Directory CTA */}
       <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#5C3D2E" }}>
         <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#9E8572", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
@@ -78,6 +78,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <QuoteBlock quote="Clay remembers every touch." />
     </>
   );
 }

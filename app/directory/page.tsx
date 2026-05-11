@@ -319,7 +319,9 @@ export default function DirectoryPage() {
         </>
       )}
     </section>
-    <QuoteBlock quote="To center the clay is to center yourself." />
+    {selectedType === "guilds" && <QuoteBlock quote="Some things are shaped slowly, on purpose." />}
+    {selectedType === "potters" && <QuoteBlock quote="To center the clay is to center yourself." />}
+    {selectedType === "suppliers" && <QuoteBlock quote="What's made by hand is never truly ordinary." />}
     </>
   );
 }
