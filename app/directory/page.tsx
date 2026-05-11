@@ -87,13 +87,15 @@ function RegionBlock({
   code,
   guildsByProvince,
   pottersByProvince,
+  selectedType,
 }: {
   code: Country;
   guildsByProvince: ReturnType<typeof groupByProvince<Guild>>;
   pottersByProvince: ReturnType<typeof groupByProvince<Potter>>;
+  selectedType: "guilds" | "potters" | null;
 }) {
-  const regionGuilds = guildsByProvince.filter((g) => g.country === code);
-  const regionPotters = pottersByProvince.filter((p) => p.country === code);
+  const regionGuilds = selectedType === "potters" ? [] : guildsByProvince.filter((g) => g.country === code);
+  const regionPotters = selectedType === "guilds" ? [] : pottersByProvince.filter((p) => p.country === code);
   if (regionGuilds.length === 0 && regionPotters.length === 0) return null;
   return (
     <div>
@@ -117,42 +119,48 @@ function RegionBlock({
 }
 
 export default function DirectoryPage() {
-  const [selectedRegion, setSelectedRegion] = useState<Country | "all">("all");
+  const [selectedType, setSelectedType] = useState<"guilds" | "potters" | null>(null);
+  const [selectedRegion, setSelectedRegion] = useState<Country | null>(null);
   const [selectedProvince, setSelectedProvince] = useState<string | null>(null);
 
+  const isFullDirectory = selectedType === null && selectedRegion === null;
+
   const filteredGuilds = guilds
-    .filter((g) => selectedRegion === "all" || g.country === selectedRegion)
+    .filter((g) => !selectedRegion || g.country === selectedRegion)
     .filter((g) => !selectedProvince || g.province === selectedProvince);
 
   const filteredPotters = potters
-    .filter((p) => selectedRegion === "all" || p.country === selectedRegion)
+    .filter((p) => !selectedRegion || p.country === selectedRegion)
     .filter((p) => !selectedProvince || p.province === selectedProvince);
 
   const guildsByProvince = groupByProvince(filteredGuilds);
   const pottersByProvince = groupByProvince(filteredPotters);
 
-  const allItems = [...guilds, ...potters];
-  const provinces = Array.from(
-    new Set(
-      allItems
-        .filter((i) => selectedRegion === "all" || i.country === selectedRegion)
-        .map((i) => i.province)
-    )
-  ).sort();
+  const provinceSource = [
+    ...(selectedType !== "potters" ? guilds : []),
+    ...(selectedType !== "guilds" ? potters : []),
+  ].filter((i) => !selectedRegion || i.country === selectedRegion);
 
-  function handleRegionClick(c: Country) {
-    if (selectedRegion === c) {
-      setSelectedRegion("all");
-      setSelectedProvince(null);
-    } else {
-      setSelectedRegion(c);
-      setSelectedProvince(null);
-    }
+  const provinces = Array.from(new Set(provinceSource.map((i) => i.province))).sort();
+
+  function handleTypeClick(type: "guilds" | "potters") {
+    setSelectedType(selectedType === type ? null : type);
+    setSelectedProvince(null);
   }
 
-  function handleProvinceClick(p: string) {
-    setSelectedProvince(selectedProvince === p ? null : p);
+  function handleRegionClick(code: Country) {
+    setSelectedRegion(selectedRegion === code ? null : code);
+    setSelectedProvince(null);
   }
+
+  function handleFullDirectory() {
+    setSelectedType(null);
+    setSelectedRegion(null);
+    setSelectedProvince(null);
+  }
+
+  const showGuilds = selectedType !== "potters";
+  const showPotters = selectedType !== "guilds";
 
   return (
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
@@ -173,32 +181,43 @@ export default function DirectoryPage() {
         A potter&rsquo;s directory spanning three continents. Know a potter who should be here? Send them our way.
       </p>
 
-      {/* Region Navigation */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        <NavButton label="Full Directory" active={selectedRegion === "all"} onClick={() => { setSelectedRegion("all"); setSelectedProvince(null); }} />
+      {/* Row 1: Full Directory */}
+      <div className="mb-3">
+        <NavButton label="Full Directory" active={isFullDirectory} onClick={handleFullDirectory} />
+      </div>
+
+      {/* Row 2: Type filter */}
+      <div className="flex flex-wrap gap-2 mb-3">
+        <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
+        <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
+      </div>
+
+      {/* Row 3: Region filter */}
+      <div className="flex flex-wrap gap-2 mb-4 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
         {REGIONS.map(({ code, label }) => (
           <NavButton key={code} label={label} active={selectedRegion === code} onClick={() => handleRegionClick(code)} />
         ))}
       </div>
 
-      {/* Province / State / Country Sub-Navigation */}
-      {selectedRegion !== "all" && (
-        <div className="flex flex-wrap gap-2 mb-12 pt-4 border-t" style={{ borderColor: "#E8D5B7" }}>
+      {/* Province sub-nav — shown when a region is selected */}
+      {selectedRegion && provinces.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-12 pt-2">
           {provinces.map((p) => (
             <NavButton
               key={p}
               label={p}
               active={selectedProvince === p}
-              onClick={() => handleProvinceClick(p)}
+              onClick={() => setSelectedProvince(selectedProvince === p ? null : p)}
             />
           ))}
         </div>
       )}
 
-      {selectedRegion === "all" && <div className="mb-12" />}
+      {(!selectedRegion || provinces.length === 0) && <div className="mb-8" />}
 
-      {/* Full Directory view — grouped by region then province */}
-      {selectedRegion === "all" ? (
+      {/* Content */}
+      {isFullDirectory || !selectedRegion ? (
+        // Full directory or type-only filter: group by region
         <>
           {REGIONS.map(({ code }) => (
             <RegionBlock
@@ -206,13 +225,14 @@ export default function DirectoryPage() {
               code={code}
               guildsByProvince={guildsByProvince}
               pottersByProvince={pottersByProvince}
+              selectedType={selectedType}
             />
           ))}
         </>
       ) : (
+        // Region selected: show guilds then potters with section headings
         <>
-          {/* Guilds */}
-          {guildsByProvince.length > 0 && (
+          {showGuilds && guildsByProvince.length > 0 && (
             <>
               <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Guilds</h2>
               {guildsByProvince.map(({ province, country, items }) => (
@@ -223,9 +243,7 @@ export default function DirectoryPage() {
               ))}
             </>
           )}
-
-          {/* Potters */}
-          {pottersByProvince.length > 0 && (
+          {showPotters && pottersByProvince.length > 0 && (
             <>
               <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters</h2>
               {pottersByProvince.map(({ province, country, items }) => (
@@ -236,9 +254,8 @@ export default function DirectoryPage() {
               ))}
             </>
           )}
-
-          {guildsByProvince.length === 0 && pottersByProvince.length === 0 && (
-            <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No listings yet for this region.</p>
+          {(!showGuilds || guildsByProvince.length === 0) && (!showPotters || pottersByProvince.length === 0) && (
+            <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No listings yet for this selection.</p>
           )}
         </>
       )}
