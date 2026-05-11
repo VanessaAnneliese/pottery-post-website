@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { guilds, potters, suppliers, groupByProvince, type Guild, type Potter, type Supplier, type Country } from "@/lib/directory-data";
+import QuoteBlock from "@/components/QuoteBlock";
 
 const REGIONS: { code: Country; label: string }[] = [
   { code: "CA", label: "Canada" },
@@ -198,6 +199,7 @@ export default function DirectoryPage() {
   const showSuppliers = selectedType !== "guilds" && selectedType !== "potters";
 
   return (
+    <>
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Worldwide
@@ -317,5 +319,7 @@ export default function DirectoryPage() {
         </>
       )}
     </section>
+    <QuoteBlock quote="To center the clay is to center yourself." />
+    </>
   );
 }

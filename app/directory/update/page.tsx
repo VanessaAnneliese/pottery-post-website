@@ -1,7 +1,11 @@
 "use client";
 
+import QuoteBlock from "@/components/QuoteBlock";
+
 export default function UpdateListingPage() {
   return (
+    <>
+    <QuoteBlock quote="Clay listens when it&#39;s worked with love." />
     <section className="py-20 px-6 max-w-2xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         The Potter&rsquo;s Directory
@@ -115,5 +119,6 @@ export default function UpdateListingPage() {
         </button>
       </form>
     </section>
+    </>
   );
 }

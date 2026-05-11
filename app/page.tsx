@@ -1,4 +1,5 @@
 import Link from "next/link";
+import QuoteBlock from "@/components/QuoteBlock";
 
 function PlaceholderPiece({ label }: { label: string }) {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
           Because things made<br />with love deserve<br />to be celebrated.
         </h1>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
-          A directory of potters, guilds, and suppliers spanning three continents, and a gallery that celebrates the pieces they make.
+          A directory of potters, pottery guilds, and pottery supply stores spanning three continents, and a gallery that celebrates the pieces they make.
         </p>
       </section>
 
@@ -54,6 +55,8 @@ export default function Home() {
           The gallery rotates periodically. These pieces are not for sale. They are here to be celebrated!
         </p>
       </section>
+
+      <QuoteBlock quote="Clay remembers every touch." />
 
       {/* Directory CTA */}
       <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#5C3D2E" }}>

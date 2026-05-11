@@ -1,5 +1,8 @@
+import QuoteBlock from "@/components/QuoteBlock";
+
 export default function GalleryPage() {
   return (
+    <>
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured Collection
@@ -20,5 +23,7 @@ export default function GalleryPage() {
         ))}
       </div>
     </section>
+    <QuoteBlock quote="Fire decides what the hands began." />
+    </>
   );
 }
