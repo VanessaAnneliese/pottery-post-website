@@ -133,30 +133,6 @@ export default function GallerySubmitPage() {
           )}
         </div>
 
-        {/* Technique */}
-        <div className="flex flex-col gap-3">
-          <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-            Technique — select all that apply
-          </label>
-          <input type="hidden" name="techniques" value={[...techniques, ...(otherChecked && otherText ? [otherText] : [])].join(", ")} />
-          <div className="flex flex-wrap gap-2">
-            {TECHNIQUES.map((t) => (
-              <SelectPill key={t} label={t} selected={techniques.includes(t)} onClick={() => toggleTechnique(t)} />
-            ))}
-            <SelectPill label="Other" selected={otherChecked} onClick={() => { setOtherChecked((v) => !v); if (otherChecked) setOtherText(""); }} />
-          </div>
-          {otherChecked && (
-            <input
-              type="text"
-              placeholder="Please specify"
-              value={otherText}
-              onChange={(e) => setOtherText(e.target.value)}
-              className="border-b py-2 bg-transparent outline-none text-base mt-1"
-              style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
-            />
-          )}
-        </div>
-
         {/* Intent */}
         <div className="flex flex-col gap-3">
           <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
@@ -175,6 +151,30 @@ export default function GallerySubmitPage() {
               placeholder="Please specify"
               value={intentOtherText}
               onChange={(e) => setIntentOtherText(e.target.value)}
+              className="border-b py-2 bg-transparent outline-none text-base mt-1"
+              style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+            />
+          )}
+        </div>
+
+        {/* Technique */}
+        <div className="flex flex-col gap-3">
+          <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Technique — select all that apply
+          </label>
+          <input type="hidden" name="techniques" value={[...techniques, ...(otherChecked && otherText ? [otherText] : [])].join(", ")} />
+          <div className="flex flex-wrap gap-2">
+            {TECHNIQUES.map((t) => (
+              <SelectPill key={t} label={t} selected={techniques.includes(t)} onClick={() => toggleTechnique(t)} />
+            ))}
+            <SelectPill label="Other" selected={otherChecked} onClick={() => { setOtherChecked((v) => !v); if (otherChecked) setOtherText(""); }} />
+          </div>
+          {otherChecked && (
+            <input
+              type="text"
+              placeholder="Please specify"
+              value={otherText}
+              onChange={(e) => setOtherText(e.target.value)}
               className="border-b py-2 bg-transparent outline-none text-base mt-1"
               style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
             />
