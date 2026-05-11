@@ -94,6 +94,41 @@ export const guilds: Guild[] = [
     website: "https://www.durhampotters.com",
     bio: "Founded over 30 years ago for potters in the Durham Region. 26 active members ranging from emerging to highly experienced, with annual Spring and Christmas Show & Sales.",
   },
+  // Ontario (additional)
+  {
+    name: "Ottawa Guild of Potters",
+    city: "Ottawa",
+    province: "Ontario",
+    country: "CA",
+    website: "https://ottawaguildofpotters.ca",
+    bio: "A vibrant community of new, experienced, and professional potters in the Ottawa region, welcoming all skill levels.",
+  },
+  {
+    name: "Deep River Potters' Guild",
+    city: "Deep River",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.deepriverpottersguild.ca",
+    bio: "Celebrating over 70 years of fostering creativity and community spirit in the Ottawa Valley.",
+  },
+  // British Columbia (additional)
+  {
+    name: "Sea to Sky Potters' Guild",
+    city: "Squamish",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.s2spottersguild.ca",
+    bio: "A guild serving potters along the Sea to Sky corridor from West Vancouver to Whistler.",
+  },
+  // Nova Scotia
+  {
+    name: "Nova Scotia Potters Guild",
+    city: "Halifax",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://nspotters.com",
+    bio: "Celebrating and promoting the work of Nova Scotia's pottery community.",
+  },
   // Prince Edward Island
   {
     name: "PEI Potters Studio Co-op",
@@ -102,6 +137,33 @@ export const guilds: Guild[] = [
     country: "CA",
     website: "https://peipottersstudio.ca",
     bio: "A cooperative pottery studio in the heart of Charlottetown, open to beginner and experienced ceramic artists alike.",
+  },
+  // Connecticut
+  {
+    name: "Connecticut Clay Guild",
+    city: "Connecticut",
+    province: "Connecticut",
+    country: "US",
+    website: "https://www.ctclayguild.com",
+    bio: "Members include potters, sculptors, ceramic artists, studio owners, students, and educators from across Connecticut.",
+  },
+  // Colorado (additional)
+  {
+    name: "Northern Colorado Potters' Guild",
+    city: "Fort Collins",
+    province: "Colorado",
+    country: "US",
+    website: "https://www.nocopottersguild.org",
+    bio: "Founded in 2005, a welcoming community of over eighty functional, sculptural, and creative clay artists.",
+  },
+  // Tennessee
+  {
+    name: "Memphis Potters' Guild",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.thememphispottersguild.com",
+    bio: "Committed to increasing public appreciation of quality craftsmanship through teaching, demonstrating, and exhibiting across the Memphis community.",
   },
   // Oregon
   {
@@ -207,6 +269,15 @@ export const guilds: Guild[] = [
     website: "https://spokanepottersguild.org",
     bio: "A non-profit, volunteer-based organization founded in 1977.",
   },
+  // England (additional)
+  {
+    name: "London Potters",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://londonpotters.com",
+    bio: "Established in 1986, the only London-based society open to both professional and non-professional ceramicists, providing a platform for exchanging ideas.",
+  },
   // England
   {
     name: "Craft Potters Association",
@@ -296,6 +367,15 @@ export const guilds: Guild[] = [
     website: "https://www.ceramicartswa.asn.au",
     bio: "A not-for-profit organisation with over 120 WA ceramicists promoting handmade pottery and ceramic sculpture through exhibitions, workshops, and the biennial Members Selective Exhibition.",
   },
+  // Western Australia (additional)
+  {
+    name: "Perth Studio Potters",
+    city: "Perth",
+    province: "Western Australia",
+    country: "AU",
+    website: "http://www.perthstudiopotters.org.au",
+    bio: "A community of studio potters based in Perth, promoting handmade ceramics and ceramic arts across Western Australia.",
+  },
   // Queensland
   {
     name: "Ceramic Arts Queensland",
@@ -337,6 +417,142 @@ export const potters: Potter[] = [
     bio: "Korean-influenced handmade pottery blending Korean style with Canadian inspiration, made in Edmonton.",
   },
   // British Columbia
+  {
+    name: "Mike Allegretti",
+    studio: "Creek Clayworks",
+    city: "Roberts Creek",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://creekclayworks.ca",
+  },
+  {
+    name: "Zohra Bonnis",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.zohrabonnis.com",
+    bio: "A Canadian ceramic artist, curator, and founder of Z Gallery Arts in Vancouver whose practice is deeply rooted in tradition and guided by wabi-sabi philosophy.",
+  },
+  {
+    name: "Elaine Brewer-White",
+    city: "Langley",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://elainebrewerwhiteceramics.com",
+  },
+  {
+    name: "Sharon Bussard Grove",
+    city: "Sooke",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://sharonbussardgrove.ca",
+  },
+  {
+    name: "Francis Chan",
+    studio: "Potluck Ceramics",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://potluckceramics.com",
+  },
+  {
+    name: "Amy Li-Chuan Chang",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://amychangceramics.com",
+  },
+  {
+    name: "Larry Cohen",
+    city: "Cortes Island",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.larrycohenceramics.ca",
+  },
+  {
+    name: "Liz de Beer",
+    studio: "Klaywerk Studio",
+    city: "Gibsons",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.lizdebeer.com",
+  },
+  {
+    name: "Anthony Dunlop",
+    studio: "Antler Ceramics",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.antlerceramics.com",
+  },
+  {
+    name: "Connie Glover",
+    studio: "Connie Glover Pottery",
+    city: "Surrey",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.connieglover.com",
+  },
+  {
+    name: "Lance Hall",
+    studio: "Still Point Pottery",
+    city: "Slocan Valley",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.stillpointpottery.ca",
+  },
+  {
+    name: "Andrea Hoff",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.andreahoff.com",
+  },
+  {
+    name: "Pam Horner",
+    city: "Gibsons",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://potterybypam.ca",
+  },
+  {
+    name: "Robin Jenkins",
+    studio: "Robin's Nest Pottery",
+    city: "Tsawwassen",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.robinsnestpottery.com",
+  },
+  {
+    name: "Diane Walters",
+    studio: "eARTh Studios",
+    city: "Nelson",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://earthstudiosonline.com",
+  },
+  {
+    name: "Hillary Webb",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.hillarywebb.ca",
+  },
+  {
+    name: "Susan Whitham",
+    studio: "MiraSol Studio",
+    city: "Duncan",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.mirasolstudio.com",
+  },
+  {
+    name: "Clare Wilkening",
+    city: "Roberts Creek",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.clarewilkening.com",
+  },
   {
     name: "Kate Metten",
     studio: "Kate Metten Ceramics",
@@ -464,6 +680,38 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://paulacooley.com",
     bio: "Full-time ceramics artist with an active studio practice since 1999, creating both functional pottery and sculptural ceramics.",
+  },
+  // Tennessee
+  {
+    name: "Bryan Blankenship",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.bryanblankenship.com",
+  },
+  {
+    name: "April Dupuis",
+    studio: "The Potter's Hands Studio",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.thepottershandsstudio.com",
+  },
+  {
+    name: "Angela Kilpatrick",
+    studio: "Willowberry Studio",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.willowberrystudio.com",
+  },
+  {
+    name: "Amanda Kohr",
+    studio: "Combustion Ceramics",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://combustionceramics.com",
   },
   // Montana
   {
