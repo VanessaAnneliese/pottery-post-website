@@ -8,24 +8,51 @@ const PHOTO_MAX_MB = 10;
 const ASPECT_MIN = 0.85;
 const ASPECT_MAX = 1.15;
 
+const FORM_TYPES = ["Bowls", "Mugs & Cups", "Vases", "Plates & Platters", "Teapots", "Sculptural"];
+const TECHNIQUES = ["Wheel Thrown", "Hand Built", "Slip Cast", "Raku", "Wood Fired", "Soda Fired"];
+const INTENTS = ["Functional", "Decorative", "Sculptural"];
+
+function SelectPill({ label, selected, onClick }: { label: string; selected: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="px-4 py-1.5 text-xs tracking-widest uppercase rounded-sm transition-colors"
+      style={{
+        fontFamily: "system-ui, sans-serif",
+        background: selected ? "#5C3D2E" : "#E8D5B7",
+        color: selected ? "#F5F0E8" : "#5C3D2E",
+      }}
+    >
+      {label}
+    </button>
+  );
+}
+
 export default function GallerySubmitPage() {
   const [descCount, setDescCount] = useState(0);
   const [photoName, setPhotoName] = useState<string | null>(null);
   const [photoError, setPhotoError] = useState<string | null>(null);
+  const [formType, setFormType] = useState<string | null>(null);
+  const [techniques, setTechniques] = useState<string[]>([]);
+  const [otherChecked, setOtherChecked] = useState(false);
+  const [otherText, setOtherText] = useState("");
+  const [intent, setIntent] = useState<string | null>(null);
+
+  function toggleTechnique(t: string) {
+    setTechniques((prev) => prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]);
+  }
 
   function handlePhoto(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     setPhotoName(null);
     setPhotoError(null);
-
     if (!file) return;
-
     if (file.size > PHOTO_MAX_MB * 1024 * 1024) {
       setPhotoError(`File is too large. Please choose an image under ${PHOTO_MAX_MB}MB.`);
       e.target.value = "";
       return;
     }
-
     const url = URL.createObjectURL(file);
     const img = new Image();
     img.onload = () => {
@@ -56,7 +83,7 @@ export default function GallerySubmitPage() {
         All submissions are reviewed. Not every piece will be selected, but every one is considered with care.
       </p>
 
-      <form className="flex flex-col gap-6">
+      <form className="flex flex-col gap-8">
         {[
           { label: "Your Name", name: "name", type: "text" },
           { label: "Studio Name (optional)", name: "studio", type: "text" },
@@ -78,6 +105,57 @@ export default function GallerySubmitPage() {
           </div>
         ))}
 
+        {/* Form / Type */}
+        <div className="flex flex-col gap-3">
+          <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Form
+          </label>
+          <input type="hidden" name="formType" value={formType ?? ""} />
+          <div className="flex flex-wrap gap-2">
+            {FORM_TYPES.map((t) => (
+              <SelectPill key={t} label={t} selected={formType === t} onClick={() => setFormType(formType === t ? null : t)} />
+            ))}
+          </div>
+        </div>
+
+        {/* Technique */}
+        <div className="flex flex-col gap-3">
+          <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Technique — select all that apply
+          </label>
+          <input type="hidden" name="techniques" value={[...techniques, ...(otherChecked && otherText ? [otherText] : [])].join(", ")} />
+          <div className="flex flex-wrap gap-2">
+            {TECHNIQUES.map((t) => (
+              <SelectPill key={t} label={t} selected={techniques.includes(t)} onClick={() => toggleTechnique(t)} />
+            ))}
+            <SelectPill label="Other" selected={otherChecked} onClick={() => { setOtherChecked((v) => !v); if (otherChecked) setOtherText(""); }} />
+          </div>
+          {otherChecked && (
+            <input
+              type="text"
+              placeholder="Please specify"
+              value={otherText}
+              onChange={(e) => setOtherText(e.target.value)}
+              className="border-b py-2 bg-transparent outline-none text-base mt-1"
+              style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+            />
+          )}
+        </div>
+
+        {/* Intent */}
+        <div className="flex flex-col gap-3">
+          <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Intent
+          </label>
+          <input type="hidden" name="intent" value={intent ?? ""} />
+          <div className="flex flex-wrap gap-2">
+            {INTENTS.map((t) => (
+              <SelectPill key={t} label={t} selected={intent === t} onClick={() => setIntent(intent === t ? null : t)} />
+            ))}
+          </div>
+        </div>
+
+        {/* Description */}
         <div className="flex flex-col gap-2">
           <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             About This Piece
@@ -98,6 +176,7 @@ export default function GallerySubmitPage() {
           </p>
         </div>
 
+        {/* Photo */}
         <div className="flex flex-col gap-3">
           <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             Photograph of Your Piece
@@ -107,29 +186,19 @@ export default function GallerySubmitPage() {
           </p>
           <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             Choose Photo
-            <input
-              type="file"
-              name="photo"
-              accept="image/jpeg,image/png"
-              className="hidden"
-              onChange={handlePhoto}
-            />
+            <input type="file" name="photo" accept="image/jpeg,image/png" className="hidden" onChange={handlePhoto} />
           </label>
           {photoName && (
-            <p className="text-xs" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-              ✓ {photoName}
-            </p>
+            <p className="text-xs" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>✓ {photoName}</p>
           )}
           {photoError && (
-            <p className="text-xs" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
-              {photoError}
-            </p>
+            <p className="text-xs" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>{photoError}</p>
           )}
         </div>
 
         <button
           type="submit"
-          className="mt-4 px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm self-start"
+          className="mt-2 px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm self-start"
           style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
         >
           Submit for consideration
