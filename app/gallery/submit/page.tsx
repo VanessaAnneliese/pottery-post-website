@@ -34,10 +34,14 @@ export default function GallerySubmitPage() {
   const [photoName, setPhotoName] = useState<string | null>(null);
   const [photoError, setPhotoError] = useState<string | null>(null);
   const [formType, setFormType] = useState<string | null>(null);
+  const [formTypeOther, setFormTypeOther] = useState(false);
+  const [formTypeOtherText, setFormTypeOtherText] = useState("");
   const [techniques, setTechniques] = useState<string[]>([]);
   const [otherChecked, setOtherChecked] = useState(false);
   const [otherText, setOtherText] = useState("");
   const [intent, setIntent] = useState<string | null>(null);
+  const [intentOther, setIntentOther] = useState(false);
+  const [intentOtherText, setIntentOtherText] = useState("");
 
   function toggleTechnique(t: string) {
     setTechniques((prev) => prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]);
@@ -110,12 +114,23 @@ export default function GallerySubmitPage() {
           <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             Form
           </label>
-          <input type="hidden" name="formType" value={formType ?? ""} />
+          <input type="hidden" name="formType" value={formTypeOther ? formTypeOtherText : (formType ?? "")} />
           <div className="flex flex-wrap gap-2">
             {FORM_TYPES.map((t) => (
-              <SelectPill key={t} label={t} selected={formType === t} onClick={() => setFormType(formType === t ? null : t)} />
+              <SelectPill key={t} label={t} selected={formType === t && !formTypeOther} onClick={() => { setFormType(t); setFormTypeOther(false); setFormTypeOtherText(""); }} />
             ))}
+            <SelectPill label="Other" selected={formTypeOther} onClick={() => { setFormTypeOther((v) => !v); setFormType(null); setFormTypeOtherText(""); }} />
           </div>
+          {formTypeOther && (
+            <input
+              type="text"
+              placeholder="Please specify"
+              value={formTypeOtherText}
+              onChange={(e) => setFormTypeOtherText(e.target.value)}
+              className="border-b py-2 bg-transparent outline-none text-base mt-1"
+              style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+            />
+          )}
         </div>
 
         {/* Technique */}
@@ -147,12 +162,23 @@ export default function GallerySubmitPage() {
           <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             Intent
           </label>
-          <input type="hidden" name="intent" value={intent ?? ""} />
+          <input type="hidden" name="intent" value={intentOther ? intentOtherText : (intent ?? "")} />
           <div className="flex flex-wrap gap-2">
             {INTENTS.map((t) => (
-              <SelectPill key={t} label={t} selected={intent === t} onClick={() => setIntent(intent === t ? null : t)} />
+              <SelectPill key={t} label={t} selected={intent === t && !intentOther} onClick={() => { setIntent(t); setIntentOther(false); setIntentOtherText(""); }} />
             ))}
+            <SelectPill label="Other" selected={intentOther} onClick={() => { setIntentOther((v) => !v); setIntent(null); setIntentOtherText(""); }} />
           </div>
+          {intentOther && (
+            <input
+              type="text"
+              placeholder="Please specify"
+              value={intentOtherText}
+              onChange={(e) => setIntentOtherText(e.target.value)}
+              className="border-b py-2 bg-transparent outline-none text-base mt-1"
+              style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+            />
+          )}
         </div>
 
         {/* Description */}
