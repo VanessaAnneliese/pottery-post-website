@@ -224,7 +224,7 @@ export default function DirectoryPage() {
         </div>
       </div>
       <p className="mb-10 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        A potter&rsquo;s directory spanning three continents. Know a guild, potter, or supplier who should be here? Send them our way.
+        A potter&rsquo;s directory spanning three continents. Know a pottery guild, potter, or pottery supply shop who should be here? Send them our way.
       </p>
 
       {/* Row 1: Full Directory */}
@@ -236,7 +236,7 @@ export default function DirectoryPage() {
       <div className="flex flex-wrap gap-2 mb-4 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
-        <NavButton label="Supplies" active={selectedType === "suppliers"} onClick={() => handleTypeClick("suppliers")} />
+        <NavButton label="Supply Shops" active={selectedType === "suppliers"} onClick={() => handleTypeClick("suppliers")} />
       </div>
 
       {/* Row 3: Region filter */}
@@ -304,7 +304,7 @@ export default function DirectoryPage() {
           )}
           {showSuppliers && suppliersByProvince.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Supplies</h2>
+              <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Supply Shops</h2>
               {suppliersByProvince.map(({ province, country, items }) => (
                 <div key={province}>
                   <ProvinceSection province={province} country={country} />

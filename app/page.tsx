@@ -24,7 +24,7 @@ export default function Home() {
           Because things made<br />with love deserve<br />to be celebrated.
         </h1>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
-          A directory of potters, pottery guilds, and pottery supply stores spanning three continents, and a gallery that celebrates the pieces they make.
+          A directory of potters, pottery guilds, and pottery supply shops spanning three continents, and a gallery that celebrates the pieces they make.
         </p>
       </section>
 
@@ -67,7 +67,7 @@ export default function Home() {
           The Potter&rsquo;s Directory
         </h2>
         <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
-          A potter&rsquo;s directory spanning three continents, connecting potters, pottery guilds, pottery suppliers and the people who love pottery. Are you a pottery guild, potter, or pottery supplier? Add your name.
+          A potter&rsquo;s directory spanning three continents, connecting potters, pottery guilds, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, or pottery supplier? Add your name.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>
