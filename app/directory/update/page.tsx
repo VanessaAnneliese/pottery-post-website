@@ -1,8 +1,33 @@
 "use client";
 
+import { useState, useRef } from "react";
 import QuoteBlock from "@/components/QuoteBlock";
 
 export default function UpdateListingPage() {
+  const [photos, setPhotos] = useState<File[]>([]);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  function handlePhotos(e: React.ChangeEvent<HTMLInputElement>) {
+    const incoming = Array.from(e.target.files ?? []);
+    const combined = [...photos, ...incoming].slice(0, 3);
+    setPhotos(combined);
+    syncInput(combined);
+    e.target.value = "";
+  }
+
+  function removePhoto(index: number) {
+    const updated = photos.filter((_, i) => i !== index);
+    setPhotos(updated);
+    syncInput(updated);
+  }
+
+  function syncInput(files: File[]) {
+    if (!fileInputRef.current) return;
+    const dt = new DataTransfer();
+    files.forEach((f) => dt.items.add(f));
+    fileInputRef.current.files = dt.files;
+  }
+
   return (
     <>
     <QuoteBlock quote="Clay listens when it&#39;s worked with love." />
@@ -80,22 +105,39 @@ export default function UpdateListingPage() {
           <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
             JPG or PNG. These will appear as thumbnails on your directory listing.
           </p>
-          <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-            Choose Files
-            <input
-              type="file"
-              name="photos"
-              accept="image/jpeg,image/png"
-              multiple
-              className="hidden"
-              onChange={(e) => {
-                if (e.target.files && e.target.files.length > 3) {
-                  alert("Please select up to 3 images only.");
-                  e.target.value = "";
-                }
-              }}
-            />
-          </label>
+
+          {photos.length > 0 && (
+            <ul className="flex flex-col gap-2">
+              {photos.map((file, i) => (
+                <li key={i} className="flex items-center justify-between gap-4 text-sm py-1 border-b" style={{ borderColor: "#E8D5B7", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}>
+                  <span className="truncate">{file.name}</span>
+                  <button
+                    type="button"
+                    onClick={() => removePhoto(i)}
+                    className="text-xs tracking-widest uppercase shrink-0"
+                    style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}
+                  >
+                    Remove
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {photos.length < 3 && (
+            <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+              {photos.length === 0 ? "Choose Files" : "Add More"}
+              <input
+                ref={fileInputRef}
+                type="file"
+                name="photos"
+                accept="image/jpeg,image/png"
+                multiple
+                className="hidden"
+                onChange={handlePhotos}
+              />
+            </label>
+          )}
         </div>
 
         <div className="flex flex-col gap-2">
