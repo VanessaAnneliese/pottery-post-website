@@ -169,13 +169,22 @@ export default function DirectoryPage() {
       </p>
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4">
         <h1 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Potter&rsquo;s Directory</h1>
-        <Link
-          href="/directory/submit"
-          className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm self-start sm:self-auto"
-          style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
-        >
-          Add your listing
-        </Link>
+        <div className="flex flex-wrap gap-2 self-start sm:self-auto">
+          <Link
+            href="/directory/submit"
+            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm"
+            style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+          >
+            Add your listing
+          </Link>
+          <Link
+            href="/directory/update"
+            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm"
+            style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}
+          >
+            Update your listing
+          </Link>
+        </div>
       </div>
       <p className="mb-10 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         A potter&rsquo;s directory spanning three continents. Know a potter who should be here? Send them our way.
