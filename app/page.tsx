@@ -24,7 +24,7 @@ export default function Home() {
           Because things made<br />with love deserve<br />to be celebrated.
         </h1>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
-          A directory of potters, pottery guilds, and pottery supply shops spanning three continents, and a gallery that celebrates the pieces they make.
+          A directory of potters, pottery guilds, potter classes, and pottery supply shops spanning three continents, and a gallery that celebrates the pieces potters make.
         </p>
       </section>
 

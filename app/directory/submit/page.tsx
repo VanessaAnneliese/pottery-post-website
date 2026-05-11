@@ -52,6 +52,19 @@ export default function SubmitPage() {
             style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
           />
         </div>
+        <div className="flex items-center gap-3">
+          <input
+            type="checkbox"
+            name="offersClasses"
+            id="offersClasses"
+            value="yes"
+            className="w-4 h-4 accent-[#5C3D2E]"
+          />
+          <label htmlFor="offersClasses" className="text-xs tracking-widest uppercase cursor-pointer" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            I offer pottery classes or workshops
+          </label>
+        </div>
+
         <div className="flex flex-col gap-3">
           <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             Photos of Your Work — optional, up to 3 images

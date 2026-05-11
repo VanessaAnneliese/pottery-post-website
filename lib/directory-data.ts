@@ -20,6 +20,17 @@ export type Potter = {
   website?: string;
   phone?: string;
   bio?: string;
+  offersClasses?: boolean;
+};
+
+export type TeachingStudio = {
+  name: string;
+  city: string;
+  province: string;
+  country: Country;
+  website?: string;
+  phone?: string;
+  bio?: string;
 };
 
 export type Supplier = {
@@ -1497,6 +1508,9 @@ export const suppliers: Supplier[] = [
     website: "https://northcotepottery.com",
     bio: "Melbourne's go-to ceramics supplier, carrying a wide range of clays, glazes, tools, and kilns.",
   },
+];
+
+export const teachingStudios: TeachingStudio[] = [
 ];
 
 export function groupByProvince<T extends { province: string; country: Country }>(

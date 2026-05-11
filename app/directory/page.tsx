@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { guilds, potters, suppliers, groupByProvince, type Guild, type Potter, type Supplier, type Country } from "@/lib/directory-data";
+import { guilds, potters, suppliers, teachingStudios, groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-data";
 import QuoteBlock from "@/components/QuoteBlock";
+
+type DirectoryType = "guilds" | "potters" | "suppliers" | "classes";
 
 const REGIONS: { code: Country; label: string }[] = [
   { code: "CA", label: "Canada" },
@@ -72,10 +74,30 @@ function PotterCard({ potter }: { potter: Potter }) {
           <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{potter.name}{potter.studio ? ` — ${potter.studio}` : ""}</p>
           {potter.guild && <p className="text-xs mt-0.5" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>{potter.guild}</p>}
           <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{potter.city}, {potter.province}</p>
+          {potter.offersClasses && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Offers Classes</p>}
           {potter.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{potter.bio}</p>}
         </div>
         {potter.website && (
           <a href={potter.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+            Website
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function TeachingStudioCard({ studio }: { studio: TeachingStudio }) {
+  return (
+    <div className="py-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{studio.name}</p>
+          <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{studio.city}, {studio.province}</p>
+          {studio.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{studio.bio}</p>}
+        </div>
+        {studio.website && (
+          <a href={studio.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -107,19 +129,28 @@ function RegionBlock({
   code,
   guildsByProvince,
   pottersByProvince,
+  classPottersByProvince,
+  teachingStudiosByProvince,
   suppliersByProvince,
   selectedType,
 }: {
   code: Country;
   guildsByProvince: ReturnType<typeof groupByProvince<Guild>>;
   pottersByProvince: ReturnType<typeof groupByProvince<Potter>>;
+  classPottersByProvince: ReturnType<typeof groupByProvince<Potter>>;
+  teachingStudiosByProvince: ReturnType<typeof groupByProvince<TeachingStudio>>;
   suppliersByProvince: ReturnType<typeof groupByProvince<Supplier>>;
-  selectedType: "guilds" | "potters" | "suppliers" | null;
+  selectedType: DirectoryType | null;
 }) {
-  const regionGuilds = selectedType === "potters" || selectedType === "suppliers" ? [] : guildsByProvince.filter((g) => g.country === code);
-  const regionPotters = selectedType === "guilds" || selectedType === "suppliers" ? [] : pottersByProvince.filter((p) => p.country === code);
-  const regionSuppliers = selectedType === "guilds" || selectedType === "potters" ? [] : suppliersByProvince.filter((s) => s.country === code);
-  if (regionGuilds.length === 0 && regionPotters.length === 0 && regionSuppliers.length === 0) return null;
+  const isClasses = selectedType === "classes";
+  const regionGuilds = (selectedType === "potters" || selectedType === "suppliers" || isClasses) ? [] : guildsByProvince.filter((g) => g.country === code);
+  const regionPotters = (selectedType === "guilds" || selectedType === "suppliers" || isClasses) ? [] : pottersByProvince.filter((p) => p.country === code);
+  const regionClassPotters = isClasses ? classPottersByProvince.filter((p) => p.country === code) : [];
+  const regionTeachingStudios = (selectedType === null || isClasses) ? teachingStudiosByProvince.filter((s) => s.country === code) : [];
+  const regionSuppliers = (selectedType === "guilds" || selectedType === "potters" || isClasses) ? [] : suppliersByProvince.filter((s) => s.country === code);
+
+  if (regionGuilds.length === 0 && regionPotters.length === 0 && regionClassPotters.length === 0 && regionTeachingStudios.length === 0 && regionSuppliers.length === 0) return null;
+
   return (
     <div>
       <h3 className="text-lg font-bold mt-10 mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
@@ -137,6 +168,23 @@ function RegionBlock({
           {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
         </div>
       ))}
+      {regionClassPotters.map(({ province, country, items }) => (
+        <div key={`class-potter-${province}`}>
+          <ProvinceSection province={province} country={country} />
+          {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+        </div>
+      ))}
+      {regionTeachingStudios.map(({ province, country, items }) => (
+        <div key={`studio-${province}`}>
+          {(regionGuilds.length > 0 || regionPotters.length > 0 || regionClassPotters.length > 0) && (
+            <ProvinceSection province={province} country={country} />
+          )}
+          {!(regionGuilds.length > 0 || regionPotters.length > 0 || regionClassPotters.length > 0) && (
+            <ProvinceSection province={province} country={country} />
+          )}
+          {items.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+        </div>
+      ))}
       {regionSuppliers.map(({ province, country, items }) => (
         <div key={province}>
           <ProvinceSection province={province} country={country} />
@@ -148,7 +196,7 @@ function RegionBlock({
 }
 
 export default function DirectoryPage() {
-  const [selectedType, setSelectedType] = useState<"guilds" | "potters" | "suppliers" | null>(null);
+  const [selectedType, setSelectedType] = useState<DirectoryType | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<Country | null>(null);
   const [selectedProvince, setSelectedProvince] = useState<string | null>(null);
 
@@ -162,23 +210,32 @@ export default function DirectoryPage() {
     .filter((p) => !selectedRegion || p.country === selectedRegion)
     .filter((p) => !selectedProvince || p.province === selectedProvince);
 
+  const filteredClassPotters = filteredPotters.filter((p) => p.offersClasses);
+
   const filteredSuppliers = suppliers
+    .filter((s) => !selectedRegion || s.country === selectedRegion)
+    .filter((s) => !selectedProvince || s.province === selectedProvince);
+
+  const filteredTeachingStudios = teachingStudios
     .filter((s) => !selectedRegion || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince);
 
   const guildsByProvince = groupByProvince(filteredGuilds);
   const pottersByProvince = groupByProvince(filteredPotters);
+  const classPottersByProvince = groupByProvince(filteredClassPotters);
   const suppliersByProvince = groupByProvince(filteredSuppliers);
+  const teachingStudiosByProvince = groupByProvince(filteredTeachingStudios);
 
   const provinceSource = [
-    ...(selectedType !== "potters" && selectedType !== "suppliers" ? guilds : []),
+    ...(selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes" ? guilds : []),
     ...(selectedType !== "guilds" && selectedType !== "suppliers" ? potters : []),
-    ...(selectedType !== "guilds" && selectedType !== "potters" ? suppliers : []),
+    ...(selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes" ? suppliers : []),
+    ...(selectedType === "classes" || selectedType === null ? teachingStudios : []),
   ].filter((i) => !selectedRegion || i.country === selectedRegion);
 
   const provinces = Array.from(new Set(provinceSource.map((i) => i.province))).sort();
 
-  function handleTypeClick(type: "guilds" | "potters" | "suppliers") {
+  function handleTypeClick(type: DirectoryType) {
     setSelectedType(selectedType === type ? null : type);
     setSelectedProvince(null);
   }
@@ -194,9 +251,10 @@ export default function DirectoryPage() {
     setSelectedProvince(null);
   }
 
-  const showGuilds = selectedType !== "potters" && selectedType !== "suppliers";
-  const showPotters = selectedType !== "guilds" && selectedType !== "suppliers";
-  const showSuppliers = selectedType !== "guilds" && selectedType !== "potters";
+  const showGuilds = selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes";
+  const showPotters = selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "classes";
+  const showSuppliers = selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes";
+  const showClasses = selectedType === "classes";
 
   return (
     <>
@@ -224,7 +282,7 @@ export default function DirectoryPage() {
         </div>
       </div>
       <p className="mb-10 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        A potter&rsquo;s directory spanning three continents. Know a pottery guild, potter, or pottery supply shop who should be here? Send them our way.
+        A potter&rsquo;s directory spanning three continents. Know a pottery guild, potter, pottery class, or pottery supply shop who should be here? Send them our way.
       </p>
 
       {/* Row 1: Full Directory */}
@@ -236,6 +294,7 @@ export default function DirectoryPage() {
       <div className="flex flex-wrap gap-2 mb-4 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
+        <NavButton label="Classes" active={selectedType === "classes"} onClick={() => handleTypeClick("classes")} />
         <NavButton label="Supply Shops" active={selectedType === "suppliers"} onClick={() => handleTypeClick("suppliers")} />
       </div>
 
@@ -246,7 +305,7 @@ export default function DirectoryPage() {
         ))}
       </div>
 
-      {/* Province sub-nav — shown when a region is selected */}
+      {/* Province sub-nav */}
       {selectedRegion && provinces.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-12 pt-2">
           {provinces.map((p) => (
@@ -264,7 +323,6 @@ export default function DirectoryPage() {
 
       {/* Content */}
       {isFullDirectory || !selectedRegion ? (
-        // Full directory or type-only filter: group by region
         <>
           {REGIONS.map(({ code }) => (
             <RegionBlock
@@ -272,13 +330,14 @@ export default function DirectoryPage() {
               code={code}
               guildsByProvince={guildsByProvince}
               pottersByProvince={pottersByProvince}
+              classPottersByProvince={classPottersByProvince}
+              teachingStudiosByProvince={teachingStudiosByProvince}
               suppliersByProvince={suppliersByProvince}
               selectedType={selectedType}
             />
           ))}
         </>
       ) : (
-        // Region selected: show guilds, potters, suppliers with section headings
         <>
           {showGuilds && guildsByProvince.length > 0 && (
             <>
@@ -302,6 +361,35 @@ export default function DirectoryPage() {
               ))}
             </>
           )}
+          {showClasses && (
+            <>
+              {classPottersByProvince.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters Offering Classes</h2>
+                  {classPottersByProvince.map(({ province, country, items }) => (
+                    <div key={province}>
+                      <ProvinceSection province={province} country={country} />
+                      {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+                    </div>
+                  ))}
+                </>
+              )}
+              {teachingStudiosByProvince.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Teaching Studios</h2>
+                  {teachingStudiosByProvince.map(({ province, country, items }) => (
+                    <div key={province}>
+                      <ProvinceSection province={province} country={country} />
+                      {items.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+                    </div>
+                  ))}
+                </>
+              )}
+              {classPottersByProvince.length === 0 && teachingStudiosByProvince.length === 0 && (
+                <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No classes listings yet for this selection.</p>
+              )}
+            </>
+          )}
           {showSuppliers && suppliersByProvince.length > 0 && (
             <>
               <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Supply Shops</h2>
@@ -313,7 +401,7 @@ export default function DirectoryPage() {
               ))}
             </>
           )}
-          {(!showGuilds || guildsByProvince.length === 0) && (!showPotters || pottersByProvince.length === 0) && (!showSuppliers || suppliersByProvince.length === 0) && (
+          {(!showGuilds || guildsByProvince.length === 0) && (!showPotters || pottersByProvince.length === 0) && !showClasses && (!showSuppliers || suppliersByProvince.length === 0) && (
             <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No listings yet for this selection.</p>
           )}
         </>
@@ -321,6 +409,7 @@ export default function DirectoryPage() {
     </section>
     {selectedType === "guilds" && <QuoteBlock quote="Some things are shaped slowly, on purpose." />}
     {selectedType === "potters" && <QuoteBlock quote="To center the clay is to center yourself." />}
+    {selectedType === "classes" && <QuoteBlock quote="Every piece carries a little of the maker's heart." />}
     {selectedType === "suppliers" && <QuoteBlock quote="What's made by hand is never truly ordinary." />}
     </>
   );
