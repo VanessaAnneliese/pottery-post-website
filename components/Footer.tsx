@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer style={{ background: "#3B2314", color: "#9E8572" }} className="py-10 px-6 mt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
-        <div className="text-center md:text-left">
-          <p className="font-bold uppercase text-xl md:text-2xl" style={{ color: "#E8D5B7", fontFamily: "Georgia, serif", letterSpacing: "0.386em" }}>
+        <div className="text-center md:text-left md:w-fit">
+          <p className="font-bold uppercase text-xl md:text-2xl whitespace-nowrap" style={{ color: "#E8D5B7", fontFamily: "Georgia, serif", letterSpacing: "0.386em" }}>
             The Pottery Post
           </p>
-          <p className="uppercase mt-1 tracking-[0.4em] md:tracking-[1.4em] md:[word-spacing:0.45em]" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
+          <p className="uppercase mt-1 tracking-[0.4em] md:w-full md:[text-align-last:justify]" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
             For Makers &amp; Admirers
           </p>
         </div>

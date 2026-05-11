@@ -11,11 +11,11 @@ export default function Nav() {
     <header style={{ background: "#5C3D2E" }} className="px-6">
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4 gap-6">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-tight shrink-0" style={{ color: "#F5F0E8", textDecoration: "none" }} onClick={() => setMenuOpen(false)}>
-          <span className="text-2xl md:text-3xl font-bold uppercase" style={{ fontFamily: "Georgia, serif", letterSpacing: "0.2em" }}>
+        <Link href="/" className="flex flex-col leading-tight shrink-0 md:w-fit" style={{ color: "#F5F0E8", textDecoration: "none" }} onClick={() => setMenuOpen(false)}>
+          <span className="text-2xl md:text-3xl font-bold uppercase whitespace-nowrap" style={{ fontFamily: "Georgia, serif", letterSpacing: "0.2em" }}>
             The Pottery Post
           </span>
-          <span className="uppercase text-center sm:text-left tracking-[0.4em] md:tracking-[1.5em] md:[word-spacing:0.5em]" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
+          <span className="uppercase text-center sm:text-left tracking-[0.4em] md:w-full md:[text-align-last:justify]" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
             For Makers &amp; Admirers
           </span>
         </Link>
