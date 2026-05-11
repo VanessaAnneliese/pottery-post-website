@@ -22,6 +22,16 @@ export type Potter = {
   bio?: string;
 };
 
+export type Supplier = {
+  name: string;
+  city: string;
+  province: string;
+  country: Country;
+  website?: string;
+  phone?: string;
+  bio?: string;
+};
+
 export const guilds: Guild[] = [
   // British Columbia
   {
@@ -1296,6 +1306,138 @@ export const potters: Potter[] = [
     country: "AU",
     website: "https://www.rowleydrysdale.com.au",
     bio: "One of Australia's foremost wood-firing potters, born in western Queensland, drawing on the Australian bush as central inspiration and internationally connected with potters in South Korea, Japan, and Finland.",
+  },
+];
+
+export const suppliers: Supplier[] = [
+  // British Columbia
+  {
+    name: "The Clay Warehouse",
+    city: "Port Coquitlam",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://theclaywarehouse.com",
+    bio: "Pottery supplies, wheels, kilns, and materials serving potters across BC.",
+  },
+  // Ontario
+  {
+    name: "PSH / Euclid's",
+    city: "Oakville",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.psh.ca",
+    bio: "One of Canada's largest pottery supply houses, carrying clay, glazes, tools, wheels, and kilns.",
+  },
+  {
+    name: "Amaranth Stoneware",
+    city: "Kingston",
+    province: "Ontario",
+    country: "CA",
+    website: "https://amaranthstoneware.com",
+    bio: "Supplies, raw materials, and equipment for studio potters in Eastern Ontario.",
+  },
+  // Manitoba
+  {
+    name: "Sounding Stone",
+    city: "Winnipeg",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://soundingstone.ca",
+    bio: "Pottery supplies and ceramics equipment serving Manitoba and the Prairie provinces.",
+  },
+  // Alberta
+  {
+    name: "Ceramics Canada",
+    city: "Lethbridge",
+    province: "Alberta",
+    country: "CA",
+    bio: "Ceramic supplies, kiln equipment, and raw materials for Alberta potters.",
+  },
+  // Washington
+  {
+    name: "Seattle Pottery Supply",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://seattlepotterysupply.com",
+    bio: "A Pacific Northwest institution stocking clay bodies, glazes, tools, and equipment since 1978.",
+  },
+  // Colorado
+  {
+    name: "Rocky Mountain Clay",
+    city: "Denver",
+    province: "Colorado",
+    country: "US",
+    website: "https://rockymountainclay.com",
+    bio: "Ceramic supplies and clay bodies for studio potters throughout the Rocky Mountain region.",
+  },
+  // England
+  {
+    name: "Bath Potters' Supplies",
+    city: "Bath",
+    province: "England",
+    country: "EU",
+    website: "https://www.bathpotters.co.uk",
+    bio: "A well-loved independent pottery supplier carrying clays, glazes, tools, and kilns.",
+  },
+  {
+    name: "Potclays",
+    city: "Stoke-on-Trent",
+    province: "England",
+    country: "EU",
+    website: "https://www.potclays.co.uk",
+    bio: "One of the UK's leading pottery suppliers, based in the heart of the Potteries.",
+  },
+  {
+    name: "Clayman Supplies",
+    city: "Horsham",
+    province: "England",
+    country: "EU",
+    website: "https://www.claymansupplies.co.uk",
+    bio: "Specialist pottery supplier offering clays, oxides, glazes, and kiln equipment across the UK.",
+  },
+  {
+    name: "Hot Clay",
+    city: "Somerset",
+    province: "England",
+    country: "EU",
+    website: "https://hotclay.co.uk",
+    bio: "Online pottery supplies and kilns shipped across the UK.",
+  },
+  // Queensland
+  {
+    name: "Pottery Supplies Online",
+    city: "Brisbane",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.potterysuppliesonline.com.au",
+    bio: "Australia's online ceramic supply store, shipping clay, glazes, and tools nationwide.",
+  },
+  {
+    name: "The Clay Shed",
+    city: "Sunshine Coast",
+    province: "Queensland",
+    country: "AU",
+    website: "https://theclayshed.com.au",
+    bio: "Queensland-based ceramic supplies and workshops for studio potters.",
+  },
+  // New South Wales
+  {
+    name: "Keane Ceramics",
+    city: "West Gosford",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://keaneceramics.com.au",
+    bio: "Supplying Australian potters with clays, glazes, and kiln equipment since 1980.",
+  },
+  // Victoria
+  {
+    name: "Northcote Pottery Supplies",
+    city: "Brunswick East",
+    province: "Victoria",
+    country: "AU",
+    website: "https://northcotepottery.com",
+    bio: "Melbourne's go-to ceramics supplier, carrying a wide range of clays, glazes, tools, and kilns.",
   },
 ];
 
