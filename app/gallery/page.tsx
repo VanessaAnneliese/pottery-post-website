@@ -27,26 +27,8 @@ export default function GalleryPage() {
 
     <QuoteBlock quote="Fire decides what the hands began." />
 
-    {/* The Archive */}
-    <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto border-b" style={{ borderColor: "#E8D5B7" }}>
-      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
-        Past Collections
-      </p>
-      <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Archive</h2>
-      <p className="mb-8 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of The Pottery Post.
-      </p>
-      <Link
-        href="/gallery/archive"
-        className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block"
-        style={{ background: "#5C3D2E", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
-      >
-        View past galleries
-      </Link>
-    </section>
-
     {/* Submit Your Work */}
-    <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto">
+    <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto border-b" style={{ borderColor: "#E8D5B7" }}>
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Open to Submissions
       </p>
@@ -60,6 +42,24 @@ export default function GalleryPage() {
         style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
       >
         Submit a piece
+      </Link>
+    </section>
+
+    {/* The Archive */}
+    <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto">
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        Past Collections
+      </p>
+      <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Archive</h2>
+      <p className="mb-8 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of The Pottery Post.
+      </p>
+      <Link
+        href="/gallery/archive"
+        className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block"
+        style={{ background: "#5C3D2E", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+      >
+        View past galleries
       </Link>
     </section>
     </>
