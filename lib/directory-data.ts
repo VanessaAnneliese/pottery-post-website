@@ -1511,6 +1511,288 @@ export const suppliers: Supplier[] = [
 ];
 
 export const teachingStudios: TeachingStudio[] = [
+  // Ontario
+  {
+    name: "Clay With Me",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://claywithme.ca",
+    bio: "Courses, workshops, and private events for all skill levels, from beginner drop-in sessions to multi-week programs. Over 10 years in operation.",
+  },
+  {
+    name: "Parkdale Pottery",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://parkdalepottery.ca",
+    bio: "Women-owned studio offering wheel throwing, handbuilding, and sculptural ceramics for beginners, kids, teens, and advanced students, plus private events.",
+  },
+  {
+    name: "Spin Pottery",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://spinpottery.com",
+    bio: "Woman-owned downtown Toronto studio offering pottery classes and open studio memberships for all skill levels.",
+  },
+  {
+    name: "The Pottery",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.thepottery.ca",
+    bio: "A studio, shop, and teaching space offering pottery lessons for adults and children in wheel throwing and handbuilding.",
+  },
+  {
+    name: "Hintonburg Pottery",
+    city: "Ottawa",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.hintonburgpottery.ca",
+    bio: "Ottawa's gathering place for pottery classes and workshops, offering beginner-to-intermediate wheel and handbuilding instruction for ages 12 and up.",
+  },
+  {
+    name: "Play With Clay",
+    city: "Cambridge",
+    province: "Ontario",
+    country: "CA",
+    website: "https://playwithclaygalt.com",
+    bio: "Pottery studio established in 2017 offering classes and workshops for all levels in the heart of Galt.",
+  },
+  // British Columbia
+  {
+    name: "Studio Fundamentals",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://studiofundamentals.com",
+    bio: "East Vancouver pottery studio offering beginner-friendly classes, multi-week courses, creative workshops, and studio memberships.",
+  },
+  {
+    name: "Vancouver Ceramics Studio",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.vancouverceramics.com",
+    bio: "Community ceramics studio in South Vancouver offering wheel throwing and handbuilding workshops, six-week courses, and studio memberships.",
+  },
+  {
+    name: "Community Clay",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.communityclay.ca",
+    bio: "Multi-week handbuilding pottery courses covering slab building, coiling, and sculpting for beginners and experienced artists alike.",
+  },
+  // Alberta
+  {
+    name: "Pottery123",
+    city: "Calgary",
+    province: "Alberta",
+    country: "CA",
+    website: "https://pottery123.com",
+    bio: "Fully equipped community pottery studio offering adult classes from beginner to advanced levels.",
+  },
+  // New York
+  {
+    name: "Greenwich House Pottery",
+    city: "New York",
+    province: "New York",
+    country: "US",
+    website: "https://greenwichhouse.org/pottery",
+    bio: "Founded in 1909, one of the oldest pottery schools in the US. Offers wheel throwing, handbuilding, mold making, and slipcasting across two Manhattan locations.",
+  },
+  // Pennsylvania
+  {
+    name: "The Clay Studio",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.theclaystudio.org",
+    bio: "One of the nation's most respected ceramics centres, offering classes, residencies, exhibitions, and education programs for all levels.",
+  },
+  // Illinois
+  {
+    name: "Lillstreet Art Center",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://lillstreet.com",
+    bio: "Founded in 1975, offering 5- and 10-week ceramics classes alongside six other art disciplines for students 18 and up.",
+  },
+  // Washington D.C.
+  {
+    name: "District Clay Center",
+    city: "Washington",
+    province: "District of Columbia",
+    country: "US",
+    website: "https://www.districtclaycenter.com",
+    bio: "The largest clay studio in the DC area with over 6,500 sq ft, offering 28+ weekly classes, artist residencies, a ceramic gallery, and community outreach programs.",
+  },
+  // California
+  {
+    name: "Berman Ceramic Arts",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://www.bermanceramicarts.com",
+    bio: "Established in 1972, the longest continuously operating studio in Los Angeles, offering wheel throwing, handbuilding, and contemporary sculpture classes.",
+  },
+  {
+    name: "American Museum of Ceramic Art Studio",
+    city: "Pomona",
+    province: "California",
+    country: "US",
+    website: "https://www.amoca.org",
+    bio: "Museum-based studio offering public ceramics classes alongside exhibition programming in Southern California.",
+  },
+  // Washington
+  {
+    name: "SPUN Clay Arts Studio",
+    city: "Tacoma",
+    province: "Washington",
+    country: "US",
+    website: "https://www.spuntacoma.com",
+    bio: "All-ages, full-service studio in operation since 2014 providing creative and affordable pottery and handbuilding classes for all levels.",
+  },
+  // Maine
+  {
+    name: "Portland Pottery",
+    city: "Portland",
+    province: "Maine",
+    country: "US",
+    website: "https://portlandpottery.com",
+    bio: "Established studio offering classes, workshops, and supplies in Maine and Massachusetts, with programs for all ages and skill levels.",
+  },
+  // England
+  {
+    name: "Turning Earth Ceramics",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://www.turningearth.org",
+    bio: "Pioneering open-access ceramics studios across three London locations, offering courses for all levels plus flexible studio membership — described as a gym membership for potters.",
+  },
+  // Scotland
+  {
+    name: "Edinburgh Ceramics Workshop",
+    city: "Edinburgh",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.edinburghceramicsworkshop.co.uk",
+    bio: "Open-practice studio and teaching space offering drop-in sessions, memberships, masterclasses, and beginner and intermediate pottery courses.",
+  },
+  {
+    name: "Clay Works Studios",
+    city: "Dumfries",
+    province: "Scotland",
+    country: "EU",
+    website: "https://clayworksstudios.co.uk",
+    bio: "Fully equipped teaching studio in rural southwest Scotland offering pottery courses for everyone from beginners to seasoned professionals.",
+  },
+  // France
+  {
+    name: "Ateliers Terre & Feu",
+    city: "Paris",
+    province: "France",
+    country: "EU",
+    website: "https://www.terre-et-feu.com",
+    bio: "Network of pottery studios across Paris and other French cities offering wheel throwing and ceramics courses at all levels.",
+  },
+  {
+    name: "Dodo Toucan",
+    city: "Paris",
+    province: "France",
+    country: "EU",
+    website: "https://dodo-toucan.com",
+    bio: "Paris ceramics studio offering trimester-based classes where students learn modelling, decoration, and glazing techniques in small groups.",
+  },
+  // Netherlands
+  {
+    name: "Art Ceramics Studio",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.artceramicsstudio.com",
+    bio: "Amsterdam studio offering ceramics, Raku, and plaster mould-making courses open to the public.",
+  },
+  {
+    name: "Hola Lola Studio",
+    city: "Utrecht",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.holalolastudio.com",
+    bio: "Utrecht pottery studio offering classes and workshops for all levels in a welcoming, contemporary setting.",
+  },
+  {
+    name: "Studio Timmerman",
+    city: "Rotterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://studiotimmerman.com",
+    bio: "Rotterdam-based ceramics studio inside a vibrant maker's building, offering handmade ceramics and pottery classes for beginners and beyond.",
+  },
+  // Italy
+  {
+    name: "La Meridiana",
+    city: "Certaldo",
+    province: "Italy",
+    country: "EU",
+    website: "https://lameridiana.fi.it",
+    bio: "Well-regarded ceramics school offering intensive residential workshops and courses in a historic Tuscan setting.",
+  },
+  // Queensland
+  {
+    name: "Clayschool Brisbane",
+    city: "Brisbane",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.clayschool.com.au",
+    bio: "Brisbane's longest-established pottery teaching studio, offering foundation courses and extended learning for beginners through to experienced artists.",
+  },
+  {
+    name: "Crockd Studios",
+    city: "Gold Coast",
+    province: "Queensland",
+    country: "AU",
+    website: "https://studios.crockd.com",
+    bio: "Pottery studios offering clay classes, beginner courses, and group events across multiple locations in New South Wales and Queensland.",
+  },
+  // Victoria
+  {
+    name: "Slow Clay Centre",
+    city: "Melbourne",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.slowclay.com",
+    bio: "Specialist ceramic education centre established in 2012, known for teaching Japanese production-throwing techniques. All teachers are practicing exhibiting artists.",
+  },
+  {
+    name: "Little Woods Studio",
+    city: "Melbourne",
+    province: "Victoria",
+    country: "AU",
+    website: "https://littlewoodsstudio.com.au",
+    bio: "Community pottery and art studio run by Jesuit Social Services, open to the public and offering workshops in an inclusive, not-for-profit setting.",
+  },
+  // New South Wales
+  {
+    name: "The Pottery Shed",
+    city: "Sydney",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://thepotteryshed.com.au",
+    bio: "Sydney's original dedicated pottery school, conceived in 2010, offering affordable wheel-throwing classes for adults and children.",
+  },
+  {
+    name: "ClayGround",
+    city: "Sydney",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.clayground.com.au",
+    bio: "Sydney's largest membership-focused eco-ceramic studio offering handbuilding and wheel-throwing courses, drop-in sessions, and firing services across two locations.",
+  },
 ];
 
 export function groupByProvince<T extends { province: string; country: Country }>(
