@@ -9,7 +9,7 @@ export default function Footer() {
             The Pottery Post
           </p>
           <p className="uppercase mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem", letterSpacing: "0.95em" }}>
-            Purely Made Goods
+            For Makers and Admirers
           </p>
         </div>
         <div className="flex flex-col items-center gap-3">
