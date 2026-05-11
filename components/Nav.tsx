@@ -25,8 +25,8 @@ export default function Nav() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
-            <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
-            <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">The Gallery</Link>
+            <Link href="/directory" className="hover:text-white transition-colors">The Directory</Link>
           </nav>
           <SearchForm />
         </div>
@@ -47,8 +47,8 @@ export default function Nav() {
       {menuOpen && (
         <div className="md:hidden border-t pb-6 pt-4" style={{ borderColor: "#4A3025" }}>
           <nav className="flex flex-col gap-5 text-sm tracking-widest uppercase mb-6" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
-            <Link href="/gallery" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>Gallery</Link>
-            <Link href="/directory" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>Directory</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>The Gallery</Link>
+            <Link href="/directory" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>The Directory</Link>
           </nav>
           <SearchForm />
         </div>

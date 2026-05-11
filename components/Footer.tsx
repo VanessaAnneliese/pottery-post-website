@@ -14,8 +14,8 @@ export default function Footer() {
         />
         <div className="flex flex-col items-center gap-3">
           <nav className="flex gap-6 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
-            <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
-            <Link href="/directory" className="hover:text-white transition-colors">Directory</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">The Gallery</Link>
+            <Link href="/directory" className="hover:text-white transition-colors">The Directory</Link>
           </nav>
           <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#7A6355" }}>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
