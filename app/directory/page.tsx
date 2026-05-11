@@ -231,7 +231,7 @@ export default function DirectoryPage() {
       </div>
 
       {/* Row 2: Type filter */}
-      <div className="flex flex-wrap gap-2 mb-3">
+      <div className="flex flex-wrap gap-2 mb-4 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
         <NavButton label="Supplies" active={selectedType === "suppliers"} onClick={() => handleTypeClick("suppliers")} />
