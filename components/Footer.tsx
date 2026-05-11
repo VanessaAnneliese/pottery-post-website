@@ -1,17 +1,17 @@
 import Link from "next/link";
+import LogoMark from "./LogoMark";
 
 export default function Footer() {
   return (
     <footer style={{ background: "#3B2314", color: "#9E8572" }} className="py-10 px-6 mt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
-        <div className="text-center md:text-left md:w-fit">
-          <p className="font-bold uppercase text-xl md:text-2xl whitespace-nowrap" style={{ color: "#E8D5B7", fontFamily: "Georgia, serif", letterSpacing: "0.386em" }}>
-            The Pottery Post
-          </p>
-          <p className="uppercase mt-1 tracking-[0.4em] md:w-full md:[text-align-last:justify]" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", fontSize: "0.8rem" }}>
-            For Makers &amp; Admirers
-          </p>
-        </div>
+        <LogoMark
+          logoColor="#E8D5B7"
+          tagColor="#9E8572"
+          logoClassName="text-xl md:text-2xl"
+          logoLetterSpacing="0.386em"
+          className="items-center md:items-start"
+        />
         <div className="flex flex-col items-center gap-3">
           <nav className="flex gap-6 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
             <Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link>
