@@ -170,7 +170,7 @@ export default function DirectoryPage() {
         </Link>
       </div>
       <p className="mb-10 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        A potter&rsquo;s directory spanning four continents. Know a potter who should be here? Send them our way.
+        A potter&rsquo;s directory spanning three continents. Know a potter who should be here? Send them our way.
       </p>
 
       {/* Region Navigation */}
