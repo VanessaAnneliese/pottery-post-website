@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Great_Vibes } from "next/font/google";
+import { Cormorant_Garamond, Parisienne } from "next/font/google";
 
 export const cormorant = Cormorant_Garamond({
   weight: ["400"],
@@ -7,7 +7,7 @@ export const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-export const greatVibes = Great_Vibes({
+export const parisienne = Parisienne({
   weight: ["400"],
   subsets: ["latin"],
   display: "swap",
