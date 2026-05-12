@@ -21,7 +21,7 @@ export default function Home() {
         <p className={`${parisienne.className} text-4xl md:text-[2.75rem] mb-6 leading-snug`} style={{ color: "#F5F0E8", opacity: 0.9 }}>
           Pottery<br className="md:hidden" /> Across Continents
         </p>
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-10" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
           <span className="md:hidden">Because things<br />made with love<br />deserve to be<br />easily found<br />and celebrated.</span>
           <span className="hidden md:inline">Because things made<br />with love deserve<br />to be easily found<br />and celebrated.</span>
         </h1>
