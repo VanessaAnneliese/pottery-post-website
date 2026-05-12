@@ -22,7 +22,7 @@ export default function Home() {
           Pottery<br className="md:hidden" /> Across Continents
         </p>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
-          Because things made<br />with love deserve<br />to be celebrated.
+          Because things made<br />with love deserve<br />to be easily found, and celebrated.
         </h1>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#F5F0E8", opacity: 0.85, fontFamily: "system-ui, sans-serif" }}>
           A directory of potters, pottery guilds, pottery classes, and pottery supply shops spanning three continents, and a gallery that celebrates the pieces potters make.
