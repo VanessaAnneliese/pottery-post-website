@@ -275,6 +275,7 @@ export default function DirectoryPage() {
     {selectedType === null && <QuoteBlock quote="Pottery asks nothing of you — and somehow gives you everything." />}
     {selectedType === "guilds" && <QuoteBlock quote="Some things are shaped slowly, on purpose." />}
     {selectedType === "potters" && <QuoteBlock quote="Clay listens when it's worked with love." />}
+    {selectedType === "classes" && <QuoteBlock quote="A pottery class teaches you two things: how to use your hands, and how to be patient with yourself." />}
     {selectedType === "suppliers" && <QuoteBlock quote="What's made by hand is never truly ordinary." />}
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
@@ -448,6 +449,7 @@ export default function DirectoryPage() {
       )}
     </section>
     {selectedType === "guilds" && <QuoteBlock quote="Every piece carries a little of the maker's heart." />}
+    {selectedType === "classes" && <QuoteBlock quote="Your hands know things your mind hasn't learned yet." />}
     {selectedType === "potters" && <QuoteBlock quote="To center the clay is to center yourself." />}
     {selectedType === "suppliers" && <QuoteBlock quote="Fire decides what the hands began." />}
     </>
