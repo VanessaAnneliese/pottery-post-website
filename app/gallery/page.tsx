@@ -10,6 +10,7 @@ export default function GalleryPage() {
         Featured Collection
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Gallery</h1>
+      <p className="mb-6 text-sm tracking-widest uppercase" style={{ color: "#C1440E", letterSpacing: "0.15em", fontFamily: "system-ui, sans-serif" }}>The first collection is being curated and will be live soon.</p>
       <p className="mb-4 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         Each piece here was made by hand, by someone who cares deeply about what they make. The collection rotates early Spring and Fall.
       </p>
