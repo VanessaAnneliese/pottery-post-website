@@ -1,5 +1,6 @@
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
+import { greatVibes } from "@/lib/fonts";
 
 function PlaceholderPiece({ label }: { label: string }) {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#D4622A" }}>
-        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#F5F0E8", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
-          Pottery<br className="sm:hidden" /> Across Continents
+        <p className={`${greatVibes.className} text-4xl mb-2`} style={{ color: "#F5F0E8", opacity: 0.9 }}>
+          Pottery Across Continents
         </p>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
           Because things made<br />with love deserve<br />to be celebrated.
@@ -64,7 +65,7 @@ export default function Home() {
           Canada &middot; United States &middot; Europe &middot; Australia
         </p>
         <h2 className="text-4xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif" }}>
-          The Pottery Directory
+          Pottery Directory
         </h2>
         <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
           A potter&rsquo;s directory spanning three continents, connecting potters, pottery guilds, places to take pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.

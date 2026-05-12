@@ -27,7 +27,7 @@ export default function TermsPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>The Pottery Directory</h2>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Pottery Directory</h2>
           <p>Directory listings are submitted by potters and guilds and are reviewed before publication. We reserve the right to decline, edit, or remove any listing at our discretion. By submitting a listing, you represent that the information provided is accurate and that you have the right to share it. You grant Pottery Post a non-exclusive, royalty-free licence to display your submitted information and images on the Site.</p>
         </div>
 

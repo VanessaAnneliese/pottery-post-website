@@ -9,8 +9,11 @@ export default function GalleryPage() {
         Featured Collection
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Gallery</h1>
-      <p className="mb-12 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Each piece here was made by hand, by someone who cares deeply about what they make. The collection rotates early Spring and Fall. None of these pieces are for sale from Pottery Post — to inquire about a piece, please reach out to the potter or studio directly.
+      <p className="mb-4 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+        Each piece here was made by hand, by someone who cares deeply about what they make. The collection rotates early Spring and Fall.
+      </p>
+      <p className="mb-12 max-w-lg text-sm italic" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+        Note: none of these pieces are for sale at Pottery Post, please contact potters for inquiries.
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {Array.from({ length: 6 }, (_, i) => (

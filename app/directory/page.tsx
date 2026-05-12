@@ -199,6 +199,7 @@ export default function DirectoryPage() {
   const [selectedType, setSelectedType] = useState<DirectoryType | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<Country | null>(null);
   const [selectedProvince, setSelectedProvince] = useState<string | null>(null);
+  const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
 
   const isFullDirectory = selectedType === null && selectedRegion === null;
 
@@ -220,11 +221,11 @@ export default function DirectoryPage() {
     .filter((s) => !selectedRegion || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince);
 
-  const guildsByProvince = groupByProvince(filteredGuilds);
-  const pottersByProvince = groupByProvince(filteredPotters);
-  const classPottersByProvince = groupByProvince(filteredClassPotters);
-  const suppliersByProvince = groupByProvince(filteredSuppliers);
-  const teachingStudiosByProvince = groupByProvince(filteredTeachingStudios);
+  const guildsByProvince = groupByProvince(letterFilter(filteredGuilds));
+  const pottersByProvince = groupByProvince(letterFilter(filteredPotters));
+  const classPottersByProvince = groupByProvince(letterFilter(filteredClassPotters));
+  const suppliersByProvince = groupByProvince(letterFilter(filteredSuppliers));
+  const teachingStudiosByProvince = groupByProvince(letterFilter(filteredTeachingStudios));
 
   const provinceSource = [
     ...(selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes" ? guilds : []),
@@ -238,23 +239,36 @@ export default function DirectoryPage() {
   function handleTypeClick(type: DirectoryType) {
     setSelectedType(selectedType === type ? null : type);
     setSelectedProvince(null);
+    setSelectedLetter(null);
   }
 
   function handleRegionClick(code: Country) {
     setSelectedRegion(selectedRegion === code ? null : code);
     setSelectedProvince(null);
+    setSelectedLetter(null);
   }
 
   function handleFullDirectory() {
     setSelectedType(null);
     setSelectedRegion(null);
     setSelectedProvince(null);
+    setSelectedLetter(null);
   }
 
   const showGuilds = selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes";
   const showPotters = selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "classes";
   const showSuppliers = selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes";
   const showClasses = selectedType === "classes";
+
+  const letterFilter = <T extends { name: string }>(items: T[]): T[] =>
+    selectedLetter ? items.filter((i) => i.name[0]?.toUpperCase() === selectedLetter) : items;
+
+  const availableLetters = new Set([
+    ...(showGuilds ? filteredGuilds : []),
+    ...(showPotters && !showClasses ? filteredPotters : []),
+    ...(showClasses ? [...filteredClassPotters, ...filteredTeachingStudios] : []),
+    ...(showSuppliers ? filteredSuppliers : []),
+  ].map((i) => i.name[0]?.toUpperCase()).filter(Boolean) as string[]);
 
   return (
     <>
@@ -263,7 +277,7 @@ export default function DirectoryPage() {
         Worldwide
       </p>
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4">
-        <h1 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Pottery Directory</h1>
+        <h1 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "Georgia, serif" }}>Pottery Directory</h1>
         <div className="flex flex-wrap gap-2 self-start sm:self-auto">
           <Link
             href="/directory/submit"
@@ -307,19 +321,42 @@ export default function DirectoryPage() {
 
       {/* Province sub-nav */}
       {selectedRegion && provinces.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-12 pt-2">
+        <div className="flex flex-wrap gap-2 mb-4 pt-2">
           {provinces.map((p) => (
             <NavButton
               key={p}
               label={p}
               active={selectedProvince === p}
-              onClick={() => setSelectedProvince(selectedProvince === p ? null : p)}
+              onClick={() => { setSelectedProvince(selectedProvince === p ? null : p); setSelectedLetter(null); }}
             />
           ))}
         </div>
       )}
 
-      {(!selectedRegion || provinces.length === 0) && <div className="mb-8" />}
+      {/* A–Z nav */}
+      <div className="flex flex-wrap gap-0.5 mb-10 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+        {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter) => {
+          const available = availableLetters.has(letter);
+          const active = selectedLetter === letter;
+          return (
+            <button
+              key={letter}
+              onClick={() => available && setSelectedLetter(active ? null : letter)}
+              className="w-7 h-7 text-xs font-bold rounded-sm transition-colors"
+              style={{
+                fontFamily: "system-ui, sans-serif",
+                background: active ? "#5C3D2E" : "transparent",
+                color: active ? "#F5F0E8" : available ? "#5C3D2E" : "#C9BAA8",
+                cursor: available ? "pointer" : "default",
+              }}
+            >
+              {letter}
+            </button>
+          );
+        })}
+      </div>
+
+      {(!selectedRegion || provinces.length === 0) && <div className="mb-2" />}
 
       {/* Content */}
       {isFullDirectory || !selectedRegion ? (
