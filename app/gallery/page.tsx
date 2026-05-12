@@ -4,6 +4,7 @@ import QuoteBlock from "@/components/QuoteBlock";
 export default function GalleryPage() {
   return (
     <>
+    <QuoteBlock quote="Some things don't need words. They just need to be seen." />
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured Collection
@@ -27,8 +28,6 @@ export default function GalleryPage() {
         ))}
       </div>
     </section>
-
-    <QuoteBlock quote="Some things don't need words. They just need to be seen." />
 
     {/* Submit Your Work */}
     <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto border-b" style={{ borderColor: "#E8D5B7" }}>
