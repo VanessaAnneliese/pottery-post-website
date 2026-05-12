@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      <QuoteBlock quote="What's made by hand is made twice — once in the mind, once in the world." />
+      <QuoteBlock quote="There are people who wake up every day and choose to make something beautiful with their hands. This is for them — and for everyone who loves them for it." />
     </>
   );
 }
