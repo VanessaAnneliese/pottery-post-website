@@ -1,8 +1,8 @@
 import { parisienne } from "@/lib/fonts";
 
-export default function QuoteBlock({ quote }: { quote: string }) {
+export default function QuoteBlock({ quote, className }: { quote: string; className?: string }) {
   return (
-    <section className="px-6 text-center flex flex-col items-center justify-center min-h-[400px]" style={{ background: "#EDE4D5" }}>
+    <section className={`px-6 text-center flex flex-col items-center justify-center min-h-[400px] ${className ?? ""}`} style={{ background: "#EDE4D5" }}>
       <p
         className={`${parisienne.className} text-4xl md:text-5xl max-w-3xl mx-auto leading-relaxed`}
         style={{ color: "#856E62" }}
