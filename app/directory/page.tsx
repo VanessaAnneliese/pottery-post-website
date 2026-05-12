@@ -221,6 +221,21 @@ export default function DirectoryPage() {
     .filter((s) => !selectedRegion || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince);
 
+  const showGuilds = selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes";
+  const showPotters = selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "classes";
+  const showSuppliers = selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes";
+  const showClasses = selectedType === "classes";
+
+  const letterFilter = <T extends { name: string }>(items: T[]): T[] =>
+    selectedLetter ? items.filter((i) => i.name[0]?.toUpperCase() === selectedLetter) : items;
+
+  const availableLetters = new Set([
+    ...(showGuilds ? filteredGuilds : []),
+    ...(showPotters && !showClasses ? filteredPotters : []),
+    ...(showClasses ? [...filteredClassPotters, ...filteredTeachingStudios] : []),
+    ...(showSuppliers ? filteredSuppliers : []),
+  ].map((i) => i.name[0]?.toUpperCase()).filter(Boolean) as string[]);
+
   const guildsByProvince = groupByProvince(letterFilter(filteredGuilds));
   const pottersByProvince = groupByProvince(letterFilter(filteredPotters));
   const classPottersByProvince = groupByProvince(letterFilter(filteredClassPotters));
@@ -254,21 +269,6 @@ export default function DirectoryPage() {
     setSelectedProvince(null);
     setSelectedLetter(null);
   }
-
-  const showGuilds = selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes";
-  const showPotters = selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "classes";
-  const showSuppliers = selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes";
-  const showClasses = selectedType === "classes";
-
-  const letterFilter = <T extends { name: string }>(items: T[]): T[] =>
-    selectedLetter ? items.filter((i) => i.name[0]?.toUpperCase() === selectedLetter) : items;
-
-  const availableLetters = new Set([
-    ...(showGuilds ? filteredGuilds : []),
-    ...(showPotters && !showClasses ? filteredPotters : []),
-    ...(showClasses ? [...filteredClassPotters, ...filteredTeachingStudios] : []),
-    ...(showSuppliers ? filteredSuppliers : []),
-  ].map((i) => i.name[0]?.toUpperCase()).filter(Boolean) as string[]);
 
   return (
     <>
