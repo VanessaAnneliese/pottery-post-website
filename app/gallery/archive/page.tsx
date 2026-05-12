@@ -10,7 +10,7 @@ export default function ArchivePage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Archive</h1>
       <p className="mb-16 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of The Pottery Post.
+        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of Pottery Post.
       </p>
       <div className="py-16 text-center border-t border-b" style={{ borderColor: "#E8D5B7" }}>
         <p className="text-lg font-bold mb-3" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>

@@ -8,7 +8,7 @@ export default function SubmitPage() {
     <QuoteBlock quote="Some things are shaped slowly, on purpose." />
     <section className="py-20 px-6 max-w-2xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
-        The Potter&rsquo;s Directory
+        The Pottery Directory
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Add Your Listing</h1>
       <p className="mb-10" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>

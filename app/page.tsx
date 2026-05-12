@@ -54,7 +54,7 @@ export default function Home() {
           <PlaceholderPiece label="Piece VIII" />
         </div>
         <p className="mt-6 text-sm text-center" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-          The gallery rotates early Spring and Fall. These pieces are not for sale by The Pottery Post. They are here to be celebrated!
+          The gallery rotates early Spring and Fall. These pieces are not for sale by Pottery Post. They are here to be celebrated!
         </p>
       </section>
 
@@ -64,10 +64,10 @@ export default function Home() {
           Canada &middot; United States &middot; Europe &middot; Australia
         </p>
         <h2 className="text-4xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif" }}>
-          The Potter&rsquo;s Directory
+          The Pottery Directory
         </h2>
         <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
-          A potter&rsquo;s directory spanning three continents, connecting potters, pottery guilds, places for pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.
+          A potter&rsquo;s directory spanning three continents, connecting potters, pottery guilds, places to take pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>

@@ -11,7 +11,7 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Agreement to Terms</h2>
-          <p>By accessing or using The Pottery Post website (the &ldquo;Site&rdquo;), you agree to be bound by these Terms of Use. The Pottery Post is operated from Whitby, Ontario, Canada, and these terms are governed by the laws of the Province of Ontario and the federal laws of Canada applicable therein. If you do not agree to these terms, please do not use this Site.</p>
+          <p>By accessing or using the Pottery Post website (the &ldquo;Site&rdquo;), you agree to be bound by these Terms of Use. Pottery Post is operated from Whitby, Ontario, Canada, and these terms are governed by the laws of the Province of Ontario and the federal laws of Canada applicable therein. If you do not agree to these terms, please do not use this Site.</p>
         </div>
 
         <div>
@@ -27,8 +27,8 @@ export default function TermsPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>The Potter&rsquo;s Directory</h2>
-          <p>Directory listings are submitted by potters and guilds and are reviewed before publication. We reserve the right to decline, edit, or remove any listing at our discretion. By submitting a listing, you represent that the information provided is accurate and that you have the right to share it. You grant The Pottery Post a non-exclusive, royalty-free licence to display your submitted information and images on the Site.</p>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>The Pottery Directory</h2>
+          <p>Directory listings are submitted by potters and guilds and are reviewed before publication. We reserve the right to decline, edit, or remove any listing at our discretion. By submitting a listing, you represent that the information provided is accurate and that you have the right to share it. You grant Pottery Post a non-exclusive, royalty-free licence to display your submitted information and images on the Site.</p>
         </div>
 
         <div>
@@ -38,7 +38,7 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Intellectual Property</h2>
-          <p>All content on this Site — including text, images, design, and the gallery collection — is owned by or licensed to The Pottery Post and is protected by Canadian copyright law. You may not reproduce, distribute, or use any content from this Site without prior written permission, except as permitted by law.</p>
+          <p>All content on this Site — including text, images, design, and the gallery collection — is owned by or licensed to Pottery Post and is protected by Canadian copyright law. You may not reproduce, distribute, or use any content from this Site without prior written permission, except as permitted by law.</p>
           <p className="mt-3">Gallery pieces are presented for appreciation only and are not for sale. Images of gallery pieces may not be reproduced without express permission.</p>
         </div>
 
@@ -49,7 +49,7 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Limitation of Liability</h2>
-          <p>To the maximum extent permitted by applicable law, The Pottery Post shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this Site or any products purchased through it.</p>
+          <p>To the maximum extent permitted by applicable law, Pottery Post shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this Site or any products purchased through it.</p>
         </div>
 
         <div>
@@ -60,7 +60,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Contact Us</h2>
           <p>If you have questions about these Terms of Use, please contact us at:</p>
-          <p className="mt-3"><strong>The Pottery Post</strong><br />Whitby, Ontario, Canada</p>
+          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada</p>
         </div>
 
       </div>

@@ -1422,14 +1422,23 @@ export const suppliers: Supplier[] = [
     website: "https://amaranthstoneware.com",
     bio: "Supplies, raw materials, and equipment for studio potters in Eastern Ontario.",
   },
-  // Washington
+  // Arizona
   {
-    name: "Seattle Pottery Supply",
-    city: "Seattle",
-    province: "Washington",
+    name: "Marjon Ceramics",
+    city: "Phoenix",
+    province: "Arizona",
     country: "US",
-    website: "https://seattlepotterysupply.com",
-    bio: "A Pacific Northwest institution stocking clay bodies, glazes, tools, and equipment since 1978.",
+    website: "https://www.marjonceramics.com",
+    bio: "Arizona's longest-running ceramics supply store, stocking clay bodies, glazes, tools, wheels, and kilns.",
+  },
+  // California
+  {
+    name: "Aardvark Clay & Supplies",
+    city: "Santa Ana",
+    province: "California",
+    country: "US",
+    website: "http://aardvarkclay.com",
+    bio: "A Southern California staple for studio potters, carrying clay bodies, glazes, tools, and equipment.",
   },
   // Colorado
   {
@@ -1439,6 +1448,243 @@ export const suppliers: Supplier[] = [
     country: "US",
     website: "https://rockymountainclay.com",
     bio: "Ceramic supplies and clay bodies for studio potters throughout the Rocky Mountain region.",
+  },
+  {
+    name: "Continental Clay Co.",
+    city: "Minneapolis",
+    province: "Minnesota",
+    country: "US",
+    website: "https://www.continentalclay.com",
+    bio: "Full-service ceramics supplier with a wide selection of clay, glazes, tools, and kilns, serving potters across the Midwest.",
+  },
+  // Florida
+  {
+    name: "Axner Pottery Supply",
+    city: "Oviedo",
+    province: "Florida",
+    country: "US",
+    website: "https://www.axner.com",
+    bio: "A comprehensive online pottery supplier based in Florida, stocking clay, glazes, tools, wheels, and kilns.",
+  },
+  {
+    name: "Highwater Clays of Florida",
+    city: "Clearwater",
+    province: "Florida",
+    country: "US",
+    website: "https://highwaterclays.com",
+    bio: "Florida outpost of Highwater Clays, carrying a broad range of clay bodies, glazes, and ceramic supplies.",
+  },
+  // Georgia
+  {
+    name: "Davens Ceramic Center",
+    city: "Atlanta",
+    province: "Georgia",
+    country: "US",
+    website: "https://www.davensceramiccenter.com",
+    bio: "Atlanta's go-to ceramics supplier since 1946, stocking clay, glazes, tools, equipment, and kilns.",
+  },
+  // Idaho
+  {
+    name: "The Potter's Center",
+    city: "Garden City",
+    province: "Idaho",
+    country: "US",
+    website: "https://thepotterscenter.com",
+    bio: "Idaho's pottery supply store and teaching space, offering clay, glazes, tools, and beginner-friendly classes.",
+  },
+  // Illinois
+  {
+    name: "Great Lakes Clay & Supply",
+    city: "Carpentersville",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.greatclay.com",
+    bio: "Midwest ceramic supplier stocking a wide range of clay bodies, glazes, tools, and kiln equipment.",
+  },
+  {
+    name: "Ceramic Supply Chicago",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://ceramic-supply-chicago.myshopify.com",
+    bio: "Chicago-based ceramics supply store carrying clay, glazes, tools, and accessories for studio potters.",
+  },
+  // Maryland
+  {
+    name: "Clayworks Supplies",
+    city: "Baltimore",
+    province: "Maryland",
+    country: "US",
+    website: "https://clayworkssupplies.com",
+    bio: "Baltimore ceramics supplier serving the Mid-Atlantic region with clay, glazes, tools, and equipment.",
+  },
+  // Massachusetts
+  {
+    name: "Sheffield Pottery",
+    city: "Sheffield",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.sheffield-pottery.com",
+    bio: "New England's full-service pottery supplier, stocking clay, glazes, wheels, kilns, and tools for all skill levels.",
+  },
+  // Michigan
+  {
+    name: "Rovin Ceramics",
+    city: "Ann Arbor",
+    province: "Michigan",
+    country: "US",
+    website: "https://rovinceramics.com",
+    bio: "Michigan-based ceramics supplier carrying clay bodies, glazes, oxides, and raw materials for studio potters.",
+  },
+  {
+    name: "Runyan Pottery Supply",
+    city: "Clio",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.runyanpotterysupply.com",
+    bio: "Michigan pottery supplier with a wide selection of clays, glazes, tools, and kiln equipment.",
+  },
+  // Minnesota
+  {
+    name: "Minnesota Clay Co.",
+    city: "Plymouth",
+    province: "Minnesota",
+    country: "US",
+    website: "https://www.mnclay.com",
+    bio: "Full-service pottery supply store serving Minnesota and the Upper Midwest with clay, glazes, tools, and kilns.",
+  },
+  // Mississippi
+  {
+    name: "Dogwood Ceramic Supply",
+    city: "Gulfport",
+    province: "Mississippi",
+    country: "US",
+    website: "https://www.dogwoodceramics.com",
+    bio: "Gulf Coast ceramics supplier stocking clay, glazes, tools, and equipment for studio potters.",
+  },
+  // New Mexico
+  {
+    name: "New Mexico Clay",
+    city: "Albuquerque",
+    province: "New Mexico",
+    country: "US",
+    website: "https://nmclay.com",
+    bio: "New Mexico's pottery supply store, carrying local and regional clay bodies, glazes, tools, and kiln equipment.",
+  },
+  // New York
+  {
+    name: "Bailey Pottery Equipment",
+    city: "Kingston",
+    province: "New York",
+    country: "US",
+    website: "https://www.baileypottery.com",
+    bio: "Manufacturer and supplier of pottery wheels, kilns, and studio equipment, serving potters across North America.",
+  },
+  // North Carolina
+  {
+    name: "Starworks Ceramics",
+    city: "Star",
+    province: "North Carolina",
+    country: "US",
+    website: "https://www.starworksnc.org/ceramics",
+    bio: "A North Carolina ceramics center offering supplies, studio space, and educational programs rooted in the region's clay traditions.",
+  },
+  // Ohio
+  {
+    name: "Columbus Clay Company",
+    city: "Columbus",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.columbusclay.com",
+    bio: "Ohio's full-service ceramics supplier, stocking clay bodies, glazes, tools, wheels, and kilns for all skill levels.",
+  },
+  // Oregon
+  {
+    name: "Georgie's Ceramic & Clay",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://www.georgies.com",
+    bio: "Portland's beloved ceramics supply store, carrying clay, glazes, tools, and studio equipment for over 40 years.",
+  },
+  // Pennsylvania
+  {
+    name: "The Ceramic Shop",
+    city: "Norristown",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.theceramicshop.com",
+    bio: "Philadelphia-area pottery supply store stocking a wide range of clay, glazes, tools, and kiln equipment.",
+  },
+  // South Carolina
+  {
+    name: "Clay King",
+    city: "Spartanburg",
+    province: "South Carolina",
+    country: "US",
+    website: "https://www.clay-king.com",
+    bio: "South Carolina ceramics supplier with an extensive selection of clay bodies, glazes, tools, wheels, and kilns.",
+  },
+  // Tennessee
+  {
+    name: "Mid-South Ceramic Supply",
+    city: "Nashville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://midsouthceramics.com",
+    bio: "Nashville's ceramics supply store, carrying clay, glazes, tools, and equipment for studio potters across the South.",
+  },
+  // Texas
+  {
+    name: "Armadillo Clay & Supplies",
+    city: "Austin",
+    province: "Texas",
+    country: "US",
+    website: "https://www.armadilloclay.com",
+    bio: "Austin's full-service ceramics supplier, stocking clay bodies, glazes, tools, wheels, and kilns.",
+  },
+  {
+    name: "Texas Pottery Supply & Clay Co.",
+    city: "Fort Worth",
+    province: "Texas",
+    country: "US",
+    website: "https://texaspottery.com",
+    bio: "Texas-based pottery supply company carrying clay, glazes, and equipment for studio potters statewide.",
+  },
+  {
+    name: "American Ceramic Supply Co.",
+    city: "Carrollton",
+    province: "Texas",
+    country: "US",
+    website: "https://americanceramics.com",
+    bio: "North Texas ceramics supplier with a broad selection of clay bodies, glazes, tools, and kiln equipment.",
+  },
+  // Utah
+  {
+    name: "Capital Ceramics",
+    city: "Salt Lake City",
+    province: "Utah",
+    country: "US",
+    website: "https://www.capitalceramics.com",
+    bio: "Utah's pottery supply store, carrying clay, glazes, tools, and kiln equipment for potters across the Intermountain West.",
+  },
+  // Washington
+  {
+    name: "Seattle Pottery Supply",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://seattlepotterysupply.com",
+    bio: "A Pacific Northwest institution stocking clay bodies, glazes, tools, and equipment since 1978.",
+  },
+  // Wisconsin
+  {
+    name: "The Potter's Shop",
+    city: "Waukesha",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.pottersshop.com",
+    bio: "Wisconsin ceramics supplier carrying clay, glazes, tools, and equipment for studio potters.",
   },
   // England
   {

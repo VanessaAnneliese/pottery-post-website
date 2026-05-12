@@ -10,7 +10,7 @@ export default function QuoteBlock({ quote }: { quote: string }) {
         {quote}
       </p>
       <p className="mt-8 text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
-        The Pottery Post
+        Pottery Post
       </p>
     </section>
   );

@@ -81,7 +81,7 @@ export default function GallerySubmitPage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Submit Your Work</h1>
       <p className="mb-2" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Send us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll reach out with a shipping deadline — each chosen piece comes to The Pottery Post for verification before it goes live.
+        Send us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll reach out with a shipping deadline — each chosen piece comes to Pottery Post for verification before it goes live.
       </p>
       <p className="mb-10 text-sm" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         All submissions are reviewed. Not every piece will be selected, but every one is considered with care.

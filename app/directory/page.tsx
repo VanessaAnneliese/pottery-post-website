@@ -263,7 +263,7 @@ export default function DirectoryPage() {
         Worldwide
       </p>
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4">
-        <h1 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Potter&rsquo;s Directory</h1>
+        <h1 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Pottery Directory</h1>
         <div className="flex flex-wrap gap-2 self-start sm:self-auto">
           <Link
             href="/directory/submit"

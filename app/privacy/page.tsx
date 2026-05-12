@@ -11,7 +11,7 @@ export default function PrivacyPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Overview</h2>
-          <p>The Pottery Post (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is operated from Whitby, Ontario, Canada. We are committed to protecting your personal information in accordance with the <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and applicable provincial privacy legislation.</p>
+          <p>Pottery Post (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is operated from Whitby, Ontario, Canada. We are committed to protecting your personal information in accordance with the <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and applicable provincial privacy legislation.</p>
         </div>
 
         <div>
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
           <p className="mb-3">We may collect the following types of personal information:</p>
           <ul className="list-disc pl-6 flex flex-col gap-2">
             <li><strong>Contact information</strong> — name, email address, phone number, and mailing address when you submit a directory listing, make a purchase, or contact us.</li>
-            <li><strong>Directory listing information</strong> — studio name, location, website, bio, and photos you voluntarily submit for inclusion in The Potter&rsquo;s Directory.</li>
+            <li><strong>Directory listing information</strong> — studio name, location, website, bio, and photos you voluntarily submit for inclusion in the Pottery Directory.</li>
             <li><strong>Transaction information</strong> — order details and payment information when you purchase from The Pottery Shop. Payment processing is handled by a third-party provider; we do not store full payment card details.</li>
             <li><strong>Usage information</strong> — pages visited, time spent on the site, and referring URLs, collected through cookies and analytics tools. See our Cookie Policy for details.</li>
           </ul>
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
           <p className="mb-3">We use the information we collect to:</p>
           <ul className="list-disc pl-6 flex flex-col gap-2">
             <li>Review, approve, and publish directory listing submissions</li>
-            <li>Process and fulfill orders from The Pottery Shop</li>
+            <li>Process and fulfill orders from the Pottery Shop</li>
             <li>Respond to inquiries and provide customer support</li>
             <li>Improve the website and understand how visitors use it</li>
             <li>Comply with legal obligations</li>
@@ -68,7 +68,7 @@ export default function PrivacyPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Contact Us</h2>
           <p>If you have questions or concerns about this Privacy Policy or our handling of your personal information, please contact us at:</p>
-          <p className="mt-3"><strong>The Pottery Post</strong><br />Whitby, Ontario, Canada</p>
+          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada</p>
         </div>
 
       </div>

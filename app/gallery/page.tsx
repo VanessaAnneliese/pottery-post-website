@@ -10,7 +10,7 @@ export default function GalleryPage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Gallery</h1>
       <p className="mb-12 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        A curated selection of pottery pieces, celebrated for their craft. The collection rotates early Spring and Fall. None of these pieces are for sale from The Pottery Post, please contact potters and studios for inquiries.
+        Each piece here was made by hand, by someone who cares deeply about what they make. The collection rotates early Spring and Fall. None of these pieces are for sale from Pottery Post — to inquire about a piece, please reach out to the potter or studio directly.
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {Array.from({ length: 6 }, (_, i) => (
@@ -34,7 +34,7 @@ export default function GalleryPage() {
       </p>
       <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Submit Your Work</h2>
       <p className="mb-8 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Each new collection is open to submissions. If you&rsquo;re a potter and would like your work considered, here&rsquo;s how it works: begin by sending us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll be in touch — chosen pieces are shipped to The Pottery Post by a set date, where each one is verified in person before it goes live. Because everything in this gallery is the real thing: made by hand, verified by eye.
+        Each new collection is open to submissions. If you&rsquo;re a potter and would like your work considered, here&rsquo;s how it works: begin by sending us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll be in touch — chosen pieces are shipped to Pottery Post by a set date, where each one is verified in person before it goes live. Because everything in this gallery is the real thing: made by hand, verified by eye.
       </p>
       <Link
         href="/gallery/submit"
@@ -52,7 +52,7 @@ export default function GalleryPage() {
       </p>
       <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Archive</h2>
       <p className="mb-8 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of The Pottery Post.
+        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of Pottery Post.
       </p>
       <Link
         href="/gallery/archive"

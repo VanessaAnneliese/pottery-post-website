@@ -24,11 +24,6 @@ export default function LogoMark({
       const tag = tagRef.current;
       if (!logo || !tag) return;
 
-      if (window.innerWidth < 768) {
-        tag.style.letterSpacing = "";
-        return;
-      }
-
       tag.style.letterSpacing = "0px";
       const extra = logo.getBoundingClientRect().width - tag.getBoundingClientRect().width;
       const chars = (tag.textContent ?? "").length;
@@ -47,7 +42,7 @@ export default function LogoMark({
         className={`${logoClassName} font-bold uppercase whitespace-nowrap`}
         style={{ fontFamily: "Georgia, serif", letterSpacing: logoLetterSpacing, color: logoColor }}
       >
-        The Pottery Post
+        Pottery Post
       </span>
       <span
         ref={tagRef}

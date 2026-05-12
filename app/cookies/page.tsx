@@ -11,7 +11,7 @@ export default function CookiesPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>What Are Cookies</h2>
-          <p>Cookies are small text files placed on your device when you visit a website. They help the site function properly, remember your preferences, and provide information about how the site is used. This policy explains how The Pottery Post uses cookies.</p>
+          <p>Cookies are small text files placed on your device when you visit a website. They help the site function properly, remember your preferences, and provide information about how the site is used. This policy explains how Pottery Post uses cookies.</p>
         </div>
 
         <div>
@@ -55,7 +55,7 @@ export default function CookiesPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Contact Us</h2>
           <p>If you have questions about our use of cookies, please contact us at:</p>
-          <p className="mt-3"><strong>The Pottery Post</strong><br />Whitby, Ontario, Canada</p>
+          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada</p>
         </div>
 
       </div>
