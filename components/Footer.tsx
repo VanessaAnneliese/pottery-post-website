@@ -3,7 +3,7 @@ import LogoMark from "./LogoMark";
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#3B2314", color: "#9E8572" }} className="py-10 px-6 mt-20">
+    <footer style={{ background: "#3B2314", color: "#9E8572" }} className="py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
         <Link href="/">
           <LogoMark
