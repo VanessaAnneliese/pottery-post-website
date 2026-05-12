@@ -28,7 +28,7 @@ export default function GalleryPage() {
       </div>
     </section>
 
-    <QuoteBlock quote="Fire decides what the hands began." />
+    <QuoteBlock quote="Some things don't need words. They just need to be seen." />
 
     {/* Submit Your Work */}
     <section className="py-16 md:py-20 px-6 max-w-4xl mx-auto border-b" style={{ borderColor: "#E8D5B7" }}>
@@ -65,6 +65,7 @@ export default function GalleryPage() {
         View past galleries
       </Link>
     </section>
+    <QuoteBlock quote="There is a quiet in beautiful pottery that settles something inside you." />
     </>
   );
 }

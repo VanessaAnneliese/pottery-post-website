@@ -355,9 +355,13 @@ export default function DirectoryPage() {
           );
         })}
       </div>
+    </section>
 
-      {(!selectedRegion || provinces.length === 0) && <div className="mb-2" />}
+    {selectedType === "guilds" && <QuoteBlock quote="Some things are shaped slowly, on purpose." />}
+    {selectedType === "potters" && <QuoteBlock quote="Clay listens when it's worked with love." />}
+    {selectedType === "suppliers" && <QuoteBlock quote="What's made by hand is never truly ordinary." />}
 
+    <section className="px-6 pb-12 md:pb-20 max-w-4xl mx-auto">
       {/* Content */}
       {isFullDirectory || !selectedRegion ? (
         <>
@@ -444,10 +448,8 @@ export default function DirectoryPage() {
         </>
       )}
     </section>
-    {selectedType === "guilds" && <QuoteBlock quote="Some things are shaped slowly, on purpose." />}
     {selectedType === "potters" && <QuoteBlock quote="To center the clay is to center yourself." />}
-    {selectedType === "classes" && <QuoteBlock quote="Every piece carries a little of the maker's heart." />}
-    {selectedType === "suppliers" && <QuoteBlock quote="What's made by hand is never truly ordinary." />}
+    {selectedType === "suppliers" && <QuoteBlock quote="Fire decides what the hands began." />}
     </>
   );
 }
