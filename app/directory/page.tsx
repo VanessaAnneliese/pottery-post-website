@@ -321,7 +321,7 @@ export default function DirectoryPage() {
 
       {/* Province sub-nav */}
       {selectedRegion && provinces.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-4 pt-2">
+        <div className="flex flex-wrap gap-2 mb-4 pb-4 pt-2 border-b" style={{ borderColor: "#E8D5B7" }}>
           {provinces.map((p) => (
             <NavButton
               key={p}
