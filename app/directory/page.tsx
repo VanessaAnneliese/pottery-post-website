@@ -276,7 +276,7 @@ export default function DirectoryPage() {
     {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." />}
     {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." />}
     {selectedType === "classes" && <QuoteBlock quote="A pottery class teaches you two things: how to use your hands, and how to be patient with yourself." />}
-    {selectedType === "suppliers" && <QuoteBlock quote="Every material a potter chooses is a quiet decision about what the work will become." />}
+    {selectedType === "suppliers" && <QuoteBlock quote="Behind every potter who makes something extraordinary is a supply shop who made it possible." />}
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Worldwide
