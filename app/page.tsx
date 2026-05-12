@@ -56,7 +56,7 @@ export default function Home() {
           <PlaceholderPiece label="Piece VIII" />
         </div>
         <p className="mt-6 text-sm text-center" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-          The gallery rotates early Spring and Fall. These pieces are not for sale by Pottery Post. They are here to be celebrated!
+          The Gallery rotates early Spring and Fall. These pieces are not for sale by Pottery Post. They are here to be celebrated!
         </p>
       </section>
 
