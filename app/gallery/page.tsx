@@ -55,7 +55,7 @@ export default function GalleryPage() {
       </p>
       <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Archive</h2>
       <p className="mb-8 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of Pottery Post.
+        Every past gallery will be preserved here, a growing record of the makers and pieces that have been part of Pottery Post.
       </p>
       <Link
         href="/gallery/archive"
