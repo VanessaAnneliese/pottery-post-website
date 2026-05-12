@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Pottery Post — For Makers and Admirers",
-  description: "A curated pottery gallery, potter's directory, and select resale collection. Based in Whitby, Ontario.",
+  description: "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia — and a gallery that celebrates the pieces they make.",
 };
 
 export default function RootLayout({
