@@ -18,7 +18,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#D4622A" }}>
-        <p className={`${parisienne.className} text-4xl md:text-[2.75rem] mb-6 leading-loose`} style={{ color: "#F5F0E8", opacity: 0.9 }}>
+        <p className={`${parisienne.className} text-4xl md:text-[2.75rem] mb-6 leading-snug`} style={{ color: "#F5F0E8", opacity: 0.9 }}>
           Pottery<br className="md:hidden" /> Across Continents
         </p>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
