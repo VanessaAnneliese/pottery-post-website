@@ -4,7 +4,7 @@ import QuoteBlock from "@/components/QuoteBlock";
 export default function GalleryPage() {
   return (
     <>
-    <QuoteBlock quote="Some things don't need words. They just need to be seen." />
+    <QuoteBlock quote="There is a quiet in beautiful pottery that settles something inside you." />
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured Collection
@@ -64,7 +64,7 @@ export default function GalleryPage() {
         View past galleries
       </Link>
     </section>
-    <QuoteBlock quote="There is a quiet in beautiful pottery that settles something inside you." />
+    <QuoteBlock quote="Some things don't need words. They just need to be seen." />
     </>
   );
 }
