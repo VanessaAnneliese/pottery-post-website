@@ -30,7 +30,7 @@ export default function Home() {
         </p>
       </section>
 
-      <QuoteBlock quote="What's made by hand is made twice — once in the mind, once in the world." />
+      <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." />
 
       {/* Featured Gallery Preview */}
       <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      <QuoteBlock quote="Clay remembers every touch." />
+      <QuoteBlock quote="What's made by hand is made twice — once in the mind, once in the world." />
     </>
   );
 }
