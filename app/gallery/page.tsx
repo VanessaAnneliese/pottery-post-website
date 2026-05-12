@@ -64,7 +64,7 @@ export default function GalleryPage() {
         View past galleries
       </Link>
     </section>
-    <QuoteBlock quote="Some things don't need words. They just need to be seen." />
+    <QuoteBlock quote="Well-made pottery stops you. You don't know why. You just can't look away." />
     </>
   );
 }
