@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
 
   const { error } = await resend.emails.send({
     from: "Pottery Post <directory@potterypost.ca>",
-    to: "directory@potterypost.ca",
+    to: "anneliesedesigns@gmail.com",
     replyTo: email,
     subject: `New Listing Submission — ${name}`,
     html,
