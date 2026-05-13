@@ -272,7 +272,7 @@ export default function DirectoryPage() {
 
   return (
     <>
-    {selectedType === null && <QuoteBlock quote="Pottery asks nothing of you — and somehow gives you everything." />}
+    {selectedType === null && <QuoteBlock quote="Surround yourself with pottery and you surround yourself with the tender love of the people who made it." />}
     {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." />}
     {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." />}
     {selectedType === "classes" && <QuoteBlock quote="There is a version of you that exists only when your hands are in clay. A pottery class is how you meet them." className="py-20 md:py-24" />}
