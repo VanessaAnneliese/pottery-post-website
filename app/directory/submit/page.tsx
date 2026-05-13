@@ -1,10 +1,46 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import QuoteBlock from "@/components/QuoteBlock";
 
+const MAX_PHOTOS = 2;
+const MAX_SIZE_MB = 2;
+const MAX_SIZE_BYTES = MAX_SIZE_MB * 1024 * 1024;
+
 export default function SubmitPage() {
+  const [photos, setPhotos] = useState<File[]>([]);
+  const [photoError, setPhotoError] = useState<string | null>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  function handlePhotos(e: React.ChangeEvent<HTMLInputElement>) {
+    const incoming = Array.from(e.target.files ?? []);
+    const oversized = incoming.filter((f) => f.size > MAX_SIZE_BYTES);
+    if (oversized.length > 0) {
+      setPhotoError(`Each photo must be under ${MAX_SIZE_MB}MB. Please choose a smaller file.`);
+      e.target.value = "";
+      return;
+    }
+    setPhotoError(null);
+    const combined = [...photos, ...incoming].slice(0, MAX_PHOTOS);
+    setPhotos(combined);
+    syncInput(combined);
+    e.target.value = "";
+  }
+
+  function removePhoto(index: number) {
+    const updated = photos.filter((_, i) => i !== index);
+    setPhotos(updated);
+    syncInput(updated);
+    setPhotoError(null);
+  }
+
+  function syncInput(files: File[]) {
+    if (!fileInputRef.current) return;
+    const dt = new DataTransfer();
+    files.forEach((f) => dt.items.add(f));
+    fileInputRef.current.files = dt.files;
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -80,11 +116,38 @@ export default function SubmitPage() {
             </label>
           </div>
 
-          <p className="text-sm" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-            To include photos of your work, email up to 3 JPG or PNG images to{" "}
-            <a href="mailto:directory@potterypost.ca" style={{ color: "#C1440E" }}>directory@potterypost.ca</a>{" "}
-            after submitting.
-          </p>
+          <div className="flex flex-col gap-3">
+            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+              Photos of Your Work — optional, up to 2 images
+            </label>
+            <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+              JPG or PNG, max 2MB each.
+            </p>
+
+            {photos.length > 0 && (
+              <ul className="flex flex-col gap-2">
+                {photos.map((file, i) => (
+                  <li key={i} className="flex items-center justify-between gap-4 text-sm py-1 border-b" style={{ borderColor: "#E8D5B7", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}>
+                    <span className="truncate">{file.name}</span>
+                    <button type="button" onClick={() => removePhoto(i)} className="text-xs tracking-widest uppercase shrink-0" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+                      Remove
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {photoError && (
+              <p className="text-xs" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>{photoError}</p>
+            )}
+
+            {photos.length < MAX_PHOTOS && (
+              <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+                {photos.length === 0 ? "Choose Photos" : "Add Another"}
+                <input ref={fileInputRef} type="file" name="photos" accept="image/jpeg,image/png" className="hidden" onChange={handlePhotos} />
+              </label>
+            )}
+          </div>
 
           {status === "error" && (
             <p className="text-sm" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>

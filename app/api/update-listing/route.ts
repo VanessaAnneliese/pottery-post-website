@@ -17,7 +17,15 @@ export async function POST(request: NextRequest) {
   const phone = data.get("phone") as string;
   const bio = data.get("bio") as string;
   const notes = data.get("notes") as string;
-  const photoNames = data.get("photoNames") as string | null;
+
+  const photoFiles = data.getAll("photos") as File[];
+  const validPhotos = photoFiles.filter((f) => f.size > 0);
+  const attachments = await Promise.all(
+    validPhotos.map(async (f) => ({
+      filename: f.name,
+      content: Buffer.from(await f.arrayBuffer()),
+    }))
+  );
 
   const html = `
     <h2>Directory Listing Update Request</h2>
@@ -33,7 +41,6 @@ export async function POST(request: NextRequest) {
       ${phone ? `<tr><td><strong>Phone</strong></td><td>${phone}</td></tr>` : ""}
       ${bio ? `<tr><td><strong>Bio</strong></td><td>${bio}</td></tr>` : ""}
       ${notes ? `<tr><td><strong>Notes</strong></td><td>${notes}</td></tr>` : ""}
-      ${photoNames ? `<tr><td><strong>Photos</strong></td><td>${photoNames} (to be emailed separately)</td></tr>` : ""}
     </table>
   `;
 
@@ -43,6 +50,7 @@ export async function POST(request: NextRequest) {
     replyTo: email,
     subject: `Listing Update Request — ${name}`,
     html,
+    attachments: attachments.length > 0 ? attachments : undefined,
   });
 
   if (error) {
