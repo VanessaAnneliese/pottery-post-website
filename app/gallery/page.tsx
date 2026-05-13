@@ -12,10 +12,10 @@ export default function GalleryPage() {
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Gallery</h1>
       <p className="mb-6 text-sm tracking-widest uppercase" style={{ color: "#C1440E", letterSpacing: "0.15em", fontFamily: "system-ui, sans-serif" }}>The first collection is being curated and will be live soon.</p>
       <p className="mb-4 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Each piece here was made by hand, by someone who cares deeply about what they make. The collection rotates early Spring and Fall.
+        Each piece here was made by hand, by someone who cares deeply about what they make. They were gathered with love. This first collection is the Founder&rsquo;s Collection. Future collections will rotate early Spring and Fall and via potter submissions.
       </p>
       <p className="mb-12 max-w-lg text-sm italic" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Note: none of these pieces are for sale at Pottery Post, please contact potters for inquiries.
+        Please note: none of these pieces are for sale at Pottery Post, please contact potters for inquiries.
       </p>
       <p className="text-xs tracking-widest uppercase mb-6" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
         Gathered with Love

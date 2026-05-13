@@ -41,7 +41,7 @@ export default function Home() {
             </p>
             <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, serif" }}>The Gallery</h2>
           </div>
-          <Link href="/gallery" className="text-sm tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/gallery" className="text-sm tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
             View all
           </Link>
         </div>

@@ -57,7 +57,7 @@ function GuildCard({ guild }: { guild: Guild }) {
           {guild.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{guild.bio}</p>}
         </div>
         {guild.website && (
-          <a href={guild.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+          <a href={guild.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -78,7 +78,7 @@ function PotterCard({ potter }: { potter: Potter }) {
           {potter.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{potter.bio}</p>}
         </div>
         {potter.website && (
-          <a href={potter.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+          <a href={potter.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -97,7 +97,7 @@ function TeachingStudioCard({ studio }: { studio: TeachingStudio }) {
           {studio.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{studio.bio}</p>}
         </div>
         {studio.website && (
-          <a href={studio.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+          <a href={studio.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -116,7 +116,7 @@ function SupplierCard({ supplier }: { supplier: Supplier }) {
           {supplier.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{supplier.bio}</p>}
         </div>
         {supplier.website && (
-          <a href={supplier.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+          <a href={supplier.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
