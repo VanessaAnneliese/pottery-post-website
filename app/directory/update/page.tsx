@@ -45,7 +45,10 @@ export default function UpdateListingPage() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
-    const res = await fetch("/api/update-listing", { method: "POST", body: new FormData(e.currentTarget) });
+    const formData = new FormData(e.currentTarget);
+    formData.delete("photos");
+    photos.forEach((f) => formData.append("photos", f));
+    const res = await fetch("/api/update-listing", { method: "POST", body: formData });
     setStatus(res.ok ? "success" : "error");
   }
 
@@ -168,7 +171,7 @@ export default function UpdateListingPage() {
             {photos.length < MAX_PHOTOS && (
               <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
                 {photos.length === 0 ? "Choose Photos" : "Add Another"}
-                <input ref={fileInputRef} type="file" name="photos" accept="image/jpeg,image/png" className="hidden" onChange={handlePhotos} />
+                <input ref={fileInputRef} type="file" name="photos" accept="image/jpeg,image/png" multiple className="hidden" onChange={handlePhotos} />
               </label>
             )}
           </div>
