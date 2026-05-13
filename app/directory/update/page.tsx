@@ -82,7 +82,8 @@ export default function UpdateListingPage() {
           {[
             { label: "Guild Name (optional)", name: "guild", type: "text" },
             { label: "Country", name: "country", type: "text" },
-            { label: "City & Region / Province / State", name: "location", type: "text" },
+            { label: "City", name: "city", type: "text" },
+          { label: "Region / Province / State", name: "region", type: "text" },
             { label: "Street Address (optional)", name: "address", type: "text" },
             { label: "Website (optional)", name: "website", type: "url" },
             { label: "Phone Number (optional)", name: "phone", type: "tel" },

@@ -9,7 +9,8 @@ export async function POST(request: NextRequest) {
   const name = data.get("name") as string;
   const guild = data.get("guild") as string;
   const country = data.get("country") as string;
-  const location = data.get("location") as string;
+  const city = data.get("city") as string;
+  const region = data.get("region") as string;
   const address = data.get("address") as string;
   const website = data.get("website") as string;
   const email = data.get("email") as string;
@@ -25,7 +26,8 @@ export async function POST(request: NextRequest) {
       <tr><td><strong>Name / Studio</strong></td><td>${name}</td></tr>
       ${guild ? `<tr><td><strong>Guild</strong></td><td>${guild}</td></tr>` : ""}
       <tr><td><strong>Country</strong></td><td>${country}</td></tr>
-      <tr><td><strong>City / Region</strong></td><td>${location}</td></tr>
+      <tr><td><strong>City</strong></td><td>${city}</td></tr>
+      <tr><td><strong>Region / Province / State</strong></td><td>${region}</td></tr>
       ${address ? `<tr><td><strong>Street Address</strong></td><td>${address}</td></tr>` : ""}
       ${website ? `<tr><td><strong>Website</strong></td><td><a href="${website}">${website}</a></td></tr>` : ""}
       <tr><td><strong>Email</strong></td><td>${email}</td></tr>
