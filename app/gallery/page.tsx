@@ -18,7 +18,7 @@ export default function GalleryPage() {
         Note: none of these pieces are for sale at Pottery Post, please contact potters for inquiries.
       </p>
       <p className="text-xs tracking-widest uppercase mb-6" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
-        Founder&rsquo;s Collection
+        From the Founder&rsquo;s Shelves
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {Array.from({ length: 6 }, (_, i) => (
