@@ -9,7 +9,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header style={{ background: "#5C3D2E" }} className="px-6">
+    <header style={{ background: "#D4622A" }} className="px-6">
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4 gap-6">
         {/* Logo */}
         <Link href="/" className="shrink-0" style={{ textDecoration: "none" }} onClick={() => setMenuOpen(false)}>
@@ -45,7 +45,7 @@ export default function Nav() {
 
       {/* Mobile menu dropdown */}
       {menuOpen && (
-        <div className="md:hidden border-t pb-6 pt-4" style={{ borderColor: "#4A3025" }}>
+        <div className="md:hidden border-t pb-6 pt-4" style={{ borderColor: "#C15520" }}>
           <nav className="flex flex-col gap-5 text-sm tracking-widest uppercase mb-6" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
             <Link href="/gallery" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>The Gallery</Link>
             <Link href="/directory" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>The Directory</Link>
