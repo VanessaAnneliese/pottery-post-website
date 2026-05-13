@@ -75,7 +75,7 @@ export default function SubmitPage() {
             { label: "City", name: "city", type: "text", required: true },
             { label: "Region / Province / State", name: "region", type: "text", required: true },
             { label: "Street Address (optional)", name: "address", type: "text", required: false },
-            { label: "Website (optional)", name: "website", type: "url", required: false },
+            { label: "Website (optional)", name: "website", type: "text", required: false },
             { label: "Email Address", name: "email", type: "email", required: true },
             { label: "Phone Number (optional)", name: "phone", type: "tel", required: false },
           ].map(({ label, name, type, required }) => (

@@ -96,7 +96,7 @@ export default function UpdateListingPage() {
             { label: "City", name: "city", type: "text" },
             { label: "Region / Province / State", name: "region", type: "text" },
             { label: "Street Address (optional)", name: "address", type: "text" },
-            { label: "Website (optional)", name: "website", type: "url" },
+            { label: "Website (optional)", name: "website", type: "text" },
             { label: "Phone Number (optional)", name: "phone", type: "tel" },
           ].map(({ label, name, type }) => (
             <div key={name} className="flex flex-col gap-2">
