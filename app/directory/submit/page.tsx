@@ -32,7 +32,14 @@ export default function SubmitPage() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
-    const formData = new FormData(e.currentTarget);
+    const raw = new FormData(e.currentTarget);
+    const formData = new FormData();
+    for (const [key, value] of raw.entries()) {
+      if (key !== "photos") formData.append(key, value);
+    }
+    if (photos.length > 0) {
+      formData.append("photoNames", photos.map((f) => f.name).join(", "));
+    }
     const res = await fetch("/api/submit-listing", { method: "POST", body: formData });
     setStatus(res.ok ? "success" : "error");
   }
@@ -113,7 +120,7 @@ export default function SubmitPage() {
               Photos of Your Work — optional, up to 3 images
             </label>
             <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-              JPG or PNG. These will appear as thumbnails on your directory listing.
+              JPG or PNG, up to 3 images. After submitting, please also email your photos to directory@potterypost.ca.
             </p>
 
             {photos.length > 0 && (
