@@ -301,7 +301,7 @@ export default function DirectoryPage() {
         </div>
       </div>
       <p className="mb-10 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        A potter&rsquo;s directory spanning three continents. Know a pottery guild, potter, pottery class, or pottery supply shop who should be here? Send them our way.
+        The Pottery Post&rsquo;s Pottery Directory spans three continents. Know a pottery guild, potter, pottery class, or pottery supply shop who should be here? Send them our way.
       </p>
 
       {/* Row 1: Full Directory */}
