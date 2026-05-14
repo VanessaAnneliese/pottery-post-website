@@ -9,7 +9,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header style={{ background: "#C9B99A" }} className="px-6">
+    <header style={{ background: "#C9B99A", maskImage: "linear-gradient(to bottom, black 60%, transparent)", WebkitMaskImage: "linear-gradient(to bottom, black 60%, transparent)" }} className="px-6">
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4 gap-6">
         {/* Logo */}
         <Link href="/" className="shrink-0" style={{ textDecoration: "none" }} onClick={() => setMenuOpen(false)}>
