@@ -16,7 +16,7 @@ export default function GalleryPage() {
         Each piece here was made by hand, by someone who cares deeply about what they make. They were gathered with love. This first collection is the Founder&rsquo;s Collection. Future collections will rotate early Spring and Fall and via potter submissions.
       </p>
       <p className="mb-12 max-w-lg text-sm italic" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Please note: none of these pieces are for sale at Pottery Post, please contact potters for inquiries.
+        Please note: none of these pieces are for sale at Pottery Post, where possible, please contact potters for inquiries.
       </p>
       <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "#D4622A", fontFamily: "Georgia, serif" }}>
         Gathered with Love
