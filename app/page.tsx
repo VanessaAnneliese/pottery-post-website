@@ -19,23 +19,27 @@ export default function Home() {
       <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="py-24 md:py-32" />
 
       {/* Directory CTA */}
-      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#C9B99A", maskImage: "linear-gradient(to bottom, transparent, black 35%, black 65%, transparent)", WebkitMaskImage: "linear-gradient(to bottom, transparent, black 35%, black 65%, transparent)" }}>
-        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
-          Canada &middot; United States &middot; Europe &middot; Australia
-        </p>
-        <h2 className="text-4xl font-bold mb-6" style={{ color: "#5C3D2E", fontFamily: "Georgia, serif" }}>
-          Pottery Directory
-        </h2>
-        <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-          A Pottery Directory spanning three continents, connecting potters, pottery guilds, places to take pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>
-            Browse the directory
-          </Link>
-          <Link href="/directory/submit" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#F5F0E8", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-            Add your listing
-          </Link>
+      <section className="relative py-16 md:py-24 px-6 text-center" style={{ background: "#C9B99A" }}>
+        <div className="absolute inset-x-0 top-0 h-32 pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8, transparent)", zIndex: 0 }} />
+        <div className="absolute inset-x-0 bottom-0 h-32 pointer-events-none" style={{ background: "linear-gradient(to top, #F5F0E8, transparent)", zIndex: 0 }} />
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
+            Canada &middot; United States &middot; Europe &middot; Australia
+          </p>
+          <h2 className="text-4xl font-bold mb-6" style={{ color: "#5C3D2E", fontFamily: "Georgia, serif" }}>
+            Pottery Directory
+          </h2>
+          <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            A Pottery Directory spanning three continents, connecting potters, pottery guilds, places to take pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>
+              Browse the directory
+            </Link>
+            <Link href="/directory/submit" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#F5F0E8", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+              Add your listing
+            </Link>
+          </div>
         </div>
       </section>
 
