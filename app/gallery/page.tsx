@@ -18,8 +18,8 @@ export default function GalleryPage() {
       <p className="mb-12 max-w-lg text-sm italic" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         Please note: none of these pieces are for sale at Pottery Post, please contact potters for inquiries.
       </p>
-      <p className={`${parisienne.className} text-3xl mb-6`} style={{ color: "#D4622A" }}>
-        Gathered with love ...
+      <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "#D4622A", fontFamily: "Georgia, serif" }}>
+        Gathered with Love
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {Array.from({ length: 6 }, (_, i) => (

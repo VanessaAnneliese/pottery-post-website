@@ -54,8 +54,8 @@ export default function Home() {
             View all
           </Link>
         </div>
-        <p className={`${parisienne.className} text-3xl mb-6`} style={{ color: "#D4622A" }}>
-          Gathered with love ...
+        <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "#D4622A", fontFamily: "Georgia, serif" }}>
+          Gathered with Love
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <PlaceholderPiece label="Piece I" />
