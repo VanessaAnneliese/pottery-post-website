@@ -72,7 +72,7 @@ export default function Home() {
           </Link>
         </div>
         <p className="mt-6 text-sm text-center" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-          The Pottery Gallery is a pottery collection that rotates early Spring and Fall. The pieces in the Pottery Gallery are not for sale by the Pottery Post. They are here to be celebrated!
+          The Pottery Gallery is a pottery collection that rotates early Spring and Fall.<span className="hidden md:inline"><br /></span>{" "}The pieces in the Pottery Gallery are not for sale by the Pottery Post. They are here to be celebrated!
         </p>
       </section>
 
