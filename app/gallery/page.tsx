@@ -64,7 +64,7 @@ export default function GalleryPage() {
       <Link
         href="/gallery/archive"
         className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block"
-        style={{ background: "#5C3D2E", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+        style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
       >
         View past galleries
       </Link>
