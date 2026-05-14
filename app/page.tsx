@@ -39,20 +39,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Hero */}
-      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#F5F0E8" }}>
-        <p className={`${parisienne.className} text-4xl md:text-[2.75rem] mb-6 leading-snug`} style={{ color: "#5C3D2E" }}>
-          Pottery<br className="md:hidden" /> Across Continents
-        </p>
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-10" style={{ color: "#5C3D2E", fontFamily: "Georgia, serif", lineHeight: 1.1 }}>
-          <span className="md:hidden">Because things<br />made with love<br />deserve to be<br />easily found<br />and celebrated.</span>
-          <span className="hidden md:inline">Because things made<br />with love deserve<br />to be easily found<br />and celebrated.</span>
-        </h1>
-        <p className="text-lg max-w-xl mx-auto" style={{ color: "#5C3D2E", opacity: 0.8, fontFamily: "system-ui, sans-serif" }}>
-          A directory of potters, pottery guilds, pottery classes, and pottery supply shops spanning three continents, and a gallery that celebrates the pieces potters make.
-        </p>
-      </section>
-
       {/* Featured Gallery Preview */}
       <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-8">
