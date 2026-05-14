@@ -47,19 +47,11 @@ export default function Home() {
 
       {/* Featured Gallery Preview */}
       <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
-        <div className="flex items-end justify-between mb-8">
-          <div>
-            <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
-              Featured
-            </p>
-            <h2 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Pottery Gallery</h2>
-            <Link href="/gallery" className="md:hidden mt-2 inline-block text-sm tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
-              View all
-            </Link>
-          </div>
-          <Link href="/gallery" className="hidden md:inline text-sm tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
-            View all
-          </Link>
+        <div className="mb-8">
+          <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+            Featured
+          </p>
+          <h2 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Pottery Gallery</h2>
         </div>
         <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "#5C3D2E", fontFamily: "Georgia, serif" }}>
           Gathered with Love
@@ -73,6 +65,11 @@ export default function Home() {
           <PlaceholderPiece label="Piece VI" />
           <PlaceholderPiece label="Piece VII" />
           <PlaceholderPiece label="Piece VIII" />
+        </div>
+        <div className="mt-6 text-center">
+          <Link href="/gallery" className="text-sm tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+            View all
+          </Link>
         </div>
         <p className="mt-6 text-sm text-center" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
           The Pottery Gallery is a pottery collection that rotates early Spring and Fall. The pieces in the Pottery Gallery are not for sale by the Pottery Post. They are here to be celebrated!
