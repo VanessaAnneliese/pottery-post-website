@@ -1,6 +1,7 @@
 import { parisienne } from "@/lib/fonts";
+import { ReactNode } from "react";
 
-export default function QuoteBlock({ quote, className }: { quote: string; className?: string }) {
+export default function QuoteBlock({ quote, className }: { quote: ReactNode; className?: string }) {
   return (
     <section className={`relative px-6 text-center flex flex-col items-center justify-center min-h-[400px] ${className ?? ""}`} style={{ background: "#EDE4D5" }}>
       <div className="absolute inset-x-0 top-0 h-48 md:h-72 pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8, transparent)", zIndex: 0 }} />
