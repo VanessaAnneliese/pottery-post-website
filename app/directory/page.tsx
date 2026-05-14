@@ -453,7 +453,7 @@ export default function DirectoryPage() {
     </section>
     {selectedType === "guilds" && <QuoteBlock quote="A guild is where individual voices learn to make something larger than themselves." />}
     {selectedType === "classes" && <QuoteBlock quote="No one picks up clay for the first time and walks away unchanged." />}
-    {selectedType === "potters" && <QuoteBlock quote="A potter's work outlives them. And so, quietly, does their love." />}
+    {selectedType === "potters" && <QuoteBlock quote="What's made by hand is made twice — once in the mind, once in the world." />}
     {selectedType === "suppliers" && <QuoteBlock quote="A supplier who understands pottery understands that what they offer will one day be held by a stranger, and loved." className="py-20 md:py-24" />}
     </>
   );

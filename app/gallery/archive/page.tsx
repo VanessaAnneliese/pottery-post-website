@@ -3,7 +3,7 @@ import QuoteBlock from "@/components/QuoteBlock";
 export default function ArchivePage() {
   return (
     <>
-    <QuoteBlock quote="What's made by hand is made twice — once in the mind, once in the world." />
+    <QuoteBlock quote="A potter's work outlives them. And so, quietly, does their love." />
     <section className="py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Past Collections
