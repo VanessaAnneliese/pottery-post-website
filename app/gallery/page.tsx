@@ -26,7 +26,7 @@ export default function GalleryPage() {
           <div
             key={i}
             className="flex items-center justify-center rounded-sm text-sm tracking-widest uppercase"
-            style={{ background: "#E8D5B7", color: "#9E8572", aspectRatio: "1 / 1", fontFamily: "system-ui, sans-serif" }}
+            style={{ background: "#FFFFFF", color: "#9E8572", aspectRatio: "1 / 1", fontFamily: "system-ui, sans-serif" }}
           >
             Piece {["I","II","III","IV","V","VI"][i]}
           </div>

@@ -6,7 +6,7 @@ function PlaceholderPiece({ label }: { label: string }) {
   return (
     <div
       className="flex items-center justify-center rounded-sm text-sm tracking-widest uppercase"
-      style={{ background: "#E8D5B7", color: "#9E8572", aspectRatio: "1 / 1", minHeight: "160px", fontFamily: "system-ui, sans-serif" }}
+      style={{ background: "#FFFFFF", color: "#9E8572", aspectRatio: "1 / 1", minHeight: "160px", fontFamily: "system-ui, sans-serif" }}
     >
       {label}
     </div>
