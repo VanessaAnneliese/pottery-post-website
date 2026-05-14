@@ -19,7 +19,7 @@ export default function Home() {
       <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="py-24 md:py-32" />
 
       {/* Directory CTA */}
-      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#C9B99A" }}>
+      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#C9B99A", maskImage: "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)", WebkitMaskImage: "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)" }}>
         <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
           Canada &middot; United States &middot; Europe &middot; Australia
         </p>
