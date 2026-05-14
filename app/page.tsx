@@ -39,6 +39,8 @@ export default function Home() {
         </div>
       </section>
 
+      <QuoteBlock quote="Because things made with love deserve to be easily found and celebrated." />
+
       {/* Featured Gallery Preview */}
       <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-8">
