@@ -7,10 +7,7 @@ export default function GalleryPage() {
     <>
     <QuoteBlock quote="There is a quiet in beautiful pottery that settles something inside you." />
     <section className="py-20 px-6 max-w-6xl mx-auto">
-      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
-        Featured Collection
-      </p>
-      <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>The Gallery</h1>
+      <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Featured Pottery Gallery</h1>
       <p className="mb-6 text-sm tracking-widest uppercase" style={{ color: "#C1440E", letterSpacing: "0.15em", fontFamily: "system-ui, sans-serif" }}>The first collection is being curated and will be live soon.</p>
       <p className="mb-4 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         Each piece here was made by hand, by someone who cares deeply about what they make. They were gathered with love. This first collection is the Founder&rsquo;s Collection. Future collections will rotate early Spring and Fall and via potter submissions.
