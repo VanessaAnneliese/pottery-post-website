@@ -25,8 +25,8 @@ export default function Nav() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-            <Link href="/gallery" className="hover:text-white transition-colors">The Gallery</Link>
-            <Link href="/directory" className="hover:text-white transition-colors">The Directory</Link>
+            <Link href="/directory" className="hover:text-white transition-colors">Pottery Directory</Link>
+            <Link href="/gallery" className="hover:text-white transition-colors">Pottery Gallery</Link>
           </nav>
           <SearchForm />
         </div>
