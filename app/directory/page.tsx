@@ -300,8 +300,11 @@ export default function DirectoryPage() {
           </Link>
         </div>
       </div>
-      <p className="mb-10 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+      <p className="mb-3 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         The Pottery Post&rsquo;s Pottery Directory spans three continents. Know a pottery guild, potter, pottery class, or pottery supply shop who should be here? Send them our way.
+      </p>
+      <p className="mb-10 max-w-lg text-sm italic" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+        Every addition and update is made by hand, by a real person &mdash; please allow up to 48 hours.
       </p>
 
       {/* Row 1: Full Directory */}
