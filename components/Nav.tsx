@@ -9,13 +9,13 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header style={{ background: "#D4622A" }} className="px-6">
+    <header style={{ background: "#CCC5AE" }} className="px-6">
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4 gap-6">
         {/* Logo */}
         <Link href="/" className="shrink-0" style={{ textDecoration: "none" }} onClick={() => setMenuOpen(false)}>
           <LogoMark
-            logoColor="#F5F0E8"
-            tagColor="#E8D5B7"
+            logoColor="#5C3D2E"
+            tagColor="#5C3D2E"
             logoClassName="text-2xl md:text-3xl"
             logoLetterSpacing="0.2em"
             className="items-start"
@@ -24,7 +24,7 @@ export default function Nav() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
+          <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             <Link href="/gallery" className="hover:text-white transition-colors">The Gallery</Link>
             <Link href="/directory" className="hover:text-white transition-colors">The Directory</Link>
           </nav>
@@ -37,16 +37,16 @@ export default function Nav() {
           onClick={() => setMenuOpen((o) => !o)}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
-          <span className="block w-6 h-0.5 transition-all" style={{ background: "#E8D5B7" }} />
-          <span className="block w-6 h-0.5 transition-all" style={{ background: "#E8D5B7" }} />
-          <span className="block w-6 h-0.5 transition-all" style={{ background: "#E8D5B7" }} />
+          <span className="block w-6 h-0.5 transition-all" style={{ background: "#5C3D2E" }} />
+          <span className="block w-6 h-0.5 transition-all" style={{ background: "#5C3D2E" }} />
+          <span className="block w-6 h-0.5 transition-all" style={{ background: "#5C3D2E" }} />
         </button>
       </div>
 
       {/* Mobile menu dropdown */}
       {menuOpen && (
         <div className="md:hidden border-t pb-6 pt-4" style={{ borderColor: "#C15520" }}>
-          <nav className="flex flex-col gap-5 text-sm tracking-widest uppercase mb-6" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
+          <nav className="flex flex-col gap-5 text-sm tracking-widest uppercase mb-6" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             <Link href="/gallery" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>The Gallery</Link>
             <Link href="/directory" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>The Directory</Link>
           </nav>

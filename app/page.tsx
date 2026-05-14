@@ -16,6 +16,29 @@ function PlaceholderPiece({ label }: { label: string }) {
 export default function Home() {
   return (
     <>
+      <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="py-24 md:py-32" />
+
+      {/* Directory CTA */}
+      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#5C3D2E" }}>
+        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#9E8572", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
+          Canada &middot; United States &middot; Europe &middot; Australia
+        </p>
+        <h2 className="text-4xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif" }}>
+          Pottery Directory
+        </h2>
+        <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
+          A potter&rsquo;s directory spanning three continents, connecting potters, pottery guilds, places to take pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>
+            Browse the directory
+          </Link>
+          <Link href="/directory/submit" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#F5F0E8", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            Add your listing
+          </Link>
+        </div>
+      </section>
+
       {/* Hero */}
       <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#F5F0E8" }}>
         <p className={`${parisienne.className} text-4xl md:text-[2.75rem] mb-6 leading-snug`} style={{ color: "#5C3D2E" }}>
@@ -29,8 +52,6 @@ export default function Home() {
           A directory of potters, pottery guilds, pottery classes, and pottery supply shops spanning three continents, and a gallery that celebrates the pieces potters make.
         </p>
       </section>
-
-      <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="py-24 md:py-32" />
 
       {/* Featured Gallery Preview */}
       <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
@@ -61,27 +82,6 @@ export default function Home() {
         <p className="mt-6 text-sm text-center" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
           The Gallery rotates early Spring and Fall. These pieces are not for sale by Pottery Post. They are here to be celebrated!
         </p>
-      </section>
-
-      {/* Directory CTA */}
-      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#5C3D2E" }}>
-        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#9E8572", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
-          Canada &middot; United States &middot; Europe &middot; Australia
-        </p>
-        <h2 className="text-4xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif" }}>
-          Pottery Directory
-        </h2>
-        <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
-          A potter&rsquo;s directory spanning three continents, connecting potters, pottery guilds, places to take pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>
-            Browse the directory
-          </Link>
-          <Link href="/directory/submit" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#F5F0E8", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-            Add your listing
-          </Link>
-        </div>
       </section>
 
       <QuoteBlock quote="Pottery asks nothing of the world except the chance to make something true." />
