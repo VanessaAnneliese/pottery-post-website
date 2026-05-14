@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </section>
 
-      <QuoteBlock quote="Things made with love deserve to be seen, shared, and celebrated." />
+      <QuoteBlock quote="Things made with love, by hand, deserve to be seen, shared, and celebrated." />
 
       {/* Featured Gallery Preview */}
       <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
