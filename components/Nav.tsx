@@ -45,7 +45,7 @@ export default function Nav() {
 
       {/* Mobile menu dropdown */}
       {menuOpen && (
-        <div className="md:hidden border-t pb-6 pt-4" style={{ borderColor: "#C15520" }}>
+        <div className="md:hidden border-t pb-6 pt-4" style={{ borderColor: "#FFFFFF" }}>
           <nav className="flex flex-col gap-5 text-sm tracking-widest uppercase mb-6" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
             <Link href="/gallery" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>The Gallery</Link>
             <Link href="/directory" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>The Directory</Link>
