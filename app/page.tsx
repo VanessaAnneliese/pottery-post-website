@@ -45,8 +45,8 @@ export default function Home() {
             View all
           </Link>
         </div>
-        <p className="text-xs tracking-widest uppercase mb-6" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
-          Gathered with Love
+        <p className={`${parisienne.className} text-3xl mb-6`} style={{ color: "#D4622A" }}>
+          Gathered with love ...
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <PlaceholderPiece label="Piece I" />
