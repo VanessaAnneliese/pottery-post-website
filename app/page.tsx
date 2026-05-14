@@ -49,10 +49,7 @@ export default function Home() {
       <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
-              Featured Collection
-            </p>
-            <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>The Gallery</h2>
+            <h2 className="text-3xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Featured Pottery Gallery</h2>
           </div>
           <Link href="/gallery" className="text-sm tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
             View all
