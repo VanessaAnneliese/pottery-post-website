@@ -19,14 +19,14 @@ export default function Home() {
       <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="py-24 md:py-32" />
 
       {/* Directory CTA */}
-      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#5C3D2E" }}>
-        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#9E8572", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
+      <section className="py-16 md:py-24 px-6 text-center" style={{ background: "#C9B99A" }}>
+        <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
           Canada &middot; United States &middot; Europe &middot; Australia
         </p>
-        <h2 className="text-4xl font-bold mb-6" style={{ color: "#F5F0E8", fontFamily: "Georgia, serif" }}>
+        <h2 className="text-4xl font-bold mb-6" style={{ color: "#5C3D2E", fontFamily: "Georgia, serif" }}>
           Pottery Directory
         </h2>
-        <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#E8D5B7", fontFamily: "system-ui, sans-serif" }}>
+        <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
           A Pottery Directory spanning three continents, connecting potters, pottery guilds, places to take pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

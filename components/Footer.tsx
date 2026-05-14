@@ -3,12 +3,12 @@ import LogoMark from "./LogoMark";
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#3B2314", color: "#9E8572" }} className="py-10 px-6">
+    <footer style={{ background: "#C9B99A", color: "#5C3D2E" }} className="py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
         <Link href="/">
           <LogoMark
-            logoColor="#E8D5B7"
-            tagColor="#9E8572"
+            logoColor="#5C3D2E"
+            tagColor="#5C3D2E"
             logoClassName="text-2xl md:text-3xl"
             logoLetterSpacing="0.2em"
             className="items-center md:items-start"
@@ -19,7 +19,7 @@ export default function Footer() {
             <Link href="/gallery" className="hover:text-white transition-colors">The Gallery</Link>
             <Link href="/directory" className="hover:text-white transition-colors">The Directory</Link>
           </nav>
-          <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#7A6355" }}>
+          <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
