@@ -52,6 +52,7 @@ export default function Home() {
             Featured
           </p>
           <h2 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Pottery Gallery</h2>
+          <p className="mt-2 text-sm" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>The first collection is being curated and will be live soon.</p>
         </div>
         <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "#5C3D2E", fontFamily: "Georgia, serif" }}>
           Gathered with Love
