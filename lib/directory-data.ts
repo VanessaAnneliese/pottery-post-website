@@ -818,6 +818,15 @@ export const potters: Potter[] = [
   },
   // Ontario — individual potters
   {
+    name: "Megan Egerton",
+    studio: "Meg's Pottering",
+    city: "Ottawa",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.megspottering.com",
+    bio: "Uniquely crafted handmade ceramic pieces made to be both fun and functional, available in Ottawa.",
+  },
+  {
     name: "Kevin",
     studio: "Swampdog Ceramics",
     city: "Peterborough",
@@ -933,6 +942,23 @@ export const potters: Potter[] = [
     website: "https://bdupottersguild.com",
   },
   // Quebec — individual potters
+  {
+    name: "Sophie Manessiez",
+    studio: "Sophie Manessiez Ceramics",
+    city: "Shefford",
+    province: "Quebec",
+    country: "CA",
+    website: "https://sophiemanessiez.com/en/",
+    bio: "Delicate porcelain sculptures with complex structures, shaped through the repetition of pure and simple forms in the Eastern Townships.",
+  },
+  {
+    name: "Murai Ceramique",
+    city: "Gatineau",
+    province: "Quebec",
+    country: "CA",
+    website: "https://www.muraiceramique.com",
+    bio: "Handmade pottery emphasising the beauty of the natural world, made and taught at a studio in the Gatineau Hills.",
+  },
   {
     name: "Mie Kim",
     studio: "Studio Mie Kim",
