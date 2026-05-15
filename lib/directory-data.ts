@@ -755,6 +755,24 @@ export const potters: Potter[] = [
   },
   // Ontario — individual potters
   {
+    name: "Andrea DeKay",
+    studio: "Flux Pottery",
+    city: "London",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.fluxpottery.ca",
+    bio: "Timeless, well-crafted pottery in rich earthy colours designed for everyday use, made in Wortley Village, London.",
+  },
+  {
+    name: "Marc Lemieux",
+    studio: "Black Dog Pottery",
+    city: "Kingston",
+    province: "Ontario",
+    country: "CA",
+    website: "https://blackdogpottery.ca",
+    bio: "Handmade porcelain and stoneware — functional and decorative — at a working studio and gallery in downtown Kingston.",
+  },
+  {
     name: "Brooke",
     studio: "Olive Tree Pottery",
     city: "Hamilton",
@@ -854,6 +872,24 @@ export const potters: Potter[] = [
   },
   // Manitoba
   {
+    name: "Michael Holroyd & Karen Thomas",
+    studio: "Bunns Creek Pottery",
+    city: "Winnipeg",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://www.bunnscreekpottery.ca",
+    bio: "Handmade pottery for home and garden with a focus on eco-friendly practices, including seed starters, ollas, mugs, and functional tableware.",
+  },
+  {
+    name: "Cheryl",
+    studio: "Thistlewood Pottery Studio",
+    city: "Whitemouth",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://thistlewood.ca",
+    bio: "Wheel-thrown stoneware mugs, bowls, and small-batch functional pieces made in a rural Manitoba studio, shipped across Canada and the US.",
+  },
+  {
     name: "Crystal Nykoluk",
     city: "Winnipeg",
     province: "Manitoba",
@@ -916,6 +952,15 @@ export const potters: Potter[] = [
     bio: "Functional ceramics with playful, nostalgic designs made in Portugal Cove, Newfoundland.",
   },
   // Saskatchewan
+  {
+    name: "Vicki Gauthier",
+    studio: "Penny Lane Pottery",
+    city: "Prince Albert",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://www.pennylanepottery.com",
+    bio: "Handmade mugs and functional pottery made with a passion for the stories that handmade objects tell.",
+  },
   {
     name: "Paula Cooley",
     city: "Saskatoon",
