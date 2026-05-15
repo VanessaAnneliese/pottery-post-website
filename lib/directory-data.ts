@@ -727,6 +727,15 @@ export const potters: Potter[] = [
     bio: "Handmade functional pottery inspired by the BC wilderness and Kootenay Lake. Soft colours and whimsical elements woven into every piece.",
   },
   {
+    name: "Cori Sandler",
+    studio: "Cori Sandler Pottery",
+    city: "Comox Valley",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://corisandler.com",
+    bio: "Over 30 years of studio pottery inspired by the ocean, rain forests, and coastal mountains of Vancouver Island — functional, contemporary, and full of life.",
+  },
+  {
     name: "Briana Paulson",
     studio: "Love Co. Ceramics",
     city: "Kelowna",
