@@ -690,6 +690,15 @@ export const potters: Potter[] = [
     website: "https://yukikiannastudio.com",
     bio: "Handmade functional pottery inspired by the BC wilderness and Kootenay Lake. Soft colours and whimsical elements woven into every piece.",
   },
+  {
+    name: "Peter Flanagan",
+    studio: "Okanagan Pottery",
+    city: "Peachland",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.okanaganpottery.com",
+    bio: "Award-winning potter established in the Okanagan since 1968, creating hand-thrown work in collaboration with his wife and partner Daphne.",
+  },
   // New Brunswick
   {
     name: "Tim Isaac",
@@ -726,6 +735,23 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://naomiclement.com",
     bio: "Ceramic artist and workshop instructor creating functional ceramics from her home studio in Stratford, Ontario.",
+  },
+  {
+    name: "Mary Potter",
+    studio: "Mary Potter Ceramics",
+    city: "Chatham",
+    province: "Ontario",
+    country: "CA",
+    website: "https://originalhandmadepotterychathamontario.com",
+    bio: "All work is wheel thrown using stoneware clay and designed and crafted in Chatham, Ontario.",
+  },
+  {
+    name: "Stainsby Studios",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://stainsbystudios.com",
+    bio: "Handmade modern ceramics made in Toronto.",
   },
   // Ontario — individual potters
   {
@@ -773,6 +799,15 @@ export const potters: Potter[] = [
   },
   // Quebec — individual potters
   {
+    name: "Mie Kim",
+    studio: "Studio Mie Kim",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://miekimstudio.com",
+    bio: "Handmade ceramics including tea cups, plates, and hand-carved Kurinuki Chawan pieces.",
+  },
+  {
     name: "Céline Fafard",
     studio: "Parceline Céramique",
     city: "Montreal",
@@ -791,6 +826,14 @@ export const potters: Potter[] = [
     bio: "Ceramic artist and earthshaper living and working in Winnipeg.",
   },
   // Nova Scotia
+  {
+    name: "Sugarhouse Ceramic Co.",
+    city: "Kentville",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://sugarhouseceramicco.com",
+    bio: "Handmade ceramics inspired by the Atlantic Maritime, made in Kentville, Nova Scotia.",
+  },
   {
     name: "Joan Bruneau",
     studio: "Nova Terra Cotta",
