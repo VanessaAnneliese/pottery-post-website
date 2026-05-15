@@ -45,7 +45,7 @@ export default function GalleryPage() {
       </p>
       <Link
         href="/gallery/submit"
-        className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block"
+        className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block transition-opacity hover:opacity-80"
         style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
       >
         Submit a piece
@@ -63,7 +63,7 @@ export default function GalleryPage() {
       </p>
       <Link
         href="/gallery/archive"
-        className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block"
+        className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block transition-opacity hover:opacity-80"
         style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
       >
         View past galleries

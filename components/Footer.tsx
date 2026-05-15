@@ -20,6 +20,9 @@ export default function Footer() {
             <Link href="/gallery" className="hover:text-white transition-colors">Pottery Gallery</Link>
           </nav>
           <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+            <Link href="/faq" className="hover:text-white transition-colors">FAQ</Link>
+          </nav>
+          <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
