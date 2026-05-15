@@ -691,6 +691,15 @@ export const potters: Potter[] = [
     bio: "Handmade functional pottery inspired by the BC wilderness and Kootenay Lake. Soft colours and whimsical elements woven into every piece.",
   },
   {
+    name: "Briana Paulson",
+    studio: "Love Co. Ceramics",
+    city: "Kelowna",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.lovecoceramics.ca",
+    bio: "Minimalist handmade pottery with hand-painted designs and natural clay textures that let the beauty of the material speak for itself.",
+  },
+  {
     name: "Peter Flanagan",
     studio: "Okanagan Pottery",
     city: "Peachland",
@@ -737,15 +746,6 @@ export const potters: Potter[] = [
     bio: "Ceramic artist and workshop instructor creating functional ceramics from her home studio in Stratford, Ontario.",
   },
   {
-    name: "Mary Potter",
-    studio: "Mary Potter Ceramics",
-    city: "Chatham",
-    province: "Ontario",
-    country: "CA",
-    website: "https://originalhandmadepotterychathamontario.com",
-    bio: "All work is wheel thrown using stoneware clay and designed and crafted in Chatham, Ontario.",
-  },
-  {
     name: "Stainsby Studios",
     city: "Toronto",
     province: "Ontario",
@@ -754,6 +754,42 @@ export const potters: Potter[] = [
     bio: "Handmade modern ceramics made in Toronto.",
   },
   // Ontario — individual potters
+  {
+    name: "Brooke",
+    studio: "Olive Tree Pottery",
+    city: "Hamilton",
+    province: "Ontario",
+    country: "CA",
+    website: "https://olivetreepottery.com",
+    bio: "Handmade ceramic pieces inspired by the Great Lakes and Ontario's natural landscapes, made in a home studio in Hamilton.",
+  },
+  {
+    name: "Scott Barnim",
+    studio: "Scott Barnim Pottery",
+    city: "Dundas",
+    province: "Ontario",
+    country: "CA",
+    website: "https://scottbarnimpottery.com",
+    bio: "Functional stoneware dinnerware and decorative pieces inspired by the Dundas Valley, plus reduced Islamic lustreware — one of few potters in North America practising the technique.",
+  },
+  {
+    name: "Susan Card",
+    studio: "DISH Gallery + Studio",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.dishgalleryandstudio.com",
+    bio: "Wheel-thrown porcelain and smoke-fired pottery decorated with motifs from nature, exploring colour, visual space, and the balance between sculptural and functional forms.",
+  },
+  {
+    name: "Michelle Organ",
+    studio: "Mima Ceramics",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://mimaceramics.com",
+    bio: "Handmade ceramics designed to be used and loved daily, drawing on everyday textures and blending traditional craftsmanship with contemporary design.",
+  },
   {
     name: "Anne Gibson",
     studio: "Kalon Ceramics",
@@ -859,6 +895,25 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://jawpottery.com",
     bio: "Self-taught potter creating modern handmade ceramics from a small-batch studio in Halifax.",
+  },
+  // Prince Edward Island
+  {
+    name: "Daphne Large",
+    studio: "Village Pottery",
+    city: "New London",
+    province: "Prince Edward Island",
+    country: "CA",
+    website: "https://www.villagepottery.ca",
+    bio: "The longest-running pottery shop on PEI, established in 1973. Functional and decorative pieces handmade on-site using in-house glazes.",
+  },
+  // Newfoundland
+  {
+    name: "Potter by the Sea Studio",
+    city: "Portugal Cove",
+    province: "Newfoundland",
+    country: "CA",
+    website: "https://potterbytheseastudio.com",
+    bio: "Functional ceramics with playful, nostalgic designs made in Portugal Cove, Newfoundland.",
   },
   // Saskatchewan
   {
