@@ -190,6 +190,19 @@ export default function UpdateListingPage() {
           >
             {status === "sending" ? "Sending..." : "Submit update"}
           </button>
+
+          <div className="border-t pt-6 mt-2" style={{ borderColor: "#E8D5B7" }}>
+            <p className="text-xs mb-3" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+              Need to remove your listing entirely? We&rsquo;ll take care of it within 48 hours.
+            </p>
+            <a
+              href={`mailto:directory@potterypost.ca?subject=Remove my listing`}
+              className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block"
+              style={{ background: "#C9C0B4", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}
+            >
+              Remove your listing
+            </a>
+          </div>
         </form>
       )}
     </section>
