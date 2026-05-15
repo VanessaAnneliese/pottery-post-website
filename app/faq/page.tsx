@@ -141,7 +141,7 @@ export default function FAQPage() {
             </div>
             <div>
               <h3 className="font-bold mb-2">What happens to pieces after the collection ends?</h3>
-              <p style={{ color: "#5C3D2E" }}>Pieces are returned to their potters after each rotation. Every past collection is preserved in The Archive on the gallery page.</p>
+              <p style={{ color: "#5C3D2E" }}>What happens to pieces after a collection closes is something we work out directly with each potter. Every past collection is preserved in The Archive on the gallery page.</p>
             </div>
           </div>
         </div>
