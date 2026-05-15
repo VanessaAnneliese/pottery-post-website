@@ -1213,6 +1213,24 @@ export const potters: Potter[] = [
     website: "https://wolfceramics.com",
     bio: "Woman-led handmade pottery studio making contemporary ceramic dinnerware from a production studio in Hood River, Oregon.",
   },
+  {
+    name: "Sarah Van Raden",
+    studio: "Notary Ceramics",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://notaryceramics.com",
+    bio: "Handcrafted wheel-thrown and altered ceramics made in Portland, Oregon — functional pieces with a quiet, considered aesthetic.",
+  },
+  {
+    name: "Carisa Miller",
+    studio: "LULA Pottery",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://lulapottery.com",
+    bio: "Handmade functional pottery made in Portland with a focus on everyday pieces that bring joy to the table.",
+  },
   // Colorado
   {
     name: "Curt Hammerly",
@@ -1358,6 +1376,16 @@ export const potters: Potter[] = [
     website: "https://stephensalterpottery.com",
     bio: "Brings meaningful handcrafted ceramics to the Oak Cliff community in Dallas. Started in 2018 after an apprenticeship at The Barn Pottery.",
   },
+  // Florida
+  {
+    name: "Osa Atoe",
+    studio: "Pottery by Osa",
+    city: "Tampa",
+    province: "Florida",
+    country: "US",
+    website: "https://potterybyosa.com",
+    bio: "Handmade functional and decorative ceramics made in Tampa, Florida — earthy, expressive pieces with bold surface texture and personal meaning.",
+  },
   // England
   {
     name: "Edmund de Waal",
@@ -1399,6 +1427,24 @@ export const potters: Potter[] = [
     website: "https://www.olleypottery.co.uk",
     bio: "A Selected Member of the Craft Potters Association whose illustrated sgraffito ceramics honour the bond between humans and their dogs, hand-thrown in earthenware and stoneware with intricate scratched decoration.",
   },
+  {
+    name: "Catherine West & Matt West",
+    studio: "Pottery West",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://www.potterywest.co.uk",
+    bio: "A London studio producing hand-thrown stoneware with bold, graphic glazes — functional pieces made with a strong graphic sensibility and a love of colour.",
+  },
+  {
+    name: "Alan Parris & Billy Byles",
+    studio: "Aylesford Pottery",
+    city: "Aylesford",
+    province: "England",
+    country: "EU",
+    website: "https://www.aylesfordpottery.co.uk",
+    bio: "A working pottery in the heart of Kent producing functional wood-fired stoneware, with a long tradition of craft rooted in the English countryside.",
+  },
   // Scotland
   {
     name: "Lotte Glob",
@@ -1416,6 +1462,34 @@ export const potters: Potter[] = [
     country: "EU",
     website: "https://fitchandmcandrew.co.uk",
     bio: "An internationally recognised slipware potter working with partner Douglas Fitch in a rural studio with a wood-fired kiln, producing hand-thrown earthenware decorated with traditional slip-trailing and sgraffito.",
+  },
+  {
+    name: "Katie Rose Johnston",
+    studio: "Studio Manifesto",
+    city: "Edinburgh",
+    province: "Scotland",
+    country: "EU",
+    website: "https://studiomanifesto.co.uk",
+    bio: "An Edinburgh-based ceramicist creating delicate hand-built porcelain pieces inspired by the natural world — botanical forms, shells, and textures translated into quiet, refined objects.",
+  },
+  // Wales
+  {
+    name: "Richard Prentice",
+    studio: "Blackbird Ceramics",
+    city: "Pembrokeshire",
+    province: "Wales",
+    country: "EU",
+    website: "https://www.blackbirdceramics.co.uk",
+    bio: "A studio potter working in the Pembrokeshire Coast National Park, making hand-thrown functional stoneware with an earthy, landscape-influenced palette.",
+  },
+  {
+    name: "Tom Loveday & Myfanwy James",
+    studio: "Glosters",
+    city: "Monmouthshire",
+    province: "Wales",
+    country: "EU",
+    website: "https://www.glosters.co.uk",
+    bio: "A small Welsh studio producing hand-thrown domestic pottery — tactile, unpretentious pieces for everyday use, made with local sensibility and a quiet attention to material.",
   },
   // Ireland
   {
@@ -1555,6 +1629,22 @@ export const potters: Potter[] = [
     website: "https://woolshedceramics.com.au",
     bio: "A ceramic artist working from a converted 1940s shearing shed in Victoria's High Country, creating functional handmade wares in organic shapes with earthy glazes reflecting the Australian landscape.",
   },
+  {
+    name: "Sophie Moran",
+    city: "Melbourne",
+    province: "Victoria",
+    country: "AU",
+    website: "https://sophiemoran.studio",
+    bio: "A Melbourne ceramic artist making wheel-thrown functional and decorative stoneware — soft, considered pieces inspired by landscape and light.",
+  },
+  {
+    name: "Throughgood Pottery",
+    city: "Ballarat",
+    province: "Victoria",
+    country: "AU",
+    website: "https://throughgoodpottery.com.au",
+    bio: "A Ballarat studio making handcrafted functional pottery — mugs, bowls, and vases with an honest, tactile quality rooted in the central Victorian landscape.",
+  },
   // South Australia
   {
     name: "Alison Arnold",
@@ -1593,6 +1683,14 @@ export const potters: Potter[] = [
     country: "AU",
     website: "https://www.rowleydrysdale.com.au",
     bio: "One of Australia's foremost wood-firing potters, born in western Queensland, drawing on the Australian bush as central inspiration and internationally connected with potters in South Korea, Japan, and Finland.",
+  },
+  {
+    name: "Melanie Hardy",
+    city: "Brisbane",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.melaniehardy.com.au",
+    bio: "A Brisbane-based ceramic artist creating hand-built sculptural and functional work — layered surfaces and organic forms that speak to the textures of the natural world.",
   },
 ];
 
