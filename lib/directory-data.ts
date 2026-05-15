@@ -818,6 +818,24 @@ export const potters: Potter[] = [
   },
   // Ontario — individual potters
   {
+    name: "Kevin",
+    studio: "Swampdog Ceramics",
+    city: "Peterborough",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.swampdogceramics.ca",
+    bio: "Functional pottery for home and garden — wheel-thrown and slab-built pieces handmade in a home studio just west of Peterborough.",
+  },
+  {
+    name: "Eva Mlcak",
+    studio: "Queenston Pottery",
+    city: "Niagara-on-the-Lake",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.queenstonpottery.com",
+    bio: "Handcrafted stoneware with distinctive hand-painted designs continuing a pottery legacy established in Niagara since 1978.",
+  },
+  {
     name: "Andrea DeKay",
     studio: "Flux Pottery",
     city: "London",
@@ -985,6 +1003,14 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://www.toniloseypottery.com",
     bio: "Creates complex, highly saturated organic ceramic sculptures through the abstraction and reinterpretation of common plant life.",
+  },
+  {
+    name: "Riverside Pottery",
+    city: "Bear River",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://www.riversidepottery.ca",
+    bio: "Handmade pottery made to be used and enjoyed — all pieces are microwave and dishwasher safe.",
   },
   {
     name: "Jessie Wright",
