@@ -141,7 +141,7 @@ export default function FAQPage() {
             </div>
             <div>
               <h3 className="font-bold mb-2">What happens to pieces after the collection ends?</h3>
-              <p style={{ color: "#5C3D2E" }}>What happens to pieces after a collection closes is something we work out directly with each potter. Every past collection is preserved in The Archive on the gallery page.</p>
+              <p style={{ color: "#5C3D2E" }}>When submitting a piece, potters choose one of three options for what happens after the collection closes. <strong>Keep it with Pottery Post</strong> — the piece becomes part of a permanent collection, a gift to the Pottery Post and the community it&rsquo;s building. <strong>Donate it</strong> — the piece is passed on to a local pottery school, guild, or charity chosen by the Pottery Post, where it will continue to be loved and used. <strong>Arrange your own return</strong> — the potter coordinates pickup or return shipping at their own cost; the Pottery Post does not cover shipping fees. Whatever the choice, every past collection is preserved in The Archive on the gallery page.</p>
             </div>
           </div>
         </div>
