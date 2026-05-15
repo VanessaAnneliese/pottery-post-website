@@ -14,7 +14,7 @@ export default function FAQPage() {
           <div className="flex flex-col gap-8">
             <div>
               <h3 className="font-bold mb-2">What is the Pottery Post?</h3>
-              <p style={{ color: "#5C3D2E" }}>The Pottery Post is a home for people who love pottery — potters, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, a curated Pottery Gallery, and a Pottery Shop. Everything here is made by hand, by real people.</p>
+              <p style={{ color: "#5C3D2E" }}>The Pottery Post is a home for people who love pottery — potters, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, and a curated Pottery Gallery. Everything here is reviewed in person, made by hand, by real people.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">Where is the Pottery Post based?</h3>
