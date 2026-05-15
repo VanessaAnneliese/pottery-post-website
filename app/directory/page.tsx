@@ -282,7 +282,12 @@ export default function DirectoryPage() {
         Worldwide
       </p>
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4">
-        <h1 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Pottery Directory</h1>
+        <div>
+          <h1 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Pottery Directory</h1>
+          <p className="mt-1 text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+            {potters.length + guilds.length + teachingStudios.length + suppliers.length} listings
+          </p>
+        </div>
         <div className="flex flex-wrap gap-2 self-start sm:self-auto">
           <Link
             href="/directory/submit"
