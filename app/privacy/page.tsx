@@ -18,9 +18,9 @@ export default function PrivacyPage() {
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Information We Collect</h2>
           <p className="mb-3">We may collect the following types of personal information:</p>
           <ul className="list-disc pl-6 flex flex-col gap-2">
-            <li><strong>Contact information</strong> — name, email address, phone number, and mailing address when you submit a directory listing, make a purchase, or contact us.</li>
+            <li><strong>Contact information</strong> — name, email address, phone number, and mailing address when you submit a directory listing, submit to the Pottery Gallery, or contact us.</li>
             <li><strong>Directory listing information</strong> — studio name, location, website, bio, and photos you voluntarily submit for inclusion in the Pottery Directory.</li>
-            <li><strong>Transaction information</strong> — order details and payment information when you purchase from The Pottery Shop. Payment processing is handled by a third-party provider; we do not store full payment card details.</li>
+            <li><strong>Pottery Gallery submission information</strong> — your name, studio name, location, website, a description of the piece, and any photos you submit when applying to be considered for the Pottery Gallery. If your piece is selected, your name and relevant details will be displayed publicly alongside your work.</li>
             <li><strong>Usage information</strong> — pages visited, time spent on the site, and referring URLs, collected through cookies and analytics tools. See our Cookie Policy for details.</li>
           </ul>
         </div>
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
           <p className="mb-3">We use the information we collect to:</p>
           <ul className="list-disc pl-6 flex flex-col gap-2">
             <li>Review, approve, and publish directory listing submissions</li>
-            <li>Process and fulfill orders from the Pottery Shop</li>
+            <li>Review and curate Pottery Gallery submissions</li>
             <li>Respond to inquiries and provide customer support</li>
             <li>Improve the website and understand how visitors use it</li>
             <li>Comply with legal obligations</li>
