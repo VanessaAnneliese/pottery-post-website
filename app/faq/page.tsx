@@ -14,7 +14,7 @@ export default function FAQPage() {
           <div className="flex flex-col gap-8">
             <div>
               <h3 className="font-bold mb-2">What is the Pottery Post?</h3>
-              <p style={{ color: "#5C3D2E" }}>The Pottery Post is a home for people who love pottery — potters, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, and a curated Pottery Gallery. Everything here is reviewed in person, made by hand, by real people.</p>
+              <p style={{ color: "#5C3D2E" }}>The Pottery Post is a home for people who love pottery — potters, guilds, pottery class providers, pottery supply shops, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, and a curated Pottery Gallery. Everything here is reviewed in person, made by hand, by real people.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">Where is the Pottery Post based?</h3>
@@ -33,10 +33,10 @@ export default function FAQPage() {
 
         {/* Potters Directory */}
         <div>
-          <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: "Georgia, serif" }}>Potters Directory</h2>
+          <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: "Georgia, serif" }}>Pottery Directory</h2>
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="font-bold mb-2">How do I add myself to the Potters Directory?</h3>
+              <h3 className="font-bold mb-2">How do I add myself to the Pottery Directory?</h3>
               <p style={{ color: "#5C3D2E" }}>Use the <a href="/directory/submit" className="underline" style={{ color: "#009999" }}>Add Your Listing</a> form. We review every submission by hand before it goes live, so please allow some time for your listing to appear.</p>
             </div>
             <div>
@@ -57,7 +57,7 @@ export default function FAQPage() {
             </div>
             <div>
               <h3 className="font-bold mb-2">Can I add a photo to my listing?</h3>
-              <p style={{ color: "#5C3D2E" }}>Yes — you can include photos of your work when submitting or updating your listing. Photos must be JPG or PNG and under 2MB each.</p>
+              <p style={{ color: "#5C3D2E" }}>Yes. You can include two photos of your work when submitting or updating your listing. Photos must be JPG or PNG and under 2MB each.</p>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function FAQPage() {
             </div>
             <div>
               <h3 className="font-bold mb-2">Can I be listed as both a potter and a class provider?</h3>
-              <p style={{ color: "#5C3D2E" }}>Yes — you can have a listing under both Potters and Classes. Simply submit two listings, or note both when submitting a single form.</p>
+              <p style={{ color: "#5C3D2E" }}>Yes. You can have a listing under both Potters and Classes. Simply submit two listings, or note both when submitting a single form.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">My class schedule has changed. How do I update the listing?</h3>
