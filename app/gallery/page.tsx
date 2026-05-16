@@ -5,7 +5,7 @@ import { parisienne } from "@/lib/fonts";
 export default function GalleryPage() {
   return (
     <>
-    <QuoteBlock quote="Surround yourself with pottery and you surround yourself with the love of the people who made it." />
+    <QuoteBlock quote="Surround yourself with pottery and you surround yourself with the love of the people who made it." className="pt-24 md:pt-32 pb-12 md:pb-16" />
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured

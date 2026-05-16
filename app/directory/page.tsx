@@ -272,11 +272,11 @@ export default function DirectoryPage() {
 
   return (
     <>
-    {selectedType === null && <QuoteBlock quote="Surround yourself with pottery and you surround yourself with the love of the people who made it." />}
-    {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." />}
-    {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." />}
-    {selectedType === "classes" && <QuoteBlock quote="There is a version of you that exists only when your hands are in clay. A pottery class is how you meet them." className="py-20 md:py-24" />}
-    {selectedType === "suppliers" && <QuoteBlock quote={<>Behind every potter who makes something extraordinary is a supply shop<span className="hidden md:inline"><br /></span>{" "}who makes<span className="hidden md:inline"><br /></span>{" "}it possible.</>} />}
+    {selectedType === null && <QuoteBlock quote="Surround yourself with pottery and you surround yourself with the love of the people who made it." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === "classes" && <QuoteBlock quote="There is a version of you that exists only when your hands are in clay. A pottery class is how you meet them." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === "suppliers" && <QuoteBlock quote={<>Behind every potter who makes something extraordinary is a supply shop<span className="hidden md:inline"><br /></span>{" "}who makes<span className="hidden md:inline"><br /></span>{" "}it possible.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Worldwide
