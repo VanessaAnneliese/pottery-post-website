@@ -22,8 +22,8 @@ export default function Home() {
       <section className="relative py-16 md:py-24 px-6 text-center" style={{ background: "#C9B99A" }}>
         <div className="absolute inset-x-0 top-0 h-48 md:h-72 pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8, transparent)", zIndex: 0 }} />
         <div className="absolute inset-x-0 bottom-0 h-48 md:h-72 pointer-events-none" style={{ background: "linear-gradient(to top, #F5F0E8, transparent)", zIndex: 0 }} />
-        <div style={{ position: "relative", zIndex: 1 }}>
-          <img src="/pottery-post_assets /website-icons/potters.png" alt="" className="mx-auto mb-6 w-16 h-16 object-contain" />
+        <img src="/pottery-post_assets /website-icons/potters.png" alt="" className="absolute left-1/2 -translate-x-1/2 top-14 md:top-24 w-20 h-20 md:w-28 md:h-28 object-contain" style={{ zIndex: 2 }} />
+        <div className="pt-28 md:pt-36" style={{ position: "relative", zIndex: 1 }}>
           <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
             Canada &middot; United States &middot; Europe &middot; Australia
           </p>
