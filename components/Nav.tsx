@@ -27,23 +27,21 @@ export default function Nav() {
       </div>
 
       {/* ── Desktop layout ── */}
-      <div className="hidden md:flex max-w-6xl mx-auto items-center justify-between py-4 gap-6">
-        <Link href="/" className="shrink-0" style={{ textDecoration: "none" }}>
+      <div className="hidden md:flex flex-col items-center py-6 gap-4">
+        <Link href="/" style={{ textDecoration: "none" }}>
           <LogoMark
             logoColor="#5C3D2E"
             tagColor="#5C3D2E"
             logoClassName="text-3xl"
             logoLetterSpacing="0.2em"
-            className="items-start"
+            className="items-center"
           />
         </Link>
-        <div className="flex items-center gap-8">
-          <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-            <Link href="/directory" className="hover:text-white transition-colors">Pottery Directory</Link>
-            <Link href="/gallery" className="hover:text-white transition-colors">Pottery Gallery</Link>
-          </nav>
-          <SearchForm />
-        </div>
+        <SearchForm defaultOpen={true} />
+        <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/directory" className="hover:text-white transition-colors whitespace-nowrap">Pottery Directory</Link>
+          <Link href="/gallery" className="hover:text-white transition-colors whitespace-nowrap">Pottery Gallery</Link>
+        </nav>
       </div>
 
     </header>
