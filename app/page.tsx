@@ -16,10 +16,10 @@ function PlaceholderPiece({ label }: { label: string }) {
 export default function Home() {
   return (
     <>
-      <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="py-24 md:py-32" />
+      <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="pt-24 md:pt-32 pb-6 md:pb-8" />
 
       {/* Directory CTA */}
-      <section className="relative py-24 md:py-36 px-6 text-center" style={{ background: "#C9B99A" }}>
+      <section className="relative pt-12 md:pt-16 pb-24 md:pb-36 px-6 text-center" style={{ background: "#C9B99A" }}>
         <div className="absolute inset-x-0 top-0 h-64 md:h-[28rem] pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8 0%, #F5F0E8 10%, rgba(245,240,232,0.7) 50%, transparent 100%)", zIndex: 0 }} />
         <div className="absolute inset-x-0 bottom-0 h-64 md:h-[28rem] pointer-events-none" style={{ background: "linear-gradient(to top, #F5F0E8 0%, #F5F0E8 10%, rgba(245,240,232,0.7) 50%, transparent 100%)", zIndex: 0 }} />
         <div style={{ position: "relative", zIndex: 1 }}>
