@@ -1580,15 +1580,6 @@ export const potters: Potter[] = [
     website: "https://potterybyosa.com",
     bio: "Handmade functional and decorative ceramics made in Tampa, Florida — earthy, expressive pieces with bold surface texture and personal meaning.",
   },
-  {
-    name: "Melissa Bridgman",
-    studio: "Bridgman Pottery",
-    city: "Memphis",
-    province: "Tennessee",
-    country: "US",
-    website: "https://www.bridgmanpottery.com",
-    bio: "A Midtown Memphis studio producing fine handmade porcelain and stoneware for the table, kitchen, and garden.",
-  },
   // Washington
   {
     name: "Stephanie Cao",
@@ -1656,16 +1647,6 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://backdoorpottery.com",
     bio: "A working studio operating since 1979, specialising in original stoneware, porcelain, custom tiles, mosaic, and Egyptian paste ceramics.",
-  },
-  // New Mexico
-  {
-    name: "Theo Helmstadter",
-    studio: "Green River Pottery",
-    city: "Santa Fe",
-    province: "New Mexico",
-    country: "US",
-    website: "https://www.greenriverpottery.com",
-    bio: "A full-time studio potter since 1998 making high-fired reduction stoneware — plates, bowls, teapots, and platters — from local Abiquiu clay.",
   },
   {
     name: "Sage Valley Pottery",
@@ -1789,16 +1770,6 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://gravescopottery.com",
     bio: "A self-taught ceramicist who creates handmade functional pottery one piece at a time from her Indianapolis studio, focused on how pieces feel in everyday use.",
-  },
-  // Wisconsin
-  {
-    name: "Ashley Pfannenstiel",
-    studio: "Wilson Creek Pottery",
-    city: "Spring Green",
-    province: "Wisconsin",
-    country: "US",
-    website: "https://wilsoncreekpottery.com",
-    bio: "Handmade ceramic pieces made in rural Wisconsin, emphasising the quiet character that emerges when each pot is formed and fired individually.",
   },
   // Kentucky
   {
@@ -2924,15 +2895,6 @@ export const suppliers: Supplier[] = [
     website: "https://www.georgies.com",
     bio: "Portland's beloved ceramics supply store, carrying clay, glazes, tools, and studio equipment for over 40 years.",
   },
-  // Pennsylvania
-  {
-    name: "The Ceramic Shop",
-    city: "Norristown",
-    province: "Pennsylvania",
-    country: "US",
-    website: "https://www.theceramicshop.com",
-    bio: "Philadelphia-area pottery supply store stocking a wide range of clay, glazes, tools, and kiln equipment.",
-  },
   // South Carolina
   {
     name: "Clay King",
@@ -3011,14 +2973,6 @@ export const suppliers: Supplier[] = [
     country: "EU",
     website: "https://www.bathpotters.co.uk",
     bio: "A well-loved independent pottery supplier carrying clays, glazes, tools, and kilns.",
-  },
-  {
-    name: "Potclays",
-    city: "Stoke-on-Trent",
-    province: "England",
-    country: "EU",
-    website: "https://www.potclays.co.uk",
-    bio: "One of the UK's leading pottery suppliers, based in the heart of the Potteries.",
   },
   {
     name: "Clayman Supplies",
