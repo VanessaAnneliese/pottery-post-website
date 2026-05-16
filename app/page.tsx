@@ -19,7 +19,7 @@ export default function Home() {
       <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="pt-24 md:pt-32 pb-12 md:pb-16" />
 
       {/* Directory CTA */}
-      <section className="relative pt-16 md:pt-20 pb-24 md:pb-36 px-6 text-center" style={{ background: "#C9B99A" }}>
+      <section className="relative pt-16 md:pt-20 pb-12 md:pb-16 px-6 text-center" style={{ background: "#C9B99A" }}>
         <div className="absolute inset-x-0 top-0 h-64 md:h-[28rem] pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8 0%, #F5F0E8 10%, rgba(245,240,232,0.7) 50%, transparent 100%)", zIndex: 0 }} />
         <div className="absolute inset-x-0 bottom-0 h-64 md:h-[28rem] pointer-events-none" style={{ background: "linear-gradient(to top, #F5F0E8 0%, #F5F0E8 10%, rgba(245,240,232,0.7) 50%, transparent 100%)", zIndex: 0 }} />
         <div style={{ position: "relative", zIndex: 1 }}>
@@ -43,10 +43,10 @@ export default function Home() {
         </div>
       </section>
 
-      <QuoteBlock quote="Things made with love, by hand, deserve to be seen, shared, and celebrated." />
+      <QuoteBlock quote="Things made with love, by hand, deserve to be seen, shared, and celebrated." className="pt-16 md:pt-20 pb-12 md:pb-16" />
 
       {/* Featured Gallery Preview */}
-      <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto">
+      <section className="pt-16 md:pt-20 pb-12 md:pb-16 px-6 max-w-6xl mx-auto">
         <div className="mb-8">
           <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
             Featured
@@ -77,7 +77,7 @@ export default function Home() {
         </p>
       </section>
 
-      <QuoteBlock quote="Pottery asks nothing of the world except the chance to make something true." />
+      <QuoteBlock quote="Pottery asks nothing of the world except the chance to make something true." className="pt-16 md:pt-20 pb-24 md:pb-32" />
     </>
   );
 }
