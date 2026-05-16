@@ -36,7 +36,7 @@ export default function Home() {
             <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>
               Browse the directory
             </Link>
-            <Link href="/directory/submit" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#F5F0E8", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            <Link href="/directory/submit" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm transition-opacity hover:opacity-90" style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
               Add your listing
             </Link>
           </div>
