@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { guilds, potters, suppliers, teachingStudios, groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-data";
 import QuoteBlock from "@/components/QuoteBlock";
+import { parisienne } from "@/lib/fonts";
 
 type DirectoryType = "guilds" | "potters" | "suppliers" | "classes";
 
@@ -401,7 +402,14 @@ export default function DirectoryPage() {
           )}
           {showPotters && pottersByProvince.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters</h2>
+              {selectedRegion === "US" && selectedProvince === "North Carolina" && (
+                <div className="mt-16 mb-6 py-8 px-6 text-center rounded-sm" style={{ background: "#EDE4D5" }}>
+                  <p className={`${parisienne.className} text-2xl md:text-3xl leading-relaxed`} style={{ color: "#856E62" }}>
+                    In the hills of North Carolina, families have passed a pottery wheel from grandmother to grandchild for two hundred years. The clay is the same. The river is the same. The love that goes into it is the same. Some things refuse to be lost.
+                  </p>
+                </div>
+              )}
+              <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters</h2>
               {pottersByProvince.map(({ province, country, items }) => (
                 <div key={province}>
                   <ProvinceSection province={province} country={country} />
