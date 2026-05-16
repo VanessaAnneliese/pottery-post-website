@@ -19,7 +19,7 @@ export default function TermsPage() {
           <p className="mb-3">You may use this Site for lawful purposes only. You agree not to:</p>
           <ul className="list-disc pl-6 flex flex-col gap-2">
             <li>Use the Site in any way that violates applicable Canadian federal or provincial law</li>
-            <li>Submit false, misleading, or fraudulent information in directory listings</li>
+            <li>Submit false, misleading, or fraudulent information in directory listings or gallery submissions</li>
             <li>Attempt to gain unauthorized access to any part of the Site</li>
             <li>Use automated tools to scrape, copy, or extract content from the Site without our written permission</li>
             <li>Interfere with or disrupt the Site or its servers</li>
