@@ -519,6 +519,43 @@ export const guilds: Guild[] = [
     website: "https://ceramicartsqld.org.au",
     bio: "Founded in Brisbane in 1968, CAQ fosters an inclusive ceramic arts community across Queensland through the biennial Siliceous Award for Ceramic Excellence, workshops, and member exhibitions.",
   },
+  // Iceland
+  {
+    name: "Kaolin Ceramic Gallery",
+    studio: "Kaolin",
+    city: "Reykjavik",
+    province: "Iceland",
+    country: "EU",
+    website: "https://kaolin.is",
+    bio: "A cooperative ceramics gallery on Reykjavik's Skólavörðustígur owned by five Icelandic ceramic artists, each with a distinct style, selling handcrafted vases, bowls, lanterns, and decorative pieces.",
+  },
+  // Estonia
+  {
+    name: "Masters' Courtyards Ceramics Studio",
+    studio: "Keraamikakoda",
+    city: "Tallinn",
+    province: "Estonia",
+    country: "EU",
+    website: "https://www.keraamikakoda.ee/eng/",
+    bio: "A collective ceramics studio and gallery in Tallinn's Old Town where eight working ceramic artists share a space; visitors can watch artists at work and join weekly workshops and group events.",
+  },
+  // Canada — British Columbia
+  {
+    name: "Salt Spring Potters Guild",
+    city: "Salt Spring Island",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.saltspringpottersguild.com",
+    bio: "One of the oldest pottery guilds in Canada, representing over 50 studio potters on Salt Spring Island and home to the first Canadian Biennial Ceramic Competition.",
+  },
+  {
+    name: "Okanagan Potters' Association",
+    city: "Kelowna",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://okanaganpotters.ca",
+    bio: "A member association supporting ceramic artists throughout BC's Okanagan Valley through annual sales, educational workshops, and an online member gallery showcasing raku, stoneware, sculpture, and tableware.",
+  },
 ];
 
 export const potters: Potter[] = [
@@ -2720,6 +2757,283 @@ export const potters: Potter[] = [
     website: "https://britmcdaniel.com",
     bio: "Makes modern, functional porcelain ceramics — dinnerware, vessels, and jewellery — from a home studio nestled in the Ozark Mountains.",
   },
+  // Czech Republic
+  {
+    name: "Terra Ceramics Prague",
+    studio: "Terra Ceramics",
+    city: "Prague",
+    province: "Czech Republic",
+    country: "EU",
+    website: "https://terra-ceramics.com",
+    bio: "A small Prague studio producing one-of-a-kind functional ceramics for cafés, restaurants, and individuals worldwide. Also offers courses, masterclasses, and teambuilding events on the potter's wheel.",
+  },
+  {
+    name: "Kera Studio Prague",
+    studio: "Kera Studio",
+    city: "Prague",
+    province: "Czech Republic",
+    country: "EU",
+    website: "https://www.kerastudio.cz/en/studio/prague",
+    bio: "A self-service ceramic studio in Prague's Holešovice neighbourhood where members work independently on wheel and hand-building projects, with optional weekly instructor consultations.",
+  },
+  // Poland
+  {
+    name: "Alike Pottery Studio",
+    studio: "Alike",
+    city: "Warsaw",
+    province: "Poland",
+    country: "EU",
+    website: "https://alike.pl/en",
+    bio: "An artistic ceramics studio and gallery in Warsaw offering wheel-throwing courses, hand-building workshops, open studio membership, and handmade ceramics for sale.",
+  },
+  {
+    name: "Mila Polish Pottery",
+    studio: "Mila",
+    city: "Krakow",
+    province: "Poland",
+    country: "EU",
+    website: "https://milapottery.pl/en/",
+    bio: "A Krakow ceramics shop with a long tradition since 1992, specialising in hand-painted Bolesławiec pottery — one of Poland's most iconic folk ceramic traditions.",
+  },
+  // Hungary
+  {
+    name: "Artegalata Studio",
+    city: "Budapest",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.artegalatastudio.com",
+    bio: "A Budapest ceramics studio offering wheel-throwing classes, wine-and-clay sessions, private events, and handmade ceramic pieces for purchase — welcoming all skill levels.",
+  },
+  {
+    name: "Ildikó Károlyi",
+    studio: "Keramiart",
+    city: "Budapest",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.keramiart.com/ildiko-karolyi/",
+    bio: "Budapest-based raku ceramicist whose signature sculptural vessels have been exhibited across Europe and collected in homes from Canada to Monaco.",
+  },
+  // Romania
+  {
+    name: "Maria Stefanescu",
+    studio: "Ceramica Horezu Maria",
+    city: "Horezu",
+    province: "Romania",
+    country: "EU",
+    website: "https://www.ceramica-horezu-maria.com",
+    bio: "A master potter from Horezu working in a UNESCO-recognised tradition, hand-crafting plates, bowls, and jugs using the ten-stage clay-to-kiln process her family has practised for generations.",
+  },
+  // Italy — Puglia
+  {
+    name: "MENA FUECO Studio",
+    studio: "MENA FUECO",
+    city: "Grottaglie",
+    province: "Italy",
+    country: "EU",
+    website: "https://menafueco.studio/en",
+    bio: "A contemporary ceramics studio in Grottaglie's historic Ceramics Quarter making unconventional, story-driven pieces in a former olive-oil mill; also offers wheel-throwing workshops for all levels.",
+  },
+  {
+    name: "Ceramiche Nicola Fasano",
+    studio: "Fasano CNF",
+    city: "Grottaglie",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.fasanocnf.it/en/",
+    bio: "An 18-generation family pottery studio in Grottaglie, Puglia, producing bold hand-painted decorative and tableware ceramics exported to fine-dining establishments and collectors worldwide.",
+  },
+  // Italy — Sicily
+  {
+    name: "Marisa Notarianni",
+    studio: "Marisa Notarianni Ceramics",
+    city: "Collesano",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.marisanotarianniceramics.com",
+    bio: "A hand-building ceramicist in the Sicilian Madonie hills whose planters, vessels, and wall-hangings reflect the textures and colours of the island's landscape; also runs intimate workshops in a converted stone barn.",
+  },
+  // Italy — Turin
+  {
+    name: "Anna Basile",
+    studio: "Studio Delta Pottery",
+    city: "Turin",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.studiodeltapottery.com/en",
+    bio: "A Turin ceramicist making robust, contemporary stoneware and porcelain tableware that blends Eastern and Western throwing traditions; the studio also offers wheel courses and custom commissions for restaurants.",
+  },
+  // Spain — Madrid
+  {
+    name: "Marta González",
+    studio: "Marta Cerámica",
+    city: "Madrid",
+    province: "Spain",
+    country: "EU",
+    website: "https://martaceramica.com/en/",
+    bio: "A Madrid ceramicist and teacher with over 15 years of experience offering private wheel-throwing classes, team-building workshops, and bespoke porcelain commissions from a studio in the heart of the city.",
+  },
+  // Spain — Basque Country
+  {
+    name: "Lisa Page",
+    studio: "Estudio 36 Cerámica",
+    city: "San Sebastián",
+    province: "Spain",
+    country: "EU",
+    website: "https://estudio36ceramica.com/en/about-me/",
+    bio: "A Canadian ceramicist based in San Sebastián since 2013 running monthly wheel-throwing and hand-building classes, coworking memberships, and custom pottery commissions from a studio near the city centre.",
+  },
+  // France — Bordeaux
+  {
+    name: "Ivana Bizic",
+    studio: "IVANA Ceramic Studio",
+    city: "Bordeaux",
+    province: "France",
+    country: "EU",
+    website: "https://ivana-ceramic.art/en",
+    bio: "A Bordeaux potter and teacher with over ten years of experience offering wheel-throwing, hand-building, and glazing classes in a studio tucked inside the city's historic old town.",
+  },
+  // Iceland
+  {
+    name: "Inga Elín Eiríksdóttir",
+    studio: "Inga Elín",
+    city: "Reykjavik",
+    province: "Iceland",
+    country: "EU",
+    website: "https://ingaelin.is",
+    bio: "A Reykjavik porcelain artist who has worked with ceramics since age twelve, hand-painting nature-inspired patterns onto wheel-thrown cups and vessels from a studio on the city's Rainbow Street.",
+  },
+  {
+    name: "Kogga Ceramic Studio & Gallery",
+    studio: "Kogga",
+    city: "Reykjavik",
+    province: "Iceland",
+    country: "EU",
+    website: "https://www.kogga.is",
+    bio: "One of Iceland's best-loved ceramic studios, offering a gallery of sculptural and functional pieces available to order online direct from the Reykjavik studio.",
+  },
+  // Latvia
+  {
+    name: "Laima Ceramics",
+    city: "Rundāle",
+    province: "Latvia",
+    country: "EU",
+    website: "https://www.laimaceramics.com",
+    bio: "A Latvian studio near Rundāle Palace making organic-minimalist porcelain and stoneware tableware for homes, restaurants, and hotels; also runs international pottery residencies and immersive multi-week courses.",
+  },
+  // Lithuania
+  {
+    name: "Rasa Justaite-Geceviciene",
+    studio: "Rasa Just Ceramics",
+    city: "Vilnius",
+    province: "Lithuania",
+    country: "EU",
+    website: "https://rasajust.com",
+    bio: "An award-winning Lithuanian ceramicist and professor at Vilnius Academy of Arts whose nature-inspired landscape works use coloured clay bodies and glazes; named Ceramicist of the Year in 2021.",
+  },
+  {
+    name: "Mingaile Mikelenaite",
+    studio: "Mina Ceramics",
+    city: "Vilnius",
+    province: "Lithuania",
+    country: "EU",
+    website: "https://www.mikelenaite.com",
+    bio: "A Vilnius Academy of Arts master graduate and member of the Lithuanian Artists' Union creating conceptual ceramic sculpture and unique tableware with emphasis on texture and natural clay colour.",
+  },
+  // Canada — Ontario
+  {
+    name: "Jodie Hames",
+    studio: "Clayworks Pottery",
+    city: "Lindsay",
+    province: "Ontario",
+    country: "CA",
+    website: "https://clayworkspottery.ca",
+    bio: "Handmade functional pottery inspired by nature — carved, stamped, and glazed pieces featuring recurring motifs like the Jack pine, made in a studio on Houghton Creek in Lindsay.",
+  },
+  // Canada — British Columbia
+  {
+    name: "Francine Hampson-Reid",
+    studio: "Mudpuppy Studios",
+    city: "Salt Spring Island",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://mudpuppystudios.ca",
+    bio: "Functional and decorative ceramics in celadon and temmoku glazes with embossed natural textures — dinnerware, teapots, and pedestal bowls handmade on Salt Spring Island.",
+  },
+  // Canada — Quebec
+  {
+    name: "Mahmoud Baghaeian",
+    studio: "Atelier Spirale",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://ceramicstudio.ca",
+    bio: "A Montreal ceramics studio and gallery where Persian-inspired motifs meet contemporary wheel-thrown forms, offering classes five days a week in a bilingual environment.",
+  },
+  {
+    name: "Géraldine Cyr",
+    studio: "La Maison du Potier",
+    city: "Îles-de-la-Madeleine",
+    province: "Quebec",
+    country: "CA",
+    website: "https://maisondupotier.com",
+    bio: "An économusée pottery workshop founded in 1990 on the Magdalen Islands in the Gulf of St. Lawrence, producing hand-turned and hand-painted pieces inspired by the islands' colours, fishing boats, and landscapes.",
+  },
+  {
+    name: "Violeta Mihaylova",
+    studio: "Art VM Studio de Céramique",
+    city: "Candiac",
+    province: "Quebec",
+    country: "CA",
+    website: "https://www.studiodeceramiqueartvm.com",
+    bio: "A professional ceramicist with over 34 years of experience offering private and small-group pottery courses on Montreal's South Shore, combining European craftsmanship with ecological, sustainable practice.",
+  },
+  // Australia — NSW
+  {
+    name: "Cristie Little",
+    studio: "Hunter Valley Ceramics Studio",
+    city: "Branxton",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.huntervalleyceramics.com.au",
+    bio: "A boutique working artist studio in the Hunter Valley producing small-batch handcrafted ceramics alongside wheel-throwing and hand-building classes and workshops.",
+  },
+  {
+    name: "Zeynep Testoni",
+    studio: "Soul Clay Studios",
+    city: "Gerringong",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.soulclaystudios.com.au",
+    bio: "A working studio and ceramics shop on the NSW South Coast featuring over 15 resident artists, with weekly wheel-throwing classes, one-off clay sessions, and private bookings.",
+  },
+  // Australia — Queensland
+  {
+    name: "Steve Bishopric & Sue McBurnie",
+    studio: "Nob Creek Pottery",
+    city: "Byfield",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.nobcreekpottery.com.au",
+    bio: "A master-potter studio and three-gallery complex in Central Queensland's tropical rainforest, featuring wood-fired anagama pots, pit-fired work, and gas-fired stoneware, with traditional four-day firing workshops.",
+  },
+  {
+    name: "Tam Taylor",
+    studio: "Fern Gully Pottery Studio",
+    city: "Mooloolah Valley",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.ferngullystudio.com.au",
+    bio: "Hand-shaped small-batch ceramic vessels — vases, platters, bowls, and urns — crafted with organic earth-inspired forms in the Sunshine Coast hinterland.",
+  },
+  {
+    name: "Fiona Cuthbert O'Meara",
+    studio: "Naturemuse Ceramics",
+    city: "Doonan",
+    province: "Queensland",
+    country: "AU",
+    website: "https://naturemuse.com.au",
+    bio: "A studio nestled in the Sunshine Coast hinterland producing hand-built and wheel-thrown functional and collector ceramics, with community wood-firing events using an anagama kiln.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
@@ -3166,6 +3480,44 @@ export const suppliers: Supplier[] = [
     website: "https://www.potclays.co.uk",
     bio: "A family-run ceramics supplier based in the historic pottery capital of Stoke-on-Trent, with over 90 years of experience stocking clay, glazes, kilns, wheels, and raw materials.",
   },
+  // France
+  {
+    name: "Ceradel",
+    studio: "Ceradel Fournitures Céramique",
+    city: "Limoges",
+    province: "France",
+    country: "EU",
+    website: "https://ceradel.fr/en",
+    bio: "A French ceramic supply institution founded in 1858, stocking over 30,000 references — clays, glazes, kilns, wheels, and tools — serving professionals and enthusiasts across France and Europe.",
+  },
+  // Germany
+  {
+    name: "Mit-Ton",
+    city: "Aachen",
+    province: "Germany",
+    country: "EU",
+    website: "https://mit-ton.de/en",
+    bio: "A German ceramics supply shop based in Aachen specialising in domestically produced glazes, stoneware and porcelain clays, and pottery tools, with fast delivery across Europe.",
+  },
+  // Spain
+  {
+    name: "Marphil Cerámica",
+    studio: "Marphil",
+    city: "Madrid",
+    province: "Spain",
+    country: "EU",
+    website: "https://www.marphil.com/",
+    bio: "Madrid's dedicated ceramics supplier with 50 years of experience, carrying clays, glazes, oxides, kilns, wheels, and tools across two city locations — also home to the PotteryGym open studio.",
+  },
+  // Netherlands
+  {
+    name: "Creavisie",
+    city: "Surhuisterveen",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.creavisie.com/en",
+    bio: "A Dutch ceramics and art supply specialist based in northern Netherlands, stocking wheels, kilns, Botz glazes, and a full range of clays for potters at all levels.",
+  },
 ];
 
 export const teachingStudios: TeachingStudio[] = [
@@ -3571,14 +3923,6 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A nonprofit pottery studio in the Boston area offering classes, workshops, studio rentals, residencies, and community outreach for all skill levels since 1971.",
   },
   // Pennsylvania
-  {
-    name: "The Clay Studio",
-    city: "Philadelphia",
-    province: "Pennsylvania",
-    country: "US",
-    website: "https://www.theclaystudio.org",
-    bio: "One of the nation's most respected ceramics centres offering year-round classes, exhibitions, residencies, and community programming.",
-  },
   // Washington
   {
     name: "Pottery Northwest",
@@ -3614,6 +3958,138 @@ export const teachingStudios: TeachingStudio[] = [
     country: "US",
     website: "https://www.oasispottery.com",
     bio: "A Las Vegas ceramics teaching studio offering wheel throwing, handbuilding classes, studio memberships, and private bookings for all skill levels.",
+  },
+  // Italy
+  {
+    name: "Faenza Art Ceramic Center",
+    studio: "FACC",
+    city: "Faenza",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.facc-art.it/en/",
+    bio: "An internationally-focused pottery school in Faenza — Italy's ceramic capital — offering intensive courses in wheel throwing, glazing, moulding, and sculpture, plus artist residencies and studio rental.",
+  },
+  {
+    name: "Studio MUD",
+    city: "Palermo",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.studiomud.it/en/about-us/",
+    bio: "Founded in 2018 by Sicilian ceramicist Alessandro Strano, this Palermo studio and co-working hub offers wheel-throwing courses, one-day workshops, artist residencies, and exhibitions.",
+  },
+  // Spain
+  {
+    name: "Forma Arts",
+    studio: "Forma Arts",
+    city: "Barcelona",
+    province: "Spain",
+    country: "EU",
+    website: "https://www.formaarts.com/en/ceramics-courses-in-barcelona/",
+    bio: "Barcelona's oldest private ceramics school, founded in 1970, offering continuous wheel-throwing, hand-building, sculpture, and glazing courses at all levels from a studio in the Eixample district.",
+  },
+  {
+    name: "BCN Clay Studio",
+    studio: "BCN Clay",
+    city: "Barcelona",
+    province: "Spain",
+    country: "EU",
+    website: "https://bcnclaystudio.com/",
+    bio: "A ceramics studio and school in Barcelona's Gràcia neighbourhood offering weekly wheel and hand-building classes in Spanish and English, weekend beginner workshops, and open coworking membership.",
+  },
+  // France
+  {
+    name: "Creamik School",
+    studio: "Creamik",
+    city: "Séné",
+    province: "France",
+    country: "EU",
+    website: "https://creamik.com/?lang=en",
+    bio: "A professional ceramics training school in Brittany founded in 2009 by master potter Matthieu Liévois, offering a one-year certifying programme, online courses, and a free resource centre for potters.",
+  },
+  {
+    name: "Riviera Ceramic",
+    city: "Tourrettes-sur-Loup",
+    province: "France",
+    country: "EU",
+    website: "https://www.rivieraceramic.com/en/",
+    bio: "A Provence-Alpes ceramic studio and school near Vence run by two instructors with 30+ years of combined experience, teaching wheel-throwing, hand-building, and decorating 30 minutes from Nice.",
+  },
+  // Canada — Ontario
+  {
+    name: "Elora Centre for the Arts",
+    city: "Elora",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.eloracentreforthearts.ca",
+    bio: "An independent arts charity in the historic village of Elora offering adult workshops, kids classes, and community programming including ceramics.",
+  },
+  // Canada — Quebec
+  {
+    name: "Tour Potier Studio Céramique",
+    city: "Saint-Bruno-de-Montarville",
+    province: "Quebec",
+    country: "CA",
+    website: "https://www.tourpotierstbruno.com",
+    bio: "A community-focused teaching studio on Montreal's South Shore offering pottery wheel courses, handbuilding workshops, open studio memberships, children's classes, and kiln rental.",
+  },
+  {
+    name: "Céramique Centrale",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://www.ceramiquecentrale.com",
+    bio: "An inclusive pottery studio in Verdun offering three-week intro courses, seven-week classes, open studio sessions, and private events for all ages and skill levels.",
+  },
+  {
+    name: "Les Faiseurs",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://lesfaiseurs.ca/en",
+    bio: "A ceramic café, pottery workshop, and boutique on Saint-Laurent Boulevard in Rosemont, offering introductory wheel-throwing and handbuilding courses and a shop featuring local ceramic artists' work.",
+  },
+  // Australia — NSW
+  {
+    name: "The Bare Stone Studio",
+    city: "Central Coast",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://thebarestonestudio.com",
+    bio: "A relaxed, inclusive studio on the Central Coast offering pottery workshops for all levels, small-batch handmade ceramics, pottery supplies, and drop-in sessions.",
+  },
+  {
+    name: "Centered Ceramics",
+    city: "Umina Beach",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.centeredceramics.com.au",
+    bio: "A pottery school, café, and shop in Umina Beach on the NSW Central Coast offering term courses, wheel throwing and hand building workshops, group events, and firing services.",
+  },
+  // Australia — Victoria
+  {
+    name: "The Pottage",
+    city: "Ballarat",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.thepottage.com.au",
+    bio: "A ceramics studio in central Ballarat offering wheel throwing classes, studio hire, term classes, and group bookings in a warm, community-centred environment.",
+  },
+  {
+    name: "Bendigo Pottery",
+    city: "Bendigo",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.bendigopottery.com.au",
+    bio: "Australia's oldest and largest working pottery, established in the 1850s on the Bendigo goldfields, producing Australian-made stoneware and hosting a working pottery museum and hands-on visitor experiences.",
+  },
+  // Australia — South Australia
+  {
+    name: "ES Ceramics",
+    city: "Thebarton",
+    province: "South Australia",
+    country: "AU",
+    website: "https://www.esceramics.com.au",
+    bio: "An Adelaide studio producing custom ceramic pieces and one-off works alongside beginner wheel-throwing and hand-building workshops.",
   },
 ];
 
