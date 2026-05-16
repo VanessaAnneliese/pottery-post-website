@@ -44,6 +44,11 @@ export default function PrivacyPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Gallery Listings</h2>
+          <p>Information you submit for the Pottery Gallery — including your name, studio name, location, website, a description of your piece, and photos — will be displayed publicly on this website if your piece is selected. By submitting to the Gallery, you consent to this public display for the duration of the collection. You may contact us with questions about your submission or your displayed information at any time.</p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Data Retention</h2>
           <p>We retain personal information only as long as necessary for the purposes for which it was collected, or as required by law. Directory listing information is retained until you request its removal.</p>
         </div>
