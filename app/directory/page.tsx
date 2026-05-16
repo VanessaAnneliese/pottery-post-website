@@ -284,7 +284,7 @@ export default function DirectoryPage() {
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4">
         <div>
           <h1 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Pottery Directory</h1>
-          <p className="mt-3 mb-1 text-xs tracking-widest uppercase" style={{ color: "#D4622A", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+          <p className="mt-3 mb-1 text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             {potters.length + guilds.length + teachingStudios.length + suppliers.length} listings and counting
           </p>
         </div>
