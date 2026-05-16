@@ -1502,6 +1502,14 @@ export const potters: Potter[] = [
     website: "https://cherricopottery.com",
     bio: "Beautiful handmade pottery made in St. Joseph, Minnesota.",
   },
+  {
+    name: "Clay Coyote",
+    city: "Hutchinson",
+    province: "Minnesota",
+    country: "US",
+    website: "https://www.claycoyote.com",
+    bio: "A gallery and pottery studio in the heartland of Minnesota creating handcrafted functional cookware — bread bakers, tagines, and wine cups — under the tagline 'art you can cook with.'",
+  },
   // Ohio
   {
     name: "Gina DeSantis",
@@ -1731,6 +1739,15 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://www.ripplepottery.com",
     bio: "Nearly three decades of experience producing high-fired stoneware and porcelain that blends practical forms with subtle artistic detail.",
+  },
+  {
+    name: "Terry Silverman",
+    studio: "The Pottery Works",
+    city: "Fitzwilliam",
+    province: "New Hampshire",
+    country: "US",
+    website: "https://www.flamewarepottery.com",
+    bio: "A studio established in 1977 specialising in hand-thrown Flameware ceramic cookware that goes safely from stovetop to oven — fired to extreme temperatures for exceptional durability.",
   },
   // Delaware
   {
@@ -3062,6 +3079,42 @@ export const suppliers: Supplier[] = [
     country: "AU",
     website: "https://northcotepottery.com",
     bio: "Melbourne's go-to ceramics supplier, carrying a wide range of clays, glazes, tools, and kilns.",
+  },
+  // Pennsylvania
+  {
+    name: "The Ceramic Shop",
+    city: "Norristown",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.theceramicshop.com",
+    bio: "A comprehensive ceramic and pottery supply retailer in Norristown, PA, stocking clays, glazes, kilns, wheels, tools, and kiln equipment from leading brands.",
+  },
+  // Florida
+  {
+    name: "Highwater Clays",
+    city: "Clearwater",
+    province: "Florida",
+    country: "US",
+    website: "https://www.highwaterclays.com",
+    bio: "A ceramics supply shop in Clearwater, Florida carrying clay products, tools, and equipment for studio potters.",
+  },
+  // Washington
+  {
+    name: "North Star Equipment",
+    city: "Cheney",
+    province: "Washington",
+    country: "US",
+    website: "https://www.northstarequipment.com",
+    bio: "Manufacturer of studio ceramic equipment — slab rollers, extruders, wedging tables, and throwing bats — built to last in Cheney, Washington.",
+  },
+  // England
+  {
+    name: "Potclays",
+    city: "Stoke-on-Trent",
+    province: "England",
+    country: "EU",
+    website: "https://www.potclays.co.uk",
+    bio: "A family-run ceramics supplier based in the historic pottery capital of Stoke-on-Trent, with over 90 years of experience stocking clay, glazes, kilns, wheels, and raw materials.",
   },
 ];
 
