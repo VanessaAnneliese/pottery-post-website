@@ -2615,6 +2615,111 @@ export const potters: Potter[] = [
     website: "https://mysterycreekceramics.co.nz",
     bio: "A Waikato ceramicist who specialises in nerikomi — a Japanese patterning technique — producing vibrantly striped and marbled vases, bowls, plates, and mugs.",
   },
+  // Idaho
+  {
+    name: "Jamie Danielson",
+    studio: "Sandpoint Ceramics",
+    city: "Sandpoint",
+    province: "Idaho",
+    country: "US",
+    website: "https://www.sandpointceramics.com",
+    bio: "Award-winning ceramic artist offering wheel-throwing, handbuilding classes, workshops, and memberships for all skill levels.",
+  },
+  // West Virginia
+  {
+    name: "Wendy Summers",
+    studio: "Summer Hollow Pottery",
+    city: "Wallback",
+    province: "West Virginia",
+    country: "US",
+    website: "https://shpottery.com",
+    bio: "Independent studio potter creating functional stoneware — bowls, mugs, and pitchers — from her rural studio in central West Virginia for over 25 years.",
+  },
+  {
+    name: "Morning Light Studio",
+    city: "West Virginia",
+    province: "West Virginia",
+    country: "US",
+    website: "https://www.morninglightstudiowv.com",
+    bio: "A mountain studio making handmade functional ceramics — especially mugs — inspired by Appalachian nature and colour.",
+  },
+  {
+    name: "Jen Allen",
+    studio: "Jen Allen Ceramics",
+    city: "West Virginia",
+    province: "West Virginia",
+    country: "US",
+    website: "https://www.jenniferallenceramics.com",
+    bio: "A West Virginia potter who makes functional pots for the home and teaches pottery workshops with the tagline 'Crafting joy and inspiring curiosity.'",
+  },
+  // Mississippi
+  {
+    name: "Stephen Phillips",
+    studio: "Stephen's Potter House Productions",
+    city: "Crawford",
+    province: "Mississippi",
+    country: "US",
+    website: "https://www.stephenspotterhouseproductions.com",
+    bio: "A ceramic artist creating decorative and functional vessels through textured underglaze, gloss glaze, and raku firing techniques.",
+  },
+  // Alabama
+  {
+    name: "Tena Payne",
+    studio: "Earthborn Pottery",
+    city: "Leeds",
+    province: "Alabama",
+    country: "US",
+    website: "https://earthbornpottery.net",
+    bio: "A studio potter crafting handmade dinnerware and serveware used in restaurants and homes nationwide.",
+  },
+  // Missouri
+  {
+    name: "Pam Anderson",
+    studio: "MoonRiver Pottery",
+    city: "Kansas City",
+    province: "Missouri",
+    country: "US",
+    website: "https://moonriverpottery.com",
+    bio: "Creates white porcelain vessels and clay objects with a soulful, poetic process emphasising the meditative and spiritual nature of working with clay.",
+  },
+  // North Dakota
+  {
+    name: "Catie Miller",
+    studio: "Catie Miller Ceramics",
+    city: "West Fargo",
+    province: "North Dakota",
+    country: "US",
+    website: "https://www.catie-miller.com",
+    bio: "A full-time potter and muralist known for vivid illustrated ceramics made using a unique hand-transfer process with slip-covered newsprint.",
+  },
+  {
+    name: "Nodakian Studios",
+    city: "Bismarck",
+    province: "North Dakota",
+    country: "US",
+    website: "https://www.nodakianstudios.com",
+    bio: "A high-fired ceramics studio producing wheel-thrown and hand-decorated functional pieces including tripod mugs, bowls, and colourful hanging planters.",
+  },
+  // South Dakota
+  {
+    name: "Dave Huebner",
+    studio: "Dakota Stoneware Pottery",
+    city: "Bushnell",
+    province: "South Dakota",
+    country: "US",
+    website: "https://dakotastoneware.com",
+    bio: "Creating traditional stoneware pottery with Prairie themes from a studio and gallery that has been making work since 1966.",
+  },
+  // Arkansas
+  {
+    name: "Brit McDaniel",
+    studio: "Brit McDaniel Ceramics",
+    city: "Mountain View",
+    province: "Arkansas",
+    country: "US",
+    website: "https://britmcdaniel.com",
+    bio: "Makes modern, functional porcelain ceramics — dinnerware, vessels, and jewellery — from a home studio nestled in the Ozark Mountains.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
@@ -3437,6 +3542,78 @@ export const teachingStudios: TeachingStudio[] = [
     country: "AU",
     website: "https://www.clayground.com.au",
     bio: "Sydney's largest membership-focused eco-ceramic studio offering handbuilding and wheel-throwing courses, drop-in sessions, and firing services across two locations.",
+  },
+  // Illinois
+  {
+    name: "Penguin Foot Pottery",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.penguinfoot.com",
+    bio: "A Logan Square ceramics studio offering beginner through advanced wheel-throwing and handbuilding classes, workshops, and memberships.",
+  },
+  // Texas
+  {
+    name: "Third Coast Clay",
+    city: "Houston",
+    province: "Texas",
+    country: "US",
+    website: "https://www.3rdcoastclay.com",
+    bio: "An artist-run ceramic studio offering classes, memberships, workshops, and firing services with a mission to build an inclusive ceramic community.",
+  },
+  // Massachusetts
+  {
+    name: "Mudflat Studio",
+    city: "Somerville",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.mudflat.org",
+    bio: "A nonprofit pottery studio in the Boston area offering classes, workshops, studio rentals, residencies, and community outreach for all skill levels since 1971.",
+  },
+  // Pennsylvania
+  {
+    name: "The Clay Studio",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.theclaystudio.org",
+    bio: "One of the nation's most respected ceramics centres offering year-round classes, exhibitions, residencies, and community programming.",
+  },
+  // Washington
+  {
+    name: "Pottery Northwest",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://www.potterynorthwest.org",
+    bio: "A community pottery studio with the motto 'Clay is Community. Clay is for Everyone,' offering classes, workshops, and studio access for all skill levels.",
+  },
+  // Oregon
+  {
+    name: "The Mud Room",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://www.themudroompdx.com",
+    bio: "A community-centred pottery studio with two Portland locations, offering 24/7 member access, classes, and workshops.",
+  },
+  // Iowa
+  {
+    name: "Iowa Ceramics Center and Glass Studio",
+    city: "Cedar Rapids",
+    province: "Iowa",
+    country: "US",
+    website: "https://iowaceramicscenter.org",
+    bio: "A nonprofit ceramics and glass facility offering instruction for all ages, artist residencies, and community outreach programming.",
+  },
+  // Nevada
+  {
+    name: "Oasis Pottery",
+    city: "Las Vegas",
+    province: "Nevada",
+    country: "US",
+    website: "https://www.oasispottery.com",
+    bio: "A Las Vegas ceramics teaching studio offering wheel throwing, handbuilding classes, studio memberships, and private bookings for all skill levels.",
   },
 ];
 

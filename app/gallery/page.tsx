@@ -5,7 +5,7 @@ import { parisienne } from "@/lib/fonts";
 export default function GalleryPage() {
   return (
     <>
-    <QuoteBlock quote={<>There is a quiet<span className="hidden md:inline"><br /></span>{" "}in beautiful pottery that settles something inside you.</>} />
+    <QuoteBlock quote={<>There is a quiet<span className="hidden md:inline"><br /></span>{" "}in beautiful pottery<span className="hidden md:inline"><br /></span>{" "}that settles something inside you.</>} />
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured
