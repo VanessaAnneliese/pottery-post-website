@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { guilds, potters, suppliers, teachingStudios, groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-data";
 import QuoteBlock from "@/components/QuoteBlock";
-import { parisienne } from "@/lib/fonts";
 
 type DirectoryType = "guilds" | "potters" | "suppliers" | "classes";
 
@@ -373,11 +372,7 @@ export default function DirectoryPage() {
     <section className="px-6 pb-12 md:pb-20 max-w-4xl mx-auto">
       {/* NC quote */}
       {selectedRegion === "US" && selectedProvince === "North Carolina" && (
-        <div className="mb-8 py-8 px-6 text-center rounded-sm" style={{ background: "#EDE4D5" }}>
-          <p className={`${parisienne.className} text-2xl md:text-3xl leading-relaxed`} style={{ color: "#856E62" }}>
-            In the hills of North Carolina, families have passed a pottery wheel from grandmother to grandchild for two hundred years. The clay is the same. The river is the same. The love that goes into it is the same. Some things refuse to be lost.
-          </p>
-        </div>
+        <QuoteBlock quote="In the hills of North Carolina, families have passed a pottery wheel from grandmother to grandchild for two hundred years. The clay is the same. The river is the same. The love that goes into it is the same. Some things refuse to be lost." className="mb-8" />
       )}
       {/* Content */}
       {isFullDirectory || !selectedRegion ? (
