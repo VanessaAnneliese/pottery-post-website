@@ -19,9 +19,9 @@ export default function Home() {
       <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="py-24 md:py-32" />
 
       {/* Directory CTA */}
-      <section className="relative py-16 md:py-24 px-6 text-center" style={{ background: "#C9B99A" }}>
-        <div className="absolute inset-x-0 top-0 h-48 md:h-72 pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8, transparent)", zIndex: 0 }} />
-        <div className="absolute inset-x-0 bottom-0 h-48 md:h-72 pointer-events-none" style={{ background: "linear-gradient(to top, #F5F0E8, transparent)", zIndex: 0 }} />
+      <section className="relative py-24 md:py-36 px-6 text-center" style={{ background: "#C9B99A" }}>
+        <div className="absolute inset-x-0 top-0 h-64 md:h-[28rem] pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8 0%, #F5F0E8 10%, rgba(245,240,232,0.7) 50%, transparent 100%)", zIndex: 0 }} />
+        <div className="absolute inset-x-0 bottom-0 h-64 md:h-[28rem] pointer-events-none" style={{ background: "linear-gradient(to top, #F5F0E8 0%, #F5F0E8 10%, rgba(245,240,232,0.7) 50%, transparent 100%)", zIndex: 0 }} />
         <div style={{ position: "relative", zIndex: 1 }}>
           <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
             Canada &middot; United States &middot; Europe &middot; Australia
