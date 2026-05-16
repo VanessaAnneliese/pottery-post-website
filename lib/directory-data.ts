@@ -1012,15 +1012,6 @@ export const potters: Potter[] = [
     bio: "Ceramic artist with over 30 years of experience creating functional and decorative handmade pieces that blend clean modern design with playful textures, patterns, and dots. Also offers pottery workshops and private clay parties.",
   },
   {
-    name: "Karen Gray",
-    studio: "The Potter's Studio & Gallery",
-    city: "Huntsville",
-    province: "Ontario",
-    country: "CA",
-    website: "https://thepottersstudio.com",
-    bio: "Creates colourful sgraffito pottery — carving imagery of loons, pines, and poppies into clay — from a working studio and gallery in downtown Huntsville, Muskoka.",
-  },
-  {
     name: "Grahame Wales & Debbie Wales",
     studio: "Earth & Fire Pottery",
     city: "Haliburton Highlands",
