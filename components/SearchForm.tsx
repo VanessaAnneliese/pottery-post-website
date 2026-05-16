@@ -24,16 +24,16 @@ export default function SearchForm({ defaultOpen = false }: { defaultOpen?: bool
   }
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center w-full md:w-auto">
       {open ? (
-        <form onSubmit={handleSubmit} className="flex items-center gap-2">
+        <form onSubmit={handleSubmit} className="flex items-center gap-2 w-full md:w-auto">
           <input
             ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search potters, guilds..."
-            className="text-sm px-3 py-1 rounded-sm outline-none"
+            placeholder="search potters, guilds, classes..."
+            className="text-sm px-3 py-1 rounded-sm outline-none flex-1 md:flex-none"
             style={{ background: "#F5F0E8", color: "#3B2314", fontFamily: "system-ui, sans-serif", minWidth: "200px" }}
           />
           <button
