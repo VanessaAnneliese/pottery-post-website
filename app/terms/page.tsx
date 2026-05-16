@@ -19,7 +19,7 @@ export default function TermsPage() {
           <p className="mb-3">You may use this Site for lawful purposes only. You agree not to:</p>
           <ul className="list-disc pl-6 flex flex-col gap-2">
             <li>Use the Site in any way that violates applicable Canadian federal or provincial law</li>
-            <li>Submit false, misleading, or fraudulent information in directory listings or purchase forms</li>
+            <li>Submit false, misleading, or fraudulent information in directory listings</li>
             <li>Attempt to gain unauthorized access to any part of the Site</li>
             <li>Use automated tools to scrape, copy, or extract content from the Site without our written permission</li>
             <li>Interfere with or disrupt the Site or its servers</li>
@@ -28,12 +28,12 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Pottery Directory</h2>
-          <p>Directory listings are submitted by potters and guilds and are reviewed before publication. We reserve the right to decline, edit, or remove any listing at our discretion. By submitting a listing, you represent that the information provided is accurate and that you have the right to share it. You grant Pottery Post a non-exclusive, royalty-free licence to display your submitted information and images on the Site.</p>
+          <p>Directory listings are submitted by potters, guilds, those offering pottery classes, and pottery supply shops and are reviewed before publication. We reserve the right to decline, edit, or remove any listing at our discretion. By submitting a listing, you represent that the information provided is accurate and that you have the right to share it. You grant Pottery Post a non-exclusive, royalty-free licence to display your submitted information and images on the Site.</p>
         </div>
 
         <div>
-          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>The Pottery Shop</h2>
-          <p>All prices are listed in Canadian dollars unless otherwise indicated. We reserve the right to cancel any order at our discretion, in which case a full refund will be issued. Shipping is available across Canada and the United States. Local pickup is available in Whitby, Ontario, Canada. All sales are final unless a piece arrives damaged, in which case please contact us within 7 days of receipt.</p>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Pottery Gallery</h2>
+          <p>The Pottery Gallery is a curated collection of handmade pottery presented for appreciation only. Pieces are not for sale by Pottery Post. Potters who submit work to the Gallery are responsible for all shipping costs to deliver their piece to Pottery Post. Pottery Post is not responsible for any loss or damage that occurs during shipping to us. We recommend using a tracked, insured courier service. Please retain your shipping documentation.</p>
         </div>
 
         <div>
@@ -49,7 +49,7 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Limitation of Liability</h2>
-          <p>To the maximum extent permitted by applicable law, Pottery Post shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this Site or any products purchased through it.</p>
+          <p>To the maximum extent permitted by applicable law, Pottery Post shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this Site.</p>
         </div>
 
         <div>
@@ -60,7 +60,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Contact Us</h2>
           <p>If you have questions about these Terms of Use, please contact us at:</p>
-          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada</p>
+          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:info@potterypost.ca" className="underline" style={{ color: "#009999" }}>info@potterypost.ca</a></p>
         </div>
 
       </div>
