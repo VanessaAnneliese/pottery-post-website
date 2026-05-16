@@ -522,7 +522,6 @@ export const guilds: Guild[] = [
   // Iceland
   {
     name: "Kaolin Ceramic Gallery",
-    studio: "Kaolin",
     city: "Reykjavik",
     province: "Iceland",
     country: "EU",
@@ -532,7 +531,6 @@ export const guilds: Guild[] = [
   // Estonia
   {
     name: "Masters' Courtyards Ceramics Studio",
-    studio: "Keraamikakoda",
     city: "Tallinn",
     province: "Estonia",
     country: "EU",
@@ -3699,6 +3697,50 @@ export const potters: Potter[] = [
     website: "https://triplecpottery.com",
     bio: "A working studio and showroom on Big Oak Church Road in Eagle Springs producing unique and functional handmade pots, with bridal registry services and custom commission pieces also available.",
   },
+  {
+    name: "Eck McCanless",
+    studio: "Eck McCanless Pottery",
+    city: "Seagrove",
+    province: "North Carolina",
+    country: "US",
+    website: "https://eckmccanlesspottery.com",
+    bio: "A fifth-generation North Carolina potter working in the Seagrove tradition, producing functional and decorative stoneware and salt-glazed pieces that honour the region's deep craft heritage.",
+  },
+  {
+    name: "Jeff Brown",
+    studio: "Jeff Brown Pottery",
+    city: "Seagrove",
+    province: "North Carolina",
+    country: "US",
+    website: "https://jeffbrownpottery.com",
+    bio: "Creates wheel-thrown functional pottery from his Seagrove studio, specialising in richly glazed bowls, vases, and tableware that draw on the long tradition of the North Carolina pottery belt.",
+  },
+  {
+    name: "Keith Martindale",
+    studio: "Keith Martindale Pottery",
+    city: "Seagrove",
+    province: "North Carolina",
+    country: "US",
+    website: "https://keithmartindalepottery.com",
+    bio: "Seagrove-based studio potter working in stoneware and porcelain, producing hand-thrown functional ware with a refined aesthetic shaped by years of study and practice in North Carolina's pottery community.",
+  },
+  {
+    name: "Cat Viera",
+    studio: "Cat Viera Pottery",
+    city: "Seagrove",
+    province: "North Carolina",
+    country: "US",
+    website: "https://catvierapottery.com",
+    bio: "Handcrafts expressive functional pottery and sculptural ceramics from her Seagrove studio, drawing on the region's tradition while exploring contemporary form, colour, and surface decoration.",
+  },
+  {
+    name: "Seagrove Creations",
+    city: "Seagrove",
+    province: "North Carolina",
+    country: "US",
+    website: "https://seagrovecreations.com",
+    bio: "A Seagrove pottery studio producing handmade functional and decorative ceramics with a focus on distinctive glazes, unique forms, and the authentic spirit of North Carolina's pottery heartland.",
+  },
   // North Carolina — Davidson County
   {
     name: "Margie Nance",
@@ -4168,7 +4210,6 @@ export const suppliers: Supplier[] = [
   // France
   {
     name: "Ceradel",
-    studio: "Ceradel Fournitures Céramique",
     city: "Limoges",
     province: "France",
     country: "EU",
@@ -4187,7 +4228,6 @@ export const suppliers: Supplier[] = [
   // Spain
   {
     name: "Marphil Cerámica",
-    studio: "Marphil",
     city: "Madrid",
     province: "Spain",
     country: "EU",
@@ -4656,7 +4696,6 @@ export const teachingStudios: TeachingStudio[] = [
   // Italy
   {
     name: "Faenza Art Ceramic Center",
-    studio: "FACC",
     city: "Faenza",
     province: "Italy",
     country: "EU",
@@ -4674,7 +4713,6 @@ export const teachingStudios: TeachingStudio[] = [
   // Spain
   {
     name: "Forma Arts",
-    studio: "Forma Arts",
     city: "Barcelona",
     province: "Spain",
     country: "EU",
@@ -4683,7 +4721,6 @@ export const teachingStudios: TeachingStudio[] = [
   },
   {
     name: "BCN Clay Studio",
-    studio: "BCN Clay",
     city: "Barcelona",
     province: "Spain",
     country: "EU",
@@ -4693,7 +4730,6 @@ export const teachingStudios: TeachingStudio[] = [
   // France
   {
     name: "Creamik School",
-    studio: "Creamik",
     city: "Séné",
     province: "France",
     country: "EU",
@@ -4854,8 +4890,7 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "An inclusive pottery community in Charlotte offering classes, memberships, one-time trial sessions, youth summer camps, private events, ceramic supply sales, and an online video library.",
   },
   {
-    name: "Arias DeRienzo",
-    studio: "Two Ships Pottery",
+    name: "Two Ships Pottery",
     city: "Charlotte",
     province: "North Carolina",
     country: "US",
