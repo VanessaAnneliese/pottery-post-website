@@ -8,13 +8,11 @@ import LogoMark from "./LogoMark";
 export default function Nav() {
   const pathname = usePathname();
 
-  function navLinkStyle(href: string): React.CSSProperties {
+  function navLinkClass(href: string): string {
     const active = pathname === href || pathname.startsWith(href + "/");
-    return {
-      color: active ? "#FFFFFF" : "#5C3D2E",
-      fontFamily: "system-ui, sans-serif",
-      textDecoration: "none",
-    };
+    return active
+      ? "text-white whitespace-nowrap transition-colors"
+      : "text-[#5C3D2E] hover:text-white whitespace-nowrap transition-colors";
   }
 
   return (
@@ -33,8 +31,8 @@ export default function Nav() {
         </Link>
         <SearchForm defaultOpen={true} />
         <nav className="flex gap-6 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/directory" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/directory")}>Pottery Directory</Link>
-          <Link href="/gallery" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/gallery")}>Pottery Gallery</Link>
+          <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
+          <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
         </nav>
       </div>
 
@@ -51,8 +49,8 @@ export default function Nav() {
         </Link>
         <SearchForm defaultOpen={true} label="Search for" />
         <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/directory" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/directory")}>Pottery Directory</Link>
-          <Link href="/gallery" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/gallery")}>Pottery Gallery</Link>
+          <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
+          <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
         </nav>
       </div>
 

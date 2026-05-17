@@ -8,9 +8,11 @@ import SearchForm from "./SearchForm";
 export default function Footer() {
   const pathname = usePathname();
 
-  function navLinkStyle(href: string): React.CSSProperties {
+  function navLinkClass(href: string): string {
     const active = pathname === href || pathname.startsWith(href + "/");
-    return { color: active ? "#FFFFFF" : "#5C3D2E" };
+    return active
+      ? "text-white whitespace-nowrap transition-colors"
+      : "text-[#5C3D2E] hover:text-white whitespace-nowrap transition-colors";
   }
 
   return (
@@ -40,8 +42,8 @@ export default function Footer() {
           </Link>
           <div className="flex flex-col items-center gap-3">
             <nav className="flex gap-6 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
-              <Link href="/directory" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/directory")}>Pottery Directory</Link>
-              <Link href="/gallery" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/gallery")}>Pottery Gallery</Link>
+              <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
+              <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
             </nav>
             <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
               <Link href="/faq" className="hover:text-white transition-colors font-bold">FAQ</Link>
