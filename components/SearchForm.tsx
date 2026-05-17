@@ -153,7 +153,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
   const inputStyle: React.CSSProperties = {
     ...baseField,
     paddingRight: "0.75rem",
-    ...(label ? { minWidth: "260px" } : {}),
+    ...(label ? { minWidth: "340px" } : {}),
   };
 
   const provinceOptions = region ? PROVINCES[region] ?? [] : [];
@@ -204,7 +204,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
           />
           <button
             type="submit"
-            className="text-xs tracking-widest uppercase px-4 rounded-sm whitespace-nowrap"
+            className="text-xs tracking-widest uppercase px-4 rounded-sm whitespace-nowrap transition-all hover:bg-[#B8501F] active:scale-95"
             style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif", height: "2.25rem" }}
           >
             Go
