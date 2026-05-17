@@ -279,10 +279,14 @@ function DirectoryContent() {
     .filter((s) => !selectedProvince || s.province === selectedProvince)
     .filter((s) => matchesQuery(s, CLASS_TAGS)));
 
-  const showGuilds = selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes";
-  const showPotters = selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "classes";
-  const showSuppliers = selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes";
-  const showClasses = selectedType === "classes";
+  // When a text search is active, show every type that has matching results.
+  // When browsing with type-filter buttons only, respect the selected type.
+  const hasTextSearch = !!textQuery;
+
+  const showGuilds    = hasTextSearch ? filteredGuilds.length > 0    : (selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes");
+  const showPotters   = hasTextSearch ? filteredPotters.length > 0   : (selectedType !== "guilds"  && selectedType !== "suppliers" && selectedType !== "classes");
+  const showSuppliers = hasTextSearch ? filteredSuppliers.length > 0 : (selectedType !== "guilds"  && selectedType !== "potters"   && selectedType !== "classes");
+  const showClasses   = hasTextSearch ? (filteredClassPotters.length > 0 || filteredTeachingStudios.length > 0) : selectedType === "classes";
 
   const letterFilter = <T extends { name: string }>(items: T[]): T[] =>
     selectedLetter ? items.filter((i) => i.name[0]?.toUpperCase() === selectedLetter) : items;
