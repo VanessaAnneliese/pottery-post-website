@@ -30,9 +30,10 @@ export default function Nav() {
           />
         </Link>
         <SearchForm defaultOpen={true} />
-        <nav className="flex gap-6 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
+        <nav className="flex flex-wrap justify-center gap-6 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
           <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
           <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
+          <Link href="/postmarks" className={navLinkClass("/postmarks")}>Pottery Postmarks</Link>
         </nav>
       </div>
 
@@ -51,6 +52,7 @@ export default function Nav() {
         <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
           <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
           <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
+          <Link href="/postmarks" className={navLinkClass("/postmarks")}>Pottery Postmarks</Link>
         </nav>
       </div>
 
