@@ -37,7 +37,7 @@ export default function FAQPage() {
             </div>
             <div>
               <h3 className="font-bold mb-2">How do I get in touch?</h3>
-              <p style={{ color: "#5C3D2E" }}>You can reach us at <a href="mailto:info@potterypost.ca" className="underline" style={{ color: "#009999" }}>info@potterypost.ca</a>. For specific questions about either the directory or gallery, use <a href="mailto:directory@potterypost.ca" className="underline" style={{ color: "#009999" }}>directory@potterypost.ca</a> for the directory, and <a href="mailto:gallery@potterypost.ca" className="underline" style={{ color: "#009999" }}>gallery@potterypost.ca</a> for the gallery.</p>
+              <p style={{ color: "#5C3D2E" }}>You can reach us at <a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "#009999" }}>hello@potterypost.ca</a>. For specific questions about either the directory or gallery, use <a href="mailto:directory@potterypost.ca" className="underline" style={{ color: "#009999" }}>directory@potterypost.ca</a> for the directory, and <a href="mailto:gallery@potterypost.ca" className="underline" style={{ color: "#009999" }}>gallery@potterypost.ca</a> for the gallery.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">Is the Pottery Post affiliated with any specific pottery guild or school?</h3>

@@ -77,7 +77,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Contact Us</h2>
           <p>If you have questions about these Terms of Use, please contact us at:</p>
-          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:info@potterypost.ca" className="underline" style={{ color: "#009999" }}>info@potterypost.ca</a></p>
+          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "#009999" }}>hello@potterypost.ca</a></p>
         </div>
 
       </div>
