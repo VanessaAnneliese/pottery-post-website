@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { guilds, potters, suppliers, teachingStudios, groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-data";
 import QuoteBlock from "@/components/QuoteBlock";
@@ -196,10 +197,19 @@ function RegionBlock({
 }
 
 export default function DirectoryPage() {
+  const searchParams = useSearchParams();
   const [selectedType, setSelectedType] = useState<DirectoryType | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<Country | null>(null);
   const [selectedProvince, setSelectedProvince] = useState<string | null>(null);
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
+
+  // Read URL params set by the nav search bar and pre-apply filters
+  useEffect(() => {
+    const region = searchParams.get("region") as Country | null;
+    const province = searchParams.get("province");
+    if (region) setSelectedRegion(region);
+    if (province) setSelectedProvince(province);
+  }, [searchParams]);
 
   const isFullDirectory = selectedType === null && selectedRegion === null;
 

@@ -111,11 +111,16 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const q = query.trim();
-    if (!q) return;
-    const params = new URLSearchParams({ q });
-    if (region) params.set("region", region);
-    if (province) params.set("province", province);
-    router.push(`/search?${params.toString()}`);
+    // If a country is selected, go to directory pre-filtered
+    if (region) {
+      const params = new URLSearchParams({ region });
+      if (province) params.set("province", province);
+      if (q) params.set("q", q);
+      router.push(`/directory?${params.toString()}`);
+    } else {
+      if (!q) return;
+      router.push(`/search?q=${encodeURIComponent(q)}`);
+    }
     setQuery("");
   }
 
@@ -124,7 +129,14 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
     setTimeout(() => inputRef.current?.focus(), 50);
   }
 
-  const inputStyle = { background: "#F5F0E8", color: "#3B2314", fontFamily: "system-ui, sans-serif" };
+  const inputStyle: React.CSSProperties = {
+    background: "#F5F0E8",
+    color: "#3B2314",
+    fontFamily: "system-ui, sans-serif",
+    border: "none",
+    outline: "none",
+    appearance: "auto" as const,
+  };
   const provinceOptions = region ? PROVINCES[region] ?? [] : [];
 
   return (
