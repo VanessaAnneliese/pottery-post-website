@@ -124,7 +124,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
     setTimeout(() => inputRef.current?.focus(), 50);
   }
 
-  const fieldStyle: React.CSSProperties = {
+  const baseField: React.CSSProperties = {
     background: "#F5F0E8",
     color: "#3B2314",
     fontFamily: "system-ui, sans-serif",
@@ -132,10 +132,30 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
     outline: "none",
     height: "2.25rem",
     fontSize: "0.875rem",
+    paddingTop: 0,
+    paddingBottom: 0,
     paddingLeft: "0.75rem",
-    paddingRight: "0.75rem",
     borderRadius: "2px",
+    boxSizing: "border-box",
   };
+
+  // Selects: strip native appearance, add custom chevron via background SVG
+  const selectStyle: React.CSSProperties = {
+    ...baseField,
+    appearance: "none" as const,
+    paddingRight: "1.75rem",
+    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%235C3D2E' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "right 0.6rem center",
+  };
+
+  // Input: same base, wider
+  const inputStyle: React.CSSProperties = {
+    ...baseField,
+    paddingRight: "0.75rem",
+    minWidth: "260px",
+  };
+
   const provinceOptions = region ? PROVINCES[region] ?? [] : [];
 
   return (
@@ -151,7 +171,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             <select
               value={region}
               onChange={(e) => handleRegionChange(e.target.value)}
-              style={fieldStyle}
+              style={selectStyle}
             >
               <option value="">Everywhere</option>
               <option value="CA">Canada</option>
@@ -164,7 +184,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             <select
               value={province}
               onChange={(e) => setProvince(e.target.value)}
-              style={fieldStyle}
+              style={selectStyle}
               disabled={!region}
             >
               <option value="">{region ? "All regions" : "Select a country"}</option>
@@ -178,13 +198,13 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="search potters, guilds, classes..."
-            style={{ ...fieldStyle, minWidth: "220px" }}
+            placeholder="Potters, Guilds, Classes, Supply Shops"
+            style={inputStyle}
           />
           <button
             type="submit"
-            className="text-xs tracking-widest uppercase px-3 py-1 rounded-sm"
-            style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+            className="text-xs tracking-widest uppercase px-4 rounded-sm whitespace-nowrap"
+            style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif", height: "2.25rem" }}
           >
             Go
           </button>

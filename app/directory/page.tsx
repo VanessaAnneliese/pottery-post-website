@@ -199,16 +199,18 @@ function RegionBlock({
 export default function DirectoryPage() {
   const searchParams = useSearchParams();
   const [selectedType, setSelectedType] = useState<DirectoryType | null>(null);
-  const [selectedRegion, setSelectedRegion] = useState<Country | null>(null);
-  const [selectedProvince, setSelectedProvince] = useState<string | null>(null);
+  const [selectedRegion, setSelectedRegion] = useState<Country | null>(
+    () => (searchParams.get("region") as Country | null)
+  );
+  const [selectedProvince, setSelectedProvince] = useState<string | null>(
+    () => searchParams.get("province")
+  );
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
 
-  // Read URL params set by the nav search bar and pre-apply filters
+  // Sync URL params → state when navigating to /directory from the search bar
   useEffect(() => {
-    const region = searchParams.get("region") as Country | null;
-    const province = searchParams.get("province");
-    if (region) setSelectedRegion(region);
-    if (province) setSelectedProvince(province);
+    setSelectedRegion(searchParams.get("region") as Country | null);
+    setSelectedProvince(searchParams.get("province"));
   }, [searchParams]);
 
   const textQuery = searchParams.get("q")?.trim().toLowerCase() ?? "";
