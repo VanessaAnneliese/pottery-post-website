@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
     from: "Pottery Post <directory@potterypost.ca>",
     to: "anneliesedesigns@gmail.com",
     replyTo: email,
-    subject: `New Listing Submission — ${name}`,
+    subject: `Pottery Post Directory Submission — ${name}`,
     html,
     attachments: attachments.length > 0 ? attachments : undefined,
   });
