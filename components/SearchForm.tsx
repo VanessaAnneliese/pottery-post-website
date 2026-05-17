@@ -124,13 +124,17 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
     setTimeout(() => inputRef.current?.focus(), 50);
   }
 
-  const inputStyle: React.CSSProperties = {
+  const fieldStyle: React.CSSProperties = {
     background: "#F5F0E8",
     color: "#3B2314",
     fontFamily: "system-ui, sans-serif",
     border: "none",
     outline: "none",
-    appearance: "auto" as const,
+    height: "2.25rem",
+    fontSize: "0.875rem",
+    paddingLeft: "0.75rem",
+    paddingRight: "0.75rem",
+    borderRadius: "2px",
   };
   const provinceOptions = region ? PROVINCES[region] ?? [] : [];
 
@@ -147,8 +151,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             <select
               value={region}
               onChange={(e) => handleRegionChange(e.target.value)}
-              className="text-sm px-3 py-1 rounded-sm outline-none"
-              style={inputStyle}
+              style={fieldStyle}
             >
               <option value="">Everywhere</option>
               <option value="CA">Canada</option>
@@ -161,8 +164,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             <select
               value={province}
               onChange={(e) => setProvince(e.target.value)}
-              className="text-sm px-3 py-1 rounded-sm outline-none"
-              style={inputStyle}
+              style={fieldStyle}
               disabled={!region}
             >
               <option value="">{region ? "All regions" : "Select a country"}</option>
@@ -177,8 +179,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="search potters, guilds, classes..."
-            className="text-sm px-3 py-1 rounded-sm outline-none flex-1 md:flex-none"
-            style={{ ...inputStyle, minWidth: "200px" }}
+            style={{ ...fieldStyle, minWidth: "220px" }}
           />
           <button
             type="submit"
