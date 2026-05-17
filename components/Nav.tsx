@@ -11,7 +11,7 @@ export default function Nav() {
   function navLinkStyle(href: string): React.CSSProperties {
     const active = pathname === href || pathname.startsWith(href + "/");
     return {
-      color: active ? "#C1440E" : "#5C3D2E",
+      color: active ? "#FFFFFF" : "#5C3D2E",
       fontFamily: "system-ui, sans-serif",
       textDecoration: "none",
     };
