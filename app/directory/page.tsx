@@ -378,12 +378,12 @@ function DirectoryContent() {
       </p>
 
       {/* Row 1: Full Directory */}
-      <div className="mb-3">
+      <div className="mb-3 pb-3 border-b" style={{ borderColor: "#E8D5B7" }}>
         <NavButton label="Full Directory" active={isFullDirectory} onClick={handleFullDirectory} />
       </div>
 
       {/* Row 2: Type filter */}
-      <div className="flex flex-wrap gap-2 mb-4 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+      <div className="flex flex-wrap gap-2 mb-4 mt-3 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
         <NavButton label="Classes" active={selectedType === "classes"} onClick={() => handleTypeClick("classes")} />
