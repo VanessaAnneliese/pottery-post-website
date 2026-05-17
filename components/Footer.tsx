@@ -7,8 +7,13 @@ export default function Footer() {
     <footer style={{ background: "#C9B99A", color: "#5C3D2E" }} className="py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
 
-        {/* Search — centered, open by default */}
-        <div className="flex justify-center">
+        {/* Desktop search — full bar with selectors, same as nav */}
+        <div className="hidden md:flex justify-center">
+          <SearchForm defaultOpen={true} label="Search for" />
+        </div>
+
+        {/* Mobile search — simple */}
+        <div className="flex md:hidden justify-center">
           <SearchForm defaultOpen={true} />
         </div>
 
