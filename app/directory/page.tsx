@@ -281,14 +281,15 @@ function DirectoryContent() {
     .filter((s) => !selectedProvince || s.province === selectedProvince)
     .filter((s) => matchesQuery(s, CLASS_TAGS)));
 
-  // When a text search is active, show every type that has matching results.
-  // When browsing with type-filter buttons only, respect the selected type.
   const hasTextSearch = !!textQuery;
 
-  const showGuilds    = hasTextSearch ? filteredGuilds.length > 0    : (selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes");
-  const showPotters   = hasTextSearch ? filteredPotters.length > 0   : (selectedType !== "guilds"  && selectedType !== "suppliers" && selectedType !== "classes");
-  const showSuppliers = hasTextSearch ? filteredSuppliers.length > 0 : (selectedType !== "guilds"  && selectedType !== "potters"   && selectedType !== "classes");
-  const showClasses   = hasTextSearch ? (filteredClassPotters.length > 0 || filteredTeachingStudios.length > 0) : selectedType === "classes";
+  // If a type button is selected, always respect it (narrows text search results too).
+  // If no type button, and text search is active, show all types that have matching results.
+  // If no type button and no text search, show guilds/potters/suppliers but not classes.
+  const showGuilds    = selectedType ? selectedType === "guilds"    : (hasTextSearch ? filteredGuilds.length > 0    : true);
+  const showPotters   = selectedType ? selectedType === "potters"   : (hasTextSearch ? filteredPotters.length > 0   : true);
+  const showSuppliers = selectedType ? selectedType === "suppliers" : (hasTextSearch ? filteredSuppliers.length > 0 : true);
+  const showClasses   = selectedType ? selectedType === "classes"   : (hasTextSearch ? (filteredClassPotters.length > 0 || filteredTeachingStudios.length > 0) : false);
 
   const letterFilter = <T extends { name: string }>(items: T[]): T[] =>
     selectedLetter ? items.filter((i) => i.name[0]?.toUpperCase() === selectedLetter) : items;
