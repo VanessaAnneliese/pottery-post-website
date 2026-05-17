@@ -437,7 +437,7 @@ function DirectoryContent() {
     <section className="px-6 pb-12 md:pb-20 max-w-4xl mx-auto">
       {/* NC quote */}
       {selectedRegion === "US" && selectedProvince === "North Carolina" && (
-        <QuoteBlock quote="In the hills of North Carolina, families have passed a pottery wheel from grandmother to grandchild for two hundred years. The clay is the same. The river is the same. The love that goes into it is the same. Some things refuse to be lost." className="mb-8" />
+        <QuoteBlock quote="In the hills of North Carolina, families have passed a pottery wheel from grandmother to grandchild for two hundred years. The clay is the same. The river is the same. The love that goes into it is the same. Some things refuse to be lost." className="my-8" />
       )}
       {/* Content */}
       {isFullDirectory || !selectedRegion ? (
