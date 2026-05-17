@@ -28,7 +28,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
       {open ? (
         <form onSubmit={handleSubmit} className="flex items-center gap-2 w-full md:w-auto">
           {label && (
-            <span className="text-sm tracking-widest uppercase whitespace-nowrap" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            <span className="text-sm font-bold whitespace-nowrap" style={{ color: "#FFFFFF", fontFamily: "system-ui, sans-serif" }}>
               {label}
             </span>
           )}
@@ -39,7 +39,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             onChange={(e) => setQuery(e.target.value)}
             placeholder="search potters, guilds, classes..."
             className="text-sm px-3 py-1 rounded-sm outline-none flex-1 md:flex-none"
-            style={{ background: "#F5F0E8", color: "#3B2314", fontFamily: "system-ui, sans-serif", minWidth: "200px" }}
+            style={{ background: "transparent", color: "#3B2314", fontFamily: "system-ui, sans-serif", minWidth: "200px" }}
           />
           <button
             type="submit"
