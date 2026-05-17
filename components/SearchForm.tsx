@@ -135,7 +135,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
     paddingTop: 0,
     paddingBottom: 0,
     paddingLeft: "0.75rem",
-    borderRadius: "2px",
+    borderRadius: label ? "6px" : "2px",
     boxSizing: "border-box",
   };
 
