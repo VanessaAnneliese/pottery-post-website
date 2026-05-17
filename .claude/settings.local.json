@@ -44,7 +44,26 @@
       "WebFetch(domain:www.dogwoodceramics.com)",
       "WebFetch(domain:www.sheffield-pottery.com)",
       "WebFetch(domain:walkerceramics.com.au)",
-      "WebFetch(domain:euclids.com)"
+      "WebFetch(domain:euclids.com)",
+      "WebFetch(domain:www.okanaganpottery.com)",
+      "WebFetch(domain:stainsbystudios.com)",
+      "WebFetch(domain:miekimstudio.com)",
+      "WebFetch(domain:sugarhouseceramicco.com)",
+      "WebFetch(domain:olivetreepottery.com)",
+      "WebFetch(domain:scottbarnimpottery.com)",
+      "WebFetch(domain:www.lovecoceramics.ca)",
+      "WebFetch(domain:potterbytheseastudio.com)",
+      "WebFetch(domain:www.villagepottery.ca)",
+      "WebFetch(domain:www.redrockspottery.ca)",
+      "WebFetch(domain:www.dishgalleryandstudio.com)",
+      "WebFetch(domain:mimaceramics.com)",
+      "WebFetch(domain:www.pennylanepottery.com)",
+      "WebFetch(domain:www.bunnscreekpottery.ca)",
+      "WebFetch(domain:thistlewood.ca)",
+      "WebFetch(domain:www.fluxpottery.ca)",
+      "WebFetch(domain:blackdogpottery.ca)",
+      "WebFetch(domain:www.cottagepotterystudio.ca)",
+      "Bash(node -e ' *)"
     ]
   }
 }

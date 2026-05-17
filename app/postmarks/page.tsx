@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import QuoteBlock from "@/components/QuoteBlock";
 import { parisienne } from "@/lib/fonts";
+
+export const metadata: Metadata = {
+  title: "Pottery Postmarks — The Pottery Travel Journal",
+  description:
+    "The Pottery Post's pottery travel journal. Top 25 pottery destinations, mapped road trip itineraries by region, The Pottery Traveler's Guide, and historical pottery heritage. Coming soon.",
+  alternates: { canonical: "https://www.potterypost.ca/postmarks" },
+  openGraph: {
+    title: "Pottery Postmarks — The Pottery Travel Journal | Pottery Post",
+    description:
+      "The Pottery Post's pottery travel journal — top destinations, road trip itineraries, the Pottery Traveler's Guide, and pottery history.",
+    url: "https://www.potterypost.ca/postmarks",
+  },
+};
 
 const features = [
   {

@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Privacy policy for The Pottery Post — how we collect, use, and protect your information.",
+  alternates: { canonical: "https://www.potterypost.ca/privacy" },
+  robots: { index: false },
+};
+
 export default function PrivacyPage() {
   return (
     <section className="py-20 px-6 max-w-2xl mx-auto">

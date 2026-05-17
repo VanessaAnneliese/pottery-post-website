@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Use",
+  description: "Terms of use for The Pottery Post website and directory.",
+  alternates: { canonical: "https://www.potterypost.ca/terms" },
+  robots: { index: false },
+};
+
 export default function TermsPage() {
   return (
     <section className="py-20 px-6 max-w-2xl mx-auto">

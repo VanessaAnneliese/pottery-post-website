@@ -1,3 +1,18 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Frequently Asked Questions",
+  description:
+    "Answers to common questions about The Pottery Post — the directory, gallery, how to add or update a listing, submitting work to the gallery, and more.",
+  alternates: { canonical: "https://www.potterypost.ca/faq" },
+  openGraph: {
+    title: "Frequently Asked Questions | Pottery Post",
+    description:
+      "Answers to common questions about The Pottery Post — the directory, gallery, listings, submissions, and more.",
+    url: "https://www.potterypost.ca/faq",
+  },
+};
+
 export default function FAQPage() {
   return (
     <section className="py-20 px-6 max-w-2xl mx-auto">

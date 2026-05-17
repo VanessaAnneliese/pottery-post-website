@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
 import { parisienne } from "@/lib/fonts";
+
+export const metadata: Metadata = {
+  title: "Pottery Gallery — Handmade Ceramics Curated with Love",
+  description:
+    "A curated gallery of handmade pottery, gathered with love by The Pottery Post. Collections rotate in early Spring and Fall. Every piece is verified in person.",
+  alternates: { canonical: "https://www.potterypost.ca/gallery" },
+  openGraph: {
+    title: "Pottery Gallery — Handmade Ceramics Curated with Love | Pottery Post",
+    description:
+      "A curated gallery of handmade pottery, gathered with love. Collections rotate in early Spring and Fall. Every piece is verified in person.",
+    url: "https://www.potterypost.ca/gallery",
+  },
+};
 
 export default function GalleryPage() {
   return (
