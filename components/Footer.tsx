@@ -21,7 +21,7 @@ export default function Footer() {
 
         {/* Desktop search — full bar with selectors, same as nav */}
         <div className="hidden md:flex justify-center">
-          <SearchForm defaultOpen={true} label="Search for" />
+          <SearchForm defaultOpen={true} label="Search directory" />
         </div>
 
         {/* Mobile search — simple */}

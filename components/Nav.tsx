@@ -47,7 +47,7 @@ export default function Nav() {
             className="items-center"
           />
         </Link>
-        <SearchForm defaultOpen={true} label="Search for" />
+        <SearchForm defaultOpen={true} label="Search directory" />
         <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
           <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
           <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
