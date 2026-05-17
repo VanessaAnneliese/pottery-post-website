@@ -337,7 +337,7 @@ function DirectoryContent() {
 
   return (
     <>
-    {selectedType === null && <QuoteBlock quote="To live with handmade pottery is to live with the quiet presence of the person who made it. Their patience is in the walls of the vessel. Their care is in the curve of the rim." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === null && <QuoteBlock quote={<>To live with handmade pottery is to live with the quiet presence of the person who made it. Their patience is in the walls of the vessel.<br className="md:hidden" /> Their care is in the curve of the rim.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "classes" && <QuoteBlock quote="There is a version of you that exists only when your hands are in clay. A pottery class is how you meet them." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
