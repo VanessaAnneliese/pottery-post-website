@@ -289,7 +289,7 @@ function DirectoryContent() {
   const showGuilds    = selectedType ? selectedType === "guilds"    : (hasTextSearch ? filteredGuilds.length > 0    : true);
   const showPotters   = selectedType ? selectedType === "potters"   : (hasTextSearch ? filteredPotters.length > 0   : true);
   const showSuppliers = selectedType ? selectedType === "suppliers" : (hasTextSearch ? filteredSuppliers.length > 0 : true);
-  const showClasses   = selectedType ? selectedType === "classes"   : (hasTextSearch ? (filteredClassPotters.length > 0 || filteredTeachingStudios.length > 0) : false);
+  const showClasses   = selectedType ? selectedType === "classes"   : (hasTextSearch ? (filteredClassPotters.length > 0 || filteredTeachingStudios.length > 0) : true);
 
   const letterFilter = <T extends { name: string }>(items: T[]): T[] =>
     selectedLetter ? items.filter((i) => i.name[0]?.toUpperCase() === selectedLetter) : items;
