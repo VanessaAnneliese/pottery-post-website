@@ -207,10 +207,12 @@ function DirectoryContent() {
   );
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
 
-  // Sync URL params → state when navigating to /directory from the search bar
+  // Sync URL params → state when a new search is submitted (even from within the directory page)
   useEffect(() => {
     setSelectedRegion(searchParams.get("region") as Country | null);
     setSelectedProvince(searchParams.get("province"));
+    setSelectedType(null);
+    setSelectedLetter(null);
   }, [searchParams]);
 
   const textQuery = searchParams.get("q")?.trim().toLowerCase() ?? "";
