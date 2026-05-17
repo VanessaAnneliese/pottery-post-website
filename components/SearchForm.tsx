@@ -39,7 +39,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             onChange={(e) => setQuery(e.target.value)}
             placeholder="search potters, guilds, classes..."
             className="text-sm px-3 py-1 rounded-sm outline-none flex-1 md:flex-none"
-            style={{ background: label ? "transparent" : "#F5F0E8", color: "#3B2314", fontFamily: "system-ui, sans-serif", minWidth: "200px" }}
+            style={{ background: "#F5F0E8", color: "#3B2314", fontFamily: "system-ui, sans-serif", minWidth: "200px" }}
           />
           <button
             type="submit"
