@@ -48,14 +48,6 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
           >
             Go
           </button>
-          <button
-            type="button"
-            onClick={() => { setOpen(false); setQuery(""); }}
-            className="text-xs"
-            style={{ color: "#E8D5B7" }}
-          >
-            ✕
-          </button>
         </form>
       ) : (
         <button
