@@ -149,17 +149,17 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
     backgroundPosition: "right 0.6rem center",
   };
 
-  // Input: same base, wider
+  // Input: wider on desktop, full-flex on mobile
   const inputStyle: React.CSSProperties = {
     ...baseField,
     paddingRight: "0.75rem",
-    minWidth: "260px",
+    ...(label ? { minWidth: "260px" } : {}),
   };
 
   const provinceOptions = region ? PROVINCES[region] ?? [] : [];
 
   return (
-    <div className="flex items-center w-full md:w-auto">
+    <div className="flex justify-center items-center w-full md:w-auto">
       {open ? (
         <form onSubmit={handleSubmit} className="flex items-center gap-2 w-full md:w-auto">
           {label && (
@@ -199,6 +199,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Potters, Guilds, Classes, Supply Shops"
+            className="flex-1 md:flex-none"
             style={inputStyle}
           />
           <button
