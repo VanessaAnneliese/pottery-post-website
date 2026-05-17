@@ -217,12 +217,15 @@ export default function DirectoryPage() {
 
   function matchesQuery<T extends { name: string; bio?: string; city?: string; province?: string }>(item: T): boolean {
     if (!textQuery) return true;
-    return (
-      item.name.toLowerCase().includes(textQuery) ||
-      (item.bio?.toLowerCase().includes(textQuery) ?? false) ||
-      (item.city?.toLowerCase().includes(textQuery) ?? false) ||
-      (item.province?.toLowerCase().includes(textQuery) ?? false)
-    );
+    const words = textQuery.split(/\s+/).filter(Boolean);
+    const fields = [
+      item.name.toLowerCase(),
+      item.bio?.toLowerCase() ?? "",
+      item.city?.toLowerCase() ?? "",
+      item.province?.toLowerCase() ?? "",
+    ];
+    // Every word must appear in at least one field — so "potter toronto" finds potters in Toronto
+    return words.every(word => fields.some(field => field.includes(word)));
   }
 
   const isFullDirectory = selectedType === null && selectedRegion === null;
