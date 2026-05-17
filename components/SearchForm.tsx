@@ -163,7 +163,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
       {open ? (
         <form onSubmit={handleSubmit} className="flex items-center gap-2 w-full md:w-auto">
           {label && (
-            <span className="text-sm whitespace-nowrap" style={{ color: "#FFFFFF", fontFamily: "system-ui, sans-serif" }}>
+            <span className="text-sm md:text-[1.094rem] whitespace-nowrap" style={{ color: "#FFFFFF", fontFamily: "system-ui, sans-serif" }}>
               {label}
             </span>
           )}
