@@ -111,16 +111,11 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const q = query.trim();
-    // If a country is selected, go to directory pre-filtered
-    if (region) {
-      const params = new URLSearchParams({ region });
-      if (province) params.set("province", province);
-      if (q) params.set("q", q);
-      router.push(`/directory?${params.toString()}`);
-    } else {
-      if (!q) return;
-      router.push(`/search?q=${encodeURIComponent(q)}`);
-    }
+    const params = new URLSearchParams();
+    if (region) params.set("region", region);
+    if (province) params.set("province", province);
+    if (q) params.set("q", q);
+    router.push(`/directory?${params.toString()}`);
     setQuery("");
   }
 

@@ -211,25 +211,41 @@ export default function DirectoryPage() {
     if (province) setSelectedProvince(province);
   }, [searchParams]);
 
+  const textQuery = searchParams.get("q")?.trim().toLowerCase() ?? "";
+
+  function matchesQuery<T extends { name: string; bio?: string; city?: string; province?: string }>(item: T): boolean {
+    if (!textQuery) return true;
+    return (
+      item.name.toLowerCase().includes(textQuery) ||
+      (item.bio?.toLowerCase().includes(textQuery) ?? false) ||
+      (item.city?.toLowerCase().includes(textQuery) ?? false) ||
+      (item.province?.toLowerCase().includes(textQuery) ?? false)
+    );
+  }
+
   const isFullDirectory = selectedType === null && selectedRegion === null;
 
   const filteredGuilds = guilds
     .filter((g) => !selectedRegion || g.country === selectedRegion)
-    .filter((g) => !selectedProvince || g.province === selectedProvince);
+    .filter((g) => !selectedProvince || g.province === selectedProvince)
+    .filter(matchesQuery);
 
   const filteredPotters = potters
     .filter((p) => !selectedRegion || p.country === selectedRegion)
-    .filter((p) => !selectedProvince || p.province === selectedProvince);
+    .filter((p) => !selectedProvince || p.province === selectedProvince)
+    .filter(matchesQuery);
 
   const filteredClassPotters = filteredPotters.filter((p) => p.offersClasses);
 
   const filteredSuppliers = suppliers
     .filter((s) => !selectedRegion || s.country === selectedRegion)
-    .filter((s) => !selectedProvince || s.province === selectedProvince);
+    .filter((s) => !selectedProvince || s.province === selectedProvince)
+    .filter(matchesQuery);
 
   const filteredTeachingStudios = teachingStudios
     .filter((s) => !selectedRegion || s.country === selectedRegion)
-    .filter((s) => !selectedProvince || s.province === selectedProvince);
+    .filter((s) => !selectedProvince || s.province === selectedProvince)
+    .filter(matchesQuery);
 
   const showGuilds = selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes";
   const showPotters = selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "classes";
