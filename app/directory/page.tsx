@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { guilds, potters, suppliers, teachingStudios, groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-data";
@@ -196,7 +196,7 @@ function RegionBlock({
   );
 }
 
-export default function DirectoryPage() {
+function DirectoryContent() {
   const searchParams = useSearchParams();
   const [selectedType, setSelectedType] = useState<DirectoryType | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<Country | null>(
@@ -496,5 +496,13 @@ export default function DirectoryPage() {
     {selectedType === "potters" && <QuoteBlock quote="What's made by hand is made twice — once in the mind, once in the world." />}
     {selectedType === "suppliers" && <QuoteBlock quote="A supplier who understands pottery understands that what they offer will one day be held by a stranger, and loved." className="py-20 md:py-24" />}
     </>
+  );
+}
+
+export default function DirectoryPage() {
+  return (
+    <Suspense>
+      <DirectoryContent />
+    </Suspense>
   );
 }
