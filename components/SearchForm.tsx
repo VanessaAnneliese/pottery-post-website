@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 
-export default function SearchForm({ defaultOpen = false }: { defaultOpen?: boolean }) {
+export default function SearchForm({ defaultOpen = false, label }: { defaultOpen?: boolean; label?: string }) {
   const [open, setOpen] = useState(defaultOpen);
   const [query, setQuery] = useState("");
   const router = useRouter();
@@ -27,6 +27,11 @@ export default function SearchForm({ defaultOpen = false }: { defaultOpen?: bool
     <div className="flex items-center w-full md:w-auto">
       {open ? (
         <form onSubmit={handleSubmit} className="flex items-center gap-2 w-full md:w-auto">
+          {label && (
+            <span className="text-sm tracking-widest uppercase whitespace-nowrap" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+              {label}
+            </span>
+          )}
           <input
             ref={inputRef}
             type="text"
