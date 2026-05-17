@@ -187,7 +187,7 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
               style={selectStyle}
               disabled={!region}
             >
-              <option value="">{region ? "All regions" : "Select a country"}</option>
+              <option value="">{region ? "All regions" : "All provinces & states"}</option>
               {provinceOptions.map((p) => (
                 <option key={p.value} value={p.value}>{p.label}</option>
               ))}
