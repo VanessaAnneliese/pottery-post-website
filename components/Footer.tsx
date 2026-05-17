@@ -45,13 +45,13 @@ export default function Footer() {
               <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
               <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
             </nav>
-            <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
-              <Link href="/faq" className="hover:text-white transition-colors font-bold">FAQ</Link>
+            <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif" }}>
+              <Link href="/faq" className={`${navLinkClass("/faq")} font-bold`}>FAQ</Link>
             </nav>
-            <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
-              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
-              <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
+            <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif" }}>
+              <Link href="/privacy" className={navLinkClass("/privacy")}>Privacy Policy</Link>
+              <Link href="/cookies" className={navLinkClass("/cookies")}>Cookie Policy</Link>
+              <Link href="/terms" className={navLinkClass("/terms")}>Terms of Use</Link>
             </nav>
           </div>
           <p className="text-xs text-center md:text-right">
