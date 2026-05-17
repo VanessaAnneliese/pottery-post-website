@@ -1,10 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import SearchForm from "./SearchForm";
 import LogoMark from "./LogoMark";
 
 export default function Nav() {
+  const pathname = usePathname();
+
+  function navLinkStyle(href: string): React.CSSProperties {
+    const active = pathname === href || pathname.startsWith(href + "/");
+    return {
+      color: active ? "#C1440E" : "#5C3D2E",
+      fontFamily: "system-ui, sans-serif",
+      textDecoration: "none",
+    };
+  }
+
   return (
     <header style={{ background: "#C9B99A" }} className="px-6">
 
@@ -20,9 +32,9 @@ export default function Nav() {
           />
         </Link>
         <SearchForm defaultOpen={true} />
-        <nav className="flex gap-6 text-sm tracking-wider uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/directory" className="hover:text-white transition-colors whitespace-nowrap">Pottery Directory</Link>
-          <Link href="/gallery" className="hover:text-white transition-colors whitespace-nowrap">Pottery Gallery</Link>
+        <nav className="flex gap-6 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/directory" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/directory")}>Pottery Directory</Link>
+          <Link href="/gallery" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/gallery")}>Pottery Gallery</Link>
         </nav>
       </div>
 
@@ -38,9 +50,9 @@ export default function Nav() {
           />
         </Link>
         <SearchForm defaultOpen={true} label="Search for" />
-        <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/directory" className="hover:text-white transition-colors whitespace-nowrap">Pottery Directory</Link>
-          <Link href="/gallery" className="hover:text-white transition-colors whitespace-nowrap">Pottery Gallery</Link>
+        <nav className="flex gap-8 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/directory" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/directory")}>Pottery Directory</Link>
+          <Link href="/gallery" className="hover:text-white transition-colors whitespace-nowrap" style={navLinkStyle("/gallery")}>Pottery Gallery</Link>
         </nav>
       </div>
 
