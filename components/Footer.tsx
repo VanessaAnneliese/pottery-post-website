@@ -41,7 +41,7 @@ export default function Footer() {
             />
           </Link>
           <div className="flex flex-col items-center gap-3">
-            <nav className="flex flex-wrap justify-center gap-6 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
+            <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
               <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
               <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
               <Link href="/postmarks" className={navLinkClass("/postmarks")}>Pottery Postmarks</Link>
