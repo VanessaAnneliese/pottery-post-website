@@ -215,7 +215,10 @@ function DirectoryContent() {
 
   const textQuery = searchParams.get("q")?.trim().toLowerCase() ?? "";
 
-  function matchesQuery<T extends { name: string; bio?: string; city?: string; province?: string }>(item: T): boolean {
+  function matchesQuery<T extends { name: string; bio?: string; city?: string; province?: string }>(
+    item: T,
+    extraTags = ""
+  ): boolean {
     if (!textQuery) return true;
     const words = textQuery.split(/\s+/).filter(Boolean);
     const fields = [
@@ -223,34 +226,58 @@ function DirectoryContent() {
       item.bio?.toLowerCase() ?? "",
       item.city?.toLowerCase() ?? "",
       item.province?.toLowerCase() ?? "",
+      ...(extraTags ? [extraTags.toLowerCase()] : []),
     ];
     // Every word must appear in at least one field — so "potter toronto" finds potters in Toronto
     return words.every(word => fields.some(field => field.includes(word)));
   }
 
+  // Category tags: type keywords in a search always find the right category
+  const CLASS_TAGS    = "class classes workshop lesson pottery ceramics";
+  const POTTER_TAGS   = "potter potters ceramicist ceramics pottery";
+  const GUILD_TAGS    = "guild guilds association pottery";
+  const SUPPLIER_TAGS = "supplier suppliers supply shop shops store pottery";
+
+  // Sort so items whose city matches a query word appear first
+  function sortByLocation<T extends { city?: string }>(items: T[]): T[] {
+    if (!textQuery) return items;
+    const words = textQuery.split(/\s+/).filter(Boolean);
+    return [...items].sort((a, b) => {
+      const scoreA = words.filter(w => a.city?.toLowerCase().includes(w)).length;
+      const scoreB = words.filter(w => b.city?.toLowerCase().includes(w)).length;
+      return scoreB - scoreA;
+    });
+  }
+
   const isFullDirectory = selectedType === null && selectedRegion === null;
 
-  const filteredGuilds = guilds
+  const filteredGuilds = sortByLocation(guilds
     .filter((g) => !selectedRegion || g.country === selectedRegion)
     .filter((g) => !selectedProvince || g.province === selectedProvince)
-    .filter(matchesQuery);
+    .filter((g) => matchesQuery(g, GUILD_TAGS)));
 
-  const filteredPotters = potters
+  const filteredPotters = sortByLocation(potters
     .filter((p) => !selectedRegion || p.country === selectedRegion)
     .filter((p) => !selectedProvince || p.province === selectedProvince)
-    .filter(matchesQuery);
+    .filter((p) => matchesQuery(p, POTTER_TAGS)));
 
-  const filteredClassPotters = filteredPotters.filter((p) => p.offersClasses);
+  // Class potters: start fresh from potters so "class" in query always finds them
+  const filteredClassPotters = sortByLocation(potters
+    .filter((p) => !selectedRegion || p.country === selectedRegion)
+    .filter((p) => !selectedProvince || p.province === selectedProvince)
+    .filter((p) => p.offersClasses)
+    .filter((p) => matchesQuery(p, CLASS_TAGS)));
 
-  const filteredSuppliers = suppliers
+  const filteredSuppliers = sortByLocation(suppliers
     .filter((s) => !selectedRegion || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince)
-    .filter(matchesQuery);
+    .filter((s) => matchesQuery(s, SUPPLIER_TAGS)));
 
-  const filteredTeachingStudios = teachingStudios
+  // Teaching studios: always match class-related search words
+  const filteredTeachingStudios = sortByLocation(teachingStudios
     .filter((s) => !selectedRegion || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince)
-    .filter(matchesQuery);
+    .filter((s) => matchesQuery(s, CLASS_TAGS)));
 
   const showGuilds = selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes";
   const showPotters = selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "classes";
