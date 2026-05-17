@@ -483,7 +483,7 @@ function DirectoryContent() {
             <>
               {classPottersByProvince.length > 0 && (
                 <>
-                  <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters Offering Classes</h2>
+                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters Offering Classes</h2>
                   {classPottersByProvince.map(({ province, country, items }) => (
                     <div key={province}>
                       <ProvinceSection province={province} country={country} />
