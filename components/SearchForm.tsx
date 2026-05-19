@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useRef, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const PROVINCES: Record<string, { label: string; value: string }[]> = {
   CA: [
@@ -95,11 +95,12 @@ const PROVINCES: Record<string, { label: string; value: string }[]> = {
   ],
 };
 
-export default function SearchForm({ defaultOpen = false, label }: { defaultOpen?: boolean; label?: string }) {
+function SearchFormInner({ defaultOpen = false, label }: { defaultOpen?: boolean; label?: string }) {
+  const searchParams = useSearchParams();
   const [open, setOpen] = useState(defaultOpen);
   const [query, setQuery] = useState("");
-  const [region, setRegion] = useState("");
-  const [province, setProvince] = useState("");
+  const [region, setRegion] = useState(searchParams.get("region") ?? "");
+  const [province, setProvince] = useState(searchParams.get("province") ?? "");
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -221,5 +222,13 @@ export default function SearchForm({ defaultOpen = false, label }: { defaultOpen
         </button>
       )}
     </div>
+  );
+}
+
+export default function SearchForm({ defaultOpen = false, label }: { defaultOpen?: boolean; label?: string }) {
+  return (
+    <Suspense fallback={null}>
+      <SearchFormInner defaultOpen={defaultOpen} label={label} />
+    </Suspense>
   );
 }
