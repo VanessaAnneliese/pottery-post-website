@@ -212,6 +212,14 @@ export const guilds: Guild[] = [
     website: "https://www.deepriverpottersguild.ca",
     bio: "Celebrating over 70 years of fostering creativity and community spirit in the Ottawa Valley.",
   },
+  {
+    name: "Sault Potters Guild",
+    city: "Sault Ste. Marie",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.saultpottersguild.com",
+    bio: "A professional studio space home to over 40 members in Sault Ste. Marie, dedicated to learning, educating, and celebrating the ancient craft of pottery.",
+  },
   // British Columbia (additional)
   {
     name: "Sea to Sky Potters' Guild",
@@ -1051,6 +1059,24 @@ export const potters: Potter[] = [
     website: "https://marupottery.ca",
     bio: "Fine porcelain using wheel throwing and slab work, with elaborate sgraffito cityscapes and designs added in coloured engobes and glazes. Each piece is one of a kind.",
   },
+  {
+    name: "Matt Cripps",
+    studio: "Cripps Pottery",
+    city: "Fredericton",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://www.crippspottery.com",
+    bio: "Award-winning ceramic artist creating sculptural vessels with a commanding presence, alongside functional pottery. Winner of the 2020 BMO First Art Award.",
+  },
+  {
+    name: "Margaret Ann Capper",
+    studio: "Capper Studio",
+    city: "Sackville",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://handworks.ca/store/Capper-Studio-c14726727",
+    bio: "A former Head of Pottery at the New Brunswick College of Craft and Design, creating functional ceramics in Sackville. Juried member of both the NB and NS craft councils.",
+  },
   // Ontario
   {
     name: "Karen Gray",
@@ -1276,6 +1302,14 @@ export const potters: Potter[] = [
     website: "https://www.sylvanvalleypottery.com",
     bio: "Individual functional stoneware shaped by hand and wheel from a studio east of Sault Ste. Marie. Kim trained through the Sault Potters Guild and opened her own studio in 2017, drawing on the Algoma wilderness for inspiration.",
   },
+  {
+    name: "Dragonfly Clay Creations",
+    city: "Cornwall",
+    province: "Ontario",
+    country: "CA",
+    website: "https://dragonflyclaycreations.ca",
+    bio: "Handmade one-of-a-kind pottery made in Cornwall, Ontario — every mug, bowl, and sculptural piece reflecting an ongoing exploration of form, texture, and design.",
+  },
   // Quebec
   {
     name: "Baie d'Urfé Potters' Guild",
@@ -1374,6 +1408,34 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://natureimprint.ca",
     bio: "Handcrafted porcelain tableware and vessels inspired by Quebec's natural landscapes, including a signature Real Plant Imprint series capturing botanical impressions directly on porcelain.",
+  },
+  {
+    name: "Stéphanie Goyer-Morin",
+    studio: "Goye",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://goye.ca/en",
+    bio: "Sculptural and functional porcelain objects inspired by fairy tales — cups, plates, and jewellery — handmade in a Rosemont studio with private pottery classes available.",
+    offersClasses: true,
+  },
+  {
+    name: "Mahmoud Baghaeian",
+    studio: "Atelier Spirale",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://ceramicstudio.ca",
+    bio: "Persian-inspired decorative ceramics with fluid forms and refined classical glazes, alongside classes in wheel throwing, hand-building, and decorating offered five days a week.",
+    offersClasses: true,
+  },
+  {
+    name: "Maison Stoï",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://maisonstoi.com/en",
+    bio: "Small-batch handmade ceramics made on slow-living principles since 2015 — every plate, bowl, and vessel thrown, sanded, enamelled, and labelled by hand in Montreal.",
   },
   // Manitoba
   {
@@ -1500,6 +1562,73 @@ export const potters: Potter[] = [
     website: "https://andersonpottery.ca",
     bio: "Handcrafted functional stoneware inspired by the Bay of Fundy, creating mugs, bowls, plates, and ocean-themed pieces from a studio in Berwick.",
   },
+  {
+    name: "Eastwood Pottery",
+    city: "Halifax",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://eastwoodpottery.com",
+    bio: "Small-batch porcelain pottery made in Halifax, creating handmade mugs, cups, tumblers, and miniature ceramic pieces including Maritime-inspired lighthouse and building forms.",
+  },
+  {
+    name: "Black Crow Pottery",
+    city: "Halifax",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://blackcrowpottery.ca",
+    bio: "Decorative and functional domestic ware made primarily from Nova Scotia red earthenware clay, celebrating the local material traditions of the Maritimes.",
+  },
+  {
+    name: "Rachel de Condé",
+    studio: "Rachel de Condé Ceramics",
+    city: "Shubenacadie",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://racheldecondeceramics.ca",
+    bio: "Handmade porcelain vessels and sculptures with self-made glazes inspired by the natural world. Rachel holds an MFA in Ceramics from the University of Washington and a BFA from NSCAD.",
+  },
+  {
+    name: "Alicia Whitty",
+    studio: "Alicia Kate Pottery Co.",
+    city: "Amherst",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://aliciakatepotteryco.com",
+    bio: "Bold, colourful handmade pottery made in Amherst — every piece 100% handcrafted using food-safe materials, playful in design and practical for everyday use.",
+  },
+  {
+    name: "The Annapolis Pottery",
+    city: "Annapolis Royal",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://annapolispottery.com",
+    bio: "A working production pottery established in 1969 in the heart of Annapolis Royal's historic district, carrying handcrafted goods alongside work from dozens of other North American artists.",
+  },
+  {
+    name: "Debra Kuzyk",
+    city: "Annapolis Royal",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://www.debrakuzyk.com",
+    bio: "Sculptural ceramic artist whose work explores the animal-human relationship through Nova Scotian wildlife, held in collections at the Art Gallery of Nova Scotia, the Gardiner Museum, and the Rooms.",
+  },
+  {
+    name: "Wildfire Pottery",
+    city: "Cape Breton",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://wildfirepottery.ca",
+    bio: "Raku-fired clay animals — puffins, polar bears, foxes, owls, and seals — made and sold from a studio set among birch and maple trees on the Cabot Trail.",
+  },
+  {
+    name: "Victoria Bonin-MacKenzie",
+    studio: "V Pottery",
+    city: "Isle Madame",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://capebretoncraft.com/artisans/vpottery/",
+    bio: "Functional red earthenware pottery — mugs, bowls, platters — made in a studio on Cape Breton's Isle Madame, with custom work and clay workshops available.",
+  },
   // Prince Edward Island
   {
     name: "Daphne Large",
@@ -1544,6 +1673,23 @@ export const potters: Potter[] = [
     website: "https://pidellapottery.com",
     bio: "Wheel-thrown functional ceramics made in Charlottetown, with a focus on practical pieces for everyday use.",
   },
+  {
+    name: "Ita Art & Ceramics",
+    city: "Stratford",
+    province: "Prince Edward Island",
+    country: "CA",
+    website: "https://www.itapottery.com",
+    bio: "Handmade stoneware using traditional hand-building techniques, with 20+ years of experience creating functional and decorative pieces from a studio in Stratford, PEI.",
+  },
+  {
+    name: "Ryan Murphy",
+    studio: "Rise Pottery",
+    city: "Hunter River",
+    province: "Prince Edward Island",
+    country: "CA",
+    website: "https://risepottery.square.site",
+    bio: "Colourful, cozy hand-thrown stoneware made in Hunter River, PEI — with a lighthearted touch and a focus on pieces that bring warmth to daily life.",
+  },
   // Newfoundland
   {
     name: "Potter by the Sea Studio",
@@ -1587,6 +1733,15 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://kingspointpottery.com",
     bio: "A working pottery studio and gallery on the Baie Verte Peninsula, making and selling handmade ceramics inspired by the colours of Green Bay.",
+  },
+  {
+    name: "Maaike Charron & Jason Holley",
+    studio: "CUP Studios",
+    city: "Twillingate",
+    province: "Newfoundland and Labrador",
+    country: "CA",
+    website: "https://cupstudios.ca",
+    bio: "A two-artist studio in Twillingate's oldest commercial building: Maaike creates bright, story-driven wheel-thrown pottery and Jason pushes ceramic form through experimental virtual reality-inspired design.",
   },
   // Saskatchewan
   {
@@ -4591,6 +4746,14 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://playwithclaygalt.com",
     bio: "Pottery studio established in 2017 offering classes and workshops for all levels in the heart of Galt.",
   },
+  {
+    name: "Hello Pottery Co.",
+    city: "Collingwood",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.hellopotteryco.com",
+    bio: "A studio and shop in downtown Collingwood inspired by modern design and functional art, offering wheel-throwing and handbuilding classes for all levels alongside a curated retail selection.",
+  },
   // British Columbia
   {
     name: "Studio Fundamentals",
@@ -4644,6 +4807,14 @@ export const teachingStudios: TeachingStudio[] = [
   },
   // Prince Edward Island
   {
+    name: "Alley Street Clay Club",
+    city: "Charlottetown",
+    province: "Prince Edward Island",
+    country: "CA",
+    website: "https://alleystreetclayclub.ca",
+    bio: "A ceramics community studio in Charlottetown offering memberships, open practice sessions, classes, and workshops in a fully accessible creative space.",
+  },
+  {
     name: "Happy Potter",
     city: "Stratford",
     province: "Prince Edward Island",
@@ -4659,6 +4830,14 @@ export const teachingStudios: TeachingStudio[] = [
     country: "CA",
     website: "https://nuceramics.ca",
     bio: "Fredericton's community pottery studio offering beginner and intermediate wheel throwing classes, workshops, and open studio memberships.",
+  },
+  {
+    name: "ClayTime with Jackie",
+    city: "Hanwell",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://www.claytimewithjackie.com",
+    bio: "Jackie Doucette teaches wheel-throwing classes for beginners and intermediates from her home studio just outside Fredericton, plus specialized workshops in raku and horsehair firing.",
   },
   // Saskatchewan
   {
