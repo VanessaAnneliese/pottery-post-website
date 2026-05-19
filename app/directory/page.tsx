@@ -211,8 +211,21 @@ function DirectoryContent() {
   useEffect(() => {
     setSelectedRegion(searchParams.get("region") as Country | null);
     setSelectedProvince(searchParams.get("province"));
-    setSelectedType(null);
     setSelectedLetter(null);
+
+    // Auto-select type button when query is a known category keyword
+    const q = (searchParams.get("q") ?? "").trim().toLowerCase();
+    if (["potter", "potters", "ceramicist", "ceramics"].includes(q)) {
+      setSelectedType("potters");
+    } else if (["guild", "guilds", "association"].includes(q)) {
+      setSelectedType("guilds");
+    } else if (["class", "classes", "workshop", "workshops", "lesson", "lessons"].includes(q)) {
+      setSelectedType("classes");
+    } else if (["supplier", "suppliers", "supply", "supply shop", "supply shops", "store", "stores"].includes(q)) {
+      setSelectedType("suppliers");
+    } else {
+      setSelectedType(null);
+    }
   }, [searchParams]);
 
   const textQuery = searchParams.get("q")?.trim().toLowerCase() ?? "";
