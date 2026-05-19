@@ -229,6 +229,15 @@ export const guilds: Guild[] = [
     website: "https://www.s2spottersguild.ca",
     bio: "A guild serving potters along the Sea to Sky corridor from West Vancouver to Whistler.",
   },
+  // Ontario
+  {
+    name: "Sault Potters Guild",
+    city: "Sault Ste. Marie",
+    province: "Ontario",
+    country: "CA",
+    website: "https://saultpottersguild.com",
+    bio: "A community guild of 40+ members in Sault Ste. Marie offering studio access, classes, and an annual sale celebrating the work of Northern Ontario potters.",
+  },
   // Alberta
   {
     name: "Oldman River Potters Guild",
