@@ -221,6 +221,24 @@ export const guilds: Guild[] = [
     website: "https://www.s2spottersguild.ca",
     bio: "A guild serving potters along the Sea to Sky corridor from West Vancouver to Whistler.",
   },
+  // Alberta
+  {
+    name: "Oldman River Potters Guild",
+    city: "Lethbridge",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.oldmanriverpottersguild.com",
+    bio: "A community pottery guild offering wheel and handbuilding classes, open studio time, and semi-annual sales featuring the work of over 20 local members.",
+  },
+  // Saskatchewan
+  {
+    name: "Moose Jaw Pottery Club",
+    city: "Moose Jaw",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://www.moosejawpotteryclub.com",
+    bio: "A long-running community pottery organization offering classes and annual sales events featuring work made in-studio by members.",
+  },
   // Manitoba
   {
     name: "The Stoneware Gallery",
@@ -698,6 +716,32 @@ export const potters: Potter[] = [
     website: "https://emmacranstonpottery.ca",
     bio: "Hand-painted ceramics featuring nature-inspired and animal motifs on functional drinkware and dinnerware, made in limited batches from her Edmonton studio.",
   },
+  {
+    name: "Julia Rayne Schumacher",
+    studio: "Rayne Maker Pottery",
+    city: "Canmore",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.raynemakerpottery.com",
+    bio: "Wheel-thrown functional pottery and decorative sculpture from a Bow Valley studio. Nearly two decades of practice blending cozy warmth with refined elegance.",
+  },
+  {
+    name: "Of Cabbages and Kings",
+    city: "Canmore",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.ofcabbagesandkings.ca",
+    bio: "A father-daughter team with over 45 years of combined experience creating colourful, distinctive, one-of-a-kind functional stoneware from high-fire Albertan clay.",
+  },
+  {
+    name: "Deanne Smith",
+    studio: "Dee Pottery",
+    city: "Grande Prairie",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.deepottery.ca",
+    bio: "Handmade wheel-thrown functional pottery from an acreage studio outside Grande Prairie. Celebrates what Deanne calls the beauty of imperfection.",
+  },
   // British Columbia
   {
     name: "Mike Allegretti",
@@ -934,6 +978,24 @@ export const potters: Potter[] = [
     website: "https://www.kiln9ceramics.com",
     bio: "Handmade functional pottery using local North Okanagan materials and custom-developed glazes, guided by a farm-to-table philosophy.",
   },
+  {
+    name: "Fabi Chagas",
+    studio: "Ovo Ceramic Studio",
+    city: "Nelson",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.ovoceramic.com",
+    bio: "Handcrafted bowls, mugs, and bath sets in terracotta and stoneware from a Nelson studio, rooted in the serenity of working slowly with natural materials.",
+  },
+  {
+    name: "David & Alisha Vallance",
+    studio: "Vallance Studio",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://vallancestudio.com",
+    bio: "Handcrafted functional tableware made in a backyard studio in Victoria. David carries on a family pottery tradition; together he and Alisha make thoughtful pieces using homemade glazes.",
+  },
   // New Brunswick
   {
     name: "Tim Isaac",
@@ -979,6 +1041,15 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://wendyjohnstonpottery.com",
     bio: "Functional and decorative handmade pottery created in Moncton, drawing on a love of texture, pattern, and the everyday object.",
+  },
+  {
+    name: "Maria Guevara",
+    studio: "Maru Pottery",
+    city: "Fredericton",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://marupottery.ca",
+    bio: "Fine porcelain using wheel throwing and slab work, with elaborate sgraffito cityscapes and designs added in coloured engobes and glazes. Each piece is one of a kind.",
   },
   // Ontario
   {
@@ -1196,6 +1267,15 @@ export const potters: Potter[] = [
     website: "https://blackdogceramics.ca",
     bio: "Handmade stoneware using wheel throwing and hand building, inspired by the boreal forest landscapes of Northern Ontario.",
   },
+  {
+    name: "Kim Caldwell",
+    studio: "Sylvan Valley Pottery",
+    city: "Algoma",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.sylvanvalleypottery.com",
+    bio: "Individual functional stoneware shaped by hand and wheel from a studio east of Sault Ste. Marie. Kim trained through the Sault Potters Guild and opened her own studio in 2017, drawing on the Algoma wilderness for inspiration.",
+  },
   // Quebec
   {
     name: "Baie d'Urfé Potters' Guild",
@@ -1286,6 +1366,15 @@ export const potters: Potter[] = [
     bio: "Montreal ceramics studio offering beginner and intermediate wheel throwing classes in a friendly, creative environment.",
     offersClasses: true,
   },
+  {
+    name: "Geneviève Gallant",
+    studio: "Nature Imprint",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://natureimprint.ca",
+    bio: "Handcrafted porcelain tableware and vessels inspired by Quebec's natural landscapes, including a signature Real Plant Imprint series capturing botanical impressions directly on porcelain.",
+  },
   // Manitoba
   {
     name: "Michael Holroyd & Karen Thomas",
@@ -1331,6 +1420,15 @@ export const potters: Potter[] = [
     website: "https://valeriemetcalfepottery.com",
     bio: "Functional and decorative wheel-thrown stoneware made in Winnipeg, with studio pottery classes offered for all skill levels.",
     offersClasses: true,
+  },
+  {
+    name: "Toluwalope Toludare",
+    studio: "Pottery by Tolu",
+    city: "Winnipeg",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://potterybytolu.com",
+    bio: "Handcrafted functional pottery shaped individually by hand, with no two pieces identical. Inspired by traditional ceramic techniques adapted for contemporary life.",
   },
   // Nova Scotia
   {
@@ -1383,6 +1481,24 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://www.wabiscotiapottery.ca",
     bio: "Handmade functional ceramics with beach glass drips, crackle, and marbled glaze effects, alongside classes and kiln rentals supporting the Nova Scotia ceramics community.",
+  },
+  {
+    name: "Kashka Kril-Atkins",
+    studio: "Sand Dollar Pottery",
+    city: "Rose Bay",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://www.sanddollarns.ca",
+    bio: "Functional stoneware ceramics shaped by the colours and textures of the Nova Scotia coast, made in a seaside studio near Lunenburg, open seasonally.",
+  },
+  {
+    name: "Christine Anderson",
+    studio: "Anderson Pottery",
+    city: "Berwick",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://andersonpottery.ca",
+    bio: "Handcrafted functional stoneware inspired by the Bay of Fundy, creating mugs, bowls, plates, and ocean-themed pieces from a studio in Berwick.",
   },
   // Prince Edward Island
   {
@@ -1507,6 +1623,24 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://frebapottery.com",
     bio: "Wheel-thrown pottery sold through a unique 24/7 honour-system roadside studio along the Yellowhead Highway, alongside immersive pottery retreats and community workshops.",
+  },
+  {
+    name: "Todd & Kim Undseth",
+    studio: "Undseth Pottery",
+    city: "Swift Current",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://undsethpottery.ca",
+    bio: "A husband-and-wife team making handmade pottery from a home studio east of Swift Current, inspired by the Saskatchewan landscape and a love for the craft.",
+  },
+  {
+    name: "Susan Robertson",
+    studio: "Susan Robertson Pottery",
+    city: "Broderick",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://shop.srobertsonpottery.com",
+    bio: "Over 35 years of creating unique handmade stoneware inspired by nature and infused with colour and humour. Robertson Gallery and Gift open in Broderick.",
   },
   // Tennessee
   {
@@ -4490,6 +4624,23 @@ export const teachingStudios: TeachingStudio[] = [
     country: "CA",
     website: "https://pottery123.com",
     bio: "Fully equipped community pottery studio offering adult classes from beginner to advanced levels.",
+  },
+  {
+    name: "Saffron Collective Studios",
+    city: "Cochrane",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.saffroncollectivestudios.com",
+    bio: "A fully equipped community pottery studio in downtown Cochrane open since 2006, offering wheel and handbuilding classes, studio memberships, rentals, and a weekend storefront of handmade member work.",
+  },
+  // Manitoba
+  {
+    name: "The Pottery Bug Studio",
+    city: "Winnipeg",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://www.potterybugstudio.ca",
+    bio: "A studio and gallery in Winnipeg's Exchange District offering wheel throwing and handbuilding classes for all levels alongside a curated selection of handmade ceramics.",
   },
   // Prince Edward Island
   {
