@@ -1013,6 +1013,14 @@ export const potters: Potter[] = [
     website: "https://vallancestudio.com",
     bio: "Handcrafted functional tableware made in a backyard studio in Victoria. David carries on a family pottery tradition; together he and Alisha make thoughtful pieces using homemade glazes.",
   },
+  {
+    name: "Dunbar Pottery",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://dunbarpottery.com",
+    bio: "A Vancouver studio carrying on the Leach/Hamada tradition of utilitarian hand-thrown functional pottery, rooted in British and Japanese folk art.",
+  },
   // New Brunswick
   {
     name: "Tim Isaac",
@@ -1085,6 +1093,15 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://handworks.ca/store/Capper-Studio-c14726727",
     bio: "A former Head of Pottery at the New Brunswick College of Craft and Design, creating functional ceramics in Sackville. Juried member of both the NB and NS craft councils.",
+  },
+  {
+    name: "Megan Billings",
+    studio: "Megan Billings Pottery",
+    city: "Upper Hainesville",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://billingspottery.com",
+    bio: "Bright, colourful wheel-thrown porcelain pottery made in rural New Brunswick, fully functional and dishwasher safe.",
   },
   // Ontario
   {
@@ -1220,6 +1237,15 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://pavlopottery.com",
     bio: "Functional one-of-a-kind pottery made in the small village of Rockton, Ontario, a short drive from Hamilton and Cambridge.",
+  },
+  {
+    name: "Donn Zver",
+    studio: "Donn Zver Pottery Studio",
+    city: "Troy",
+    province: "Ontario",
+    country: "CA",
+    website: "https://donnzver.com",
+    bio: "An Ontario institution since 1972 — elegant functional stoneware tableware, mugs, vases, and casseroles with work held in multiple public collections.",
   },
   {
     name: "Sandra Silberman",
@@ -1455,6 +1481,15 @@ export const potters: Potter[] = [
     country: "CA",
     website: "https://www.bunnscreekpottery.ca",
     bio: "Handmade pottery for home and garden with a focus on eco-friendly practices, including seed starters, ollas, mugs, and functional tableware.",
+  },
+  {
+    name: "Jessica Rachelle",
+    studio: "Wildflower Colour & Clay",
+    city: "Winkler",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://www.jessicarachelle.com",
+    bio: "Handmade pottery with vibrant colour and a botanical sensibility, made in southern Manitoba and shipped across Canada.",
   },
   {
     name: "Cheryl",
