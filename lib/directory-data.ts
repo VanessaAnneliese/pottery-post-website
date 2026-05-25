@@ -630,6 +630,15 @@ export const guilds: Guild[] = [
     website: "https://southernhighlandguild.org",
     bio: "Operating since 1930, a juried crafts organisation headquartered at the Folk Art Center on the Blue Ridge Parkway in Asheville, representing clay artists and craftspeople across nine southeastern states.",
   },
+  // Connecticut
+  {
+    name: "Wesleyan Potters",
+    city: "Middletown",
+    province: "Connecticut",
+    country: "US",
+    website: "https://www.wesleyanpotters.com",
+    bio: "A non-profit cooperative guild founded in 1948 offering 9-week ceramics, weaving, and metalsmithing courses, plus hands-on workshops with nationally known craftspeople.",
+  },
 ];
 
 export const potters: Potter[] = [
@@ -5132,6 +5141,289 @@ export const potters: Potter[] = [
     website: "https://ceramicaassunta.it",
     bio: "A family-run ceramics studio on the Amalfi Coast in Positano — hand-painted majolica and functional pottery in the vivid, sun-drenched colours of the Italian south.",
   },
+  // EU — Ireland
+  {
+    name: "Dave McLoughlin",
+    studio: "Benbulben Pottery",
+    city: "County Sligo",
+    province: "Ireland",
+    country: "EU",
+    website: "https://davemcloughlinceramics.com",
+    bio: "Handmade functional stoneware and pit-fired ceramics inspired by the Wild Atlantic Way — using seaweed and natural materials gathered from the Sligo coast.",
+  },
+  {
+    name: "Kevin Callaghan Pottery",
+    city: "Donegal Town",
+    province: "Ireland",
+    country: "EU",
+    website: "https://kevincallaghanpottery.com",
+    bio: "Contemporary slipware featuring gestural marks influenced by Asian abstract calligraphy — celebrating the beauty of individuality in every handmade piece.",
+  },
+  {
+    name: "Charlie Mahon Ceramics",
+    city: "Cork",
+    province: "Ireland",
+    country: "EU",
+    website: "https://charliemahonceramicspottery.com",
+    bio: "Award-winning hand-thrown and hand-painted ceramics made at the English Market in Cork — playful Irish-inspired designs with fish, sheep, and heart motifs.",
+  },
+  // EU — Belgium
+  {
+    name: "Pottery with Soul",
+    city: "Brussels",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.potterywithsoul.com",
+    bio: "Ceramicist Rozenn creates porcelain jewellery and homeware rooted in mindful practice — delicate, considered pieces made with care in the heart of Brussels.",
+  },
+  {
+    name: "Caro-K Ceramics",
+    city: "Ghent",
+    province: "Belgium",
+    country: "EU",
+    website: "https://caro-k.be",
+    bio: "Caroline Kesteleyn handcrafts functional pottery for everyday use in soft colours and natural materials — striking a balance between creativity and quiet usefulness.",
+  },
+  {
+    name: "Nina T Ceramic Studio",
+    city: "Brussels",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.ninatceramicstudio.com",
+    bio: "Handcrafted mugs, bowls, plates, and vases in food-safe glazes — each piece made to be beautiful to look at and a pleasure to use every day.",
+  },
+  // EU — Switzerland
+  {
+    name: "Sina Wild Studio",
+    city: "Zurich",
+    province: "Switzerland",
+    country: "EU",
+    website: "https://www.sinawild.studio",
+    bio: "Studio potter trained in Japan creating handmade bowls and vessels that celebrate functional beauty through careful attention to detail and intentional imperfection.",
+  },
+  {
+    name: "CeramiLu",
+    city: "Riva San Vitale",
+    province: "Switzerland",
+    country: "EU",
+    website: "https://ceramilu.ch",
+    bio: "Ludwika Pilat makes handmade ceramics inspired by nature — espresso cups, bowls, and candle holders across botanical, aurora, and lakeshore collections.",
+  },
+  // EU — Greece
+  {
+    name: "The Mindful Potter",
+    city: "Athens",
+    province: "Greece",
+    country: "EU",
+    website: "https://www.themindfulpotter.com",
+    bio: "Handmade stoneware — mugs, teapots, tableware, and plant pots — slow-made in a sunny Athens studio with an unhurried, meditative approach to the craft.",
+  },
+  {
+    name: "Attic Black",
+    city: "Athens",
+    province: "Greece",
+    country: "EU",
+    website: "https://www.atticblack.com",
+    bio: "Established 2012, handmade pottery showcasing Grecian heritage — decorative vases, figurines, and tableware inspired by the traditions of classical Greek ceramics.",
+  },
+  // Australia — Queensland
+  {
+    name: "Coastal Studio Ceramics",
+    city: "Noosa",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.coastalstudioceramics.com.au",
+    bio: "Jasmine's small-batch handmade ceramics and restaurant-quality tableware — each piece made to hold the feeling of the Sunshine Coast.",
+  },
+  {
+    name: "Rowley Drysdale Art",
+    city: "Cooroy",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.rowleydrysdale.com.au",
+    bio: "An internationally respected wood-fire potter creating tea ware, tableware, and sculptural ceramic forms alongside mixed-media works in oxide washes and pigment.",
+  },
+  // Australia — Victoria
+  {
+    name: "Takeawei Ceramics",
+    city: "Torquay",
+    province: "Victoria",
+    country: "AU",
+    website: "https://takeawei.com",
+    bio: "Designer-ceramicist Chela Edmunds creates fun, functional ceramics for home and commercial projects from her Surf Coast studio — tableware, vases, sculptures, and handmade ceramic lamps.",
+  },
+  {
+    name: "Asobimasu Clay",
+    city: "Northcote",
+    province: "Victoria",
+    country: "AU",
+    website: "https://asobimasuclay.com",
+    bio: "Production potter Kate Brouwer crafts bespoke ceramic vases for florists, ikebana vessels, and tableware — stocked by the NGV and other major Australian retailers.",
+  },
+  {
+    name: "Arcadia Scott Ceramics",
+    city: "Woodend",
+    province: "Victoria",
+    country: "AU",
+    website: "https://arcadiascott.com",
+    bio: "Self-taught potter Arcadia Scott creates handmade bowls, plates, planters, and tableware from her home studio in the hills of regional Victoria.",
+  },
+  {
+    name: "Katherine Wheeler Ceramics",
+    city: "Castlemaine",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.katherinewheeler.com.au",
+    bio: "Ocean-inspired hand-painted porcelain — jewellery, vases, planters, and cups — each piece original and individually hand-painted or textured.",
+  },
+  // Australia — Western Australia
+  {
+    name: "Kura Studio",
+    city: "Perth",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://kurastudio.com",
+    bio: "A handmade ceramics studio and concept store in Perth producing small-batch kitchen and living pieces — thoughtful design, quality materials, made to last.",
+  },
+  {
+    name: "Rediscovering Ceramics",
+    city: "Wattle Grove",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://www.rediscovering.com.au",
+    bio: "Ceramic artist Danica Wichtermann handcrafts porcelain vessels and tableware featuring native Australian flora and fauna from her bushland studio gallery near Perth.",
+  },
+  // Australia — Tasmania
+  {
+    name: "Small Fires Studio",
+    city: "Hobart",
+    province: "Tasmania",
+    country: "AU",
+    website: "https://smallfiresstudio.com.au",
+    bio: "A collaboration between Alice Holder and Isaac Patmore creating handmade functional ceramics for the table, kitchen, and botanical use — made in Mornington, Hobart.",
+  },
+  {
+    name: "PS. Ceramics",
+    city: "Port Sorell",
+    province: "Tasmania",
+    country: "AU",
+    website: "https://www.psceramics.com.au",
+    bio: "One-of-a-kind handmade Tasmanian pottery — espresso cups, tumblers, vessels, and earrings — thoughtfully crafted and inspired by the landscapes of Tasmania.",
+  },
+  {
+    name: "Chloe Abla Studio",
+    city: "Hobart",
+    province: "Tasmania",
+    country: "AU",
+    website: "https://www.chloeablastudio.com",
+    bio: "Handmade ceramics inspired by marine life and native Australian flora — decorative and functional pieces alongside custom hardware like pendant lights and hand basins.",
+  },
+  // Newfoundland
+  {
+    name: "Wild Cove Pottery",
+    city: "Port Union",
+    province: "Newfoundland",
+    country: "CA",
+    website: "https://www.wildcovepottery.ca",
+    bio: "Michael Flaherty creates pottery and sculpture inspired by Newfoundland's weather, landscape, and culture — capturing the spirit of the province in every handmade piece.",
+  },
+  // Nova Scotia
+  {
+    name: "JAW Pottery",
+    city: "Halifax",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://jawpottery.com",
+    bio: "Self-taught potter Jessie Wright creates modern small-batch handmade ceramics in earthy tones — cozy mugs, charcuterie sets, and custom dinnerware collections.",
+  },
+  {
+    name: "Wabi Scotia Pottery",
+    city: "Annapolis Valley",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://www.wabiscotiapottery.ca",
+    bio: "Amy Noel makes beautiful functional pottery and ships handmade ceramics across Canada — earthy, considered pieces that feel at home on any table.",
+  },
+  // Saskatchewan
+  {
+    name: "Paula Cooley Pottery",
+    city: "Saskatoon",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://paulacooley.com",
+    bio: "Full-time ceramic artist working since 1999, creating functional pottery and sculptural ceramics through wheel-throwing, hand-building, and diverse glazing and firing techniques.",
+  },
+  {
+    name: "Clay Studio Three",
+    city: "Saskatoon",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://claystudio3.com",
+    bio: "A collective of Saskatchewan ceramic artists working together since 1975 in the historic Broadway district — functional dinnerware, decorative raku, and pit-fired vessels.",
+  },
+  // Vermont
+  {
+    name: "Vermont Pottery Arts",
+    city: "Vermont",
+    province: "Vermont",
+    country: "US",
+    website: "https://vermontpotteryarts.com",
+    bio: "Melissa Clark hand-throws ceramics inspired by the colours and scenes of Vermont's nature — homeware including mugs, plates, bowls, and vases, as well as handmade urns.",
+  },
+  // Rhode Island
+  {
+    name: "Pottery Wheel RI",
+    city: "North Kingstown",
+    province: "Rhode Island",
+    country: "US",
+    website: "https://potterywheelri.com",
+    bio: "Handcrafted high-fire stoneware and crystalline glazed pottery — mugs, bowls, vases, pitchers, and serving pieces — made by appointment since 2002.",
+  },
+  // Delaware
+  {
+    name: "Delaware Bay Clay",
+    city: "Lewes",
+    province: "Delaware",
+    country: "US",
+    website: "https://www.delawarebayclay.com",
+    bio: "Handmade functional pottery with hand-painted coastal imagery — utilitarian plates and serving pieces designed for everyday life along the Delaware Bay.",
+  },
+  // Nebraska
+  {
+    name: "Big Table Studios",
+    city: "Herman",
+    province: "Nebraska",
+    country: "US",
+    website: "https://www.bigtablestudios.com",
+    bio: "John Martelle and Liz Vercruysse create quality functional and sculptural wood-fired ceramics using local materials — each piece shaped by fire and finished with natural, one-of-a-kind results.",
+  },
+  // South Dakota
+  {
+    name: "Sonja Gloria Pottery",
+    city: "Sioux Falls",
+    province: "South Dakota",
+    country: "US",
+    website: "https://www.sonjagloriapottery.com",
+    bio: "Sonja Hernandez makes functional and whimsical handmade pottery in small batches — mugs, jars, plates, and decorative pieces with a joyful, personal touch.",
+  },
+  // Missouri
+  {
+    name: "The Object Enthusiast",
+    city: "Kansas City",
+    province: "Missouri",
+    country: "US",
+    website: "https://www.theobjectenthusiast.com",
+    bio: "Designer-ceramicist Emily Reinhardt creates handmade ceramics and home goods from her Kansas City studio — functional tableware and one-of-a-kind vessels with a design-forward eye.",
+  },
+  // New Hampshire
+  {
+    name: "Night Shift Stoneware",
+    city: "Lakes Region",
+    province: "New Hampshire",
+    country: "US",
+    website: "https://nightshiftstoneware.com",
+    bio: "One-woman studio producing small-batch handmade ceramic dinnerware, drinkware, heirloom bowls, and earrings — made for everyday use with quiet care.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
@@ -5623,6 +5915,15 @@ export const suppliers: Supplier[] = [
     website: "https://carolinaclay.com",
     bio: "A pottery supply store near Charlotte carrying clays, pottery wheels, kilns, and glazes from leading brands, also offering 8-week pottery classes and curbside pickup.",
   },
+  // EU — Poland
+  {
+    name: "Zaklady Ceramiczne",
+    city: "Bolesławiec",
+    province: "Poland",
+    country: "EU",
+    website: "https://zakladyceramiczne.com",
+    bio: "Authentic hand-painted Polish stoneware made using centuries-old traditions from Bolesławiec — classic stamp and brush decoration techniques on oven, microwave, and dishwasher-safe pieces.",
+  },
 ];
 
 export const teachingStudios: TeachingStudio[] = [
@@ -5776,14 +6077,6 @@ export const teachingStudios: TeachingStudio[] = [
     country: "CA",
     website: "https://saskatoonclay.com",
     bio: "A community ceramics studio in Saskatoon offering wheel throwing and handbuilding classes, multi-week courses, and open studio time for all skill levels.",
-  },
-  {
-    name: "Clay Studio Three",
-    city: "Saskatoon",
-    province: "Saskatchewan",
-    country: "CA",
-    website: "https://claystudiothree.com",
-    bio: "Pottery classes, workshops, and studio space in Saskatoon, welcoming new and experienced potters alike.",
   },
   // New York
   {
@@ -6431,6 +6724,103 @@ export const teachingStudios: TeachingStudio[] = [
     country: "EU",
     website: "https://potterri.de",
     bio: "A Munich ceramics studio offering wheel-throwing and hand-building courses for all skill levels — bringing a love of clay and community craft to the heart of Bavaria.",
+  },
+  // EU — Austria
+  {
+    name: "Commonroom",
+    city: "Vienna",
+    province: "Austria",
+    country: "EU",
+    website: "https://commonroom.at/ceramics",
+    bio: "A creative community space at Florianigasse 54 in Vienna offering pottery wheel classes, hand-building courses, open studio membership, and late-night ceramics sessions.",
+  },
+  // EU — Switzerland
+  {
+    name: "db pottery",
+    city: "Zurich",
+    province: "Switzerland",
+    country: "EU",
+    website: "https://db-pottery.ch",
+    bio: "A fully equipped Zurich studio offering beginner-to-advanced pottery courses, studio memberships, team events, and international ceramic retreats.",
+  },
+  {
+    name: "LOKI Studio",
+    city: "Zurich",
+    province: "Switzerland",
+    country: "EU",
+    website: "https://lokistudio.ch",
+    bio: "A pottery studio with two Zurich locations offering wheel and hand-building courses, guest artist workshops, pottery painting sessions, and studio memberships.",
+  },
+  // EU — Greece
+  {
+    name: "Sealed Earth",
+    city: "Athens",
+    province: "Greece",
+    country: "EU",
+    website: "https://www.sealedearth.art",
+    bio: "A contemporary ceramics gallery and open studio at the base of the Acropolis — featuring emerging and established artists with classes that bridge craftsmanship, fine art, and design.",
+  },
+  // Connecticut
+  {
+    name: "Canton Clay Works",
+    city: "Canton",
+    province: "Connecticut",
+    country: "US",
+    website: "https://www.cantonclayworks.com",
+    bio: "A premier wood-firing studio and school with 20 years of wood-firing experience — pottery classes, wood and gas kiln firing services, and the work of studio potter Tim Scull.",
+  },
+  {
+    name: "Sawmill Pottery",
+    city: "Putnam",
+    province: "Connecticut",
+    country: "US",
+    website: "https://www.sawmillpottery.com",
+    bio: "A working community studio in Connecticut's Quiet Corner offering pottery classes for all ages, children's clay camps, private parties, open studio access, and an on-site gallery.",
+  },
+  // Rhode Island
+  {
+    name: "Coastal Pottery Studio",
+    city: "North Kingstown",
+    province: "Rhode Island",
+    country: "US",
+    website: "https://coastalpotterystudio.com",
+    bio: "A communal pottery studio in South County Rhode Island where members share equipment, gallery space, and kiln access — with regular open house events welcoming the community.",
+  },
+  // Mississippi
+  {
+    name: "Center for Ceramics at Ohr-O'Keefe Museum",
+    city: "Biloxi",
+    province: "Mississippi",
+    country: "US",
+    website: "https://georgeohr.org/studio",
+    bio: "A full ceramics education centre with 15 pottery wheels and multiple kilns including gas and raku — offering 8-week courses, wheel-throwing and hand-building classes, and specialty workshops.",
+  },
+  // Arkansas
+  {
+    name: "Fifth Street Studio",
+    city: "Bentonville",
+    province: "Arkansas",
+    country: "US",
+    website: "https://fifthstreet.studio",
+    bio: "A Bentonville pottery studio offering beginner-to-advanced classes, 6-week courses, youth classes, and workshops — plus clay, glazes, and tools for the local making community.",
+  },
+  // South Dakota
+  {
+    name: "Smudge Studios",
+    city: "Tea",
+    province: "South Dakota",
+    country: "US",
+    website: "https://www.smudgestudiosceramics.com",
+    bio: "A creative pottery studio near Sioux Falls offering hands-on wheel-throwing classes, clay date experiences, private lessons, and studio memberships.",
+  },
+  // Newfoundland
+  {
+    name: "Fogo Clay Studio",
+    city: "Fogo Island",
+    province: "Newfoundland",
+    country: "CA",
+    website: "https://fogoclaystudio.ca",
+    bio: "Week-long immersive pottery retreats on Fogo Island for all skill levels — visiting guest instructors, private classes, and the wild, elemental atmosphere of the North Atlantic.",
   },
 ];
 
