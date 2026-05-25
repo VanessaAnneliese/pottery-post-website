@@ -208,6 +208,8 @@ function DirectoryContent() {
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
 
   // Sync URL params → state when a new search is submitted (even from within the directory page)
+  // This pattern is intentional: URL changes (from search) need to reset filter state.
+  /* eslint-disable react-hooks/set-state-in-effect */
   useEffect(() => {
     setSelectedRegion(searchParams.get("region") as Country | null);
     setSelectedProvince(searchParams.get("province"));
@@ -227,6 +229,7 @@ function DirectoryContent() {
       setSelectedType(null);
     }
   }, [searchParams]);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   const textQuery = searchParams.get("q")?.trim().toLowerCase() ?? "";
 

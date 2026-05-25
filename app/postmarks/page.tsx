@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import QuoteBlock from "@/components/QuoteBlock";
-import { parisienne } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Pottery Postmarks — The Pottery Travel Journal",

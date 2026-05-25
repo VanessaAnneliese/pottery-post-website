@@ -5007,6 +5007,214 @@ export const potters: Potter[] = [
     website: "https://rebeccalowery.com",
     bio: "Whimsical functional stoneware, carved wall tiles, and figurative sculpture fired to cone 6 — a certified Indiana Artisan with work in galleries nationwide for 25+ years.",
   },
+  // Pennsylvania
+  {
+    name: "Katy Lynn Pottery",
+    city: "Pittsburgh",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://katylynn.pottery",
+    bio: "Pittsburgh-based maker of hand-thrown functional ceramics — mugs, bowls, and serving pieces in earthy glazes designed for the pleasure of everyday use.",
+  },
+  {
+    name: "Reiko Yamamoto",
+    city: "Pittsburgh",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://reikoyamamotopottery.com",
+    bio: "A Pittsburgh ceramicist creating wheel-thrown and hand-built functional ware shaped by Japanese pottery traditions and a deep respect for the rhythms of daily life.",
+  },
+  // Ohio
+  {
+    name: "Dore Ceramics",
+    city: "Cleveland",
+    province: "Ohio",
+    country: "US",
+    website: "https://doreceramics.com",
+    bio: "A Cleveland ceramics studio making hand-thrown and altered functional ware — textured surfaces and organic forms built for the everyday table.",
+  },
+  // California
+  {
+    name: "Bob Nichols Ceramics",
+    city: "San Luis Obispo",
+    province: "California",
+    country: "US",
+    website: "https://bobnichols.com",
+    bio: "A Central Coast California ceramicist with a career spanning decades — hand-thrown functional and sculptural pieces rooted in the coastal landscape of San Luis Obispo.",
+  },
+  {
+    name: "Sincere Ceramics",
+    city: "Sacramento",
+    province: "California",
+    country: "US",
+    website: "https://sincereceramics.com",
+    bio: "Sacramento-based ceramics studio making intentional, handmade functional pottery — each piece thrown or hand-built with care for the rituals of daily living.",
+  },
+  {
+    name: "Shape Theory",
+    city: "San Diego",
+    province: "California",
+    country: "US",
+    website: "https://shapetheory.com",
+    bio: "A San Diego ceramics studio exploring the relationship between form and function — hand-built and wheel-thrown pieces that are thoughtful, tactile, and made to be used.",
+  },
+  // Colorado
+  {
+    name: "Meadowfound Ceramics",
+    city: "Colorado Springs",
+    province: "Colorado",
+    country: "US",
+    website: "https://meadowfound.com",
+    bio: "Colorado Springs ceramicist drawing on the surrounding high-desert and mountain landscape — functional stoneware with an earthy, nature-rooted aesthetic.",
+  },
+  // EU — England
+  {
+    name: "Lisa Hammond",
+    studio: "Maze Hill Pottery",
+    city: "Greenwich",
+    province: "England",
+    country: "EU",
+    website: "https://mazehillpottery.co.uk",
+    bio: "One of Britain's most celebrated studio potters, working from Maze Hill Pottery in Greenwich. Lisa Hammond is known for her salt-glazed and anagama-fired stoneware, shaped by deep connections to Korean and Japanese ceramic traditions.",
+  },
+  {
+    name: "Kate Garwood",
+    city: "Oxfordshire",
+    province: "England",
+    country: "EU",
+    website: "https://kategarwood.co.uk",
+    bio: "Oxfordshire-based potter making refined, handmade functional ware — quietly beautiful pieces for the everyday table, shaped by the gentleness of the English countryside.",
+  },
+  // EU — Scotland
+  {
+    name: "Fernweh Pottery",
+    city: "Innerleithen",
+    province: "Scotland",
+    country: "EU",
+    website: "https://fernwehpottery.co.uk",
+    bio: "A small Scottish Borders pottery in the village of Innerleithen making hand-thrown stoneware — functional, considered, and deeply connected to its landscape.",
+  },
+  // EU — Wales
+  {
+    name: "Blackbird Ceramics",
+    city: "Saundersfoot",
+    province: "Wales",
+    country: "EU",
+    website: "https://blackbirdceramics.co.uk",
+    bio: "A Welsh coastal ceramics studio in Saundersfoot, Pembrokeshire — hand-thrown functional and decorative pieces with a quiet seaside sensibility.",
+  },
+  // EU — France
+  {
+    name: "Astier de Villatte",
+    city: "Paris",
+    province: "France",
+    country: "EU",
+    website: "https://www.astierdevillatte.com",
+    bio: "A beloved Paris ceramics house handcrafting fragile, cream-white faience since 1996 — candlesticks, plates, vases, and tableware with a romantic, antiqued quality unlike anything else.",
+  },
+  {
+    name: "Poterie Barbotine",
+    city: "Aubagne",
+    province: "France",
+    country: "EU",
+    website: "https://poterie-barbotine.fr",
+    bio: "A traditional pottery workshop in Aubagne, continuing Provence's deep earthenware tradition — handmade terracotta, faïence, and decorative pieces with deep roots in the South of France.",
+  },
+  {
+    name: "Sylph Baier",
+    city: "Dordogne",
+    province: "France",
+    country: "EU",
+    website: "https://sylphbaier.com",
+    bio: "An English-born ceramicist working in the Dordogne, making quietly sculptural domestic ware with a wabi-sabi sensibility — slow, considered pieces that are beautiful in their imperfection.",
+  },
+  // EU — Netherlands
+  {
+    name: "Marjoke de Heer",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://marjokedeheer.nl",
+    bio: "Amsterdam-based ceramicist making expressive, hand-built functional pottery — playful forms, warm glazes, and a distinctly Dutch directness in every piece.",
+  },
+  {
+    name: "Made in Mokum",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://madeinmokum.nl",
+    bio: "An Amsterdam ceramics studio celebrating Dutch craft — handmade functional pottery made in the city, with community and local craft at its heart.",
+  },
+  {
+    name: "Bakkie Pleur",
+    city: "Utrecht",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://bakkiepleur.nl",
+    bio: "A Utrecht ceramics studio with a love of the everyday cup — 'bakkie' is Dutch slang for a cup of coffee, and this studio keeps its focus on joyful, functional pottery made with warmth.",
+  },
+  // EU — Denmark
+  {
+    name: "Tasja P. Ceramics",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://tasjap.com",
+    bio: "Copenhagen ceramicist Tasja P. creates functional stoneware with a refined Nordic sensibility — simple, quiet forms in earthy glazes that hold warmth, light, and a sense of calm.",
+  },
+  // EU — Norway
+  {
+    name: "Anne Jahr",
+    city: "Oslo",
+    province: "Norway",
+    country: "EU",
+    website: "https://annejahr.no",
+    bio: "Oslo-based studio potter Anne Jahr creates hand-thrown functional and sculptural ceramics grounded in Scandinavian craft tradition — precise, warm, and quietly personal.",
+  },
+  // EU — Finland
+  {
+    name: "Udumbara",
+    city: "Helsinki",
+    province: "Finland",
+    country: "EU",
+    website: "https://udumbara.fi",
+    bio: "Helsinki ceramics studio Udumbara creates hand-thrown functional stoneware with an unhurried, meditative quality — bowls, cups, and vessels for slow and mindful everyday living.",
+  },
+  // EU — Spain
+  {
+    name: "Pintarroja Art",
+    city: "Málaga",
+    province: "Spain",
+    country: "EU",
+    website: "https://pintarrojaart.com",
+    bio: "A Málaga ceramics studio producing hand-thrown and decorated functional pottery with a bright Andalusian spirit — vivid glazes, warm textures, and the full energy of the Mediterranean.",
+  },
+  // EU — Portugal
+  {
+    name: "Gaëlle Ceramica",
+    city: "Ericeira",
+    province: "Portugal",
+    country: "EU",
+    website: "https://gaelleceramica.com",
+    bio: "A Portuguese coastal ceramics studio in the surf town of Ericeira — hand-thrown stoneware inspired by the Atlantic, with organic forms and sea-washed glazes.",
+  },
+  // EU — Italy
+  {
+    name: "Ceramiche Borgioli",
+    city: "Impruneta",
+    province: "Italy",
+    country: "EU",
+    website: "https://ceramicheborgioli.com",
+    bio: "A historic ceramics atelier near Florence in the terracotta-rich hill town of Impruneta — handmade Italian ceramics with deep roots in Tuscan craft tradition.",
+  },
+  {
+    name: "Ceramica Assunta",
+    city: "Positano",
+    province: "Italy",
+    country: "EU",
+    website: "https://ceramicaassunta.it",
+    bio: "A family-run ceramics studio on the Amalfi Coast in Positano — hand-painted majolica and functional pottery in the vivid, sun-drenched colours of the Italian south.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
@@ -6236,6 +6444,76 @@ export const teachingStudios: TeachingStudio[] = [
     country: "US",
     website: "https://www.clayspaceasheville.com",
     bio: "A shared working studio for ceramic artists at Asheville's Wedge Studios, providing studio space and a gallery for a community of resident potters in the River Arts District.",
+  },
+  // Utah
+  {
+    name: "Throw Art Studio",
+    city: "Provo",
+    province: "Utah",
+    country: "US",
+    website: "https://throwart.studio",
+    bio: "A Provo ceramics studio offering wheel-throwing and hand-building classes alongside open studio time — a welcoming creative space at the heart of Utah Valley.",
+  },
+  {
+    name: "Cache Valley Pottery Studio",
+    city: "Providence",
+    province: "Utah",
+    country: "US",
+    website: "https://cachevalleypottery.com",
+    bio: "A northern Utah studio offering pottery classes and open studio time in the heart of Cache Valley — a warm, community-focused space for potters at every level.",
+  },
+  // Pennsylvania
+  {
+    name: "Inspire Pottery Studio",
+    city: "Lancaster",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://inspirepotterystudio.com",
+    bio: "A Lancaster County pottery studio offering wheel-throwing and hand-building classes for all skill levels — a welcoming, community-minded creative space in the heart of Pennsylvania Dutch Country.",
+  },
+  // Ohio
+  {
+    name: "MADE Studio",
+    city: "Dayton",
+    province: "Ohio",
+    country: "US",
+    website: "https://madedayton.com",
+    bio: "A Dayton creative studio with ceramics at its core — offering pottery classes, open studio memberships, and a community hub for makers in the Miami Valley.",
+  },
+  {
+    name: "Quill Pottery Studio",
+    city: "Westlake",
+    province: "Ohio",
+    country: "US",
+    website: "https://quillpottery.com",
+    bio: "A welcoming ceramics studio on the west side of Greater Cleveland offering wheel-throwing and hand-building classes for all levels — a quiet, creative escape in Westlake.",
+  },
+  // California
+  {
+    name: "Higher Fire",
+    city: "San Jose",
+    province: "California",
+    country: "US",
+    website: "https://higherfire.com",
+    bio: "A San Jose ceramics studio offering classes, open studio memberships, and a community of passionate makers — a creative refuge in the heart of Silicon Valley.",
+  },
+  // Colorado
+  {
+    name: "22nd Street Clay",
+    city: "Colorado Springs",
+    province: "Colorado",
+    country: "US",
+    website: "https://22ndstreetclay.com",
+    bio: "A community-centered pottery studio in Colorado Springs offering classes and open studio time for potters at every stage — a warm, welcoming space at the foot of the Rockies.",
+  },
+  // EU — Germany
+  {
+    name: "POTterri",
+    city: "Munich",
+    province: "Germany",
+    country: "EU",
+    website: "https://potterri.de",
+    bio: "A Munich ceramics studio offering wheel-throwing and hand-building courses for all skill levels — bringing a love of clay and community craft to the heart of Bavaria.",
   },
 ];
 

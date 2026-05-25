@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
-import { parisienne } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Pottery Gallery — Handmade Ceramics Curated with Love",
