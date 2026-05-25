@@ -229,15 +229,6 @@ export const guilds: Guild[] = [
     website: "https://www.s2spottersguild.ca",
     bio: "A guild serving potters along the Sea to Sky corridor from West Vancouver to Whistler.",
   },
-  // Ontario
-  {
-    name: "Sault Potters Guild",
-    city: "Sault Ste. Marie",
-    province: "Ontario",
-    country: "CA",
-    website: "https://saultpottersguild.com",
-    bio: "A community guild of 40+ members in Sault Ste. Marie offering studio access, classes, and an annual sale celebrating the work of Northern Ontario potters.",
-  },
   // Alberta
   {
     name: "Oldman River Potters Guild",
@@ -3484,16 +3475,6 @@ export const potters: Potter[] = [
     website: "https://mudpuppystudios.ca",
     bio: "Functional and decorative ceramics in celadon and temmoku glazes with embossed natural textures — dinnerware, teapots, and pedestal bowls handmade on Salt Spring Island.",
   },
-  // Canada — Quebec
-  {
-    name: "Mahmoud Baghaeian",
-    studio: "Atelier Spirale",
-    city: "Montreal",
-    province: "Quebec",
-    country: "CA",
-    website: "https://ceramicstudio.ca",
-    bio: "A Montreal ceramics studio and gallery where Persian-inspired motifs meet contemporary wheel-thrown forms, offering classes five days a week in a bilingual environment.",
-  },
   {
     name: "Géraldine Cyr",
     studio: "La Maison du Potier",
@@ -4385,16 +4366,6 @@ export const potters: Potter[] = [
     website: "https://truepottery.com",
     bio: "A working ceramics studio in downtown Omaha offering wheel-throwing classes and handmade pottery sold from the studio.",
   },
-  // Kansas
-  {
-    name: "Pam Anderson",
-    studio: "MoonRiver Pottery",
-    city: "Overland Park",
-    province: "Kansas",
-    country: "US",
-    website: "https://moonriverpottery.com",
-    bio: "Soulful porcelain work influenced by Japanese and Native American pottery, made from a home studio and available through Kansas City consignment partners.",
-  },
   {
     name: "Sarah Veak",
     studio: "Veak Ceramics",
@@ -4431,16 +4402,6 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://planetxpottery.net",
     bio: "An off-grid studio at the foot of Granite Mountain operating since 1974, producing fine porcelain, stoneware, and raku work inspired by the Black Rock Desert.",
-  },
-  // New Hampshire
-  {
-    name: "Brian O'Hare",
-    studio: "Ripple Pottery",
-    city: "Rumney",
-    province: "New Hampshire",
-    country: "US",
-    website: "https://ripplepottery.com",
-    bio: "High-fired stoneware and porcelain from a White Mountains studio and gallery operating since 2004, blending practical forms with subtle artistic detail.",
   },
   {
     name: "Jennie Blair",
@@ -4488,15 +4449,6 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://romanickpottery.com",
     bio: "Handmade ceramics since 1993, including custom growlers for Dogfish Head Brewery — a beloved fixture of the Delaware craft scene.",
-  },
-  {
-    name: "Audrey Mason",
-    studio: "Pottery Mason",
-    city: "Rehoboth Beach",
-    province: "Delaware",
-    country: "US",
-    website: "https://potterymason.com",
-    bio: "Sea-inspired handcrafted ceramics made to order from a small coastal studio in Rehoboth Beach.",
   },
   // Arkansas
   {
@@ -4607,16 +4559,6 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://themudhole406.com",
     bio: "A community pottery space in the heart of Helena born from a shared dream between four local artists, offering studio access and handmade work.",
-  },
-  // Wyoming
-  {
-    name: "Tana Libolt & West Magoon",
-    studio: "Muddy Mountain Pottery",
-    city: "Centennial",
-    province: "Wyoming",
-    country: "US",
-    website: "https://muddymountainpottery.com",
-    bio: "High-fired stoneware mugs, yarn bowls, and kitchen pottery made in a small Wyoming mountain town studio, currently run by the founder's daughter.",
   },
   {
     name: "Stephen Mullins",
@@ -4775,14 +4717,6 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://kilbornpottery.com",
     bio: "A Taos potter with 40 years of experience creating distinctive ceramic work, with the studio open Wednesday through Saturday by appointment.",
-  },
-  {
-    name: "Sage Valley Pottery",
-    city: "Corrales",
-    province: "New Mexico",
-    country: "US",
-    website: "https://sagevalleypottery.com",
-    bio: "Operating since 1995 in the village of Corrales, producing wheel-thrown stoneware drinkware, tableware, and planters with an honour-system gallery open daily.",
   },
   {
     name: "Leonard Baca",
@@ -5069,15 +5003,6 @@ export const potters: Potter[] = [
   },
   // EU — England
   {
-    name: "Lisa Hammond",
-    studio: "Maze Hill Pottery",
-    city: "Greenwich",
-    province: "England",
-    country: "EU",
-    website: "https://mazehillpottery.co.uk",
-    bio: "One of Britain's most celebrated studio potters, working from Maze Hill Pottery in Greenwich. Lisa Hammond is known for her salt-glazed and anagama-fired stoneware, shaped by deep connections to Korean and Japanese ceramic traditions.",
-  },
-  {
     name: "Kate Garwood",
     city: "Oxfordshire",
     province: "England",
@@ -5129,14 +5054,6 @@ export const potters: Potter[] = [
     bio: "An English-born ceramicist working in the Dordogne, making quietly sculptural domestic ware with a wabi-sabi sensibility — slow, considered pieces that are beautiful in their imperfection.",
   },
   // EU — Netherlands
-  {
-    name: "Marjoke de Heer",
-    city: "Amsterdam",
-    province: "Netherlands",
-    country: "EU",
-    website: "https://marjokedeheer.nl",
-    bio: "Amsterdam-based ceramicist making expressive, hand-built functional pottery — playful forms, warm glazes, and a distinctly Dutch directness in every piece.",
-  },
   {
     name: "Made in Mokum",
     city: "Amsterdam",
