@@ -730,15 +730,6 @@ export const guilds: Guild[] = [
     website: "https://www.localclay.net",
     bio: "A Bloomington-based cooperative guild promoting individual artistic growth and increasing public appreciation of ceramic arts in Indiana through exhibitions, events, and a community of studio potters.",
   },
-  // Iowa
-  {
-    name: "Iowa Ceramics Center and Glass Studio",
-    city: "Cedar Rapids",
-    province: "Iowa",
-    country: "US",
-    website: "https://iowaceramicscenter.org",
-    bio: "A Cedar Rapids nonprofit arts centre offering wheel, hand-building, and warm glass instruction for all ages and skill levels, alongside a professional artist residency program and youth outreach.",
-  },
   // Rhode Island
   {
     name: "Anyhow Studio",
@@ -861,15 +852,6 @@ export const guilds: Guild[] = [
     website: "https://jampdx.com",
     bio: "The collaborative Portland studio of Jenn Gauer and Meghan Radick — producing wheel-thrown functional and decorative porcelain pieces decorated with cake-piping techniques and hand-painted botanicals, sold from a charming Southeast Portland studio shop.",
   },
-  // Washington
-  {
-    name: "Pottery Northwest",
-    city: "Seattle",
-    province: "Washington",
-    country: "US",
-    website: "https://www.potterynorthwest.org",
-    bio: "A Seattle ceramics institution offering quarter-based classes for all skill levels, open studio memberships, workshops, artist residencies, and a clay marketplace programme — anchored by the belief that clay is community.",
-  },
   // New York
   {
     name: "Kingston Ceramics Studio",
@@ -878,15 +860,6 @@ export const guilds: Guild[] = [
     country: "US",
     website: "https://www.kingstonceramicsstudio.com",
     bio: "A welcoming Hudson Valley community studio in Kingston offering weekly pottery classes, private lessons, open studio memberships, kids' programmes, birthday parties, and kiln firing services.",
-  },
-  // Michigan
-  {
-    name: "Pewabic Pottery",
-    city: "Detroit",
-    province: "Michigan",
-    country: "US",
-    website: "https://www.pewabic.org",
-    bio: "One of America's oldest continuously operating potteries, founded in 1903 and now a National Historic Landmark — producing handcrafted tiles, vessels, and ceramics from a storied Detroit studio, with classes, workshops, and a renowned gallery.",
   },
   // Ohio
   {
@@ -905,15 +878,6 @@ export const guilds: Guild[] = [
     country: "US",
     website: "https://www.midwestclayproject.com",
     bio: "A fully equipped Madison ceramics studio operating since 2011 — offering classes for adults and youth, private lessons, open studio memberships, biannual pottery sales, and a thriving community of working clay artists.",
-  },
-  // Illinois
-  {
-    name: "Penguin Foot Pottery",
-    city: "Chicago",
-    province: "Illinois",
-    country: "US",
-    website: "https://www.penguinfoot.com",
-    bio: "A Logan Square ceramics studio empowering beginners and lifelong creatives to deepen their practice through welcoming classes, workshops, and community programming in Chicago.",
   },
   // Tennessee
   {
@@ -6957,22 +6921,6 @@ export const teachingStudios: TeachingStudio[] = [
   },
   // Belgium
   {
-    name: "Caro-K Ceramics",
-    city: "Ghent",
-    province: "Belgium",
-    country: "EU",
-    website: "https://caro-k.be",
-    bio: "Handmade ceramics by Caroline Kesteleyn — contemporary functional pieces in soft colours and natural clay, celebrating the beauty of handcrafted imperfection from a studio near Ghent.",
-  },
-  {
-    name: "Pottery with Soul",
-    city: "Brussels",
-    province: "Belgium",
-    country: "EU",
-    website: "https://www.potterywithsoul.com",
-    bio: "A Brussels ceramics studio offering handmade pieces and mindful workshops guided by ceramicist Rozenn, with a focus on slow, sensory discovery through clay.",
-  },
-  {
     name: "Ethos Ceramics",
     city: "Antwerp",
     province: "Belgium",
@@ -7006,32 +6954,7 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.slowpotter.com/en/",
     bio: "A Paris ceramics studio in the 11th arrondissement run by ceramic artist Chentar, offering intimate wheel-throwing workshops in very small groups with full guidance on shaping, glazing, and firing.",
   },
-  // Netherlands
-  {
-    name: "Marjoke de Heer",
-    city: "Amsterdam",
-    province: "Netherlands",
-    country: "EU",
-    website: "https://marjokedeheer.com/en/",
-    bio: "A ceramicist working in Amsterdam since 1994, creating reduction stoneware and porcelain functional pieces with a focus on timeless quality and the balance between beauty and everyday use.",
-  },
-  {
-    name: "Studio Timmerman",
-    city: "Rotterdam",
-    province: "Netherlands",
-    country: "EU",
-    website: "https://studiotimmerman.com",
-    bio: "A Rotterdam ceramics studio producing minimalist handmade tableware — cups, bowls, and plates — alongside pottery courses including wheel-throwing workshops and immersive four-week programmes.",
-  },
   // Greece
-  {
-    name: "The Mindful Potter",
-    city: "Athens",
-    province: "Greece",
-    country: "EU",
-    website: "https://www.themindfulpotter.com",
-    bio: "An independent, woman-owned ceramics studio in central Athens making small-batch stoneware with intention — mugs, teapots, and tableware available alongside pottery wheel classes and glaze courses.",
-  },
   {
     name: "Cretan Spiral Pottery",
     city: "Agios Nikolaos",
@@ -7097,22 +7020,6 @@ export const teachingStudios: TeachingStudio[] = [
     country: "AU",
     website: "https://littlewoodsstudio.com.au",
     bio: "Community pottery and art studio run by Jesuit Social Services, open to the public and offering workshops in an inclusive, not-for-profit setting.",
-  },
-  {
-    name: "Takeawei Ceramics",
-    city: "Torquay",
-    province: "Victoria",
-    country: "AU",
-    website: "https://takeawei.com",
-    bio: "A Surf Coast ceramics studio founded by designer Chela Edmunds in 2013, creating fun, functional handmade ceramics for home and commercial projects alongside pottery classes and ceramic retreats.",
-  },
-  {
-    name: "Arcadia Scott Ceramics",
-    city: "Woodend",
-    province: "Victoria",
-    country: "AU",
-    website: "https://arcadiascott.com",
-    bio: "A self-taught potter creating handmade functional tableware, planters, and vases from a home studio in Woodend — each piece celebrated for its tactile, imperfect nature.",
   },
   // New South Wales
   {
@@ -7198,14 +7105,6 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "The studio of full-time potter and teacher Alison Arnold — over 30 years creating functional pottery and decorative exhibition pieces from the Adelaide Hills, with classes for all levels.",
   },
   // Tasmania
-  {
-    name: "Small Fires Studio",
-    city: "Hobart",
-    province: "Tasmania",
-    country: "AU",
-    website: "https://smallfiresstudio.com.au",
-    bio: "A collaborative Hobart pottery studio by Alice Holder and Isaac Patmore, specialising in handmade functional ceramics for the table, kitchen, and botanics — regular exhibitors at Salamanca Markets.",
-  },
   {
     name: "Glazed and Confused",
     city: "Hobart",
