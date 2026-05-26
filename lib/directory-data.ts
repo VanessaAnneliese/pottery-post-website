@@ -1022,6 +1022,161 @@ export const guilds: Guild[] = [
     website: "https://www.jansenartcenter.org",
     bio: "A community arts centre near Bellingham with a fully equipped ceramics studio featuring potter's wheels, electric and gas kilns, and table space for sculpting, hand-building, and glazing.",
   },
+  // California
+  {
+    name: "San Diego Potters' Guild",
+    city: "San Diego",
+    province: "California",
+    country: "US",
+    website: "https://www.sandiegopottersguild.org",
+    bio: "A professional ceramic arts organization and cooperative gallery in the Spanish Village Art Center at Balboa Park — open daily with rotating themed exhibitions, working studio wheels, and semi-annual pottery sales.",
+  },
+  {
+    name: "Ventura County Potters' Guild",
+    city: "Ventura",
+    province: "California",
+    country: "US",
+    website: "https://vcpg.org",
+    bio: "A community of over 150 ceramicists operating the Ventura Pottery Gallery at Ventura Harbor Village, offering classes, resources, and a daily-open gallery showcasing member work.",
+  },
+  // Texas
+  {
+    name: "ClayHouston",
+    city: "Houston",
+    province: "Texas",
+    country: "US",
+    website: "https://www.clayhouston.org",
+    bio: "Founded in 2005, a Houston nonprofit guild cultivating and promoting the ceramic arts in the greater Houston metro area through education, professional development, exhibitions, workshops, and community programming for all skill levels.",
+  },
+  {
+    name: "San Antonio Potters Guild",
+    city: "San Antonio",
+    province: "Texas",
+    country: "US",
+    website: "https://sanantoniopottersguild.wildapricot.org",
+    bio: "A 501(c)(3) nonprofit educational and social organization established in 1995, connecting San Antonio ceramic artists through events, local markets, a scholarship programme, and community outreach.",
+  },
+  {
+    name: "Saltgrass Potters",
+    city: "League City",
+    province: "Texas",
+    country: "US",
+    website: "https://www.saltgrasspotters.com",
+    bio: "A Houston Bay Area pottery guild inspiring and promoting the highest quality in clay arts, providing educational opportunities and annual Show & Sale events for ceramic artists in the Gulf Coast region.",
+  },
+  // New Hampshire
+  {
+    name: "New Hampshire Potters' Guild",
+    city: "New Hampshire",
+    province: "New Hampshire",
+    country: "US",
+    website: "https://www.nhpottersguild.org",
+    bio: "A statewide nonprofit with over 90 members stretching across New Hampshire, Maine, Vermont, and Massachusetts — promoting the craft of ceramics through workshops, a community wood kiln, and a biennial juried exhibition.",
+  },
+  // New York
+  {
+    name: "Clay Art Center",
+    city: "Port Chester",
+    province: "New York",
+    country: "US",
+    website: "https://www.clayartcenter.org",
+    bio: "Co-founded in 1957 by Katherine Choy and Henry Okamoto, a nationally recognized nonprofit ceramics center in Westchester County offering classes seven days a week, a nationally acclaimed artist-in-residence programme, and a gallery shop.",
+  },
+  {
+    name: "Syracuse Ceramic Guild",
+    city: "Syracuse",
+    province: "New York",
+    country: "US",
+    website: "https://www.syracuseceramicguild.com",
+    bio: "A ceramics arts group in central New York promoting education and fostering community among potters of all levels through workshops, collective studio gatherings, and shared knowledge exchange.",
+  },
+  // Pennsylvania
+  {
+    name: "Potters Guild of Central PA",
+    city: "Lemont",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://pottersguildofcentralpa.org",
+    bio: "Supporting ceramic arts in central Pennsylvania since 1971 — a cooperative guild of 35 members with 24/7 studio access, seven wheels, electric and gas kilns, raku, and twice-yearly pottery sales.",
+  },
+  {
+    name: "PennOhio Clay Guild",
+    city: "New Castle",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.pennohioclayguild.org",
+    bio: "A welcoming cooperative of clay artists serving the western PA and eastern OH region, built on five pillars — Inviting, Connecting, Learning, Uplifting, and Reaching — with studio access, classes, and a clay supply shop.",
+  },
+  // Michigan
+  {
+    name: "West Michigan Potters Guild",
+    city: "Grand Rapids",
+    province: "Michigan",
+    country: "US",
+    website: "https://westmichiganpottersguild.com",
+    bio: "Founded in 1983 by studio potters who understood the isolation of working alone, a West Michigan guild connecting local clay artists through camaraderie, education, and exhibitions.",
+  },
+  {
+    name: "Michigan Ceramic Art Association",
+    city: "Michigan",
+    province: "Michigan",
+    country: "US",
+    website: "https://michclay.com",
+    bio: "An educational and communication resource for potters serving the ceramic community of Michigan since 1958, promoting the ceramic arts statewide through workshops, newsletters, and member events.",
+  },
+  // Washington state
+  {
+    name: "Pottery Northwest",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://www.potterynorthwest.org",
+    bio: "Founded in 1966, Seattle's preeminent nonprofit ceramics organization — a celebrated studio and education center in lower Queen Anne offering vibrant programming to over 2,000 students each year and promoting innovation in ceramic arts.",
+  },
+  {
+    name: "Washington Clay Arts Association",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://www.washingtonclayarts.org",
+    bio: "Originally founded as the Washington Potters Association in 1983, a 501(c)(3) nonprofit connecting clay artists across Washington state through educational, professional, and social events organized by an all-volunteer board.",
+  },
+  // Montana
+  {
+    name: "Archie Bray Foundation for the Ceramic Arts",
+    city: "Helena",
+    province: "Montana",
+    country: "US",
+    website: "https://archiebray.org",
+    bio: "One of the world's most celebrated ceramics institutions, established in 1951 on a historic 26-acre brickyard campus near Helena — offering internationally recognized artist residencies, classes, exhibitions, and ceramic supplies open to artists and the public.",
+  },
+  // Maine
+  {
+    name: "Watershed Center for the Ceramic Arts",
+    city: "Newcastle",
+    province: "Maine",
+    country: "US",
+    website: "https://www.watershedceramics.org",
+    bio: "Founded in 1986 on a former brick factory site in midcoast Maine, a celebrated 54-acre ceramics campus between the Sheepscot River and the Atlantic — offering artist residencies, workshops, educational initiatives, and a gathering place for the international ceramics community.",
+  },
+  // Quebec
+  {
+    name: "Association des céramistes du Québec",
+    city: "Quebec City",
+    province: "Quebec",
+    country: "CA",
+    website: "https://ceramistes.qc.ca",
+    bio: "Founded in 1970, a Quebec nonprofit bringing together professional ceramic artists and enthusiasts to promote exchanges and increase visibility — offering workshops, exhibition opportunities, the annual Carac'Terre ceramics event, and bulk material orders.",
+  },
+  // Alberta
+  {
+    name: "Alberta Potters' Association",
+    city: "Calgary",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.albertapottersassociation.org",
+    bio: "Established in 1968, a provincial association supporting Alberta ceramic artists from enthusiasts to professionals through informative workshops, lectures, exhibitions, mentorship, and community building across the province.",
+  },
 ];
 
 export const potters: Potter[] = [
@@ -6561,6 +6716,121 @@ export const suppliers: Supplier[] = [
     website: "https://zakladyceramiczne.com",
     bio: "Authentic hand-painted Polish stoneware made using centuries-old traditions from Bolesławiec — classic stamp and brush decoration techniques on oven, microwave, and dishwasher-safe pieces.",
   },
+  // Ontario (additional)
+  {
+    name: "Great White North Pottery Supplies",
+    city: "Sudbury",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.gwnpottery.ca",
+    bio: "Northern Ontario's complete pottery supply house carrying clay, glaze, tools, and kiln equipment, with Canada-wide flat-rate shipping.",
+  },
+  // Pennsylvania
+  {
+    name: "Standard Clay Company",
+    city: "Pittsburgh",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.standardclay.com",
+    bio: "Pittsburgh clay manufacturer producing a full range of low-, mid-, and high-fire clay bodies, casting slips, glazes, and raw materials for schools, studios, and professional potters.",
+  },
+  {
+    name: "Ceramic Supply Pittsburgh",
+    city: "Pittsburgh",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://ceramicsupplypittsburgh.com",
+    bio: "Pittsburgh's full-service ceramics supply shop stocking clay, glazes, tools, kilns, and accessories for studios and hobbyists throughout western Pennsylvania.",
+  },
+  // Texas
+  {
+    name: "Trinity Ceramic Supply",
+    city: "Dallas",
+    province: "Texas",
+    country: "US",
+    website: "https://trinityceramic.com",
+    bio: "Established in 1950, one of the oldest ceramics suppliers in the South — stocking Trinity, Armadillo, and Laguna clays alongside a huge selection of glazes, tools, wheels, and kilns at their Dallas warehouse.",
+  },
+  // Kentucky
+  {
+    name: "Kentucky Mudworks",
+    city: "Lexington",
+    province: "Kentucky",
+    country: "US",
+    website: "https://kymudworks.com",
+    bio: "A ceramics supplier, distributor, gallery, and community classroom with locations in both Lexington and Louisville, carrying clay, glazes, tools, equipment, and offering classes for all skill levels.",
+  },
+  // Ohio
+  {
+    name: "Big Creek Clay",
+    city: "Strongsville",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.bigcreekclay.com",
+    bio: "Northeast Ohio's premier ceramic supply and art studio — a gallery, community studio, and materials warehouse carrying clay, handcrafted pottery, local art, and offering workshops.",
+  },
+  {
+    name: "Mid-Ohio Ceramic Supply",
+    city: "Columbus",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.midohioceramicsupply.com",
+    bio: "Columbus ceramic supply store meeting the tool, glaze, and clay needs of schools, hobbyists, and small business owners across central Ohio.",
+  },
+  // Michigan
+  {
+    name: "West Michigan Clay Supply",
+    city: "Hamilton",
+    province: "Michigan",
+    country: "US",
+    website: "https://westmichiganclay.com",
+    bio: "In business for over 30 years, West Michigan Clay supplies clay, glazes, raw materials, tools, and equipment — including Shimpo and Skutt wheels and kilns — to potters and schools across Michigan.",
+  },
+  // Colorado
+  {
+    name: "Mile Hi Ceramics",
+    city: "Denver",
+    province: "Colorado",
+    country: "US",
+    website: "https://www.milehiceramics.com",
+    bio: "A Denver institution for ceramic supplies since 1954, carrying a full range of clay bodies, glazes, tools, wheels, and kilns for studio potters and students.",
+  },
+  // Utah
+  {
+    name: "Ceramic Supply USA",
+    city: "Salt Lake City",
+    province: "Utah",
+    country: "US",
+    website: "https://ceramicsupplyusa.com",
+    bio: "A Salt Lake City ceramics supplier founded to make quality American-made glazes, raw materials, and tools directly available to potters — also offering introductory to intermediate pottery classes in their studio.",
+  },
+  // California
+  {
+    name: "Laguna Clay Company",
+    city: "City of Industry",
+    province: "California",
+    country: "US",
+    website: "https://www.lagunaclay.com",
+    bio: "The largest US manufacturer and distributor of ceramics products, founded in 1976 and based in Southern California — supplying clay bodies, glazes, and equipment to studios, schools, and industry nationwide.",
+  },
+  // Massachusetts
+  {
+    name: "The Potters Shop & School",
+    city: "Needham",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.thepottersshopandschool.com",
+    bio: "One of New England's finest clay facilities in Needham Heights — offering studio memberships, adult classes, workshops, a hand-picked selection of pottery tools, and a respected ceramics library.",
+  },
+  // Virginia
+  {
+    name: "Clayworks Supplies Richmond",
+    city: "Richmond",
+    province: "Virginia",
+    country: "US",
+    website: "https://clayworkssupplies.com",
+    bio: "Richmond-based ceramics supplier serving the mid-Atlantic region from southern Pennsylvania to Northern Virginia, carrying clay, glazes, tools, and Skutt kilns with regional delivery.",
+  },
 ];
 
 export const teachingStudios: TeachingStudio[] = [
@@ -7237,6 +7507,191 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.tasmanianceramics.com",
     bio: "A non-profit volunteer organisation supporting ceramic artists across Tasmania through workshops, exhibitions, retreats, and networking events.",
   },
+  // Australia — Victoria (Melbourne inner suburbs)
+  {
+    name: "Sarah Schembri Ceramics",
+    city: "Fitzroy",
+    province: "Victoria",
+    country: "AU",
+    website: "https://sarahschembri.com",
+    bio: "A light-filled studio in Fitzroy where ceramicist Sarah Schembri teaches one-off workshops and multi-week terms while creating bespoke tableware for some of Australia's best restaurants.",
+  },
+  {
+    name: "Lygon Street Pottery",
+    city: "Brunswick",
+    province: "Victoria",
+    country: "AU",
+    website: "https://lygonstreetpottery.com.au",
+    bio: "An expansive pottery studio at 483 Lygon Street in East Brunswick offering introductory and immersive classes, firing services, artist studios, and open studio memberships.",
+  },
+  {
+    name: "Terrapotter Studios",
+    city: "Melbourne",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.terrapotterstudios.com",
+    bio: "A North Melbourne pottery studio with a teaching team holding Masters in Teaching qualifications, offering taster classes, term courses, open studio sessions, and private ceramic-dining events.",
+  },
+  // Australia — Victoria (regional)
+  {
+    name: "ClayMotion",
+    city: "Ballarat",
+    province: "Victoria",
+    country: "AU",
+    website: "https://claymotion.com.au",
+    bio: "An art studio and ceramics school near Ballarat run by practising artist Dawn Whitehand, offering pottery and mixed-media classes for adults, children, families, and teachers in professional development.",
+  },
+  {
+    name: "Peninsula Ceramics Studio",
+    city: "Mornington Peninsula",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.peninsulaceramicsstudio.com",
+    bio: "A welcoming studio on the Mornington Peninsula founded by artist Lilli, offering hand-building and wheel-throwing workshops for all skill levels in a coastal-inspired creative environment.",
+  },
+  {
+    name: "Walker Ceramics",
+    city: "Bayswater",
+    province: "Victoria",
+    country: "AU",
+    website: "https://walkerceramics.com.au",
+    bio: "A major Australian ceramics manufacturer and supplier in Bayswater, producing clays and glazes and stocking wheels, kilns, tools, and raw materials for potters nationwide.",
+  },
+  // Australia — New South Wales (regional)
+  {
+    name: "Keramika Ceramics",
+    city: "Mullumbimby",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.keramika.com.au",
+    bio: "A fully equipped shared ceramics studio in Mullumbimby in the Byron Bay hinterland offering wheel-throwing and hand-building classes, studio hire, and handcrafted nature-inspired ceramics.",
+  },
+  {
+    name: "Ochre Ceramics",
+    city: "Byron Bay",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.ochreceramics.com",
+    bio: "A Byron Bay ceramics studio offering group pottery workshops — including Clay, Coffee & Croissants morning sessions — alongside handmade functional homewares available online.",
+  },
+  {
+    name: "Newcastle Studio Potters",
+    city: "Newcastle",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.newcastlestudiopotters.org",
+    bio: "A well-equipped ceramics workshop and gallery in Cooks Hill, Newcastle, hosting regular changing exhibitions, community classes, kiln firings, and studio access for members since 1961.",
+  },
+  {
+    name: "Artnest Ceramics",
+    city: "St Ives",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.artnestceramics.com",
+    bio: "An artist-run studio in St Ives Chase, Sydney, offering small-group pottery classes, birthday parties, and holiday workshops for kids and adults, with a flexible and relaxed booking approach.",
+  },
+  // Australia — Queensland (Brisbane)
+  {
+    name: "Mas & Miek Ceramic House",
+    city: "Brisbane",
+    province: "Queensland",
+    country: "AU",
+    website: "https://theceramichouse.studio",
+    bio: "A mother-daughter ceramics studio, café, and gallery in Newstead founded in 2017, offering hand-building and wheel-throwing classes in a beautifully converted industrial warehouse.",
+  },
+  {
+    name: "Mia Ceramics",
+    city: "Brisbane",
+    province: "Queensland",
+    country: "AU",
+    website: "https://miaceramics.com.au",
+    bio: "A Holland Park studio run by art teacher Maria Barry offering wheel-throwing courses and hand-building workshops for beginners through advanced potters, with homemade morning tea served mid-session.",
+  },
+  // Australia — Queensland (Gold Coast & Sunshine Coast)
+  {
+    name: "Firebird Studios",
+    city: "Gold Coast",
+    province: "Queensland",
+    country: "AU",
+    website: "https://firebirdstudios.com.au",
+    bio: "A vibrant ceramics studio and supply shop in Burleigh Heads offering beginner through advanced pottery classes, wheel-throwing courses, workshops, and private events on the Gold Coast.",
+  },
+  {
+    name: "Gold Coast Potters Association",
+    city: "Gold Coast",
+    province: "Queensland",
+    country: "AU",
+    website: "https://goldcoastpotters.com",
+    bio: "A community potters association on the Gold Coast with fully equipped studios offering coil, slab, and pinching classes alongside wheels and open studio access for all levels.",
+  },
+  // Australia — Western Australia (additional)
+  {
+    name: "Dilkes-Hoffman Studio Ceramics",
+    city: "Margaret River",
+    province: "Western Australia",
+    country: "AU",
+    website: "http://www.dilkes-hoffman.com.au",
+    bio: "A family-run gallery and production studio near Margaret River operating since 1991, specialising in high-quality pottery, sculpture, and moulded ceramics with unique majolica and reduced lustre glazes.",
+  },
+  // Australia — South Australia (additional)
+  {
+    name: "Urth Clay Studio",
+    city: "Adelaide",
+    province: "South Australia",
+    country: "AU",
+    website: "https://urthclaystudio.com.au",
+    bio: "A mindful pottery studio with locations in Goodwood and Burnside offering one-off social sessions, term classes, eight-week programs, and private pottery parties for all ages.",
+  },
+  {
+    name: "Hahndorf Pottery",
+    city: "Hahndorf",
+    province: "South Australia",
+    country: "AU",
+    website: "https://www.hahndorfpottery.com.au",
+    bio: "A cosy heritage-building ceramics studio in Hahndorf run by ceramicist Carly Mitolo, offering wheel-throwing sessions, hand-building classes, a kids' Saturday club, and a Mud Club for adults.",
+  },
+  // Australia — Tasmania (additional)
+  {
+    name: "MUDDLE Ceramics Workshop",
+    city: "Hobart",
+    province: "Tasmania",
+    country: "AU",
+    website: "https://muddleceramicsworkshop.com.au",
+    bio: "A light-filled warehouse studio in Mornington on Hobart's eastern shore offering term classes, workshops, studio hire, and residencies for kids and adults.",
+  },
+  // Australia — ACT
+  {
+    name: "Canberra Potters",
+    city: "Canberra",
+    province: "ACT",
+    country: "AU",
+    website: "https://canberrapotters.com.au",
+    bio: "The leading ceramics organisation in the ACT since 1975, operating from the Watson Arts Centre with teaching workshops, member studios, a gallery and shop, kilns, and an annual program of exhibitions and events.",
+  },
+  {
+    name: "The Ceramic Studio ACT",
+    city: "Canberra",
+    province: "ACT",
+    country: "AU",
+    website: "https://theceramicstudioact.com.au",
+    bio: "A welcoming Canberra studio in Mitchell offering small-group wheel-throwing, hand-building, and clay workshops for beginners through experienced potters, with kiln firing services and corporate bookings.",
+  },
+  {
+    name: "Clay Studio Canberra",
+    city: "Canberra",
+    province: "ACT",
+    country: "AU",
+    website: "https://claystudiocanberra.com",
+    bio: "A ceramics studio in a repurposed school building in the leafy Canberra suburb of Stirling, offering one-off clay sessions, ongoing classes, and workshops in a calm creative environment.",
+  },
+  {
+    name: "Craft + Design Canberra",
+    city: "Canberra",
+    province: "ACT",
+    country: "AU",
+    website: "https://craftanddesigncanberra.org",
+    bio: "A not-for-profit membership organisation supporting craft practitioners and designers in the ACT through a retail gallery, exhibitions, events, and the annual Design Canberra Festival.",
+  },
   // Illinois
   {
     name: "Penguin Foot Pottery",
@@ -7265,15 +7720,6 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A nonprofit pottery studio in the Boston area offering classes, workshops, studio rentals, residencies, and community outreach for all skill levels since 1971.",
   },
   // Pennsylvania
-  // Washington
-  {
-    name: "Pottery Northwest",
-    city: "Seattle",
-    province: "Washington",
-    country: "US",
-    website: "https://www.potterynorthwest.org",
-    bio: "A community pottery studio with the motto 'Clay is Community. Clay is for Everyone,' offering classes, workshops, and studio access for all skill levels.",
-  },
   // Oregon
   {
     name: "The Mud Room",
@@ -7708,14 +8154,6 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A community ceramic arts centre in the foothills of the Beartooth Mountains offering studio residencies, workshops, classes, and a gallery of work by resident and guest artists.",
   },
   // Maine
-  {
-    name: "Watershed Center for the Ceramic Arts",
-    city: "Newcastle",
-    province: "Maine",
-    country: "US",
-    website: "https://watershedceramics.org",
-    bio: "A beloved ceramics residency on the mid-coast of Maine offering summer work sessions for artists of all levels — community, connection, and two weeks of uninterrupted studio time.",
-  },
   {
     name: "Haystack Mountain School of Crafts",
     city: "Deer Isle",
