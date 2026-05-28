@@ -1177,6 +1177,245 @@ export const guilds: Guild[] = [
     website: "https://www.albertapottersassociation.org",
     bio: "Established in 1968, a provincial association supporting Alberta ceramic artists from enthusiasts to professionals through informative workshops, lectures, exhibitions, mentorship, and community building across the province.",
   },
+  // Alabama
+  {
+    name: "Alabama Craft Guild",
+    city: "Birmingham",
+    province: "Alabama",
+    country: "US",
+    website: "https://alabamacraftguild.org",
+    bio: "A juried fine craft organisation championing Alabama's handmade traditions, hosting an annual show at the Birmingham Botanical Gardens since 1972 and representing clay artists alongside makers in fiber, glass, metal, and wood.",
+  },
+  // Tennessee
+  {
+    name: "Tennessee Craft",
+    city: "Nashville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://tennesseecraft.org",
+    bio: "Tennessee's largest and most respected statewide craft organisation since 1965, connecting ceramic artists, galleries, studios, and patrons through exhibitions, professional development, and a statewide network of three regional chapters.",
+  },
+  {
+    name: "Foothills Craft Guild",
+    city: "Knoxville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.foothillscraftguild.net",
+    bio: "Founded in 1968, the oldest member craft guild in Tennessee — representing over 200 craft artists statewide including potters and clay sculptors, hosting two juried fine craft shows annually in Lenoir City and Knoxville.",
+  },
+  // Mississippi
+  {
+    name: "Craftsmen's Guild of Mississippi",
+    city: "Ridgeland",
+    province: "Mississippi",
+    country: "US",
+    website: "https://www.mscrafts.org",
+    bio: "A 501(c)(3) nonprofit established in 1973 at the Waller Craft Center near the Natchez Trace Parkway, representing over 400 Mississippi artists — including ceramicists — through a gallery, workshops, and juried membership.",
+  },
+  // South Carolina
+  {
+    name: "Carolina Clay Guild",
+    city: "South Carolina",
+    province: "South Carolina",
+    country: "US",
+    website: "https://www.carolinaclayguild.com",
+    bio: "Founded in 1985, a non-exclusive guild providing opportunities for members and the public to gain experience with ceramics — sharing resources, event listings, workshop announcements, and a member directory across the Carolinas.",
+  },
+  // Iowa
+  {
+    name: "Iowa City Area Craft Guild",
+    city: "Iowa City",
+    province: "Iowa",
+    country: "US",
+    website: "https://craftguildic.org",
+    bio: "A nonprofit of crafters from east-central Iowa practising ceramics, spinning, weaving, knitting, and quilting — offering a communal pottery studio with kilns and glazes, monthly meetings, and membership open to adults of all skill levels.",
+  },
+  // Wisconsin
+  {
+    name: "Madison Area Potters Guild",
+    city: "Madison",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://madisonareapottersguild.com",
+    bio: "A welcoming community providing educational opportunities and supportive relationships for professional and non-professional potters and ceramic artists across the greater Madison, Wisconsin area.",
+  },
+  // Nebraska
+  {
+    name: "Nebraska Ceramic Artists Guild",
+    city: "Lincoln",
+    province: "Nebraska",
+    country: "US",
+    website: "https://www.luxcenter.org/NCAG",
+    bio: "A free, open-access guild hosted at the LUX Center for the Arts in Lincoln whose mission is to build a clay community in Nebraska by connecting artists and providing exhibition, learning, and sales opportunities for ceramicists of all experience levels.",
+  },
+  // Colorado (additional)
+  {
+    name: "Arapahoe Ceramics Guild",
+    city: "Parker",
+    province: "Colorado",
+    country: "US",
+    website: "https://www.arapahoeceramicsguild.com",
+    bio: "A community of over 40 talented potters in the Denver metro area dedicated to fostering creativity and providing a supportive environment for artists of all skill levels, offering classes in collaboration with Arapahoe Community College and twice-yearly pottery sales.",
+  },
+  // Utah
+  {
+    name: "Clay Arts Utah",
+    city: "Salt Lake City",
+    province: "Utah",
+    country: "US",
+    website: "https://clayartsutah.com",
+    bio: "A nonprofit dedicated to educating, supporting, and uniting ceramic artists across Utah — connecting the clay arts community statewide through an events calendar, workshops, and outreach programmes.",
+  },
+  // Idaho
+  {
+    name: "Clay Arts Guild of North Idaho",
+    city: "Coeur d'Alene",
+    province: "Idaho",
+    country: "US",
+    website: "http://www.cagni.org",
+    bio: "A nonprofit communication network for clay artists and supporters in North Idaho, promoting clay art and education through monthly meetings, educational workshops in alternative firing techniques, and hands-on community outreach with schools and assisted-living facilities.",
+  },
+  // Indiana (additional)
+  {
+    name: "Goshen Clay Artists Guild",
+    city: "Goshen",
+    province: "Indiana",
+    country: "US",
+    website: "https://goshenclayguild.org",
+    bio: "Formed in 1998, a community of over 25 clay artists sharing a dedicated studio space in Goshen — offering 12-week courses in wheel work and hand building for beginners through advanced students and participating regularly in the Goshen Farmers Market.",
+  },
+  {
+    name: "Northern Indiana Clay Alliance",
+    city: "Elkhart",
+    province: "Indiana",
+    country: "US",
+    website: "https://www.indianaclay.org",
+    bio: "Established in 2022 as a 501(c)(3) nonprofit, NICA supports northern Indiana's vibrant ceramic tradition through the Michiana Spring Clay Tour, the Ruthmere Ceramic Showcase, the Marvin Bartel Scholarship, and a growing regional directory of clay studios.",
+  },
+  // Maine (additional)
+  {
+    name: "Maine Pottery Tour",
+    city: "Statewide",
+    province: "Maine",
+    country: "US",
+    website: "https://mainepotterytour.org",
+    bio: "Held every first weekend of May, a beloved statewide self-guided studio tour where over 100 potters from 90+ ceramics studios across Maine open their doors — welcoming visitors to watch demonstrations, view kilns, and buy directly from the makers.",
+  },
+  // Vermont
+  {
+    name: "Vermont Clay Guild",
+    city: "Burlington",
+    province: "Vermont",
+    country: "US",
+    website: "https://vermontclayguild.org",
+    bio: "Founded in 2015 and incorporated as a 501(c)(3) in 2018, a guild of Vermont clay artists working in functional and sculptural ceramics — sharing studio resources, educational opportunities, and an online shop featuring member work from wheel-thrown to hand-built forms.",
+  },
+  // Rhode Island (additional)
+  {
+    name: "Pottery and Porcelain Club of Rhode Island",
+    city: "Providence",
+    province: "Rhode Island",
+    country: "US",
+    website: "https://potteryandporcelainclubri.org",
+    bio: "Founded in 1947, a Providence membership club dedicated to studying and promoting interest in pottery and porcelain through lecture programmes, a study group, and a rich archive held at Brown University's library.",
+  },
+  // Maryland (additional)
+  {
+    name: "Montgomery Potters",
+    city: "Rockville",
+    province: "Maryland",
+    country: "US",
+    website: "https://montgomerypotters.org",
+    bio: "Bringing potters together since 1952, a clay club in Montgomery County, Maryland, uniting ceramicists from Maryland, Virginia, and DC to increase skills, exchange ideas, and hold periodic exhibits and sales — meeting monthly at VisArts in Rockville.",
+  },
+  // Spain
+  {
+    name: "Asociación Galega de Ceramistas",
+    city: "Galicia",
+    province: "Spain",
+    country: "EU",
+    website: "https://agacer.es",
+    bio: "A Galician ceramics association dedicated to promoting traditional and contemporary ceramic arts across the region, supporting professional ceramic artists and fostering knowledge of Galicia's rich pottery heritage.",
+  },
+  {
+    name: "Asociación Española de Ciudades de la Cerámica",
+    city: "Castellón",
+    province: "Spain",
+    country: "EU",
+    website: "https://www.ciudades-ceramica.es",
+    bio: "A Spanish association of municipalities with an established ceramic tradition, working to promote, protect, and develop the cultural and economic heritage of Spanish ceramics across the country's most historically significant pottery towns and cities.",
+  },
+  // Portugal
+  {
+    name: "Associação Portuguesa das Cidades e Vilas de Cerâmica",
+    city: "Caldas da Rainha",
+    province: "Portugal",
+    country: "EU",
+    website: "https://ceramicadeportugal.pt",
+    bio: "A nonprofit association of 22 Portuguese municipalities united by a rich ceramic expression, working to promote and develop the economic, tourism, and heritage value of Portugal's most significant pottery towns, from Caldas da Rainha to Viana do Alentejo.",
+  },
+  // Italy
+  {
+    name: "Associazione Italiana Città della Ceramica",
+    city: "Faenza",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.buongiornoceramica.it",
+    bio: "Founded in 1999 and recognised by Italy's Ministry of Economic Development, a nonprofit of 56 municipalities across 16 Italian regions united by an established ceramic tradition — protecting and promoting Italian artistic and artisan ceramics through the annual Buongiorno Ceramica! open-studio festival.",
+  },
+  // Netherlands (additional)
+  {
+    name: "SKNN Keramisten",
+    city: "Netherlands",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://sknn-keramiek.nl",
+    bio: "A Dutch association maintaining a professional directory of ceramic artists in the Netherlands, offering visibility to studio potters and sculptors and fostering connections within the Dutch ceramics community.",
+  },
+  // Belgium
+  {
+    name: "Ceramic Brussels",
+    city: "Brussels",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.ceramic.brussels",
+    bio: "The first international contemporary art fair dedicated entirely to ceramics, held annually at Tour&Taxis in Brussels — bringing together galleries, collectors, and ceramic artists from across Europe and beyond to celebrate the global ceramic arts landscape.",
+  },
+  // Finland
+  {
+    name: "Finnish Ceramic Society",
+    city: "Tampere",
+    province: "Finland",
+    country: "EU",
+    website: "https://sites.tuni.fi/keraaminenseura/in-english/",
+    bio: "Founded in 1949, a Finnish association linking ceramic industry professionals, universities, companies, studio ceramicists, and private enthusiasts — acting as part of the European umbrella organisation for ceramic societies and hosting symposia, publications, and educational events.",
+  },
+  {
+    name: "Keramiikkakilta",
+    city: "Turku",
+    province: "Finland",
+    country: "EU",
+    website: "https://www.keramiikkakilta.net",
+    bio: "Founded in 2005, the Ceramic Guild of Southwest Finland brings together professional ceramic artists and artisans working in the Turku region — hosting exhibitions, facilitating peer exchange, and promoting handcrafted Finnish ceramics to a wider audience.",
+  },
+  // Norway
+  {
+    name: "Norwegian Crafts",
+    city: "Oslo",
+    province: "Norway",
+    country: "EU",
+    website: "https://norwegiancrafts.no",
+    bio: "A professional organisation promoting Norwegian craft internationally, including ceramics — supporting artists through international exhibitions, residency programmes, publications, and visibility at major international art and craft fairs.",
+  },
+  // Denmark (additional)
+  {
+    name: "CLAY Museum of Ceramic Art Denmark",
+    city: "Middelfart",
+    province: "Denmark",
+    country: "EU",
+    website: "https://www.claymuseum.dk",
+    bio: "The Nordic region's largest specialist museum for ceramic arts, crafts, and design — housing an internationally significant collection, hosting artist residencies, and running educational programmes connecting the public with the living tradition of Danish and Scandinavian ceramics.",
+  },
 ];
 
 export const potters: Potter[] = [
@@ -7067,6 +7306,637 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://wilsoncreekpottery.com",
     bio: "Ashley Pfannenstiel hand-crafts functional stoneware ceramics at her Wisconsin studio west of Madison, with close attention to individual detail in each wheel-thrown mug, bowl, and serving piece.",
+  },
+  // California — Bay Area
+  {
+    name: "Alex Beck Ceramics",
+    city: "San Francisco",
+    province: "California",
+    country: "US",
+    website: "https://alexbeckceramics.com",
+    bio: "Alex Beck makes handmade functional ceramics from his San Francisco studio, known for wheel-thrown pots with carved textures, bold surface patterns, and vibrant color work sold at craft markets across the Bay Area.",
+    offersClasses: true,
+  },
+  {
+    name: "Wolf Ceramics",
+    city: "Hood River",
+    province: "Oregon",
+    country: "US",
+    website: "https://wolfceramics.com",
+    bio: "Sarah Wolf founded Wolf Ceramics in 2016 and now leads a Hood River production studio making contemporary functional dinnerware for home cooks, chefs, and restaurants throughout the Pacific Northwest.",
+  },
+  {
+    name: "Karen Winograde Pottery",
+    city: "Napa",
+    province: "California",
+    country: "US",
+    website: "http://www.karenwinogradepottery.com",
+    bio: "Karen Winograde has been making salt-glazed functional pottery in the Napa Valley since 1975, building her own wood-firing kiln in 2000 and creating pieces focused on cooking, food, and garden presentation.",
+  },
+  {
+    name: "NBC Pottery",
+    city: "Angwin",
+    province: "California",
+    country: "US",
+    website: "https://nbcpottery.com",
+    bio: "Nikki Ballere and William Callnan craft bespoke ceramics in the hills above St. Helena in Napa Valley, incorporating natural textures from rocks and found elements and supplying tableware to celebrated Napa Valley restaurants.",
+    offersClasses: true,
+  },
+  // California — Los Angeles
+  {
+    name: "Echo Park Pottery",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "http://www.echoparkpottery.com",
+    bio: "Peter Shire, founding member of the Milan-based Memphis design group, has operated Echo Park Pottery in his Los Angeles neighborhood since 1972, producing distinctive tri-colored mugs and sculptural ceramics.",
+  },
+  {
+    name: "Sheldon Ceramics",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://www.sheldonceramics.com",
+    bio: "Peter Sheldon runs this downtown Los Angeles studio steps from the LA River, hand-throwing each piece on the wheel and formulating all glazes from scratch to create functional stoneware built to last a lifetime.",
+  },
+  // California — San Diego
+  {
+    name: "Clay and Craft",
+    city: "Cardiff-by-the-Sea",
+    province: "California",
+    country: "US",
+    website: "https://www.clayandcraft.com",
+    bio: "Nicole Novena creates minimal, thoughtfully designed functional ceramics from her home studio in Cardiff-by-the-Sea, a Best of San Diego business recognized for timeless tableware and coastal-inspired home pieces.",
+    offersClasses: true,
+  },
+  // California — Central Coast
+  {
+    name: "Pacific Stone Pottery",
+    city: "Santa Cruz",
+    province: "California",
+    country: "US",
+    website: "https://pacificstonepottery.com",
+    bio: "Drake Bialecki trained at The Leach Pottery in Cornwall before founding Pacific Stone Pottery, crafting handmade functional ceramics for the home and table in the Santa Cruz area with a focus on community connections.",
+  },
+  {
+    name: "Jenni Ward Ceramic Sculpture",
+    city: "Santa Cruz",
+    province: "California",
+    country: "US",
+    website: "https://www.jenniward.com",
+    bio: "Jenni Ward is a ceramic sculptor and installation artist based in Santa Cruz who builds organic forms inspired by biological patterns in nature, constructing ephemeral assemblies that are documented and later transformed into gallery pieces.",
+  },
+  // California — Wine Country / Sacramento
+  {
+    name: "MazAmar Art Pottery",
+    city: "Pioneertown",
+    province: "California",
+    country: "US",
+    website: "https://www.mazamar.com",
+    bio: "Thomas Alban creates limited-edition functional ceramics and wall sculptures at his open production studio in Pioneertown, California, renowned for faux bois work and desert-inspired pieces featuring Mojave fauna and landscape.",
+  },
+  // Oregon — Portland / Hood River
+  {
+    name: "Pottery by Yvonne",
+    city: "Bend",
+    province: "Oregon",
+    country: "US",
+    website: "https://potterybyyvonne.com",
+    bio: "Yvonne Tornatta specializes in carved neriage pottery from her Tumalo-area studio near Bend, layering vibrant colors of clay and carving through them to reveal striking patterns in functional and decorative pieces.",
+    offersClasses: true,
+  },
+  {
+    name: "Blue Spruce Pottery",
+    city: "Bend",
+    province: "Oregon",
+    country: "US",
+    website: "https://bluesprucepottery.com",
+    bio: "Established in 1976 by Michael and Michele Gwinup and now continued by their family, Blue Spruce Pottery in Bend creates both food-safe stoneware and dramatic raku pieces fired in sawdust reduction for metallic surface effects.",
+  },
+  // Washington — Seattle / surroundings
+  {
+    name: "Saltstone Ceramics",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://saltstoneceramics.com",
+    bio: "A queer- and women-owned ceramics studio and retail gallery in Seattle's Wallingford neighborhood, Saltstone has offered handmade functional pottery and community clay classes since 2018.",
+    offersClasses: true,
+  },
+  {
+    name: "Orna Pottery",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://www.orna-pottery.com",
+    bio: "Orna Eliyahu-Oron has handcrafted stoneware and porcelain ceramics inspired by Pacific Northwest forests at Pike Place Market in Seattle since 2005, including her popular Cascade Impressions leaf-imprint porcelain line.",
+  },
+  {
+    name: "Damian Grava Ceramics",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://www.damiangrava.com",
+    bio: "Damian Grava is a West Seattle studio potter and ceramics educator making soda-fired and cone-10 reduction pottery at his Westwood Art Studio, using vapor firing techniques to paint surfaces with kiln flames.",
+    offersClasses: true,
+  },
+  {
+    name: "Jennifer Spring Ceramics",
+    city: "Redmond",
+    province: "Washington",
+    country: "US",
+    website: "https://www.jenniferspringceramics.com",
+    bio: "Jennifer Spring creates modern handmade ceramics from her home studio outside Seattle, drawing from minimalist and mid-century modern aesthetics; her work has appeared on the cover of HGTV Magazine.",
+  },
+  // Washington — Spokane
+  {
+    name: "KJ Pottery",
+    city: "Spokane",
+    province: "Washington",
+    country: "US",
+    website: "https://kjpottery.com",
+    bio: "Kelsey Johnson has run KJ Pottery from a simple Spokane studio since 2015, producing handmade functional and minimal ceramics found at local restaurants and breweries throughout the Inland Northwest.",
+  },
+  {
+    name: "Trackside Studio",
+    city: "Spokane",
+    province: "Washington",
+    country: "US",
+    website: "https://www.tracksidestudio.net",
+    bio: "Founded in 2006 in downtown Spokane, Trackside Studio is a working ceramic studio and gallery where potters Chris Kelsey and Mark Moore create professional-quality functional pottery, sculpture, and art objects.",
+  },
+  // Washington — Olympia
+  {
+    name: "Shelly Gordon Pottery",
+    city: "Olympia",
+    province: "Washington",
+    country: "US",
+    website: "https://shellygordonpottery.com",
+    bio: "Shelly Gordon has been crafting food-safe, functional handmade ceramics from her home studio just outside Olympia, Washington since 2019, with each piece individually thrown and entirely unique.",
+  },
+  {
+    name: "Kennedy Creek Pottery",
+    city: "Olympia",
+    province: "Washington",
+    country: "US",
+    website: "https://kennedycreekpottery.com",
+    bio: "A working studio and gallery southwest of Olympia, Kennedy Creek Pottery creates a handcrafted assortment of ceramic tableware and garden art including functional dishware and large architectural pieces.",
+  },
+  // Colorado — Denver / Boulder
+  {
+    name: "Peter Karner Pottery",
+    city: "Denver",
+    province: "Colorado",
+    country: "US",
+    website: "https://www.peterkarnerpottery.com",
+    bio: "Peter Karner works full-time from his RiNo studio in Denver, producing six bodies of work annually in porcelain and stoneware using wax resist, latex, and layered glazes fired in reduction for rich, patterned surfaces.",
+  },
+  {
+    name: "O'baware",
+    city: "Lafayette",
+    province: "Colorado",
+    country: "US",
+    website: "https://www.obaware.com",
+    bio: "Kazu Oba trained under master potter Takashi Nakazato in Karatsu, Japan before returning to Colorado to co-create O'baware with his family, producing refined tableware and sculpture near Boulder.",
+  },
+  // Colorado — Fort Collins
+  {
+    name: "Wishbone Pottery",
+    city: "Fort Collins",
+    province: "Colorado",
+    country: "US",
+    website: "https://www.wishbonepottery.com",
+    bio: "Laura Poe handcrafts minimalist functional ceramics in Fort Collins, Colorado, guided by simplicity and utility with clean lines and colors inspired by the natural landscape of the Rocky Mountain region.",
+  },
+  {
+    name: "Ceramicscapes",
+    city: "Fort Collins",
+    province: "Colorado",
+    country: "US",
+    website: "https://ceramicscapes.com",
+    bio: "Cindy Guajardo brings a landscape architecture background to her Fort Collins ceramics practice, creating unique functional pottery and site-specific ceramic installations for residential and commercial clients.",
+  },
+  // Arizona — Sedona / Verde Valley
+  {
+    name: "Ben Roti Ceramics",
+    city: "Camp Verde",
+    province: "Arizona",
+    country: "US",
+    website: "https://www.benroti.com",
+    bio: "Ben Roti is a full-time studio potter in Arizona's Verde Valley creating functional low-fire earthenware in his home studio, and serves as Director of Ceramics at Sedona Arts Center and founder of the Verde Valley Pottery Festival.",
+    offersClasses: true,
+  },
+  {
+    name: "Luke Metz Ceramics",
+    city: "Sedona",
+    province: "Arizona",
+    country: "US",
+    website: "https://lukemetzceramics.com",
+    bio: "Luke Metz is an award-winning Sedona ceramic artist who returned to the medium full-time in 2010 after a career in New York, specializing in raku and alternative-firing techniques for spontaneous and dramatic surface results.",
+  },
+  // Arizona — Flagstaff
+  {
+    name: "Arne Ceramics",
+    city: "Flagstaff",
+    province: "Arizona",
+    country: "US",
+    website: "https://arneceramics.com",
+    bio: "Mark 'Arne' Arnegard has been throwing high-fire stoneware pots on historic Route 66 in Flagstaff since earning his BFA in ceramics at Northern Arizona University in 1972, maintaining a continuous studio practice for over 50 years.",
+  },
+  // Arizona — Scottsdale
+  {
+    name: "Nicholas Bernard Studio Potter",
+    city: "Scottsdale",
+    province: "Arizona",
+    country: "US",
+    website: "https://nbernard.com",
+    bio: "Nicholas Bernard has worked as a studio potter for nearly 40 years from his home studio in Scottsdale, creating low-fire earthenware and raku with influences drawn from the Southwest, Africa, Japan, and the Mediterranean.",
+  },
+  {
+    name: "Desert Dragon Pottery",
+    city: "Phoenix",
+    province: "Arizona",
+    country: "US",
+    website: "https://desertdragonpottery.com",
+    bio: "Michelle 'Mishy' Katz began working in clay in 1979 and co-founded Desert Dragon Pottery, the largest pottery school in Phoenix, offering wheel-throwing, sculpture, tile-making, mold, and slip-casting instruction.",
+    offersClasses: true,
+  },
+  // Hawaii — Oahu / Honolulu
+  {
+    name: "Daven Hee Ceramics",
+    city: "Honolulu",
+    province: "Hawaii",
+    country: "US",
+    website: "https://davenheeceramics.com",
+    bio: "Daven Hee is a Honolulu-born ceramic artist and educator with an MFA from Australian National University whose playful sculptural work is held in permanent collections including the Honolulu Museum of Art.",
+    offersClasses: true,
+  },
+  // Hawaii — Maui
+  {
+    name: "Lee Oululani Plevney Ceramics",
+    city: "Maui",
+    province: "Hawaii",
+    country: "US",
+    website: "https://www.leeplevney.com",
+    bio: "Lee Oululani Plevney creates hand-built ceramic sculptures and functional pieces from her Maui studio, inspired by the ocean, sea life, and open spirit of aloha, with work represented in multiple Maui galleries.",
+  },
+  {
+    name: "Jennifer Owen Ceramics",
+    city: "Haiku",
+    province: "Hawaii",
+    country: "US",
+    website: "https://www.jenniferowenceramics.com",
+    bio: "Jennifer Owen is a Maui-based ceramic sculptor and retired University of Hawaii professor whose salt-fired and pit-fired work with agateware and burnishing is inspired by nature and architecture.",
+    offersClasses: true,
+  },
+  // Hawaii — Big Island
+  {
+    name: "Suzanne Wang Ceramics",
+    city: "Hakalau",
+    province: "Hawaii",
+    country: "US",
+    website: "https://www.suzannewangceramics.com",
+    bio: "Suzanne Wang trained under master potter Ken Matsuzaki in Mashiko, Japan before establishing her Big Island studio in 2014, hand-building ceramics that blend East Asian aesthetics with the natural rhythms of Hawaii's Hamakua Coast.",
+  },
+  {
+    name: "RYH Pottery",
+    city: "Volcano",
+    province: "Hawaii",
+    country: "US",
+    website: "http://ryhpottery2.com",
+    bio: "Ron Hanatani founded RYH Pottery in 1991 after three years studying pottery in Kyoto, Japan, creating Japanese-influenced functional ware as a solo operation in Volcano Village near Hawaii Volcanoes National Park.",
+  },
+  // Oregon — Eugene
+  {
+    name: "Fired Up Ceramics",
+    city: "Eugene",
+    province: "Oregon",
+    country: "US",
+    website: "https://www.firedupceramics.com",
+    bio: "Richard and Robin Sanchez have made brilliantly hand-painted terracotta pottery together in Eugene since 2001 — Richard throws and slab-builds each piece from deep red clay while Robin decorates with layers of their own underglaze colors.",
+  },
+  // California — Sonoma / Wine Country
+  {
+    name: "FLM Ceramics",
+    city: "Petaluma",
+    province: "California",
+    country: "US",
+    website: "http://www.flmceramics.com",
+    bio: "Forrest Lesch-Middelton, named Ceramics Monthly's Ceramic Artist of the Year in 2014, creates functional pottery and architectural tile in Petaluma using his signature volumetric image transfer technique applied to wet clay on the wheel.",
+    offersClasses: true,
+  },
+  // Washington — Bellingham
+  {
+    name: "Will Abraham Pottery",
+    city: "Bellingham",
+    province: "Washington",
+    country: "US",
+    website: "https://www.willabrahampottery.com",
+    bio: "Will Abraham makes functional and sculptural ceramics from his Starflower Studios space in Bellingham, using subtractive carving techniques including kurinuki and whittling to create softly geological surfaces inspired by Pacific Northwest geology.",
+  },
+
+  // England — Yorkshire
+  {
+    name: "Rachel in the Dales",
+    city: "Yorkshire Dales",
+    province: "England",
+    country: "EU",
+    website: "https://rachelinthedales.co.uk",
+    bio: "Rachel Whitfield hand-throws stoneware pottery from her studio nestled in the landscape of the Yorkshire Dales Three Peaks, finishing each piece with homemade glazes foraged from local natural materials.",
+  },
+  {
+    name: "Kate Tempest Pottery",
+    city: "Yorkshire Dales",
+    province: "England",
+    country: "EU",
+    website: "https://www.katetempestpottery.co.uk",
+    bio: "Kate Tempest is a studio-based potter in the Yorkshire Dales who creates wheel-thrown stoneware with homemade glazes, drawing inspiration from the surrounding landscape, nature, and the poetry of the Brontë sisters.",
+  },
+  {
+    name: "Lorna Gilbert Ceramics",
+    city: "Leeds",
+    province: "England",
+    country: "EU",
+    website: "https://lornagilbert.co.uk",
+    bio: "Lorna Gilbert creates small-batch hand-thrown white stoneware ceramics from her garden studio in Leeds, having been potting in Yorkshire for over twenty years and drawing inspiration from Scotland's wild mountains and coastlines.",
+  },
+  {
+    name: "aka pottery",
+    city: "Harrogate",
+    province: "England",
+    country: "EU",
+    website: "https://www.aka-pottery.com",
+    bio: "Aly, an experienced Australian potter based in Harrogate, North Yorkshire, creates unique handmade stoneware with bold, experimental glazes, with each piece made as a one-of-a-kind object.",
+  },
+  {
+    name: "South Park Pottery",
+    city: "Kirkby Malzeard",
+    province: "England",
+    country: "EU",
+    website: "https://www.southparkpottery.co.uk",
+    bio: "Sally Smith has been a potter for most of her life and works from her studio near Ripon in North Yorkshire, specialising in slab pots decorated with layered slips she uses almost as a canvas.",
+  },
+
+  // England — Lake District / Cumbria
+  {
+    name: "Fiona May Ceramics",
+    city: "Shap",
+    province: "England",
+    country: "EU",
+    website: "https://www.fionamayceramics.com",
+    bio: "Fiona May Reid throws functional ceramics in a garden studio in Cumbria overlooking the Lake District fells, with each collection defined by a specific glaze or brushstroke technique inspired by local and distant landscapes.",
+  },
+  {
+    name: "KAH Ceramics",
+    city: "Carlisle",
+    province: "England",
+    country: "EU",
+    website: "https://www.kahceramics.co.uk",
+    bio: "Kim Anson is a Cumbria-based studio potter who has been creating nature-inspired ceramics from her Carlisle studio since 2010, using bold slab-building with layered glazes and underglaze techniques to reveal surface texture and pattern.",
+  },
+  {
+    name: "Kentmere Pottery",
+    city: "Kendal",
+    province: "England",
+    country: "EU",
+    website: "https://www.kentmerepottery.co.uk",
+    bio: "Gordon Fox has worked from his studio in the Kentmere Valley since the 1960s, producing fine handmade ceramics in a building that dates to the thirteenth century, specialising in multifired English enamels and commemorative pieces.",
+  },
+
+  // England — Devon & Cornwall
+  {
+    name: "Tarka Pottery Studio",
+    city: "Little Torrington",
+    province: "England",
+    country: "EU",
+    website: "https://tarkapottery.co.uk",
+    bio: "Jax Williams has led this North Devon ceramics studio for over thirty years, creating handmade pottery in a rural studio near RHS Rosemoor and welcoming visitors to throw, build, and buy work directly from the wheel.",
+  },
+  {
+    name: "The Tamar Valley Potter",
+    city: "Bere Alston",
+    province: "England",
+    country: "EU",
+    website: "https://www.thetamarvalleypotter.co.uk",
+    bio: "Ruth Nevin creates unique decorated ceramics from her garden studio on the Devon and Cornwall border, working with richly coloured surfaces and textures inspired by the Tamar Valley landscape.",
+  },
+
+  // England — Cotswolds
+  {
+    name: "Ridge & Furrow Ceramics",
+    city: "Cotswolds",
+    province: "England",
+    country: "EU",
+    website: "https://www.ridgeandfurrowceramics.com",
+    bio: "Marisa Devonshire runs this small Cotswold-based studio producing wheel-thrown, hand-illustrated pots in small batches, with nature at the heart of every piece of tableware and homeware she makes.",
+  },
+  {
+    name: "Winchcombe Pottery",
+    city: "Winchcombe",
+    province: "England",
+    country: "EU",
+    website: "https://www.winchcombepottery.co.uk",
+    bio: "Winchcombe Pottery, founded in the Cotswolds in 1926 by Michael Cardew, continues to produce its iconic Standard Range of over sixty wood-fired stoneware pots made by hand on the wheel using traditional methods.",
+  },
+
+  // England — Kent & Sussex
+  {
+    name: "Emily Doran Pottery",
+    city: "East Sussex",
+    province: "England",
+    country: "EU",
+    website: "https://www.emilydoranpottery.com",
+    bio: "Emily Doran makes intentionally small batches of wheel-thrown coastal-inspired tableware from her garden studio in East Sussex, with glazes named after seascapes; her work has been stocked at Liberty and the National Portrait Gallery.",
+  },
+  {
+    name: "Gillshaw Pottery",
+    city: "Barcombe",
+    province: "England",
+    country: "EU",
+    website: "https://www.gillshawpottery.co.uk",
+    bio: "Sophie and Alexander Baillieu create handmade pottery in their Barcombe, East Sussex studio, blending tradition with contemporary design and drawing on the rich artistic heritage of Charleston in their hand-painted slipware.",
+  },
+  {
+    name: "Barry Dorrity Ceramics",
+    city: "Tunbridge Wells",
+    province: "England",
+    country: "EU",
+    website: "https://barrydorritypottery.co.uk",
+    bio: "Barry Dorrity has worked with ceramics since 1973 and makes reduction-fired domestic ware from his workshop near Tunbridge Wells in Kent, specialising in tenmoku and rutile blue glazes alongside modelled landscape-inspired surfaces.",
+  },
+
+  // England — East Anglia
+  {
+    name: "Jane Bygrave Studio Ceramics",
+    city: "Reepham",
+    province: "England",
+    country: "EU",
+    website: "https://janebygraveceramics.co.uk",
+    bio: "Jane Bygrave has been an active potter for over twenty-five years, making small-batch domestic stoneware and individual pieces from her studio in Reepham, Norfolk, with inspiration drawn from local characters and the Broads landscape.",
+  },
+  {
+    name: "Frankie's Studio",
+    city: "Hadleigh",
+    province: "England",
+    country: "EU",
+    website: "https://frankies.studio",
+    bio: "Frankie Atkinson is a ceramic artist with a gallery in Suffolk and a studio in Essex, creating spontaneous hand-thrown and hand-built work inspired by the colours and textures of the East Anglian landscape.",
+  },
+
+  // France — Brittany
+  {
+    name: "Valentine Benoist Ceramics",
+    city: "Penvénan",
+    province: "France",
+    country: "EU",
+    website: "https://valentinebenoist.com",
+    bio: "Valentine Benoist creates unique handmade ceramic lighting, sculptures, and tableware from her studio-shop in Penvénan, Brittany, where she taught herself to make imperfectly beautiful pieces for everyday use.",
+  },
+  {
+    name: "Karen Swami Céramiques",
+    city: "Paris",
+    province: "France",
+    country: "EU",
+    website: "https://swami.fr",
+    bio: "After careers in finance and film production, Karen Swami devoted herself fully to ceramic art and now works from her Paris studio exploring the balance between fire, earth, and human intention through sculptural and contemporary forms.",
+  },
+
+  // France — Bordeaux / Gironde
+  {
+    name: "Subo Ceramics",
+    city: "Bordeaux",
+    province: "France",
+    country: "EU",
+    website: "https://suboceramics.com",
+    bio: "Suzanne Boureau is a contemporary Bordeaux potter who hand-throws tableware using Brach clay, a natural stoneware sourced from a family brickworks in the Médoc region, creating minimalist functional pieces under the Subo Ceramics name.",
+  },
+  {
+    name: "Musarde Céramique",
+    city: "Bordeaux",
+    province: "France",
+    country: "EU",
+    website: "https://musarde-ceramique.com",
+    bio: "Virginie Mespoulet left a career in cinema education to become a full-time ceramicist in 2022, creating singular handcrafted stoneware and porcelain tableware, decoration, and jewellery from her Bordeaux workshop.",
+  },
+
+  // France — Alsace
+  {
+    name: "Pepperpot Céramique",
+    city: "Rosheim",
+    province: "France",
+    country: "EU",
+    website: "https://pepperpot.shop",
+    bio: "Jennifer Tournaire trained at ceramic centres across France and Scandinavia before setting up her Alsace studio in Rosheim, making modern minimalist pieces in stoneware and porcelain in small handcrafted series.",
+  },
+  {
+    name: "Cairn Céramique",
+    city: "Sainte-Croix-en-Plaine",
+    province: "France",
+    country: "EU",
+    website: "https://cairn-ceramique.fr",
+    bio: "Anastasia Schneider retrained as a ceramicist near Colmar in Alsace after a decade teaching management, creating hand-thrown and slab-built utilitarian earthenware and tableware from her Alsatian studio.",
+  },
+
+  // Germany — Hamburg
+  {
+    name: "Anna Morgado Ceramics",
+    city: "Hamburg",
+    province: "Germany",
+    country: "EU",
+    website: "https://annamorgadoceramics.com",
+    bio: "Anna Morgado is a full-time ceramic artist based in Hamburg whose practice centres on wheel-throwing handmade clay objects designed to foster connection and grounding; she has spent nine years building her studio and teaching practice.",
+  },
+  {
+    name: "Swawole",
+    city: "Hamburg",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.swawole.art",
+    bio: "Architects Paulina Puciłowska and Maciej Gerszewski founded Swawole in Hamburg, blending pottery, design, and photography to create a practice that spans handmade ceramic tableware and art objects.",
+  },
+
+  // Germany — Munich
+  {
+    name: "Tanya Koch Ceramics",
+    city: "Munich",
+    province: "Germany",
+    country: "EU",
+    website: "https://tanyakochceramics.com",
+    bio: "Tanya Koch discovered her passion for clay in Greece and went on to open her Munich studio, specialising in nature-inspired wheel-thrown ceramics with distinctive open-fire firing techniques that create unique colour structures in each piece.",
+  },
+  {
+    name: "JELS Keramik Studio",
+    city: "Germany",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.jelskeramikstudio.com",
+    bio: "JELS Keramik Studio creates handmade ceramic objects in Germany where clay becomes living art, with each unique piece shaped and finished by hand using traditional and experimental techniques.",
+  },
+
+  // Netherlands — Amsterdam
+  {
+    name: "Kari Ceramics",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://kariceramics.com",
+    bio: "Norwegian-born Kari Ytterdal has run her 200-square-metre Amsterdam studio for over three decades, creating striking organic stoneware for home tables and restaurants worldwide, inspired by the stone, trees, and water of her island upbringing.",
+  },
+  {
+    name: "MJM Ceramics",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://mjmceramics.store",
+    bio: "MJ relocated from Canada to Amsterdam and set up a home studio producing one-of-a-kind handmade ceramic tableware, with each piece intentionally shaped, hand-painted, and guided by texture, line, and colour.",
+  },
+
+  // Netherlands — Utrecht
+  {
+    name: "The Pottery Parade",
+    city: "Utrecht",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://thepotteryparade.com",
+    bio: "Sandra Apperloo creates small, colourful handmade ceramic characters and objects entirely by hand from her studio in the centre of Utrecht, selling small-batch collections that each carry their own cheerful personality.",
+  },
+
+  // Netherlands — Leiden
+  {
+    name: "Byrnes Pottery",
+    city: "Leiden",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.byrnespottery.com",
+    bio: "Jen Byrnes creates wheel-thrown handmade pottery from her ceramics studio in Leiden, accepting commissions and offering workshops to those wanting to work directly with clay.",
+  },
+
+  // Belgium — Antwerp
+  {
+    name: "Fou de Feu",
+    city: "Antwerp",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.foudefeu.com",
+    bio: "Veerle Van Overloop is the ceramic designer behind Fou de Feu, a studio housed in a converted clog-making barn in Antwerp where she creates minimalist porcelain collections that rethink classical objects with a bold contemporary vision.",
+  },
+  {
+    name: "Artisann",
+    city: "Knokke",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.artisann.be",
+    bio: "A husband-and-wife team in Knokke create the Artisann collection of contemporary handmade ceramics and porcelain tableware from their studio by the sea, combining their backgrounds in gastronomy and ceramic design.",
+  },
+
+  // Belgium — Ghent
+  {
+    name: "Atelier Gilbert",
+    city: "Belgium",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.ateliergilbert.be",
+    bio: "Valérie Van Heyghen runs Atelier Gilbert, a pottery studio where ceramics are traditionally handmade and sold online and in studio, with authenticity at the core of a practice that runs through several generations of her family.",
   },
 ];
 
