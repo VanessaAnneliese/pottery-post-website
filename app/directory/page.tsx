@@ -28,7 +28,7 @@ function NavButton({ label, active, onClick }: { label: string; active: boolean;
   return (
     <button
       onClick={onClick}
-      className="px-5 py-2 text-xs tracking-widest uppercase font-bold rounded-sm transition-colors"
+      className="px-5 py-2 text-xs tracking-widest uppercase font-bold rounded-sm transition-colors cursor-pointer"
       style={{
         background: active ? "#5C3D2E" : "#E8D5B7",
         color: active ? "#F5F0E8" : "#5C3D2E",
