@@ -200,7 +200,7 @@ function DirectoryContent() {
   const searchParams = useSearchParams();
   const [selectedType, setSelectedType] = useState<DirectoryType | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<Country | null>(
-    () => (searchParams.get("region") as Country | null)
+    () => (searchParams.get("region") as Country | null) ?? "CA"
   );
   const [selectedProvince, setSelectedProvince] = useState<string | null>(
     () => searchParams.get("province")
@@ -211,7 +211,7 @@ function DirectoryContent() {
   // This pattern is intentional: URL changes (from search) need to reset filter state.
   /* eslint-disable react-hooks/set-state-in-effect */
   useEffect(() => {
-    setSelectedRegion(searchParams.get("region") as Country | null);
+    setSelectedRegion((searchParams.get("region") as Country | null) ?? "CA");
     setSelectedProvince(searchParams.get("province"));
     setSelectedLetter(null);
 
@@ -266,8 +266,6 @@ function DirectoryContent() {
       return scoreB - scoreA;
     });
   }
-
-  const isFullDirectory = selectedType === null && selectedRegion === null;
 
   const filteredGuilds = sortByLocation(guilds
     .filter((g) => !selectedRegion || g.country === selectedRegion)
@@ -344,13 +342,6 @@ function DirectoryContent() {
     setSelectedLetter(null);
   }
 
-  function handleFullDirectory() {
-    setSelectedType(null);
-    setSelectedRegion(null);
-    setSelectedProvince(null);
-    setSelectedLetter(null);
-  }
-
   return (
     <>
     {selectedType === null && <QuoteBlock quote="A bowl made by hand carries something no factory can put into it. The particular attention of a particular person, on a particular day, who decided to make something beautiful." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
@@ -393,12 +384,7 @@ function DirectoryContent() {
         Every addition and update is made by hand, by a real person. Please allow up to 48 hours.
       </p>
 
-      {/* Row 1: Full Directory */}
-      <div className="mb-3 pb-3 border-b" style={{ borderColor: "#E8D5B7" }}>
-        <NavButton label="Full Directory" active={isFullDirectory} onClick={handleFullDirectory} />
-      </div>
-
-      {/* Row 2: Type filter */}
+      {/* Row 1: Type filter */}
       <div className="flex flex-wrap gap-2 mb-4 mt-3 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
@@ -456,7 +442,7 @@ function DirectoryContent() {
         <QuoteBlock quote="In the hills of North Carolina, families have passed a pottery wheel from grandmother to grandchild for two hundred years. The clay is the same. The river is the same. The love that goes into it is the same. Some things refuse to be lost." className="my-8" />
       )}
       {/* Content */}
-      {isFullDirectory || !selectedRegion ? (
+      {!selectedRegion ? (
         <>
           {REGIONS.map(({ code }) => (
             <RegionBlock

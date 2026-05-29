@@ -9520,6 +9520,134 @@ export const potters: Potter[] = [
     website: "https://deepblueceramics.com",
     bio: "A full-time ceramic artist in Canberra encapsulating nostalgia and cross-cultural memory through both hand-built works and thrown vessels adorned with colourful, intricately layered surface decoration.",
   },
+
+  // Australia — Victoria (Dandenong Ranges & Mornington Peninsula)
+  {
+    name: "Penelope Duke",
+    studio: "Penelope Duke Ceramics",
+    city: "Dandenong Ranges",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.penelopeduke.com",
+    bio: "A New Zealand-born ceramicist based in the Dandenong Ranges on Melbourne's outskirts, creating handmade stoneware and porcelain planters, vases, and kitchenware with food-safe glazes.",
+  },
+  {
+    name: "Joanne Maggs",
+    studio: "Lillypilly Pottery",
+    city: "Kilsyth South",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.lillypillypottery.com",
+    bio: "A Melbourne ceramicist at the foothills of the Dandenong Ranges producing bespoke handmade stoneware for design firms, cafés, and individual clients, incorporating natural clay textures and timber or metal elements.",
+  },
+  {
+    name: "Melissa Tully",
+    studio: "Birdrock Ceramics",
+    city: "Mount Martha",
+    province: "Victoria",
+    country: "AU",
+    website: "https://birdrockceramics.com",
+    bio: "A Mornington Peninsula potter creating small-batch wheel-thrown ceramics with handcrafted coastal and geometric designs — drinkware, planter pots, and serving pieces made from her Mount Martha studio.",
+  },
+  {
+    name: "Rylie Jabornik",
+    studio: "Pour and Plate",
+    city: "Geelong",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.pourandplate.com.au",
+    bio: "A Geelong ceramic artist producing small-batch handmade pottery from a home studio, experimenting with a broad range of techniques, clays, and glazes — and co-founder of the annual Geelong Ceramics Market.",
+  },
+  {
+    name: "Katrina Carling",
+    studio: "Unearthed Ceramics",
+    city: "Preston",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.unearthedceramics.com.au",
+    bio: "A Melbourne ceramicist working from a solar-powered garden studio in Preston, handmaking functional stoneware, ceramic wall hangings with native botanical motifs, and custom commissions since 2014.",
+  },
+
+  // Australia — New South Wales (Sydney inner suburbs & South Coast)
+  {
+    name: "Brooke Clunie",
+    studio: "Red Door Studio",
+    city: "Fernleigh",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.brookeclunie.com",
+    bio: "A Byron Bay hinterland potter and educator creating wheel-thrown stoneware vessels in restful glazes at her Fernleigh studio and gallery, with individually decorated and personalised tableware made to celebrate everyday life.",
+  },
+  {
+    name: "Natalia Torres Negreira",
+    studio: "Ruby and Frank Studio",
+    city: "Byron Bay Hinterland",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.rubyandfrank.com",
+    bio: "A full-time potter on Bundjalung Country in the Byron Bay hinterland creating wheel-thrown functional wares and hand-built sculptures influenced by her Uruguayan heritage and extensive world travels — with an open studio gallery, Casa Clay.",
+  },
+  {
+    name: "Frances Smith",
+    studio: "Kiama Ceramic Art Studio",
+    city: "Kiama",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.ceramic-art-studio.com",
+    bio: "A highly regarded potter and educator on the NSW South Coast producing studio ceramics ranging from functional ware to sculptural vessels, with a background in graphic design and over a decade of teaching pottery classes in Kiama.",
+  },
+  {
+    name: "David Collins",
+    studio: "David Collins Pottery",
+    city: "Berry",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.davidcollinspottery.com.au",
+    bio: "A South Coast NSW ceramicist with 47 years of practice creating individually handcrafted stoneware deeply influenced by traditional Japanese ceramics, fired in a gas kiln under reducing conditions from his studio near Berry.",
+  },
+
+  // Australia — Queensland (individual potters)
+  {
+    name: "Jasmine Benson",
+    studio: "Coastal Studio Ceramics",
+    city: "Noosa",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.coastalstudioceramics.com.au",
+    bio: "A Sunshine Coast ceramicist producing small-batch handmade tableware inspired by the Noosa coastline, with pieces appearing in leading local restaurants including Rock Salt Noosa and Embassy XO.",
+  },
+
+  // Australia — Western Australia (individual potters)
+  {
+    name: "Melanie Sharpham",
+    studio: "Eucalypt Homewares",
+    city: "Perth",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://eucalypthomewares.com.au",
+    bio: "A Perth ceramicist producing hand-built and slip-cast porcelain tableware since 2007, with designs inspired by Eucalyptus seed pods and textures — stocked at Table Culture Subiaco and Fremantle Arts Centre.",
+  },
+
+  // Australia — South Australia (individual potters)
+  {
+    name: "Deanna Wilson",
+    studio: "Morph + Mould",
+    city: "Adelaide",
+    province: "South Australia",
+    country: "AU",
+    website: "https://www.morphandmould.com.au",
+    bio: "A qualified industrial designer in Brown Hill Creek, Adelaide, combining digital modelling with hand-casting in porcelain to create pieces that are organic in form, precise in execution, and warm in the hand.",
+  },
+
+  // Australia — Northern Territory
+  {
+    name: "Tactile Arts Ceramics",
+    city: "Darwin",
+    province: "Northern Territory",
+    country: "AU",
+    website: "https://tactilearts.org.au",
+    bio: "A community arts organisation supporting artists throughout the Top End, running a fully equipped ceramic studio in Darwin with pottery wheels, kilns, slab roller, and clay extruder available for workshops and studio hire.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
@@ -13137,6 +13265,89 @@ export const teachingStudios: TeachingStudio[] = [
     country: "CA",
     website: "https://monctonclaystudio.ca",
     bio: "Greater Moncton's ceramics studio offering multi-week beginner courses, one-day workshops, and studio memberships for potters of all skill levels in a bilingual community setting.",
+  },
+
+  // Australia — Victoria (Melbourne inner suburbs & additional)
+  {
+    name: "Céramiques",
+    city: "Camberwell",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.ceramiques.com.au",
+    bio: "Wheel-based ceramic workshops in Camberwell and Kew run by potter Guy Vadas, dedicated to providing a tranquil space for introductory through advanced throwing, with single sessions and multi-lesson terms.",
+  },
+
+  // Australia — New South Wales (Sydney inner suburbs)
+  {
+    name: "Clay Cartel",
+    city: "Marrickville",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.claycartel.com.au",
+    bio: "A ceramics studio and gallery in the inner west of Sydney run by ceramicists Daniel Mulligan and Hunmi Yi, offering wheel-throwing and handbuilding classes, studio memberships, a firing service, and an upstairs gallery shop.",
+  },
+  {
+    name: "Bakehouse Studio",
+    city: "Marrickville",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.thebakehousestudio.com.au",
+    bio: "A community ceramics studio in a heritage Marrickville bakery run by artist Lisa Hölzl, offering handbuilding and sculptural workshops, open studio sessions, a kiln firing service, and a separate woodworking shed for mixed-media projects.",
+  },
+  {
+    name: "Clay Sydney",
+    city: "Marrickville",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://claysydney.com",
+    bio: "An inner-west Sydney ceramics studio offering wheel-throwing and handbuilding sessions over wine and cheese, with three locations across the city serving beginners and experienced potters alike.",
+  },
+
+  // Australia — New South Wales (regional)
+  {
+    name: "Hart Ceramics Studio",
+    city: "Leura",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.hartceramics.com.au",
+    bio: "Lyn Hart's studio in a Blue Mountains garden in Leura offering small-group pottery classes through school-term programs alongside her own professional ceramic practice of over 40 years.",
+  },
+  {
+    name: "Kiama Ceramic Art Studio",
+    city: "Kiama",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.ceramic-art-studio.com",
+    bio: "A teaching studio in the seaside village of Kiama run by highly regarded potter Frances Smith, offering small classes for beginners through experienced potters in a working studio environment on the NSW South Coast.",
+  },
+  // Australia — Queensland (additional)
+  {
+    name: "Pottery For The Planet",
+    city: "Noosaville",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.potteryfortheplanet.com",
+    bio: "A Noosa-based ceramics studio and showroom producing handmade pieces with a mission to reduce single-use waste, working with local ceramic artists to create uniquely glazed functional ceramics and offering studio experiences.",
+  },
+
+  // Australia — Victoria (Mornington Peninsula & regional)
+  {
+    name: "Peachy Keen Ceramics",
+    city: "Mornington Peninsula",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.peachykeenceramics.com.au",
+    bio: "A friendly Mornington Peninsula ceramics studio offering wheel-throwing and handbuilding pottery classes and workshops for all skill levels in a relaxed, welcoming environment.",
+  },
+
+  // Australia — Western Australia (additional)
+  {
+    name: "Eucalypt Homewares Workshop",
+    city: "Perth",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://eucalypthomewares.com.au",
+    bio: "Perth ceramicist Melanie Sharpham's studio in the western suburbs offering clay workshops where participants learn to make functional handmade ceramics for the home in a creative and tranquil setting.",
   },
 
 ];
