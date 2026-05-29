@@ -7938,6 +7938,246 @@ export const potters: Potter[] = [
     website: "https://www.ateliergilbert.be",
     bio: "Valérie Van Heyghen runs Atelier Gilbert, a pottery studio where ceramics are traditionally handmade and sold online and in studio, with authenticity at the core of a practice that runs through several generations of her family.",
   },
+
+  // Ireland — Dundalk, Co. Louth
+  {
+    name: "Sarah McKenna Ceramics",
+    city: "Dundalk",
+    province: "Ireland",
+    country: "EU",
+    website: "https://www.sarahmckenna.ie",
+    bio: "Sarah McKenna has made Irish pottery and homewares in her workshop in Bridge Street Studios, a 250-year-old stone grain store in Dundalk, Co. Louth, for over two decades, pressing poetry, quotes and imagery into soft clay slabs to create pieces that carry quiet meaning.",
+  },
+
+  // Ireland — Dublin Mountains
+  {
+    name: "Araucaria Ceramics",
+    city: "Dublin",
+    province: "Ireland",
+    country: "EU",
+    website: "https://www.araucariaceramics.com",
+    bio: "Daniel Woodsmith is a self-taught potter and former chef who founded Araucaria Ceramics in the Dublin Mountains in 2017, making wheel-thrown tableware that frequently evolves through direct collaboration with Irish chefs.",
+  },
+
+  // Ireland — Kerry
+  {
+    name: "Louis Mulcahy Pottery",
+    city: "Ballyferriter",
+    province: "Ireland",
+    country: "EU",
+    website: "https://louismulcahy.com",
+    bio: "Louis Mulcahy has been making handcrafted pottery on the Dingle Peninsula in West Kerry since the 1970s, building his own glazes from natural minerals and earning recognition as one of Ireland's most celebrated studio potters.",
+  },
+
+  // Ireland — Galway
+  {
+    name: "Rachel Webb Ceramics",
+    city: "Galway",
+    province: "Ireland",
+    country: "EU",
+    website: "https://rachelwebbceramics.ie",
+    bio: "Rachel Webb is a Fine Art ceramics graduate who hand-builds contemporary porcelain pieces in her studio in Galway City, exploring the fragility and permanence of porcelain through sculpture, vessels and delicate sculptural objects.",
+  },
+
+  // Ireland — Co. Kildare
+  {
+    name: "Lesley Kelly Ceramics",
+    city: "Kildare",
+    province: "Ireland",
+    country: "EU",
+    website: "https://www.lesleykellyceramics.com",
+    bio: "Lesley Kelly creates wheel-thrown and hand-built sculptural and functional vessels from her studio in Co. Kildare, using reactive glazes and earthenware clay, with work held in the permanent collection of the Hanyang Museum in Seoul.",
+  },
+
+  // Ireland — Dublin (Castleknock)
+  {
+    name: "Michele Hannan Ceramics",
+    city: "Dublin",
+    province: "Ireland",
+    country: "EU",
+    website: "https://www.michelehannanceramics.com",
+    bio: "Michele Hannan has been working with clay for over thirty years, setting up her studio in Castleknock in 1994 to produce slab-built, press-moulded and slip-cast porcelain and stoneware homewares and one-of-a-kind ceramic pieces.",
+  },
+
+  // Scotland — Edinburgh
+  {
+    name: "Frances Priest",
+    city: "Edinburgh",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.francespriest.co.uk",
+    bio: "Frances Priest is an Edinburgh-based artist and ceramicist whose intricately patterned, colour-saturated work draws on ornamental traditions from multiple cultures and is held in the permanent collections of the V&A, the Fitzwilliam Museum and the National Museums of Scotland.",
+  },
+
+  // Scotland — Glasgow
+  {
+    name: "Garnet Pots",
+    city: "Glasgow",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.garnetpots.com",
+    bio: "Garnet McCulloch has been throwing functional, wheel-made pottery from his Fireworks Studio in Glasgow since 2007, developing his own glaze palette over two decades of practice and offering wheel-based classes from his studio near the Glasgow School of Art.",
+  },
+
+  // Scotland — Highlands (Ardersier)
+  {
+    name: "Julia Smith Ceramics",
+    city: "Ardersier",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.juliasmithceramics.com",
+    bio: "Julia Smith works from her garden studio in Ardersier overlooking the Moray Firth, making illustrated ceramics decorated with landscapes, animals and Scottish coastal scenes fired as decals over misty glaze colours evocative of northern light.",
+  },
+
+  // Scotland — West Coast (Lochaber)
+  {
+    name: "Helen Michie Ceramics",
+    city: "Lochailort",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.helenmichieceramics.co.uk",
+    bio: "Helen Michie creates raku, stoneware and porcelain ceramic works from her studio on the Scottish west coast, impressing local leaves, plants and seaweed into wall pieces before raku firing them to produce richly smoked and glazed surfaces.",
+  },
+
+  // Scotland — Crail, Fife
+  {
+    name: "Crail Pottery",
+    city: "Crail",
+    province: "Scotland",
+    country: "EU",
+    website: "https://crailpottery.com",
+    bio: "Crail Pottery is a small family-run coastal pottery in the East Neuk of Fife founded by Stephen and Carol Grieve in 1965, now operating as a co-operative of the Grieve family with three separate studios sharing a showroom and yard on Nethergate.",
+  },
+
+  // Wales — North Wales (Dyserth)
+  {
+    name: "Louise Schrempft Ceramics",
+    city: "Dyserth",
+    province: "Wales",
+    country: "EU",
+    website: "https://www.louiseschrempft.com",
+    bio: "Louise Schrempft is a ceramic artist with an MA in ceramics who works from her studio and gallery in Dyserth, North Wales, creating sculptural figures, animals, quirky tea sets and functional ware exhibited across Wales and beyond.",
+  },
+
+  // Wales — Pembrokeshire
+  {
+    name: "Wolfscastle Pottery",
+    city: "Haverfordwest",
+    province: "Wales",
+    country: "EU",
+    website: "https://www.wolfscastlepottery.co.uk",
+    bio: "Madeleine Cunningham and Paul Webb make lively, strong functional stoneware and porcelain at their pottery in the St. David's Peninsula of Pembrokeshire, decorated with bold Chinese brush strokes and fired in reduction to produce deep copper reds, mauves and blues.",
+  },
+
+  // Wales — South Wales (Blackwood)
+  {
+    name: "Matthew Jones Ceramics",
+    city: "Blackwood",
+    province: "Wales",
+    country: "EU",
+    website: "https://www.matthewjonesceramics.com",
+    bio: "Matthew Jones makes handcrafted thrown tableware and ceramic décor from his studio in Blackwood, South Wales, drawing on British studio pottery heritage and Oriental ceramic traditions to produce collectible functional work in distinctive glazes.",
+  },
+
+  // Austria — near Graz (Söding–St. Johann)
+  {
+    name: "Keramikdesign Walpurga Kleinsasser",
+    city: "Söding",
+    province: "Austria",
+    country: "EU",
+    website: "https://www.keramikdesign.at",
+    bio: "Walpurga Kleinsasser has run her own ceramic workshop near Graz since 1997, hand-throwing each piece in Australian porcelain and Westerwald stoneware and finishing with self-developed ash glazes made from burned wood ash, fired at 1280–1300°C.",
+  },
+
+  // Switzerland — Lausanne
+  {
+    name: "Sylvie Godel Céramiste",
+    city: "Lausanne",
+    province: "Switzerland",
+    country: "EU",
+    website: "https://www.ceramicsnow.org/sylviegodel",
+    bio: "Sylvie Godel graduated from HEAD Geneva in 2004 and has worked independently at her Lausanne atelier since 2005, assembling delicate porcelain pieces sourced from around the world into quiet, meditative installations and singular functional objects.",
+  },
+
+  // Switzerland — Zurich (Federal Swiss Design Award winner)
+  {
+    name: "Stéphanie Baechler",
+    city: "Zurich",
+    province: "Switzerland",
+    country: "EU",
+    website: "https://www.stephaniebaechler.com",
+    bio: "Stéphanie Baechler is a Swiss artist working at the intersection of textile and ceramics whose sculptural work has won multiple Federal Swiss Design Awards, with pieces in the collections of the Museum für Gestaltung Zurich and Kunstmuseum St.Gallen.",
+  },
+
+  // Czech Republic — Slavonice, South Bohemia
+  {
+    name: "Keramika Slavonice",
+    city: "Slavonice",
+    province: "Czech Republic",
+    country: "EU",
+    website: "https://keramika-slavonice.com",
+    bio: "Tereza Kuhnová settled her ceramic studio and gallery in the renaissance town of Slavonice in 2001 after years in Switzerland, working in stoneware and porcelain and offering workshops in her South Bohemian atelier.",
+  },
+
+  // Czech Republic — Ostrava
+  {
+    name: "FÓBE Ceramics",
+    city: "Ostrava",
+    province: "Czech Republic",
+    country: "EU",
+    website: "https://fobe.eu",
+    bio: "Jakub Sojka creates high-quality handmade ceramics under the FÓBE label in Ostrava, producing planters, tableware and vessels that combine traditional pottery craft with an approach informed by his background in CAD design and material experimentation.",
+  },
+
+  // Poland — Gdańsk
+  {
+    name: "Kovalska Ceramics",
+    city: "Gdańsk",
+    province: "Poland",
+    country: "EU",
+    website: "https://www.kovalskaceramics.com",
+    bio: "Marta Kovalska hand-builds contemporary ceramic collections from her studio in the old town of Gdańsk, crafting sculptural vases, tableware and vessel forms through a patient process of hand building, drying and multi-stage firing at 1230°C.",
+  },
+
+  // Poland — Poznań
+  {
+    name: "Nami Studio",
+    city: "Poznań",
+    province: "Poland",
+    country: "EU",
+    website: "https://www.namistudio.pl",
+    bio: "Mateusz Łotocki and Elka Kosek run Nami Studio in Poznań, a ceramics practice rooted in Japanese pottery tradition that specialises in wheel-thrown stoneware and suminagashi-decorated pieces sold through their studio space alongside tea and books on Japanese craft.",
+  },
+
+  // Turkey — Istanbul
+  {
+    name: "Iznik Works",
+    city: "Istanbul",
+    province: "Turkey",
+    country: "EU",
+    website: "https://www.iznikworks.com",
+    bio: "Iznik Works in Istanbul's Grand Bazaar produces hand-painted ceramic tiles and pottery adhering to centuries-old Iznik techniques — vibrant hand-drawn florals on quartz-based surfaces — ensuring no two pieces are identical.",
+  },
+
+  // Turkey — Avanos, Cappadocia
+  {
+    name: "Chez Galip",
+    city: "Avanos",
+    province: "Turkey",
+    country: "EU",
+    website: "https://chezgalip.com",
+    bio: "Galip Körükçü is a sixth-generation master potter in Avanos whose cavernous cave studio is the most celebrated in Cappadocia, creating hand-formed and hand-painted ceramics in traditional and contemporary designs alongside his Dutch wife Lilian Körükçü.",
+  },
+
+  // Turkey — Avanos, Cappadocia
+  {
+    name: "Avanos Pottery Workshop",
+    city: "Avanos",
+    province: "Turkey",
+    country: "EU",
+    website: "https://www.avanospotteryworkshop.com",
+    bio: "A boutique family pottery workshop in the heart of Avanos, Cappadocia, keeping traditional Anatolian pottery techniques alive for generations and inviting visitors to try the wheel under the guidance of local masters using red clay from the Kızılırmak riverbank.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
