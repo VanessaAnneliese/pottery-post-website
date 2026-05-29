@@ -9338,6 +9338,215 @@ export const potters: Potter[] = [
     website: "https://manos.se",
     bio: "Located in the Sofo neighbourhood of Stockholm, Manos Design is a combined ceramics workshop and shop run as a creative meeting place, producing one-of-a-kind handmade gifts and ceramics.",
   },
+
+  // Australia — Victoria (Melbourne inner north)
+  {
+    name: "Kim Aitken",
+    studio: "Aitken Ceramics",
+    city: "Fitzroy North",
+    province: "Victoria",
+    country: "AU",
+    website: "https://aitkenceramics.com",
+    bio: "A North Fitzroy studio potter working from a cobblestone-laneway studio, hand-throwing refined porcelain functional wares designed to bring colour and beauty into everyday use.",
+  },
+  {
+    name: "Remnants Pottery",
+    city: "Fitzroy North",
+    province: "Victoria",
+    country: "AU",
+    website: "https://remnantspottery.com",
+    bio: "A small Fitzroy North studio building unique textured pieces using ancient pinching and coiling techniques, reclaimed iron-rich Australian stoneware, and Blackwattle ash collected from Taungurung country.",
+  },
+  {
+    name: "Kaz Morton",
+    studio: "Kaz Morton Ceramics",
+    city: "Cowes",
+    province: "Victoria",
+    country: "AU",
+    website: "https://kazmorton.com.au",
+    bio: "A Master of Fine Art graduate working from a Phillip Island studio, hand-making and painting functional ceramic pieces that draw on her dual training in painting and ceramics.",
+  },
+  {
+    name: "Natalie Cootes",
+    studio: "Drift Ceramics",
+    city: "Mornington Peninsula",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.driftceramics.com.au",
+    bio: "A ceramic artist based between the Mornington Peninsula and South Gippsland, whose love of Japanese ceramics informs her hand-building practice using coiling, carving, and slab work in stoneware.",
+  },
+  {
+    name: "Andrew Gibson",
+    studio: "Gibson and Co Makers",
+    city: "Mornington Peninsula",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.gibsonandcomakers.com.au",
+    bio: "A Peninsula studio potter hand-throwing every piece using Australian mid-fire clay bodies, creating beautifully textured functional ceramics signed individually in his Mornington Peninsula home studio.",
+  },
+  {
+    name: "Sandi Faulkner",
+    city: "Mornington Peninsula",
+    province: "Victoria",
+    country: "AU",
+    website: "https://sandi.sandifaulkner.com",
+    bio: "A studio potter working from the Mornington Peninsula whose wheel-thrown and hand-built work reflects a deep connection to the coastal and rural landscapes of Victoria's south.",
+  },
+  {
+    name: "Sarah Schembri",
+    studio: "Sarah Schembri Ceramics",
+    city: "Fitzroy",
+    province: "Victoria",
+    country: "AU",
+    website: "https://sarahschembri.com",
+    bio: "A full-time potter and teacher in Fitzroy with over 20 years' experience, creating bespoke functional tableware for some of Australia's best restaurants alongside term classes and private workshops.",
+  },
+
+  // Australia — New South Wales (Blue Mountains & Hunter Valley)
+  {
+    name: "Lyn Hart",
+    studio: "Hart Ceramics",
+    city: "Leura",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.hartceramics.com.au",
+    bio: "A Blue Mountains studio potter with a showroom open to visitors in Leura, creating handmade functional and decorative stoneware amid the gardens and bushland of the lower Mountains.",
+  },
+  {
+    name: "Cristie Little",
+    studio: "Hunter Valley Ceramics Studio",
+    city: "Branxton",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.huntervalleyceramics.com.au",
+    bio: "A boutique studio pottery practice in the Hunter Valley producing small-batch handcrafted ceramics alongside wheel-throwing and hand-building workshops and private event bookings.",
+  },
+
+  // Australia — New South Wales (South Coast & Sydney)
+  {
+    name: "Zeynep Testoni",
+    studio: "Soul Clay Studios",
+    city: "Gerringong",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.soulclaystudios.com.au",
+    bio: "A purpose-built pottery studio in the seaside town of Gerringong on the NSW South Coast, home to over 15 resident ceramic artists creating slow-made handmade ceramics in a relaxed, community-focused environment.",
+  },
+  {
+    name: "Glaze Galleria",
+    city: "Drummoyne",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://glazegalleria.com",
+    bio: "A pottery studio and handmade ceramics giftshop in Drummoyne, Sydney's inner west, founded in 2021, offering wheel-throwing and hand-building classes alongside a curated collection of local Australian ceramics.",
+  },
+
+  // Australia — Queensland (individual artists)
+  {
+    name: "Megan Puls",
+    city: "Gold Coast",
+    province: "Queensland",
+    country: "AU",
+    website: "https://meganpuls.com",
+    bio: "A Gold Coast ceramic artist with over 50 years dedicated to mastery of clay, whose studio practice explores the diverse coastal habitats of south-east Queensland and is widely exhibited and highly awarded in Australia.",
+  },
+  {
+    name: "Joe Ottaway",
+    studio: "Oxide Clay Art",
+    city: "Ninderry",
+    province: "Queensland",
+    country: "AU",
+    website: "https://oxideclayart.com.au",
+    bio: "A wheel-throwing ceramics teacher who established his own ceramic art school in Brisbane in 2013 before relocating his studio to a beautiful bushland setting near Yandina on the Sunshine Coast.",
+  },
+
+  // Australia — Western Australia (individual artists)
+  {
+    name: "Ian Beniston",
+    studio: "Sensei Pots Studio Gallery",
+    city: "Quedjinup",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://ianbeniston.com.au",
+    bio: "A master potter working from his Yallingup-area studio gallery for over 40 years, renowned for lustrous copper red glazes and wheel-thrown decorative and functional work with a distinct East Asian influence.",
+  },
+  {
+    name: "Jolene Hewison",
+    studio: "River Ceramics",
+    city: "Margaret River",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://www.riverceramics.net",
+    bio: "A Margaret River ceramicist creating functional and sculptural handmade pieces inspired by the natural elements of the region's coast and forest environment.",
+  },
+
+  // Australia — South Australia (individual artists)
+  {
+    name: "Mark Heidenreich",
+    studio: "Terra-Villa Pottery",
+    city: "Adelaide",
+    province: "South Australia",
+    country: "AU",
+    website: "https://www.terra-villa.com.au",
+    bio: "An Adelaide CBD sculptor and studio potter acclaimed for large-scale thrown terracotta forms, garden commissions, and handcrafted qvevri/amphora for the natural winemaking industry.",
+  },
+  {
+    name: "Ekat",
+    studio: "ABE Ceramics",
+    city: "North Adelaide",
+    province: "South Australia",
+    country: "AU",
+    website: "https://www.abeceramics.com.au",
+    bio: "A North Adelaide ceramicist offering hand-thrown and hand-built ceramic pieces alongside pottery workshops from a studio at Melbourne Street, celebrated at the inaugural Adelaide Ceramics Market in 2025.",
+  },
+  {
+    name: "Samantha Faehrmann",
+    studio: "Butter and Gravy",
+    city: "Adelaide",
+    province: "South Australia",
+    country: "AU",
+    website: "https://www.butterandgravy.com",
+    bio: "An Adelaide ceramicist and creative instructor who makes and sells handmade ceramics and teaches classes and workshops in clay and mixed media.",
+  },
+
+  // Australia — Tasmania (individual artists)
+  {
+    name: "Kate Bowman",
+    studio: "Kate Bowman Ceramics",
+    city: "Hobart",
+    province: "Tasmania",
+    country: "AU",
+    website: "https://www.katebowmanceramics.com",
+    bio: "A Hobart ceramic artist, designer, and maker who uses local rock waste and Hobart hospitality byproducts in her handcrafted lighting and ceramics, reducing reliance on commercial materials.",
+  },
+  {
+    name: "Christie Lange",
+    city: "Bay of Fires",
+    province: "Tasmania",
+    country: "AU",
+    website: "https://www.christielange.com.au",
+    bio: "A porcelain sculptor living and working by the bush and sea in Binalong Bay, creating hand-built forms that explore adaptation and regenerative cycles in Tasmania's terrestrial and marine ecologies.",
+  },
+
+  // Australia — ACT (individual artists)
+  {
+    name: "Lea Durie",
+    studio: "Mud Dept.",
+    city: "Canberra",
+    province: "ACT",
+    country: "AU",
+    website: "https://muddept.com",
+    bio: "A Canberra potter and artist working from Strathnairn Arts Centre on the edge of the ACT, hand-crafting functional tableware using earthy clays and a distinctive reduction fire technique.",
+  },
+  {
+    name: "Maricelle",
+    studio: "Deep Blue Ceramics",
+    city: "Canberra",
+    province: "ACT",
+    country: "AU",
+    website: "https://deepblueceramics.com",
+    bio: "A full-time ceramic artist in Canberra encapsulating nostalgia and cross-cultural memory through both hand-built works and thrown vessels adorned with colourful, intricately layered surface decoration.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
@@ -9432,6 +9641,67 @@ export const suppliers: Supplier[] = [
     country: "CA",
     website: "https://amaranthstoneware.com",
     bio: "Supplies, raw materials, and equipment for studio potters in Eastern Ontario.",
+  },
+  // British Columbia (additional)
+  {
+    name: "Pottery Provisions",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://potteryprovisions.ca",
+    bio: "Vancouver and Victoria pottery supply store carrying premium clays, glazes, tools, and specialty ceramics materials for beginners and experienced artists alike.",
+  },
+  // Ontario (additional)
+  {
+    name: "Great White North Pottery Supplies",
+    city: "Sudbury",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.gwnpottery.ca",
+    bio: "Northern Ontario pottery supply house selling a wide variety of clay, glazes, tools, and equipment for potters from beginners through production level.",
+  },
+  {
+    name: "Capital Pottery Supplies",
+    city: "Ottawa",
+    province: "Ontario",
+    country: "CA",
+    website: "https://capitalpotterysupplies.com",
+    bio: "Ottawa's neighbourhood pottery supply shop carrying clays from Tucker's and PSH, glazes from Spectrum and Amaco, and a full range of tools and supplies for potters at every level.",
+  },
+  {
+    name: "Of Earth Pottery Supply",
+    city: "Calgary",
+    province: "Alberta",
+    country: "CA",
+    website: "https://ofearthpotterysupply.ca",
+    bio: "Calgary specialty ceramics shop focused on unique raw materials, well-made tools, and hard-to-find supplies for playful and curious potters.",
+  },
+  // Alberta (additional)
+  {
+    name: "Ceramics Canada",
+    city: "Rockyview",
+    province: "Alberta",
+    country: "CA",
+    website: "https://ceramicscanada.net",
+    bio: "Southern Alberta ceramic and pottery supply warehouse open since 1973, stocking a wide range of clay bodies, glazes, kilns, and equipment across 4,000 square feet of retail and warehouse space.",
+  },
+  // Quebec
+  {
+    name: "SIAL Art Supplies",
+    city: "Laval",
+    province: "Quebec",
+    country: "CA",
+    website: "https://sialart.com/en",
+    bio: "Founded in 1965 to serve Quebec ceramists, SIAL is now one of Canada's most comprehensive ceramics suppliers — carrying over 10,000 products including clays, glazes, kilns, wheels, and sculpting materials from a 25,000 sq ft warehouse.",
+  },
+  // Nova Scotia
+  {
+    name: "Best Kind Mud Shop",
+    city: "Dartmouth",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://bestkindmudshop.com",
+    bio: "Atlantic Canada's locally owned pottery supply store and teaching studio in Dartmouth, NS, stocking Plainsman and Tucker's clays, glazes, kilns, and wheels alongside beginner and intermediate pottery classes.",
   },
   // Arizona
   {
@@ -10162,6 +10432,166 @@ export const teachingStudios: TeachingStudio[] = [
     country: "CA",
     website: "https://saskatoonclay.com",
     bio: "A community ceramics studio in Saskatoon offering wheel throwing and handbuilding classes, multi-week courses, and open studio time for all skill levels.",
+  },
+  // British Columbia — Victoria
+  {
+    name: "Hands On Clay Collective",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.handsoncollective.ca",
+    bio: "A pottery studio on Cormorant Street in downtown Victoria teaching wheel throwing and hand-building workshops for all skill levels, plus private events and open studio sessions.",
+  },
+  {
+    name: "Touci Ceramic Studio",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.touciceramicstudio.com",
+    bio: "An intimate Victoria pottery studio offering small-group weekly wheel throwing classes and workshops — with some of the smallest class sizes in the city for a personal learning experience.",
+  },
+  {
+    name: "Fired Up Ceramics",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.firedupceramics.ca",
+    bio: "Victoria pottery studio offering wheel throwing and handbuilding classes, workshops, and studio memberships for adults of all skill levels.",
+  },
+  // British Columbia — Kelowna
+  {
+    name: "Clayline Pottery Studio",
+    city: "Kelowna",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://claylinepottery.ca",
+    bio: "A friendly wheel and handbuilding studio with a gallery-shop in downtown Kelowna, offering multi-week courses, memberships, private lessons, and group events.",
+  },
+  {
+    name: "Potters Addict Ceramic Art Centre",
+    city: "Kelowna",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.pottersaddict.com",
+    bio: "A ceramics studio at Kelowna's Rotary Centre for the Arts offering classes, workshops, and open studio for anyone with an interest in the possibilities of clay.",
+  },
+  // Ontario — Toronto (additional)
+  {
+    name: "Mini Pottery Studio",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://minipotterystudio.com",
+    bio: "Toronto's first studio focused on mini ceramics — offering mini wheel pottery classes, matcha bowl workshops, and studio memberships in an intimate setting.",
+  },
+  // Ontario — Waterloo Region
+  {
+    name: "Sculption School of Pottery",
+    city: "Kitchener",
+    province: "Ontario",
+    country: "CA",
+    website: "https://sculption.ca",
+    bio: "A Kitchener pottery school with over 25 years of experience providing thorough instruction in wheel throwing and handbuilding in an encouraging environment for all skill levels.",
+  },
+  {
+    name: "Waterloo Potters' Workshop",
+    city: "Waterloo",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.waterloopotters.ca",
+    bio: "A non-profit pottery cooperative in the historic Jacob Eby Farmhouse in Waterloo Park, offering public wheel throwing and handbuilding classes for adults and youth.",
+  },
+  {
+    name: "Wu Ceramics",
+    city: "Kitchener",
+    province: "Ontario",
+    country: "CA",
+    website: "https://wuceramics.com",
+    bio: "A Kitchener ceramics studio near Victoria Park offering beginner wheel-throwing and handbuilding workshops, with private classes and pottery supplies also available.",
+  },
+  // Ontario — Hamilton
+  {
+    name: "Creative Insight Pottery",
+    city: "Waterdown",
+    province: "Ontario",
+    country: "CA",
+    website: "https://creativeinsightpottery.com",
+    bio: "A bright and welcoming pottery studio in Waterdown serving the Hamilton region, offering multi-week classes, drop-in workshops, and art camps for all ages in wheel throwing and handbuilding.",
+  },
+  // Ontario — London
+  {
+    name: "Clayworx",
+    city: "London",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.clayworx.ca",
+    bio: "London Ontario's ceramic arts learning centre offering wheel throwing, handbuilding, and sculpture classes in multi-week sessions and intensive formats for all ages.",
+  },
+  {
+    name: "Flux Pottery",
+    city: "London",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.fluxpottery.ca",
+    bio: "A community pottery studio in London's Wortley Village offering wheel-throwing, handbuilding, glazing, and decorating workshops for adults of all skill levels.",
+  },
+  // Quebec — Montreal
+  {
+    name: "Atelier Forma",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://atelierforma.ca",
+    bio: "A Montreal pottery studio offering beginner wheel-throwing classes, creative workshops, open studio memberships, and private group events with expert instructors.",
+  },
+  {
+    name: "Les Faiseurs",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://lesfaiseurs.ca/en",
+    bio: "A craft workshop and ceramic café in Montreal's Rosemont neighbourhood that has introduced over 20,000 people to pottery since 2018, offering beginner through advanced classes and pottery sessions.",
+  },
+  {
+    name: "Céramique Centrale",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://www.ceramiquecentrale.com",
+    bio: "A Montreal ceramics studio offering wheel throwing and handbuilding classes, open studio memberships, and kiln firing services for all skill levels.",
+  },
+  {
+    name: "Atelier Spirale",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://ceramicstudio.ca",
+    bio: "A Montreal ceramic studio offering regular pottery courses and workshops, with classes led by Mahmoud Baghaeian for students at all levels.",
+  },
+  {
+    name: "Pomegranate Pottery Studio",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://pomegranatestudio.ca",
+    bio: "An intimate pottery studio in Montreal West offering beginner courses and open studio time for more experienced potters in a relaxed, creative environment.",
+  },
+  // Nova Scotia
+  {
+    name: "KG Ceramics",
+    city: "Halifax",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://www.kgceramics.ca",
+    bio: "A cozy Halifax pottery studio founded in 2017, offering intimate 8-week beginner courses in wheel throwing, trimming, and glazing with a maximum of four students per class.",
+  },
+  {
+    name: "Wabi Scotia Pottery",
+    city: "Middle Sackville",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://www.wabiscotiapottery.ca",
+    bio: "A Nova Scotia community pottery studio offering small-group 8-week wheel-throwing classes, kiln rentals, and handmade ceramics — with sessions running every two months.",
   },
   // New York
   {
@@ -11867,6 +12297,469 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://ballymorrispottery.ie",
     bio: "A creative ceramics studio in County Clare, within easy reach of Limerick, specialising in handmade pottery and offering classes and workshops for adults and beginners.",
   },
+  // New York — Brooklyn
+  {
+    name: "Gasworks NYC",
+    city: "Brooklyn",
+    province: "New York",
+    country: "US",
+    website: "https://gasworksnyc.com",
+    bio: "A community clay studio in South Slope, Brooklyn offering pottery classes, memberships with 24/7 key-code access, kids' summer camps, workshops, and kiln rentals since 2016 — dedicated to making ceramics accessible to all, with subsidized and free classes for people of marginalized identities.",
+  },
+  // New York — Brooklyn & Manhattan
+  {
+    name: "BKLYN CLAY",
+    city: "Brooklyn",
+    province: "New York",
+    country: "US",
+    website: "https://bklynclay.com",
+    bio: "A state-of-the-art ceramics studio with two locations — Prospect Heights in Brooklyn and Tribeca in Manhattan — offering 24/7 membership access, semester-long classes for all ages, TryDay Night one-time sessions, and private lessons across 70+ wheels.",
+  },
+  // New York — Brooklyn
+  {
+    name: "Maison Clay",
+    city: "Brooklyn",
+    province: "New York",
+    country: "US",
+    website: "https://www.maisonclay.com",
+    bio: "A Williamsburg pottery studio offering intimate beginner wheel classes (6 spots per session), semester workshops, and 24/7 studio memberships in a welcoming neighbourhood setting.",
+  },
+  // New York — Brooklyn
+  {
+    name: "Clayhouse Brooklyn",
+    city: "Brooklyn",
+    province: "New York",
+    country: "US",
+    website: "https://www.clayhousebrooklyn.com",
+    bio: "A community pottery studio offering adults and kids classes, one-time try wheel and hand-building sessions, 24/7 studio memberships, and subsidized membership spots — plus a work-at-home membership option for potters who want to fire their home-built pieces.",
+  },
+  // Illinois — Chicago
+  {
+    name: "Chicago Ceramic Center",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.chicagoceramiccenter.com",
+    bio: "A woman-owned wheel-throwing and hand-building studio in Avondale's historic Rockwell on the River building, with 23 wheels, electric kilns, house-made glazes, beginner and intermediate classes, and daily member studio access from 7 am to 11 pm.",
+  },
+  // Illinois — Chicago
+  {
+    name: "GnarWare Workshop",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.gnarwareworkshop.com",
+    bio: "A ceramics studio in Chicago's Pilsen neighbourhood dedicated to providing a creative space to make with clay and commune with fellow artists and hobbyists, offering classes and community studio access.",
+  },
+  // California — Los Angeles
+  {
+    name: "Cobalt & Clay",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://www.cobaltandclay.com",
+    bio: "A Latina-owned community ceramic studio in Los Angeles' Atwater Village neighbourhood, founded in 2017, offering wheel-throwing and hand-building classes, monthly memberships, workshops, private events, and a pottery shop featuring work by staff and members.",
+  },
+  // California — Los Angeles
+  {
+    name: "Throw Clay LA",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://www.throwclayla.com",
+    bio: "A vibrant community pottery studio in downtown Los Angeles' South Park neighbourhood, founded in March 2020, offering one-time classes, 6-week courses, studio memberships, and team-building private events for potters of all skill levels.",
+  },
+  // California — Los Angeles
+  {
+    name: "CCLCF Ceramics Studio",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://cclcf.org/programs/ceramics-studio/",
+    bio: "A nonprofit community ceramics studio founded over 60 years ago at the Craft and Folk Art Museum's community center, fostering a creative, fun, and collaborative environment where students learn and experiment with clay in the heart of Los Angeles.",
+  },
+  // California — San Francisco
+  {
+    name: "Clay By The Bay",
+    city: "San Francisco",
+    province: "California",
+    country: "US",
+    website: "https://www.claybythebaysf.com",
+    bio: "A San Francisco pottery studio offering classes, ceramics studio memberships, clay workshops, and team-building events — founded in 2014 with a welcoming space for beginners and experienced potters at the foot of Russian Hill.",
+  },
+  // California — San Francisco
+  {
+    name: "Hickory Clay",
+    city: "San Francisco",
+    province: "California",
+    country: "US",
+    website: "https://hickoryclay.com",
+    bio: "A Mission District pottery studio at 16th and Harrison offering 8-week intro courses, Friday-night date nights, and one-time beginner-friendly workshops for ages 13 and up — building a neighbourhood ceramics community in San Francisco.",
+  },
+  // California — San Francisco
+  {
+    name: "SF Clayers Club",
+    city: "San Francisco",
+    province: "California",
+    country: "US",
+    website: "https://www.sfclayersclub.com",
+    bio: "Bayview's only public-access pottery studio, located at Cafe Alma in San Francisco, offering classes, memberships, workshops, and special events in one of the city's most underserved neighbourhoods.",
+  },
+  // Massachusetts — Boston
+  {
+    name: "Feet of Clay Pottery",
+    city: "Brookline",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://feetofclaypottery.com",
+    bio: "A cooperatively run ceramics studio in Brookline that has provided a welcoming, independent studio space for clay artists of all skill levels since 1974 — offering classes, workshops, and shared studio memberships.",
+  },
+  // Pennsylvania — Philadelphia
+  {
+    name: "Black Hound Clay Studio West",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.blackhoundclaywest.com",
+    bio: "An inclusive community ceramics space in Philadelphia's Cedar Park neighbourhood offering affordable studio workspace, classes, and events — committed to making clay accessible to artists of all backgrounds.",
+  },
+  // Colorado — Denver
+  {
+    name: "Community Clay Denver",
+    city: "Denver",
+    province: "Colorado",
+    country: "US",
+    website: "https://www.communityclaydenver.com",
+    bio: "A pottery studio with two Denver locations — RiNo and Congress Park — offering 6-week wheel-throwing and hand-building classes for all skill levels, studio memberships with daily access, date nights, private events, and kiln firing services for home potters.",
+  },
+  // Washington — Seattle
+  {
+    name: "Sean's Clay Corner",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://www.seansclaycorner.com",
+    bio: "A community-focused ceramics studio in Seattle's Fremont neighbourhood offering student-directed, individualized instruction with a maximum of five students per session — running roughly 16 classes per week with hands-on guidance for potters at every level.",
+  },
+  // Oregon — Portland
+  {
+    name: "The Mud Room PDX",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://www.themudroompdx.com",
+    bio: "A fully equipped pottery studio with two Southeast and North Portland locations, offering rotating 6-week wheel-throwing courses, one-time Try It sessions, focused workshops, and a vibrant community of ceramics students and artists.",
+  },
+  // Oregon — Portland
+  {
+    name: "St. Johns Clay Collective",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://www.stjohnsclay.com",
+    bio: "A creative clay space under Portland's iconic St. Johns Bridge offering wheel-throwing and hand-building classes, open studio punch-card access, full memberships, and community events — affiliated with Portland Community College and home to the St. Johns Ceramic Showcase gallery.",
+  },
+  // Oregon — Portland
+  {
+    name: "Morning Ceramics",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://www.morningceramics.com",
+    bio: "A welcoming community space for ceramic artists of all levels in Portland, offering regular classes, workshops, monthly memberships, and private events in a supportive studio environment.",
+  },
+  // Georgia — Atlanta
+  {
+    name: "Atlanta Clay Works",
+    city: "Atlanta",
+    province: "Georgia",
+    country: "US",
+    website: "https://www.atlclayworks.org",
+    bio: "A nonprofit 501(c)(3) community pottery studio and gallery in Atlanta's Kirkwood neighbourhood, offering introductory wheel-throwing classes, an open gallery where member artists create and sell work, and community outreach programmes including the Atlanta Empty Bowls fundraiser for the Atlanta Food Bank.",
+  },
+  // Georgia — Atlanta
+  {
+    name: "Grit Ceramics Studio",
+    city: "Atlanta",
+    province: "Georgia",
+    country: "US",
+    website: "https://www.gritatl.com",
+    bio: "A women-owned ceramics studio in Atlanta's Sylvan Hills neighbourhood offering 6–8 week pottery courses with 2 hours of weekly instruction plus 8 hours of bonus open studio time, as well as mini classes and private events in a cheery, plant-filled 2,000 sq ft space.",
+  },
+  // Minnesota — Minneapolis
+  {
+    name: "Mudluk Pottery",
+    city: "Minneapolis",
+    province: "Minnesota",
+    country: "US",
+    website: "https://www.mudlukpottery.com",
+    bio: "A Minneapolis ceramics studio fostering community through hand-building and wheel-throwing classes, workshops, community gatherings, exhibitions, and artist residencies — welcoming beginners and experienced ceramicists alike.",
+  },
+  // Texas — Dallas
+  {
+    name: "FCS Clayworks",
+    city: "Garland",
+    province: "Texas",
+    country: "US",
+    website: "https://fcsclayworks.com",
+    bio: "A community studio space in the Dallas area offering 6-week beginner clay courses in wheel throwing and slab building, specialty workshops, varied membership levels, and summer clay camps for children — dedicated to fostering a shared creative community among artists of all levels.",
+  },
+  // Texas — Austin
+  {
+    name: "Feats of Clay Pottery",
+    city: "Austin",
+    province: "Texas",
+    country: "US",
+    website: "https://featsofclaypottery.com",
+    bio: "Austin's oldest pottery studio and gallery, women-owned and operated since 1976, offering classes, date nights, workshops, one-time lessons, open studio memberships, and public firings — a beloved, community-driven Burnet Road institution firing cone 9 stoneware.",
+  },
+  // Florida — Miami
+  {
+    name: "Anhinga Clay Studios",
+    city: "Miami",
+    province: "Florida",
+    country: "US",
+    website: "https://anhingaclaystudios.com",
+    bio: "A Miami ceramics studio established in 2011 by Gus and Melissa Miranda, offering five-week wheel-throwing and hand-building courses, one-time classes, master artist workshops, private group sessions, kids' summer art camps, and ceramics-based homeschool curriculum components.",
+  },
+  // Arizona — Phoenix
+  {
+    name: "Phoenix Center for the Arts",
+    city: "Phoenix",
+    province: "Arizona",
+    country: "US",
+    website: "https://phoenixcenterforthearts.org",
+    bio: "A Phoenix arts institution with over 45 years of history, offering 300+ creative classes including ceramics for beginners through advanced students at both its downtown and Thunderbird Arts Center campuses — with wheels, kilns, and financial aid available.",
+  },
+  // Arizona — Phoenix
+  {
+    name: "PIP Coffee + Clay",
+    city: "Chandler",
+    province: "Arizona",
+    country: "US",
+    website: "https://www.pipcoffeeclay.com",
+    bio: "A unique teaching ceramics and pottery studio combined with a coffee shop in the Phoenix metro area — offering classes and workshops alongside food and drinks at Phoenix and Chandler locations, making ceramics approachable and social.",
+  },
+  // Tennessee — Nashville
+  {
+    name: "The Clay Lady",
+    city: "Nashville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://theclaylady.com",
+    bio: "A Nashville ceramics studio and teaching resource for the local clay community, offering wheel-throwing and hand-building instruction for students of all skill levels alongside studio workspace and a curated ceramics shop.",
+  },
+  // Illinois — Chicago (Lincoln Square)
+  {
+    name: "Come Play With Clay",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.comeplaywithclay.com",
+    bio: "A nonprofit Lincoln Square pottery studio and learning center dedicated to fostering creative community in North Chicago — offering ceramics classes, workshops, and studio programming that make clay accessible and joyful for all skill levels.",
+  },
+  // California — San Mateo
+  {
+    name: "The Clayroom",
+    city: "San Francisco",
+    province: "California",
+    country: "US",
+    website: "https://www.clayroomsf.com",
+    bio: "A pottery and woodworking community with studio locations in San Francisco, Oakland, and San Mateo, offering 6-week beginner and intermediate ceramics classes, studio memberships, and kids classes across the Bay Area.",
+  },
+  // Oregon — Portland
+  {
+    name: "Elemental Studios PDX",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://www.elementalstudiospdx.com",
+    bio: "An inclusive Portland ceramics studio offering beginner and intermediate pottery wheel, hand-building, and sculpture classes in a welcoming community environment — committed to making ceramics education accessible and empowering for all students.",
+  },
+  // Pennsylvania — Philadelphia
+  {
+    name: "Rebel Potters",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.rebelpotters.org",
+    bio: "A Philadelphia ceramics collective created as a safe and joyful space to practice, learn, teach, and explore ceramics with the community — offering classes, workshops, and open studio access with an emphasis on inclusivity and creative freedom.",
+  },
+  // Minnesota — Minneapolis
+  {
+    name: "The Clay Pit Studio",
+    city: "Minneapolis",
+    province: "Minnesota",
+    country: "US",
+    website: "https://www.theclaypitstudio.com",
+    bio: "A queer and accessible ceramics studio in Minneapolis offering workshops and community clay kits — dedicated to creating an inclusive, affirming environment where everyone can explore and create with clay.",
+  },
+  // Texas — Austin
+  {
+    name: "Amano Pottery Studio",
+    city: "Austin",
+    province: "Texas",
+    country: "US",
+    website: "https://www.amanopottery.com",
+    bio: "A creative community pottery studio in Austin offering wheel-throwing and hand-building classes, workshops, studio memberships, open studio hours, and pottery painting sessions for beginners, advanced potters, kids, and adults.",
+  },
+  // California — Los Angeles
+  {
+    name: "Ball Clay Studio",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "http://ballclaystudio.com",
+    bio: "A Los Angeles sculpture and pottery studio where artists create sculptures, hand-build ceramics, and throw on the pottery wheel — building a close-knit community of students and members through shared creative practice.",
+  },
+
+  // Australia — Victoria (Melbourne teaching studios)
+  {
+    name: "Bisque Studios",
+    city: "Northcote",
+    province: "Victoria",
+    country: "AU",
+    website: "https://bisquestudios.com",
+    bio: "A Northcote pottery school and 24/7 studio membership space offering beginner and intermediate wheel-throwing and hand-building workshops in a beautifully equipped ceramics studio.",
+    offersClasses: true,
+  },
+  {
+    name: "Sajo Ceramics",
+    city: "Ferntree Gully",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.sajoceramics.com",
+    bio: "A studio at the foothills of the Dandenong Ranges offering pottery classes and a full ceramic and pottery supplies shop, with a sister studio Lillypilly Pottery for bespoke handmade ceramics.",
+    offersClasses: true,
+  },
+  {
+    name: "Peninsula Ceramics Studio",
+    city: "Mornington",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.peninsulaceramicsstudio.com",
+    bio: "A Peninsula ceramics studio run by Lilli Fender offering wheel-throwing and hand-building workshops for all levels, providing a welcoming space to unwind, have fun, and get creative with clay.",
+    offersClasses: true,
+  },
+
+  // Australia — New South Wales (teaching studios)
+  {
+    name: "Katoomba Clay",
+    city: "Katoomba",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.katoombaclay.com",
+    bio: "A Blue Mountains pottery studio offering classes for all skill levels in a scenic mountain setting, helping students develop their craft through wheel-throwing and hand-building techniques.",
+    offersClasses: true,
+  },
+  {
+    name: "South Coast Ceramics",
+    city: "Gerringong",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.southcoastceramics.com.au",
+    bio: "A collaborative project since 2018 uniting three South Coast NSW studio potters — offering one-off workshops, weekly classes, and handmade ceramics from studios in Gerringong and Kiama.",
+    offersClasses: true,
+  },
+
+  // Australia — Queensland (teaching studios)
+  {
+    name: "Brisbane Ceramics",
+    city: "Auchenflower",
+    province: "Queensland",
+    country: "AU",
+    website: "https://brisbaneceramics.com",
+    bio: "A creative pottery studio in Auchenflower led by ceramic artist Bodhi Swan, offering wheel-throwing workshops, studio membership, and a welcoming community for beginners through experienced potters.",
+    offersClasses: true,
+  },
+  {
+    name: "Kettle Black Pottery",
+    city: "Cairns",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.kettleblackpottery.com.au",
+    bio: "A Cairns pottery studio in Freshwater offering wheel-throwing, hand-building, and glazing workshops for adults and children from age five, with small-group classes and school holiday programs.",
+    offersClasses: true,
+  },
+  {
+    name: "Coastal Studio Ceramics",
+    city: "Sunshine Coast",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.coastalstudioceramics.com.au",
+    bio: "A Sunshine Coast pottery studio led by professional Visual Arts teacher Jasmine with over 25 years of experience, offering intimate private workshops in hand-building and producing restaurant-quality handmade ceramic tableware.",
+    offersClasses: true,
+  },
+
+  // Australia — Western Australia (teaching studios)
+  {
+    name: "Studio P",
+    city: "Mount Hawthorn",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://www.studiop.net.au",
+    bio: "A community pottery studio in Mount Hawthorn offering wheel-throwing classes, workshops, and studio membership for those seeking to learn, create, and connect through ceramics.",
+    offersClasses: true,
+  },
+  {
+    name: "Perth Pottery Company",
+    city: "Inglewood",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://www.perthpotterycompany.com",
+    bio: "A mother-and-son-run pottery studio on Beaufort Street in Inglewood offering weekend Sip and Pot classes, Thursday hand-building sessions, and six-week beginner courses.",
+    offersClasses: true,
+  },
+  {
+    name: "Clay Make Studio",
+    city: "Maylands",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://www.claymakestudio.com.au",
+    bio: "An open-access ceramics studio in Maylands, Perth, equipped with 15 pottery wheels, offering ceramic art classes and workshops for children and adults alongside studio membership.",
+    offersClasses: true,
+  },
+
+  // Australia — Tasmania (teaching studios)
+  {
+    name: "Waldie's School for the Ceramic Arts",
+    city: "Snug",
+    province: "Tasmania",
+    country: "AU",
+    website: "https://waldies.com.au",
+    bio: "A pottery school, residency space, and creative community housed in a former folk museum in Snug, Tasmania, nurturing ceramic artists from beginners to long-term practitioners.",
+    offersClasses: true,
+  },
+  {
+    name: "Glazed and Confused",
+    city: "Hobart",
+    province: "Tasmania",
+    country: "AU",
+    website: "https://www.glazedandconfusedstudio.com",
+    bio: "A pottery studio with locations in both Hobart and Launceston offering workshops for children and adults in creating functional and decorative ceramic pieces.",
+    offersClasses: true,
+  },
+
+  // Australia — Northern Territory (teaching studios)
+  {
+    name: "Tactile Arts",
+    city: "Darwin",
+    province: "Northern Territory",
+    country: "AU",
+    website: "https://tactilearts.org.au",
+    bio: "A member-based not-for-profit arts organisation in Darwin's museum precinct since 1973, operating a fully equipped ceramics studio with pottery wheels, slab roller, and kilns available for members alongside regular workshops.",
+    offersClasses: true,
+  },
+  {
+    name: "Aussie Potz",
+    city: "Stuart Park",
+    province: "Northern Territory",
+    country: "AU",
+    website: "https://www.aussiepotz.com.au",
+    bio: "A Darwin pottery studio in Stuart Park offering classes for all ages with multiple tutors in a modern, well-equipped space, welcoming anyone keen to get creative with clay.",
+    offersClasses: true,
+  },
+
 ];
 
 export function groupByProvince<T extends { province: string; country: Country }>(
