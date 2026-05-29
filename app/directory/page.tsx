@@ -411,8 +411,8 @@ function DirectoryContent() {
           </Link>
           <Link
             href="/directory/update"
-            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm"
-            style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}
+            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm bg-[#E8D5B7] hover:bg-[#C5B59C] transition-colors"
+            style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}
           >
             Update your listing
           </Link>
