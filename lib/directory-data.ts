@@ -8178,6 +8178,271 @@ export const potters: Potter[] = [
     website: "https://www.avanospotteryworkshop.com",
     bio: "A boutique family pottery workshop in the heart of Avanos, Cappadocia, keeping traditional Anatolian pottery techniques alive for generations and inviting visitors to try the wheel under the guidance of local masters using red clay from the Kızılırmak riverbank.",
   },
+
+  // North Carolina — Wilmington
+  {
+    name: "Salty Ceramics",
+    city: "Wilmington",
+    province: "North Carolina",
+    country: "US",
+    website: "https://saltyceramics.com",
+    bio: "Meghan Angelis creates vibrant, functional wheel-thrown and hand-built pottery from her studio in Wilmington's Cargo District, offering group classes, private lessons, and date nights alongside a retail gallery.",
+    offersClasses: true,
+  },
+  // North Carolina — Charlotte
+  {
+    name: "Slow Burn Studio",
+    city: "Charlotte",
+    province: "North Carolina",
+    country: "US",
+    website: "https://theslowburnstudio.com",
+    bio: "Tyler Myers runs this Charlotte ceramics studio offering private pottery lessons, a foundations series, and group classes alongside custom commissions and one-of-a-kind ceramic works.",
+    offersClasses: true,
+  },
+  // Virginia — Richmond
+  {
+    name: "Robin Cage Pottery",
+    city: "Richmond",
+    province: "Virginia",
+    country: "US",
+    website: "https://www.robincagepottery.com",
+    bio: "Robin Cage makes functional handmade porcelain pottery from her studio at 43rd Street Studios in Richmond, Virginia, with carved surfaces and distinctive glazes sold regionally and online.",
+  },
+  // Virginia — Reston (Northern VA)
+  {
+    name: "TealNest Pottery",
+    city: "Reston",
+    province: "Virginia",
+    country: "US",
+    website: "https://tealnestpottery.com",
+    bio: "An adult-only teaching studio in Reston's Town Center offering small-group wheel-throwing and hand-building classes in a well-equipped space with more than 28 glazes and a curated range of clay bodies.",
+    offersClasses: true,
+  },
+  // Virginia — Winchester (Shenandoah Valley)
+  {
+    name: "Virginia Pottery",
+    city: "Winchester",
+    province: "Virginia",
+    country: "US",
+    website: "https://virginiapottery.com",
+    bio: "Studio potter Steven Wilson throws functional porcelain and stoneware in his home studio at the foot of Little North Mountain, five miles west of Winchester in the Shenandoah Valley.",
+  },
+  // Virginia — Luray (Shenandoah Valley)
+  {
+    name: "Pottery Lady",
+    city: "Luray",
+    province: "Virginia",
+    country: "US",
+    website: "http://potteryladyluray.com",
+    bio: "Cathie Miranda has made pottery on the wheel and by hand in her Luray studio since relocating to the Shenandoah Valley in 1989, offering classes and a gallery featuring her own work and that of other potters.",
+    offersClasses: true,
+  },
+  // West Virginia — Wallback (Clay County)
+  {
+    name: "Summer Hollow Pottery",
+    city: "Wallback",
+    province: "West Virginia",
+    country: "US",
+    website: "https://shpottery.com",
+    bio: "Wendy Summers holds an MFA from West Virginia University and has operated her studio high on a mountain in rural Clay County since 1993, producing functional stoneware featured in Martha Stewart Living and Gourmet Magazine.",
+  },
+  // West Virginia — Hedgesville (Berkeley County)
+  {
+    name: "Blue Goose Pottery",
+    city: "Hedgesville",
+    province: "West Virginia",
+    country: "US",
+    website: "https://www.bluegoosepottery.com",
+    bio: "A home studio in Berkeley County's Hedgesville producing wheel-thrown and hand-built functional stoneware pottery, all made on a family farm and available online and at regional craft shows.",
+  },
+  // West Virginia — Hurricane
+  {
+    name: "MadeBy Pottery",
+    city: "Hurricane",
+    province: "West Virginia",
+    country: "US",
+    website: "https://madebypottery.com",
+    bio: "West Virginia's community pottery studio in Hurricane offering wheel-throwing, hand-building, and glazing classes with handcrafted clay bodies and glazes, flexible memberships, and extended open studio hours.",
+    offersClasses: true,
+  },
+  // Kentucky — Winchester (near Lexington)
+  {
+    name: "Dirty South Pottery",
+    city: "Winchester",
+    province: "Kentucky",
+    country: "US",
+    website: "https://www.dirtysouthpottery.com",
+    bio: "Husband-and-wife team Carvel and Ashley Norman create 100% handmade pottery inspired by Southern culture in a renovated 1908 building in Historic Downtown Winchester — including their trademarked 'This Might Be Bourbon' mugs.",
+  },
+  // Kentucky — Lexington
+  {
+    name: "Matchstick Goods",
+    city: "Lexington",
+    province: "Kentucky",
+    country: "US",
+    website: "https://matchstickgoods.com",
+    bio: "A social-enterprise ceramics studio in North Lexington blending artistry with community impact — employing and mentoring youth who hand-throw every piece and mix every glaze, from mugs and bowls to ceramic jewelry.",
+    offersClasses: true,
+  },
+  // Tennessee — Nashville
+  {
+    name: "Slow Life Pottery",
+    city: "Nashville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://slowlifepottery.com",
+    bio: "A one-woman ceramics shop in Nashville where every piece is thrown on the wheel, decorated by hand, and fired in a backyard studio — functional stoneware designed to encourage the art of slow living.",
+  },
+  // Tennessee — Nashville
+  {
+    name: "Alissa Goss Ceramics",
+    city: "Nashville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.agstudioshop.com",
+    bio: "Alissa Goss holds a BFA in Ceramics from California College of the Arts and has worked in her Nashville studio for over fifteen years, making wheel-thrown and hand-built functional pottery with clean lines and neutral satin glazes.",
+  },
+  // Tennessee — Chattanooga
+  {
+    name: "Forman Pottery",
+    city: "Chattanooga",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.formanpottery.com",
+    bio: "John-Michael Forman turned a passion for clay into a full-time studio practice in Chattanooga's St. Elmo neighbourhood, producing handcrafted stoneware mugs, tumblers, pitchers, and dinnerware sold online and locally.",
+  },
+  // Tennessee — Knoxville
+  {
+    name: "Caoyu Studio",
+    city: "Knoxville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://caoyustudio.com",
+    bio: "Maggie Connolly earned an MFA from Tsinghua University in Beijing and a PhD from Tokyo University of the Fine Arts, and now makes hand-built and wheel-thrown functional ceramics in Knoxville that synthesise Eastern and Western craft traditions.",
+    offersClasses: true,
+  },
+  // Tennessee — Knoxville
+  {
+    name: "Sutton Ceramics",
+    city: "Knoxville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://suttonceramics.com",
+    bio: "Lacey Sutton creates overly detailed, whimsical functional ceramics in Knoxville — with hand-drawn motifs, bright glazes, and gold accents inspired by folklore and the imagination of her daughters.",
+  },
+  // Georgia — Athens
+  {
+    name: "R.Wood Studio",
+    city: "Athens",
+    province: "Georgia",
+    country: "US",
+    website: "https://rwoodstudio.com",
+    bio: "Founded in 1991 by Rebecca Wood, one of America's largest pottery studios makes hand-built red earthenware vessels painted in multiple layers of opaque glaze from a historic Carr's Hill warehouse in Athens.",
+  },
+  // Georgia — Athens
+  {
+    name: "Minsoo Yuh Ceramics",
+    city: "Athens",
+    province: "Georgia",
+    country: "US",
+    website: "https://www.minsooyuhceramics.com",
+    bio: "Seoul-born, Athens-based full-time studio potter Minsoo Yuh wheel-throws cone-10 dark stoneware vessels layered with stamping, slip, glaze, and stain, then gas-fires them to produce utilitarian pieces rich with emotional depth.",
+  },
+  // Georgia — Savannah
+  {
+    name: "Potter by Karen",
+    city: "Savannah",
+    province: "Georgia",
+    country: "US",
+    website: "https://www.potterybykaren.com",
+    bio: "A Savannah studio producing whimsical, offbeat hand-built and wheel-thrown pottery with customisable designs — functional pieces made with character and available for sale online and at local markets.",
+  },
+  // Florida — Miami
+  {
+    name: "Mercy Pottery",
+    city: "Miami",
+    province: "Florida",
+    country: "US",
+    website: "https://www.mercypottery.com",
+    bio: "Argentine-born ceramicist Mercedes founded Mercy Pottery in Miami's design district, offering hand-building and wheel-throwing workshops and selling her own handcrafted vases, bowls, and mugs inspired by her move to Florida.",
+    offersClasses: true,
+  },
+  // Florida — Kendall (Miami area)
+  {
+    name: "Gumbo Limbo Pottery",
+    city: "Miami",
+    province: "Florida",
+    country: "US",
+    website: "https://www.gumbolimbopottery.com",
+    bio: "Founded in 2014 in Kendall, Gumbo Limbo Pottery is a community studio and gallery featuring six Miami artists working in stoneware, porcelain, raku, and earthenware, with classes for adults, children, and private groups.",
+    offersClasses: true,
+  },
+  // South Carolina — Greenville
+  {
+    name: "Oz Pottery",
+    city: "Greenville",
+    province: "South Carolina",
+    country: "US",
+    website: "https://ozpottery.com",
+    bio: "Jeff Goodman built his studio on Paris Mountain outside Greenville after retiring from broadcast design in 2018, making functional wheel-thrown pottery and sculptural hand-built work with whimsy and creativity.",
+    offersClasses: true,
+  },
+  // Alabama — Birmingham
+  {
+    name: "Susan Gordon Pottery",
+    city: "Birmingham",
+    province: "Alabama",
+    country: "US",
+    website: "https://susangordonpottery.com",
+    bio: "Susan Gordon founded her Birmingham studio in 2013 and is best known for her signature wavy bowls tipped in 24-karat gold — timeless, handcrafted pieces that blend modern femininity with refined detail.",
+  },
+  // Alabama — Birmingham
+  {
+    name: "Michelle Leach Pottery",
+    city: "Birmingham",
+    province: "Alabama",
+    country: "US",
+    website: "https://michelleleachpottery.com",
+    bio: "Former high school ceramics teacher Michelle Leach makes functional stoneware from her Birmingham studio, offering private lessons and classes of all ages while finishing each piece with her own personal glaze recipes.",
+    offersClasses: true,
+  },
+  // Alabama — Birmingham (Cahaba Heights)
+  {
+    name: "Mudtown Pottery",
+    city: "Birmingham",
+    province: "Alabama",
+    country: "US",
+    website: "https://www.mudtownpottery.com",
+    bio: "Beth runs a small-batch studio in Cahaba Heights creating wheel-thrown and hand-built Alabama clay pottery — durable, non-toxic daily-use pieces whose logo pays homage to the native Cahaba Lily.",
+  },
+  // Alabama — Huntsville
+  {
+    name: "S.P. Morgan Studio",
+    city: "Huntsville",
+    province: "Alabama",
+    country: "US",
+    website: "https://www.spmorganstudio.com",
+    bio: "Stacy Morgan has made pottery, sculpture, and ceramic home décor at Lowe Mill Arts & Entertainment in Huntsville since 2012, offering classes and workshops from her public studio at this historic arts complex.",
+    offersClasses: true,
+  },
+  // Louisiana — New Orleans
+  {
+    name: "NOLA Bon Vivant",
+    city: "New Orleans",
+    province: "Louisiana",
+    country: "US",
+    website: "https://www.nolabonvivant.com",
+    bio: "Native New Orleanian Laura Scariano has practiced ceramics since 1995, creating handmade mugs, planters, platters, lamps, and sculptural pieces that draw on New Orleans culture, the Mississippi Delta's natural habitat, and her background in interior design.",
+  },
+  // Louisiana — New Orleans
+  {
+    name: "Connor Clary Studio",
+    city: "New Orleans",
+    province: "Louisiana",
+    country: "US",
+    website: "https://connorclary.com",
+    bio: "Largely self-taught potter Connor Clary makes handmade wheel-thrown functional wares for the home from his New Orleans studio, building a following of over 200,000 through his warm and process-driven social media presence.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
