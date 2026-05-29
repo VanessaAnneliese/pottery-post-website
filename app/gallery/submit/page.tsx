@@ -93,7 +93,7 @@ export default function GallerySubmitPage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Submit Your Work</h1>
       <p className="mb-2" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Send us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll reach out with a shipping deadline — each chosen piece comes to Pottery Post for verification before it goes live.
+        Send us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll reach out with a shipping deadline, each chosen piece comes to Pottery Post for verification before it goes live.
       </p>
       <p className="mb-10 text-sm" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         All submissions are reviewed. Not every piece will be selected, but every one is considered with care.
@@ -101,7 +101,7 @@ export default function GallerySubmitPage() {
 
       {status === "success" ? (
         <div className="py-12 text-center">
-          <p className="text-lg font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Thank you — your piece has been submitted.</p>
+          <p className="text-lg font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Thank you, your piece has been submitted.</p>
           <p style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>We&rsquo;ll be in touch if it&rsquo;s selected for the collection.</p>
         </div>
       ) : (
@@ -161,7 +161,7 @@ export default function GallerySubmitPage() {
 
           {/* Technique */}
           <div className="flex flex-col gap-3">
-            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>Technique — select all that apply</label>
+            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>Technique, select all that apply</label>
             <input type="hidden" name="techniques" value={[...techniques, ...(otherChecked && otherText ? [otherText] : [])].join(", ")} />
             <div className="flex flex-wrap gap-2">
               {TECHNIQUES.map((t) => (
@@ -178,7 +178,7 @@ export default function GallerySubmitPage() {
           <div className="flex flex-col gap-2">
             <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>About This Piece</label>
             <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-              Tell us about the piece — the technique, materials, what inspired it. A few sentences is plenty. {DESC_MAX} characters max.
+              Tell us about the piece, the technique, materials, what inspired it. A few sentences is plenty. {DESC_MAX} characters max.
             </p>
             <textarea name="description" rows={5} maxLength={DESC_MAX} onChange={(e) => setDescCount(e.target.value.length)} className="border-b py-2 bg-transparent outline-none text-base resize-none" style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }} />
             <p className="text-xs text-right" style={{ color: descCount >= DESC_MAX ? "#C1440E" : "#9E8572", fontFamily: "system-ui, sans-serif" }}>{descCount} / {DESC_MAX}</p>
@@ -200,7 +200,7 @@ export default function GallerySubmitPage() {
 
           {status === "error" && (
             <p className="text-sm" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
-              Something went wrong — please try again or email us at gallery@potterypost.ca
+              Something went wrong, please try again or email us at gallery@potterypost.ca
             </p>
           )}
 

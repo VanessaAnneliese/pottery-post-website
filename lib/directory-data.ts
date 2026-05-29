@@ -10178,6 +10178,255 @@ export const suppliers: Supplier[] = [
     website: "https://clayworkssupplies.com",
     bio: "Richmond-based ceramics supplier serving the mid-Atlantic region from southern Pennsylvania to Northern Virginia, carrying clay, glazes, tools, and Skutt kilns with regional delivery.",
   },
+
+  // Quebec (additional Canadian suppliers)
+  {
+    name: "Céramique Raku",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://ceramiqueraku.com",
+    bio: "A Montreal ceramics supply shop specialising in raku supplies, specialty glazes, and raw materials alongside standard pottery supplies for Quebec studio potters.",
+  },
+  {
+    name: "Argile Plus",
+    city: "Drummondville",
+    province: "Quebec",
+    country: "CA",
+    website: "https://argileplus.ca",
+    bio: "Central Quebec ceramics supplier carrying Plainsman and Quebec-blended clay bodies, commercial glazes, raw materials, and studio equipment for potters across the province.",
+  },
+  // British Columbia (additional Canadian suppliers)
+  {
+    name: "Kickwheel Pottery Supply",
+    city: "Burnaby",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://kickwheelpotterysupply.com",
+    bio: "Burnaby ceramics supply store serving potters across Metro Vancouver with clays, oxides, glazes, and studio tools.",
+  },
+  {
+    name: "Pacific Rim Pottery Supply",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://pacificrimceramics.ca",
+    bio: "Victoria-based ceramics supplier carrying a focused selection of clays, stains, glazes, and tools for Vancouver Island potters alongside kiln firing services.",
+  },
+  // Ontario (additional Canadian suppliers)
+  {
+    name: "Pottery Supply House",
+    city: "Oakville",
+    province: "Ontario",
+    country: "CA",
+    website: "https://potterysupplyhouse.com",
+    bio: "One of Canada's most comprehensive ceramic supply houses, carrying everything from raw materials and dry glazes to wheels, kilns, and studio equipment since 1972.",
+  },
+  {
+    name: "Black Bear Ceramics Supply",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://blackbearceramics.ca",
+    bio: "Toronto ceramics supply shop stocking clays, glazes, tools, and kiln accessories with a focus on serving studio potters and small production makers in the GTA.",
+  },
+  // Alberta (additional Canadian suppliers)
+  {
+    name: "Calgary Pottery Supplies",
+    city: "Calgary",
+    province: "Alberta",
+    country: "CA",
+    website: "https://calgaryps.ca",
+    bio: "A full-service ceramics supply store in Calgary carrying Plainsman clays, Spectrum and Amaco glazes, Shimpo and Skutt equipment, and tools for potters at every level.",
+  },
+  // Saskatchewan (additional Canadian suppliers)
+  {
+    name: "Prairie Clay Supply",
+    city: "Regina",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://prairieclaysupply.ca",
+    bio: "Regina's ceramics supply source carrying Plainsman clay bodies, commercial glazes, tools, and basic kiln equipment for Saskatchewan potters.",
+  },
+  // Manitoba (additional Canadian suppliers)
+  {
+    name: "Bison Clay Supply",
+    city: "Winnipeg",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://bisonclaysupply.ca",
+    bio: "Winnipeg's dedicated pottery supply store stocking Plainsman clays, commercial glazes, tools, and kiln equipment for Manitoba hobbyists, students, and production potters.",
+  },
+  // Nova Scotia (additional Canadian suppliers)
+  {
+    name: "Atlantic Clay Supply",
+    city: "Dartmouth",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://atlanticclaysupply.ca",
+    bio: "Dartmouth-based ceramics supplier serving Atlantic Canada with clays, commercial glazes, raw materials, and basic studio equipment with regional shipping.",
+  },
+  // Ontario (additional Canadian suppliers)
+  {
+    name: "Muskoka Pottery Supply",
+    city: "Gravenhurst",
+    province: "Ontario",
+    country: "CA",
+    website: "https://muskokapotterysupply.ca",
+    bio: "Muskoka-area ceramics supply store carrying Plainsman and Tucker's clays, commercial glazes, and tools for cottage-country potters and area ceramic artists.",
+  },
+
+  // England
+  {
+    name: "Scarva Pottery Supplies",
+    city: "Scarva",
+    province: "England",
+    country: "EU",
+    website: "https://www.scarva.com",
+    bio: "A leading UK and international ceramics supplier stocking thousands of products including clay, stains, oxides, glazes, kilns, and wheels, with fast UK and European delivery.",
+  },
+  {
+    name: "CTM Potters Supplies",
+    city: "Hanley",
+    province: "England",
+    country: "EU",
+    website: "https://www.ctmpotters.co.uk",
+    bio: "Stoke-on-Trent ceramics supplier carrying a wide range of clays, glazes, raw materials, tools, kilns, and pottery equipment for studio potters and ceramic artists.",
+  },
+  {
+    name: "Northern Kilns",
+    city: "Penrith",
+    province: "England",
+    country: "EU",
+    website: "https://www.northernkilns.com",
+    bio: "UK kiln specialist based in Cumbria supplying and servicing electric and gas kilns, kiln furniture, and related ceramics equipment to studios and schools across Britain.",
+  },
+  {
+    name: "Valentine Clays",
+    city: "Stoke-on-Trent",
+    province: "England",
+    country: "EU",
+    website: "https://www.valentineclays.co.uk",
+    bio: "Long-established Stoke-on-Trent clay manufacturer producing a comprehensive range of stoneware, earthenware, and porcelain bodies for studio potters and industry.",
+  },
+  {
+    name: "Reward Minerals",
+    city: "Coventry",
+    province: "England",
+    country: "EU",
+    website: "https://www.rewardminerals.co.uk",
+    bio: "Coventry-based raw materials supplier for ceramics, glass, and enamels — carrying hundreds of minerals, frits, and prepared materials for glaze-making potters.",
+  },
+
+  // Scotland
+  {
+    name: "The Pot Place",
+    city: "Comrie",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.thepotplace.co.uk",
+    bio: "A Perthshire pottery and teaching studio that also runs a well-stocked online ceramics shop, supplying clays, glazes, tools, and equipment to potters across Scotland and the UK.",
+  },
+
+  // France
+  {
+    name: "La Maison de l'Argile",
+    city: "Carouge",
+    province: "France",
+    country: "EU",
+    website: "https://www.lamaisondelargile.com",
+    bio: "French ceramics supplier offering a curated selection of clays, glazes, raw materials, tools, and kilns for studio potters and ceramic arts schools throughout France.",
+  },
+  {
+    name: "Solargil",
+    city: "Paris",
+    province: "France",
+    country: "EU",
+    website: "https://www.solargil.com",
+    bio: "Paris ceramics supplier stocking clays, glazes, underglazes, oxides, tools, and kiln equipment — a go-to resource for Parisian studio potters and ceramics schools.",
+  },
+
+  // Germany
+  {
+    name: "Sibu Keramik",
+    city: "Büdingen",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.sibu-keramik.de",
+    bio: "German ceramics supplier carrying a comprehensive range of clay bodies, glazes, raw materials, kiln equipment, and pottery tools for studio and production potters.",
+  },
+  {
+    name: "Keramik-Kraft",
+    city: "Munich",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.keramik-kraft.de",
+    bio: "Munich ceramics supply shop offering clays, glazes, tools, and kiln equipment for hobby and professional potters in southern Germany.",
+  },
+  {
+    name: "Ton in Ton",
+    city: "Berlin",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.ton-in-ton.de",
+    bio: "Berlin ceramics shop supplying a broad selection of clays, glazes, raw materials, and pottery tools to studio potters and ceramics teachers across the German capital.",
+  },
+
+  // Netherlands
+  {
+    name: "Keramikos",
+    city: "Nuenen",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.keramikos.nl",
+    bio: "Netherlands-based ceramics supplier carrying clays, glazes, raw materials, kiln furniture, and tools — serving Dutch studio potters and ceramics schools with fast shipping.",
+  },
+  {
+    name: "Ceramic Shop NL",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.ceramicshop.eu",
+    bio: "Amsterdam ceramics supplies store stocking a wide range of clays, glazes, underglazes, and pottery tools for studio artists and hobbyists across the Netherlands and Belgium.",
+  },
+
+  // Belgium
+  {
+    name: "Art Argile",
+    city: "Brussels",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.art-argile.be",
+    bio: "Belgian ceramics supplier offering clay bodies, glazes, raw materials, and tools for studio potters and ceramics schools throughout Belgium and neighbouring countries.",
+  },
+
+  // Spain
+  {
+    name: "Comercial Cerámicas Bretal",
+    city: "Santiago de Compostela",
+    province: "Spain",
+    country: "EU",
+    website: "https://www.ceramicasbretal.com",
+    bio: "Spanish ceramics supplier based in Galicia carrying clay, glazes, kilns, wheels, and tools for studio and production potters across Spain.",
+  },
+  {
+    name: "Tienda Cerámica",
+    city: "Barcelona",
+    province: "Spain",
+    country: "EU",
+    website: "https://www.tiendaceramica.com",
+    bio: "Barcelona-based online ceramics shop stocking a curated selection of clays, glazes, tools, and accessories for contemporary studio potters in Spain.",
+  },
+
+  // Italy
+  {
+    name: "Farro Ceramiche",
+    city: "Faenza",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.farroceramiche.it",
+    bio: "Faenza-based ceramics supplier — named for the city that gave faience its name — carrying clays, glazes, raw materials, and tools for Italian studio potters and ceramic artists.",
+  },
 ];
 
 export const teachingStudios: TeachingStudio[] = [
@@ -12582,6 +12831,312 @@ export const teachingStudios: TeachingStudio[] = [
     country: "AU",
     website: "https://www.aussiepotz.com.au",
     bio: "A Darwin pottery studio in Stuart Park offering classes for all ages with multiple tutors in a modern, well-equipped space, welcoming anyone keen to get creative with clay.",
+  },
+
+  // England
+  {
+    name: "Camden Arts Centre Ceramics",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://camdenartscentre.org",
+    bio: "A celebrated North London arts centre offering ceramics courses and workshops led by established artists, attracting makers from across the city to its well-equipped studio.",
+  },
+  {
+    name: "Earth & Fire Ceramics",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://earthandfireceramics.co.uk",
+    bio: "A London ceramics studio offering regular wheel-throwing and hand-building courses for all levels, with beginner-friendly evening and weekend classes throughout the year.",
+  },
+  {
+    name: "Bristol Ceramics Studio",
+    city: "Bristol",
+    province: "England",
+    country: "EU",
+    website: "https://bristolceramicsstudio.com",
+    bio: "A community ceramics studio in Bristol offering courses, workshops, and open-studio memberships for potters at every stage — from first-timers to seasoned practitioners.",
+  },
+  {
+    name: "Manchester Pottery Studio",
+    city: "Manchester",
+    province: "England",
+    country: "EU",
+    website: "https://www.manchesterpotterystudio.co.uk",
+    bio: "A city-centre Manchester studio offering beginner through intermediate wheel and hand-building classes, drop-in sessions, and corporate pottery events.",
+  },
+  {
+    name: "Turning Earth",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://www.turning-earth.co.uk",
+    bio: "One of London's largest open-access ceramics studios, with sites in Hackney and Tottenham offering membership, courses, and workshops for the capital's growing ceramics community.",
+  },
+  {
+    name: "Clay in the City",
+    city: "Birmingham",
+    province: "England",
+    country: "EU",
+    website: "https://www.clayinthecity.com",
+    bio: "A Birmingham pottery studio offering beginner and improver wheel-throwing classes, hand-building workshops, and private studio sessions in a friendly, well-equipped space.",
+  },
+
+  // Scotland
+  {
+    name: "Edinburgh Pottery Classes",
+    city: "Edinburgh",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.edinburghpottery.co.uk",
+    bio: "An Edinburgh ceramics studio running regular wheel-throwing courses and taster sessions for adults of all abilities, set in a dedicated studio in the heart of the city.",
+  },
+  {
+    name: "Glasgow Ceramics Studio",
+    city: "Glasgow",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.glasgowceramics.co.uk",
+    bio: "A Glasgow studio offering pottery classes, workshops, and open-studio access for beginners through experienced potters in the west of Scotland.",
+  },
+
+  // Ireland
+  {
+    name: "Cork Clay Studio",
+    city: "Cork",
+    province: "Ireland",
+    country: "EU",
+    website: "https://www.corkclaystudio.ie",
+    bio: "A community ceramics studio in Cork city offering beginner and intermediate pottery courses, drop-in workshop sessions, and studio membership for independent practice.",
+  },
+  {
+    name: "Galway Ceramics",
+    city: "Galway",
+    province: "Ireland",
+    country: "EU",
+    website: "https://www.galwayceramics.ie",
+    bio: "A west of Ireland pottery school offering evening and weekend wheel-throwing courses, hand-building workshops, and creative ceramics classes for adults and teens.",
+  },
+
+  // France
+  {
+    name: "Atelier de Poterie Terres de Paris",
+    city: "Paris",
+    province: "France",
+    country: "EU",
+    website: "https://www.terresdeparis.com",
+    bio: "A Paris ceramics atelier in the 11th arrondissement offering weekly wheel-throwing and hand-building courses for all levels, alongside glazing workshops and open studio hours.",
+  },
+  {
+    name: "L'Atelier du Potier",
+    city: "Lyon",
+    province: "France",
+    country: "EU",
+    website: "https://www.atelierducouleur.fr",
+    bio: "A Lyon ceramics studio offering beginner and advanced pottery courses, weekend workshops, and private lessons in wheel-throwing and hand-building techniques.",
+  },
+
+  // Germany
+  {
+    name: "Töpferei und Kurse Berlin",
+    city: "Berlin",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.toepfereiberlin.de",
+    bio: "A Berlin ceramics school running pottery courses for all skill levels — from introductory weekend workshops to multi-month programmes in wheel-throwing and sculptural hand-building.",
+  },
+  {
+    name: "Keramikkurse Hamburg",
+    city: "Hamburg",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.keramikkurse-hamburg.de",
+    bio: "A Hamburg ceramics studio offering regular adult pottery courses and one-day workshops in wheel-throwing, hand-building, and decorative techniques for beginners through advanced students.",
+  },
+
+  // Netherlands
+  {
+    name: "Pottenbakkersatelier Amsterdam",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.pottenbakkersatelier.nl",
+    bio: "An Amsterdam ceramics studio offering courses and workshops in wheel-throwing and hand-building, welcoming beginners and experienced potters in a relaxed, creative environment.",
+  },
+
+  // Belgium
+  {
+    name: "Atelier de Céramique Bruxelles",
+    city: "Brussels",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.atelierceramique.be",
+    bio: "A Brussels ceramics atelier offering weekly pottery courses, one-day workshops, and open-studio sessions for adults — with instruction in both wheel-throwing and hand-building.",
+  },
+
+  // British Columbia — Victoria
+  {
+    name: "Victoria School of the Arts Ceramics",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.vsoa.ca",
+    bio: "Victoria's community art school offering pottery and ceramics courses for adults and teens, with wheel-throwing and handbuilding classes in a welcoming non-competitive environment.",
+  },
+  {
+    name: "Clay Ground Studio",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://clayground.ca",
+    bio: "A Victoria ceramics studio offering beginner and intermediate wheel-throwing and handbuilding workshops, open studio memberships, and a curated shop of handmade pottery.",
+  },
+
+  // British Columbia — Vancouver (additional)
+  {
+    name: "Brickhouse Ceramics",
+    city: "Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://brickhouseceramics.ca",
+    bio: "A community ceramics studio in East Vancouver offering beginner through advanced pottery classes, open studio memberships, and kiln rental services.",
+  },
+  {
+    name: "Fired Up Studio",
+    city: "North Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://firedupstudio.ca",
+    bio: "A North Vancouver pottery studio offering wheel-throwing and handbuilding classes for all ages and skill levels, plus studio memberships and private event packages.",
+  },
+
+  // Ontario — Toronto (additional)
+  {
+    name: "Turning Ground Studio",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://turninggroundstudio.ca",
+    bio: "A Toronto ceramics studio offering beginner wheel-throwing courses, multi-week programs, open studio memberships, and private group events.",
+  },
+  {
+    name: "Pottery at Pape",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://potteryatpape.ca",
+    bio: "An East End Toronto pottery studio offering small-group wheel-throwing and handbuilding classes, studio memberships, and a welcoming space for potters at all stages.",
+  },
+
+  // Ontario — Ottawa (additional)
+  {
+    name: "Ottawa Pottery Studio",
+    city: "Ottawa",
+    province: "Ontario",
+    country: "CA",
+    website: "https://ottawapotterystudio.ca",
+    bio: "An Ottawa ceramics studio offering multi-week beginner and intermediate classes, one-time workshops, and open studio memberships for adult potters.",
+  },
+  {
+    name: "Almonte Pottery Studio",
+    city: "Almonte",
+    province: "Ontario",
+    country: "CA",
+    website: "https://almontepottery.ca",
+    bio: "A small-town pottery studio in Almonte, Ontario, offering beginner wheel-throwing classes, handbuilding workshops, and studio time in a relaxed rural setting.",
+  },
+
+  // Ontario — Hamilton (additional)
+  {
+    name: "Hamilton Clay Studio",
+    city: "Hamilton",
+    province: "Ontario",
+    country: "CA",
+    website: "https://hamiltonclaystudio.ca",
+    bio: "A community pottery studio in Hamilton's North End offering wheel-throwing and handbuilding classes, open studio memberships, and workshops for adults at all levels.",
+  },
+
+  // Ontario — London (additional)
+  {
+    name: "Raku on the Thames",
+    city: "London",
+    province: "Ontario",
+    country: "CA",
+    website: "https://rakuonthethames.ca",
+    bio: "A London, Ontario ceramics studio offering wheel-throwing classes, raku workshops, and studio memberships alongside a small gallery of local ceramic art.",
+  },
+
+  // Quebec — Quebec City
+  {
+    name: "L'Atelier de Céramique de Québec",
+    city: "Quebec City",
+    province: "Quebec",
+    country: "CA",
+    website: "https://atelierceramiqueqc.ca",
+    bio: "A Quebec City ceramics atelier offering beginner and intermediate wheel-throwing and handbuilding courses, open studio memberships, and themed workshops for adult students.",
+  },
+  {
+    name: "Espace Céramique Québec",
+    city: "Quebec City",
+    province: "Quebec",
+    country: "CA",
+    website: "https://espaceceramiqueqc.com",
+    bio: "A contemporary ceramics studio in the heart of Quebec City offering multi-week courses, one-day workshops, and studio access for potters at every level.",
+  },
+
+  // Quebec — Montreal (additional)
+  {
+    name: "Pot de Terre Studio",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://potdeterre.ca",
+    bio: "A Montreal ceramics studio offering beginner wheel-throwing and handbuilding courses, open studio memberships, and private pottery events in the Plateau Mont-Royal neighbourhood.",
+  },
+  {
+    name: "Atelier Terre Cuite",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://atelierterrecuite.ca",
+    bio: "A welcoming Montreal pottery studio offering beginner courses, open studio time, and community clay events for potters who want to explore wheel and hand-building techniques.",
+  },
+
+  // Nova Scotia (additional)
+  {
+    name: "Halifax Clay Arts",
+    city: "Halifax",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://halifaxclayarts.ca",
+    bio: "A Halifax ceramics studio offering beginner through intermediate wheel-throwing and handbuilding classes, studio memberships, and drop-in workshops throughout the year.",
+  },
+  {
+    name: "Studio 39 Ceramics",
+    city: "Lunenburg",
+    province: "Nova Scotia",
+    country: "CA",
+    website: "https://studio39ceramics.ca",
+    bio: "A ceramics studio in historic Lunenburg offering pottery classes and workshops in a beautiful South Shore Nova Scotia setting, focusing on functional handmade pottery.",
+  },
+
+  // New Brunswick (additional)
+  {
+    name: "Saint John Ceramics",
+    city: "Saint John",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://saintjohnceramics.ca",
+    bio: "A Saint John pottery studio offering beginner wheel-throwing and handbuilding classes, open studio memberships, and creative workshops for New Brunswick potters.",
+  },
+  {
+    name: "Moncton Clay Studio",
+    city: "Moncton",
+    province: "New Brunswick",
+    country: "CA",
+    website: "https://monctonclaystudio.ca",
+    bio: "Greater Moncton's ceramics studio offering multi-week beginner courses, one-day workshops, and studio memberships for potters of all skill levels in a bilingual community setting.",
   },
 
 ];

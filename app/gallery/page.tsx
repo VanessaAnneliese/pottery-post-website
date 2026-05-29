@@ -3,12 +3,12 @@ import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
 
 export const metadata: Metadata = {
-  title: "Pottery Gallery — Handmade Ceramics Curated with Love",
+  title: "Pottery Gallery | Handmade Ceramics Curated with Love",
   description:
     "A curated gallery of handmade pottery, gathered with love by The Pottery Post. Collections rotate in early Spring and Fall. Every piece is verified in person.",
   alternates: { canonical: "https://www.potterypost.ca/gallery" },
   openGraph: {
-    title: "Pottery Gallery — Handmade Ceramics Curated with Love | Pottery Post",
+    title: "Pottery Gallery | Handmade Ceramics Curated with Love | Pottery Post",
     description:
       "A curated gallery of handmade pottery, gathered with love. Collections rotate in early Spring and Fall. Every piece is verified in person.",
     url: "https://www.potterypost.ca/gallery",
@@ -54,7 +54,7 @@ export default function GalleryPage() {
       </p>
       <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Submit Your Work</h2>
       <p className="mb-8 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Each new collection is open to submissions. If you&rsquo;re a potter and would like your work considered, here&rsquo;s how it works: begin by sending us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll be in touch — chosen pieces are shipped to Pottery Post by a set date, where each one is verified in person before it goes live. Because everything in this gallery is the real thing: made by hand, verified by eye.
+        Each new collection is open to submissions. If you&rsquo;re a potter and would like your work considered, here&rsquo;s how it works: begin by sending us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll be in touch, chosen pieces are shipped to Pottery Post by a set date, where each one is verified in person before it goes live. Because everything in this gallery is the real thing: made by hand, verified by eye.
       </p>
       <Link
         href="/gallery/submit"

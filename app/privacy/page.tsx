@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for The Pottery Post — how we collect, use, and protect your information.",
+  description: "Privacy policy for The Pottery Post, how we collect, use, and protect your information.",
   alternates: { canonical: "https://www.potterypost.ca/privacy" },
   robots: { index: false },
 };
@@ -27,10 +27,10 @@ export default function PrivacyPage() {
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Information We Collect</h2>
           <p className="mb-3">We may collect the following types of personal information:</p>
           <ul className="list-disc pl-6 flex flex-col gap-2">
-            <li><strong>Contact information</strong> — name, email address, phone number, and mailing address when you submit a directory listing, submit to the Pottery Gallery, or contact us.</li>
-            <li><strong>Directory listing information</strong> — studio name, location, website, bio, and photos you voluntarily submit for inclusion in the Pottery Directory.</li>
-            <li><strong>Pottery Gallery submission information</strong> — your name, studio name, location, website, a description of the piece, and any photos you submit when applying to be considered for the Pottery Gallery. If your piece is selected, your name and relevant details will be displayed publicly alongside your work.</li>
-            <li><strong>Usage information</strong> — pages visited, time spent on the site, and referring URLs, collected through cookies and analytics tools. See our Cookie Policy for details.</li>
+            <li><strong>Contact information:</strong> name, email address, phone number, and mailing address when you submit a directory listing, submit to the Pottery Gallery, or contact us.</li>
+            <li><strong>Directory listing information:</strong> studio name, location, website, bio, and photos you voluntarily submit for inclusion in the Pottery Directory.</li>
+            <li><strong>Pottery Gallery submission information:</strong> your name, studio name, location, website, a description of the piece, and any photos you submit when applying to be considered for the Pottery Gallery. If your piece is selected, your name and relevant details will be displayed publicly alongside your work.</li>
+            <li><strong>Usage information:</strong> pages visited, time spent on the site, and referring URLs, collected through cookies and analytics tools. See our Cookie Policy for details.</li>
           </ul>
         </div>
 
@@ -49,12 +49,12 @@ export default function PrivacyPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Directory Listings</h2>
-          <p>Information you submit for a directory listing — including your name, studio name, location, website, bio, and photos — will be displayed publicly on this website if approved. By submitting a listing, you consent to this public display. You may request removal of your listing at any time by contacting us.</p>
+          <p>Information you submit for a directory listing, including your name, studio name, location, website, bio, and photos, will be displayed publicly on this website if approved. By submitting a listing, you consent to this public display. You may request removal of your listing at any time by contacting us.</p>
         </div>
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Gallery Listings</h2>
-          <p>Information you submit for the Pottery Gallery — including your name, studio name, location, website, a description of your piece, and photos — will be displayed publicly on this website if your piece is selected. By submitting to the Gallery, you consent to this public display for the duration of the collection. You may contact us with questions about your submission or your displayed information at any time.</p>
+          <p>Information you submit for the Pottery Gallery, including your name, studio name, location, website, a description of your piece, and photos, will be displayed publicly on this website if your piece is selected. By submitting to the Gallery, you consent to this public display for the duration of the collection. You may contact us with questions about your submission or your displayed information at any time.</p>
         </div>
 
         <div>

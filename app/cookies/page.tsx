@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: "Cookie policy for The Pottery Post — how we use cookies on our website.",
+  description: "Cookie policy for The Pottery Post, how we use cookies on our website.",
   alternates: { canonical: "https://www.potterypost.ca/cookies" },
   robots: { index: false },
 };
@@ -34,7 +34,7 @@ export default function CookiesPage() {
 
             <div>
               <h3 className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>Analytics Cookies</h3>
-              <p>We may use analytics tools to understand how visitors interact with our site — which pages are visited most, how long visitors stay, and how they arrive. This information is collected in aggregate and is not used to identify individuals. You can opt out of analytics tracking through your browser settings or by using a browser extension that blocks tracking scripts.</p>
+              <p>We may use analytics tools to understand how visitors interact with our site, which pages are visited most, how long visitors stay, and how they arrive. This information is collected in aggregate and is not used to identify individuals. You can opt out of analytics tracking through your browser settings or by using a browser extension that blocks tracking scripts.</p>
             </div>
 
             <div>

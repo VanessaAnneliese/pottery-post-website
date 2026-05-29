@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import QuoteBlock from "@/components/QuoteBlock";
 
 export const metadata: Metadata = {
-  title: "Gallery Archive — Past Pottery Collections",
+  title: "Gallery Archive | Past Pottery Collections",
   description:
-    "Browse past Pottery Post gallery collections — a growing record of handmade pottery celebrated over the years. Every past collection is preserved here.",
+    "Browse past Pottery Post gallery collections, a growing record of handmade pottery celebrated over the years. Every past collection is preserved here.",
   alternates: { canonical: "https://www.potterypost.ca/gallery/archive" },
   openGraph: {
-    title: "Gallery Archive — Past Pottery Collections | Pottery Post",
+    title: "Gallery Archive | Past Pottery Collections | Pottery Post",
     description:
-      "Browse past Pottery Post gallery collections — a growing record of handmade pottery celebrated over the years.",
+      "Browse past Pottery Post gallery collections, a growing record of handmade pottery celebrated over the years.",
     url: "https://www.potterypost.ca/gallery/archive",
   },
 };
@@ -24,7 +24,7 @@ export default function ArchivePage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>The Archive</h1>
       <p className="mb-16 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        Every past gallery is preserved here — a growing record of the makers and pieces that have been part of Pottery Post.
+        Every past gallery is preserved here, a growing record of the makers and pieces that have been part of Pottery Post.
       </p>
       <div className="py-16 text-center border-t border-b" style={{ borderColor: "#E8D5B7" }}>
         <p className="text-lg font-bold mb-3" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>

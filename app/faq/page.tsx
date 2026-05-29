@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description:
-    "Answers to common questions about The Pottery Post — the directory, gallery, how to add or update a listing, submitting work to the gallery, and more.",
+    "Answers to common questions about The Pottery Post, the directory, gallery, how to add or update a listing, submitting work to the gallery, and more.",
   alternates: { canonical: "https://www.potterypost.ca/faq" },
   openGraph: {
     title: "Frequently Asked Questions | Pottery Post",
     description:
-      "Answers to common questions about The Pottery Post — the directory, gallery, listings, submissions, and more.",
+      "Answers to common questions about The Pottery Post, the directory, gallery, listings, submissions, and more.",
     url: "https://www.potterypost.ca/faq",
   },
 };
@@ -29,7 +29,7 @@ export default function FAQPage() {
           <div className="flex flex-col gap-8">
             <div>
               <h3 className="font-bold mb-2">What is the Pottery Post?</h3>
-              <p style={{ color: "#5C3D2E" }}>The Pottery Post is a home for people who love pottery — potters, guilds, pottery class providers, pottery supply shops, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, and a curated Pottery Gallery. Everything here is reviewed in person, made by hand, by real people.</p>
+              <p style={{ color: "#5C3D2E" }}>The Pottery Post is a home for people who love pottery: potters, guilds, pottery class providers, pottery supply shops, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, and a curated Pottery Gallery. Everything here is reviewed in person, made by hand, by real people.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">Where is the Pottery Post based?</h3>
@@ -60,7 +60,7 @@ export default function FAQPage() {
             </div>
             <div>
               <h3 className="font-bold mb-2">How long does it take for my listing to appear?</h3>
-              <p style={{ color: "#5C3D2E" }}>Every listing is reviewed and added by a real person. Please allow some time — we do our best to work through submissions promptly.</p>
+              <p style={{ color: "#5C3D2E" }}>Every listing is reviewed and added by a real person. Please allow some time, we do our best to work through submissions promptly.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">I&rsquo;m already listed but need to update my information. What do I do?</h3>
@@ -121,7 +121,7 @@ export default function FAQPage() {
           <div className="flex flex-col gap-8">
             <div>
               <h3 className="font-bold mb-2">Can my pottery supply shop be listed?</h3>
-              <p style={{ color: "#5C3D2E" }}>Yes. We list pottery supply shops — businesses that sell clay, glazes, tools, kilns, and related supplies to potters. Use the <a href="/directory/submit" className="underline" style={{ color: "#009999" }}>Add Your Listing</a> form and select &ldquo;Supply Shop&rdquo;.</p>
+              <p style={{ color: "#5C3D2E" }}>Yes. We list pottery supply shops: businesses that sell clay, glazes, tools, kilns, and related supplies to potters. Use the <a href="/directory/submit" className="underline" style={{ color: "#009999" }}>Add Your Listing</a> form and select &ldquo;Supply Shop&rdquo;.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">Does my shop need a physical location to be listed?</h3>
@@ -140,7 +140,7 @@ export default function FAQPage() {
           <div className="flex flex-col gap-8">
             <div>
               <h3 className="font-bold mb-2">What is the Pottery Gallery?</h3>
-              <p style={{ color: "#5C3D2E" }}>The Pottery Gallery is a curated collection of handmade pottery gathered with love. Each collection is selected by the Pottery Post team. Pieces are verified in person before going live — we only show the real thing.</p>
+              <p style={{ color: "#5C3D2E" }}>The Pottery Gallery is a curated collection of handmade pottery gathered with love. Each collection is selected by the Pottery Post team. Pieces are verified in person before going live, we only show the real thing.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">Are the pieces in the gallery for sale?</h3>
@@ -156,7 +156,7 @@ export default function FAQPage() {
             </div>
             <div>
               <h3 className="font-bold mb-2">What happens to pieces after the collection ends?</h3>
-              <p style={{ color: "#5C3D2E" }}>When submitting a piece, potters choose one of three options for what happens after the collection closes. <strong>Keep it with Pottery Post</strong> — the piece becomes part of a permanent collection, a gift to the Pottery Post and the community it&rsquo;s building. <strong>Donate it</strong> — the piece is passed on to a local pottery school, guild, or charity chosen by the Pottery Post, where it will continue to be loved and used. <strong>Arrange your own return</strong> — the potter coordinates pickup or return shipping at their own cost; the Pottery Post does not cover shipping fees. Whatever the choice, every past collection is preserved in The Archive on the gallery page.</p>
+              <p style={{ color: "#5C3D2E" }}>When submitting a piece, potters choose one of three options for what happens after the collection closes. <strong>Keep it with Pottery Post</strong>, the piece becomes part of a permanent collection, a gift to the Pottery Post and the community it&rsquo;s building. <strong>Donate it</strong>, the piece is passed on to a local pottery school, guild, or charity chosen by the Pottery Post, where it will continue to be loved and used. <strong>Arrange your own return</strong>, the potter coordinates pickup or return shipping at their own cost; the Pottery Post does not cover shipping fees. Whatever the choice, every past collection is preserved in The Archive on the gallery page.</p>
             </div>
           </div>
         </div>

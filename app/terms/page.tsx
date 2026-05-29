@@ -46,7 +46,7 @@ export default function TermsPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Gallery Pieces — Return, Damage & Liability</h2>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Gallery Pieces: Return, Damage & Liability</h2>
           <p className="mb-3">When a gallery collection closes, potters who have selected the &ldquo;Arrange your own return&rdquo; option are solely responsible for coordinating and covering all costs associated with return shipping or pickup. Pottery Post does not arrange, coordinate, or pay for return shipping under any circumstances.</p>
           <p className="mb-3">Pottery Post is not liable for any loss or damage that occurs during return shipping arranged by the potter. We strongly recommend that potters use a tracked, fully insured courier service for all return shipments and retain all shipping documentation.</p>
           <p className="mb-3">While pieces are in the care of Pottery Post, we take reasonable precautions to protect submitted work. However, Pottery Post is not liable for accidental damage, loss, or deterioration that may occur while a piece is in our possession, including during display, handling, storage, or transit arranged by us. By submitting a piece to the Gallery, potters acknowledge and accept this risk.</p>
@@ -55,7 +55,7 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Intellectual Property</h2>
-          <p>All content on this Site — including text, images, design, and the gallery collection — is owned by or licensed to Pottery Post and is protected by Canadian copyright law. You may not reproduce, distribute, or use any content from this Site without prior written permission, except as permitted by law.</p>
+          <p>All content on this Site, including text, images, design, and the gallery collection, is owned by or licensed to Pottery Post and is protected by Canadian copyright law. You may not reproduce, distribute, or use any content from this Site without prior written permission, except as permitted by law.</p>
           <p className="mt-3">Gallery pieces are presented for appreciation only and are not for sale. Images of gallery pieces may not be reproduced without express permission.</p>
         </div>
 

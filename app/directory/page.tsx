@@ -43,7 +43,7 @@ function NavButton({ label, active, onClick }: { label: string; active: boolean;
 function ProvinceSection({ province, country }: { province: string; country: Country }) {
   return (
     <h3 className="text-xs tracking-widest uppercase mt-10 mb-4 pb-2 border-b" style={{ color: "#9E8572", borderColor: "#E8D5B7", fontFamily: "system-ui, sans-serif", letterSpacing: "0.3em" }}>
-      {province} &mdash; {countryLabel(country)}
+      {province} &middot; {countryLabel(country)}
     </h3>
   );
 }
@@ -72,7 +72,7 @@ function PotterCard({ potter }: { potter: Potter }) {
     <div className="py-4 border-b" style={{ borderColor: "#E8D5B7" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{potter.name}{potter.studio ? ` — ${potter.studio}` : ""}</p>
+          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{potter.name}{potter.studio ? `, ${potter.studio}` : ""}</p>
           {potter.guild && <p className="text-xs mt-0.5" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>{potter.guild}</p>}
           <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{potter.city}, {potter.province}</p>
           {potter.offersClasses && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Offers Classes</p>}
@@ -246,7 +246,7 @@ function DirectoryContent() {
       item.province?.toLowerCase() ?? "",
       ...(extraTags ? [extraTags.toLowerCase()] : []),
     ];
-    // Every word must appear in at least one field — so "potter toronto" finds potters in Toronto
+    // Every word must appear in at least one field, so "potter toronto" finds potters in Toronto
     return words.every(word => fields.some(field => field.includes(word)));
   }
 
@@ -544,7 +544,7 @@ function DirectoryContent() {
     {selectedType === null && <QuoteBlock quote="Every name in this directory is a person who chose to make something with their hands. That choice deserves to be found." className="pb-24 md:pb-32" />}
     {selectedType === "guilds" && <QuoteBlock quote="A guild is where individual voices learn to make something larger than themselves." />}
     {selectedType === "classes" && <QuoteBlock quote="No one picks up clay for the first time and walks away unchanged." />}
-    {selectedType === "potters" && <QuoteBlock quote="What's made by hand is made twice — once in the mind, once in the world." />}
+    {selectedType === "potters" && <QuoteBlock quote="What's made by hand is made twice, once in the mind, once in the world." />}
     {selectedType === "suppliers" && <QuoteBlock quote="A supplier who understands pottery understands that what they offer will one day be held by a stranger, and loved." className="py-20 md:py-24" />}
     </>
   );

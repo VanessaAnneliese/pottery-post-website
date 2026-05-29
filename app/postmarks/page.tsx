@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import QuoteBlock from "@/components/QuoteBlock";
 
 export const metadata: Metadata = {
-  title: "Pottery Postmarks — The Pottery Travel Journal",
+  title: "Pottery Postmarks | The Pottery Travel Journal",
   description:
     "The Pottery Post's pottery travel journal. Top 25 pottery destinations, mapped road trip itineraries by region, The Pottery Traveler's Guide, and historical pottery heritage. Coming soon.",
   alternates: { canonical: "https://www.potterypost.ca/postmarks" },
   openGraph: {
-    title: "Pottery Postmarks — The Pottery Travel Journal | Pottery Post",
+    title: "Pottery Postmarks | The Pottery Travel Journal | Pottery Post",
     description:
-      "The Pottery Post's pottery travel journal — top destinations, road trip itineraries, the Pottery Traveler's Guide, and pottery history.",
+      "The Pottery Post's pottery travel journal, top destinations, road trip itineraries, the Pottery Traveler's Guide, and pottery history.",
     url: "https://www.potterypost.ca/postmarks",
   },
 };
@@ -19,25 +19,25 @@ const features = [
     label: "Travel Guide",
     title: "The Pottery Traveler's Guide",
     description:
-      "A curated guide to finding pottery wherever you go — the studios worth seeking out, the towns built around clay, the shops and galleries that make a detour worthwhile.",
+      "A curated guide to finding pottery wherever you go, the studios worth seeking out, the towns built around clay, the shops and galleries that make a detour worthwhile.",
   },
   {
     label: "Destinations",
     title: "Top 25 Pottery Destinations",
     description:
-      "From the pottery towns of North Carolina to the studio districts of Japan and the kiln trails of England — the places every pottery lover should visit at least once.",
+      "From the pottery towns of North Carolina to the studio districts of Japan and the kiln trails of England, the places every pottery lover should visit at least once.",
   },
   {
     label: "Road Trips",
     title: "Mapped Pottery Travel Itineraries",
     description:
-      "Full road trip routes planned around pottery — by region, by season, by what you're looking for. Studio visits, galleries, local potters, and the best places to stop along the way.",
+      "Full road trip routes planned around pottery, by region, by season, by what you're looking for. Studio visits, galleries, local potters, and the best places to stop along the way.",
   },
   {
     label: "History",
     title: "Historical Pottery & Heritage",
     description:
-      "The stories behind the clay — ancient traditions, family lineages, the towns where pottery never left, and the makers who kept something alive that the world could have easily lost.",
+      "The stories behind the clay, ancient traditions, family lineages, the towns where pottery never left, and the makers who kept something alive that the world could have easily lost.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function PostmarksPage() {
           Coming Soon
         </p>
         <p className="text-lg max-w-2xl mb-4" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-          Pottery Postmarks is The Pottery Post&rsquo;s pottery travel journal — a guide to discovering pottery out in the world. The places, the roads, the history, and the makers worth travelling for.
+          Pottery Postmarks is The Pottery Post&rsquo;s pottery travel journal, a guide to discovering pottery out in the world. The places, the roads, the history, and the makers worth travelling for.
         </p>
         <p className="max-w-2xl" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
           We&rsquo;re working on the first issues now. Here&rsquo;s what&rsquo;s coming.
@@ -100,7 +100,7 @@ export default function PostmarksPage() {
           Find Pottery Near You
         </h2>
         <p className="max-w-lg mb-6" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-          While Pottery Postmarks is being put together, the Pottery Directory is live — potters, guilds, classes, and supply shops across Canada, the United States, Europe, and Australia.
+          While Pottery Postmarks is being put together, the Pottery Directory is live, potters, guilds, classes, and supply shops across Canada, the United States, Europe, and Australia.
         </p>
         <a
           href="/directory"

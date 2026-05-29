@@ -3,12 +3,12 @@ import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
 
 export const metadata: Metadata = {
-  title: "Pottery Post — Directory, Gallery & Travel Journal for Pottery Lovers",
+  title: "Pottery Post | Directory, Gallery & Travel Journal for Pottery Lovers",
   description:
     "Discover potters, pottery guilds, classes, and supply shops across Canada, the US, Europe, and Australia. Plus a curated pottery gallery and the Pottery Postmarks travel journal.",
   alternates: { canonical: "https://www.potterypost.ca" },
   openGraph: {
-    title: "Pottery Post — Directory, Gallery & Travel Journal for Pottery Lovers",
+    title: "Pottery Post | Directory, Gallery & Travel Journal for Pottery Lovers",
     description:
       "Discover potters, pottery guilds, classes, and supply shops across Canada, the US, Europe, and Australia.",
     url: "https://www.potterypost.ca",
@@ -29,7 +29,7 @@ function PlaceholderPiece({ label }: { label: string }) {
 export default function Home() {
   return (
     <>
-      <h1 className="sr-only">Pottery Post — Pottery Directory, Gallery and Travel Journal for Makers and Admirers</h1>
+      <h1 className="sr-only">Pottery Post: Pottery Directory, Gallery and Travel Journal for Makers and Admirers</h1>
       <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="pt-24 md:pt-32 pb-12 md:pb-16" />
 
       {/* Directory CTA */}

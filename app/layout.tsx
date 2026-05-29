@@ -12,30 +12,30 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.potterypost.ca"),
   title: {
-    default: "Pottery Post — For Makers and Admirers",
+    default: "Pottery Post | For Makers and Admirers",
     template: "%s | Pottery Post",
   },
   description:
-    "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia — and a gallery that celebrates the pieces they make.",
+    "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia, and a gallery that celebrates the pieces they make.",
   openGraph: {
     type: "website",
     siteName: "Pottery Post",
-    title: "Pottery Post — For Makers and Admirers",
+    title: "Pottery Post | For Makers and Admirers",
     description:
-      "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia — and a gallery that celebrates the pieces they make.",
+      "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia, and a gallery that celebrates the pieces they make.",
     url: "https://www.potterypost.ca",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Pottery Post — For Makers and Admirers",
+        alt: "Pottery Post | For Makers and Admirers",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pottery Post — For Makers and Admirers",
+    title: "Pottery Post | For Makers and Admirers",
     description:
       "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia.",
     images: ["/og-image.jpg"],
@@ -62,7 +62,7 @@ const organizationSchema = {
   name: "Pottery Post",
   url: "https://www.potterypost.ca",
   description:
-    "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia — and a gallery that celebrates the pieces they make.",
+    "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia, and a gallery that celebrates the pieces they make.",
   email: "hello@potterypost.ca",
   address: {
     "@type": "PostalAddress",

@@ -66,7 +66,7 @@ export default function UpdateListingPage() {
 
       {status === "success" ? (
         <div className="py-12 text-center">
-          <p className="text-lg font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Thank you — your update has been received.</p>
+          <p className="text-lg font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Thank you, your update has been received.</p>
           <p style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>We&rsquo;ll review the changes and update your listing shortly.</p>
         </div>
       ) : (
@@ -120,7 +120,7 @@ export default function UpdateListingPage() {
               Short Bio (optional)
             </label>
             <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-              200 characters max — about 2 sentences describing your work or style.
+              200 characters max, about 2 sentences describing your work or style.
             </p>
             <textarea
               name="bio"
@@ -145,7 +145,7 @@ export default function UpdateListingPage() {
 
           <div className="flex flex-col gap-3">
             <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-              Photos of Your Work — optional, up to 2 images
+              Photos of Your Work, optional, up to 2 images
             </label>
             <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
               JPG or PNG, max 2MB each.
@@ -178,7 +178,7 @@ export default function UpdateListingPage() {
 
           {status === "error" && (
             <p className="text-sm" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
-              Something went wrong — please try again or email us at directory@potterypost.ca
+              Something went wrong, please try again or email us at directory@potterypost.ca
             </p>
           )}
 
