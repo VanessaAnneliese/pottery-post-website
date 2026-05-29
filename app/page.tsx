@@ -34,8 +34,8 @@ export default function Home() {
 
       {/* Directory CTA */}
       <section className="relative pt-16 md:pt-20 pb-12 md:pb-16 px-6 text-center" style={{ background: "#C9B99A" }}>
-        <div className="absolute inset-x-0 top-0 h-64 md:h-56 pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8, transparent)", zIndex: 0 }} />
-        <div className="absolute inset-x-0 bottom-0 h-64 md:h-56 pointer-events-none" style={{ background: "linear-gradient(to top, #F5F0E8, transparent)", zIndex: 0 }} />
+        <div className="absolute inset-x-0 top-0 h-64 md:h-96 pointer-events-none" style={{ background: "linear-gradient(to bottom, #F5F0E8, transparent)", zIndex: 0 }} />
+        <div className="absolute inset-x-0 bottom-0 h-64 md:h-96 pointer-events-none" style={{ background: "linear-gradient(to top, #F5F0E8, transparent)", zIndex: 0 }} />
         <div style={{ position: "relative", zIndex: 1 }}>
           <p className="text-xs tracking-widest uppercase mb-4" style={{ color: "#5C3D2E", letterSpacing: "0.4em", fontFamily: "system-ui, sans-serif" }}>
             Canada &middot; United States &middot; Europe &middot; Australia
