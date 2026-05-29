@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   return (
     <>
-    <QuoteBlock quote={<>There is a quiet<br className="md:hidden" /> in beautiful pottery<br className="md:hidden" /> that settles something inside you.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
+    <QuoteBlock quote={<>There is a quiet<br className="md:hidden" /> in beautiful pottery<br className="md:hidden" /> that settles something<br className="md:hidden" /> inside you.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured
