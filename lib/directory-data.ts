@@ -8443,6 +8443,540 @@ export const potters: Potter[] = [
     website: "https://connorclary.com",
     bio: "Largely self-taught potter Connor Clary makes handmade wheel-thrown functional wares for the home from his New Orleans studio, building a following of over 200,000 through his warm and process-driven social media presence.",
   },
+
+  // US — New York — Hudson Valley
+  {
+    name: "Tellefsen Atelier",
+    city: "Middletown",
+    province: "New York",
+    country: "US",
+    website: "https://tellefsenatelier.com",
+    bio: "Alexis Tellefsen produces small-batch, wheel-thrown ceramics in her Hudson Valley studio 70 miles north of Manhattan, with an earthy neutral palette and emphasis on the natural texture of clay. Tellefsen Atelier is a woman and Black-owned ceramic line sold worldwide.",
+  },
+  {
+    name: "Fisheye Ceramics",
+    city: "Catskill",
+    province: "New York",
+    country: "US",
+    website: "https://fisheyeceramics.com",
+    bio: "Kim Gilmour designs and creates organically shaped, modern handmade ceramic tableware at her studio in the village of Catskill in the Hudson Valley, with each piece either hand-built or thrown on the wheel and finished with food-safe glazes.",
+  },
+  {
+    name: "The Newburgh Pottery",
+    city: "Newburgh",
+    province: "New York",
+    country: "US",
+    website: "https://www.thenewburghpottery.com",
+    bio: "David and Jenny Moldover founded The Newburgh Pottery as a working ceramic studio in the Atlas Studios building, offering classes, memberships, and custom commissions while producing their own line of functional wares.",
+    offersClasses: true,
+  },
+
+  // US — New York — Rochester
+  {
+    name: "Richard Aerni",
+    city: "Rochester",
+    province: "New York",
+    country: "US",
+    website: "https://richardaerni.com",
+    bio: "Richard Aerni has been making his living in clay since 1979, producing single-fired, wood-ash glazed stoneware celebrated for its multi-hued surfaces and fluid forms from his Rochester studio, which he shares with collaborator Carolyn Dilcher Stutz.",
+  },
+
+  // US — New York — Long Island
+  {
+    name: "Femme Sole Ceramics",
+    city: "Mastic Beach",
+    province: "New York",
+    country: "US",
+    website: "https://www.femmesole.com",
+    bio: "Jessamyn Go is an Asian American ceramic artist and educator who creates handmade functional and sculptural pieces at her Long Island studio, offering pottery lessons and community clay workshops that blend artistry, design, and connection to nature.",
+    offersClasses: true,
+  },
+
+  // US — Pennsylvania — Philadelphia
+  {
+    name: "Teresa Chang Ceramics",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.teresachang.com",
+    bio: "Teresa Chang has hand-thrown fine porcelain dinnerware for over 25 years from her backyard studio in Philadelphia's Northern Liberties neighbourhood, creating minimalist forms inspired by early Japanese and Korean pottery with no applied decoration — every piece signed by her hand.",
+  },
+  {
+    name: "Wissahickon Pottery",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.wissahickonpottery.com",
+    bio: "Nick Corso runs a one-person pottery operation in the Roxborough neighbourhood of Philadelphia, digging his own clay from a Maryland mine, formulating his own glazes, and firing each piece in a gas kiln steps from Wissahickon Creek.",
+  },
+  {
+    name: "Neighborhood Potters",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.sandiandneil.com",
+    bio: "Sandi Pierantozzi and Neil Patterson have made functional studio pottery together in Philadelphia's Fairmount neighbourhood since 2000, with Sandi's hand-built textured work complementing Neil's wheel-thrown and altered forms.",
+    offersClasses: true,
+  },
+
+  // US — Pennsylvania — Pittsburgh
+  {
+    name: "Jowdy Studio",
+    city: "Pittsburgh",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.jowdystudio.com",
+    bio: "Andrew Jowdy Collins handcrafts high-fired porcelain ceramics at his Pittsburgh studio using self-mixed pigmented clays and glazes, creating marbled vases, landscape vessels, and midcentury-inspired bowls for clients including Fallingwater and the Andy Warhol Museum.",
+  },
+
+  // US — Pennsylvania — Rural PA
+  {
+    name: "Creek Road Pottery",
+    city: "Laceyville",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://creekroadpottery.com",
+    bio: "A small-batch ceramics studio tucked in the hills of Pennsylvania's Endless Mountains, producing handmade functional pottery in small runs, open by appointment and at select regional shows.",
+  },
+  {
+    name: "Wilz Pottery",
+    city: "Macungie",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.wilzpottery.com",
+    bio: "Denise Wilz has created Pennsylvania German redware using sgraffito and slipware techniques since 2002, working from a house built in the 1700s and teaching hands-on redware workshops across eastern Pennsylvania as a Master Artisan of the Pennsylvania Guild of Craftsmen.",
+    offersClasses: true,
+  },
+
+  // US — Massachusetts — Cape Cod
+  {
+    name: "Cove Lane Pottery",
+    city: "Cataumet",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://covelanepottery.com",
+    bio: "Deborah McCarty hand-throws and hand-builds functional and decorative stoneware at her Cape Cod studio, producing whimsical decorated pieces including children's sets, birthday mugs, and serving trays.",
+  },
+  {
+    name: "Wildflower Pottery Cape Cod",
+    city: "Brewster",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://wildflowerpotterycapecod.com",
+    bio: "Ruby Calderwood took over her father's Cape Cod studio in 2018 and developed an ocean-inspired style of functional stoneware, including signature oyster platters pressed with actual oyster shells from a local farm.",
+  },
+  {
+    name: "Morgan Marie Pottery",
+    city: "Falmouth",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.morganmariepottery.com",
+    bio: "Morgan DiNello is a Cape Cod ceramicist and former therapist who creates pottery centred on peace and groundedness, teaching at the Cotuit Center for the Arts and participating in the Cape Cod Potters Trail.",
+    offersClasses: true,
+  },
+
+  // US — Massachusetts — Western MA / Pioneer Valley
+  {
+    name: "Stonepool Pottery",
+    city: "Worthington",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.stonepoolpottery.com",
+    bio: "Mark Shapiro has made wood-fired stoneware in rural Western Massachusetts since 1986, producing around a hundred pots a week in a home studio and gallery that has become a hub of regional and national ceramic culture, with work inspired by early American stoneware traditions.",
+  },
+  {
+    name: "Steve Théberge Ceramics",
+    city: "Northampton",
+    province: "Massachusetts",
+    country: "US",
+    website: "http://www.stevetheberge.com",
+    bio: "Steve Théberge makes stoneware for daily service from his Northampton studio, drawing on years of Zen Buddhist training in the US and Japan and an apprenticeship with Mark Shapiro, with work shown at the Smithsonian Craft Show and the Philadelphia Museum of Art Craft Show.",
+  },
+  {
+    name: "Daniel Bellow Pottery",
+    city: "Great Barrington",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.danielbellow.com",
+    bio: "Daniel Bellow established his pottery in 2002 at an old dairy farm in Great Barrington, hand-throwing each piece of porcelain one at a time to produce a full line of kitchen, table, and garden wares represented in galleries nationwide.",
+  },
+
+  // US — Vermont
+  {
+    name: "Jeremy Ayers Pottery",
+    city: "Waterbury",
+    province: "Vermont",
+    country: "US",
+    website: "https://www.jeremyayerspottery.com",
+    bio: "Jeremy Ayers makes utilitarian pottery in a renovated 1870 carriage barn in Waterbury, Vermont — the same building his great-great-grandfather used to make wheels and sleighs — designing pieces to celebrate the joy of eating and drinking.",
+  },
+  {
+    name: "Harold Kaplan Pottery",
+    city: "Burlington",
+    province: "Vermont",
+    country: "US",
+    website: "https://www.haroldkaplanpottery.com",
+    bio: "For over 30 years, Harold Kaplan has made custom handmade pottery from his Burlington studio, selling at local farmers' markets and shipping nationwide, with interactive classes welcoming all experience levels.",
+    offersClasses: true,
+  },
+  {
+    name: "Laura White Pottery",
+    city: "Hartland",
+    province: "Vermont",
+    country: "US",
+    website: "https://www.lwpottery.com",
+    bio: "Laura White started her own pottery line in 2017 after apprenticing in Washington state and working as a production potter in Vermont, making every piece herself from earthy clay bodies finished in a clean white glaze at her Hartland studio.",
+  },
+
+  // US — Maine — Portland
+  {
+    name: "Julie Cunningham Ceramics",
+    city: "Portland",
+    province: "Maine",
+    country: "US",
+    website: "https://juliecunningham.art",
+    bio: "Julie Cunningham has worked with clay for over 30 years from her Portland studio, creating decorative earthenware surfaced with glaze and terra sigillata and teaching hand-building at Maine College of Art and Design and Portland Pottery.",
+    offersClasses: true,
+  },
+  {
+    name: "Elizabeth Benotti Ceramics",
+    city: "Eliot",
+    province: "Maine",
+    country: "US",
+    website: "https://elizabethbenotti.com",
+    bio: "Elizabeth Benotti builds every piece by hand — pinching, slip casting, or wheel throwing porcelain — at her Maine studio, creating simple modern work that carries the quiet evidence of touch, available online and by appointment at her Kittery showroom.",
+  },
+
+  // US — Maine — Midcoast
+  {
+    name: "Fireside Pottery",
+    city: "Warren",
+    province: "Maine",
+    country: "US",
+    website: "https://firesidepottery.com",
+    bio: "Nancy Button has made fine handcrafted porcelain at her midcoast Maine studio since 1973, primarily hand-building from textured slabs and high-firing to cone 11 in a gas-reduction kiln, with work shown at the Maine Potters Market.",
+  },
+  {
+    name: "Miki Glasser Ceramics",
+    city: "Lincolnville",
+    province: "Maine",
+    country: "US",
+    website: "https://www.mikiglasser.com",
+    bio: "Miki Glasser creates illustrated porcelain at her Lincolnville studio, engraving images into wet clay and inlaying cobalt glaze to produce distinctive functional vessels, alongside wood-fired work fired in a traditional anagama kiln in Swanville.",
+  },
+  {
+    name: "Sheepscot River Pottery",
+    city: "Edgecomb",
+    province: "Maine",
+    country: "US",
+    website: "https://sheepscotriverpottery.com",
+    bio: "Established in 1974, Sheepscot River Pottery is one of the last hand-thrown studios in Midcoast Maine, now a second-generation women-owned business producing its signature Maine Island pattern pottery hand-painted by a long-tenured team of artisans.",
+  },
+
+  // US — New Hampshire
+  {
+    name: "Mills & Zoldak Potters",
+    city: "Portsmouth",
+    province: "New Hampshire",
+    country: "US",
+    website: "https://www.sliptrail.com",
+    bio: "Maureen Mills and Steven Zoldak have made pottery together for over 25 years in Portsmouth, New Hampshire, their functional stoneware bridging Old World and contemporary traditions — with Steve's gas-fired glazed work paired with Maureen's atmospheric wood-fired surfaces.",
+    offersClasses: true,
+  },
+
+  // US — Rhode Island
+  {
+    name: "Three Wheel Studio",
+    city: "Providence",
+    province: "Rhode Island",
+    country: "US",
+    website: "https://www.threewheelstudio.com",
+    bio: "Dwo Wen Chen opened Three Wheel Studio in 2011 on Wickenden Street in Providence, making hand-thrown and sculpted ceramics on-site — including his Imprinted Wildflower series inspired by Rhode Island plants — in a working studio, gallery, and shop.",
+  },
+
+  // US — Maryland
+  {
+    name: "Quirk-n-Bach Pottery",
+    city: "Annapolis",
+    province: "Maryland",
+    country: "US",
+    website: "https://www.quirknbachpottery.com",
+    bio: "Kristin Quirk Clevenger and Cameron Bach have handmade functional stoneware at their Eastport studio in Annapolis for nearly 30 years, with all pieces made on-site and designs inspired by the Chesapeake Bay.",
+    offersClasses: true,
+  },
+  {
+    name: "Annapolis Pottery",
+    city: "Annapolis",
+    province: "Maryland",
+    country: "US",
+    website: "https://annapolispottery.com",
+    bio: "Established in 1969 on State Circle in historic Annapolis, this working production pottery hand-throws and casts functional pieces — including signature Blue Crab dishes cast from actual crabs — and carries work by dozens of other North American artists.",
+  },
+
+  // US — Delaware
+  {
+    name: "Pottery Mason",
+    city: "Rehoboth Beach",
+    province: "Delaware",
+    country: "US",
+    website: "https://www.potterymason.com",
+    bio: "Audrey Mason creates small-batch handcrafted ceramics inspired by ocean waves and salt air at her Rehoboth Beach studio, making functional microwave- and dishwasher-safe pottery and offering introductory wheel-throwing workshops.",
+    offersClasses: true,
+  },
+
+  // US — New Jersey
+  {
+    name: "Jean Ceramics",
+    city: "Hillsborough",
+    province: "New Jersey",
+    country: "US",
+    website: "https://jean-ceramics.com",
+    bio: "Sela Stazzone named her Hillsborough pottery studio after her great-grandmother Jean, creating handmade functional pottery and running a full-service community studio offering wheel-throwing classes, memberships, workshops, and private parties.",
+    offersClasses: true,
+  },
+  // Ohio — Dublin (Columbus area)
+  {
+    name: "Frederich Pottery",
+    city: "Dublin",
+    province: "Ohio",
+    country: "US",
+    website: "https://frederichpottery.com",
+    bio: "Tim Frederich has spent over four decades crafting high-fired stoneware and ceramic sculpture from his Dublin, Ohio studio, combining elegant simplicity with technical mastery across gas, wood, and electric kiln work.",
+  },
+  // Ohio — Groveport (Columbus area)
+  {
+    name: "LangWeil Studio Pottery",
+    city: "Groveport",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.langweilstudiopottery.com",
+    bio: "Sandra Lang and Walter Weil create fanciful handmade mugs, decorative clay vessels, and wood-fired and raku pieces from their studio in Groveport, Ohio; Sandra has supported herself solely through ceramics since her 1983 Columbus College of Art & Design graduation.",
+    offersClasses: true,
+  },
+  // Ohio — Lakewood (Cleveland area)
+  {
+    name: "Gina DeSantis Ceramics",
+    city: "Lakewood",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.ginadesantisceramics.com",
+    bio: "MFA potter Gina DeSantis has made handmade functional stoneware for the home and table from her Lakewood, Ohio studio since 2013, earning a national following through retailers including Anthropologie, Uncommon Goods, and Shoppe Amber Interiors.",
+    offersClasses: true,
+  },
+  // Ohio — Cleveland
+  {
+    name: "Billy Ritter 77",
+    city: "Cleveland",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.billyritter77.com",
+    bio: "BFA and MFA-trained potter Billy Ritter creates atmospherically fired heirloom ceramics from his studio in Cleveland's historic Hildebrandt Provisions Building, hand-building and wheel-throwing each piece while mixing his own clay bodies and glazes.",
+  },
+  // Ohio — Dayton
+  {
+    name: "Alison Fawcett Pottery",
+    city: "Dayton",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.afawcettpottery.com",
+    bio: "Ohio University BFA graduate Alison Fawcett draws, carves, and forms porcelain into fine art and functional ceramics from her Dayton home studio, with patterns drawn from plant and food growth that celebrate the ritual of a meal.",
+    offersClasses: true,
+  },
+  // Ohio — Yellow Springs
+  {
+    name: "Miami Valley Pottery",
+    city: "Yellow Springs",
+    province: "Ohio",
+    country: "US",
+    website: "http://mvpottery.com",
+    bio: "Naysan McIlhargey fires handmade functional pottery in Ohio's largest wood kiln — a 450-cubic-foot Anagama — twice a year from his Yellow Springs studio, leaving pieces unglazed so wood ash creates the unique, unpredictable surface color.",
+  },
+  // Ohio — Cincinnati
+  {
+    name: "SKT Ceramics",
+    city: "Cincinnati",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.sktceramics.com",
+    bio: "Founded by Susannah Tisue during a residency at Greenwich House Pottery in Manhattan, SKT Ceramics crafts high-fired porcelain tableware adorned with original wildlife and landscape illustrations from its studio in Cincinnati's Walnut Hills neighborhood.",
+  },
+  // Michigan — Grand Rapids
+  {
+    name: "AWK Clayworks",
+    city: "Grand Rapids",
+    province: "Michigan",
+    country: "US",
+    website: "https://awkclay.com",
+    bio: "Alyssa Westenbroek-Koster has made contemporary functional ceramics in Grand Rapids since 2008, using the mishima technique — hand-carving designs into clay and staining the grooves with blue-black underglaze — to produce her signature tableware.",
+  },
+  {
+    name: "Kate Lewis Ceramics",
+    city: "Grand Rapids",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.katelewisceramics.com",
+    bio: "Michigan State University BFA graduate Kate Lewis creates sculptural and functional pottery from her Grand Rapids home studio, having taught ceramics in community settings for over a decade before focusing full time on making and exhibiting her work.",
+    offersClasses: true,
+  },
+  // Michigan — Leland (Leelanau County)
+  {
+    name: "Maier Ceramics",
+    city: "Leland",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.maierceramics.com",
+    bio: "Benjamin Maier has handcrafted contemporary wood- and soda-fired tableware and decorative ceramics from his Leelanau County studio since 2003, selling from a dedicated downtown Leland gallery and working with designers and restaurants nationwide.",
+  },
+  // Michigan — East Jordan (Northern Michigan)
+  {
+    name: "Otis Pottery",
+    city: "East Jordan",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.otispottery.net",
+    bio: "Founded by David and June Otis in 1988 with 40 years of German-trained artistry, Otis Pottery is now a family studio where son Andrew creates large-scale sculptural vessels alongside functional dinnerware fired in wood, gas, and electric kilns.",
+  },
+  // Michigan — Milan (Southeast Michigan)
+  {
+    name: "One Acre Ceramics",
+    city: "Milan",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.oneacreceramics.com",
+    bio: "Sarah and Thomas Gelsanliter hand-craft luminous stoneware pottery and carved tiles from their southeastern Michigan studio — Sarah throwing vessels on the wheel and Thomas hand-carving all designs — informed by Asian art and Arts and Crafts traditions.",
+  },
+  // Illinois — Chicago
+  {
+    name: "Monsoon Pottery",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://monsoonpottery.com",
+    bio: "Former software engineer Danielle Chutinthranond makes hand-carved porcelain tableware inspired by Asian art history and blue-and-white ceramics from her Chicago West Town studio, with each piece freehand-carved and filled with blue pigmented slip.",
+    offersClasses: true,
+  },
+  // Illinois — Springfield
+  {
+    name: "Ceramics Made by Rosie",
+    city: "Springfield",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.ceramicsmadebyrosie.com",
+    bio: "British potter Rosie Gale produces wheel-thrown and slip-cast functional ceramics including mugs, bowls, and planters from her small Springfield, Illinois studio, selling at local markets and taking custom orders for dinnerware and wedding gifts.",
+  },
+  // Wisconsin — Madison
+  {
+    name: "John Hunter Pottery",
+    city: "Madison",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://johnhunterpottery.com",
+    bio: "After 54 years of potting and training at Penland School of Crafts with Cynthia Bringle, John Hunter handcrafts functional, Asian-influenced stoneware in wood and gas soda kilns from his Madison studio, giving workshops internationally.",
+    offersClasses: true,
+  },
+  // Wisconsin — Arena (Madison area)
+  {
+    name: "Andrew Linderman Pottery",
+    city: "Arena",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.lindermanpottery.com",
+    bio: "Former chemistry teacher Andrew Linderman makes handcrafted functional ceramics with wood-fired surfaces from his studio west of Madison, using his science background to develop distinctive glaze effects and teaching workshops nationally.",
+    offersClasses: true,
+  },
+  // Wisconsin — Milwaukee
+  {
+    name: "Wendy Artman Pottery",
+    city: "Milwaukee",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.wapottery.com",
+    bio: "Milwaukee potter Wendy Artman creates one-of-a-kind handmade ceramics with food-safe glazes from her studio at the Milwaukee Potters Guild and her home annex, known for her love of texture, color, and tiny bird motifs.",
+  },
+  // Wisconsin — Lake Mills
+  {
+    name: "Ephraim Pottery",
+    city: "Lake Mills",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://ephraimpottery.com",
+    bio: "Founded by Kevin Hicks in 1996, Ephraim Pottery hand-throws and sculpts limited-edition collectible art pottery in the American Arts and Crafts tradition, with nature-inspired forms and richly layered matte glazes produced by a team of artists in Lake Mills, Wisconsin.",
+  },
+  // Minnesota — Duluth
+  {
+    name: "Duluth Pottery",
+    city: "Duluth",
+    province: "Minnesota",
+    country: "US",
+    website: "https://www.duluthpottery.com",
+    bio: "MFA ceramicist Karin Kraemer practises maiolica — a rare in-glaze, hand-painted tin-glaze technique — creating functional pots and tiles that capture the color and movement of her northern Minnesota surroundings from her Lincoln Park Crafts District gallery.",
+  },
+  // Minnesota — Hopkins (Minneapolis metro)
+  {
+    name: "CeramicSow",
+    city: "Hopkins",
+    province: "Minnesota",
+    country: "US",
+    website: "https://ceramicsow.com",
+    bio: "Senegalese-born ceramicist Adama Sow, a Fine Art School of Dakar graduate, blends African traditional pottery and sculpture with a contemporary aesthetic from his Hopkins, Minnesota studio, teaching wheel throwing, hand building, and sculpture.",
+    offersClasses: true,
+  },
+  // Indiana — New Carlisle (Northwest Indiana)
+  {
+    name: "BlackTree Studio Pottery",
+    city: "New Carlisle",
+    province: "Indiana",
+    country: "US",
+    website: "https://www.blacktreestudio.com",
+    bio: "School of the Art Institute of Chicago-trained artists Steven and Louise Belmont-Skinner make one-of-a-kind sculptural and functional stoneware and porcelain pottery from their five-acre rural studio in New Carlisle, Indiana, opened in 2008.",
+  },
+  // Missouri — Kansas City
+  {
+    name: "Micheal Smith Pottery",
+    city: "Kansas City",
+    province: "Missouri",
+    country: "US",
+    website: "https://www.mlspottery.com",
+    bio: "After a four-year apprenticeship, Micheal Smith became a nationally known production potter in Kansas City, crafting meticulously made functional pottery with lush glazes and graceful forms designed for everyday pleasure.",
+  },
+  // Missouri — Rocheport
+  {
+    name: "Shirahaze Gallery",
+    city: "Rocheport",
+    province: "Missouri",
+    country: "US",
+    website: "https://shirahaze.com",
+    bio: "Osaka-born ceramicist Yukari Kashihara, who earned her MFA from the University of Missouri-Columbia, creates nature-inspired pottery including her signature bird-handle mugs and hand-painted vessels from her studio and gallery in historic Rocheport, Missouri.",
+  },
+  // Kansas — Wichita
+  {
+    name: "Troy Becker Pottery",
+    city: "Wichita",
+    province: "Kansas",
+    country: "US",
+    website: "https://www.troybeckerpottery.com",
+    bio: "Wichita State University BFA ceramicist Troy Becker makes unique utilitarian high-fire cone 10 stoneware from his Wichita studio and serves as Head of Ceramics at Mark Arts, producing both artistic hand-built forms and finely crafted thrown pottery.",
+    offersClasses: true,
+  },
+  // Nebraska — Lincoln
+  {
+    name: "Casey Beck Pottery",
+    city: "Lincoln",
+    province: "Nebraska",
+    country: "US",
+    website: "https://www.beckpots.com",
+    bio: "University of Nebraska MFA graduate Casey Beck focuses on soda firing — using sodium carbonate volatilized inside the kiln to glaze his wares — and was named a 2023 Ceramics Monthly Emerging Artist, with residencies in Virginia and Italy.",
+  },
+  // Nebraska — Elkhorn (Omaha metro)
+  {
+    name: "Kimba's Touch Pottery",
+    city: "Elkhorn",
+    province: "Nebraska",
+    country: "US",
+    website: "https://kimbastouchpottery.co",
+    bio: "Mostly self-taught potter Kimba Hawks, who studied with a master potter in England, has run Kimba's Touch Pottery in Elkhorn, Nebraska since 2013, offering a fully equipped studio, art gallery, and pottery classes for students aged 12 and up.",
+    offersClasses: true,
+  },
 ];
 
 export const suppliers: Supplier[] = [
