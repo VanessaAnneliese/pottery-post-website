@@ -426,6 +426,7 @@ function DirectoryContent() {
 
       {/* Row 1: Type filter */}
       <div className="flex flex-wrap gap-2 mb-4 mt-3 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+        <NavButton label="All" active={selectedType === null} onClick={() => { setSelectedType(null); setSelectedProvince(null); setSelectedLetter(null); }} />
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
         <NavButton label="Classes" active={selectedType === "classes"} onClick={() => handleTypeClick("classes")} />
