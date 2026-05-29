@@ -45,7 +45,7 @@ export default function PostmarksPage() {
   return (
     <>
       <QuoteBlock
-        quote={<>The best pottery finds you when you&rsquo;re already somewhere beautiful.<br className="hidden md:block" /> Going looking is even better.</>}
+        quote={<>The best pottery finds you<br className="md:hidden" /> when you&rsquo;re already somewhere beautiful.<br className="hidden md:block" /> Going looking is<br className="md:hidden" /> even better.</>}
         className="pt-24 md:pt-32 pb-12 md:pb-16"
       />
 
