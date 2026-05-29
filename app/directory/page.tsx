@@ -594,7 +594,7 @@ function DirectoryContent() {
         </>
       )}
     </section>
-    {selectedType === null && <QuoteBlock quote={<>Every name in this directory is a person who chose to make something with their hands.<br className="md:hidden" /> That choice deserves to be found.</>} className="pb-24 md:pb-32" />}
+    {selectedType === null && <QuoteBlock quote={<>Every name in this directory is a person who chose to make something with their hands.<br className="md:hidden" /> That choice deserves to<br className="md:hidden" /> be found.</>} className="pb-24 md:pb-32" />}
     {selectedType === "guilds" && <QuoteBlock quote="A guild is where individual voices learn to make something larger than themselves." />}
     {selectedType === "classes" && <QuoteBlock quote="No one picks up clay for the first time and walks away unchanged." />}
     {selectedType === "potters" && <QuoteBlock quote="What's made by hand is made twice, once in the mind, once in the world." />}
