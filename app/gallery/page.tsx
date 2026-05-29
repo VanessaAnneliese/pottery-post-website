@@ -82,7 +82,7 @@ export default function GalleryPage() {
         View past galleries
       </Link>
     </section>
-    <QuoteBlock quote={<>Well-made pottery<br className="md:hidden" /> stops you. You<br className="md:hidden" /> don&rsquo;t know why.<br className="md:hidden" /> You just can&rsquo;t look away.</>} />
+    <QuoteBlock quote={<>Well-made pottery<br className="md:hidden" /> stops you. You<br className="md:hidden" /> don&rsquo;t know why.<br className="md:hidden" /> You just can&rsquo;t<br className="md:hidden" /> look away.</>} />
     </>
   );
 }
