@@ -40,11 +40,31 @@ function NavButton({ label, active, onClick }: { label: string; active: boolean;
   );
 }
 
+function groupByCity<T extends { city: string }>(items: T[]): { city: string; items: T[] }[] {
+  const map = new Map<string, T[]>();
+  for (const item of items) {
+    const city = item.city || "Other";
+    if (!map.has(city)) map.set(city, []);
+    map.get(city)!.push(item);
+  }
+  return Array.from(map.entries())
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([city, cityItems]) => ({ city, items: cityItems }));
+}
+
 function ProvinceSection({ province, country }: { province: string; country: Country }) {
   return (
     <h3 className="text-xs tracking-widest uppercase mt-10 mb-4 pb-2 border-b" style={{ color: "#9E8572", borderColor: "#E8D5B7", fontFamily: "system-ui, sans-serif", letterSpacing: "0.3em" }}>
       {province} &middot; {countryLabel(country)}
     </h3>
+  );
+}
+
+function CitySection({ city }: { city: string }) {
+  return (
+    <h4 className="text-xs tracking-widest uppercase mt-6 mb-2" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif", letterSpacing: "0.2em" }}>
+      {city}
+    </h4>
   );
 }
 
@@ -160,36 +180,56 @@ function RegionBlock({
       {regionGuilds.map(({ province, country, items }) => (
         <div key={province}>
           <ProvinceSection province={province} country={country} />
-          {items.map((guild) => <GuildCard key={guild.name} guild={guild} />)}
+          {groupByCity(items).map(({ city, items: cityItems }) => (
+            <div key={city}>
+              <CitySection city={city} />
+              {cityItems.map((guild) => <GuildCard key={guild.name} guild={guild} />)}
+            </div>
+          ))}
         </div>
       ))}
       {regionPotters.map(({ province, country, items }) => (
         <div key={province}>
           <ProvinceSection province={province} country={country} />
-          {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+          {groupByCity(items).map(({ city, items: cityItems }) => (
+            <div key={city}>
+              <CitySection city={city} />
+              {cityItems.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+            </div>
+          ))}
         </div>
       ))}
       {regionClassPotters.map(({ province, country, items }) => (
         <div key={`class-potter-${province}`}>
           <ProvinceSection province={province} country={country} />
-          {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+          {groupByCity(items).map(({ city, items: cityItems }) => (
+            <div key={city}>
+              <CitySection city={city} />
+              {cityItems.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+            </div>
+          ))}
         </div>
       ))}
       {regionTeachingStudios.map(({ province, country, items }) => (
         <div key={`studio-${province}`}>
-          {(regionGuilds.length > 0 || regionPotters.length > 0 || regionClassPotters.length > 0) && (
-            <ProvinceSection province={province} country={country} />
-          )}
-          {!(regionGuilds.length > 0 || regionPotters.length > 0 || regionClassPotters.length > 0) && (
-            <ProvinceSection province={province} country={country} />
-          )}
-          {items.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+          <ProvinceSection province={province} country={country} />
+          {groupByCity(items).map(({ city, items: cityItems }) => (
+            <div key={city}>
+              <CitySection city={city} />
+              {cityItems.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+            </div>
+          ))}
         </div>
       ))}
       {regionSuppliers.map(({ province, country, items }) => (
         <div key={province}>
           <ProvinceSection province={province} country={country} />
-          {items.map((supplier) => <SupplierCard key={supplier.name} supplier={supplier} />)}
+          {groupByCity(items).map(({ city, items: cityItems }) => (
+            <div key={city}>
+              <CitySection city={city} />
+              {cityItems.map((supplier) => <SupplierCard key={supplier.name} supplier={supplier} />)}
+            </div>
+          ))}
         </div>
       ))}
     </div>
@@ -464,8 +504,13 @@ function DirectoryContent() {
               <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Guilds</h2>
               {guildsByProvince.map(({ province, country, items }) => (
                 <div key={province}>
-                  <ProvinceSection province={province} country={country} />
-                  {items.map((guild) => <GuildCard key={guild.name} guild={guild} />)}
+                  {!selectedProvince && <ProvinceSection province={province} country={country} />}
+                  {groupByCity(items).map(({ city, items: cityItems }) => (
+                    <div key={city}>
+                      <CitySection city={city} />
+                      {cityItems.map((guild) => <GuildCard key={guild.name} guild={guild} />)}
+                    </div>
+                  ))}
                 </div>
               ))}
             </>
@@ -475,8 +520,13 @@ function DirectoryContent() {
               <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters</h2>
               {pottersByProvince.map(({ province, country, items }) => (
                 <div key={province}>
-                  <ProvinceSection province={province} country={country} />
-                  {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+                  {!selectedProvince && <ProvinceSection province={province} country={country} />}
+                  {groupByCity(items).map(({ city, items: cityItems }) => (
+                    <div key={city}>
+                      <CitySection city={city} />
+                      {cityItems.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+                    </div>
+                  ))}
                 </div>
               ))}
             </>
@@ -488,8 +538,13 @@ function DirectoryContent() {
                   <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters Offering Classes</h2>
                   {classPottersByProvince.map(({ province, country, items }) => (
                     <div key={province}>
-                      <ProvinceSection province={province} country={country} />
-                      {items.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+                      {!selectedProvince && <ProvinceSection province={province} country={country} />}
+                      {groupByCity(items).map(({ city, items: cityItems }) => (
+                        <div key={city}>
+                          <CitySection city={city} />
+                          {cityItems.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+                        </div>
+                      ))}
                     </div>
                   ))}
                 </>
@@ -499,8 +554,13 @@ function DirectoryContent() {
                   <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Pottery Classes</h2>
                   {teachingStudiosByProvince.map(({ province, country, items }) => (
                     <div key={province}>
-                      <ProvinceSection province={province} country={country} />
-                      {items.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+                      {!selectedProvince && <ProvinceSection province={province} country={country} />}
+                      {groupByCity(items).map(({ city, items: cityItems }) => (
+                        <div key={city}>
+                          <CitySection city={city} />
+                          {cityItems.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+                        </div>
+                      ))}
                     </div>
                   ))}
                 </>
@@ -515,8 +575,13 @@ function DirectoryContent() {
               <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Supply Shops</h2>
               {suppliersByProvince.map(({ province, country, items }) => (
                 <div key={province}>
-                  <ProvinceSection province={province} country={country} />
-                  {items.map((supplier) => <SupplierCard key={supplier.name} supplier={supplier} />)}
+                  {!selectedProvince && <ProvinceSection province={province} country={country} />}
+                  {groupByCity(items).map(({ city, items: cityItems }) => (
+                    <div key={city}>
+                      <CitySection city={city} />
+                      {cityItems.map((supplier) => <SupplierCard key={supplier.name} supplier={supplier} />)}
+                    </div>
+                  ))}
                 </div>
               ))}
             </>
