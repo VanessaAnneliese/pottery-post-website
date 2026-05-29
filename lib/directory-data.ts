@@ -8977,6 +8977,367 @@ export const potters: Potter[] = [
     bio: "Mostly self-taught potter Kimba Hawks, who studied with a master potter in England, has run Kimba's Touch Pottery in Elkhorn, Nebraska since 2013, offering a fully equipped studio, art gallery, and pottery classes for students aged 12 and up.",
     offersClasses: true,
   },
+
+  // EU — Sweden
+  {
+    name: "Imse Studios",
+    city: "Stockholm",
+    province: "Sweden",
+    country: "EU",
+    website: "https://imsestudios.com",
+    bio: "Evelina Hedberg founded Imse Studios in Stockholm in 2019, creating hand-thrown ceramics and abstract paintings from her studio at Frejgatan 44, offering individual and group workshops alongside commissions for companies and restaurants.",
+    offersClasses: true,
+  },
+  {
+    name: "Sabina Morin Studio",
+    city: "Malmö",
+    province: "Sweden",
+    country: "EU",
+    website: "https://sabinamorinstudio.com",
+    bio: "Sabina Morin is a Malmö-based ceramic artist who hand-shapes utilitarian and sculptural stoneware pieces inspired by the landscape's organic colours, offering ceramic courses from her studio on Föreningsgatan in central Malmö.",
+    offersClasses: true,
+  },
+  {
+    name: "AEO Studio",
+    city: "Gothenburg",
+    province: "Sweden",
+    country: "EU",
+    website: "https://www.aeo-studio.com",
+    bio: "Anna Elzer Oscarson creates sculptural porcelain under her AEO label in Gothenburg, combining digital craft processes with traditional making; her collections Dusty Diamonds and Dancing Dune have earned the Swedish Design Award and international acclaim.",
+  },
+  {
+    name: "Joakim Ojanen",
+    city: "Stockholm",
+    province: "Sweden",
+    country: "EU",
+    website: "https://www.artsy.net/artist/joakim-ojanen",
+    bio: "Stockholm-based ceramic artist Joakim Ojanen creates expressive figurative sculptures—wobbling creatures balancing between animals, clowns, and childhood memory—from his studio in Bredäng, represented internationally by Richard Heller Gallery.",
+  },
+  {
+    name: "Moja Keramik",
+    city: "Gothenburg",
+    province: "Sweden",
+    country: "EU",
+    website: "https://mojakeramik.se",
+    bio: "Located in the Majorna neighbourhood of Gothenburg, Moja Keramikstudio offers pottery-wheel classes, handbuilding workshops, ceramic-painting sessions, and studio memberships from a dedicated individual ceramist.",
+    offersClasses: true,
+  },
+
+  // EU — Denmark
+  {
+    name: "Studio Arhoj",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://arhoj.com",
+    bio: "Anders Arhoj founded Studio Arhoj in Copenhagen in 2013, blending Scandinavian and Japanese aesthetics in hand-thrown Ghost figurines, bowls, and cups made by a close-knit team of potters in their downtown production space.",
+  },
+  {
+    name: "Keramiker Inge Vincents",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://vincents.dk",
+    bio: "Inge Vincents crafts paper-thin translucent porcelain thinware from her studio-shop on Jægersborggade in Nørrebro, Copenhagen, her all-white objects occupying the space between craft and fine art and earning recognition at Korean and Japanese ceramics festivals.",
+  },
+  {
+    name: "Mette Duedahl",
+    city: "Listed, Bornholm",
+    province: "Denmark",
+    country: "EU",
+    website: "https://metteduedahl.com",
+    bio: "Mette Duedahl is a Danish potter whose Bornholm studio in Listed produces handmade functional ceramics—cups, vases, and bowls—that pay tribute to everyday needs while drawing their colours and surfaces from the raw Nordic landscape of the island.",
+  },
+  {
+    name: "Oh Oak",
+    city: "Nexø, Bornholm",
+    province: "Denmark",
+    country: "EU",
+    website: "https://www.ohoak.com",
+    bio: "Sarah Oakman makes handmade ceramics for everyday use in her studio in Nexø on Bornholm, drawing on Nordic nature and Japanese tea culture; her work has appeared on tables at Michelin-starred restaurants including KOKS in the Faroe Islands.",
+  },
+
+  // EU — Norway
+  {
+    name: "Arne Åse",
+    city: "Oslo",
+    province: "Norway",
+    country: "EU",
+    website: "https://www.arneaase.com",
+    bio: "Arne Åse is one of Norway's most celebrated ceramic artists and was the country's first professor of ceramics, known internationally for his systematic exploration of high-fired glazes and pioneering use of porcelain.",
+  },
+  {
+    name: "Torbjørn Kvasbø",
+    city: "Venabygd",
+    province: "Norway",
+    country: "EU",
+    website: "https://kvasbo.com",
+    bio: "Torbjørn Kvasbø is widely regarded as one of the most significant figures in contemporary ceramics, working from his studio in Venabygd, Norway; his large-scale expressionist vessels are held in permanent collections at the National Museum Oslo, Nationalmuseum Stockholm, and Designmuseum Danmark.",
+  },
+  {
+    name: "Daniela Bergschneider",
+    city: "Bergen",
+    province: "Norway",
+    country: "EU",
+    website: "https://daniela-bergschneider.com",
+    bio: "Bergen-based artist Daniela Bergschneider creates sculptural porcelain works where ceramic modules are tied into hand-dyed nylon fabric, exploring what she calls Visual Tactility; her work is held in the National Museum Oslo, KODE Museum Bergen, and the Equinor Art Collection.",
+  },
+
+  // EU — Finland
+  {
+    name: "TOTUS Ceramics",
+    city: "Helsinki",
+    province: "Finland",
+    country: "EU",
+    website: "https://www.totus.art",
+    bio: "Jelena Mohnani founded TOTUS Ceramics in Helsinki as a self-taught ceramist, hand-building porcelain pieces shaped by Nordic design and a personal journey of recovery; she sells from her studio and online shop.",
+  },
+  {
+    name: "Erna Aaltonen",
+    city: "Fiskars",
+    province: "Finland",
+    country: "EU",
+    website: "https://ernaaaltonen.weebly.com",
+    bio: "Finnish ceramist Erna Aaltonen has worked from her studio in the artist village of Fiskars since 1996, hand-building distinctive round vessels and sculptural forms using ribbon-coil construction and layered slip surfaces that have earned her international recognition.",
+  },
+  {
+    name: "Orava Studio",
+    city: "Finnish Countryside",
+    province: "Finland",
+    country: "EU",
+    website: "https://oravastudio.com",
+    bio: "Janine Gerber Moser creates handcrafted ceramic pieces and paintings from her rustic farmstead in the Finnish countryside, shaping functional wares in spotted clay with milk-white glazes inspired by the quiet of her Nordic surroundings.",
+  },
+  {
+    name: "Tuias Ceramics",
+    city: "Hyvinkää",
+    province: "Finland",
+    country: "EU",
+    website: "https://tuias.fi",
+    bio: "Founded by Tuija Koponen in 2009, Tuias is a Hyvinkää studio making wheel-thrown and hand-built Finnish ceramics, certified with the Key Flag mark for domestic production and offering workshops from a working studio in the Kytäjä countryside.",
+    offersClasses: true,
+  },
+
+  // EU — Estonia
+  {
+    name: "Klementi Art & Craft",
+    city: "Tallinn",
+    province: "Estonia",
+    country: "EU",
+    website: "https://klementiart.com",
+    bio: "Kristjan Klementi is a self-taught Tallinn potter who began throwing clay in his home studio in 2018, making precise functional stoneware—lidded jars, teapots, and vessels—in Spanish black stoneware with meticulous attention to fit, pour, and finish.",
+  },
+  {
+    name: "Nüüd Ceramics",
+    city: "Tallinn",
+    province: "Estonia",
+    country: "EU",
+    website: "https://nuudceramics.com",
+    bio: "Mariana Laan, a graduate of the Estonian Academy of Arts, designs and hand-produces Nüüd Ceramics in her Tallinn studio, creating geometric designer tableware, sculptures, and installations that combine porcelain with concrete, glass, and natural stone.",
+  },
+  {
+    name: "MinuSadam",
+    city: "Tallinn",
+    province: "Estonia",
+    country: "EU",
+    website: "https://minusadam.com",
+    bio: "Ly Tiido runs MinuSadam, a boutique pottery studio and crafts shop in Tallinn offering a curated selection of handmade ceramics alongside hands-on pottery workshops in a welcoming creative space.",
+    offersClasses: true,
+  },
+
+  // EU — Latvia
+  {
+    name: "Beate Snuka Studio",
+    city: "Riga",
+    province: "Latvia",
+    country: "EU",
+    website: "https://beatesnuka.com",
+    bio: "Riga-based designer Beate Snuka creates contemporary ceramics and design objects in collaboration with Latvian ceramic workshops, most notably her Ceramic Network series—black Latgalian pottery, red ceramics, and white porcelain—commissioned for acclaimed Riga restaurants.",
+  },
+
+  // EU — Lithuania
+  {
+    name: "Agne Semberaite",
+    city: "Vilnius",
+    province: "Lithuania",
+    country: "EU",
+    website: "https://www.artagne.com",
+    bio: "Agnė Šemberaitė has worked as a Vilnius ceramic artist since 1994, combining graphic mark-making with three-dimensional forms inhabited by hybrid human-animal characters; she served as art director of the 8th Vilnius Ceramics Art Biennial in 2024.",
+  },
+
+  // EU — Hungary
+  {
+    name: "Julia Nema",
+    city: "Budapest",
+    province: "Hungary",
+    country: "EU",
+    website: "https://julianema.com",
+    bio: "Júlia Néma operates Hungary's only professional wood-fired kiln studio in Budapest, creating porcelain and ceramic pieces—including bespoke tableware for Michelin-starred restaurants Salt Budapest and 42 Restaurant—recognised with the Hungarian Design Award and Ferenczy Noémi Award.",
+  },
+  {
+    name: "KeramiArt",
+    city: "Budapest",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.keramiart.com",
+    bio: "Ildikó Károlyi makes raku pottery, pit-fired vessels, and Whispering Globe sculptures in her Budapest studio, blending ancient Hungarian folk symbolism with contemporary ceramic techniques to produce tactile objects that celebrate clay's natural variability.",
+  },
+  {
+    name: "M. Kovács Ceramics",
+    city: "Budapest",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.m-kovacs.com",
+    bio: "Máté Kovács creates conceptual handmade ceramic and porcelain objects from his studio at Zichy Jenő utca in Budapest, participating in group exhibitions and exploring the intersection of everyday functional form and artistic research.",
+  },
+
+  // EU — Croatia
+  {
+    name: "Peruna Ceramics",
+    city: "Dubrovnik",
+    province: "Croatia",
+    country: "EU",
+    website: "https://www.peruna.hr",
+    bio: "Morana Depoli established Peruna Ceramics in Dubrovnik at age 30, creating contemporary wheel-thrown household ceramics with clean lines from her sunny studio on the Lapad peninsula, and teaching pottery to students.",
+    offersClasses: true,
+  },
+  {
+    name: "Maramore Pottery",
+    city: "Rovinj",
+    province: "Croatia",
+    country: "EU",
+    website: "https://maramorepottery.hr",
+    bio: "Maramore Pottery opened in the Istrian coastal town of Rovinj in 2025, producing unique handmade mugs, plates, bowls, and vases crafted with food-safe glazes and a deep care for the Mediterranean setting.",
+  },
+
+  // EU — Serbia
+  {
+    name: "Studio Cvat",
+    city: "Belgrade",
+    province: "Serbia",
+    country: "EU",
+    website: "https://www2.homofaber.com/en/artisans/emilija-begu-ceramics-serbia",
+    bio: "Emilija Beguš founded Studio Cvat in Belgrade, continuing a century-long family pottery tradition after completing her MA in Ceramic Art; she creates nature-inspired handbuilt pieces and teaches workshops in handbuilding techniques.",
+    offersClasses: true,
+  },
+
+  // EU — Slovenia
+  {
+    name: "Hana Karim Studio",
+    city: "Ljubljana",
+    province: "Slovenia",
+    country: "EU",
+    website: "https://www.hana-karim.com",
+    bio: "Hana Karim established her Ljubljana ceramics studio in 2016, producing vibrant handmade tableware and wall sculptures shaped in styrofoam molds, bridging traditional pottery craftsmanship and contemporary design with organic patterns and rich colour.",
+  },
+  {
+    name: "Eva Peterson Lenassi",
+    city: "Ljubljana",
+    province: "Slovenia",
+    country: "EU",
+    website: "https://www.evapetersonlenassi.com",
+    bio: "Academy-trained sculptor Eva Peterson Lenassi creates ceramic artworks and teaches pottery from her studio at Ljubljana's Ethnographic Museum, drawing on the environment as the basis for her artistic exploration and earning recognition at the Gyeonggi International Ceramic Biennial.",
+    offersClasses: true,
+  },
+
+  // EU — Slovakia
+  {
+    name: "Simona Janišová",
+    city: "Bratislava",
+    province: "Slovakia",
+    country: "EU",
+    website: "https://www.simonajanisova.sk",
+    bio: "Simona Janišová holds a doctoral degree in ceramics from the Academy of Fine Arts and Design in Bratislava, creating both sculptural and functional hand-built pieces from her Šoltésovej Street studio; she won the main prize at Bratislava Design Week in 2017.",
+  },
+  {
+    name: "Linda Viková",
+    city: "Bratislava",
+    province: "Slovakia",
+    country: "EU",
+    website: "https://lindavikova.com",
+    bio: "Bratislava ceramist Linda Viková graduated from the Academy of Fine Arts and Design and completed a residency with ceramicist Young-Jae Lee in Essen, developing authorial hand-built porcelain work and, since 2024, artistic research into sustainable glazes.",
+  },
+
+  // EU — Sweden (additional)
+  {
+    name: "Yalála Ceramics",
+    city: "Stockholm",
+    province: "Sweden",
+    country: "EU",
+    website: "https://yalalaceramics.com",
+    bio: "Yalála Ceramics is a Stockholm-based studio selling handcrafted functional ceramics—cups, bowls, and vessels—with a clean Scandinavian sensibility and an emphasis on everyday beauty.",
+  },
+
+  // EU — Denmark (additional)
+  {
+    name: "Anette Krogstad",
+    city: "Oslo",
+    province: "Norway",
+    country: "EU",
+    website: "https://anettekrogstad.no",
+    bio: "Oslo ceramist and designer Anette Krogstad holds an MA in Ceramics from Oslo National Academy of the Arts, creating wheel-thrown tableware with glaze combinations named after natural phenomena—Havskum, Foggy Forest, Steinlav—for restaurants including Noma Copenhagen.",
+  },
+
+  // EU — Hungary (additional)
+  {
+    name: "Simon Zsolt József",
+    city: "Pécs",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.homofaber.com/en/artisans/simon-zsolt-jzsef-ceramics-hungary",
+    bio: "Pécs ceramicist Simon Zsolt József trained in porcelain painting at Herend before developing a distinctive style that brings his graphic drawing practice into hand-painted porcelain vessels, presenting internationally and working from his studio in southern Hungary.",
+  },
+
+  // EU — Croatia (additional)
+  {
+    name: "Doti & Dali Ceramics",
+    city: "Rovinj",
+    province: "Croatia",
+    country: "EU",
+    website: "https://dotidaliceramics.com",
+    bio: "Dorotea and her father Dalibor began making pottery together in Rovinj in 2021, opening their shared Istrian studio to create wheel-thrown functional ceramics that have been exhibited in galleries across Croatia.",
+  },
+
+  // EU — Serbia (additional)
+  {
+    name: "Stonessa",
+    city: "Novi Sad",
+    province: "Serbia",
+    country: "EU",
+    website: "https://stonessa.com",
+    bio: "Svetlana Savčić creates handmade stoneware and porcelain tableware and sculptural vases from her Novi Sad studio, mastering coiling, carving, handbuilding, and wheel-throwing to craft wabi-sabi-influenced pieces for fine dining restaurants and collectors worldwide.",
+  },
+
+  // EU — Finland (additional)
+  {
+    name: "Tuuli Somma",
+    city: "Espoo",
+    province: "Finland",
+    country: "EU",
+    website: "https://www.tuulisomma.com",
+    bio: "Espoo ceramic artist Tuuli Somma crafts glaze-driven sculptural works inspired by wabi-sabi and the textures of nature, developing her own glazes through rigorous chemistry research; her ceramic wall reliefs have been acquired for the Finnish National Gallery's State Art Deposit Collection.",
+  },
+
+  // EU — Latvia (additional)
+  {
+    name: "Frisceramics",
+    city: "Riga",
+    province: "Latvia",
+    country: "EU",
+    website: "https://www.frisceramics.lv",
+    bio: "Inga Frišfelde founded Frisceramics in central Riga, running a ceramics studio where she creates handcrafted ceramic pieces and offers pottery wheel and hand-building classes for all skill levels.",
+    offersClasses: true,
+  },
+
+  // EU — Sweden (additional)
+  {
+    name: "Manos Design",
+    city: "Stockholm",
+    province: "Sweden",
+    country: "EU",
+    website: "https://manos.se",
+    bio: "Located in the Sofo neighbourhood of Stockholm, Manos Design is a combined ceramics workshop and shop run as a creative meeting place, producing one-of-a-kind handmade gifts and ceramics.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
