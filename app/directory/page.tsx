@@ -54,7 +54,7 @@ function groupByCity<T extends { city: string }>(items: T[]): { city: string; it
 
 function ProvinceSection({ province, country }: { province: string; country: Country }) {
   return (
-    <h3 className="text-xs font-bold tracking-widest uppercase mt-10 mb-4 pb-2 border-b" style={{ color: "#5C3D2E", borderColor: "#E8D5B7", fontFamily: "system-ui, sans-serif", letterSpacing: "0.3em" }}>
+    <h3 className="text-xs font-bold tracking-widest uppercase mt-10 mb-4 pb-2 border-b" style={{ color: "#9E8572", borderColor: "#E8D5B7", fontFamily: "system-ui, sans-serif", letterSpacing: "0.3em" }}>
       {province} &middot; {countryLabel(country)}
     </h3>
   );
