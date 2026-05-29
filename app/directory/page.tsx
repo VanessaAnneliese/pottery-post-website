@@ -62,7 +62,7 @@ function ProvinceSection({ province, country }: { province: string; country: Cou
 
 function CitySection({ city }: { city: string }) {
   return (
-    <h4 className="text-xs tracking-widest uppercase mt-6 mb-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif", letterSpacing: "0.2em" }}>
+    <h4 className="text-xs tracking-widest uppercase mt-6 mb-2" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", letterSpacing: "0.2em" }}>
       {city}
     </h4>
   );
