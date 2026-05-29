@@ -130,8 +130,8 @@ export default async function SearchPage({
           </p>
           <Link
             href="/directory/submit"
-            className="px-6 py-3 text-xs tracking-widest uppercase font-bold rounded-sm"
-            style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+            className="px-6 py-3 text-xs tracking-widest uppercase font-bold rounded-sm bg-[#D4622A] hover:bg-[#B8501F] transition-colors"
+            style={{ color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
           >
             Add a listing
           </Link>

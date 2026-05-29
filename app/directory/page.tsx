@@ -62,7 +62,7 @@ function ProvinceSection({ province, country }: { province: string; country: Cou
 
 function CitySection({ city }: { city: string }) {
   return (
-    <h4 className="text-xs tracking-widest uppercase mt-6 mb-2" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif", letterSpacing: "0.2em" }}>
+    <h4 className="text-xs tracking-widest uppercase mt-6 mb-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif", letterSpacing: "0.2em" }}>
       {city}
     </h4>
   );
@@ -377,7 +377,8 @@ function DirectoryContent() {
   }
 
   function handleRegionClick(code: Country) {
-    setSelectedRegion(selectedRegion === code ? null : code);
+    if (selectedRegion === code) return; // already selected, radio-button behaviour
+    setSelectedRegion(code);
     setSelectedProvince(null);
     setSelectedLetter(null);
   }
@@ -403,8 +404,8 @@ function DirectoryContent() {
         <div className="flex flex-wrap gap-2 self-start sm:self-auto">
           <Link
             href="/directory/submit"
-            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm"
-            style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm bg-[#D4622A] hover:bg-[#B8501F] transition-colors"
+            style={{ color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
           >
             Add your listing
           </Link>

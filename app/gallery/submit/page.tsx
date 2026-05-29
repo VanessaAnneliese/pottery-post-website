@@ -207,8 +207,8 @@ export default function GallerySubmitPage() {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="mt-2 px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm self-start transition-opacity hover:opacity-80"
-            style={{ background: "#D4622A", color: "#F5F0E8", fontFamily: "system-ui, sans-serif", opacity: status === "sending" ? 0.6 : 1 }}
+            className="mt-2 px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm self-start bg-[#D4622A] hover:bg-[#B8501F] transition-colors"
+            style={{ color: "#F5F0E8", fontFamily: "system-ui, sans-serif", opacity: status === "sending" ? 0.6 : 1 }}
           >
             {status === "sending" ? "Sending..." : "Submit for consideration"}
           </button>

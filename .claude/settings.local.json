@@ -63,7 +63,8 @@
       "WebFetch(domain:www.fluxpottery.ca)",
       "WebFetch(domain:blackdogpottery.ca)",
       "WebFetch(domain:www.cottagepotterystudio.ca)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(npx eslint *)"
     ]
   }
 }
