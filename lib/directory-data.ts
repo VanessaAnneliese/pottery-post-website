@@ -13141,7 +13141,43 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A North Vancouver pottery studio offering wheel-throwing and handbuilding classes for all ages and skill levels, plus studio memberships and private event packages.",
   },
 
-  // Ontario — Toronto (kiln sharing)
+  // Ontario — Toronto (kiln sharing / buddy kiln)
+  {
+    name: "Kitte Club",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.kitteclub.ca",
+    bio: "A queer-owned ceramics studio at 30 Sousa Mendes St offering kiln firing to members and non-members alike. Fire well and often — bring your pieces and they'll get them fired. Reach out at kitteclubceramics@gmail.com.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Pottery Lab",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.potterylab.ca/firingandpickup",
+    bio: "A downtown Toronto pottery studio at 135 Tecumseth St offering drop-off kiln firing at $25/kg. Both bisque and glaze firings accepted. No membership required.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "The Shop Toronto",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.theshoptoronto.ca",
+    bio: "Toronto's first all-inclusive makerspace at 1485 Dupont St with a full ceramics studio offering pay-per-firing kiln access. Members get priority loading but non-members are welcome. Fees paid on pick-up.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "The Clayroom Toronto",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://clayroom.ca",
+    bio: "A pottery studio at 279 Danforth Ave accepting outside pieces for kiln firing on Thursdays and Fridays. Priced by shelf height — from $35 for a quarter kiln to $120 for a full kiln. Low fire (cone 06) only.",
+    offersKilnSharing: true,
+  },
   {
     name: "Shaw Street Pottery",
     city: "Toronto",
