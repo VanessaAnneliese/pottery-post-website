@@ -9659,8 +9659,9 @@ export const suppliers: Supplier[] = [
     city: "Port Coquitlam",
     province: "British Columbia",
     country: "CA",
-    website: "https://theclaywarehouse.com",
-    bio: "Pottery supplies, wheels, kilns, and materials serving potters across BC.",
+    website: "https://theclaywarehouse.ca",
+    bio: "Pottery supplies, studio, and workshops at 1770 McLean Ave, Port Coquitlam. Also offers community kiln firing for outside pieces — $12 minimum, roughly $2–5 per piece depending on size and shelf space. Limited capacity; bookings open two weeks in advance.",
+    offersKilnSharing: true,
   },
   {
     name: "Greenbarn Potters' Supply",
@@ -10041,7 +10042,8 @@ export const suppliers: Supplier[] = [
     province: "Washington",
     country: "US",
     website: "https://seattlepotterysupply.com",
-    bio: "A Pacific Northwest institution stocking clay bodies, glazes, tools, and equipment since 1978.",
+    bio: "A Pacific Northwest institution at 35 S Hanford St stocking clay, glazes, tools, and equipment since 1978. Also offers community kiln firing for outside pieces — $12 minimum, priced by shelf space. No appointment needed; drop off during retail hours (Tue–Sat 9am–6pm).",
+    offersKilnSharing: true,
   },
   // Wisconsin
   {
@@ -10633,6 +10635,15 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.hellopotteryco.com",
     bio: "A studio and shop in downtown Collingwood inspired by modern design and functional art, offering wheel-throwing and handbuilding classes for all levels alongside a curated retail selection.",
   },
+  {
+    name: "Beyond Pottery",
+    city: "Burlington",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.beyondpottery.ca",
+    bio: "A multidisciplinary art studio at 3228 South Service Rd, Burlington offering wheel throwing, handbuilding, and sculpture courses. Also offers a kiln rental membership for independent potters and home ceramicists — $46.65/month (plus per-firing costs by shelf size), perfect for potters who work elsewhere and need a reliable kiln.",
+    offersKilnSharing: true,
+  },
   // British Columbia
   {
     name: "Studio Fundamentals",
@@ -10736,6 +10747,15 @@ export const teachingStudios: TeachingStudio[] = [
     country: "CA",
     website: "https://www.studio72.ca",
     bio: "A community-driven shared ceramic workspace in Edmonton offering 7-week pottery courses, one-time workshops, and studio memberships for all levels.",
+  },
+  {
+    name: "Planted Earth Studios",
+    city: "Edmonton",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.plantedearthstudios.com",
+    bio: "An Edmonton ceramics and floral studio at 14515 122 Ave NW offering pottery workshops and drop-off kiln firing for outside pieces. Firing priced by shelf space: half shelf (9\"×20\"×5\") $15, full shelf $24, half kiln $35, full kiln $55. Bisque to cone 04, glaze to cone 5/6. Drop-off Mon/Wed/Fri evenings and Saturdays.",
+    offersKilnSharing: true,
   },
   {
     name: "Saffron Collective Studios",
@@ -12726,6 +12746,15 @@ export const teachingStudios: TeachingStudio[] = [
   },
   // Washington — Seattle
   {
+    name: "Reclaim Clay Collective",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://www.reclaimclay.com",
+    bio: "A community ceramics studio at 800 S Weller St #201 in Seattle's International District offering kiln firing for outside pieces — no membership needed. $14 per shelf for pieces up to 6\" tall, $7 minimum for half-shelf loads. Bisque, glaze, and periodic luster firings. Open Tue–Sun 10am–9pm.",
+    offersKilnSharing: true,
+  },
+  {
     name: "Sean's Clay Corner",
     city: "Seattle",
     province: "Washington",
@@ -12749,7 +12778,8 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Oregon",
     country: "US",
     website: "https://www.stjohnsclay.com",
-    bio: "A creative clay space under Portland's iconic St. Johns Bridge offering wheel-throwing and hand-building classes, open studio punch-card access, full memberships, and community events — affiliated with Portland Community College and home to the St. Johns Ceramic Showcase gallery.",
+    bio: "A creative clay space at 6635 N Baltimore Ave under Portland's iconic St. Johns Bridge offering wheel-throwing and hand-building classes, open studio access, and full memberships. Also home to a community Kiln Yard with a gas reduction kiln and soda kiln — open to potters who commit to square footage as the kiln fills.",
+    offersKilnSharing: true,
   },
   // Oregon — Portland
   {
