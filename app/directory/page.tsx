@@ -115,6 +115,7 @@ function TeachingStudioCard({ studio }: { studio: TeachingStudio }) {
         <div>
           <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{studio.name}</p>
           <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{studio.city}, {studio.province}</p>
+          {studio.offersKilnSharing && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Community Kiln</p>}
           {studio.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{studio.bio}</p>}
         </div>
         {studio.website && (
@@ -134,6 +135,7 @@ function SupplierCard({ supplier }: { supplier: Supplier }) {
         <div>
           <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{supplier.name}</p>
           <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{supplier.city}, {supplier.province}</p>
+          {supplier.offersKilnSharing && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Community Kiln</p>}
           {supplier.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{supplier.bio}</p>}
         </div>
         {supplier.website && (

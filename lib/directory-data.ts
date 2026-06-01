@@ -31,6 +31,7 @@ export type TeachingStudio = {
   website?: string;
   phone?: string;
   bio?: string;
+  offersKilnSharing?: boolean;
 };
 
 export type Supplier = {
@@ -41,6 +42,7 @@ export type Supplier = {
   website?: string;
   phone?: string;
   bio?: string;
+  offersKilnSharing?: boolean;
 };
 
 export const guilds: Guild[] = [
@@ -13137,6 +13139,62 @@ export const teachingStudios: TeachingStudio[] = [
     country: "CA",
     website: "https://firedupstudio.ca",
     bio: "A North Vancouver pottery studio offering wheel-throwing and handbuilding classes for all ages and skill levels, plus studio memberships and private event packages.",
+  },
+
+  // Ontario — Toronto (kiln sharing)
+  {
+    name: "Shaw Street Pottery",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://shawstreetpottery.ca",
+    bio: "A Little Italy pottery studio at 422 Shaw St offering studio sessions for experienced potters. Sessions include kiln firing (one bisque and one glaze) for work made on-site. By appointment only.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Deepbreathely Studio",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://deepbreathely.com/studio.html",
+    bio: "A ceramics studio in Toronto's Corktown neighbourhood offering kiln rental for experienced potters. Rent the whole kiln — large oval (16.5 cu ft) or small round (1.98 cu ft) — per firing. Bring your own work.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Create Art Studio",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://createartstudio.ca/pottery-studio/",
+    bio: "A community pottery studio on the Danforth offering membership-based open studio access with pay-per-firing kiln use. Members book hourly time through an online portal and have access to wheels, tools, and glazes.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Akin Davisville",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.akincollective.com/ceramics-kiln-davisville",
+    bio: "An artist studio collective at 224 Merton St offering member-run kiln firing services to Akin members. Members can access kiln firings directly through the on-site ceramics room.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Akin Dupont",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.akincollective.com/ceramics-kiln-dupont",
+    bio: "An artist studio collective at 300 Campbell Ave (Studio 206) with a dedicated ceramics room and member-run kiln. Firing services available to Akin members.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Akin St Clair",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.akincollective.com/ceramics-kiln-stclair",
+    bio: "A street-level artist studio at 1747 St Clair Ave W with two member-run kilns available for firing services. Akin members at nearby locations can also drop off and pick up work here.",
+    offersKilnSharing: true,
   },
 
   // Ontario — Toronto (additional)
