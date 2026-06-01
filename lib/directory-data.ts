@@ -10656,7 +10656,17 @@ export const teachingStudios: TeachingStudio[] = [
     province: "British Columbia",
     country: "CA",
     website: "https://www.communityclay.ca",
-    bio: "Multi-week handbuilding pottery courses covering slab building, coiling, and sculpting for beginners and experienced artists alike.",
+    bio: "Multi-week handbuilding pottery courses covering slab building, coiling, and sculpting for beginners and experienced artists alike. Also offers professional bisque and glaze firing services for non-members — clay must be purchased from the studio.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "North Vancouver Ceramics",
+    city: "North Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.nvceramics.com",
+    bio: "A family-owned ceramics studio and supply shop at 1305 Welch St #201, North Vancouver. Offers kiln firing services for potters working at home who don't have their own kiln. Fast turnaround, up to cone 6.",
+    offersKilnSharing: true,
   },
   {
     name: "Café au Clay Studios",
@@ -10674,6 +10684,26 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.claymatesceramicsstudio.com",
     bio: "Community ceramics studio in East Vancouver's Strathcona neighbourhood offering multi-week classes, clay dates, private events, and studio memberships.",
   },
+  // Alberta — Calgary (kiln sharing)
+  {
+    name: "North Mount Pleasant Arts Centre",
+    city: "Calgary",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.calgary.ca/rec-locations/arts-centres/custom-firing.html",
+    bio: "A City of Calgary arts centre at 523 27 Ave NW offering custom kiln firing services for outside pieces. Electric bisque and cone 6 glaze firings, plus cone 9 gas firing. Priced by kiln size from $30 (test kiln) to $600 (gas kiln). Appointment required.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Wildflower Arts Centre",
+    city: "Calgary",
+    province: "Alberta",
+    country: "CA",
+    website: "https://www.calgary.ca/rec-locations/arts-centres/custom-firing.html",
+    bio: "A City of Calgary arts centre at 3363 Spruce Dr SW offering custom kiln firing services for outside pieces. Electric bisque and cone 6 glaze firings, priced by kiln size from $30 (test kiln) to $225 (oval kiln). Appointment required.",
+    offersKilnSharing: true,
+  },
+
   // Alberta
   {
     name: "Pottery123",
@@ -10825,7 +10855,8 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Quebec",
     country: "CA",
     website: "https://atelierforma.ca",
-    bio: "A Montreal pottery studio offering beginner wheel-throwing classes, creative workshops, open studio memberships, and private group events with expert instructors.",
+    bio: "A Montreal pottery studio offering beginner wheel-throwing classes, creative workshops, open studio memberships, and private group events. Also accepts outside pieces for kiln firing — bisque $35/shelf, glaze $40/shelf. Clay and glaze from outside the studio allowed with prior approval.",
+    offersKilnSharing: true,
   },
   {
     name: "Les Faiseurs",
@@ -10849,7 +10880,26 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Quebec",
     country: "CA",
     website: "https://ceramicstudio.ca",
-    bio: "A Montreal ceramic studio offering regular pottery courses and workshops, with classes led by Mahmoud Baghaeian for students at all levels.",
+    bio: "A Montreal ceramic studio at 5333 Ave Casgrain offering courses and workshops. Also offers public kiln firing services across eight computerized electric kilns ranging from 1.5 to 16.5 cu ft. First-time users complete a short $30 kiln-loading course.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Parceline Céramique",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://parcelineceramique.com",
+    bio: "A Montreal ceramics studio at 2205 Parthenais #316 offering drop-off kiln firing for outside pieces. $55 per firing — includes bisque (cone 06) and glaze (cone 6) on a half-circle shelf (20.5\" x 10.5\", max 8\" height). Proof of clay type required if not purchased from studio.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Goye artiste céramiste",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://goye.ca",
+    bio: "A Montreal ceramics studio at 5479 Rue de Bellechasse offering a monthly kiln-sharing subscription — $56/month for one bisque and one glaze firing on a half-round shelf. Limited to 6 spots per month, available on a rolling monthly basis.",
+    offersKilnSharing: true,
   },
   {
     name: "Pomegranate Pottery Studio",
