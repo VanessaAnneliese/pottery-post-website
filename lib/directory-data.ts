@@ -10947,6 +10947,24 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://greenwichhouse.org/pottery",
     bio: "Founded in 1909, one of the oldest pottery schools in the US. Offers wheel throwing, handbuilding, mold making, and slipcasting across two Manhattan locations.",
   },
+  {
+    name: "BKLYN CLAY",
+    city: "Brooklyn",
+    province: "New York",
+    country: "US",
+    website: "https://bklynclay.com",
+    bio: "A ceramics studio with locations in Prospect Heights (535 Carlton Ave) and Tribeca (288 West St) offering classes, memberships, and open firing for outside pieces — no membership required. 8 cents per cubic inch per firing; pieces due back in 7–10 days. Cone 06 bisque and cone 6 glaze.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Choplet",
+    city: "Brooklyn",
+    province: "New York",
+    country: "US",
+    website: "https://choplet.com",
+    bio: "A ceramic studio and gallery with Williamsburg (238 Grand St) and Greenpoint (121 Meserole Ave) locations. Accepts outside pieces for collective firing — 8 cents per cubic inch, or 16 cents for rushed 2–5 day service. Kiln rental also available. Approx. 10-day turnaround per firing.",
+    offersKilnSharing: true,
+  },
   // Pennsylvania
   {
     name: "The Clay Studio",
@@ -12833,7 +12851,8 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Texas",
     country: "US",
     website: "https://featsofclaypottery.com",
-    bio: "Austin's oldest pottery studio and gallery, women-owned and operated since 1976, offering classes, date nights, workshops, one-time lessons, open studio memberships, and public firings — a beloved, community-driven Burnet Road institution firing cone 9 stoneware.",
+    bio: "Austin's oldest pottery studio and gallery at 806 McPhaul St, women-owned since 1976 — offering classes, workshops, open studio memberships, and kiln firing for outside pieces. Priced by shelf size, turnaround 1–2 weeks, firing cone 9 stoneware.",
+    offersKilnSharing: true,
   },
   // Florida — Miami
   {
@@ -12937,6 +12956,15 @@ export const teachingStudios: TeachingStudio[] = [
 
   // Australia — Victoria (Melbourne teaching studios)
   {
+    name: "Diana Ceramic",
+    city: "Brunswick",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.dianaceramic.com.au",
+    bio: "A Melbourne ceramics studio and school with locations in Brunswick (3/415 Lygon St) and Burwood, offering workshops and kiln firing for outside pieces. $12 per kilo per firing, $12 minimum. Bisque at cone 06 or stoneware glaze at 1280°C. 7–14 day turnaround.",
+    offersKilnSharing: true,
+  },
+  {
     name: "Bisque Studios",
     city: "Northcote",
     province: "Victoria",
@@ -12954,6 +12982,15 @@ export const teachingStudios: TeachingStudio[] = [
   },
 
   // Australia — New South Wales (teaching studios)
+  {
+    name: "Clay Cartel",
+    city: "Marrickville",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.claycartel.com.au",
+    bio: "A ceramics studio and kiln firing service at Unit 35–36, 76B Edinburgh Rd, Marrickville in Sydney's inner west. Welcomes outside pieces — bisque $16/kg, glaze $18/kg. Drop-off Wed–Sat 10am–4pm. Also offers kiln hire across three kiln sizes (200L–280L).",
+    offersKilnSharing: true,
+  },
   {
     name: "Katoomba Clay",
     city: "Katoomba",
@@ -13044,6 +13081,24 @@ export const teachingStudios: TeachingStudio[] = [
   },
 
   // England
+  {
+    name: "SET Ceramics",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://setspace.uk/set-ceramics-kiln-hire/",
+    bio: "A central London ceramics kiln hire studio at 35 Crutched Friars, EC3N — open to independent makers with no membership required. Simply book the firing you need and drop off your pieces. Bisque from £10, glaze from £12.50, priced by shelf size. Minimum 2 weeks notice.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Ceramics Studio Co-op",
+    city: "London",
+    province: "England",
+    country: "EU",
+    website: "https://www.ceramicsstudio.coop",
+    bio: "A community ceramics co-op at 73–79 Childers St, London SE8 serving potters across the city. Shared firings from £16+VAT; whole kiln firings from £23+VAT. Fires earthenware through stoneware plus lustre and decals. Drop-off Tue, Thu, and Sat.",
+    offersKilnSharing: true,
+  },
   {
     name: "Camden Arts Centre Ceramics",
     city: "London",
