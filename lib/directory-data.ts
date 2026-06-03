@@ -15695,6 +15695,402 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A ceramics studio in the Okanagan's Lake Country, just north of Kelowna, offering 5-week wheel throwing and hand-building courses, studio memberships, drop-in access, ceramic art therapy, and an artist residency program with accommodation.",
   },
 
+  // Saskatchewan — Regina
+  {
+    name: "Cathedral Arts Project",
+    city: "Regina",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://www.cathedralarts.ca",
+    bio: "A community arts centre in Regina's Cathedral neighbourhood offering pottery classes in wheel throwing and hand-building for adults and youth, along with a range of other visual arts programming.",
+  },
+  {
+    name: "Char's Webb Studio",
+    city: "Regina",
+    province: "Saskatchewan",
+    country: "CA",
+    website: "https://www.charswebbstudio.com",
+    bio: "A pottery studio in Regina offering wheel throwing and hand-building classes for adults and children, with sessions for beginners through to experienced makers.",
+  },
+
+  // Ontario — Thunder Bay
+  {
+    name: "Stone Circle Pottery",
+    city: "Thunder Bay",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.stonecirclepottery.ca",
+    bio: "A pottery studio and school in Thunder Bay offering wheel throwing and hand-building classes for all levels, with a focus on traditional and functional ceramics.",
+  },
+
+  // Prince Edward Island
+  {
+    name: "PEI Potters' Studio Co-op",
+    city: "Charlottetown",
+    province: "Prince Edward Island",
+    country: "CA",
+    website: "https://www.peipotters.ca",
+    bio: "A potter-run co-operative studio in Charlottetown offering classes in wheel throwing and hand-building, open studio time, and a gallery shop featuring work by Island potters.",
+  },
+  {
+    name: "The Happy Potter",
+    city: "Charlottetown",
+    province: "Prince Edward Island",
+    country: "CA",
+    website: "https://www.thehappypotter.ca",
+    bio: "A pottery studio in Charlottetown offering wheel throwing classes and open studio sessions for beginners and returning students in a relaxed, welcoming environment.",
+  },
+
+  // Michigan — Grand Rapids
+  {
+    name: "Pottery Lane GR",
+    city: "Grand Rapids",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.potterylanegr.com",
+    bio: "A pottery studio in Grand Rapids offering wheel throwing and hand-building classes for all levels, with open studio time available for members.",
+  },
+  {
+    name: "The Grand Rapids Pottery",
+    city: "Grand Rapids",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.thegrandrapidspottery.com",
+    bio: "A community pottery studio offering beginner-friendly wheel and hand-building classes alongside studio memberships and open studio access in Grand Rapids.",
+  },
+
+  // New York — Troy / Capital Region
+  {
+    name: "Arts Center of the Capital Region",
+    city: "Troy",
+    province: "New York",
+    country: "US",
+    website: "https://www.artscenteronline.org",
+    bio: "A multi-discipline arts centre in Troy, New York, offering pottery and ceramics classes in wheel throwing and hand-building for adults and youth, with studio access for members.",
+  },
+
+  // Louisiana — Baton Rouge
+  {
+    name: "BellyFire Studios",
+    city: "Baton Rouge",
+    province: "Louisiana",
+    country: "US",
+    website: "https://www.bellyfireceramics.com",
+    bio: "A pottery studio and community space in Baton Rouge offering wheel throwing and hand-building classes, open studio memberships, and workshops for all experience levels.",
+  },
+
+  // North Carolina — Greensboro
+  {
+    name: "Elsewhere",
+    city: "Greensboro",
+    province: "North Carolina",
+    country: "US",
+    website: "https://www.elsewheremuseum.org",
+    bio: "A living museum and collaborative arts space in Greensboro with a ceramics programme that runs workshops and residencies for artists working in clay.",
+  },
+  {
+    name: "Greensboro Pottery",
+    city: "Greensboro",
+    province: "North Carolina",
+    country: "US",
+    website: "https://www.greensboropotteryworks.com",
+    bio: "A ceramics studio in Greensboro offering wheel throwing and hand-building classes for beginners and returning students, plus studio membership and open studio access.",
+  },
+
+  // Delaware — Wilmington
+  {
+    name: "Delaware Pottery Studios",
+    city: "Wilmington",
+    province: "Delaware",
+    country: "US",
+    website: "https://www.delawarepottery.com",
+    bio: "A community ceramics studio in Wilmington offering wheel throwing and hand-building classes, studio memberships, and open firing for potters of all levels.",
+  },
+
+  // Massachusetts — Northampton
+  {
+    name: "Northampton Pottery",
+    city: "Northampton",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.northamptonpottery.com",
+    bio: "A working studio and teaching space in Northampton offering wheel throwing and hand-building classes for adults of all levels, with ongoing sessions and open studio time.",
+  },
+
+  // Alabama — Birmingham
+  {
+    name: "Cahaba Clayworks",
+    city: "Birmingham",
+    province: "Alabama",
+    country: "US",
+    website: "https://www.cahabaclayworks.com",
+    bio: "A community ceramics studio in Birmingham offering classes in wheel throwing and hand-building, kiln access, and studio memberships for potters at every stage.",
+  },
+
+  // Florida — Jacksonville
+  {
+    name: "Jacksonville Pottery Studio",
+    city: "Jacksonville",
+    province: "Florida",
+    country: "US",
+    website: "https://www.jacksonvillepotterystudio.com",
+    bio: "A ceramics studio in Jacksonville offering wheel throwing and hand-building classes for all levels, with kiln rental and studio membership available.",
+    offersKilnSharing: true,
+  },
+
+  // Iowa — Des Moines
+  {
+    name: "Des Moines Art Center Ceramics",
+    city: "Des Moines",
+    province: "Iowa",
+    country: "US",
+    website: "https://www.desmoinesartcenter.org",
+    bio: "The Des Moines Art Center's ceramics programme offers wheel throwing and hand-building classes for adults in a fully equipped studio, with sessions for beginners through to experienced potters.",
+  },
+
+  // Arizona — Flagstaff
+  {
+    name: "Clay Center Flagstaff",
+    city: "Flagstaff",
+    province: "Arizona",
+    country: "US",
+    website: "https://www.claycenter.org",
+    bio: "A ceramics studio and education centre in Flagstaff offering wheel throwing, hand-building, and surface decoration classes, studio memberships, and open studio access at elevation.",
+  },
+
+  // Alaska — Anchorage
+  {
+    name: "Turnagain Ceramics",
+    city: "Anchorage",
+    province: "Alaska",
+    country: "US",
+    website: "https://www.turnagainceramics.com",
+    bio: "A ceramics studio in Anchorage offering wheel throwing and hand-building classes, with studio memberships and kiln access for local potters.",
+  },
+  {
+    name: "Clay Art Space",
+    city: "Anchorage",
+    province: "Alaska",
+    country: "US",
+    website: "https://www.clayartspace.org",
+    bio: "A community ceramics studio in Anchorage offering kiln rental, studio access, and clay classes for all levels — one of the few shared firing facilities available to independent potters in Alaska.",
+    offersKilnSharing: true,
+  },
+
+  // Germany — Frankfurt (additional)
+  {
+    name: "leramics",
+    city: "Frankfurt",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.leramics.de",
+    bio: "A contemporary ceramics studio in Frankfurt offering wheel throwing and hand-building courses for beginners and improvers, with small class sizes and a focus on functional pottery.",
+  },
+
+  // France — Lyon
+  {
+    name: "Atelier Folk",
+    city: "Lyon",
+    province: "France",
+    country: "EU",
+    website: "https://www.atelierfolk.fr",
+    bio: "A ceramics workshop in Lyon offering introductory and ongoing wheel throwing courses in a relaxed creative setting, open to complete beginners through experienced makers.",
+  },
+  {
+    name: "Atelier MY POT",
+    city: "Lyon",
+    province: "France",
+    country: "EU",
+    website: "https://www.mypot.fr",
+    bio: "A Lyon ceramics studio offering weekly wheel throwing and hand-building classes, discovery sessions, and bespoke workshops — a welcoming space for anyone wanting to work with clay.",
+  },
+
+  // Wales — Cardiff
+  {
+    name: "Cardiff Pottery Workshops Foundation",
+    city: "Cardiff",
+    province: "Wales",
+    country: "EU",
+    website: "https://www.cardiffpottery.co.uk",
+    bio: "A ceramics charity in Cardiff offering wheel throwing and hand-building classes, studio memberships, and community workshops — one of Wales's most established pottery teaching spaces.",
+  },
+  {
+    name: "One Wall Studio",
+    city: "Cardiff",
+    province: "Wales",
+    country: "EU",
+    website: "https://www.onewallstudio.co.uk",
+    bio: "An independent pottery studio in Cardiff offering classes and kiln access, including gas firing, for local potters — a rare shared firing resource in the Welsh capital.",
+    offersKilnSharing: true,
+  },
+
+  // Norway — Oslo
+  {
+    name: "Viarte Keramikk",
+    city: "Oslo",
+    province: "Norway",
+    country: "EU",
+    website: "https://www.viarte.no",
+    bio: "A ceramics studio and teaching space in Oslo offering wheel throwing and hand-building courses alongside kiln rental for independent potters working in the city.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Grønland Kultursenter Verksted",
+    city: "Oslo",
+    province: "Norway",
+    country: "EU",
+    website: "https://www.gkv.no",
+    bio: "A community arts venue in Oslo's Grønland district offering ceramics courses in wheel throwing and hand-building, with a fully equipped pottery studio open to the public.",
+  },
+
+  // Finland — Helsinki
+  {
+    name: "Septaria Keramiikka",
+    city: "Helsinki",
+    province: "Finland",
+    country: "EU",
+    website: "https://www.septaria.fi",
+    bio: "A ceramics studio in Helsinki offering wheel throwing and hand-building classes, plus kiln rental for independent potters — one of the few shared firing options available in the city.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Clayhem",
+    city: "Helsinki",
+    province: "Finland",
+    country: "EU",
+    website: "https://www.clayhem.fi",
+    bio: "A contemporary ceramics studio in Helsinki offering courses in wheel throwing and hand-building for all levels, with a strong community feel and welcoming approach to beginners.",
+  },
+  {
+    name: "Udumbara Keramia",
+    city: "Helsinki",
+    province: "Finland",
+    country: "EU",
+    website: "https://www.udumbara.fi",
+    bio: "A ceramics school and studio in Helsinki running regular wheel throwing and hand-building courses alongside intensive workshops and retreats for potters at all stages.",
+  },
+
+  // Netherlands — Rotterdam
+  {
+    name: "Keramiek Garage",
+    city: "Rotterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.keramiekgarage.nl",
+    bio: "A community ceramics studio in Rotterdam offering kiln rental, studio access, and pottery courses in wheel throwing and hand-building — a hub for independent potters in the city.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Rotterdam Keramiekhuis",
+    city: "Rotterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.rotterdamkeramiekhuis.nl",
+    bio: "A ceramics centre in Rotterdam offering workshops, studio memberships, and shared kiln access for professional and amateur potters, alongside exhibitions and community events.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Studio Timmerman",
+    city: "Rotterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.studiotimmerman.nl",
+    bio: "An independent ceramics studio in Rotterdam offering courses in wheel throwing and hand-building, with a focus on craft and the pleasure of working with clay.",
+  },
+
+  // Czech Republic — Prague
+  {
+    name: "MUDDUM",
+    city: "Prague",
+    province: "Czech Republic",
+    country: "EU",
+    website: "https://www.muddum.cz",
+    bio: "A ceramics studio in Prague offering wheel throwing and hand-building classes for beginners and improvers, with courses running throughout the year in English and Czech.",
+  },
+
+  // Hungary — Budapest
+  {
+    name: "Noha Stúdió",
+    city: "Budapest",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.nohastudio.hu",
+    bio: "A ceramics and design studio in Budapest offering wheel throwing and hand-building courses in a thoughtfully designed space, with sessions for beginners through to experienced makers.",
+  },
+  {
+    name: "Fazekas Dia",
+    city: "Budapest",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.fazekasdia.hu",
+    bio: "A traditional pottery studio in Budapest offering wheel throwing classes and workshops rooted in Hungarian ceramic craft, suitable for beginners and experienced potters alike.",
+  },
+  {
+    name: "S.K. Műhely",
+    city: "Budapest",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.skmuhely.hu",
+    bio: "An independent ceramics workshop in Budapest offering classes in wheel throwing and hand-building, with a relaxed atmosphere and small group sizes.",
+  },
+
+  // Australia — Canberra
+  {
+    name: "Deep Blue Ceramics",
+    city: "Canberra",
+    province: "Australian Capital Territory",
+    country: "AU",
+    website: "https://www.deepblueceramics.com.au",
+    bio: "A ceramics studio in Canberra offering wheel throwing and hand-building classes plus kiln hire for potters who need access to a kiln without a studio of their own.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "The Ceramic Studio ACT",
+    city: "Canberra",
+    province: "Australian Capital Territory",
+    country: "AU",
+    website: "https://www.theceramicstudio.com.au",
+    bio: "A community ceramics studio in Canberra offering classes, memberships, open studio time, and shared kiln access for potters at all levels — a key hub for clay in the ACT.",
+    offersKilnSharing: true,
+  },
+
+  // Australia — Newcastle NSW
+  {
+    name: "The Art Department Newcastle",
+    city: "Newcastle",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.theartdepartment.com.au",
+    bio: "A creative hub in Newcastle, NSW, offering pottery classes in wheel throwing and hand-building alongside shared kiln access for students and independent potters.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Fancy Nancy Ceramics",
+    city: "Newcastle",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://www.fancynancyceramics.com.au",
+    bio: "A ceramics studio in Newcastle offering wheel throwing and hand-building classes for beginners and continuing students in a friendly, relaxed environment.",
+  },
+
+  // Australia — Geelong VIC
+  {
+    name: "Elizabeth Bell Ceramics",
+    city: "Geelong",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.elizabethbellceramics.com.au",
+    bio: "A ceramics studio in Geelong offering wheel throwing and hand-building classes for adults, with small group sizes and a welcoming approach for beginners.",
+  },
+  {
+    name: "Alkimi Ceramics",
+    city: "Geelong",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.alkimiceramics.com.au",
+    bio: "A contemporary ceramics studio in Geelong offering courses in wheel throwing and hand-building, with an emphasis on finding your own style and building a consistent practice.",
+  },
+
 ];
 
 export function groupByProvince<T extends { province: string; country: Country }>(
