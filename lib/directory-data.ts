@@ -11233,14 +11233,14 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://tyboartandcraft.com",
     bio: "A Copenhagen family business rooted in Danish craft tradition, offering ceramics classes and handmade products with unpolished simplicity.",
   },
-  // Italy
+  // Italy — Tuscany
   {
-    name: "La Meridiana",
+    name: "La Meridiana School of Ceramics",
     city: "Certaldo",
     province: "Italy",
     country: "EU",
     website: "https://lameridiana.fi.it",
-    bio: "Well-regarded ceramics school offering intensive residential workshops and courses in a historic Tuscan setting.",
+    bio: "A world-renowned ceramics school with 40+ years of history, set in a restored 17th-century farmhouse in Tuscany between Florence and Siena, offering year-round hands-on workshops and long-term courses in wheel throwing, sculpture, glazing, and atmospheric firing taught by internationally recognized artist-instructors in small groups.",
   },
   // Belgium
   {
@@ -14945,14 +14945,6 @@ export const teachingStudios: TeachingStudio[] = [
     country: "EU",
     website: "https://www.centromachiavelli.it/en/arts-and-crafts/pottery-course.php",
     bio: "An Italian language and culture school in Florence offering pottery lessons in artisan workshops starting every Monday, covering wheel throwing, ceramic design, and hand-painted decoration.",
-  },
-  {
-    name: "La Meridiana",
-    city: "Florence",
-    province: "Italy",
-    country: "EU",
-    website: "https://lameridiana.fi.it",
-    bio: "A renowned ceramics school near Florence offering intensive residential and day programs in wheel throwing, hand-building, raku, and sculptural ceramics — internationally respected with visiting master instructors.",
   },
   {
     name: "Montelupo Experience",
