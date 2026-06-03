@@ -44,7 +44,7 @@ export default function Home() {
             Pottery Directory
           </h2>
           <p className="text-lg max-w-lg mx-auto mb-10" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
-            The Pottery Post&rsquo;s Pottery Directory spans three continents, connecting potters, pottery guilds, places to take pottery classes, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, or a pottery supplier? Add your name.
+            The Pottery Post&rsquo;s Pottery Directory spans three continents, connecting potters, pottery guilds, places to take pottery classes, share kilns, pottery supply shops, and the people who love pottery. Are you a pottery guild, potter, offering a pottery class, a community kiln, or a pottery supplier? Add your name.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/directory" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm bg-[#D4622A] hover:bg-[#B8501F] transition-colors" style={{ color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}>

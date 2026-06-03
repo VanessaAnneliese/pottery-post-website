@@ -6,7 +6,7 @@ import Link from "next/link";
 import { guilds, potters, suppliers, teachingStudios, groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-data";
 import QuoteBlock from "@/components/QuoteBlock";
 
-type DirectoryType = "guilds" | "potters" | "suppliers" | "classes";
+type DirectoryType = "guilds" | "potters" | "suppliers" | "classes" | "kiln";
 
 const REGIONS: { code: Country; label: string }[] = [
   { code: "CA", label: "Canada" },
@@ -155,6 +155,8 @@ function RegionBlock({
   classPottersByProvince,
   teachingStudiosByProvince,
   suppliersByProvince,
+  kilnStudiosByProvince,
+  kilnSuppliersByProvince,
   selectedType,
 }: {
   code: Country;
@@ -163,16 +165,21 @@ function RegionBlock({
   classPottersByProvince: ReturnType<typeof groupByProvince<Potter>>;
   teachingStudiosByProvince: ReturnType<typeof groupByProvince<TeachingStudio>>;
   suppliersByProvince: ReturnType<typeof groupByProvince<Supplier>>;
+  kilnStudiosByProvince: ReturnType<typeof groupByProvince<TeachingStudio>>;
+  kilnSuppliersByProvince: ReturnType<typeof groupByProvince<Supplier>>;
   selectedType: DirectoryType | null;
 }) {
   const isClasses = selectedType === "classes";
-  const regionGuilds = (selectedType === "potters" || selectedType === "suppliers" || isClasses) ? [] : guildsByProvince.filter((g) => g.country === code);
-  const regionPotters = (selectedType === "guilds" || selectedType === "suppliers" || isClasses) ? [] : pottersByProvince.filter((p) => p.country === code);
+  const isKiln = selectedType === "kiln";
+  const regionGuilds = (selectedType === "potters" || selectedType === "suppliers" || isClasses || isKiln) ? [] : guildsByProvince.filter((g) => g.country === code);
+  const regionPotters = (selectedType === "guilds" || selectedType === "suppliers" || isClasses || isKiln) ? [] : pottersByProvince.filter((p) => p.country === code);
   const regionClassPotters = isClasses ? classPottersByProvince.filter((p) => p.country === code) : [];
   const regionTeachingStudios = (selectedType === null || isClasses) ? teachingStudiosByProvince.filter((s) => s.country === code) : [];
-  const regionSuppliers = (selectedType === "guilds" || selectedType === "potters" || isClasses) ? [] : suppliersByProvince.filter((s) => s.country === code);
+  const regionSuppliers = (selectedType === "guilds" || selectedType === "potters" || isClasses || isKiln) ? [] : suppliersByProvince.filter((s) => s.country === code);
+  const regionKilnStudios = isKiln ? kilnStudiosByProvince.filter((s) => s.country === code) : [];
+  const regionKilnSuppliers = isKiln ? kilnSuppliersByProvince.filter((s) => s.country === code) : [];
 
-  if (regionGuilds.length === 0 && regionPotters.length === 0 && regionClassPotters.length === 0 && regionTeachingStudios.length === 0 && regionSuppliers.length === 0) return null;
+  if (regionGuilds.length === 0 && regionPotters.length === 0 && regionClassPotters.length === 0 && regionTeachingStudios.length === 0 && regionSuppliers.length === 0 && regionKilnStudios.length === 0 && regionKilnSuppliers.length === 0) return null;
 
   return (
     <div>
@@ -234,6 +241,28 @@ function RegionBlock({
           ))}
         </div>
       ))}
+      {regionKilnStudios.map(({ province, country, items }) => (
+        <div key={`kiln-studio-${province}`}>
+          <ProvinceSection province={province} country={country} />
+          {groupByCity(items).map(({ city, items: cityItems }) => (
+            <div key={city}>
+              <CitySection city={city} />
+              {cityItems.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+            </div>
+          ))}
+        </div>
+      ))}
+      {regionKilnSuppliers.map(({ province, country, items }) => (
+        <div key={`kiln-supplier-${province}`}>
+          <ProvinceSection province={province} country={country} />
+          {groupByCity(items).map(({ city, items: cityItems }) => (
+            <div key={city}>
+              <CitySection city={city} />
+              {cityItems.map((supplier) => <SupplierCard key={supplier.name} supplier={supplier} />)}
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 }
@@ -265,6 +294,8 @@ function DirectoryContent() {
       setSelectedType("guilds");
     } else if (["class", "classes", "workshop", "workshops", "lesson", "lessons"].includes(q)) {
       setSelectedType("classes");
+    } else if (["kiln", "kiln sharing", "kiln hire", "community kiln", "fire for hire", "firing service"].includes(q)) {
+      setSelectedType("kiln");
     } else if (["supplier", "suppliers", "supply", "supply shop", "supply shops", "store", "stores"].includes(q)) {
       setSelectedType("suppliers");
     } else {
@@ -297,6 +328,7 @@ function DirectoryContent() {
   const POTTER_TAGS   = "potter potters ceramicist ceramics pottery";
   const GUILD_TAGS    = "guild guilds association pottery";
   const SUPPLIER_TAGS = "supplier suppliers supply shop shops store pottery";
+  const KILN_TAGS     = "kiln sharing community kiln firing service kiln hire";
 
   // Sort so items whose city matches a query word appear first
   function sortByLocation<T extends { city?: string }>(items: T[]): T[] {
@@ -337,6 +369,19 @@ function DirectoryContent() {
     .filter((s) => !selectedProvince || s.province === selectedProvince)
     .filter((s) => matchesQuery(s, CLASS_TAGS)));
 
+  // Kiln sharing: studios and suppliers with offersKilnSharing
+  const filteredKilnStudios = sortByLocation(teachingStudios
+    .filter((s) => !selectedRegion || s.country === selectedRegion)
+    .filter((s) => !selectedProvince || s.province === selectedProvince)
+    .filter((s) => s.offersKilnSharing)
+    .filter((s) => matchesQuery(s, KILN_TAGS)));
+
+  const filteredKilnSuppliers = sortByLocation(suppliers
+    .filter((s) => !selectedRegion || s.country === selectedRegion)
+    .filter((s) => !selectedProvince || s.province === selectedProvince)
+    .filter((s) => s.offersKilnSharing)
+    .filter((s) => matchesQuery(s, KILN_TAGS)));
+
   const hasTextSearch = !!textQuery;
 
   // If a type button is selected, always respect it (narrows text search results too).
@@ -346,6 +391,7 @@ function DirectoryContent() {
   const showPotters   = selectedType ? selectedType === "potters"   : (hasTextSearch ? filteredPotters.length > 0   : true);
   const showSuppliers = selectedType ? selectedType === "suppliers" : (hasTextSearch ? filteredSuppliers.length > 0 : true);
   const showClasses   = selectedType ? selectedType === "classes"   : (hasTextSearch ? (filteredClassPotters.length > 0 || filteredTeachingStudios.length > 0) : true);
+  const showKiln      = selectedType ? selectedType === "kiln"      : (hasTextSearch ? (filteredKilnStudios.length > 0 || filteredKilnSuppliers.length > 0)     : false);
 
   const letterFilter = <T extends { name: string }>(items: T[]): T[] =>
     selectedLetter ? items.filter((i) => i.name[0]?.toUpperCase() === selectedLetter) : items;
@@ -354,6 +400,7 @@ function DirectoryContent() {
     ...(showGuilds ? filteredGuilds : []),
     ...(showPotters && !showClasses ? filteredPotters : []),
     ...(showClasses ? [...filteredClassPotters, ...filteredTeachingStudios] : []),
+    ...(showKiln ? [...filteredKilnStudios, ...filteredKilnSuppliers] : []),
     ...(showSuppliers ? filteredSuppliers : []),
   ].map((i) => i.name[0]?.toUpperCase()).filter(Boolean) as string[]);
 
@@ -362,12 +409,15 @@ function DirectoryContent() {
   const classPottersByProvince = groupByProvince(letterFilter(filteredClassPotters));
   const suppliersByProvince = groupByProvince(letterFilter(filteredSuppliers));
   const teachingStudiosByProvince = groupByProvince(letterFilter(filteredTeachingStudios));
+  const kilnStudiosByProvince = groupByProvince(letterFilter(filteredKilnStudios));
+  const kilnSuppliersByProvince = groupByProvince(letterFilter(filteredKilnSuppliers));
 
   const provinceSource = [
-    ...(selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes" ? guilds : []),
-    ...(selectedType !== "guilds" && selectedType !== "suppliers" ? potters : []),
-    ...(selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes" ? suppliers : []),
+    ...(selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes" && selectedType !== "kiln" ? guilds : []),
+    ...(selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "kiln" ? potters : []),
+    ...(selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes" && selectedType !== "kiln" ? suppliers : []),
     ...(selectedType === "classes" || selectedType === null ? teachingStudios : []),
+    ...(selectedType === "kiln" ? [...teachingStudios.filter(s => s.offersKilnSharing), ...suppliers.filter(s => s.offersKilnSharing)] : []),
   ].filter((i) => !selectedRegion || i.country === selectedRegion);
 
   const provinces = Array.from(new Set(provinceSource.map((i) => i.province))).sort();
@@ -391,6 +441,7 @@ function DirectoryContent() {
     {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "classes" && <QuoteBlock quote="There is a version of you that exists only when your hands are in clay. A pottery class is how you meet them." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === "kiln" && <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "suppliers" && <QuoteBlock quote={<>Behind every potter who makes something extraordinary is a supply shop<span className="hidden md:inline"><br /></span>{" "}who makes<span className="hidden md:inline"><br /></span>{" "}it possible.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
@@ -421,7 +472,7 @@ function DirectoryContent() {
         </div>
       </div>
       <p className="mb-3 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        The Pottery Post&rsquo;s Pottery Directory spans three continents. Know a pottery guild, potter, pottery class, or pottery supply shop who should be here? Send them our way.
+        The Pottery Post&rsquo;s Pottery Directory spans three continents. Know a pottery guild, potter, pottery class, community kiln, or pottery supply shop who should be here? Send them our way.
       </p>
       <p className="mb-10 max-w-lg text-sm italic" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
         Every addition and update is made by hand, by a real person. Please allow up to 48 hours.
@@ -433,6 +484,7 @@ function DirectoryContent() {
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
         <NavButton label="Classes" active={selectedType === "classes"} onClick={() => handleTypeClick("classes")} />
+        <NavButton label="Kiln Sharing" active={selectedType === "kiln"} onClick={() => handleTypeClick("kiln")} />
         <NavButton label="Supply Shops" active={selectedType === "suppliers"} onClick={() => handleTypeClick("suppliers")} />
       </div>
 
@@ -497,6 +549,8 @@ function DirectoryContent() {
               classPottersByProvince={classPottersByProvince}
               teachingStudiosByProvince={teachingStudiosByProvince}
               suppliersByProvince={suppliersByProvince}
+              kilnStudiosByProvince={kilnStudiosByProvince}
+              kilnSuppliersByProvince={kilnSuppliersByProvince}
               selectedType={selectedType}
             />
           ))}
@@ -574,6 +628,45 @@ function DirectoryContent() {
               )}
             </>
           )}
+          {showKiln && (
+            <>
+              {kilnStudiosByProvince.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Community Kilns</h2>
+                  {kilnStudiosByProvince.map(({ province, country, items }) => (
+                    <div key={`kiln-studio-${province}`}>
+                      {!selectedProvince && <ProvinceSection province={province} country={country} />}
+                      {groupByCity(items).map(({ city, items: cityItems }) => (
+                        <div key={city}>
+                          <CitySection city={city} />
+                          {cityItems.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </>
+              )}
+              {kilnSuppliersByProvince.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Supply Shops with Kiln Access</h2>
+                  {kilnSuppliersByProvince.map(({ province, country, items }) => (
+                    <div key={`kiln-supplier-${province}`}>
+                      {!selectedProvince && <ProvinceSection province={province} country={country} />}
+                      {groupByCity(items).map(({ city, items: cityItems }) => (
+                        <div key={city}>
+                          <CitySection city={city} />
+                          {cityItems.map((supplier) => <SupplierCard key={supplier.name} supplier={supplier} />)}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </>
+              )}
+              {kilnStudiosByProvince.length === 0 && kilnSuppliersByProvince.length === 0 && (
+                <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No kiln sharing listings yet for this selection.</p>
+              )}
+            </>
+          )}
           {showSuppliers && suppliersByProvince.length > 0 && (
             <>
               <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Supply Shops</h2>
@@ -590,7 +683,7 @@ function DirectoryContent() {
               ))}
             </>
           )}
-          {(!showGuilds || guildsByProvince.length === 0) && (!showPotters || pottersByProvince.length === 0) && !showClasses && (!showSuppliers || suppliersByProvince.length === 0) && (
+          {(!showGuilds || guildsByProvince.length === 0) && (!showPotters || pottersByProvince.length === 0) && !showClasses && !showKiln && (!showSuppliers || suppliersByProvince.length === 0) && (
             <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No listings yet for this selection.</p>
           )}
         </>
@@ -599,6 +692,7 @@ function DirectoryContent() {
     {selectedType === null && <QuoteBlock quote={<>Every name in this directory is a person who chose to make something with their hands.<br className="md:hidden" /> That choice deserves to<br className="md:hidden" /> be found.</>} className="pb-24 md:pb-32" />}
     {selectedType === "guilds" && <QuoteBlock quote="A guild is where individual voices learn to make something larger than themselves." />}
     {selectedType === "classes" && <QuoteBlock quote="No one picks up clay for the first time and walks away unchanged." />}
+    {selectedType === "kiln" && <QuoteBlock quote="A shared kiln is a quiet kind of generosity. Space made for someone else's making." className="pb-24 md:pb-32" />}
     {selectedType === "potters" && <QuoteBlock quote="What's made by hand is made twice, once in the mind, once in the world." />}
     {selectedType === "suppliers" && <QuoteBlock quote="A supplier who understands pottery understands that what they offer will one day be held by a stranger, and loved." className="py-20 md:py-24" />}
     </>
