@@ -1423,7 +1423,7 @@ export const guilds: Guild[] = [
 export const potters: Potter[] = [
   // Alberta
   {
-    name: "Heather",
+    name: "Heather Edwards",
     studio: "Pottery By Heather",
     city: "Bon Accord",
     province: "Alberta",
@@ -2251,6 +2251,14 @@ export const potters: Potter[] = [
     website: "https://maisonstoi.com/en",
     bio: "Small-batch handmade ceramics made on slow-living principles since 2015 — every plate, bowl, and vessel thrown, sanded, enamelled, and labelled by hand in Montreal.",
   },
+  {
+    name: "Cybele B. Pilon",
+    city: "Montreal",
+    province: "Quebec",
+    country: "CA",
+    website: "https://cybelebpilon.com",
+    bio: "Colourful, highly ornamented functional ceramics drawing on French-Canadian material culture, entirely handmade in Montreal.",
+  },
   // Manitoba
   {
     name: "Michael Holroyd & Karen Thomas",
@@ -2997,6 +3005,15 @@ export const potters: Potter[] = [
     website: "https://www.handmadestudiotn.com",
     bio: "A Germantown neighbourhood studio dedicated since 2012 to organic, minimalist handcrafted ceramics and dinnerware for the table.",
   },
+  {
+    name: "Timothy Weber",
+    studio: "T. Weber Pottery",
+    city: "Kingston Springs",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.tweberpottery.net",
+    bio: "Master potter with 50+ years of practice, specialising in wheel-thrown functional stoneware with distinctive sgraffito carving and contrasting clay surface treatments.",
+  },
   // Missouri
   {
     name: "Rebecca A. Koop",
@@ -3617,6 +3634,15 @@ export const potters: Potter[] = [
     country: "EU",
     website: "https://www.studioyama.se",
     bio: "A Gothenburg ceramics studio founded in 2012 by Masayoshi Oya, creating minimalist, wheel-thrown functional ceramics influenced by Japanese craft traditions.",
+  },
+  {
+    name: "Trine Lise",
+    studio: "Trine Lise Gården",
+    city: "Sweden",
+    province: "Sweden",
+    country: "EU",
+    website: "https://trinelise.com",
+    bio: "Made-to-order and ready-to-ship handmade unique pieces including custom tableware and special objects, each one distinct from her Swedish studio.",
   },
   // Norway
   {
@@ -9620,6 +9646,15 @@ export const potters: Potter[] = [
   },
 
   // Australia — Western Australia (individual potters)
+  {
+    name: "Janelle Peterson",
+    studio: "Janelle Peterson Ceramics",
+    city: "Southwest Western Australia",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://janellepetersonceramics.com",
+    bio: "One-of-a-kind ceramic sculpture, jewellery, and functional pottery inspired by fairytales, myths, and the natural surroundings of southwest Western Australia.",
+  },
   {
     name: "Melanie Sharpham",
     studio: "Eucalypt Homewares",
