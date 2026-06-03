@@ -9685,6 +9685,94 @@ export const potters: Potter[] = [
     website: "https://tactilearts.org.au",
     bio: "A community arts organisation supporting artists throughout the Top End, running a fully equipped ceramic studio in Darwin with pottery wheels, kilns, slab roller, and clay extruder available for workshops and studio hire.",
   },
+  // Alberta — individual potters
+  {
+    name: "Amy Bouchard",
+    studio: "One Tree Pottery",
+    city: "Priddis",
+    province: "Alberta",
+    country: "CA",
+    website: "https://onetreepottery.com",
+    bio: "A BFA-trained ceramic artist south of Calgary creating functional tableware, tiles, figurines, and sculpture using a wide range of hand-building and wheel-throwing techniques.",
+  },
+  {
+    name: "Aja Dawn",
+    studio: "Aja Dawn Ceramics",
+    city: "Calgary",
+    province: "Alberta",
+    country: "CA",
+    website: "https://ajadawn.com",
+    bio: "A Calgary ceramicist and Alberta Potters' Association member creating handmade functional and decorative stoneware informed by contemporary design and the textures of the Alberta landscape.",
+  },
+  // Kentucky — individual potters
+  {
+    name: "Amy Chase",
+    studio: "Amy Chase Ceramics",
+    city: "Louisville",
+    province: "Kentucky",
+    country: "US",
+    website: "https://www.amychaseceramics.com",
+    bio: "MFA-trained ceramicist creating intricately patterned vessels using slip, silkscreen, and glazing techniques that weave personal memory and experience into every surface.",
+  },
+  // Utah — individual potters
+  {
+    name: "Kathleen Royster",
+    studio: "Kathleen Royster Ceramics",
+    city: "Helper",
+    province: "Utah",
+    country: "US",
+    website: "https://www.kathleenroyster.com",
+    bio: "Working from the small arts community of Helper, Utah, Kathleen makes refined porcelain dinnerware using mishima — a 12th-century Korean inlay technique — to create quietly intricate, functional pieces.",
+  },
+  // Colorado — individual potters
+  {
+    name: "Erika Donaghy",
+    studio: "Erika Donaghy Creative Studio",
+    city: "Evergreen",
+    province: "Colorado",
+    country: "US",
+    website: "https://erikadonaghy.art",
+    bio: "A painter and potter in the Colorado Rockies creating modern handmade ceramic mugs and functional pieces from her backyard studio, blending ceramics with mural and watercolour work.",
+  },
+  // Tennessee — individual potters
+  {
+    name: "Lewis Snyder",
+    studio: "Studio S Pottery",
+    city: "Murfreesboro",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.studiospottery.com",
+    bio: "Operating one of the first privately owned clay studios in the US Southeast since the 1980s, Lewis creates fine hand-built clay art and runs an intern program advancing ceramics training and practice in Tennessee.",
+  },
+  // Denmark — individual potters
+  {
+    name: "Sussi Krull",
+    studio: "WAUW Design",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://en.wauw-design.dk",
+    bio: "A Royal Danish Academy ceramics graduate producing handmade cups, bowls, vases, and plates from her Østerbro workshop, with individually developed glazes and a long commitment to recycling clay.",
+  },
+  // Queensland — individual potters
+  {
+    name: "Kim Wallace",
+    studio: "KW Ceramics",
+    city: "Noosaville",
+    province: "Queensland",
+    country: "AU",
+    website: "https://kwceramics.com.au",
+    bio: "A Noosa-based studio potter making small-batch handmade tableware, travel cups, and home accents inspired by the textures and colours of the Australian coastal landscape.",
+  },
+  // New South Wales — individual potters
+  {
+    name: "Vicki Grima",
+    city: "Botany",
+    province: "New South Wales",
+    country: "AU",
+    website: "https://vickigrima.com.au",
+    bio: "A Sydney ceramicist working since 1988, specialising in pinch pottery — building bowls, brooches, and sculptural forms by hand, often eyes closed, and impressing surfaces with shells, coral, and found natural materials.",
+  },
 ];
 
 export const suppliers: Supplier[] = [
@@ -12599,6 +12687,8 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://madmonkeyceramicstudio.square.site",
     bio: "A Red Deer ceramics studio creating handcrafted small-batch pottery made in Alberta — functional pieces with artistry and intention, designed for collectors who value the beauty of the handmade.",
   },
+
+
   // England — Bristol
   {
     name: "Wild Clay Studios",
@@ -13828,6 +13918,7 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A Noosa-based ceramics studio and showroom producing handmade pieces with a mission to reduce single-use waste, working with local ceramic artists to create uniquely glazed functional ceramics and offering studio experiences.",
   },
 
+
   // Australia — Victoria (Mornington Peninsula & regional)
   {
     name: "Peachy Keen Ceramics",
@@ -14096,6 +14187,7 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://potterynightslc.com",
     bio: "A beginner-focused Salt Lake City pottery studio with quality wheels and a relaxed, approachable atmosphere, offering wheel throwing classes and workshops designed to make ceramics accessible and enjoyable for first-timers.",
   },
+
 
   // New Mexico — Albuquerque
   {
@@ -14458,6 +14550,7 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.paynestreetpottery.com",
     bio: "A working studio and gallery at 531 N Hite Ave in Louisville's Crescent Hill neighbourhood, offering instructor-led classes, workshops, and private party experiences for adults in an accessible community setting.",
   },
+
 
   // Texas — San Antonio
   {
@@ -14885,6 +14978,7 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A ceramics studio in Copenhagen specialising in handmade pottery and experimental techniques, offering a range of creative workshops for beginners and experienced makers.",
   },
 
+
   // Sweden — Stockholm
   {
     name: "The Slab Ceramics",
@@ -15258,6 +15352,7 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A community art centre with multiple Boulder locations — including the Boulder Pottery Lab at 1010 Aurora Ave (founded 1954) — offering accessible ceramics classes, studio memberships, and adaptive programs with Pay What You Can options.",
   },
 
+
   // Texas — El Paso
   {
     name: "Fired Up Clay Co.",
@@ -15610,6 +15705,7 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A 501(c)3 nonprofit community ceramics studio at 301 E 11th St in downtown Chattanooga offering classes and workshops for all ages, studio memberships, 16 house-made glazes, wheels, slab rollers, and kiln access. Accepts outside pieces for firing: bisque cone 06 at $0.01/cubic inch, glaze cone 6 at $0.02/cubic inch plus a $5 flat drop-off fee.",
     offersKilnSharing: true,
   },
+
 
   // Germany — Hamburg
   {
@@ -16107,6 +16203,7 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.fancynancyceramics.com.au",
     bio: "A ceramics studio in Newcastle offering wheel throwing and hand-building classes for beginners and continuing students in a friendly, relaxed environment.",
   },
+
 
   // Australia — Geelong VIC
   {
