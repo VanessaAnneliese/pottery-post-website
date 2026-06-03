@@ -441,7 +441,7 @@ function DirectoryContent() {
     {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "classes" && <QuoteBlock quote="There is a version of you that exists only when your hands are in clay. A pottery class is how you meet them." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
-    {selectedType === "kiln" && <QuoteBlock quote="For ten thousand years, humans have been putting their hands in clay. Something in us has never stopped needing to." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === "kiln" && <QuoteBlock quote="Not every potter has a kiln. But every pot deserves to be fired." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "suppliers" && <QuoteBlock quote={<>Behind every potter who makes something extraordinary is a supply shop<span className="hidden md:inline"><br /></span>{" "}who makes<span className="hidden md:inline"><br /></span>{" "}it possible.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
