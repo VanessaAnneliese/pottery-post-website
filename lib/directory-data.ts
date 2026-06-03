@@ -14482,6 +14482,575 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A community arts studio in Portland, Maine offering ceramics classes alongside other disciplines for adults and youth in an inclusive, welcoming environment.",
   },
 
+  // Ohio — Cleveland
+  {
+    name: "Alchemy Studio",
+    city: "Cleveland",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.alchemystudiocle.com",
+    bio: "A 10,360 sq ft ceramics and yoga studio in Midtown Cleveland's Maker building at 4806 Hamilton Ave, offering wheel throwing and hand-building classes capped at six students per session, plus open studio memberships.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "BRICK Ceramic + Design Studio",
+    city: "Cleveland",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.brickceramics.com",
+    bio: "A state-of-the-art ceramics studio and showroom at 420 E. 161st St in Cleveland's Waterloo Arts District, offering classes for all levels alongside a gallery of handmade local pottery.",
+  },
+  {
+    name: "Dore Ceramics / The Mud Room",
+    city: "Cleveland",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.doreceramics.com",
+    bio: "A welcoming studio at 16848 Lorain Ave on Cleveland's west side offering wheel throwing and hand-building classes for adults and children, open studio memberships, and workshops for all skill levels.",
+  },
+
+  // New York — Buffalo
+  {
+    name: "Buffalo Clayart Center",
+    city: "Buffalo",
+    province: "New York",
+    country: "US",
+    website: "https://buffaloclayart.com",
+    bio: "Established in 1997 at 255 Great Arrow Ave in Buffalo's historic Pierce Arrow Factory Complex, this membership-driven cooperative expanded in 2025 with a new teaching studio featuring nine wheels and three large kilns — offering 6–8 week beginner and intermediate courses, taster sessions, and open studio time.",
+  },
+  {
+    name: "Terra Clay Studio",
+    city: "Buffalo",
+    province: "New York",
+    country: "US",
+    website: "https://www.terraclaystudio.com",
+    bio: "A teaching studio in Kenmore (Buffalo metro) offering pottery wheel and hand-building classes for children and adults, plus paint-your-own pottery options.",
+  },
+  {
+    name: "Artyard Studio",
+    city: "Buffalo",
+    province: "New York",
+    country: "US",
+    website: "https://www.artyardstudio.com",
+    bio: "A pottery studio in the Village of Williamsville just outside Buffalo, in operation since 1999, offering instruction for all levels in wheel throwing and clay arts with hands-on guidance from the studio's founding instructor.",
+  },
+
+  // Georgia — Savannah
+  {
+    name: "Knack Studio",
+    city: "Savannah",
+    province: "Georgia",
+    country: "US",
+    website: "https://www.knack.studio",
+    bio: "An 18+ pottery studio at 106 E 40th St in Savannah offering group wheel throwing and hand-building classes, private lessons, and seasonal workshops in a welcoming, all-levels creative space.",
+  },
+  {
+    name: "Clayer & Co",
+    city: "Savannah",
+    province: "Georgia",
+    country: "US",
+    website: "https://www.clayerco.com",
+    bio: "A ceramics studio at 415 Bonaventure Rd in nearby Thunderbolt offering hand-building workshops, kids' summer camps, walk-in glaze-your-own pottery, and a Studio Lab open studio program.",
+  },
+  {
+    name: "Savannah's Clay Spot",
+    city: "Savannah",
+    province: "Georgia",
+    country: "US",
+    website: "https://www.savannahsclayspot.com",
+    bio: "A community ceramics studio in Savannah offering beginner-to-advanced classes with a focus on DIY creativity — covering wheel throwing, hand-building, and glazing in a supportive neighbourhood setting.",
+  },
+
+  // Arizona — Tucson
+  {
+    name: "Tucson Clay Art Center",
+    city: "Tucson",
+    province: "Arizona",
+    country: "US",
+    website: "https://www.tucsonclayartcenter.com",
+    bio: "An adults-only (18+) studio at 1703 E Ft. Lowell Rd offering instruction in wheel throwing, hand-building, glazing, and surface design for all skill levels in the heart of Tucson.",
+  },
+  {
+    name: "Tucson Clay Co-Op",
+    city: "Tucson",
+    province: "Arizona",
+    country: "US",
+    website: "https://www.tucsonclayco-op.com",
+    bio: "A two-location co-op in Tucson with 50+ members and 10+ instructors offering classes, workshops, and paint-your-own pottery. Their 23rd St location offers outside kiln firing services by the pound — bisque at $2/lb and cone 6 glaze at $3/lb — open to non-members.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Romero House Ceramics",
+    city: "Tucson",
+    province: "Arizona",
+    country: "US",
+    website: "https://www.romerohouseceramics.org",
+    bio: "A vibrant community studio at 102 W Washington St housed in a historic adobe building on the grounds of the Tucson Museum of Art, offering wheel and hand-building classes alongside the Mudroom Gallery showcasing local ceramic artists.",
+  },
+
+  // Oklahoma — Oklahoma City
+  {
+    name: "Oklahoma Contemporary Arts Center — Studio School",
+    city: "Oklahoma City",
+    province: "Oklahoma",
+    country: "US",
+    website: "https://oklahomacontemporary.org/learn/studio-school/ceramics",
+    bio: "A flagship ceramics program since 1989 at 11 NW 11th St, offering beginner-to-advanced courses in state-of-the-art facilities with two outdoor gas kilns and the state's only community salt and soda kiln — open for community firings by outside ceramicists.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Prairie Pottery",
+    city: "Oklahoma City",
+    province: "Oklahoma",
+    country: "US",
+    website: "https://prairiepottery.com",
+    bio: "A community studio at 7518 N May Ave welcoming all skill levels, offering 4-week courses in wheel throwing and hand-building, studio memberships with kiln access, and $14/hr open studio sessions including firing of up to three pieces.",
+  },
+
+  // Tennessee — Memphis
+  {
+    name: "Belltower Pottery Studio",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.belltowerpottery.com",
+    bio: "Memphis's most complete ceramics hub at 525 S Highland St — offering beginner through advanced wheel-throwing classes, studio memberships with 24/7 access, and community kiln rentals (bisque and glaze) open to outside potters.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Summer Avenue Art and Clay",
+    city: "Memphis",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.summeravenueartandclay.com",
+    bio: "The only pottery studio in the greater Memphis area selling Laguna clay, glazes, and supplies to the public, alongside seasonal pottery series and year-round classes for all levels.",
+  },
+
+  // South Carolina — Charleston
+  {
+    name: "Terrace Clay Studio",
+    city: "Charleston",
+    province: "South Carolina",
+    country: "US",
+    website: "https://www.terraceclaystudio.com",
+    bio: "A members-based pottery studio at 2041 Wappoo Dr in Charleston's James Island neighbourhood offering classes, open studio access, and kiln sharing with Lowcountry ceramic artists who work from their own home studios.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Park Circle Ceramics",
+    city: "Charleston",
+    province: "South Carolina",
+    country: "US",
+    website: "https://www.northcharleston.org/government/city_departments/cultural_arts/workshops_classes/park_circle_ceramics.php",
+    bio: "The City of North Charleston's community ceramics studio offering affordable wheel throwing and hand-building classes for adults and youth in the Park Circle neighbourhood.",
+  },
+  {
+    name: "Capitol Clay Arts",
+    city: "Charleston",
+    province: "South Carolina",
+    country: "US",
+    website: "https://capitolclayarts.com",
+    bio: "A teaching ceramics studio in the Charleston area offering structured classes and open studio sessions for beginners through advanced students in wheel throwing and sculptural hand-building.",
+  },
+
+  // Tennessee — Knoxville
+  {
+    name: "Mighty Mud",
+    city: "Knoxville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://mightymud.com",
+    bio: "An artist-run ceramics complex at 1528 Island Home Ave spanning 16,000 sq ft with 30+ clay varieties, 5+ electric kilns, a wood-fire kiln, artist studio rentals, weekly classes, and a gallery — the clay supply and teaching hub of Knoxville.",
+  },
+  {
+    name: "Knoxville Art Studio",
+    city: "Knoxville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.knoxvilleartstudio.com",
+    bio: "A teaching ceramics studio in Knoxville offering beginner and intermediate wheel throwing and hand-building classes for adults in a welcoming community setting.",
+  },
+
+  // Wisconsin — Madison
+  {
+    name: "Dongzhu Pottery Studio",
+    city: "Madison",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.dongzhupotterystudio.com",
+    bio: "A pottery school at 1925 Monroe St in Madison offering 5-week wheel throwing and hand-building courses seven days a week, plus Friday and Saturday one-night drop-in sessions — with memberships covering 7-day studio access and two kilns.",
+  },
+  {
+    name: "The Kiln Shed",
+    city: "Madison",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.thekilnshed.studio",
+    bio: "A Madison clay studio offering Pottery 101 courses in functional food-safe wheel-thrown work, private studio memberships, wood and gas firing, and ceramics for sale — covering centering, throwing, trimming, handles, decorating, and glazing.",
+  },
+  {
+    name: "Wheelhouse Studios (Wisconsin Union)",
+    city: "Madison",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://union.wisc.edu/events-and-activities/open-art-studio-and-classes",
+    bio: "An open art studio and ceramics program at the UW–Madison Wisconsin Union offering pottery classes taught by Wheelhouse instructors — free access for current UW students, studio passes available for Union members and UW faculty/staff.",
+  },
+
+  // Michigan — Ann Arbor
+  {
+    name: "Ann Arbor Art Center",
+    city: "Ann Arbor",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.annarborartcenter.org/education/ceramics-studios",
+    bio: "Located at 117 W Liberty St in downtown Ann Arbor, the A2AC features two fully outfitted ceramic studios, a dedicated glaze room, and three large electric kilns — offering seasonal class sessions and workshops for all skill levels.",
+  },
+  {
+    name: "Yourist Studio Gallery",
+    city: "Ann Arbor",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.youristpottery.com",
+    bio: "A well-regarded Ann Arbor studio and gallery offering a range of ceramics classes in a modern space, with instruction in wheel throwing and specialty techniques such as atmospheric soda firing.",
+  },
+  {
+    name: "Ann Arbor Potters Guild",
+    city: "Ann Arbor",
+    province: "Michigan",
+    country: "US",
+    website: "https://www.pottersguild.net",
+    bio: "A ceramics guild in Ann Arbor running two 14-week class sessions per year — fall and winter — meeting one evening per week for three hours, with fee covering clay, glazes, kiln firing, and open lab hours.",
+  },
+
+  // Hawaii — Honolulu
+  {
+    name: "Mudd Studio",
+    city: "Honolulu",
+    province: "Hawaii",
+    country: "US",
+    website: "https://mudd-studio.com",
+    bio: "The best-equipped ceramics studio in Honolulu at 1192 Smith St in Chinatown, offering memberships with 24/7 studio access, classes for all levels, and kiln firing services open to outside artists — bisque $20, glaze $25 — with scheduled Monday bisque and Wednesday glaze firings.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Hawaii Potters' Guild",
+    city: "Honolulu",
+    province: "Hawaii",
+    country: "US",
+    website: "https://www.hawaiipottersguild.org",
+    bio: "A nonprofit ceramics studio and community at 2480 Bingham St offering weekly classes, workshops, and open studio time for members — with studio access seven days a week when no class is in session.",
+  },
+  {
+    name: "Honolulu Museum of Art — Ceramics",
+    city: "Honolulu",
+    province: "Hawaii",
+    country: "US",
+    website: "https://honolulumuseum.org/courses/ceramics",
+    bio: "Ceramics classes offered through the Honolulu Museum of Art at 900 S Beretania St, covering wheel throwing, hand-building, and glazing in seasonal sessions alongside the museum's world-class collection.",
+  },
+
+  // England — Manchester (additional studios)
+  {
+    name: "7 Spot Pottery",
+    city: "Manchester",
+    province: "England",
+    country: "EU",
+    website: "https://www.7spotpottery.co.uk",
+    bio: "Manchester's leading artist-run ceramic space offering hands-on pottery classes for all skill levels — from fundamentals of the wheel to advanced glazing techniques — in a studio designed to foster creativity.",
+  },
+  {
+    name: "New Dawn Pottery",
+    city: "Manchester",
+    province: "England",
+    country: "EU",
+    website: "https://www.newdawnpottery.co.uk",
+    bio: "A community ceramic studio in Ancoats, Manchester offering beginner pottery taster sessions from £40 and six-week courses from £125, in an accessible neighbourhood creative space.",
+  },
+
+  // Scotland — Edinburgh (additional studios)
+  {
+    name: "Wild Fired",
+    city: "Edinburgh",
+    province: "Scotland",
+    country: "EU",
+    website: "https://wildfired.studio",
+    bio: "A small-group ceramics studio at 16 Montrose Terrace in Edinburgh EH7 offering high-quality wheel throwing courses, varied workshops, and studio memberships — with classes taught by experienced potter Stephen Wood for groups of up to eight.",
+  },
+
+  // Ireland — Dublin (additional studios)
+  {
+    name: "Ceramic Forms",
+    city: "Dublin",
+    province: "Ireland",
+    country: "EU",
+    website: "https://ceramicforms.com",
+    bio: "An award-winning purpose-built studio in Castleknock, Dublin 15 offering weekly hand-building ceramics classes and weekend workshops for all levels, with class sizes capped at seven to ensure personal attention — taught by ceramicist Michelle Maher.",
+  },
+  {
+    name: "Brookwood Pottery",
+    city: "Dublin",
+    province: "Ireland",
+    country: "EU",
+    website: "https://brookwoodpottery.com",
+    bio: "A well-rated pottery studio at 3 Marino Mart, Dublin 3 hosting Saturday wheel throwing classes (10am–4pm) where students learn to throw on the potter's wheel in a hands-on, full-day format.",
+  },
+
+  // Netherlands — Amsterdam (additional studio)
+  {
+    name: "Studio Pansa",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://www.studiopansa.com",
+    bio: "A large professional ceramics workspace in Amsterdam welcoming anyone to work with clay — offering memberships, pottery courses, and workshops including taster classes for beginners, with flexible studio access.",
+  },
+
+  // Spain — Barcelona (additional studios)
+  {
+    name: "Taller Bas",
+    city: "Barcelona",
+    province: "Spain",
+    country: "EU",
+    website: "https://basbarcelona.com",
+    bio: "A long-established ceramics workshop in Barcelona's Poble Sec neighbourhood — founded by Alicia Bas in 1970 — offering personalized small-group courses in wheel throwing, hand-building, and plaster moulding at all skill levels.",
+  },
+  {
+    name: "Corrie Bain International Ceramics School",
+    city: "Barcelona",
+    province: "Spain",
+    country: "EU",
+    website: "https://corriebain.com",
+    bio: "An international ceramics school in Barcelona offering courses from beginner to professional level — including wheel throwing intensives, hand-building, and glaze workshops with visiting experts — taught in English.",
+  },
+
+  // Denmark — Copenhagen (additional studios)
+  {
+    name: "Let's Clay",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://letsclay.dk",
+    bio: "A ceramics workshop in Copenhagen's Vesterbro neighbourhood, a 10-minute walk from Central Station, offering hands-on wheel throwing and hand-building classes for all levels — the team glazes and fires all student pieces.",
+  },
+  {
+    name: "Kulki Studio",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://www.kulkistudio.com",
+    bio: "A Copenhagen ceramics studio founded by potters Hannah Blackall-Smith and Tasja Pulawska, offering regular wheel throwing and hand-building courses alongside occasional specialist workshops.",
+  },
+  {
+    name: "Estet Studio",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://www.estet.dk",
+    bio: "A ceramics studio in Copenhagen specialising in handmade pottery and experimental techniques, offering a range of creative workshops for beginners and experienced makers.",
+  },
+
+  // Sweden — Stockholm
+  {
+    name: "The Slab Ceramics",
+    city: "Stockholm",
+    province: "Sweden",
+    country: "EU",
+    website: "https://www.theslabceramics.com",
+    bio: "A pottery studio and boutique in central Stockholm offering courses, workshops, and one-time wheel bookings — with classes taught in English and Swedish for all skill levels.",
+  },
+  {
+    name: "Kisel Keramik",
+    city: "Stockholm",
+    province: "Sweden",
+    country: "EU",
+    website: "https://www.kiselkeramik.se",
+    bio: "A ceramics studio at Maria Skolgata 42 in Stockholm's Södermalm neighbourhood, run by potters Helena Hättestrand and Anna Schröder, offering courses for beginners and experienced potters alongside a handmade ceramics shop.",
+  },
+  {
+    name: "Imse Studios",
+    city: "Stockholm",
+    province: "Sweden",
+    country: "EU",
+    website: "https://imsestudios.com",
+    bio: "A ceramics and fine art studio at Frejgatan 44 in Stockholm offering coiling, pinching, and slab-building courses plus private lessons for small groups of 2–3 students.",
+  },
+  {
+    name: "Gyttja Keramik",
+    city: "Stockholm",
+    province: "Sweden",
+    country: "EU",
+    website: "https://www.gyttja.se",
+    bio: "A ceramics studio in Stockholm's Blackeberg/Bromma area offering small-group wheel throwing and hand-building classes capped at six participants for personal instruction.",
+  },
+
+  // Austria — Vienna (additional studios)
+  {
+    name: "Fresh Ceramics",
+    city: "Vienna",
+    province: "Austria",
+    country: "EU",
+    website: "https://freshceramics.at",
+    bio: "A Vienna pottery school with studios in Neubau (Westbahnstraße 18) and Hietzing (Altgasse 20), offering 9-week wheel-throwing courses for beginners and one-off sessions, with a firing service available for completed pieces.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Zolta Ceramics Studio",
+    city: "Vienna",
+    province: "Austria",
+    country: "EU",
+    website: "https://zolta.me",
+    bio: "A Vienna ceramics studio offering curated workshops in wheel throwing, hand-building, vase making, and glazing — suitable for all ages and experience levels, taught in a creative and welcoming environment.",
+  },
+
+  // Portugal — Lisbon
+  {
+    name: "Studio Marvila",
+    city: "Lisbon",
+    province: "Portugal",
+    country: "EU",
+    website: "https://www.studiomarvila.com",
+    bio: "A pottery studio and natural wine bar in Lisbon's creative Marvila district offering intimate wheel throwing and hand-building workshops for all levels — with small class sizes, glazing, and kiln firing all included.",
+  },
+  {
+    name: "FICA Oficina Criativa",
+    city: "Lisbon",
+    province: "Portugal",
+    country: "EU",
+    website: "https://fica-oc.pt",
+    bio: "A Lisbon ceramics studio at Rua Bernardo Lima 10C offering a decade of hand-forming, wheel, and decoration workshops ranging from 2.5 to 11 hours — combining Portuguese craft tradition with contemporary techniques.",
+  },
+  {
+    name: "Amora Estúdio",
+    city: "Lisbon",
+    province: "Portugal",
+    country: "EU",
+    website: "https://handson.pt/workshop/ceramic-workshop-lisbon-clay-and-pottery-classes",
+    bio: "A fully equipped ceramics studio at Rua Paio Peres Correia 27B in Lisbon's Penha de França neighbourhood, offering wheel throwing and hand-building classes taught by experienced ceramicists Selma and Niall.",
+  },
+
+  // Italy — Florence
+  {
+    name: "Accademia Riaci — Ceramics",
+    city: "Florence",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.accademiariaci.info/academics/ceramics",
+    bio: "An international fine arts school at Via dei Conti 4 in Florence offering one-year, semester, and summer intensive ceramics programs — covering potter's wheel, hand-forming, sculpture, and kiln work in a professional offsite laboratory.",
+  },
+  {
+    name: "Centro Machiavelli — Pottery",
+    city: "Florence",
+    province: "Italy",
+    country: "EU",
+    website: "https://www.centromachiavelli.it/en/arts-and-crafts/pottery-course.php",
+    bio: "An Italian language and culture school in Florence offering pottery lessons in artisan workshops starting every Monday, covering wheel throwing, ceramic design, and hand-painted decoration.",
+  },
+  {
+    name: "La Meridiana",
+    city: "Florence",
+    province: "Italy",
+    country: "EU",
+    website: "https://lameridiana.fi.it",
+    bio: "A renowned ceramics school near Florence offering intensive residential and day programs in wheel throwing, hand-building, raku, and sculptural ceramics — internationally respected with visiting master instructors.",
+  },
+  {
+    name: "Montelupo Experience",
+    city: "Florence",
+    province: "Italy",
+    country: "EU",
+    website: "https://montelupoexperience.com",
+    bio: "A ceramics masterclass studio in Montelupo Fiorentino (20 minutes from Florence), named Airbnb's Best Experience in Italy 2025 — offering hands-on sessions rooted in the town's 600-year tradition of Renaissance maiolica pottery.",
+  },
+
+  // Canada — Manitoba — Winnipeg (additional studios)
+  {
+    name: "The Stoneware Studio",
+    city: "Winnipeg",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://stonewaregallery.com",
+    bio: "A communal pottery studio at 778 Corydon Ave in Winnipeg, in operation since 1978, offering morning and evening adult wheel throwing classes for all levels with professional loading and firing in a gas reduction kiln — adjoining the Stoneware Gallery.",
+  },
+  {
+    name: "The Sounding Stone",
+    city: "Winnipeg",
+    province: "Manitoba",
+    country: "CA",
+    website: "https://www.thesoundingstone.ca",
+    bio: "A community ceramics studio in Winnipeg offering beginner-to-intermediate pottery classes in a supportive and encouraging environment, with a focus on personal expression and skill development.",
+  },
+
+  // Canada — British Columbia — Victoria (additional studios)
+  {
+    name: "Touci Ceramic Studio",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.touciceramicstudio.com",
+    bio: "A Victoria ceramics studio in the Rock Bay area offering weekly wheel throwing and hand-building classes alongside studio memberships that include kiln access and community support.",
+  },
+  {
+    name: "Arts Centre at Cedar Hill — Ceramics",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.saanich.ca/EN/main/parks-recreation-community/arts/arts-centre-at-cedar-hill/ceramics.html",
+    bio: "The District of Saanich's large state-of-the-art ceramics studio at 3220 Cedar Hill Rd in Victoria, offering a wide range of pottery classes, workshops, summer camps, and a drop-in studio program for all ages.",
+  },
+  {
+    name: "Eccentric Artist Studio",
+    city: "Victoria",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://www.eccentricartiststudio.com",
+    bio: "A Victoria pottery studio offering clay classes tailored for beginners just starting out through to experienced sculptors, with a focus on individual creative development in an encouraging studio environment.",
+  },
+
+  // Canada — Ontario — Hamilton (additional studios)
+  {
+    name: "Dundas Valley School of Art — Pottery",
+    city: "Hamilton",
+    province: "Ontario",
+    country: "CA",
+    website: "https://dvsa.ca/pottery",
+    bio: "A cornerstone of the Hamilton-area ceramics community at 21 Ogilvie St in Dundas, with 15+ throwing wheels (including accessible options), large hand-building benches, a full glaze room, and electric, gas, and raku kilns firing cone 6 and cone 10 work.",
+  },
+  {
+    name: "Hamilton Craft Studios",
+    city: "Hamilton",
+    province: "Ontario",
+    country: "CA",
+    website: "https://hamiltoncraftstudios.com",
+    bio: "A shared creative hub in a restored heritage building at 121 Princess St in downtown Hamilton, offering Introduction to Clay courses alongside studio memberships, with access to wheels, kilns, and a well-equipped ceramics studio.",
+  },
+
+  // Canada — Ontario — London (additional studios)
+  {
+    name: "Clayworx Ceramic Arts Learning Centre",
+    city: "London",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.clayworx.ca",
+    bio: "A seven-days-a-week ceramics centre at 664 Dundas St in London's Old East Village — offering classes for ages 7 and up, an open studio, and a retail gallery featuring work by 35+ local artists, formerly operated by the London Potters Guild.",
+  },
+  {
+    name: "Blanc Ceramic",
+    city: "London",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.blanceramic.com",
+    bio: "A London, Ontario pottery studio at Park Royal offering beginner wheel throwing and hand-building workshops alongside retail ceramics — an accessible, welcoming space for adults trying clay for the first time.",
+  },
+  {
+    name: "Flux Pottery",
+    city: "London",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.fluxpottery.ca",
+    bio: "A warm and approachable London, Ontario studio offering a variety of hand-building workshops perfect for beginning potters and those with some prior experience.",
+  },
+
 ];
 
 export function groupByProvince<T extends { province: string; country: Country }>(
