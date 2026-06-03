@@ -692,7 +692,7 @@ function DirectoryContent() {
     {selectedType === null && <QuoteBlock quote={<>Every name in this directory is a person who chose to make something with their hands.<br className="md:hidden" /> That choice deserves to<br className="md:hidden" /> be found.</>} className="pb-24 md:pb-32" />}
     {selectedType === "guilds" && <QuoteBlock quote="A guild is where individual voices learn to make something larger than themselves." />}
     {selectedType === "classes" && <QuoteBlock quote="No one picks up clay for the first time and walks away unchanged." />}
-    {selectedType === "kiln" && <QuoteBlock quote="A shared kiln is a quiet kind of generosity. Space made for someone else's making." className="pb-24 md:pb-32" />}
+    {selectedType === "kiln" && <QuoteBlock quote={<>A shared kiln is a quiet kind of generosity.<br className="md:hidden" /> Space made for someone else&rsquo;s making.</>} className="pb-24 md:pb-32" />}
     {selectedType === "potters" && <QuoteBlock quote="What's made by hand is made twice, once in the mind, once in the world." />}
     {selectedType === "suppliers" && <QuoteBlock quote="A supplier who understands pottery understands that what they offer will one day be held by a stranger, and loved." className="py-20 md:py-24" />}
     </>

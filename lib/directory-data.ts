@@ -13544,7 +13544,7 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Ontario",
     country: "CA",
     website: "https://shawstreetpottery.ca",
-    bio: "A Little Italy pottery studio at 422 Shaw St offering studio sessions for experienced potters. Sessions include kiln firing (one bisque and one glaze) for work made on-site. By appointment only.",
+    bio: "A Little Italy pottery studio at 422 Shaw St offering Glazing Sessions ($90/person) for potters who have bisqueware made elsewhere — you come in to glaze using 35+ studio glazes, and firing is included. Covers one 15\" shelf with pieces under 5\" tall. Bisqueware only; cone 6 clay. By appointment.",
     offersKilnSharing: true,
   },
   {
@@ -13571,7 +13571,7 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Ontario",
     country: "CA",
     website: "https://www.akincollective.com/ceramics-kiln-davisville",
-    bio: "An artist studio collective at 224 Merton St offering member-run kiln firing services to Akin members. Members can access kiln firings directly through the on-site ceramics room.",
+    bio: "An independently operated electric kiln at the Akin Davisville collective, 224 Merton St, run by ceramicist Andrea Liao. Open to non-members as well as Akin members — priced per piece by height, from $12 for small pieces to $60+ for large; half kiln $75, full $150. Book via intake form; allow 1–2 weeks.",
     offersKilnSharing: true,
   },
   {
@@ -13580,7 +13580,7 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Ontario",
     country: "CA",
     website: "https://www.akincollective.com/ceramics-kiln-dupont",
-    bio: "An artist studio collective at 300 Campbell Ave (Studio 206) with a dedicated ceramics room and member-run kiln. Firing services available to Akin members.",
+    bio: "A member-operated electric Cone Art kiln at the Akin Dupont collective, 300 Campbell Ave Studio 206, run by ceramicist Loren Kaplan. Open to non-members — priced per half-shelf by piece height ($15–$25), full kiln $175. Fires cone 04, 5, and 6. Email first with clay brand, cone type, glazes, and photos.",
     offersKilnSharing: true,
   },
   {
@@ -13589,7 +13589,16 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Ontario",
     country: "CA",
     website: "https://www.akincollective.com/ceramics-kiln-stclair",
-    bio: "A street-level artist studio at 1747 St Clair Ave W with two member-run kilns available for firing services. Akin members at nearby locations can also drop off and pick up work here.",
+    bio: "Two independently operated electric kilns at the Akin St Clair collective, 1747 St Clair Ave W, run by kiln technician Liliana. Open to non-members as well as Akin members — priced by shelf, from $12 for a half shelf (small Paragon kiln) to $105 for a full load (larger Cone Art). Fires both low-fire and cone 6. Appointment required.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Lost & Found Project Space",
+    city: "Toronto",
+    province: "Ontario",
+    country: "CA",
+    website: "https://www.akincollective.com/blog/lost-and-found",
+    bio: "An artist-led gallery and project space at 420 Queen St East in Toronto's Riverside neighbourhood with two electric Cone Art kilns available for full-kiln firing. Large kiln (16.5 cu ft) $160 + HST; small kiln (1.98 cu ft) $65 + HST. Open to outside potters — multiple makers can coordinate a shared firing to split costs.",
     offersKilnSharing: true,
   },
 
@@ -13802,6 +13811,283 @@ export const teachingStudios: TeachingStudio[] = [
     country: "AU",
     website: "https://eucalypthomewares.com.au",
     bio: "Perth ceramicist Melanie Sharpham's studio in the western suburbs offering clay workshops where participants learn to make functional handmade ceramics for the home in a creative and tranquil setting.",
+  },
+
+  // New York — Manhattan
+  {
+    name: "Greenwich House Pottery",
+    city: "New York",
+    province: "New York",
+    country: "US",
+    website: "https://greenwichhouse.org/pottery",
+    bio: "One of Manhattan's oldest and most respected ceramics centers, with locations in Greenwich Village (16 Jones St) and Chelsea (80 Eighth Ave), offering wheel throwing, hand building, sculpture, and glaze chemistry courses for all levels. The Jones Street studio contains the only remaining gas pottery kilns in Manhattan.",
+  },
+  // New York — Manhattan
+  {
+    name: "Tribeca Clayworks",
+    city: "New York",
+    province: "New York",
+    country: "US",
+    website: "https://tribecaclayworks.org",
+    bio: "Operating for over 30 years as Tribeca's first clay studio, now at 120 Warren St inside the Downtown Community Center — offering wheel throwing and hand building classes for toddlers through adults in small groups taught by professional ceramic artists.",
+  },
+  // New York — Manhattan
+  {
+    name: "The Pottery Studio",
+    city: "New York",
+    province: "New York",
+    country: "US",
+    website: "https://thepotterystudio.com",
+    bio: "A multi-location New York City ceramics studio with 22 wheels at its Chelsea flagship at 150 W 22nd St, offering monthly classes, open practice hours from 10am to 10pm, and memberships in an all-electric cone 5/6 studio with clay and firing included.",
+  },
+  // New York — Manhattan
+  {
+    name: "Uptown Clay",
+    city: "New York",
+    province: "New York",
+    country: "US",
+    website: "https://uptown-clay.com",
+    bio: "A boutique pottery studio and community gallery in Washington Heights, northern Manhattan, offering group classes, private lessons, and a retail gallery — one of the few dedicated clay spaces serving upper Manhattan.",
+  },
+
+  // California — San Diego
+  {
+    name: "Mud Lily",
+    city: "San Diego",
+    province: "California",
+    country: "US",
+    website: "https://mudlilyclay.com",
+    bio: "A lively community-focused ceramics studio at 2888 Adams Ave in the North Park neighbourhood of San Diego, offering wheel throwing and hand building workshops, multi-week classes, team building events, and open studio time for experienced ceramicists.",
+  },
+  // California — San Diego
+  {
+    name: "Shape Theory Studio",
+    city: "San Diego",
+    province: "California",
+    country: "US",
+    website: "https://shapetheorystudio.com",
+    bio: "A women-owned pottery studio at 3033 Jefferson St near Old Town San Diego offering wheel-throwing classes, memberships, private lessons, group events, and kiln firing services for outside pieces.",
+    offersKilnSharing: true,
+  },
+  // California — San Diego
+  {
+    name: "Teralta Art",
+    city: "San Diego",
+    province: "California",
+    country: "US",
+    website: "https://teralta.art",
+    bio: "A nonprofit pottery studio at 4105 El Cajon Blvd in San Diego's City Heights neighbourhood dedicated to making ceramics accessible to immigrant, refugee, and low-income communities — providing free and low-cost wheel and hand building classes to over 2,500 people since 2021.",
+  },
+
+  // North Carolina — Asheville
+  {
+    name: "AVL Clay",
+    city: "Asheville",
+    province: "North Carolina",
+    country: "US",
+    website: "https://avlclay.com",
+    bio: "Asheville's newest community pottery studio, opened 2025 in a restored 1920s industrial building at 4 Mulvaney St — a 4,300 sq ft space with 12 wheels, multiple kilns, 13 house-made glazes, and daily open studio access from 9am to 9pm for members.",
+  },
+  // North Carolina — Asheville
+  {
+    name: "The Village Potters Clay Center",
+    city: "Asheville",
+    province: "North Carolina",
+    country: "US",
+    website: "https://thevillagepotters.com",
+    bio: "A long-established Asheville clay center at 44 Westgate Pkwy in the River Arts District, recently reopened after Hurricane Helene — offering 8-week community classes for all levels, professional working studios, and an Advanced Studies Program with 13+ kilns including cone 10 gas reduction, raku, and atmospheric options.",
+  },
+
+  // Pennsylvania — Pittsburgh
+  {
+    name: "Union Project",
+    city: "Pittsburgh",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://unionproject.org",
+    bio: "A Pittsburgh community ceramics hub at 801 N Negley Ave in Highland Park offering 100+ clay programs annually and kiln firing for outside pieces — raku, soda, electric, and high-fire gas reduction kilns available. Drop off outside work for firing; all kiln types accessible to the broader community by arrangement.",
+    offersKilnSharing: true,
+  },
+  // Pennsylvania — Pittsburgh
+  {
+    name: "Pittsburgh Center for Arts & Media",
+    city: "Pittsburgh",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://pghartsmedia.org/artist-services/ceramics-studio",
+    bio: "A 3,000 sq ft ceramics studio in Pittsburgh's Shadyside neighbourhood with 14 wheels, a glaze room, three electric kilns, a soda kiln, and a gas kiln — offering classes, workshops, and ceramic residency programs for serious working artists.",
+  },
+
+  // Ohio — Columbus
+  {
+    name: "KILN ROOM",
+    city: "Columbus",
+    province: "Ohio",
+    country: "US",
+    website: "https://kilnroomcolumbus.com",
+    bio: "A community pottery studio at 2050 S High St in Columbus offering 6-week wheel throwing and hand building sessions for all skill levels, plus workshops on alternative firing techniques and glaze — one of the most prominent dedicated teaching studios in the city.",
+  },
+  // Ohio — Columbus
+  {
+    name: "Bareclay",
+    city: "Columbus",
+    province: "Ohio",
+    country: "US",
+    website: "https://bareclay.com",
+    bio: "A Columbus pottery studio at 734 E Lincoln Ave offering open studio sessions at $30/session and punch card packages — an accessible pay-per-session model ideal for experienced potters who want flexible drop-in studio time.",
+  },
+
+  // Ohio — Cincinnati
+  {
+    name: "Queen City Clay",
+    city: "Norwood",
+    province: "Ohio",
+    country: "US",
+    website: "https://queencityclay.com",
+    bio: "One of the largest pottery studios in the country, at 2760 Highland Ave in Norwood, combining a full clay studio, gallery, pottery painting studio, and ceramic supply store. Accepts outside pieces for kiln firing by weight — electric kilns from $1.25/lb (members) and $2.25/lb (non-members); gas cone 9/10 from $2.25/lb; drop-off during retail hours.",
+    offersKilnSharing: true,
+  },
+  // Ohio — Cincinnati
+  {
+    name: "Core Clay",
+    city: "Norwood",
+    province: "Ohio",
+    country: "US",
+    website: "https://coreclay.com",
+    bio: "A well-established Cincinnati community clay studio in Norwood founded in 2005, with 100+ members, beginner through advanced wheel and hand building classes, weekend workshops, and outside kiln firing accepted — drop-off firing by weight, packages available, and full kiln rentals also offered.",
+    offersKilnSharing: true,
+  },
+  // Kentucky — Cincinnati area
+  {
+    name: "Covington Clay",
+    city: "Covington",
+    province: "Kentucky",
+    country: "US",
+    website: "https://covingtonclay.com",
+    bio: "A gallery space and pottery studio in Covington's arts corridor, just across the Ohio River from Cincinnati, offering wheel throwing and hand building classes for all skill levels with 24/7 studio access for registered students.",
+  },
+
+  // Louisiana — New Orleans
+  {
+    name: "The Clay Center of New Orleans",
+    city: "New Orleans",
+    province: "Louisiana",
+    country: "US",
+    website: "https://nolaclay.org",
+    bio: "A community ceramics nonprofit at 3928 Euphrosine St in New Orleans offering open studio, 24/7 access memberships, classes, and one of the most accessible public kiln firing services found in the US — $2/lb pay-as-you-go for bisque or glaze firings, or $60/month for unlimited firings. Drop off during open hours; pickup in approximately 2 weeks.",
+    offersKilnSharing: true,
+  },
+  // Louisiana — New Orleans
+  {
+    name: "The London Clayworks",
+    city: "New Orleans",
+    province: "Louisiana",
+    country: "US",
+    website: "https://thelondonclayworks.com",
+    bio: "Two 2,000+ sq ft New Orleans studio locations — Royal Street and Gentilly — offering monthly memberships that include all firing, studio glazes, equipment access, and storage, making it a strong value for working potters who want a full studio home.",
+  },
+  // Louisiana — New Orleans
+  {
+    name: "Byrdie's Pottery",
+    city: "New Orleans",
+    province: "Louisiana",
+    country: "US",
+    website: "https://byrdiespottery.org",
+    bio: "A longtime New Orleans clay studio in the Marigny, in operation since 2010, offering single-session through 8-week classes, studio memberships, and a storefront where members can sell their work — deeply community-rooted with a welcoming, local character.",
+  },
+  // Louisiana — New Orleans
+  {
+    name: "Puddle Clay Works",
+    city: "New Orleans",
+    province: "Louisiana",
+    country: "US",
+    website: "https://puddleclayworks.com",
+    bio: "A teaching studio at 7200 Washington Ave in New Orleans with seven electric wheels, three electric kilns, slab roller, extruder, and over 50 glaze combinations, offering classes Monday through Saturday for potters of all skill levels.",
+  },
+
+  // Maryland — Baltimore
+  {
+    name: "Baltimore Clayworks",
+    city: "Baltimore",
+    province: "Maryland",
+    country: "US",
+    website: "https://baltimoreclayworks.org",
+    bio: "Baltimore's flagship ceramics institution at 5707 Smith Ave, offering beginner through advanced classes in wheel throwing, hand building, sculpture, and glaze chemistry — plus extensive community outreach and a Noborigama wood kiln, the first urban Japanese ascending kiln in the Baltimore region.",
+  },
+  // Maryland — Baltimore
+  {
+    name: "The Potters Guild of Baltimore",
+    city: "Baltimore",
+    province: "Maryland",
+    country: "US",
+    website: "https://pottersguild.org",
+    bio: "A member-operated community clay studio at 3600 Clipper Mill Rd in Hampden's historic Meadow Mill, with 12 wheels, four hand building tables, a glaze room, pug mill, extruder, slab roller, four kilns, and kiln rental available to outside artists — one of Baltimore's most active community studios.",
+    offersKilnSharing: true,
+  },
+  // Maryland — Baltimore
+  {
+    name: "ANG Pottery",
+    city: "Baltimore",
+    province: "Maryland",
+    country: "US",
+    website: "https://angpottery.com",
+    bio: "A Baltimore pottery studio offering wheel throwing, hand building, and paint-your-own classes for individuals and groups, with 24/7 studio rental for resident artists including full kiln access at no extra cost.",
+  },
+
+  // Utah — Salt Lake City
+  {
+    name: "Petersen Art Center",
+    city: "Salt Lake City",
+    province: "Utah",
+    country: "US",
+    website: "https://petersenartcenter.com",
+    bio: "A well-equipped teaching studio at 1025 E 2100 South in Salt Lake City with 20 professional potter's wheels and a 36 cubic foot Olsen kiln — the only private school in Utah offering cone 10 reduction firing to students. Also offers raku workshops, date nights, and serious instruction at college-level.",
+  },
+  // Utah — Salt Lake City
+  {
+    name: "Art Haus",
+    city: "Salt Lake City",
+    province: "Utah",
+    country: "US",
+    website: "https://arthaus-slc.com",
+    bio: "A community-first creative space at 177 E 900 South in Salt Lake City offering pottery, painting, and drawing classes for kids and adults, with scholarships and free programs for underserved youth — one of SLC's most mission-driven studios.",
+  },
+  // Utah — Salt Lake City
+  {
+    name: "Pottery Night SLC",
+    city: "Salt Lake City",
+    province: "Utah",
+    country: "US",
+    website: "https://potterynightslc.com",
+    bio: "A beginner-focused Salt Lake City pottery studio with quality wheels and a relaxed, approachable atmosphere, offering wheel throwing classes and workshops designed to make ceramics accessible and enjoyable for first-timers.",
+  },
+
+  // New Mexico — Albuquerque
+  {
+    name: "Homemade Culture",
+    city: "Albuquerque",
+    province: "New Mexico",
+    country: "US",
+    website: "https://homemadeculture.org",
+    bio: "A pottery studio, school, gallery, and art library at 1001 Yale Blvd SE in Albuquerque, considered one of the finest clay facilities in the city — with electric and kick wheels, slab roller, extruder, electric kilns, and a knowledgeable technical staff. Members receive full kiln access.",
+  },
+  // New Mexico — Albuquerque
+  {
+    name: "Ceramica ABQ",
+    city: "Albuquerque",
+    province: "New Mexico",
+    country: "US",
+    website: "https://ceramicaabq.com",
+    bio: "An Albuquerque ceramics studio at 141 Osuna Rd NW offering flexible 24-hour membership access, 4-week introductory and continuing classes meeting weekly, and children's classes — a good option for potters wanting consistent open studio time.",
+  },
+  // New Mexico — Santa Fe
+  {
+    name: "Paseo Pottery",
+    city: "Santa Fe",
+    province: "New Mexico",
+    country: "US",
+    website: "https://paseopottery.com",
+    bio: "A Santa Fe teaching studio at 1273 Calle de Comercio offering 7-week wheel throwing and hand building courses, 2-hour one-time pottery experiences, and monthly raku workshops (third Friday) — equipped with gas, electric, and raku kilns in the heart of New Mexico's arts scene.",
   },
 
 ];
