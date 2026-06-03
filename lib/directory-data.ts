@@ -11767,6 +11767,15 @@ export const teachingStudios: TeachingStudio[] = [
   },
   // Australia — South Australia
   {
+    name: "Urth Clay Studio",
+    city: "Goodwood",
+    province: "South Australia",
+    country: "AU",
+    website: "https://urthclaystudio.com.au",
+    bio: "A ceramics studio at 7/89 Goodwood Rd, Goodwood (Adelaide) offering pottery classes and kiln firing for outside pieces. Submit photos and details via their online form and they'll send you a quote and drop-off instructions. Also has a Melbourne location.",
+    offersKilnSharing: true,
+  },
+  {
     name: "ES Ceramics",
     city: "Thebarton",
     province: "South Australia",
@@ -12744,6 +12753,15 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://feetofclaypottery.com",
     bio: "A cooperatively run ceramics studio in Brookline that has provided a welcoming, independent studio space for clay artists of all skill levels since 1974 — offering classes, workshops, and shared studio memberships.",
   },
+  {
+    name: "The Potters Shop & School",
+    city: "Needham",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://www.thepottersshopandschool.com",
+    bio: "A venerable ceramics school and studio at 31 Thorpe Rd in Needham, near Boston — offering classes, workshops, and kiln firing for outside pieces. No membership required; non-member work accepted pre-glazed and fitted into existing firings. Priced by kiln hour.",
+    offersKilnSharing: true,
+  },
   // Pennsylvania — Philadelphia
   {
     name: "Black Hound Clay Studio West",
@@ -12760,7 +12778,8 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Colorado",
     country: "US",
     website: "https://www.communityclaydenver.com",
-    bio: "A pottery studio with two Denver locations — RiNo and Congress Park — offering 6-week wheel-throwing and hand-building classes for all skill levels, studio memberships with daily access, date nights, private events, and kiln firing services for home potters.",
+    bio: "A pottery studio with two Denver locations — RiNo and Congress Park — offering 6-week wheel-throwing and hand-building classes, studio memberships, and kiln firing for home potters. Outside pieces welcome at Congress Park: bisque 3¢/cubic inch, glaze 6¢/cubic inch, $10 minimum. Drop-off Mon/Wed 12–6pm.",
+    offersKilnSharing: true,
   },
   // Washington — Seattle
   {
@@ -12953,6 +12972,16 @@ export const teachingStudios: TeachingStudio[] = [
     website: "http://ballclaystudio.com",
     bio: "A Los Angeles sculpture and pottery studio where artists create sculptures, hand-build ceramics, and throw on the pottery wheel — building a close-knit community of students and members through shared creative practice.",
   },
+  // California — Bay Area
+  {
+    name: "The Potters' Studio",
+    city: "Berkeley",
+    province: "California",
+    country: "US",
+    website: "https://www.thepottersstudio.org",
+    bio: "A Berkeley ceramics studio at 724 Camelia St offering classes, residencies, and kiln firing for outside pieces — no reservation needed. Drop off any day 10am–5pm. Priced per cubic foot: non-member rates from $35 (bisque) to $63 (gas high-fire, cone 10). $20 minimum.",
+    offersKilnSharing: true,
+  },
 
   // Australia — Victoria (Melbourne teaching studios)
   {
@@ -13009,6 +13038,15 @@ export const teachingStudios: TeachingStudio[] = [
   },
 
   // Australia — Queensland (teaching studios)
+  {
+    name: "Grace Ellen",
+    city: "Bulimba",
+    province: "Queensland",
+    country: "AU",
+    website: "https://www.graceellen.com.au",
+    bio: "A Brisbane ceramics studio in Bulimba offering pottery workshops and kiln firing for outside pieces. $50 per shelf (approx. 40×40×15cm). Bisque to 1000°C or midfire glaze to 1220°C. Booking required with photo of all pieces submitted in advance.",
+    offersKilnSharing: true,
+  },
   {
     name: "Brisbane Ceramics",
     city: "Auchenflower",
@@ -13124,12 +13162,30 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A community ceramics studio in Bristol offering courses, workshops, and open-studio memberships for potters at every stage — from first-timers to seasoned practitioners.",
   },
   {
+    name: "Trylla Ceramics",
+    city: "Bristol",
+    province: "England",
+    country: "EU",
+    website: "https://tryllashop.co.uk",
+    bio: "A ceramics studio on North Street in Bedminster, Bristol offering wheel-throwing classes and kiln firing for outside pieces. £45–£55 per full kiln (half-kiln sharing available). Bisque and glaze firings from earthenware through stoneware. 1–3 week turnaround.",
+    offersKilnSharing: true,
+  },
+  {
     name: "Manchester Pottery Studio",
     city: "Manchester",
     province: "England",
     country: "EU",
     website: "https://www.manchesterpotterystudio.co.uk",
     bio: "A city-centre Manchester studio offering beginner through intermediate wheel and hand-building classes, drop-in sessions, and corporate pottery events.",
+  },
+  {
+    name: "7 Spot Pottery",
+    city: "Salford",
+    province: "England",
+    country: "EU",
+    website: "https://www.7spotpottery.co.uk",
+    bio: "A community ceramics studio at Makers Quarter, Worrall St, Salford — just across from Manchester. Offers full and half kiln hire for outside potters: £110 full load, £70 half load. 190L kiln, cone 06 bisque and cone 6 glaze only.",
+    offersKilnSharing: true,
   },
   {
     name: "Turning Earth",
