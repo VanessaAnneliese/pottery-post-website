@@ -10061,7 +10061,8 @@ export const suppliers: Supplier[] = [
     province: "England",
     country: "EU",
     website: "https://www.bathpotters.co.uk",
-    bio: "A well-loved independent pottery supplier carrying clays, glazes, tools, and kilns.",
+    bio: "A well-loved independent pottery supplier near Bath carrying clays, glazes, tools, and kilns. Also offers kiln hire for outside pieces — three kilns from £12.50 (half of 16L) to £50 (full 130L). Drop off ready-to-fire work at Unit 18, Westfield Trading Estate, Radstock.",
+    offersKilnSharing: true,
   },
   {
     name: "Clayman Supplies",
@@ -11055,6 +11056,15 @@ export const teachingStudios: TeachingStudio[] = [
   },
   // France
   {
+    name: "A Tour de Bras",
+    city: "Paris",
+    province: "France",
+    country: "EU",
+    website: "https://www.atourdebras-atelier.com",
+    bio: "A ceramics workshop at 13 rue Abel in Paris' 12th arrondissement offering kiln firing for outside pieces. Three 200L kilns firing at 950°C (raw clay only, no glaze firing). €40 for a shoebox volume, €160 for a full kiln. Call ahead to confirm availability before dropping off.",
+    offersKilnSharing: true,
+  },
+  {
     name: "Ateliers Terre & Feu",
     city: "Paris",
     province: "France",
@@ -11142,7 +11152,8 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Germany",
     country: "EU",
     website: "https://www.ceramickingdomberlin.com",
-    bio: "An art school, artist space, and professional training program dedicated to advancing ceramic art in Berlin.",
+    bio: "An art school, artist space, and professional training program dedicated to advancing ceramic art in Berlin. Also accepts outside pieces for kiln firing — €15/kg, bisque at 920°C or glaze at 1220°C. Glazing service available at €18/kg. Turnaround 2–3 weeks.",
+    offersKilnSharing: true,
   },
   {
     name: "P. & C. Studio Ceramics",
@@ -11158,7 +11169,17 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Germany",
     country: "EU",
     website: "https://www.loamberlin.com",
-    bio: "A ceramics hand-building studio in Berlin's Moabit neighbourhood offering pottery instruction in English and German for all levels.",
+    bio: "A ceramics hand-building studio at Elberfelder Straße 18 in Berlin's Moabit neighbourhood offering pottery instruction in English and German for all levels. Also accepts outside pieces for firing — bisque €12/kg, glaze €15/kg, whole kiln €120. Drop off during opening hours, no reservation needed.",
+    offersKilnSharing: true,
+  },
+  {
+    name: "Kleistone Studio",
+    city: "Berlin",
+    province: "Germany",
+    country: "EU",
+    website: "https://www.kleistonestudio.com",
+    bio: "A ceramics studio in Berlin-Kreuzberg offering pottery classes and kiln firing for home potters and outside artists. Bisque €7/kg, glaze €10/kg. Full kiln (100L) €102. No appointment needed — drop off during studio hours. 3–4 week turnaround.",
+    offersKilnSharing: true,
   },
   // Ireland
   {
@@ -11228,7 +11249,8 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Germany",
     country: "EU",
     website: "https://www.helkaceramics.com",
-    bio: "An independent ceramics label in Berlin-Kreuzberg founded by designer Lisa Kosak, offering handcrafted stoneware tableware, wheel-throwing courses, studio memberships, and custom restaurant commissions.",
+    bio: "An independent ceramics label at Böckhstr. 12 in Berlin-Kreuzberg offering handcrafted stoneware, wheel-throwing courses, and studio memberships. Also accepts outside pieces for firing — bisque €8/kg, glaze €12/kg. Work welcome from home potters and studio artists alike.",
+    offersKilnSharing: true,
   },
   {
     name: "Studio MĀLS",
@@ -12843,7 +12865,8 @@ export const teachingStudios: TeachingStudio[] = [
     province: "Georgia",
     country: "US",
     website: "https://www.gritatl.com",
-    bio: "A women-owned ceramics studio in Atlanta's Sylvan Hills neighbourhood offering 6–8 week pottery courses with 2 hours of weekly instruction plus 8 hours of bonus open studio time, as well as mini classes and private events in a cheery, plant-filled 2,000 sq ft space.",
+    bio: "A women-owned ceramics studio at 1701 Sylvan Rd SW in Atlanta's Sylvan Hills neighbourhood offering 6–8 week courses, mini classes, and private events. Also offers community kiln firing — $15 per shelf or $60 for a full kiln. Drop-off and pickup coordinated in Inman Park.",
+    offersKilnSharing: true,
   },
   // Minnesota — Minneapolis
   {
