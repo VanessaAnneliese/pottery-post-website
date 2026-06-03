@@ -14090,6 +14090,398 @@ export const teachingStudios: TeachingStudio[] = [
     bio: "A Santa Fe teaching studio at 1273 Calle de Comercio offering 7-week wheel throwing and hand building courses, 2-hour one-time pottery experiences, and monthly raku workshops (third Friday) — equipped with gas, electric, and raku kilns in the heart of New Mexico's arts scene.",
   },
 
+  // North Carolina — Charlotte
+  {
+    name: "Clayworks",
+    city: "Charlotte",
+    province: "North Carolina",
+    country: "US",
+    website: "https://www.clayworksinc.org",
+    bio: "A 15,000 sq ft nonprofit ceramics centre at 4506 Monroe Rd in Charlotte — one of the largest community clay studios in the Southeast — offering wheel throwing, hand building, open studio, and private lessons for all skill levels.",
+  },
+  // North Carolina — Charlotte
+  {
+    name: "Two Ships Pottery",
+    city: "Charlotte",
+    province: "North Carolina",
+    country: "US",
+    website: "https://www.twoshipspottery.com",
+    bio: "A neighbourhood pottery studio in Charlotte's Plaza Midwood district offering private and group wheel-throwing instruction, with students' work glazed and fired for pickup in subsequent weeks.",
+  },
+  // North Carolina — Charlotte
+  {
+    name: "The Little Studio",
+    city: "Charlotte",
+    province: "North Carolina",
+    country: "US",
+    website: "https://www.thelittlestudioclt.com",
+    bio: "An intimate Charlotte ceramics studio offering private and group pottery wheel classes in small class sizes, ensuring personalized instruction for beginners and developing potters.",
+  },
+
+  // North Carolina — Durham
+  {
+    name: "Claymakers",
+    city: "Durham",
+    province: "North Carolina",
+    country: "US",
+    website: "https://www.claymakers.org",
+    bio: "The Triangle's only dedicated nonprofit ceramics centre at 451 S Driver St in Durham, offering classes for all levels, studio memberships, private studios, and open studio access. Also accepts outside pieces for kiln firing — bisque and glaze at per-cubic-inch rates, with full kiln rental available.",
+    offersKilnSharing: true,
+  },
+  // North Carolina — Durham
+  {
+    name: "DAC Clay Studio",
+    city: "Durham",
+    province: "North Carolina",
+    country: "US",
+    website: "https://durhamarts.org/dac-clay-studio",
+    bio: "A full-service community clay studio inside the Durham Arts Council building at 120 Morris St, offering beginner through advanced classes with clay, open studio access, storage, glazes, and kiln firing all included in course fees.",
+  },
+  // North Carolina — Raleigh
+  {
+    name: "Sertoma Arts Center",
+    city: "Raleigh",
+    province: "North Carolina",
+    country: "US",
+    website: "https://raleighnc.gov/arts/places/sertoma-arts-center",
+    bio: "A city-run community arts centre at 1400 W Millbrook Rd in Raleigh with a large wheel-throwing and hand-building ceramics studio, electric kilns and a monthly cone 10 gas firing, and studio memberships for regular makers.",
+  },
+  // North Carolina — Raleigh
+  {
+    name: "Pullen Arts Center",
+    city: "Raleigh",
+    province: "North Carolina",
+    country: "US",
+    website: "https://raleighnc.gov/arts/places/pullen-arts-center",
+    bio: "A city-run arts facility at 105 Pullen Rd in Raleigh offering professionally taught ceramics, printmaking, painting, and more — with classes for all ages and experience levels led by working artists.",
+  },
+
+  // Michigan — Detroit
+  {
+    name: "Pewabic Pottery",
+    city: "Detroit",
+    province: "Michigan",
+    country: "US",
+    website: "https://pewabic.org",
+    bio: "A National Historic Landmark founded in 1903 at 10125 E Jefferson Ave in Detroit — an active working pottery and ceramic arts education centre offering multi-week classes, workshops, and one-day sessions for all skill levels alongside its celebrated architectural tile studio.",
+  },
+  // Michigan — Detroit
+  {
+    name: "Sugar Hill Clay",
+    city: "Detroit",
+    province: "Michigan",
+    country: "US",
+    website: "https://sugarhillclay.com",
+    bio: "A neighbourhood ceramics studio set inside a 1922 historic building at 71 Garfield St in Detroit's Midtown, offering 8-week wheel-throwing and hand-building session classes, workshops, studio memberships, and kiln firing services for outside pieces.",
+    offersKilnSharing: true,
+  },
+  // Michigan — Detroit
+  {
+    name: "Still Life Studio",
+    city: "Ferndale",
+    province: "Michigan",
+    country: "US",
+    website: "https://ferndale.still-life-studio.com",
+    bio: "A contemporary ceramics studio in Ferndale offering instructor-led classes, visiting artist workshops, and 24/7 studio access memberships starting at $150/month — serving Metro Detroit's growing clay community.",
+  },
+
+  // Missouri — St. Louis
+  {
+    name: "South Broadway Art Project",
+    city: "St. Louis",
+    province: "Missouri",
+    country: "US",
+    website: "https://southbroadwayartproject.org",
+    bio: "A community pottery studio at 3812 S Broadway in St. Louis's Dutchtown neighbourhood offering weekly wheel-throwing and hand-building classes for all levels, with membership covering instruction, tools, glazes, and multiple kiln firings per week — plus seasonal raku and outdoor firing workshops.",
+  },
+  // Missouri — St. Louis
+  {
+    name: "Wildwood Green Arts",
+    city: "Wildwood",
+    province: "Missouri",
+    country: "US",
+    website: "https://www.wildwoodgreenarts.org",
+    bio: "A community ceramic studio in the St. Louis metro area offering classes, workshops, private events, and open studio memberships in a relaxed, welcoming environment.",
+  },
+
+  // Missouri — Kansas City
+  {
+    name: "Belger Arts",
+    city: "Kansas City",
+    province: "Missouri",
+    country: "US",
+    website: "https://belgerarts.org",
+    bio: "A 12,000 sq ft nonprofit ceramics and glass arts centre at 2011 Tracy Ave in Kansas City's Crossroads district, offering wheel, hand-building, and specialty classes for beginners through professional potters — with walk-in kiln firing accepted for outside pieces Tuesday through Saturday.",
+    offersKilnSharing: true,
+  },
+  // Missouri — Kansas City
+  {
+    name: "KC Clay Guild",
+    city: "Kansas City",
+    province: "Missouri",
+    country: "US",
+    website: "https://kcclayguild.org",
+    bio: "A Kansas City ceramics centre at 200 W 74th St open since 1988, with four computerized electric kilns, gas, soda, and raku kilns — offering wheel throwing, hand-building, and glazing classes for all levels.",
+  },
+  // Missouri — Kansas City
+  {
+    name: "Back Door Pottery",
+    city: "Kansas City",
+    province: "Missouri",
+    country: "US",
+    website: "https://backdoorpottery.com",
+    bio: "A welcoming community studio serving Kansas City since 1979, offering beginner pottery classes, workshops, and open studio access in one of the city's longest-established clay spaces.",
+  },
+
+  // Florida — St. Petersburg
+  {
+    name: "The Clay Co-op",
+    city: "St. Petersburg",
+    province: "Florida",
+    country: "US",
+    website: "https://www.claycoopstpete.com",
+    bio: "A working ceramic studio and community space at 2724 6th Ave S in St. Petersburg offering classes for all levels, a full glaze lab, and multiple firing types including electric, gas, soda, and raku. Kiln firing services available to the broader clay community.",
+    offersKilnSharing: true,
+  },
+  // Florida — St. Petersburg
+  {
+    name: "Atelier St. Pete",
+    city: "St. Petersburg",
+    province: "Florida",
+    country: "US",
+    website: "https://stpeteatelier.com",
+    bio: "A boutique pottery studio at 5298 Haines Rd in St. Petersburg offering a range of wheel-throwing and hand-building classes in a supportive, small-group environment, with glazing and firing included.",
+  },
+  // Florida — Clearwater
+  {
+    name: "MCS Clay Studios",
+    city: "Clearwater",
+    province: "Florida",
+    country: "US",
+    website: "https://mcsclaystudios.com",
+    bio: "A community ceramics studio in Clearwater offering beginner and intermediate wheel throwing and hand-building classes, various studio membership levels, and drop-in sessions for potters in the Tampa Bay area.",
+  },
+
+  // Florida — Orlando
+  {
+    name: "City of Orlando Pottery Studio",
+    city: "Orlando",
+    province: "Florida",
+    country: "US",
+    website: "https://www.orlando.gov/Community-Programs-Events/Pottery-Studio",
+    bio: "A municipal studio in Orlando's Loch Haven Park area with 12 electric wheels, slab roller, extruder, four electric kilns, and two gas kilns — offering classes and studio memberships for all levels in one of Florida's best-equipped public pottery facilities.",
+  },
+  // Florida — Orlando
+  {
+    name: "Stroke of Art Studio",
+    city: "Orlando",
+    province: "Florida",
+    country: "US",
+    website: "https://stroke-of-art.com",
+    bio: "A teaching studio at 805 W Central Blvd in Orlando specializing in pottery wheel, ceramics, sculpture, and hand-building for adults and children across a range of skill levels.",
+  },
+
+  // Indiana — Indianapolis
+  {
+    name: "Indy Art Center",
+    city: "Indianapolis",
+    province: "Indiana",
+    country: "US",
+    website: "https://indyartcenter.org/clay",
+    bio: "Two state-of-the-art ceramics studios at 820 E 67th St in Indianapolis, with a glaze room offering 100+ glaze combinations, regular cone 10 and cone 6 firings, plus wood and raku kiln options — a major hub for Indianapolis clay artists.",
+  },
+  // Indiana — Indianapolis
+  {
+    name: "Yellow Door Ceramics",
+    city: "Indianapolis",
+    province: "Indiana",
+    country: "US",
+    website: "https://www.yellowdoorceramics.com",
+    bio: "A community ceramics studio founded in 2021 at 4201 Millersville Rd in Indianapolis, offering one-night and 8-week classes, open studio memberships, and weekly kiln firings.",
+  },
+  // Indiana — Indianapolis
+  {
+    name: "Fountain Square Clay Center",
+    city: "Indianapolis",
+    province: "Indiana",
+    country: "US",
+    website: "https://www.fountainsquareclaycenter.com",
+    bio: "A spacious pottery studio at 950 Hosbrook St in Indianapolis's Fountain Square neighbourhood, housed in a repurposed industrial building with 30-foot skylit ceilings, ten wheels, and electric and gas kilns — offering hand-building and wheel-throwing classes, private sessions, and one-night workshops.",
+  },
+
+  // Wisconsin — Milwaukee
+  {
+    name: "Midwest Clay Project",
+    city: "Milwaukee",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.midwestclayproject.com",
+    bio: "A fully stocked ceramics studio at 78 N Bryan St in Milwaukee open since 2011, offering memberships, classes, lessons, and open studio — with drop-in kiln firing accepted for home-studio potters using cone 6 compatible clay.",
+    offersKilnSharing: true,
+  },
+  // Wisconsin — Milwaukee
+  {
+    name: "Cream City Clay",
+    city: "Milwaukee",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.creamcityclay.com",
+    bio: "A welcoming Milwaukee pottery studio at 7105 W Greenfield Ave offering classes, themed clay camps, parent–child sessions, and a range of wheels and equipment in a quality creative environment.",
+  },
+  // Wisconsin — Milwaukee
+  {
+    name: "Murray Hill Pottery Works",
+    city: "Milwaukee",
+    province: "Wisconsin",
+    country: "US",
+    website: "https://www.murrayhillpottery.com",
+    bio: "An established community ceramics studio on Milwaukee's East Side serving the city since 1997, offering pottery classes and studio memberships in a welcoming neighbourhood setting.",
+  },
+
+  // Rhode Island — Providence area
+  {
+    name: "Anyhow Studio",
+    city: "Providence",
+    province: "Rhode Island",
+    country: "US",
+    website: "https://www.anyhowstudioprovidence.com",
+    bio: "An inclusive community pottery studio in Providence founded by a RISD Ceramics graduate, offering 8-week wheel-throwing and hand-building courses meeting weekly for 3 hours — with clay, dip glazes, and kiln firings all included.",
+  },
+  // Rhode Island — Providence area
+  {
+    name: "Artists' Exchange",
+    city: "Cranston",
+    province: "Rhode Island",
+    country: "US",
+    website: "https://www.artists-exchange.org/ceramics",
+    bio: "A 501(c)3 nonprofit arts collaborative at 50 Rolfe Square in Cranston with a dedicated ceramics studio offering wheel throwing and hand-building classes for children and adults of all levels, just outside Providence.",
+  },
+  // Rhode Island — Providence area
+  {
+    name: "RI Clay Space",
+    city: "Cranston",
+    province: "Rhode Island",
+    country: "US",
+    website: "https://www.riclayspace.com",
+    bio: "A shared community ceramics studio at 838 Dyer Ave in Cranston welcoming all experience levels from complete beginners to seasoned artists, with classes, workshops, and a collaborative studio environment.",
+  },
+
+  // Virginia — Richmond
+  {
+    name: "Visual Arts Center of Richmond",
+    city: "Richmond",
+    province: "Virginia",
+    country: "US",
+    website: "https://www.visarts.org",
+    bio: "A major community arts centre at 1812 W Main St in Richmond with two clay studios, a glazing room, gas and raku kilns, electric kilns, slab rollers, and extruders — offering studio access by the hour or month, a full class schedule, and community pottery firing services for outside pieces.",
+    offersKilnSharing: true,
+  },
+  // Virginia — Richmond
+  {
+    name: "Hand/Thrown Ceramics",
+    city: "Richmond",
+    province: "Virginia",
+    country: "US",
+    website: "https://www.handthrown.studio",
+    bio: "A 1,000 sq ft community ceramics studio at 123 W Brookland Park Blvd in Richmond's Northside offering classes from single-day sessions to 8-week courses, open studio memberships, and outside kiln firing at $3/lb — covering both bisque and glaze firings with access to cone 6 studio glazes.",
+    offersKilnSharing: true,
+  },
+  // Virginia — Richmond
+  {
+    name: "Rosewood Pottery Studio",
+    city: "Richmond",
+    province: "Virginia",
+    country: "US",
+    website: "https://www.rosewoodpottery.com",
+    bio: "Richmond's full-service community pottery studio on Cary Street in the Fan District, offering 8-week wheel-throwing courses covering centering, pulling, shaping, trimming, and glazing in one of the city's most walkable neighbourhoods.",
+  },
+  // Virginia — Richmond
+  {
+    name: "Still Life Studio Richmond",
+    city: "Richmond",
+    province: "Virginia",
+    country: "US",
+    website: "https://rva.still-life-studio.com",
+    bio: "A state-of-the-art ceramics studio in Richmond's Scott's Addition neighbourhood with 24/7 membership access, classes for all skill levels, artist-led workshops, and a clay supply shop.",
+  },
+
+  // Kentucky — Louisville
+  {
+    name: "AA Clay Studio",
+    city: "Louisville",
+    province: "Kentucky",
+    country: "US",
+    website: "https://alexadamsclaywork.com",
+    bio: "A Louisville shared working studio offering six-week classes in wheel throwing and hand-building with all materials, tools, and kiln firing for up to four pieces included — plus group events and workshops.",
+  },
+  // Kentucky — Louisville
+  {
+    name: "Payne Street Pottery",
+    city: "Louisville",
+    province: "Kentucky",
+    country: "US",
+    website: "https://www.paynestreetpottery.com",
+    bio: "A working studio and gallery at 531 N Hite Ave in Louisville's Crescent Hill neighbourhood, offering instructor-led classes, workshops, and private party experiences for adults in an accessible community setting.",
+  },
+
+  // Texas — San Antonio
+  {
+    name: "Oblate Clay",
+    city: "San Antonio",
+    province: "Texas",
+    country: "US",
+    website: "https://www.oblateclay.com",
+    bio: "A well-equipped community ceramics studio at 906 Oblate Dr in San Antonio offering open studio membership with seven-day access, wheel and hand-building classes, and private lessons — membership includes storage, wheels, slab roller, glaze room, and kiln firing.",
+  },
+  // Texas — San Antonio
+  {
+    name: "Road Runner Ceramics",
+    city: "San Antonio",
+    province: "Texas",
+    country: "US",
+    website: "https://roadrunnerceramics.com",
+    bio: "Serving the San Antonio and Central Texas clay community since 2016, offering small-group intermediate ceramics instruction with materials and support for potters at all stages of development.",
+  },
+
+  // California — Sacramento
+  {
+    name: "SEED Ceramic Studio",
+    city: "Sacramento",
+    province: "California",
+    country: "US",
+    website: "https://www.seedceramicstudio.com",
+    bio: "A Sacramento ceramics studio at 2130 20th St offering wheel throwing and hand-building sculpture classes in one-time, 2-week, and 4-week session formats, with glazing and kiln firing included — pieces ready for pickup 5–6 weeks after class.",
+  },
+  // California — Sacramento
+  {
+    name: "ACAI Studios",
+    city: "Fair Oaks",
+    province: "California",
+    country: "US",
+    website: "https://acaistudios.com",
+    bio: "A gallery and clay studio in Fair Oaks in the Sacramento metro area offering 4–6 week wheel-throwing and hand-building classes for all ages and skill levels, with materials and kiln firing included.",
+  },
+
+  // Maine — Portland
+  {
+    name: "Portland Pottery",
+    city: "Portland",
+    province: "Maine",
+    country: "US",
+    website: "https://portlandpottery.com",
+    bio: "Portland, Maine's flagship ceramics studio with two locations — 118 Washington Ave and 49 Fox St — offering 8-week sessions with clay, instruction, open studio access, and glazes included. The main studio fires high-fire cone 10 reduction, rare for a community studio. Paid kiln firing services also offered at both locations.",
+    offersKilnSharing: true,
+  },
+  // Maine — Portland
+  {
+    name: "Radius Art Studio",
+    city: "Portland",
+    province: "Maine",
+    country: "US",
+    website: "https://www.radiusstudio.org/about-radius/ceramics",
+    bio: "A community arts studio in Portland, Maine offering ceramics classes alongside other disciplines for adults and youth in an inclusive, welcoming environment.",
+  },
+
 ];
 
 export function groupByProvince<T extends { province: string; country: Country }>(
