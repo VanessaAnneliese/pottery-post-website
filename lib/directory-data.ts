@@ -10993,6 +10993,15 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.districtclaycenter.com",
     bio: "The largest clay studio in the DC area with over 6,500 sq ft, offering 28+ weekly classes, artist residencies, a ceramic gallery, and community outreach programs.",
   },
+  // Washington D.C.
+  {
+    name: "Touch Pottery",
+    city: "Washington",
+    province: "District of Columbia",
+    country: "US",
+    website: "https://touchpottery.com",
+    bio: "A Washington DC pottery studio offering two-hour one-shot wheel-throwing classes for beginners and date nights, studio coworking time, and class packages — with fired pieces ready for pickup in 2–3 weeks.",
+  },
   // California
   {
     name: "Berman Ceramic Arts",
@@ -11646,6 +11655,42 @@ export const teachingStudios: TeachingStudio[] = [
     country: "US",
     website: "https://www.3rdcoastclay.com",
     bio: "An artist-run ceramic studio offering classes, memberships, workshops, and firing services with a mission to build an inclusive ceramic community.",
+  },
+  // Texas — Houston
+  {
+    name: "HTX Clay",
+    city: "Houston",
+    province: "Texas",
+    country: "US",
+    website: "https://www.htxclay.com",
+    bio: "An artist-founded, woman-owned ceramics studio at 2205 N Main St in Houston's Near Northside, offering wheel-throwing and hand-building workshops, tiered studio memberships with full equipment access, and kiln firing memberships across a 3,360 sq ft two-storey facility.",
+  },
+  // Texas — Houston
+  {
+    name: "Blue Dog Ceramics",
+    city: "Houston",
+    province: "Texas",
+    country: "US",
+    website: "https://www.bluedogceramics.com",
+    bio: "A pottery studio inside the Sawyer Yards arts district at 1824 Spring St near downtown Houston, offering four-week beginner-to-advanced courses meeting twice weekly and covering wheel work, hand-building, and sculpture in small class sizes.",
+  },
+  // Texas — Houston
+  {
+    name: "Oak Knoll Pottery Studio",
+    city: "Missouri City",
+    province: "Texas",
+    country: "US",
+    website: "https://www.oakknollpottery.com",
+    bio: "A full-service ceramics studio in Houston's southwest suburbs at 1306 FM 1092 Rd in Missouri City, offering 6- and 8-week wheel-throwing and hand-building classes, private lessons, and studio memberships with all equipment, glazes, and kiln firing included.",
+  },
+  // Texas — Houston
+  {
+    name: "Potters' Place Pottery",
+    city: "Houston",
+    province: "Texas",
+    country: "US",
+    website: "https://pottersplacepottery.com",
+    bio: "A ceramics studio with two Houston-area locations — Cinco Ranch in Katy and Westchase in Houston — offering adult wheel-throwing classes, one-time sessions, group workshops, children's parties, and corporate team building across a nine-wheel, three-kiln studio with an on-site artist gallery.",
   },
   // Massachusetts
   {
@@ -12712,6 +12757,24 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.gnarwareworkshop.com",
     bio: "A ceramics studio in Chicago's Pilsen neighbourhood dedicated to providing a creative space to make with clay and commune with fellow artists and hobbyists, offering classes and community studio access.",
   },
+  // Illinois — Chicago
+  {
+    name: "The Pottery Loop",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.thepotteryloop.com",
+    bio: "A community teaching studio in Ravenswood at 1770 W Berteau Ave, opened October 2024, offering beginner-friendly pottery wheel classes, hand-building workshops, and multi-week courses designed to make ceramics accessible to all skill levels.",
+  },
+  // Illinois — Chicago
+  {
+    name: "Edgewater Pottery",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.edgewaterpottery.com",
+    bio: "Opened February 2025 by production potter James Murray at 1207 W Berwyn Ave in Chicago's Edgewater neighbourhood, offering introductory wheel-throwing workshops and a six-week course alongside studio space for local artists working on their own projects.",
+  },
   // California — Los Angeles
   {
     name: "Cobalt & Clay",
@@ -12932,6 +12995,33 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://theclaylady.com",
     bio: "A Nashville ceramics studio and teaching resource for the local clay community, offering wheel-throwing and hand-building instruction for students of all skill levels alongside studio workspace and a curated ceramics shop.",
   },
+  // Tennessee — Nashville
+  {
+    name: "Ceramic Souls",
+    city: "Nashville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.ceramicsouls.com",
+    bio: "Nashville's first 24/7 pottery studio, opened April 2025 in the Highland Yards development in East Nashville at 747 Douglas Ave — offering tiered memberships with all-hours studio access, beginner through advanced classes, workshops, and an in-house ceramics supply shop.",
+  },
+  // Tennessee — Nashville
+  {
+    name: "Old School Farm Pottery",
+    city: "Nashville",
+    province: "Tennessee",
+    country: "US",
+    website: "https://www.oldschoolfarmpottery.com",
+    bio: "A nonprofit ceramics studio in a refurbished downtown Nashville warehouse at 512 Rep. John Lewis Way S, offering pottery courses, date nights, private events, corporate workshops, and school field trips — with a mission focused on equitable employment for adults with disabilities.",
+  },
+  // Tennessee — Nashville area
+  {
+    name: "Mud Puddle Pottery",
+    city: "Pegram",
+    province: "Tennessee",
+    country: "US",
+    website: "https://mudpuddlepottery.com",
+    bio: "A pottery studio and art gallery just west of Nashville in Pegram offering daily classes and workshops in ceramics, painting, jewelry, coppersmithing, and sculpture, instructed by regional artists — with gallery space showcasing handmade work.",
+  },
   // Illinois — Chicago (Lincoln Square)
   {
     name: "Come Play With Clay",
@@ -12968,6 +13058,25 @@ export const teachingStudios: TeachingStudio[] = [
     website: "https://www.rebelpotters.org",
     bio: "A Philadelphia ceramics collective created as a safe and joyful space to practice, learn, teach, and explore ceramics with the community — offering classes, workshops, and open studio access with an emphasis on inclusivity and creative freedom.",
   },
+  // Pennsylvania — Philadelphia
+  {
+    name: "YAY!Clay",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://yayclay.com",
+    bio: "A lively BYOB ceramics studio at 3237 Amber St in Philadelphia's Port Richmond area, featuring multiple themed rooms including a 12-wheel Retro Room with a 60s/70s vibe — offering wheel-throwing and hand-building classes, private events, kiln rental, and arcade games.",
+    offersKilnSharing: true,
+  },
+  // Pennsylvania — Philadelphia
+  {
+    name: "Black Hound Clay South",
+    city: "Philadelphia",
+    province: "Pennsylvania",
+    country: "US",
+    website: "https://www.blackhoundclaysouth.com",
+    bio: "An inclusive community ceramics space at 1701 Federal St in South Philadelphia's Point Breeze neighbourhood, offering workshops taught by professional teaching artists with all materials, tools, and kiln firing included in the class fee.",
+  },
   // Minnesota — Minneapolis
   {
     name: "The Clay Pit Studio",
@@ -12994,6 +13103,43 @@ export const teachingStudios: TeachingStudio[] = [
     country: "US",
     website: "http://ballclaystudio.com",
     bio: "A Los Angeles sculpture and pottery studio where artists create sculptures, hand-build ceramics, and throw on the pottery wheel — building a close-knit community of students and members through shared creative practice.",
+  },
+  // California — Los Angeles
+  {
+    name: "Clay CA",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://www.clayca.com",
+    bio: "An artist-run ceramics studio in LA's Chinatown at 900 N Broadway offering 24-hour membership access, pottery wheels, sculpture classes, a glaze chemistry room, and outside kiln firing open to the public — bisque and glaze firings available, no membership required for kiln drops.",
+    offersKilnSharing: true,
+  },
+  // California — Los Angeles
+  {
+    name: "Good Dirt LA",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://www.gooddirtla.com",
+    bio: "A Latina-owned pottery studio in the Del Rey neighbourhood on the Westside, open since 2015, offering wheel-throwing and hand-building classes for adults and teens, kids classes for ages 7–12, private off-site lessons, and a retail shop with handmade ceramics.",
+  },
+  // California — Los Angeles
+  {
+    name: "Echo Art Studio",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://www.echoartstudio.com",
+    bio: "A fine art and pottery studio near Culver City teaching since 1999, offering wheel-throwing, hand-building, surface decorating, and sculpture with a proprietary teaching method designed to get beginners throwing on day one.",
+  },
+  // California — Los Angeles
+  {
+    name: "Hands in Clay LA",
+    city: "Los Angeles",
+    province: "California",
+    country: "US",
+    website: "https://www.handsinclayla.com",
+    bio: "An intimate sustainability-focused pottery studio in Mar Vista at 3795 Boise Ave, founded in 2021, with dedicated wheel, hand-building, and glazing rooms — offering classes, private lessons, and team-building events across 14 clay bodies and over 40 food-safe glazes.",
   },
   // California — Bay Area
   {
