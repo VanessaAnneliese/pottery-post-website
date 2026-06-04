@@ -4415,6 +4415,24 @@ export const potters: Potter[] = [
     website: "https://clayworkspottery.ca",
     bio: "Handmade functional pottery inspired by nature — carved, stamped, and glazed pieces featuring recurring motifs like the Jack pine, made in a studio on Houghton Creek in Lindsay.",
   },
+  {
+    name: "Sarah Walton",
+    studio: "Sarah Walton Pottery",
+    city: "Bowmanville",
+    province: "Ontario",
+    country: "CA",
+    website: "https://sarahwaltonpottery.com",
+    bio: "Full-time home studio potter in the Durham Region creating wheel-thrown and handmade ceramics using diverse clay bodies.",
+  },
+  {
+    name: "Mary Potter",
+    studio: "Mary Potter Ceramics",
+    city: "Chatham",
+    province: "Ontario",
+    country: "CA",
+    website: "https://originalhandmadepotterychathamontario.com",
+    bio: "Small-batch wheel-thrown stoneware potter whose functional pieces are made entirely by hand from start to finish in her Chatham studio.",
+  },
   // Canada — British Columbia
   {
     name: "Francine Hampson-Reid",
@@ -6802,6 +6820,23 @@ export const potters: Potter[] = [
     offersClasses: true,
     bio: "The teaching arm of Mudpuppy Studios on Salt Spring Island, Mudpuppy Academy offers hands-on clay courses and kiln-opening experiences led by Francine Hampson-Reid and John Reid at their atmospheric salt/soda-firing studio.",
   },
+  {
+    name: "Nancy Cramer",
+    studio: "Tidelines Pottery",
+    city: "North Vancouver",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://tidelinespottery.com",
+    bio: "Potters Guild of BC member creating handmade functional pottery from her North Vancouver studio, with work informed by the coastal landscapes of the Pacific Northwest.",
+  },
+  {
+    name: "Larry Cohen",
+    city: "Cortes Island",
+    province: "British Columbia",
+    country: "CA",
+    website: "https://larrycohenceramics.ca",
+    bio: "Potters Guild of BC member working from remote Cortes Island, creating handmade ceramics shaped by the textures and tones of the BC coast.",
+  },
   // Sweden — Skåne
   {
     name: "Yalla Ceramics",
@@ -7643,6 +7678,15 @@ export const potters: Potter[] = [
     website: "https://www.firedupceramics.com",
     bio: "Richard and Robin Sanchez have made brilliantly hand-painted terracotta pottery together in Eugene since 2001 — Richard throws and slab-builds each piece from deep red clay while Robin decorates with layers of their own underglaze colors.",
   },
+  {
+    name: "Tamara Bryan",
+    studio: "Tamara Bryan Pottery",
+    city: "Portland",
+    province: "Oregon",
+    country: "US",
+    website: "https://tamarabryanpottery.com",
+    bio: "Portland ceramicist whose minimal, PNW-inspired forms are shaped by native plants and the calm of the forest, creating everything from flower pots to functional dinnerware.",
+  },
   // California — Sonoma / Wine Country
   {
     name: "FLM Ceramics",
@@ -7809,6 +7853,15 @@ export const potters: Potter[] = [
     country: "EU",
     website: "https://frankies.studio",
     bio: "Frankie Atkinson is a ceramic artist with a gallery in Suffolk and a studio in Essex, creating spontaneous hand-thrown and hand-built work inspired by the colours and textures of the East Anglian landscape.",
+  },
+  {
+    name: "Emma Swales",
+    studio: "Emma Swales Ceramics",
+    city: "Lutterworth",
+    province: "England",
+    country: "EU",
+    website: "https://emmaswalesceramics.co.uk",
+    bio: "Leicestershire potter whose landscape-inspired functional ceramics use expressive glazing to evoke dramatic skies, moody hills, and coastal shorelines drawn from her Cumbrian roots.",
   },
 
   // France — Brittany
@@ -8075,6 +8128,15 @@ export const potters: Potter[] = [
     country: "EU",
     website: "https://crailpottery.com",
     bio: "Crail Pottery is a small family-run coastal pottery in the East Neuk of Fife founded by Stephen and Carol Grieve in 1965, now operating as a co-operative of the Grieve family with three separate studios sharing a showroom and yard on Nethergate.",
+  },
+  {
+    name: "Rebecca J. Woods",
+    studio: "Rebecca J. Woods Ceramics",
+    city: "Moffat",
+    province: "Scotland",
+    country: "EU",
+    website: "https://www.rebeccajwoodsceramics.com",
+    bio: "Scottish potter specialising in the Mishima inlay technique, creating functional and decorative ceramics in muted, soft tones from her rural studio in the Scottish Borders.",
   },
 
   // Wales — North Wales (Dyserth)
@@ -8627,6 +8689,15 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://www.danielbellow.com",
     bio: "Daniel Bellow established his pottery in 2002 at an old dairy farm in Great Barrington, hand-throwing each piece of porcelain one at a time to produce a full line of kitchen, table, and garden wares represented in galleries nationwide.",
+  },
+  {
+    name: "Iris Minc",
+    studio: "Purple Sage Pottery",
+    city: "Merrimac",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://purplesagepottery.com",
+    bio: "Massachusetts potter making reduction-fired functional stoneware and porcelain since 1981, designing her own moulds and stamps for truly one-of-a-kind work.",
   },
 
   // US — Vermont
@@ -9594,6 +9665,15 @@ export const potters: Potter[] = [
     country: "AU",
     website: "https://www.unearthedceramics.com.au",
     bio: "A Melbourne ceramicist working from a solar-powered garden studio in Preston, handmaking functional stoneware, ceramic wall hangings with native botanical motifs, and custom commissions since 2014.",
+  },
+  {
+    name: "Diana Connell",
+    studio: "DC Ceramics Studio",
+    city: "Melbourne",
+    province: "Victoria",
+    country: "AU",
+    website: "https://www.dcceramicsstudio.com.au",
+    bio: "Melbourne studio potter specialising in Raku ware, creating cracked and smoky one-of-a-kind pieces where no two results are ever the same.",
   },
 
   // Australia — New South Wales (Sydney inner suburbs & South Coast)
