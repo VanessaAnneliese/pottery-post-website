@@ -6685,15 +6685,6 @@ export const potters: Potter[] = [
     website: "https://www.villagepottery.ca",
     bio: "PEI's longest-running pottery shop, established in 1973 by Daphne Large, offers a large selection of wheel-thrown and hand-built functional pottery made on the island and finished in house-made glazes, housed in a historic general store in New London.",
   },
-  {
-    name: "Michael Stanley",
-    studio: "Michael Stanley Pottery",
-    city: "Victoria",
-    province: "Prince Edward Island",
-    country: "CA",
-    website: "https://michaelstanleypottery.com",
-    bio: "Working from the charming village of Victoria by the Sea, Michael Stanley creates one-of-a-kind stoneware and porcelain vessels and tableware inspired by the colours and rhythm of the PEI landscape.",
-  },
   // Canada — Newfoundland and Labrador
   {
     name: "Chad Keen Pottery",
@@ -7230,15 +7221,6 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://kapotterystudio.com",
     bio: "Claudia and Troy Cartee have been creating functional place settings, raku, and stoneware sculpture near Seminary, Mississippi for over four decades as professional studio clay artists.",
-  },
-  {
-    name: "Stephen Phillips",
-    studio: "Stephen's Potter House Productions",
-    city: "Crawford",
-    province: "Mississippi",
-    country: "US",
-    website: "https://www.stephenspotterhouseproductions.com",
-    bio: "Creates functional and decorative stoneware vessels using geometric underglaze patterns, tape-resist techniques, and raku firing from his Crawford studio.",
   },
   // Alabama
   {
@@ -9954,6 +9936,90 @@ export const potters: Potter[] = [
     website: "https://www.jeansclaystudio.com",
     bio: "Milwaukee studio potter with over 25 years of practice, creating colourful contemporary stoneware using sgraffito — hand drawing and carving designs through layers of coloured clay slip.",
   },
+  // Maine
+  {
+    name: "Rocky Mann",
+    city: "Bar Harbor",
+    province: "Maine",
+    country: "US",
+    website: "https://rockymann.com",
+    bio: "Professional studio potter for over 53 years working in a gallery that borders Acadia National Park, creating hand-thrown porcelain, raku, and saggar-ware inspired by the natural world of Mount Desert Island.",
+  },
+  {
+    name: "Joanna Morris",
+    studio: "JoMo Pottery",
+    city: "Yarmouth",
+    province: "Maine",
+    country: "US",
+    website: "https://www.jomopottery.com",
+    bio: "Yarmouth, Maine ceramic artist producing wheel-thrown and hand-sculpted stoneware — nature-inspired decorative sculptures alongside clean-lined functional ware in jewel tones and earthy hues.",
+  },
+  // New Hampshire
+  {
+    name: "Catie Webster",
+    studio: "CRW Design Ceramics",
+    city: "Manchester",
+    province: "New Hampshire",
+    country: "US",
+    website: "https://crwdesignsceramics.com",
+    bio: "Part-time studio potter and New Hampshire high school art teacher making small-batch functional ceramics inspired by the colours and landscapes of New Hampshire since 2017.",
+  },
+  // Vermont
+  {
+    name: "Katrina Vahedi",
+    studio: "Uphill Pottery",
+    city: "Hardwick",
+    province: "Vermont",
+    country: "US",
+    website: "https://www.uphillpottery.com",
+    bio: "One-woman ceramics studio in rural Hardwick, Vermont, creating handmade functional wares with perfectly balanced imperfections meant for daily use.",
+  },
+  {
+    name: "Jaye Pope",
+    studio: "Good Dirt Pottery",
+    city: "Brattleboro",
+    province: "Vermont",
+    country: "US",
+    website: "https://gooddirtpottery.com",
+    bio: "Brattleboro, Vermont studio potter making handmade stoneware and porcelain utilitarian ware and sculpture since 2001, with forms individually crafted on the wheel, hand-built, or cast in his own moulds.",
+  },
+  // Wyoming
+  {
+    name: "Sadie Winter",
+    city: "Laramie",
+    province: "Wyoming",
+    country: "US",
+    website: "https://www.sadiewinter.com",
+    bio: "Laramie studio potter creating two distinct lines — whimsical hand-built work and wheel-thrown porcelain tableware featuring Wyoming wildflower imagery in food-safe, dishwasher-safe glazes.",
+  },
+  // Alaska
+  {
+    name: "The Peninsula Potter",
+    city: "Soldotna",
+    province: "Alaska",
+    country: "US",
+    website: "https://www.thepeninsulapotter.com",
+    bio: "Soldotna, Alaska studio potter specialising in handcrafted functional ceramics with aquatic and nature-inspired themes, firing the kiln weekly and selling throughout Alaska and online.",
+  },
+  // Arkansas
+  {
+    name: "Greg Hall",
+    studio: "Oddbowlz Ceramics",
+    city: "Dry Fork",
+    province: "Arkansas",
+    country: "US",
+    website: "https://www.oddbowlz.com",
+    bio: "Ozarks studio potter celebrating the unique beauty of each individual piece — handmade, wheel-thrown functional pottery from a studio in the hills of rural northwest Arkansas.",
+  },
+  {
+    name: "Jim Young",
+    studio: "Van Hollow Pottery",
+    city: "Rogers",
+    province: "Arkansas",
+    country: "US",
+    website: "https://www.vanhollowpottery.com",
+    bio: "Master potter with 40+ years of experience creating complex-glazed high-fire stoneware on a scenic arm of Beaver Lake in the Ozark Mountains — functional ware alongside large architectural ceramic forms.",
+  },
   {
     name: "Sandra Timmerman",
     studio: "Studio Timmerman",
@@ -10035,6 +10101,421 @@ export const potters: Potter[] = [
     country: "AU",
     website: "https://www.roycemcglashen.co.nz",
     bio: "New Zealand Master Potter and MBE recipient, member of the International Academy of Ceramics, producing a wide range of tableware, ceramic art, and paintings from his studio near Nelson since qualifying in 1971.",
+  },
+  // Canada — Yukon (Whitehorse)
+  {
+    name: "Patrick Royle",
+    studio: "Raven Pottery",
+    city: "Whitehorse",
+    province: "Yukon",
+    country: "CA",
+    website: "https://yaaw.com/about-our-artists/patrick-royle/",
+    bio: "Yukon's best-known studio potter, creating functional and sculptural stoneware and raku — including his iconic fireweed design — among the woods near Whitehorse since the 1980s.",
+  },
+  // US — California (Oakland)
+  {
+    name: "Sarah Kersten",
+    studio: "Sarah Kersten Studio",
+    city: "Oakland",
+    province: "California",
+    country: "US",
+    website: "https://www.sarahkersten.com",
+    bio: "Oakland-based ceramicist creating handmade stoneware dinnerware and fermentation jars with earthy, rustic glazes in her Bay Area production studio since 2012.",
+  },
+  // US — Washington (Seattle)
+  {
+    name: "Anika Major",
+    city: "Seattle",
+    province: "Washington",
+    country: "US",
+    website: "https://www.anikamajor.com",
+    bio: "Seattle ceramicist making small-batch wheel-thrown and hand-built functional pottery with vivid painted surfaces that explore queer domestic narratives and the expressiveness of the human form.",
+  },
+  // US — West Virginia (Harpers Ferry)
+  {
+    name: "Joe Straka",
+    studio: "Magpie Pottery Studio & Gallery",
+    city: "Harpers Ferry",
+    province: "West Virginia",
+    country: "US",
+    website: "https://hfpottery.com",
+    bio: "Joe Straka has thrown and designed pottery for nearly forty years; his gallery in historic Harpers Ferry overlooks the confluence of the Potomac and Shenandoah rivers.",
+  },
+  // AU — Queensland (Logan)
+  {
+    name: "Suzanne Ditton",
+    studio: "Suzanne The Potter",
+    city: "Logan",
+    province: "Queensland",
+    country: "AU",
+    website: "https://suzannethepotter.com",
+    bio: "Queensland ceramic artist creating whimsical, hand-built stoneware inspired by insects, seedpods, and the imaginative world of Dr. Seuss — working from her Logan studio south of Brisbane.",
+  },
+  // AU — Western Australia (Walpole)
+  {
+    name: "Luda",
+    studio: "Luda Ceramic Art",
+    city: "Walpole",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://ludaceramics.com",
+    bio: "A potter with over 25 years' experience working from a studio surrounded by the forests of the Walpole wilderness area on Western Australia's south coast, producing functional domestic ware and sculptural pieces.",
+  },
+
+  // EU — Individual Potters
+  // EU — Italy (Bologna)
+  {
+    name: "Sara Valentini",
+    studio: "Magnolia Ceramics",
+    city: "Bologna",
+    province: "Italy",
+    country: "EU",
+    website: "https://magnoliaceramics.it",
+    bio: "Bologna ceramicist who founded Magnolia Ceramics in 2020, hand-crafting stoneware tableware and daily-use objects entirely by hand from her Via Romagnoli laboratory.",
+  },
+  // EU — France (Lyon area)
+  {
+    name: "Morgane",
+    studio: "Grains de Céramique",
+    city: "Caluire-et-Cuire",
+    province: "France",
+    country: "EU",
+    website: "https://grainsdeceramique.fr",
+    bio: "Self-taught Lyon-area ceramicist who founded Grains de Céramique in 2020, producing unique hand-thrown and slab-built cups, bowls, plates, and porcelain jewellery in small collections.",
+  },
+  // EU — France (Normandy)
+  {
+    name: "Florent Rodier",
+    studio: "Atelier Céramique Florent Rodier",
+    city: "Le Tilleul-Lambert",
+    province: "France",
+    country: "EU",
+    website: "https://rodierceramic.com",
+    bio: "Normandy ceramicist who trained at the Normandy Ceramics Centre and opened his atelier in 2019, creating wheel-thrown pottery, decorative pieces, and sculptural works in the heart of the Eure department.",
+  },
+  // EU — France (Alsace)
+  {
+    name: "Géraldine Postif",
+    studio: "Atelier Poteries et caeTeRa",
+    city: "Kienheim",
+    province: "France",
+    country: "EU",
+    website: "https://www.ateliergeraldinepostif.com",
+    bio: "Alsatian ceramicist who transitioned from nursing to pottery, creating tableware, decorative objects, and custom stoneware house plaques from her studio in a traditional Alsatian house in the Kochersberg region.",
+  },
+  // EU — Germany (Berlin)
+  {
+    name: "Violaine Toth",
+    city: "Berlin",
+    province: "Germany",
+    country: "EU",
+    website: "https://tothviolaine.com",
+    bio: "French ceramicist based in Berlin whose distinctive black stoneware is defined by generous curved handles and retro-futurist ornament, developed through eight years of practice in Neukölln.",
+  },
+  // EU — Germany (Cologne)
+  {
+    name: "Isabella Bilstein",
+    studio: "Isabella Bilstein Keramik",
+    city: "Cologne",
+    province: "Germany",
+    country: "EU",
+    website: "https://isabellabilsteinceramics.com",
+    bio: "Cologne ceramicist creating handmade functional ware and sculptural-plastic works from her workshop in Cologne Deutz, with studio visits and purchases available by arrangement.",
+  },
+  // EU — Netherlands (Amsterdam)
+  {
+    name: "Kari Ytterdal",
+    studio: "Kari Ceramics",
+    city: "Amsterdam",
+    province: "Netherlands",
+    country: "EU",
+    website: "https://kariceramics.com",
+    bio: "Norwegian-born ceramicist based in Amsterdam whose Organic Stone collection features hand-thrown and slab-built pieces with surfaces evoking stone, bark, and shell.",
+  },
+  // EU — Belgium (Antwerp)
+  {
+    name: "Anne-Marie Peters",
+    studio: "Anne-Marie Peters Ceramics",
+    city: "Antwerp",
+    province: "Belgium",
+    country: "EU",
+    website: "https://annemariepetersceramics.com",
+    bio: "Antwerp ceramicist who hand-builds every piece exclusively with her own hands, her aesthetic shaped by two decades of living across Abu Dhabi, Shanghai, Sydney, Melbourne, and Tokyo.",
+  },
+  // EU — Belgium (Brussels)
+  {
+    name: "Nina T.",
+    studio: "Nina T Ceramic Studio",
+    city: "Brussels",
+    province: "Belgium",
+    country: "EU",
+    website: "https://www.ninatceramicstudio.com",
+    bio: "Brussels ceramicist creating handmade functional and decorative pottery from her studio, which also hosts wheel-throwing classes in an intimate workshop setting.",
+  },
+  // EU — Spain (Valencia)
+  {
+    name: "Julia Lu",
+    studio: "Julia Lu Studio",
+    city: "Valencia",
+    province: "Spain",
+    country: "EU",
+    website: "https://julialustudio.com",
+    bio: "Valencia ceramicist whose handmade pottery is inspired by painting and nature, creating functional and decorative pieces and teaching from her studio.",
+  },
+  // EU — Spain (Galicia)
+  {
+    name: "Xavier Toubes",
+    city: "A Coruña",
+    province: "Spain",
+    country: "EU",
+    website: "https://www.xaviertoubes.com",
+    bio: "Galician ceramicist and internationally recognised studio potter whose richly textured, surface-worked vessels are held in major collections and exhibited worldwide.",
+  },
+  // EU — Croatia (Zagreb)
+  {
+    name: "Martina Franić",
+    studio: "Studio Pepel",
+    city: "Zagreb",
+    province: "Croatia",
+    country: "EU",
+    website: "https://pepelceramics.com",
+    bio: "Zagreb ceramicist who transitioned from a 25-year career as a costume designer to open Studio Pepel in 2018, working with commercial and wild clay through hand-building and wheel-throwing.",
+  },
+  // EU — Croatia (Zagreb)
+  {
+    name: "Stela Kovačić",
+    studio: "Bréza Ceramics",
+    city: "Zagreb",
+    province: "Croatia",
+    country: "EU",
+    website: "https://brezaceramics.com",
+    bio: "Zagreb ceramicist who launched Bréza Ceramics in 2020, creating wheel-thrown and hand-sculpted pieces in rustic clays and organic shapes rooted in wabi-sabi and slow-living philosophy.",
+  },
+  // EU — Hungary (Telki)
+  {
+    name: "Zsófia Karsai",
+    city: "Telki",
+    province: "Hungary",
+    country: "EU",
+    website: "https://www.zsofiakarsai.com",
+    bio: "Hungarian ceramicist and Doctor of Liberal Arts whose work is held in the collections of the Museum of Applied Arts Budapest, the Mark Rothko Art Centre, and the Yingge Ceramics Museum in Taiwan.",
+  },
+  // EU — Turkey (Istanbul)
+  {
+    name: "Leyla Pekmen",
+    city: "Istanbul",
+    province: "Turkey",
+    country: "EU",
+    website: "https://www.leylapekmen.com",
+    bio: "Istanbul-based contemporary artist creating whimsical ceramic sculptures and paintings, with solo exhibitions in Istanbul and international group shows alongside globally recognised female artists.",
+  },
+  // EU — Iceland (Reykjavík)
+  {
+    name: "Inga Elín",
+    city: "Reykjavík",
+    province: "Iceland",
+    country: "EU",
+    website: "https://ingaelin.is",
+    bio: "Reykjavík ceramicist devoted to her craft since age twelve, creating hand-painted sculptural and functional pieces inspired by Iceland's natural forces, displayed in her gallery on Skólavörðustígur.",
+  },
+  // EU — Finland (Puumala)
+  {
+    name: "Olga Blokh",
+    studio: "Bloch Ceramics",
+    city: "Puumala",
+    province: "Finland",
+    country: "EU",
+    website: "https://blochceramics.fi",
+    bio: "Finnish ceramicist who founded Bloch Ceramics in 2020 in a converted boathouse studio in Puumala, weaving together comics art, painting, and the nature of Lake Saimaa into wheel-thrown and hand-built pieces.",
+  },
+  // EU — Sweden (west coast)
+  {
+    name: "ALAMM",
+    city: "Vallda",
+    province: "Sweden",
+    country: "EU",
+    website: "https://www.alamm.se",
+    bio: "Self-taught ceramicist from the west coast of Sweden creating unique handcrafted ceramic artworks that celebrate authenticity and the beauty of imperfection.",
+  },
+  // EU — Denmark (Copenhagen)
+  {
+    name: "Gunhild Aaberg",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://gunhildaaberg.dk",
+    bio: "Pioneering Danish ceramicist who co-founded Strandstræde Keramik in 1964 and continues to handcraft entirely unique ceramic artworks — some taking months to complete — from her Copenhagen studio and gallery.",
+  },
+  // EU — Denmark (Copenhagen)
+  {
+    name: "Tasja P.",
+    studio: "Tasja P. Ceramics",
+    city: "Copenhagen",
+    province: "Denmark",
+    country: "EU",
+    website: "https://tasjapceramics.com",
+    bio: "Polish-born ceramicist working in Copenhagen since 2014, hand-throwing playful yet simple cups, bowls, and vases in earthy colours from her studio-shop in Nørrebro.",
+  },
+  // EU — Ireland (Cork)
+  {
+    name: "Sara Flynn",
+    city: "Cork",
+    province: "Ireland",
+    country: "EU",
+    website: "https://www.saraflynnceramic.com",
+    bio: "Cork-born porcelain artist whose wheel-thrown and radically altered sculptural vessels are held in the collections of the V&A, the Art Institute of Chicago, and the Fitzwilliam Museum.",
+  },
+  // EU — Ireland (Donegal)
+  {
+    name: "Kevin Callaghan",
+    studio: "Kevin Callaghan Pottery",
+    city: "Donegal",
+    province: "Ireland",
+    country: "EU",
+    website: "https://kevincallaghanpottery.com",
+    bio: "Royal College of Art graduate who returned to his Donegal roots to create contemporary slipware from Donegal Craft Village, with gestural marks drawn from Asian abstract calligraphy and abstract expressionist painting.",
+  },
+  // EU — Poland (Warsaw)
+  {
+    name: "Agnieszka Barnat",
+    studio: "Ceramiq",
+    city: "Warsaw",
+    province: "Poland",
+    country: "EU",
+    website: "https://ceramiq.pl",
+    bio: "Warsaw ceramicist who founded Ceramiq in 2007, combining an active studio practice with a School of Ceramics and producing original handcrafted pieces from her Czyżewska Street atelier.",
+  },
+  // Canada — Ontario (Parry Sound)
+  {
+    name: "Jeff Martens",
+    studio: "Muddy Handshake",
+    city: "Parry Sound",
+    province: "Ontario",
+    country: "CA",
+    website: "https://muddyhandshake.com",
+    bio: "Parry Sound potter creating functional, food-safe wheel-thrown stoneware from the Muddy Handshake studio, drawing on the textures and colours of the Georgian Bay landscape.",
+  },
+  // Canada — Ontario (Neustadt)
+  {
+    name: "Richard Mund",
+    city: "Neustadt",
+    province: "Ontario",
+    country: "CA",
+    website: "https://richardmundpottery.com",
+    bio: "Owen Sound–area potter working from a studio in Neustadt, producing wheel-thrown functional stoneware with rich, earthy glazes inspired by the rural landscapes of Grey County.",
+  },
+  // Canada — Ontario (Niagara)
+  {
+    name: "Valerie Belisle",
+    city: "Niagara-on-the-Lake",
+    province: "Ontario",
+    country: "CA",
+    website: "https://valeriebelisleceramics.com",
+    bio: "Niagara ceramicist creating hand-thrown and hand-built porcelain and stoneware with soft, nature-inspired glazes and delicate surface textures.",
+  },
+  // Canada — Ontario (Prince Edward County)
+  {
+    name: "Maggie Murdoch & David Drown",
+    studio: "Wellington Pottery",
+    city: "Wellington",
+    province: "Ontario",
+    country: "CA",
+    website: "https://wellingtonpottery.ca",
+    bio: "Prince Edward County potters who create hand-thrown functional stoneware from their Wellington studio, producing everyday pieces shaped by the rhythms of county life.",
+  },
+  // Canada — Quebec (Val-David)
+  {
+    name: "Alain-Marie Tremblay",
+    studio: "Bétonique",
+    city: "Val-David",
+    province: "Quebec",
+    country: "CA",
+    website: "https://betonique.com",
+    bio: "Val-David ceramicist creating distinctive tableware and vessels that blend concrete-inspired textures with raw, earthy surfaces, made from his Laurentian studio.",
+  },
+  // Australia — Queensland (Maleny)
+  {
+    name: "Shannon Garson",
+    city: "Maleny",
+    province: "Queensland",
+    country: "AU",
+    website: "https://shannongarson.com.au",
+    bio: "Maleny ceramicist working with porcelain and stoneware, creating wheel-thrown functional ware and sculptural vessels inspired by the hinterland gardens and forests of the Sunshine Coast.",
+  },
+  // Australia — South Australia (Barossa)
+  {
+    name: "Susanna & Matilda Brown",
+    studio: "Really Useful Pots",
+    city: "Barossa Valley",
+    province: "South Australia",
+    country: "AU",
+    website: "https://reallyusefulpots.com.au",
+    bio: "A mother-and-daughter ceramics duo in the Barossa Valley creating practical, beautiful stoneware designed for everyday use, with glazes that celebrate the warmth of South Australian wine country.",
+  },
+  // Australia — Western Australia (Dunsborough)
+  {
+    name: "Stephanie Stokes",
+    city: "Dunsborough",
+    province: "Western Australia",
+    country: "AU",
+    website: "https://stephaniestokeceramics.com.au",
+    bio: "Dunsborough ceramicist hand-throwing stoneware and porcelain from her south-west WA studio, creating functional pieces with a soft coastal palette inspired by Geographe Bay.",
+  },
+  // New Zealand (Golden Bay)
+  {
+    name: "Sue Dasler",
+    city: "Golden Bay",
+    province: "New Zealand",
+    country: "AU",
+    website: "https://suedaslerceramics.co.nz",
+    bio: "Golden Bay ceramicist creating wheel-thrown stoneware informed by the remarkable landscape of the Nelson–Tasman region, with a practice rooted in functional beauty and natural form.",
+  },
+  // New Zealand (Canterbury)
+  {
+    name: "Tessa Chisholm",
+    studio: "Little Bach Pottery",
+    city: "Canterbury",
+    province: "New Zealand",
+    country: "AU",
+    website: "https://littlebachpottery.co.nz",
+    bio: "Canterbury ceramicist who creates wheel-thrown stoneware from her rural bach studio, working with earthy glazes and natural clay bodies inspired by the Canterbury Plains.",
+  },
+  // New Zealand (Canterbury)
+  {
+    name: "Katie Jenssen",
+    city: "Canterbury",
+    province: "New Zealand",
+    country: "AU",
+    website: "https://katiejenssen.co.nz",
+    bio: "Canterbury potter creating hand-thrown stoneware with a restrained palette and refined forms, her work shaped by years of practice and a deep respect for the clay.",
+  },
+  // New Zealand (Dunedin)
+  {
+    name: "Melanie dos Remedios",
+    studio: "MdR Ceramics",
+    city: "Dunedin",
+    province: "New Zealand",
+    country: "AU",
+    website: "https://mdrceramics.co.nz",
+    bio: "Dunedin ceramicist creating functional and decorative stoneware from her Otago studio, her work shaped by the wild southern light and rugged coastal character of New Zealand's south.",
+  },
+  // New Zealand (Dunedin)
+  {
+    name: "Zehavit Darlington",
+    city: "Dunedin",
+    province: "New Zealand",
+    country: "AU",
+    website: "https://zehavitdarlington.co.nz",
+    bio: "Israeli-born ceramicist who settled in Dunedin and found her medium in clay, creating sculptural and functional pieces that weave together personal narrative, cultural memory, and the landscape of Otago.",
+  },
+  // New Zealand (Auckland)
+  {
+    name: "Bob Steiner",
+    city: "Auckland",
+    province: "New Zealand",
+    country: "AU",
+    website: "https://bobsteinerceramics.co.nz",
+    bio: "Auckland ceramicist with a long practice in wheel-throwing and hand-building, creating stoneware and porcelain pieces that balance traditional form with a distinctly New Zealand sensibility.",
   },
 ];
 
