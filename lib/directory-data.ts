@@ -6685,6 +6685,15 @@ export const potters: Potter[] = [
     website: "https://www.villagepottery.ca",
     bio: "PEI's longest-running pottery shop, established in 1973 by Daphne Large, offers a large selection of wheel-thrown and hand-built functional pottery made on the island and finished in house-made glazes, housed in a historic general store in New London.",
   },
+  {
+    name: "Michael Stanley",
+    studio: "Michael Stanley Pottery",
+    city: "Victoria",
+    province: "Prince Edward Island",
+    country: "CA",
+    website: "https://michaelstanleypottery.com",
+    bio: "Working from the charming village of Victoria by the Sea, Michael Stanley creates one-of-a-kind stoneware and porcelain vessels and tableware inspired by the colours and rhythm of the PEI landscape.",
+  },
   // Canada — Newfoundland and Labrador
   {
     name: "Chad Keen Pottery",
@@ -7053,6 +7062,15 @@ export const potters: Potter[] = [
     website: "https://www.emilymacfarlandceramics.com",
     bio: "Emily MacFarland makes brightly patterned functional pottery and ceramic sculpture from her studio at Mainframe Studios in Des Moines, using sgraffito and wheel-throwing to create intricate layered designs.",
   },
+  {
+    name: "Katy Flynn",
+    studio: "Monarch Pottery",
+    city: "Des Moines",
+    province: "Iowa",
+    country: "US",
+    website: "https://www.monarchpottery.com",
+    bio: "Wheel-throws functional pottery from her home studio in Des Moines, combining neutral tones with modern forms and letting unglazed clay surfaces speak for themselves.",
+  },
   // Nebraska
   {
     name: "SayDoSay Pottery Studio",
@@ -7212,6 +7230,15 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://kapotterystudio.com",
     bio: "Claudia and Troy Cartee have been creating functional place settings, raku, and stoneware sculpture near Seminary, Mississippi for over four decades as professional studio clay artists.",
+  },
+  {
+    name: "Stephen Phillips",
+    studio: "Stephen's Potter House Productions",
+    city: "Crawford",
+    province: "Mississippi",
+    country: "US",
+    website: "https://www.stephenspotterhouseproductions.com",
+    bio: "Creates functional and decorative stoneware vessels using geometric underglaze patterns, tape-resist techniques, and raku firing from his Crawford studio.",
   },
   // Alabama
   {
@@ -8134,6 +8161,15 @@ export const potters: Potter[] = [
     website: "https://www.keramikdesign.at",
     bio: "Walpurga Kleinsasser has run her own ceramic workshop near Graz since 1997, hand-throwing each piece in Australian porcelain and Westerwald stoneware and finishing with self-developed ash glazes made from burned wood ash, fired at 1280–1300°C.",
   },
+  {
+    name: "Carola Pojer",
+    studio: "ONE OF A KIND",
+    city: "Vienna",
+    province: "Austria",
+    country: "EU",
+    website: "https://oneofakindclay.at",
+    bio: "Viennese potter handcrafting small-batch stoneware cups, bowls, and plates — each wheel-thrown or hand-formed in strictly limited quantities — celebrating the uniqueness of every individual piece.",
+  },
   // Switzerland — Lausanne
   {
     name: "Sylvie Godel Céramiste",
@@ -8478,6 +8514,15 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://connorclary.com",
     bio: "Largely self-taught potter Connor Clary makes handmade wheel-thrown functional wares for the home from his New Orleans studio, building a following of over 200,000 through his warm and process-driven social media presence.",
+  },
+  {
+    name: "Sarah House",
+    studio: "Sarah House Ceramics",
+    city: "New Orleans",
+    province: "Louisiana",
+    country: "US",
+    website: "https://sarahhouseceramics.com",
+    bio: "Tulane MFA graduate and Joan Mitchell Center resident creating fractal-patterned porcelain sculpture and installation work inspired by self-similar patterns found in the natural world.",
   },
   // US — New York — Hudson Valley
   {
@@ -8829,6 +8874,15 @@ export const potters: Potter[] = [
     website: "https://www.sktceramics.com",
     bio: "Founded by Susannah Tisue during a residency at Greenwich House Pottery in Manhattan, SKT Ceramics crafts high-fired porcelain tableware adorned with original wildlife and landscape illustrations from its studio in Cincinnati's Walnut Hills neighborhood.",
   },
+  {
+    name: "Emily Moorefield Mariola",
+    studio: "Stonehouse Pottery",
+    city: "Wooster",
+    province: "Ohio",
+    country: "US",
+    website: "https://www.stonehousepottery.co",
+    bio: "Raised on an Ohio farm, Emily Moorefield Mariola handcrafts durable functional stoneware designed for everyday family use from her rural studio in Wooster.",
+  },
   // Michigan — Grand Rapids
   {
     name: "AWK Clayworks",
@@ -8892,6 +8946,23 @@ export const potters: Potter[] = [
     country: "US",
     website: "https://www.ceramicsmadebyrosie.com",
     bio: "British potter Rosie Gale produces wheel-thrown and slip-cast functional ceramics including mugs, bowls, and planters from her small Springfield, Illinois studio, selling at local markets and taking custom orders for dinnerware and wedding gifts.",
+  },
+  {
+    name: "Dubhe Carreño",
+    studio: "This Quiet Dust Ceramics",
+    city: "Chicago",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.thisquietdustceramics.com",
+    bio: "Handcrafts minimalist porcelain tableware in the Chicago suburbs, wheel-throwing bowls and hand-cutting slab plates with organic glaze tones that honour traditional form while celebrating the maker's hand.",
+  },
+  {
+    name: "Melissa Z Monroe",
+    city: "Mokena",
+    province: "Illinois",
+    country: "US",
+    website: "https://www.melissazmonroe.com",
+    bio: "Working from a large studio south of Chicago, Melissa Z Monroe creates custom handmade ceramic dinnerware primarily for chefs and restaurants, alongside decorative wall pieces and sculptural vessels.",
   },
   // Wisconsin — Madison
   {
