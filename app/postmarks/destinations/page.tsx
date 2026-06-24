@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Top Pottery Destinations | Pottery Postmarks",
-  description: "From the pottery towns of North Carolina to the studio districts of Japan and the kiln trails of England, the places every pottery lover should visit at least once.",
+  description: "The studio towns, kiln trails, and pottery districts worth travelling for, across North America, the UK, Europe, and Australia.",
   alternates: { canonical: "https://www.potterypost.ca/postmarks/destinations" },
 };
 
@@ -33,7 +33,7 @@ export default function DestinationsPage() {
         Top Pottery Destinations
       </h1>
       <p className="text-lg max-w-2xl mb-12" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
-        From the pottery towns of North Carolina to the studio districts of Japan and the kiln trails of England, the places every pottery lover should visit at least once.
+        The studio towns, kiln trails, and pottery districts worth travelling for, across North America, the UK, Europe, and Australia.
       </p>
 
       <div className="flex flex-col gap-0">

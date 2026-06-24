@@ -28,7 +28,7 @@ const categories = [
     label: "Destinations",
     title: "Top 25 Pottery Destinations",
     description:
-      "From the pottery towns of North Carolina to the studio districts of Japan and the kiln trails of England, the places every pottery lover should visit at least once.",
+      "The studio towns, kiln trails, and pottery districts worth travelling for, across North America, the UK, Europe, and Australia.",
     href: "/postmarks/destinations",
     live: true,
   },
