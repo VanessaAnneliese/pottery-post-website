@@ -14,7 +14,7 @@ export default function TermsPage() {
         Legal
       </p>
       <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: "Georgia, serif" }}>Terms of Use</h1>
-      <p className="text-sm mb-12" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Last updated: May 2026</p>
+      <p className="text-sm mb-12" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Last updated: June 2026</p>
 
       <div className="flex flex-col gap-10" style={{ color: "#3B2314", fontFamily: "system-ui, sans-serif", lineHeight: "1.75" }}>
 
@@ -54,6 +54,14 @@ export default function TermsPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Pottery Postmarks: Travel Content Disclaimer</h2>
+          <p className="mb-3">The Pottery Postmarks section of this Site contains travel guides, destination recommendations, studio listings, road trip itineraries, and related editorial content (collectively, &ldquo;Travel Content&rdquo;). This Travel Content is provided for general informational and inspirational purposes only. It does not constitute professional travel advice.</p>
+          <p className="mb-3">Travel conditions change. Studios, galleries, museums, and other venues referenced in our Travel Content may alter their hours, close temporarily or permanently, change admission requirements, or become inaccessible without notice. Pottery Post makes no representation that any venue, route, or destination described on this Site will be open, accessible, or as described at the time of your visit. You are solely responsible for independently verifying current information before travelling.</p>
+          <p className="mb-3">Travel involves inherent risks. By choosing to visit any destination, studio, or location mentioned on this Site, you assume full responsibility for your own safety and the safety of anyone travelling with you. Pottery Post is not responsible for any injury, illness, loss, damage, delay, misfortune, or expense of any kind that arises in connection with travel undertaken in reliance on content published on this Site, including but not limited to: road or weather conditions, studio or venue closures, accidents, theft, health incidents, or any other event beyond our control.</p>
+          <p>We recommend that travellers obtain appropriate travel insurance, exercise their own judgment, and consult official local sources for current safety, road, and accessibility information before undertaking any trip.</p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Intellectual Property</h2>
           <p>All content on this Site, including text, images, design, and the gallery collection, is owned by or licensed to Pottery Post and is protected by Canadian copyright law. You may not reproduce, distribute, or use any content from this Site without prior written permission, except as permitted by law.</p>
           <p className="mt-3">Gallery pieces are presented for appreciation only and are not for sale. Images of gallery pieces may not be reproduced without express permission.</p>
@@ -66,7 +74,8 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Limitation of Liability</h2>
-          <p>To the maximum extent permitted by applicable law, Pottery Post shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of this Site.</p>
+          <p className="mb-3">To the maximum extent permitted by applicable law, Pottery Post, its owner, operators, contributors, and affiliates shall not be liable for any damages of any kind arising from your use of this Site or any content found on it. This includes, without limitation: direct, indirect, incidental, special, consequential, or punitive damages; personal injury or property damage; loss of data, revenue, profits, or goodwill; and any harm resulting from reliance on directory listings, gallery information, travel guides, destination recommendations, itineraries, or any other editorial content published on this Site.</p>
+          <p>This limitation applies regardless of the legal theory under which a claim is brought, whether in contract, tort, negligence, strict liability, or otherwise, and even if Pottery Post has been advised of the possibility of such damages. Your sole remedy for dissatisfaction with the Site or its content is to stop using the Site. If any limitation in these Terms is found unenforceable, liability shall be limited to the fullest extent permitted by law.</p>
         </div>
 
         <div>
