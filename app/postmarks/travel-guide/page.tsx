@@ -26,7 +26,7 @@ export default function TravelGuidePage() {
         Travel Guide
       </p>
 
-      <p className="text-xs tracking-widest uppercase font-bold mb-2" style={{ color: "#D4622A", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#D4622A", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Travel Guide
       </p>
       <h1 className="text-2xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
