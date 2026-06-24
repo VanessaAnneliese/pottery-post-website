@@ -62,7 +62,7 @@ export default function PostmarksPage() {
         <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           The Pottery Post
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+        <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
           Pottery Postmarks
         </h1>
         <p className="text-lg max-w-2xl" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
