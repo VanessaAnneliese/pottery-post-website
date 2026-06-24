@@ -113,7 +113,7 @@ export default function PostmarksPage() {
                   {c.description}
                 </p>
                 {c.live && (
-                  <p className="text-xs tracking-widest uppercase mt-4" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+                  <p className="text-xs tracking-widest uppercase mt-4" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
                     Read now
                   </p>
                 )}
