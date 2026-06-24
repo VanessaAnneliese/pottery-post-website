@@ -30,7 +30,7 @@ const categories = [
     description:
       "From the pottery towns of North Carolina to the studio districts of Japan and the kiln trails of England, the places every pottery lover should visit at least once.",
     href: "/postmarks/destinations",
-    live: false,
+    live: true,
   },
   {
     label: "Road Trips",
