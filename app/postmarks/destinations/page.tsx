@@ -39,10 +39,10 @@ export default function DestinationsPage() {
       <div className="flex flex-col gap-0">
         {articles.map((a) => (
           <Link key={a.slug} href={`/postmarks/destinations/${a.slug}`} className="group block py-8 border-t" style={{ borderColor: "#E8D5B7" }}>
-            <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+            <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#D4622A", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
               {a.label}
             </p>
-            <h2 className="text-2xl font-bold mb-2 group-hover:text-[#C1440E] transition-colors" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+            <h2 className="text-2xl font-bold mb-2 group-hover:text-[#B8501F] transition-colors" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
               {a.title}
             </h2>
             <p className="text-sm max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
