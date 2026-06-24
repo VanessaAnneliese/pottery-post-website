@@ -8,9 +8,28 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.potterypost.ca/postmarks/travel-guide/seagrove" },
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Seagrove, North Carolina: A Town Built on Clay",
+  description: "More than a hundred pottery studios within eight miles of town. A guide to Seagrove, North Carolina, the most concentrated pottery community in America.",
+  url: "https://www.potterypost.ca/postmarks/travel-guide/seagrove",
+  datePublished: "2026-06-24",
+  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
+      { "@type": "ListItem", position: 2, name: "Travel Guide", item: "https://www.potterypost.ca/postmarks/travel-guide" },
+      { "@type": "ListItem", position: 3, name: "Seagrove, North Carolina", item: "https://www.potterypost.ca/postmarks/travel-guide/seagrove" },
+    ],
+  },
+};
+
 export default function SeagrovePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
         <p className="text-xs tracking-widest uppercase mb-8" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>

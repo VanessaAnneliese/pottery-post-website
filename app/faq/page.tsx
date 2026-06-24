@@ -13,9 +13,35 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "What is the Pottery Post?", acceptedAnswer: { "@type": "Answer", text: "The Pottery Post is a home for people who love pottery: potters, guilds, pottery class providers, pottery supply shops, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, and a curated Pottery Gallery." } },
+    { "@type": "Question", name: "Where is the Pottery Post based?", acceptedAnswer: { "@type": "Answer", text: "We're based in Whitby, Ontario, Canada." } },
+    { "@type": "Question", name: "How do I get in touch with Pottery Post?", acceptedAnswer: { "@type": "Answer", text: "You can reach us at hello@potterypost.ca. For directory questions use directory@potterypost.ca, and for gallery questions use gallery@potterypost.ca." } },
+    { "@type": "Question", name: "Is the Pottery Post affiliated with any specific pottery guild or school?", acceptedAnswer: { "@type": "Answer", text: "No. Pottery Post is independent and not affiliated with or endorsed by any guild, school, or manufacturer." } },
+    { "@type": "Question", name: "How do I add myself to the Pottery Directory?", acceptedAnswer: { "@type": "Answer", text: "Use the Add Your Listing form at potterypost.ca/directory/submit. Every submission is reviewed by hand before it goes live." } },
+    { "@type": "Question", name: "Is it free to be listed in the Pottery Directory?", acceptedAnswer: { "@type": "Answer", text: "Yes, completely. Listing in the Pottery Post directory is free." } },
+    { "@type": "Question", name: "How long does it take for my listing to appear?", acceptedAnswer: { "@type": "Answer", text: "Every listing is reviewed and added by a real person. Please allow some time; we do our best to work through submissions promptly." } },
+    { "@type": "Question", name: "How do I update my directory listing?", acceptedAnswer: { "@type": "Answer", text: "Use the Update Your Listing form at potterypost.ca/directory/update and fill in only the fields you need changed." } },
+    { "@type": "Question", name: "Can I request to be removed from the directory?", acceptedAnswer: { "@type": "Answer", text: "Yes. Visit the Update Your Listing page and use the Remove your listing option at the bottom of the form." } },
+    { "@type": "Question", name: "Can I add a photo to my directory listing?", acceptedAnswer: { "@type": "Answer", text: "Yes. You can include two photos of your work when submitting or updating your listing. Photos must be JPG or PNG and under 2MB each." } },
+    { "@type": "Question", name: "Can my pottery guild be listed in the directory?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. Use the Add Your Listing form and select Guild as your listing type. We welcome guilds from Canada, the United States, Europe, and Australia." } },
+    { "@type": "Question", name: "I offer pottery classes. Can I be listed?", acceptedAnswer: { "@type": "Answer", text: "Yes. Use the Add Your Listing form and select Class / Teaching Studio as your listing type. We list individual potters who teach, studio collectives, and dedicated teaching spaces." } },
+    { "@type": "Question", name: "Can my pottery supply shop be listed?", acceptedAnswer: { "@type": "Answer", text: "Yes. We list pottery supply shops that sell clay, glazes, tools, kilns, and related supplies to potters. Use the Add Your Listing form and select Supply Shop." } },
+    { "@type": "Question", name: "What is the Pottery Gallery?", acceptedAnswer: { "@type": "Answer", text: "The Pottery Gallery is a curated collection of handmade pottery gathered with love. Each collection is selected by the Pottery Post team. Pieces are verified in person before going live." } },
+    { "@type": "Question", name: "Are the pieces in the Pottery Gallery for sale?", acceptedAnswer: { "@type": "Answer", text: "No. The Pottery Gallery is a celebration, not a shop. The pieces are not for sale by the Pottery Post." } },
+    { "@type": "Question", name: "How often does the Pottery Gallery change?", acceptedAnswer: { "@type": "Answer", text: "Collections rotate in early Spring and Fall. Past collections are preserved in The Archive." } },
+    { "@type": "Question", name: "How do I submit my work to the Pottery Gallery?", acceptedAnswer: { "@type": "Answer", text: "Each collection is open to submissions. Visit the Pottery Gallery page at potterypost.ca/gallery to learn how the process works and to submit a piece for consideration." } },
+    { "@type": "Question", name: "What happens to pottery pieces after the gallery collection ends?", acceptedAnswer: { "@type": "Answer", text: "When submitting, potters choose one of three options: Keep it with Pottery Post (it becomes part of a permanent collection), Donate it (passed on to a local pottery school, guild, or charity), or Arrange your own return (the potter coordinates pickup or return shipping at their own cost)." } },
+  ],
+};
+
 export default function FAQPage() {
   return (
     <section className="py-20 px-6 max-w-2xl mx-auto">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Help
       </p>

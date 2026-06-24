@@ -8,9 +8,28 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.potterypost.ca/postmarks/destinations/kiln-trails-england" },
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "The Kiln Trails of England",
+  description: "From the industrial heartland of Stoke-on-Trent to the studio potters of Cornwall and the Cotswolds, a guide to England's two great pottery pilgrimages.",
+  url: "https://www.potterypost.ca/postmarks/destinations/kiln-trails-england",
+  datePublished: "2026-06-24",
+  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
+      { "@type": "ListItem", position: 2, name: "Destinations", item: "https://www.potterypost.ca/postmarks/destinations" },
+      { "@type": "ListItem", position: 3, name: "The Kiln Trails of England", item: "https://www.potterypost.ca/postmarks/destinations/kiln-trails-england" },
+    ],
+  },
+};
+
 export default function KilnTrailsEnglandPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
         <p className="text-xs tracking-widest uppercase mb-8" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>

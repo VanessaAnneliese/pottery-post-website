@@ -8,9 +8,28 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.potterypost.ca/postmarks/history/meissen" },
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "The King Who Traded Soldiers for Porcelain",
+  description: "How Augustus the Strong's obsession with Chinese porcelain led to the imprisonment of an alchemist, the founding of Meissen, and the birth of European porcelain.",
+  url: "https://www.potterypost.ca/postmarks/history/meissen",
+  datePublished: "2026-06-24",
+  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
+      { "@type": "ListItem", position: 2, name: "History", item: "https://www.potterypost.ca/postmarks/history" },
+      { "@type": "ListItem", position: 3, name: "The King Who Traded Soldiers for Porcelain", item: "https://www.potterypost.ca/postmarks/history/meissen" },
+    ],
+  },
+};
+
 export default function MeissenPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
         <p className="text-xs tracking-widest uppercase mb-8" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>

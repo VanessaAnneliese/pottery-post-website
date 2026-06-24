@@ -8,9 +8,28 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.potterypost.ca/postmarks/road-trips/hamilton-to-niagara" },
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment",
+  description: "A one-day pottery road trip through the Niagara Escarpment wine country, from Hamilton's studio arts scene to the heritage galleries of Niagara-on-the-Lake.",
+  url: "https://www.potterypost.ca/postmarks/road-trips/hamilton-to-niagara",
+  datePublished: "2026-06-24",
+  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
+      { "@type": "ListItem", position: 2, name: "Road Trips", item: "https://www.potterypost.ca/postmarks/road-trips" },
+      { "@type": "ListItem", position: 3, name: "Hamilton to Niagara-on-the-Lake", item: "https://www.potterypost.ca/postmarks/road-trips/hamilton-to-niagara" },
+    ],
+  },
+};
+
 export default function HamiltonToNiagaraPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
         <p className="text-xs tracking-widest uppercase mb-8" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
