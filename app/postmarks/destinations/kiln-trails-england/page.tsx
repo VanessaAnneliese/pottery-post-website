@@ -123,8 +123,8 @@ export default function KilnTrailsEnglandPage() {
       <QuoteBlock quote="The bottle ovens are still standing. Some things built around clay outlast the industry that made them." />
 
       {/* Back link */}
-      <section className="py-10 px-6 max-w-3xl mx-auto">
-        <Link href="/postmarks/destinations" className="text-xs tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+      <section className="py-14 px-6 max-w-3xl mx-auto">
+        <Link href="/postmarks/destinations" className="text-xs tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
           Back to Destinations
         </Link>
       </section>

@@ -168,8 +168,8 @@ export default function HamiltonToNiagaraPage() {
       <QuoteBlock quote={<>Leave room in the boot.<br />The Bench has a way of filling it.</>} />
 
       {/* Back link */}
-      <section className="py-10 px-6 max-w-3xl mx-auto">
-        <Link href="/postmarks/road-trips" className="text-xs tracking-widest uppercase underline" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+      <section className="py-14 px-6 max-w-3xl mx-auto">
+        <Link href="/postmarks/road-trips" className="text-xs tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
           Back to Road Trips
         </Link>
       </section>
