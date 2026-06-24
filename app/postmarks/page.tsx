@@ -73,7 +73,7 @@ export default function PostmarksPage() {
 
       {/* Category nav */}
       <section className="px-6 max-w-4xl mx-auto pt-8 pb-4">
-        <div className="flex flex-wrap gap-2 pb-6 border-b" style={{ borderColor: "#E8D5B7" }}>
+        <div className="flex flex-wrap gap-2 pb-10 border-b" style={{ borderColor: "#E8D5B7" }}>
           {categories.map((c) =>
             c.live ? (
               <Link
