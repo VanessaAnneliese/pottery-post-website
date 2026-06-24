@@ -3,7 +3,8 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { guilds, potters, suppliers, teachingStudios, groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-data";
+import { guilds, potters, suppliers, teachingStudios } from "@/lib/directory-data";
+import { groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-utils";
 import QuoteBlock from "@/components/QuoteBlock";
 
 type DirectoryType = "guilds" | "potters" | "suppliers" | "classes" | "kiln";

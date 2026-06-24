@@ -1330,6 +1330,51 @@ export const guilds: Guild[] = [
     website: "https://montgomerypotters.org",
     bio: "Bringing potters together since 1952, a clay club in Montgomery County, Maryland, uniting ceramicists from Maryland, Virginia, and DC to increase skills, exchange ideas, and hold periodic exhibits and sales — meeting monthly at VisArts in Rockville.",
   },
+  // Colorado — national org
+  {
+    name: "NCECA",
+    city: "Boulder",
+    province: "Colorado",
+    country: "US",
+    website: "https://nceca.net",
+    bio: "The National Council on Education for the Ceramic Arts — the leading professional nonprofit dedicated to creation, teaching, and learning through clay, hosting an annual conference that brings together thousands of ceramic artists, educators, and enthusiasts from across the US and internationally.",
+  },
+  // North Carolina — craft school
+  {
+    name: "Penland School of Craft",
+    city: "Bakersville",
+    province: "North Carolina",
+    country: "US",
+    website: "https://penland.org",
+    bio: "A national craft education center in the North Carolina mountains offering immersive workshops across twelve studio disciplines including clay, glass, metals, wood, and textiles, alongside artist residencies, a gallery, and community outreach.",
+  },
+  // North Carolina — craft guild
+  {
+    name: "Piedmont Craftsmen",
+    city: "Winston-Salem",
+    province: "North Carolina",
+    country: "US",
+    website: "https://piedmontcraftsmen.org",
+    bio: "Founded in 1963, a 364-artist nonprofit celebrating handmade craft in clay, fiber, glass, jewelry, metal, and wood — with a Winston-Salem gallery, annual craft fair, and online shop.",
+  },
+  // New Jersey — craft school
+  {
+    name: "Peters Valley School of Craft",
+    city: "Layton",
+    province: "New Jersey",
+    country: "US",
+    website: "https://petersvalley.org",
+    bio: "An immersive craft school in the Delaware Water Gap National Recreation Area offering studio-based workshops with nationally recognized artists across ceramics, jewelry, woodworking, fibers, and printmaking since 1970.",
+  },
+  // Tennessee — craft school
+  {
+    name: "Arrowmont School of Arts and Crafts",
+    city: "Gatlinburg",
+    province: "Tennessee",
+    country: "US",
+    website: "https://arrowmont.org",
+    bio: "A historic craft school and gallery in the foothills of the Great Smoky Mountains offering workshops, residencies, and exhibitions across ceramics, fiber, glass, metals, and wood.",
+  },
   // Spain
   {
     name: "Asociación Galega de Ceramistas",
@@ -10141,6 +10186,53 @@ export const potters: Potter[] = [
     website: "https://hfpottery.com",
     bio: "Joe Straka has thrown and designed pottery for nearly forty years; his gallery in historic Harpers Ferry overlooks the confluence of the Potomac and Shenandoah rivers.",
   },
+  // US — Montana (Missoula)
+  {
+    name: "Julia Galloway",
+    city: "Missoula",
+    province: "Montana",
+    country: "US",
+    website: "https://www.juliagalloway.com",
+    bio: "Ceramicist and professor creating utilitarian pottery held in the Renwick Gallery and American Museum of Ceramic Art. Recipient of a United States Artist Grant, and a dedicated educator who has built ceramic arts resources used by the wider craft community.",
+  },
+  // US — Maine (Portland)
+  {
+    name: "Ayumi Horie",
+    city: "Portland",
+    province: "Maine",
+    country: "US",
+    website: "https://ayumihorie.com",
+    bio: "Portland ceramicist creating handmade earthenware and porcelain that celebrates connection and daily life, with a studio practice extending into craft activism and support for equitable maker communities.",
+  },
+  // US — Minnesota (Scandia)
+  {
+    name: "Simon Levin",
+    studio: "Mill Creek Pottery",
+    city: "Scandia",
+    province: "Minnesota",
+    country: "US",
+    website: "https://simonlevin.com",
+    bio: "Wood-fire potter with 30 years of practice at Mill Creek Pottery in Scandia — creating one-of-a-kind pieces where melted wood ash becomes glass on the surface. Runs an apprenticeship program and co-founded Cohorts.Art, a craft mentorship platform.",
+  },
+  // US — Minnesota (Taylors Falls)
+  {
+    name: "Jeff Oestreich",
+    city: "Taylors Falls",
+    province: "Minnesota",
+    country: "US",
+    website: "https://oestreichpottery.com",
+    bio: "A leading figure in the American studio pottery movement, known for his functional thrown and altered forms, extensive teaching, and decades of influence on the craft in North America.",
+  },
+  // US — Massachusetts (Worthington)
+  {
+    name: "Mark Shapiro",
+    studio: "Stonepool Pottery",
+    city: "Worthington",
+    province: "Massachusetts",
+    country: "US",
+    website: "https://stonepoolpottery.com",
+    bio: "Studio potter and teacher whose functional work emphasises thoughtful form and surface. Runs an active apprenticeship program from his Worthington studio and is a respected voice in the craft pottery community.",
+  },
   // AU — Queensland (Logan)
   {
     name: "Suzanne Ditton",
@@ -10920,6 +11012,15 @@ export const suppliers: Supplier[] = [
     country: "US",
     website: "https://www.pottersshop.com",
     bio: "Wisconsin ceramics supplier carrying clay, glazes, tools, and equipment for studio potters.",
+  },
+  // Kansas
+  {
+    name: "Bracker's Good Earth Clays",
+    city: "Lawrence",
+    province: "Kansas",
+    country: "US",
+    website: "https://brackers.com",
+    bio: "A 25,000 sq ft ceramics warehouse near I-70 in Lawrence carrying clays, kilns, wheels, glazes, raw materials, and tools — serving potters across Kansas, Missouri, Nebraska, Oklahoma, Iowa, and beyond with in-store, phone, and online ordering.",
   },
   // England
   {
