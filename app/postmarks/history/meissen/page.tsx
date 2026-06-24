@@ -32,10 +32,10 @@ export default function MeissenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
-        <p className="text-xs tracking-widest uppercase mb-8" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/postmarks" className="hover:text-[#5C3D2E] transition-colors">Pottery Postmarks</Link>
+        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "#009999", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/postmarks" className="hover:text-[#007777] transition-colors">Pottery Postmarks</Link>
           <span className="mx-2">/</span>
-          <Link href="/postmarks/history" className="hover:text-[#5C3D2E] transition-colors">History</Link>
+          <Link href="/postmarks/history" className="hover:text-[#007777] transition-colors">History</Link>
           <span className="mx-2">/</span>
           Meissen
         </p>

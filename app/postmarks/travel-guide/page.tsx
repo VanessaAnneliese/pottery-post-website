@@ -20,8 +20,8 @@ export default function TravelGuidePage() {
   return (
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       {/* Breadcrumb */}
-      <p className="text-xs tracking-widest uppercase mb-8" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
-        <Link href="/postmarks" className="hover:text-[#5C3D2E] transition-colors">Pottery Postmarks</Link>
+      <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "#009999", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <Link href="/postmarks" className="hover:text-[#007777] transition-colors">Pottery Postmarks</Link>
         <span className="mx-2">/</span>
         Travel Guide
       </p>
