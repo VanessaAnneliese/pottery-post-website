@@ -103,7 +103,7 @@ export default function PostmarksPage() {
           {categories.map((c) => {
             const inner = (
               <div className="p-8 rounded-sm h-full" style={{ background: "#EDE4D5" }}>
-                <p className="text-xs tracking-widest uppercase font-bold mb-3" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+                <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
                   {c.label}
                 </p>
                 <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
