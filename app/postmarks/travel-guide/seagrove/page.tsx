@@ -24,7 +24,7 @@ export default function SeagrovePage() {
         <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#C1440E", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           North Carolina
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
           Seagrove, North Carolina: A Town Built on Clay
         </h1>
         <div className="border-t pt-6" style={{ borderColor: "#E8D5B7" }}>
