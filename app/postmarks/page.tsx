@@ -38,7 +38,7 @@ const categories = [
     description:
       "Full road trip routes planned around pottery, by region, by season, by what you're looking for. Studio visits, galleries, local potters, and the best places to stop along the way.",
     href: "/postmarks/road-trips",
-    live: false,
+    live: true,
   },
   {
     label: "History",
