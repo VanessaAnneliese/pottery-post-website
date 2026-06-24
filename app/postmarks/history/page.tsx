@@ -26,10 +26,10 @@ export default function HistoryPage() {
         History
       </p>
 
-      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#D4622A", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         History
       </p>
-      <h1 className="text-2xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
+      <h1 className="text-2xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
         Historical Pottery &amp; Heritage
       </h1>
       <p className="text-lg max-w-2xl mb-12" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>

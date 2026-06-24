@@ -40,10 +40,10 @@ export default function HamiltonToNiagaraPage() {
           Hamilton to Niagara-on-the-Lake
         </p>
 
-        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#C1440E", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#D4622A", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           Ontario, Canada
         </p>
-        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
           Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment
         </h1>
         <div className="border-t pt-6" style={{ borderColor: "#E8D5B7" }}>
