@@ -146,7 +146,7 @@ export default function HamiltonToNiagaraPage() {
         </div>
       </section>
 
-      <QuoteBlock quote="Leave room in the boot. The Bench has a way of filling it." />
+      <QuoteBlock quote={<>Leave room in the boot.<br />The Bench has a way of filling it.</>} />
 
       {/* Back link */}
       <section className="py-10 px-6 max-w-3xl mx-auto">

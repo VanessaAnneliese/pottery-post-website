@@ -46,7 +46,7 @@ const categories = [
     description:
       "The stories behind the clay, ancient traditions, family lineages, the towns where pottery never left, and the makers who kept something alive that the world could have easily lost.",
     href: "/postmarks/history",
-    live: false,
+    live: true,
   },
 ];
 
