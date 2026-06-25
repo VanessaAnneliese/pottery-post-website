@@ -98,7 +98,7 @@ export default function PostmarksPage() {
       </section>
 
       {/* Category cards */}
-      <section className="pb-16 md:pb-20 px-6 max-w-4xl mx-auto pt-6">
+      <section className="pb-8 md:pb-10 px-6 max-w-4xl mx-auto pt-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {categories.map((c) => {
             const inner = (
