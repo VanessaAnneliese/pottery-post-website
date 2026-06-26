@@ -29,7 +29,7 @@ export default function ScrollJump() {
       onClick={handleClick}
       aria-label={atBottom ? "Back to top" : "Jump to bottom"}
       className="fixed bottom-6 right-5 z-50 flex items-center justify-center w-10 h-10 rounded-full shadow-md transition-all"
-      style={{ background: "#C9B99A", color: "#5C3D2E" }}
+      style={{ background: "var(--c-tan)", color: "var(--c-primary)" }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

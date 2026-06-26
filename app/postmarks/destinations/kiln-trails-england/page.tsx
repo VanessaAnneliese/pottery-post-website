@@ -32,29 +32,29 @@ export default function KilnTrailsEnglandPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
-        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "#009999", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/postmarks" className="hover:text-[#007777] transition-colors">Pottery Postmarks</Link>
+        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "var(--c-teal)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/postmarks" className="hover:text-[var(--c-teal-deep)] transition-colors">Pottery Postmarks</Link>
           <span className="mx-2">/</span>
-          <Link href="/postmarks/destinations" className="hover:text-[#007777] transition-colors">Destinations</Link>
+          <Link href="/postmarks/destinations" className="hover:text-[var(--c-teal-deep)] transition-colors">Destinations</Link>
           <span className="mx-2">/</span>
           Kiln Trails of England
         </p>
 
-        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#D4622A", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "var(--c-accent)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           England
         </p>
-        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
+        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>
           The Kiln Trails of England
         </h1>
-        <div className="border-t pt-6" style={{ borderColor: "#E8D5B7" }}>
-          <p className="text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <div className="border-t pt-6" style={{ borderColor: "var(--c-surface)" }}>
+          <p className="text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             Top Pottery Destinations &nbsp;&middot;&nbsp; The Pottery Post
           </p>
         </div>
       </section>
 
       {/* Article body */}
-      <section className="px-6 max-w-3xl mx-auto pb-16 md:pb-20" style={{ fontFamily: "system-ui, sans-serif", color: "#5C3D2E", lineHeight: "1.75" }}>
+      <section className="px-6 max-w-3xl mx-auto pb-16 md:pb-20" style={{ fontFamily: "system-ui, sans-serif", color: "var(--c-primary)", lineHeight: "1.75" }}>
 
         <p className="text-lg mb-6">
           England gives you two distinct pottery pilgrimages, and the wisest visitors find a way to do both.
@@ -74,18 +74,18 @@ export default function KilnTrailsEnglandPage() {
           Start at the <strong>Potteries Museum and Art Gallery</strong> in Hanley. It holds one of the finest collections of Staffordshire ceramics in the world, from medieval earthenware through to twentieth-century studio pieces, and it is free to enter. An hour here will give you the whole arc of what happened in this city and why it mattered.
         </p>
         <p className="mb-3">The working factory visits are the real draw:</p>
-        <div className="mb-10 flex flex-col gap-5 pl-5 border-l-2" style={{ borderColor: "#E8D5B7" }}>
+        <div className="mb-10 flex flex-col gap-5 pl-5 border-l-2" style={{ borderColor: "var(--c-surface)" }}>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>World of Wedgwood</p>
-            <p style={{ color: "#6B4F3F" }}>A full visitor experience at the Wedgwood factory in Barlaston, just outside Stoke. The museum traces the company from Josiah Wedgwood&rsquo;s eighteenth-century workshops through to current production. The factory tours show throwing, casting, and hand-painting in the same building where it has been done for generations.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>A full visitor experience at the Wedgwood factory in Barlaston, just outside Stoke. The museum traces the company from Josiah Wedgwood&rsquo;s eighteenth-century workshops through to current production. The factory tours show throwing, casting, and hand-painting in the same building where it has been done for generations.</p>
           </div>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>Emma Bridgewater Factory</p>
-            <p style={{ color: "#6B4F3F" }}>One of the few potteries to have brought manufacturing back to Stoke after years of offshoring. Tours run most days and show the whole spongeware production process. The factory shop is genuinely worth the stop.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>One of the few potteries to have brought manufacturing back to Stoke after years of offshoring. Tours run most days and show the whole spongeware production process. The factory shop is genuinely worth the stop.</p>
           </div>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>Spode Museum and Visitor Centre</p>
-            <p style={{ color: "#6B4F3F" }}>The original Spode site in the city centre. Spode invented the blue and white transfer printing that defined English pottery for two centuries. The collection here includes pattern books and moulds that have not been used in decades.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>The original Spode site in the city centre. Spode invented the blue and white transfer printing that defined English pottery for two centuries. The collection here includes pattern books and moulds that have not been used in decades.</p>
           </div>
         </div>
         <p className="mb-10">
@@ -113,8 +113,8 @@ export default function KilnTrailsEnglandPage() {
           Stoke-on-Trent is two hours from London by train, or two and a half by car. The Leach Pottery is at the far end of Cornwall, best approached as part of a longer southwest circuit. The two halves of the trip do not connect neatly, which is part of the point: you are not following a single trail but moving between two different ideas of what pottery is, and what it is for. Both are worth the distance.
         </p>
 
-        <div className="border-t pt-8" style={{ borderColor: "#E8D5B7" }}>
-          <p className="text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <div className="border-t pt-8" style={{ borderColor: "var(--c-surface)" }}>
+          <p className="text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             Top Pottery Destinations is a series on the places every pottery lover should visit at least once.
           </p>
         </div>
@@ -124,7 +124,7 @@ export default function KilnTrailsEnglandPage() {
 
       {/* Back link */}
       <section className="py-14 px-6 max-w-3xl mx-auto">
-        <Link href="/postmarks/destinations" className="text-xs tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+        <Link href="/postmarks/destinations" className="text-xs tracking-widest uppercase underline" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
           Back to Destinations
         </Link>
       </section>

@@ -60,27 +60,27 @@ export default function PostmarksPage() {
 
       {/* Header */}
       <section className="pt-16 md:pt-20 pb-4 px-6 max-w-4xl mx-auto">
-        <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           The Pottery Post
         </p>
-        <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+        <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>
           Pottery Postmarks
         </h1>
-        <p className="text-lg max-w-2xl" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+        <p className="text-lg max-w-2xl" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>
           A pottery travel journal. The places, the roads, the history, and the makers worth travelling for.
         </p>
       </section>
 
       {/* Category nav */}
       <section className="px-6 max-w-4xl mx-auto pt-8 pb-4">
-        <div className="flex flex-wrap gap-2 pb-10 border-b" style={{ borderColor: "#E8D5B7" }}>
+        <div className="flex flex-wrap gap-2 pb-10 border-b" style={{ borderColor: "var(--c-surface)" }}>
           {categories.map((c) =>
             c.live ? (
               <Link
                 key={c.label}
                 href={c.href}
                 className="px-5 py-2 text-xs tracking-widest uppercase font-bold rounded-sm transition-colors"
-                style={{ background: "#5C3D2E", color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+                style={{ background: "var(--c-primary)", color: "var(--c-light)", fontFamily: "system-ui, sans-serif" }}
               >
                 {c.label}
               </Link>
@@ -88,7 +88,7 @@ export default function PostmarksPage() {
               <span
                 key={c.label}
                 className="px-5 py-2 text-xs tracking-widest uppercase font-bold rounded-sm"
-                style={{ background: "#E8D5B7", color: "#9E8572", fontFamily: "system-ui, sans-serif", cursor: "default" }}
+                style={{ background: "var(--c-surface)", color: "var(--c-muted)", fontFamily: "system-ui, sans-serif", cursor: "default" }}
               >
                 {c.label}
               </span>
@@ -102,18 +102,18 @@ export default function PostmarksPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {categories.map((c) => {
             const inner = (
-              <div className="p-8 rounded-sm h-full" style={{ background: "#EDE4D5" }}>
-                <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+              <div className="p-8 rounded-sm h-full" style={{ background: "var(--c-surface-soft)" }}>
+                <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
                   {c.label}
                 </p>
-                <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+                <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>
                   {c.title}
                 </h2>
-                <p className="text-sm leading-relaxed" style={{ color: "#6B4F3F", fontFamily: "system-ui, sans-serif" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--c-primary-mid)", fontFamily: "system-ui, sans-serif" }}>
                   {c.description}
                 </p>
                 {c.live && (
-                  <p className="text-xs tracking-widest uppercase mt-4" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+                  <p className="text-xs tracking-widest uppercase mt-4" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
                     Read now
                   </p>
                 )}

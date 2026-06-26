@@ -32,29 +32,29 @@ export default function SeagrovePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
-        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "#009999", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/postmarks" className="hover:text-[#007777] transition-colors">Pottery Postmarks</Link>
+        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "var(--c-teal)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/postmarks" className="hover:text-[var(--c-teal-deep)] transition-colors">Pottery Postmarks</Link>
           <span className="mx-2">/</span>
-          <Link href="/postmarks/travel-guide" className="hover:text-[#007777] transition-colors">Travel Guide</Link>
+          <Link href="/postmarks/travel-guide" className="hover:text-[var(--c-teal-deep)] transition-colors">Travel Guide</Link>
           <span className="mx-2">/</span>
           Seagrove
         </p>
 
-        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#D4622A", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "var(--c-accent)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           North Carolina
         </p>
-        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
+        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>
           Seagrove, North Carolina: A Town Built on Clay
         </h1>
-        <div className="border-t pt-6" style={{ borderColor: "#E8D5B7" }}>
-          <p className="text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <div className="border-t pt-6" style={{ borderColor: "var(--c-surface)" }}>
+          <p className="text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             The Pottery Traveler&rsquo;s Guide &nbsp;&middot;&nbsp; The Pottery Post
           </p>
         </div>
       </section>
 
       {/* Article body */}
-      <section className="px-6 max-w-3xl mx-auto pb-16 md:pb-20" style={{ fontFamily: "system-ui, sans-serif", color: "#5C3D2E", lineHeight: "1.75" }}>
+      <section className="px-6 max-w-3xl mx-auto pb-16 md:pb-20" style={{ fontFamily: "system-ui, sans-serif", color: "var(--c-primary)", lineHeight: "1.75" }}>
 
         <p className="text-lg mb-6">
           There are places that exist to make things, and Seagrove, North Carolina, is one of them.
@@ -68,7 +68,7 @@ export default function SeagrovePage() {
         <p className="mb-10">
           Within eight miles of the town center, more than a hundred pottery studios line the back roads. Some families have been at it for seven generations. The clay here, a local earthenware rich with iron, has been fired since the 1750s, when German and English settlers discovered the land was unusually good for it. They made what they needed: crocks for preserving, jugs for storing, jars for the table. Utility was the whole point. Beauty followed naturally from hands that knew what they were doing.
         </p>
-        <p className="mb-16 text-lg italic" style={{ color: "#9E8572" }}>
+        <p className="mb-16 text-lg italic" style={{ color: "var(--c-muted)" }}>
           It still does.
         </p>
 
@@ -81,18 +81,18 @@ export default function SeagrovePage() {
         </p>
 
         <p className="mb-3">A few studios worth the turn:</p>
-        <div className="mb-10 flex flex-col gap-5 pl-5 border-l-2" style={{ borderColor: "#E8D5B7" }}>
+        <div className="mb-10 flex flex-col gap-5 pl-5 border-l-2" style={{ borderColor: "var(--c-surface)" }}>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>Jugtown Pottery</p>
-            <p style={{ color: "#6B4F3F" }}>One of the oldest working potteries in the region, a touchstone for the Seagrove tradition since 1921. The folk-art forms and distinctive orange and Chinese blue glazes are instantly recognizable.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>One of the oldest working potteries in the region, a touchstone for the Seagrove tradition since 1921. The folk-art forms and distinctive orange and Chinese blue glazes are instantly recognizable.</p>
           </div>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>Ben Owen Pottery</p>
-            <p style={{ color: "#6B4F3F" }}>Now run by Ben Owen III, carrying forward a lineage that stretches back to his grandfather. His wood-fired work sits at the intersection of Japanese mingei and Carolina tradition.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>Now run by Ben Owen III, carrying forward a lineage that stretches back to his grandfather. His wood-fired work sits at the intersection of Japanese mingei and Carolina tradition.</p>
           </div>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>The Potter&rsquo;s Mark</p>
-            <p style={{ color: "#6B4F3F" }}>Run by Beth Gore, a gallery carrying the work of dozens of regional potters. Useful if you want a wider survey before committing to the drive between studios.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>Run by Beth Gore, a gallery carrying the work of dozens of regional potters. Useful if you want a wider survey before committing to the drive between studios.</p>
           </div>
         </div>
 
@@ -106,8 +106,8 @@ export default function SeagrovePage() {
           Seagrove sits about ninety minutes southwest of Raleigh and an hour from Greensboro. The studios are spread along Highways 705 and 220, and several of the smaller county roads that branch off them. A printed map (available at the Pottery Center) is genuinely useful. Cell service is unreliable on some of the back roads, which turns out to be part of the charm.
         </p>
 
-        <div className="border-t pt-8" style={{ borderColor: "#E8D5B7" }}>
-          <p className="text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <div className="border-t pt-8" style={{ borderColor: "var(--c-surface)" }}>
+          <p className="text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             The Pottery Traveler&rsquo;s Guide is a curated series on the towns, studios, and detours worth making for the love of clay.
           </p>
         </div>
@@ -117,7 +117,7 @@ export default function SeagrovePage() {
 
       {/* Back link */}
       <section className="py-14 px-6 max-w-3xl mx-auto">
-        <Link href="/postmarks/travel-guide" className="text-xs tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+        <Link href="/postmarks/travel-guide" className="text-xs tracking-widest uppercase underline" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
           Back to Travel Guide
         </Link>
       </section>

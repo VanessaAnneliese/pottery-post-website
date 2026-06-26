@@ -31,8 +31,8 @@ function NavButton({ label, active, onClick }: { label: string; active: boolean;
       onClick={onClick}
       className="px-5 py-2 text-xs tracking-widest uppercase font-bold rounded-sm transition-colors cursor-pointer"
       style={{
-        background: active ? "#5C3D2E" : "#E8D5B7",
-        color: active ? "#F5F0E8" : "#5C3D2E",
+        background: active ? "var(--c-primary)" : "var(--c-surface)",
+        color: active ? "var(--c-light)" : "var(--c-primary)",
         fontFamily: "system-ui, sans-serif",
       }}
     >
@@ -55,7 +55,7 @@ function groupByCity<T extends { city: string }>(items: T[]): { city: string; it
 
 function ProvinceSection({ province, country }: { province: string; country: Country }) {
   return (
-    <h3 className="text-xs font-bold tracking-widest uppercase mt-10 mb-4 pb-2 border-b" style={{ color: "#9E8572", borderColor: "#E8D5B7", fontFamily: "system-ui, sans-serif", letterSpacing: "0.3em" }}>
+    <h3 className="text-xs font-bold tracking-widest uppercase mt-10 mb-4 pb-2 border-b" style={{ color: "var(--c-muted)", borderColor: "var(--c-surface)", fontFamily: "system-ui, sans-serif", letterSpacing: "0.3em" }}>
       {province} &middot; {countryLabel(country)}
     </h3>
   );
@@ -63,7 +63,7 @@ function ProvinceSection({ province, country }: { province: string; country: Cou
 
 function CitySection({ city }: { city: string }) {
   return (
-    <h4 className="text-xs tracking-widest uppercase mt-6 mb-2" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif", letterSpacing: "0.2em" }}>
+    <h4 className="text-xs tracking-widest uppercase mt-6 mb-2" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif", letterSpacing: "0.2em" }}>
       {city}
     </h4>
   );
@@ -71,15 +71,15 @@ function CitySection({ city }: { city: string }) {
 
 function GuildCard({ guild }: { guild: Guild }) {
   return (
-    <div className="py-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+    <div className="py-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{guild.name}</p>
-          <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{guild.city}, {guild.province}</p>
-          {guild.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{guild.bio}</p>}
+          <p className="text-sm mt-1" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{guild.city}, {guild.province}</p>
+          {guild.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{guild.bio}</p>}
         </div>
         {guild.website && (
-          <a href={guild.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+          <a href={guild.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -90,17 +90,17 @@ function GuildCard({ guild }: { guild: Guild }) {
 
 function PotterCard({ potter }: { potter: Potter }) {
   return (
-    <div className="py-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+    <div className="py-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{potter.name}{potter.studio ? `, ${potter.studio}` : ""}</p>
-          {potter.guild && <p className="text-xs mt-0.5" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>{potter.guild}</p>}
-          <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{potter.city}, {potter.province}</p>
-          {potter.offersClasses && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Offers Classes</p>}
-          {potter.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{potter.bio}</p>}
+          {potter.guild && <p className="text-xs mt-0.5" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>{potter.guild}</p>}
+          <p className="text-sm mt-1" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{potter.city}, {potter.province}</p>
+          {potter.offersClasses && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>Offers Classes</p>}
+          {potter.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{potter.bio}</p>}
         </div>
         {potter.website && (
-          <a href={potter.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+          <a href={potter.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -111,16 +111,16 @@ function PotterCard({ potter }: { potter: Potter }) {
 
 function TeachingStudioCard({ studio }: { studio: TeachingStudio }) {
   return (
-    <div className="py-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+    <div className="py-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{studio.name}</p>
-          <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{studio.city}, {studio.province}</p>
-          {studio.offersKilnSharing && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Community Kiln</p>}
-          {studio.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{studio.bio}</p>}
+          <p className="text-sm mt-1" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{studio.city}, {studio.province}</p>
+          {studio.offersKilnSharing && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>Community Kiln</p>}
+          {studio.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{studio.bio}</p>}
         </div>
         {studio.website && (
-          <a href={studio.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+          <a href={studio.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -131,16 +131,16 @@ function TeachingStudioCard({ studio }: { studio: TeachingStudio }) {
 
 function SupplierCard({ supplier }: { supplier: Supplier }) {
   return (
-    <div className="py-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+    <div className="py-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{supplier.name}</p>
-          <p className="text-sm mt-1" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>{supplier.city}, {supplier.province}</p>
-          {supplier.offersKilnSharing && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Community Kiln</p>}
-          {supplier.bio && <p className="text-sm mt-2" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>{supplier.bio}</p>}
+          <p className="text-sm mt-1" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{supplier.city}, {supplier.province}</p>
+          {supplier.offersKilnSharing && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>Community Kiln</p>}
+          {supplier.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{supplier.bio}</p>}
         </div>
         {supplier.website && (
-          <a href={supplier.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+          <a href={supplier.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -184,7 +184,7 @@ function RegionBlock({
 
   return (
     <div>
-      <h3 className="text-lg font-bold mt-10 mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+      <h3 className="text-lg font-bold mt-10 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>
         {countryLabel(code)}
       </h3>
       {regionGuilds.map(({ province, country, items }) => (
@@ -445,42 +445,42 @@ function DirectoryContent() {
     {selectedType === "kiln" && <QuoteBlock quote="Not every potter has a kiln. But every pot deserves to be fired." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "suppliers" && <QuoteBlock quote={<>Behind every potter who makes something extraordinary is a supply shop<span className="hidden md:inline"><br /></span>{" "}who makes<span className="hidden md:inline"><br /></span>{" "}it possible.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
-      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Worldwide
       </p>
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4">
         <div>
-          <h1 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Pottery Directory</h1>
-          <p className="mt-3 mb-1 text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+          <h1 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>Pottery Directory</h1>
+          <p className="mt-3 mb-1 text-xs tracking-widest uppercase" style={{ color: "var(--c-primary)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             {potters.length + guilds.length + teachingStudios.length + suppliers.length} listings and counting
           </p>
         </div>
         <div className="flex flex-wrap gap-2 self-start sm:self-auto">
           <Link
             href="/directory/submit"
-            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm bg-[#D4622A] hover:bg-[#B8501F] transition-colors"
-            style={{ color: "#F5F0E8", fontFamily: "system-ui, sans-serif" }}
+            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm bg-[var(--c-accent)] hover:bg-[var(--c-accent-mid)] transition-colors"
+            style={{ color: "var(--c-light)", fontFamily: "system-ui, sans-serif" }}
           >
             Add your listing
           </Link>
           <Link
             href="/directory/update"
-            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm bg-[#E8D5B7] hover:bg-[#C5B59C] transition-colors"
-            style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}
+            className="px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm bg-[var(--c-surface)] hover:bg-[var(--c-tan-2)] transition-colors"
+            style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}
           >
             Update your listing
           </Link>
         </div>
       </div>
-      <p className="mb-3 max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+      <p className="mb-3 max-w-lg" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         The Pottery Post&rsquo;s Pottery Directory spans three continents. Know a pottery guild, potter, pottery class, community kiln, or pottery supply shop who should be here? Send them our way.
       </p>
-      <p className="mb-10 max-w-lg text-sm italic" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+      <p className="mb-10 max-w-lg text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         Every addition and update is made by hand, by a real person. Please allow up to 48 hours.
       </p>
 
       {/* Row 1: Type filter */}
-      <div className="flex flex-wrap gap-2 mb-4 mt-3 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+      <div className="flex flex-wrap gap-2 mb-4 mt-3 pb-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
         <NavButton label="All" active={selectedType === null} onClick={() => { setSelectedType(null); setSelectedProvince(null); setSelectedLetter(null); }} />
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
@@ -490,7 +490,7 @@ function DirectoryContent() {
       </div>
 
       {/* Row 3: Region filter */}
-      <div className="flex flex-wrap gap-2 mb-4 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+      <div className="flex flex-wrap gap-2 mb-4 pb-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
         {REGIONS.map(({ code, label }) => (
           <NavButton key={code} label={label} active={selectedRegion === code} onClick={() => handleRegionClick(code)} />
         ))}
@@ -498,7 +498,7 @@ function DirectoryContent() {
 
       {/* Province sub-nav */}
       {selectedRegion && provinces.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-4 pb-4 pt-2 border-b" style={{ borderColor: "#E8D5B7" }}>
+        <div className="flex flex-wrap gap-2 mb-4 pb-4 pt-2 border-b" style={{ borderColor: "var(--c-surface)" }}>
           {provinces.map((p) => (
             <NavButton
               key={p}
@@ -511,7 +511,7 @@ function DirectoryContent() {
       )}
 
       {/* A–Z nav */}
-      <div className="flex flex-wrap gap-0.5 mb-10 pb-4 border-b" style={{ borderColor: "#E8D5B7" }}>
+      <div className="flex flex-wrap gap-0.5 mb-10 pb-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
         {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter) => {
           const available = availableLetters.has(letter);
           const active = selectedLetter === letter;
@@ -522,8 +522,8 @@ function DirectoryContent() {
               className="w-7 h-7 text-xs font-bold rounded-sm transition-colors"
               style={{
                 fontFamily: "system-ui, sans-serif",
-                background: active ? "#5C3D2E" : "transparent",
-                color: active ? "#F5F0E8" : available ? "#5C3D2E" : "#C9BAA8",
+                background: active ? "var(--c-primary)" : "transparent",
+                color: active ? "var(--c-light)" : available ? "var(--c-primary)" : "var(--c-tan-4)",
                 cursor: available ? "pointer" : "default",
               }}
             >
@@ -560,7 +560,7 @@ function DirectoryContent() {
         <>
           {showGuilds && guildsByProvince.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Guilds</h2>
+              <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Guilds</h2>
               {guildsByProvince.map(({ province, country, items }) => (
                 <div key={province}>
                   {!selectedProvince && <ProvinceSection province={province} country={country} />}
@@ -576,7 +576,7 @@ function DirectoryContent() {
           )}
           {showPotters && pottersByProvince.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters</h2>
+              <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Potters</h2>
               {pottersByProvince.map(({ province, country, items }) => (
                 <div key={province}>
                   {!selectedProvince && <ProvinceSection province={province} country={country} />}
@@ -594,7 +594,7 @@ function DirectoryContent() {
             <>
               {classPottersByProvince.length > 0 && (
                 <>
-                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Potters Offering Classes</h2>
+                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Potters Offering Classes</h2>
                   {classPottersByProvince.map(({ province, country, items }) => (
                     <div key={province}>
                       {!selectedProvince && <ProvinceSection province={province} country={country} />}
@@ -610,7 +610,7 @@ function DirectoryContent() {
               )}
               {teachingStudiosByProvince.length > 0 && (
                 <>
-                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Pottery Classes</h2>
+                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Pottery Classes</h2>
                   {teachingStudiosByProvince.map(({ province, country, items }) => (
                     <div key={province}>
                       {!selectedProvince && <ProvinceSection province={province} country={country} />}
@@ -625,7 +625,7 @@ function DirectoryContent() {
                 </>
               )}
               {classPottersByProvince.length === 0 && teachingStudiosByProvince.length === 0 && (
-                <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No classes listings yet for this selection.</p>
+                <p className="py-8" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>No classes listings yet for this selection.</p>
               )}
             </>
           )}
@@ -633,7 +633,7 @@ function DirectoryContent() {
             <>
               {kilnStudiosByProvince.length > 0 && (
                 <>
-                  <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Community Kilns</h2>
+                  <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Community Kilns</h2>
                   {kilnStudiosByProvince.map(({ province, country, items }) => (
                     <div key={`kiln-studio-${province}`}>
                       {!selectedProvince && <ProvinceSection province={province} country={country} />}
@@ -649,7 +649,7 @@ function DirectoryContent() {
               )}
               {kilnSuppliersByProvince.length > 0 && (
                 <>
-                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Supply Shops with Kiln Access</h2>
+                  <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Supply Shops with Kiln Access</h2>
                   {kilnSuppliersByProvince.map(({ province, country, items }) => (
                     <div key={`kiln-supplier-${province}`}>
                       {!selectedProvince && <ProvinceSection province={province} country={country} />}
@@ -664,13 +664,13 @@ function DirectoryContent() {
                 </>
               )}
               {kilnStudiosByProvince.length === 0 && kilnSuppliersByProvince.length === 0 && (
-                <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No kiln sharing listings yet for this selection.</p>
+                <p className="py-8" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>No kiln sharing listings yet for this selection.</p>
               )}
             </>
           )}
           {showSuppliers && suppliersByProvince.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>Supply Shops</h2>
+              <h2 className="text-2xl font-bold mt-16 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Supply Shops</h2>
               {suppliersByProvince.map(({ province, country, items }) => (
                 <div key={province}>
                   {!selectedProvince && <ProvinceSection province={province} country={country} />}
@@ -685,7 +685,7 @@ function DirectoryContent() {
             </>
           )}
           {(!showGuilds || guildsByProvince.length === 0) && (!showPotters || pottersByProvince.length === 0) && !showClasses && !showKiln && (!showSuppliers || suppliersByProvince.length === 0) && (
-            <p className="py-8" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>No listings yet for this selection.</p>
+            <p className="py-8" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>No listings yet for this selection.</p>
           )}
         </>
       )}

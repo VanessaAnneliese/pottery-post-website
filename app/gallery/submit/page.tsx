@@ -20,8 +20,8 @@ function SelectPill({ label, selected, onClick }: { label: string; selected: boo
       className="px-4 py-1.5 text-xs tracking-widest uppercase rounded-sm transition-colors"
       style={{
         fontFamily: "system-ui, sans-serif",
-        background: selected ? "#5C3D2E" : "#E8D5B7",
-        color: selected ? "#F5F0E8" : "#5C3D2E",
+        background: selected ? "var(--c-primary)" : "var(--c-surface)",
+        color: selected ? "var(--c-light)" : "var(--c-primary)",
       }}
     >
       {label}
@@ -88,21 +88,21 @@ export default function GallerySubmitPage() {
     <>
     <QuoteBlock quote="Every piece carries a little of the maker's heart." />
     <section className="py-20 px-6 max-w-2xl mx-auto">
-      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         The Gallery
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Submit Your Work</h1>
-      <p className="mb-2" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+      <p className="mb-2" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         Send us a photograph and a short description of your piece. If it&rsquo;s selected for the collection, we&rsquo;ll reach out with a shipping deadline, each chosen piece comes to Pottery Post for verification before it goes live.
       </p>
-      <p className="mb-10 text-sm" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+      <p className="mb-10 text-sm" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         All submissions are reviewed. Not every piece will be selected, but every one is considered with care.
       </p>
 
       {status === "success" ? (
         <div className="py-12 text-center">
-          <p className="text-lg font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>Thank you, your piece has been submitted.</p>
-          <p style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>We&rsquo;ll be in touch if it&rsquo;s selected for the collection.</p>
+          <p className="text-lg font-bold mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>Thank you, your piece has been submitted.</p>
+          <p style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>We&rsquo;ll be in touch if it&rsquo;s selected for the collection.</p>
         </div>
       ) : (
         <form className="flex flex-col gap-8" onSubmit={handleSubmit}>
@@ -116,7 +116,7 @@ export default function GallerySubmitPage() {
             { label: "Piece Title (optional)", name: "title", type: "text", required: false },
           ].map(({ label, name, type, required }) => (
             <div key={name} className="flex flex-col gap-2">
-              <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+              <label className="text-xs tracking-widest uppercase" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>
                 {label}
               </label>
               <input
@@ -124,14 +124,14 @@ export default function GallerySubmitPage() {
                 name={name}
                 required={required}
                 className="border-b py-2 bg-transparent outline-none text-base"
-                style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }}
+                style={{ borderColor: "var(--c-muted)", color: "var(--c-primary-deep)", fontFamily: "system-ui, sans-serif" }}
               />
             </div>
           ))}
 
           {/* Form / Type */}
           <div className="flex flex-col gap-3">
-            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>Form</label>
+            <label className="text-xs tracking-widest uppercase" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>Form</label>
             <input type="hidden" name="formType" value={formTypeOther ? formTypeOtherText : (formType ?? "")} />
             <div className="flex flex-wrap gap-2">
               {FORM_TYPES.map((t) => (
@@ -140,13 +140,13 @@ export default function GallerySubmitPage() {
               <SelectPill label="Other" selected={formTypeOther} onClick={() => { setFormTypeOther((v) => !v); setFormType(null); setFormTypeOtherText(""); }} />
             </div>
             {formTypeOther && (
-              <input type="text" placeholder="Please specify" value={formTypeOtherText} onChange={(e) => setFormTypeOtherText(e.target.value)} className="border-b py-2 bg-transparent outline-none text-base mt-1" style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }} />
+              <input type="text" placeholder="Please specify" value={formTypeOtherText} onChange={(e) => setFormTypeOtherText(e.target.value)} className="border-b py-2 bg-transparent outline-none text-base mt-1" style={{ borderColor: "var(--c-muted)", color: "var(--c-primary-deep)", fontFamily: "system-ui, sans-serif" }} />
             )}
           </div>
 
           {/* Intent */}
           <div className="flex flex-col gap-3">
-            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>Intent</label>
+            <label className="text-xs tracking-widest uppercase" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>Intent</label>
             <input type="hidden" name="intent" value={intentOther ? intentOtherText : (intent ?? "")} />
             <div className="flex flex-wrap gap-2">
               {INTENTS.map((t) => (
@@ -155,13 +155,13 @@ export default function GallerySubmitPage() {
               <SelectPill label="Other" selected={intentOther} onClick={() => { setIntentOther((v) => !v); setIntent(null); setIntentOtherText(""); }} />
             </div>
             {intentOther && (
-              <input type="text" placeholder="Please specify" value={intentOtherText} onChange={(e) => setIntentOtherText(e.target.value)} className="border-b py-2 bg-transparent outline-none text-base mt-1" style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }} />
+              <input type="text" placeholder="Please specify" value={intentOtherText} onChange={(e) => setIntentOtherText(e.target.value)} className="border-b py-2 bg-transparent outline-none text-base mt-1" style={{ borderColor: "var(--c-muted)", color: "var(--c-primary-deep)", fontFamily: "system-ui, sans-serif" }} />
             )}
           </div>
 
           {/* Technique */}
           <div className="flex flex-col gap-3">
-            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>Technique, select all that apply</label>
+            <label className="text-xs tracking-widest uppercase" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>Technique, select all that apply</label>
             <input type="hidden" name="techniques" value={[...techniques, ...(otherChecked && otherText ? [otherText] : [])].join(", ")} />
             <div className="flex flex-wrap gap-2">
               {TECHNIQUES.map((t) => (
@@ -170,36 +170,36 @@ export default function GallerySubmitPage() {
               <SelectPill label="Other" selected={otherChecked} onClick={() => { setOtherChecked((v) => !v); if (otherChecked) setOtherText(""); }} />
             </div>
             {otherChecked && (
-              <input type="text" placeholder="Please specify" value={otherText} onChange={(e) => setOtherText(e.target.value)} className="border-b py-2 bg-transparent outline-none text-base mt-1" style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }} />
+              <input type="text" placeholder="Please specify" value={otherText} onChange={(e) => setOtherText(e.target.value)} className="border-b py-2 bg-transparent outline-none text-base mt-1" style={{ borderColor: "var(--c-muted)", color: "var(--c-primary-deep)", fontFamily: "system-ui, sans-serif" }} />
             )}
           </div>
 
           {/* Description */}
           <div className="flex flex-col gap-2">
-            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>About This Piece</label>
-            <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+            <label className="text-xs tracking-widest uppercase" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>About This Piece</label>
+            <p className="text-xs" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
               Tell us about the piece, the technique, materials, what inspired it. A few sentences is plenty. {DESC_MAX} characters max.
             </p>
-            <textarea name="description" rows={5} maxLength={DESC_MAX} onChange={(e) => setDescCount(e.target.value.length)} className="border-b py-2 bg-transparent outline-none text-base resize-none" style={{ borderColor: "#9E8572", color: "#3B2314", fontFamily: "system-ui, sans-serif" }} />
-            <p className="text-xs text-right" style={{ color: descCount >= DESC_MAX ? "#C1440E" : "#9E8572", fontFamily: "system-ui, sans-serif" }}>{descCount} / {DESC_MAX}</p>
+            <textarea name="description" rows={5} maxLength={DESC_MAX} onChange={(e) => setDescCount(e.target.value.length)} className="border-b py-2 bg-transparent outline-none text-base resize-none" style={{ borderColor: "var(--c-muted)", color: "var(--c-primary-deep)", fontFamily: "system-ui, sans-serif" }} />
+            <p className="text-xs text-right" style={{ color: descCount >= DESC_MAX ? "var(--c-accent-deep)" : "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{descCount} / {DESC_MAX}</p>
           </div>
 
           {/* Photo */}
           <div className="flex flex-col gap-3">
-            <label className="text-xs tracking-widest uppercase" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>Photograph of Your Piece</label>
-            <p className="text-xs" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+            <label className="text-xs tracking-widest uppercase" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>Photograph of Your Piece</label>
+            <p className="text-xs" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
               One photograph, JPG or PNG, square format (1:1), under {PHOTO_MAX_MB}MB. Good natural light, plain background if possible.
             </p>
-            <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "#E8D5B7", color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>
+            <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "var(--c-surface)", color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>
               {photoFile ? "Change Photo" : "Choose Photo"}
               <input ref={fileInputRef} type="file" name="photo" accept="image/jpeg,image/png" className="hidden" onChange={handlePhoto} />
             </label>
-            {photoFile && <p className="text-xs" style={{ color: "#5C3D2E", fontFamily: "system-ui, sans-serif" }}>✓ {photoFile.name}</p>}
-            {photoError && <p className="text-xs" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>{photoError}</p>}
+            {photoFile && <p className="text-xs" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>✓ {photoFile.name}</p>}
+            {photoError && <p className="text-xs" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>{photoError}</p>}
           </div>
 
           {status === "error" && (
-            <p className="text-sm" style={{ color: "#C1440E", fontFamily: "system-ui, sans-serif" }}>
+            <p className="text-sm" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
               Something went wrong, please try again or email us at gallery@potterypost.ca
             </p>
           )}
@@ -207,8 +207,8 @@ export default function GallerySubmitPage() {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="mt-2 px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm self-start bg-[#D4622A] hover:bg-[#B8501F] transition-colors"
-            style={{ color: "#F5F0E8", fontFamily: "system-ui, sans-serif", opacity: status === "sending" ? 0.6 : 1 }}
+            className="mt-2 px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm self-start bg-[var(--c-accent)] hover:bg-[var(--c-accent-mid)] transition-colors"
+            style={{ color: "var(--c-light)", fontFamily: "system-ui, sans-serif", opacity: status === "sending" ? 0.6 : 1 }}
           >
             {status === "sending" ? "Sending..." : "Submit for consideration"}
           </button>

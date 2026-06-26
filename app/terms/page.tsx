@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <section className="py-20 px-6 max-w-2xl mx-auto">
-      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Legal
       </p>
       <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: "Georgia, serif" }}>Terms of Use</h1>
-      <p className="text-sm mb-12" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>Last updated: June 2026</p>
+      <p className="text-sm mb-12" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>Last updated: June 2026</p>
 
-      <div className="flex flex-col gap-10" style={{ color: "#3B2314", fontFamily: "system-ui, sans-serif", lineHeight: "1.75" }}>
+      <div className="flex flex-col gap-10" style={{ color: "var(--c-primary-deep)", fontFamily: "system-ui, sans-serif", lineHeight: "1.75" }}>
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Agreement to Terms</h2>
@@ -86,7 +86,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Contact Us</h2>
           <p>If you have questions about these Terms of Use, please contact us at:</p>
-          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "#009999" }}>hello@potterypost.ca</a></p>
+          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.ca</a></p>
         </div>
 
       </div>

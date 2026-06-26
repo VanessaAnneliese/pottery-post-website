@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useLayoutEffect } from "react";
+import { siteConfig } from "@/lib/site-config";
 
 export default function LogoMark({
   logoColor,
@@ -42,14 +43,14 @@ export default function LogoMark({
         className={`${logoClassName} font-bold uppercase whitespace-nowrap`}
         style={{ fontFamily: "Georgia, serif", letterSpacing: logoLetterSpacing, color: logoColor }}
       >
-        Pottery Post
+        {siteConfig.brandName}
       </span>
       <span
         ref={tagRef}
         className="uppercase tracking-[0.4em]"
         style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.8rem", color: tagColor }}
       >
-        For Makers &amp; Admirers
+        {siteConfig.tagline}
       </span>
     </div>
   );

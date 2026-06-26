@@ -20,37 +20,37 @@ export default function DestinationsPage() {
   return (
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       {/* Breadcrumb */}
-      <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "#009999", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
-        <Link href="/postmarks" className="hover:text-[#007777] transition-colors">Pottery Postmarks</Link>
+      <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "var(--c-teal)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <Link href="/postmarks" className="hover:text-[var(--c-teal-deep)] transition-colors">Pottery Postmarks</Link>
         <span className="mx-2">/</span>
         Destinations
       </p>
 
-      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#9E8572", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+      <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Destinations
       </p>
-      <h1 className="text-2xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+      <h1 className="text-2xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>
         Top Pottery Destinations
       </h1>
-      <p className="text-lg max-w-2xl mb-12" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+      <p className="text-lg max-w-2xl mb-12" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         The studio towns, kiln trails, and pottery districts worth travelling for, across North America, the UK, Europe, and Australia.
       </p>
 
       <div className="flex flex-col gap-0">
         {articles.map((a) => (
-          <Link key={a.slug} href={`/postmarks/destinations/${a.slug}`} className="group block py-8 border-t" style={{ borderColor: "#E8D5B7" }}>
-            <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "#D4622A", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+          <Link key={a.slug} href={`/postmarks/destinations/${a.slug}`} className="group block py-8 border-t" style={{ borderColor: "var(--c-surface)" }}>
+            <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-accent)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
               {a.label}
             </p>
-            <h2 className="text-2xl font-bold mb-2 group-hover:text-[#B8501F] transition-colors" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
+            <h2 className="text-2xl font-bold mb-2 group-hover:text-[var(--c-accent-mid)] transition-colors" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>
               {a.title}
             </h2>
-            <p className="text-sm max-w-lg" style={{ color: "#9E8572", fontFamily: "system-ui, sans-serif" }}>
+            <p className="text-sm max-w-lg" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
               {a.description}
             </p>
           </Link>
         ))}
-        <div className="border-t" style={{ borderColor: "#E8D5B7" }} />
+        <div className="border-t" style={{ borderColor: "var(--c-surface)" }} />
       </div>
     </section>
   );

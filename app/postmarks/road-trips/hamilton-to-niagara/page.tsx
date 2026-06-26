@@ -32,22 +32,22 @@ export default function HamiltonToNiagaraPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
-        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "#009999", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/postmarks" className="hover:text-[#007777] transition-colors">Pottery Postmarks</Link>
+        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "var(--c-teal)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/postmarks" className="hover:text-[var(--c-teal-deep)] transition-colors">Pottery Postmarks</Link>
           <span className="mx-2">/</span>
-          <Link href="/postmarks/road-trips" className="hover:text-[#007777] transition-colors">Road Trips</Link>
+          <Link href="/postmarks/road-trips" className="hover:text-[var(--c-teal-deep)] transition-colors">Road Trips</Link>
           <span className="mx-2">/</span>
           Hamilton to Niagara-on-the-Lake
         </p>
 
-        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#D4622A", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "var(--c-accent)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           Ontario, Canada
         </p>
-        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
+        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>
           Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment
         </h1>
-        <div className="border-t pt-6" style={{ borderColor: "#E8D5B7" }}>
-          <p className="text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <div className="border-t pt-6" style={{ borderColor: "var(--c-surface)" }}>
+          <p className="text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             Mapped Pottery Travel Itineraries &nbsp;&middot;&nbsp; The Pottery Post
           </p>
         </div>
@@ -55,31 +55,31 @@ export default function HamiltonToNiagaraPage() {
 
       {/* Route overview strip */}
       <section className="px-6 max-w-3xl mx-auto mb-10">
-        <div className="rounded-sm p-6 flex flex-col gap-3" style={{ background: "#EDE4D5" }}>
-          <p className="text-xs tracking-widest uppercase font-bold" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>The Route</p>
-          <div className="flex flex-wrap gap-x-3 gap-y-1 items-center text-sm font-bold" style={{ fontFamily: "Georgia, serif", color: "#5C3D2E" }}>
+        <div className="rounded-sm p-6 flex flex-col gap-3" style={{ background: "var(--c-surface-soft)" }}>
+          <p className="text-xs tracking-widest uppercase font-bold" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>The Route</p>
+          <div className="flex flex-wrap gap-x-3 gap-y-1 items-center text-sm font-bold" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>
             <span>Hamilton</span>
-            <span style={{ color: "#C1440E" }}>→</span>
+            <span style={{ color: "var(--c-accent-deep)" }}>→</span>
             <span>Dundas</span>
-            <span style={{ color: "#C1440E" }}>→</span>
+            <span style={{ color: "var(--c-accent-deep)" }}>→</span>
             <span>Grimsby</span>
-            <span style={{ color: "#C1440E" }}>→</span>
+            <span style={{ color: "var(--c-accent-deep)" }}>→</span>
             <span>Jordan Village</span>
-            <span style={{ color: "#C1440E" }}>→</span>
+            <span style={{ color: "var(--c-accent-deep)" }}>→</span>
             <span>St. Catharines</span>
-            <span style={{ color: "#C1440E" }}>→</span>
+            <span style={{ color: "var(--c-accent-deep)" }}>→</span>
             <span>Niagara-on-the-Lake</span>
           </div>
-          <div className="flex flex-wrap gap-6 text-sm mt-1" style={{ color: "#6B4F3F", fontFamily: "system-ui, sans-serif" }}>
-            <span><strong style={{ color: "#5C3D2E" }}>Distance:</strong> approx. 80 km</span>
-            <span><strong style={{ color: "#5C3D2E" }}>Drive time:</strong> 1.5 hrs direct, full day with stops</span>
-            <span><strong style={{ color: "#5C3D2E" }}>Best season:</strong> May through October</span>
+          <div className="flex flex-wrap gap-6 text-sm mt-1" style={{ color: "var(--c-primary-mid)", fontFamily: "system-ui, sans-serif" }}>
+            <span><strong style={{ color: "var(--c-primary)" }}>Distance:</strong> approx. 80 km</span>
+            <span><strong style={{ color: "var(--c-primary)" }}>Drive time:</strong> 1.5 hrs direct, full day with stops</span>
+            <span><strong style={{ color: "var(--c-primary)" }}>Best season:</strong> May through October</span>
           </div>
         </div>
       </section>
 
       {/* Article body */}
-      <section className="px-6 max-w-3xl mx-auto pb-16 md:pb-20" style={{ fontFamily: "system-ui, sans-serif", color: "#5C3D2E", lineHeight: "1.75" }}>
+      <section className="px-6 max-w-3xl mx-auto pb-16 md:pb-20" style={{ fontFamily: "system-ui, sans-serif", color: "var(--c-primary)", lineHeight: "1.75" }}>
 
         <p className="text-lg mb-6">
           This is not a long drive. Hamilton to Niagara-on-the-Lake is eighty kilometres, and on a clear day the straight route takes less than two hours. But straight is not the point.
@@ -143,23 +143,23 @@ export default function HamiltonToNiagaraPage() {
         </p>
 
         <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Planning notes</h2>
-        <div className="mb-10 flex flex-col gap-5 pl-5 border-l-2" style={{ borderColor: "#E8D5B7" }}>
+        <div className="mb-10 flex flex-col gap-5 pl-5 border-l-2" style={{ borderColor: "var(--c-surface)" }}>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>Best time to go</p>
-            <p style={{ color: "#6B4F3F" }}>Late September and October, when the Niagara region studio tours run and the fall colours are at their peak along the Escarpment. May and June are also excellent. Avoid July and August on weekends: the Bench roads and Niagara-on-the-Lake are busy with wine tourists.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>Late September and October, when the Niagara region studio tours run and the fall colours are at their peak along the Escarpment. May and June are also excellent. Avoid July and August on weekends: the Bench roads and Niagara-on-the-Lake are busy with wine tourists.</p>
           </div>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>Finding studios in advance</p>
-            <p style={{ color: "#6B4F3F" }}>The Ontario Craft Council maintains listings of member studios across the province. The Niagara Folk Arts Festival and regional studio tour organizations publish maps each fall that are worth downloading before you leave. Many studios in this region do not have websites; a phone call ahead is always worth making.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>The Ontario Craft Council maintains listings of member studios across the province. The Niagara Folk Arts Festival and regional studio tour organizations publish maps each fall that are worth downloading before you leave. Many studios in this region do not have websites; a phone call ahead is always worth making.</p>
           </div>
           <div>
             <p className="font-bold mb-1" style={{ fontFamily: "Georgia, serif" }}>The route</p>
-            <p style={{ color: "#6B4F3F" }}>Hamilton to Niagara-on-the-Lake via QEW is the fast option. The slower and better option is to exit at Grimsby and take Regional Road 81 east through the Bench villages: Beamsville, Vineland, Jordan, St. Catharines. Add forty-five minutes and subtract nothing.</p>
+            <p style={{ color: "var(--c-primary-mid)" }}>Hamilton to Niagara-on-the-Lake via QEW is the fast option. The slower and better option is to exit at Grimsby and take Regional Road 81 east through the Bench villages: Beamsville, Vineland, Jordan, St. Catharines. Add forty-five minutes and subtract nothing.</p>
           </div>
         </div>
 
-        <div className="border-t pt-8" style={{ borderColor: "#E8D5B7" }}>
-          <p className="text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <div className="border-t pt-8" style={{ borderColor: "var(--c-surface)" }}>
+          <p className="text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             Mapped Pottery Travel Itineraries are full road trip routes planned around pottery, by region, by season, by what you&rsquo;re looking for.
           </p>
         </div>
@@ -169,7 +169,7 @@ export default function HamiltonToNiagaraPage() {
 
       {/* Back link */}
       <section className="py-14 px-6 max-w-3xl mx-auto">
-        <Link href="/postmarks/road-trips" className="text-xs tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+        <Link href="/postmarks/road-trips" className="text-xs tracking-widest uppercase underline" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
           Back to Road Trips
         </Link>
       </section>

@@ -1,8 +1,38 @@
 @import "tailwindcss";
 
+/*
+  ── Site colour palette ──
+  This is the ONLY place colours are defined. To recolour an entire site,
+  change the hex values below. Every page and component reads these tokens,
+  so the rest of the code never needs to be touched.
+*/
 :root {
-  --background: #F5F0E8;
-  --foreground: #3B2314;
+  --c-primary: #5C3D2E;        /* main brown — logo, nav text, body accents */
+  --c-primary-deep: #3B2314;   /* darkest brown — footer, headings */
+  --c-primary-mid: #6B4F3F;    /* mid brown */
+  --c-primary-soft: #856E62;   /* soft brown */
+
+  --c-accent: #D4622A;         /* terracotta — buttons, links, highlights */
+  --c-accent-deep: #C1440E;    /* deep terracotta */
+  --c-accent-mid: #B8501F;     /* mid terracotta — hover */
+
+  --c-teal: #009999;           /* teal accent */
+  --c-teal-deep: #007777;      /* deep teal — hover */
+
+  --c-light: #F5F0E8;          /* cream page background */
+  --c-white: #FFFFFF;          /* white */
+  --c-surface: #E8D5B7;        /* sand card / panel surface */
+  --c-surface-soft: #EDE4D5;   /* soft sand */
+
+  --c-muted: #9E8572;          /* driftwood — muted text, borders */
+
+  --c-tan: #C9B99A;            /* header / footer bar */
+  --c-tan-2: #C5B59C;
+  --c-tan-3: #C9C0B4;
+  --c-tan-4: #C9BAA8;
+
+  --background: var(--c-light);
+  --foreground: var(--c-primary-deep);
 }
 
 body {

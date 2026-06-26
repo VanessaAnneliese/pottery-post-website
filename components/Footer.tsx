@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LogoMark from "./LogoMark";
 import SearchForm from "./SearchForm";
+import { siteConfig } from "@/lib/site-config";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -12,11 +13,11 @@ export default function Footer() {
     const active = pathname === href || pathname.startsWith(href + "/");
     return active
       ? "text-white whitespace-nowrap transition-colors"
-      : "text-[#5C3D2E] hover:text-white whitespace-nowrap transition-colors";
+      : "text-[var(--c-primary)] hover:text-white whitespace-nowrap transition-colors";
   }
 
   return (
-    <footer style={{ background: "#C9B99A", color: "#5C3D2E" }} className="py-10 px-6">
+    <footer style={{ background: "var(--c-tan)", color: "var(--c-primary)" }} className="py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
 
         {/* Desktop search, full bar with selectors, same as nav */}
@@ -33,8 +34,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
           <Link href="/">
             <LogoMark
-              logoColor="#5C3D2E"
-              tagColor="#5C3D2E"
+              logoColor="var(--c-primary)"
+              tagColor="var(--c-primary)"
               logoClassName="text-2xl md:text-3xl"
               logoLetterSpacing="0.2em"
               className="items-center md:items-start"
@@ -42,9 +43,9 @@ export default function Footer() {
           </Link>
           <div className="flex flex-col items-center gap-3">
             <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
-              <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
-              <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
-              <Link href="/postmarks" className={navLinkClass("/postmarks")}>Pottery Postmarks</Link>
+              {siteConfig.nav.map((item) => (
+                <Link key={item.href} href={item.href} className={navLinkClass(item.href)}>{item.label}</Link>
+              ))}
             </nav>
             <nav className="flex gap-5 text-xs" style={{ fontFamily: "Georgia, serif" }}>
               <Link href="/faq" className={`${navLinkClass("/faq")} font-bold`}>FAQ</Link>
@@ -56,10 +57,10 @@ export default function Footer() {
             </nav>
           </div>
           <p className="text-xs text-center md:text-right">
-            &copy; {new Date().getFullYear()} Pottery Post
+            &copy; {new Date().getFullYear()} {siteConfig.brandName}
             <span className="hidden md:inline">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
             <br className="md:hidden" />
-            Website Design by Anneliese Designs
+            Website Design by {siteConfig.designCredit}
           </p>
         </div>
 

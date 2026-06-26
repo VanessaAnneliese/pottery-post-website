@@ -105,7 +105,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col" style={{ background: "#F5F0E8", color: "#3B2314" }}>
+      <body className="min-h-full flex flex-col" style={{ background: "var(--c-light)", color: "var(--c-primary-deep)" }}>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

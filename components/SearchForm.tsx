@@ -126,8 +126,8 @@ function SearchFormInner({ defaultOpen = false, label }: { defaultOpen?: boolean
   }
 
   const baseField: React.CSSProperties = {
-    background: "#F5F0E8",
-    color: "#3B2314",
+    background: "var(--c-light)",
+    color: "var(--c-primary-deep)",
     fontFamily: "system-ui, sans-serif",
     border: "none",
     outline: "none",
@@ -164,7 +164,7 @@ function SearchFormInner({ defaultOpen = false, label }: { defaultOpen?: boolean
       {open ? (
         <form onSubmit={handleSubmit} className="flex items-center gap-2 w-full md:w-auto">
           {label && (
-            <span className="text-sm md:text-[1.094rem] whitespace-nowrap" style={{ color: "#FFFFFF", fontFamily: "system-ui, sans-serif" }}>
+            <span className="text-sm md:text-[1.094rem] whitespace-nowrap" style={{ color: "var(--c-white)", fontFamily: "system-ui, sans-serif" }}>
               {label}
             </span>
           )}
@@ -205,8 +205,8 @@ function SearchFormInner({ defaultOpen = false, label }: { defaultOpen?: boolean
           />
           <button
             type="submit"
-            className="text-xs tracking-widest uppercase px-4 rounded-sm whitespace-nowrap transition-all bg-[#D4622A] hover:bg-[#B8501F] active:scale-95 active:brightness-90"
-            style={{ color: "#F5F0E8", fontFamily: "system-ui, sans-serif", height: "2.25rem" }}
+            className="text-xs tracking-widest uppercase px-4 rounded-sm whitespace-nowrap transition-all bg-[var(--c-accent)] hover:bg-[var(--c-accent-mid)] active:scale-95 active:brightness-90"
+            style={{ color: "var(--c-light)", fontFamily: "system-ui, sans-serif", height: "2.25rem" }}
           >
             Go
           </button>
@@ -215,7 +215,7 @@ function SearchFormInner({ defaultOpen = false, label }: { defaultOpen?: boolean
         <button
           onClick={handleOpen}
           className="text-sm tracking-widest uppercase"
-          style={{ color: "#FFFFFF", fontFamily: "system-ui, sans-serif" }}
+          style={{ color: "var(--c-white)", fontFamily: "system-ui, sans-serif" }}
           aria-label="Search"
         >
           Search

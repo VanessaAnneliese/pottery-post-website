@@ -32,29 +32,29 @@ export default function MeissenPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article header */}
       <section className="pt-12 md:pt-20 pb-8 px-6 max-w-3xl mx-auto">
-        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "#009999", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/postmarks" className="hover:text-[#007777] transition-colors">Pottery Postmarks</Link>
+        <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "var(--c-teal)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+          <Link href="/postmarks" className="hover:text-[var(--c-teal-deep)] transition-colors">Pottery Postmarks</Link>
           <span className="mx-2">/</span>
-          <Link href="/postmarks/history" className="hover:text-[#007777] transition-colors">History</Link>
+          <Link href="/postmarks/history" className="hover:text-[var(--c-teal-deep)] transition-colors">History</Link>
           <span className="mx-2">/</span>
           Meissen
         </p>
 
-        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "#D4622A", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
+        <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "var(--c-accent)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           Saxony, Germany &middot; 1710
         </p>
-        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "#D4622A" }}>
+        <h1 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>
           The King Who Traded Soldiers for Porcelain
         </h1>
-        <div className="border-t pt-6" style={{ borderColor: "#E8D5B7" }}>
-          <p className="text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <div className="border-t pt-6" style={{ borderColor: "var(--c-surface)" }}>
+          <p className="text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             Historical Pottery &amp; Heritage &nbsp;&middot;&nbsp; The Pottery Post
           </p>
         </div>
       </section>
 
       {/* Article body */}
-      <section className="px-6 max-w-3xl mx-auto pb-16 md:pb-20" style={{ fontFamily: "system-ui, sans-serif", color: "#5C3D2E", lineHeight: "1.75" }}>
+      <section className="px-6 max-w-3xl mx-auto pb-16 md:pb-20" style={{ fontFamily: "system-ui, sans-serif", color: "var(--c-primary)", lineHeight: "1.75" }}>
 
         <p className="text-lg mb-6">
           In 1717, Augustus the Strong, Elector of Saxony, traded six hundred cavalry soldiers to the King of Prussia in exchange for one hundred and fifty-one pieces of Chinese porcelain.
@@ -87,10 +87,10 @@ export default function MeissenPage() {
         <p className="mb-6">
           Around 1707 they produced a dense red stoneware, harder than anything previously made in Europe. It was not porcelain, but it was a step. Then Tschirnhaus died, in October 1708, before the work was finished. Böttger continued alone. By early 1709, he had it: a white, translucent, hard-paste porcelain. The Arcanum, held in China for a thousand years, had been found in a castle in Saxony by a man who had originally been imprisoned for a completely different purpose.
         </p>
-        <p className="mb-10 text-lg italic" style={{ color: "#9E8572" }}>
+        <p className="mb-10 text-lg italic" style={{ color: "var(--c-muted)" }}>
           God our Creator has turned one alchemist into a potter.
         </p>
-        <p className="mb-10" style={{ color: "#6B4F3F", fontSize: "0.85rem" }}>
+        <p className="mb-10" style={{ color: "var(--c-primary-mid)", fontSize: "0.85rem" }}>
           Böttger wrote those words in his notes sometime around 1709. The self-deprecation is either genuine or careful. He was still, technically, a prisoner.
         </p>
 
@@ -113,8 +113,8 @@ export default function MeissenPage() {
           The age of European porcelain had begun, and it had begun because one king wanted Chinese vases badly enough to imprison a man until the problem was solved. The crossed swords are still stamped onto every piece that leaves Meissen today, three hundred years later, from a factory that is still operating on the same hill.
         </p>
 
-        <div className="border-t pt-8" style={{ borderColor: "#E8D5B7" }}>
-          <p className="text-xs tracking-widest uppercase" style={{ color: "#9E8572", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
+        <div className="border-t pt-8" style={{ borderColor: "var(--c-surface)" }}>
+          <p className="text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
             Historical Pottery &amp; Heritage is a series on the stories behind the clay: ancient traditions, family lineages, and the makers who kept something alive that the world could have easily lost.
           </p>
         </div>
@@ -124,7 +124,7 @@ export default function MeissenPage() {
 
       {/* Back link */}
       <section className="py-14 px-6 max-w-3xl mx-auto">
-        <Link href="/postmarks/history" className="text-xs tracking-widest uppercase underline" style={{ color: "#009999", fontFamily: "system-ui, sans-serif" }}>
+        <Link href="/postmarks/history" className="text-xs tracking-widest uppercase underline" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
           Back to History
         </Link>
       </section>

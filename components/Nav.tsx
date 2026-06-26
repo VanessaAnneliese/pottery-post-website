@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SearchForm from "./SearchForm";
 import LogoMark from "./LogoMark";
+import { siteConfig } from "@/lib/site-config";
 
 export default function Nav() {
   const pathname = usePathname();
@@ -12,18 +13,18 @@ export default function Nav() {
     const active = pathname === href || pathname.startsWith(href + "/");
     return active
       ? "text-white whitespace-nowrap transition-colors"
-      : "text-[#5C3D2E] hover:text-white whitespace-nowrap transition-colors";
+      : "text-[var(--c-primary)] hover:text-white whitespace-nowrap transition-colors";
   }
 
   return (
-    <header style={{ background: "#C9B99A" }} className="px-6">
+    <header style={{ background: "var(--c-tan)" }} className="px-6">
 
       {/* ── Mobile layout ── */}
       <div className="flex flex-col items-center py-5 gap-4 md:hidden">
         <Link href="/" style={{ textDecoration: "none" }}>
           <LogoMark
-            logoColor="#5C3D2E"
-            tagColor="#5C3D2E"
+            logoColor="var(--c-primary)"
+            tagColor="var(--c-primary)"
             logoClassName="text-2xl"
             logoLetterSpacing="0.2em"
             className="items-center"
@@ -31,9 +32,9 @@ export default function Nav() {
         </Link>
         <SearchForm defaultOpen={true} />
         <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm tracking-wider uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
-          <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
-          <Link href="/postmarks" className={navLinkClass("/postmarks")}>Pottery Postmarks</Link>
+          {siteConfig.nav.map((item) => (
+            <Link key={item.href} href={item.href} className={navLinkClass(item.href)}>{item.label}</Link>
+          ))}
         </nav>
       </div>
 
@@ -41,8 +42,8 @@ export default function Nav() {
       <div className="hidden md:flex flex-col items-center py-6 gap-4">
         <Link href="/" style={{ textDecoration: "none" }}>
           <LogoMark
-            logoColor="#5C3D2E"
-            tagColor="#5C3D2E"
+            logoColor="var(--c-primary)"
+            tagColor="var(--c-primary)"
             logoClassName="text-3xl"
             logoLetterSpacing="0.2em"
             className="items-center"
@@ -50,9 +51,9 @@ export default function Nav() {
         </Link>
         <SearchForm defaultOpen={true} label="Search directory" />
         <nav className="flex flex-wrap justify-center gap-x-8 gap-y-1 text-sm tracking-widest uppercase" style={{ fontFamily: "system-ui, sans-serif" }}>
-          <Link href="/directory" className={navLinkClass("/directory")}>Pottery Directory</Link>
-          <Link href="/gallery" className={navLinkClass("/gallery")}>Pottery Gallery</Link>
-          <Link href="/postmarks" className={navLinkClass("/postmarks")}>Pottery Postmarks</Link>
+          {siteConfig.nav.map((item) => (
+            <Link key={item.href} href={item.href} className={navLinkClass(item.href)}>{item.label}</Link>
+          ))}
         </nav>
       </div>
 
