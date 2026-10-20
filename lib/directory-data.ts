@@ -8278,6 +8278,16 @@ export const potters: Potter[] = [
     website: "https://www.avanospotteryworkshop.com",
     bio: "A boutique family pottery workshop in the heart of Avanos, Cappadocia, keeping traditional Anatolian pottery techniques alive for generations and inviting visitors to try the wheel under the guidance of local masters using red clay from the Kızılırmak riverbank.",
   },
+  // Turkey — Kütahya
+  {
+    name: "Nursena Bilgiç",
+    studio: "NAF Ceramic",
+    city: "Kütahya",
+    province: "Turkey",
+    country: "EU",
+    website: "https://nafceramic.com",
+    bio: "Nursena Bilgiç is a ceramic artist and the founder of NAF Ceramic, a handmade ceramics studio based in Kütahya, Türkiye. Her practice focuses on hand-built and hand-painted ceramic objects.",
+  },
   // North Carolina — Wilmington
   {
     name: "Salty Ceramics",
