@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code chat records (personal, not shipped)
+chat-logs/
+
+# Extracted site quotes (personal reference, not shipped)
+/quotes.md
