@@ -25,3 +25,12 @@ This is one of **5 clone sites**: Pottery, Village, Wellness, Nature, Handy Post
 - `app/globals.css` — colour tokens (`--c-*`)
 - `app/layout.tsx` — metadata (title, description, domain, canonical, OG)
 - `package.json` — `name` field
+
+## Directory data conventions (`lib/directory-data.ts`)
+The directory is four exported arrays, each with its own type (read the type defs at the top of the file — they are the source of truth). To add a submitted listing, use `/add-listing`.
+
+- **Arrays / types:** `guilds` (Guild), `potters` (Potter), `teachingStudios` (TeachingStudio), `suppliers` (Supplier). A maker who also teaches goes in `potters` with `offersClasses: true` — don't duplicate across arrays.
+- **`country` is the enum `CA | US | EU | AU`, not a country name.** Map by region: Canada→`CA`, USA→`US`, Europe + transcontinental (e.g. Turkey/Türkiye)→`EU`, Australia/NZ→`AU`. The real country/state/province name goes in `province` (e.g. a Turkish studio is `province: "Turkey"`, `country: "EU"`).
+- **No email field.** A submitted email is not stored here — it belongs in the submissions pipeline. Omit optional booleans when the answer is "no"; only set `offersClasses` / `offersKilnSharing` to `true`.
+- **Insertion:** entries are grouped by geography under `// Region — City` comment headers. Add to the matching group with a short comment, matching surrounding formatting; don't reorder the rest.
+- **Never fabricate** a bio or missing field. Trim a cut-off bio to its last complete sentence and flag what was incomplete.
