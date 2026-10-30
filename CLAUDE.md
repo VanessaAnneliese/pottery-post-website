@@ -17,6 +17,9 @@
 
 **⚠️ Folder trap:** the real project lives in `~/Documents/I love the Pottery Post/Pottery Post Website`. An OLD empty folder `~/Documents/💛🌼 I love Pottery Post/Pottery Post Website` still exists — do NOT work there. Always open this ("I love **the** Pottery Post") folder.
 
+## Copy style
+- **No em dashes (—)** in site copy or anything written for the user. Use periods, commas, colons, or parentheses instead. Case-by-case exceptions only, and only when flagged to the user for their call.
+
 ## Clone family
 This is one of **5 clone sites**: Pottery, Village, Wellness, Nature, Handy Post. Each has its own folder + GitHub repo + Vercel project and shares this template. (Anneliese Designs / Cameron Witkowski / Kathy Terry are *separate* sites, not part of this family.)
 
