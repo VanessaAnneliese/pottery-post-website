@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
+import ShareBar from "@/components/ShareBar";
 
 export const metadata: Metadata = {
   title: "The King Who Traded Soldiers for Porcelain | Historical Pottery & Heritage",
@@ -118,6 +119,10 @@ export default function MeissenPage() {
             Historical Pottery &amp; Heritage is a series on the stories behind the clay: ancient traditions, family lineages, and the makers who kept something alive that the world could have easily lost.
           </p>
         </div>
+      </section>
+
+      <section className="px-6 max-w-3xl mx-auto pb-8">
+        <ShareBar url="https://www.potterypost.ca/postmarks/history/meissen" title="The King Who Traded Soldiers for Porcelain" />
       </section>
 
       <QuoteBlock quote="The Arcanum was held in China for a thousand years. It lasted eight years in a castle in Saxony." />

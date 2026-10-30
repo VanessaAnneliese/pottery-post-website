@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
+import ShareBar from "@/components/ShareBar";
 
 export const metadata: Metadata = {
   title: "The Kiln Trails of England | Top Pottery Destinations",
@@ -118,6 +119,10 @@ export default function KilnTrailsEnglandPage() {
             Top Pottery Destinations is a series on the places every pottery lover should visit at least once.
           </p>
         </div>
+      </section>
+
+      <section className="px-6 max-w-3xl mx-auto pb-8">
+        <ShareBar url="https://www.potterypost.ca/postmarks/destinations/kiln-trails-england" title="The Kiln Trails of England" />
       </section>
 
       <QuoteBlock quote={<>The bottle ovens are still<span className="hidden md:inline"><br /></span>{" "}standing. Some things built<span className="hidden md:inline"><br /></span>{" "}around clay outlast the<span className="hidden md:inline"><br /></span>{" "}industry that made them.</>} />

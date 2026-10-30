@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
+import ShareBar from "@/components/ShareBar";
 
 export const metadata: Metadata = {
   title: "Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment | Pottery Post",
@@ -163,6 +164,10 @@ export default function HamiltonToNiagaraPage() {
             Mapped Pottery Travel Itineraries are full road trip routes planned around pottery, by region, by season, by what you&rsquo;re looking for.
           </p>
         </div>
+      </section>
+
+      <section className="px-6 max-w-3xl mx-auto pb-8">
+        <ShareBar url="https://www.potterypost.ca/postmarks/road-trips/hamilton-to-niagara" title="Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment" />
       </section>
 
       <QuoteBlock quote={<>Niagara has been shaping this<span className="hidden md:inline"><br /></span>{" "}land for twelve thousand years.<span className="hidden md:inline"><br /></span>{" "}The potters along the way are<span className="hidden md:inline"><br /></span>{" "}simply carrying the work on.</>} />

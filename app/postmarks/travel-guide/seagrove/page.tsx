@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
+import ShareBar from "@/components/ShareBar";
 
 export const metadata: Metadata = {
   title: "Seagrove, North Carolina: A Town Built on Clay | The Pottery Traveler's Guide",
@@ -111,6 +112,10 @@ export default function SeagrovePage() {
             The Pottery Traveler&rsquo;s Guide is a curated series on the towns, studios, and detours worth making for the love of clay.
           </p>
         </div>
+      </section>
+
+      <section className="px-6 max-w-3xl mx-auto pb-8">
+        <ShareBar url="https://www.potterypost.ca/postmarks/travel-guide/seagrove" title="Seagrove, North Carolina: A Town Built on Clay" />
       </section>
 
       <QuoteBlock quote={<>A hundred studios within<span className="hidden md:inline"><br /></span>{" "}eight miles of town. Seagrove<span className="hidden md:inline"><br /></span>{" "}is a place that never stopped<span className="hidden md:inline"><br /></span>{" "}making things by hand.</>} />
