@@ -423,9 +423,21 @@ function DirectoryContent() {
 
   const provinces = Array.from(new Set(provinceSource.map((i) => i.province))).sort();
 
+  // If the selected province has no entries in the current category/region,
+  // clear it so the filter doesn't get stuck on an empty, unselectable province.
+  useEffect(() => {
+    if (selectedProvince && !provinces.includes(selectedProvince)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setSelectedProvince(null);
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setSelectedLetter(null);
+    }
+  }, [selectedProvince, provinces]);
+
   function handleTypeClick(type: DirectoryType) {
     setSelectedType(selectedType === type ? null : type);
-    setSelectedProvince(null);
+    // Keep the province selection when switching category; a province with no
+    // entries in the new category is cleared by the safety effect below.
     setSelectedLetter(null);
   }
 
