@@ -2,7 +2,6 @@ export type GalleryPiece = { src: string; alt: string };
 
 export const foundersCollection: GalleryPiece[] = [
   { src: "/gallery/founders/copper-brown-tree-of-life-planter-founders-collection_001.jpg", alt: "Copper-brown stoneware planter with a tree-of-life motif, holding a trailing pothos plant. Handmade pottery from the Founder's Collection at Pottery Post." },
-  { src: "/gallery/founders/green-red-brushstroke-lidded-jar-founders-collection_002.jpg", alt: "Lidded stoneware jar in olive green with red and brown brushstrokes. Handmade pottery from the Founder's Collection at Pottery Post." },
   { src: "/gallery/founders/rustic-floral-stoneware-mug-founders-collection_003.jpg", alt: "Rustic brown stoneware mug with a hand-carved white floral panel. Handmade pottery from the Founder's Collection at Pottery Post." },
   { src: "/gallery/founders/green-brown-mottled-lidded-jar-founders-collection_004.jpg", alt: "Lidded stoneware jar with a mottled green and brown glaze. Handmade pottery from the Founder's Collection at Pottery Post." },
   { src: "/gallery/founders/pink-lavender-drip-glaze-mug-founders-collection_005.jpg", alt: "Bulbous mug in soft pink and lavender with a brown and green drip glaze. Handmade pottery from the Founder's Collection at Pottery Post." },
