@@ -46,7 +46,7 @@ export default function QuoteBlock({ quote, className }: { quote: ReactNode; cla
       : quote;
 
   return (
-    <section className={`relative px-6 text-center flex flex-col items-center justify-center min-h-[400px] ${className ?? ""}`} style={{ background: "var(--c-surface-soft)" }}>
+    <section className={`relative px-6 text-center flex flex-col items-center justify-center min-h-[400px] ${className ?? "pt-16 md:pt-20 pb-12 md:pb-16"}`} style={{ background: "var(--c-surface-soft)" }}>
       <div className="absolute inset-x-0 top-0 h-48 md:h-72 pointer-events-none" style={{ background: "linear-gradient(to bottom, var(--c-light), transparent)", zIndex: 0 }} />
       <div className="absolute inset-x-0 bottom-0 h-48 md:h-72 pointer-events-none" style={{ background: "linear-gradient(to top, var(--c-light), transparent)", zIndex: 0 }} />
       <div className="absolute inset-y-0 left-0 w-24 md:w-48 pointer-events-none" style={{ background: "linear-gradient(to right, var(--c-light), transparent)", zIndex: 0 }} />
