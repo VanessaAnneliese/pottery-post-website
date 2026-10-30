@@ -113,7 +113,7 @@ export default function SeagrovePage() {
         </div>
       </section>
 
-      <QuoteBlock quote={<>Some roads are worth<br />travelling slowly. Especially the<br />ones with a kiln at the end.</>} />
+      <QuoteBlock quote="A hundred studios within eight miles of town. Seagrove is a place that never stopped making things by hand." />
 
       {/* Back link */}
       <section className="py-14 px-6 max-w-3xl mx-auto">
