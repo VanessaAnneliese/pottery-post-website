@@ -54,7 +54,7 @@ export default function PostmarksPage() {
   return (
     <>
       <QuoteBlock
-        quote="The best pottery finds you when you're already somewhere beautiful. Going looking is even better."
+        quote={<>The best pottery finds you<br />when you&rsquo;re already<br />somewhere beautiful.<br />Going looking is even better.</>}
         className="pt-24 md:pt-32 pb-12 md:pb-16"
       />
 
@@ -130,7 +130,7 @@ export default function PostmarksPage() {
         </div>
       </section>
 
-      <QuoteBlock quote="Some roads are worth travelling slowly. Especially the ones with a kiln at the end." />
+      <QuoteBlock quote={<>Some roads are worth<br />travelling slowly.<br />Especially the ones<br />with a kiln at the end.</>} />
     </>
   );
 }

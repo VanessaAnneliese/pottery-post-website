@@ -450,12 +450,12 @@ function DirectoryContent() {
 
   return (
     <>
-    {selectedType === null && <QuoteBlock quote="A bowl made by hand carries something no factory can put into it. The particular attention of a particular person, on a particular day, who decided to make something beautiful." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === null && <QuoteBlock quote={<>A bowl made by hand<br />carries something no factory can<br />put into it. The particular attention<br />of a particular person, on a<br />particular day, who decided to<br />make something beautiful.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "classes" && <QuoteBlock quote="There is a version of you that exists only when your hands are in clay. A pottery class is how you meet them." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "kiln" && <QuoteBlock quote="Not every potter has a kiln. But every pot deserves to be fired." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
-    {selectedType === "suppliers" && <QuoteBlock quote={<>Behind every potter who makes something extraordinary is a supply shop<span className="hidden md:inline"><br /></span>{" "}who makes<span className="hidden md:inline"><br /></span>{" "}it possible.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === "suppliers" && <QuoteBlock quote="Behind every potter who makes something extraordinary is a supply shop who makes it possible." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Worldwide
@@ -702,10 +702,10 @@ function DirectoryContent() {
         </>
       )}
     </section>
-    {selectedType === null && <QuoteBlock quote={<>Every name in this directory is a person who chose to make something with their hands.<br className="md:hidden" /> That choice deserves to<br className="md:hidden" /> be found.</>} className="pb-24 md:pb-32" />}
+    {selectedType === null && <QuoteBlock quote="Every name in this directory is a person who chose to make something with their hands. That choice deserves to be found." className="pb-24 md:pb-32" />}
     {selectedType === "guilds" && <QuoteBlock quote="A guild is where individual voices learn to make something larger than themselves." />}
     {selectedType === "classes" && <QuoteBlock quote="No one picks up clay for the first time and walks away unchanged." />}
-    {selectedType === "kiln" && <QuoteBlock quote={<>A shared kiln is a quiet kind of generosity.<br className="md:hidden" /> Space made for someone else&rsquo;s making.</>} className="pb-24 md:pb-32" />}
+    {selectedType === "kiln" && <QuoteBlock quote="A shared kiln is a quiet kind of generosity. Space made for someone else’s making." className="pb-24 md:pb-32" />}
     {selectedType === "potters" && <QuoteBlock quote="What's made by hand is made twice, once in the mind, once in the world." />}
     {selectedType === "suppliers" && <QuoteBlock quote="A supplier who understands pottery understands that what they offer will one day be held by a stranger, and loved." className="py-20 md:py-24" />}
     </>

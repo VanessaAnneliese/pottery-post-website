@@ -165,7 +165,7 @@ export default function HamiltonToNiagaraPage() {
         </div>
       </section>
 
-      <QuoteBlock quote={<>Leave room in the boot.<br />The Bench has a way of filling it.</>} />
+      <QuoteBlock quote={<>Niagara has been shaping this<br />land for twelve thousand years.<br />The potters along the way are<br />simply carrying the work on.</>} />
 
       {/* Back link */}
       <section className="py-14 px-6 max-w-3xl mx-auto">

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   return (
     <>
-    <QuoteBlock quote={<>There is a quiet<br className="md:hidden" /> in beautiful pottery<br className="md:hidden" /> that settles something<br className="md:hidden" /> inside you.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
+    <QuoteBlock quote={<>There is a quiet in<br />beautiful pottery that settles<br />something inside you.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured
@@ -31,10 +31,10 @@ export default function GalleryPage() {
       <p className="mb-12 max-w-lg text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         Please note: none of these pieces are for sale at Pottery Post, where possible, please contact potters for inquiries.
       </p>
-      <h2 className="text-3xl font-bold mb-1" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Founder&rsquo;s Collection</h2>
-      <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "var(--c-accent)", fontFamily: "Georgia, serif" }}>
+      <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "var(--c-accent)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Gathered with Love
       </p>
+      <h2 className="text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Founder&rsquo;s Collection</h2>
       <p className="mb-8 max-w-lg text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         This is an early selection from a much larger collection. More pieces are being photographed and will be added.
       </p>
@@ -89,7 +89,7 @@ export default function GalleryPage() {
         View past galleries
       </Link>
     </section>
-    <QuoteBlock quote={<>Well-made pottery<br className="md:hidden" /> stops you. You<br className="md:hidden" /> don&rsquo;t know why.<br className="md:hidden" /> You just can&rsquo;t<br className="md:hidden" /> look away.</>} />
+    <QuoteBlock quote={<>Well-made pottery stops you.<br />You don&rsquo;t know why.<br />You just can&rsquo;t look away.</>} />
     </>
   );
 }

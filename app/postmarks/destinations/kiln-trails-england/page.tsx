@@ -120,7 +120,7 @@ export default function KilnTrailsEnglandPage() {
         </div>
       </section>
 
-      <QuoteBlock quote="The bottle ovens are still standing. Some things built around clay outlast the industry that made them." />
+      <QuoteBlock quote={<>The bottle ovens are still<br />standing. Some things built<br />around clay outlast the<br />industry that made them.</>} />
 
       {/* Back link */}
       <section className="py-14 px-6 max-w-3xl mx-auto">
