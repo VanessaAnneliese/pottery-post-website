@@ -31,11 +31,12 @@ export default function GalleryPage() {
       <p className="mb-12 max-w-lg text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         Please note: none of these pieces are for sale at Pottery Post, where possible, please contact potters for inquiries.
       </p>
+      <h2 className="text-3xl font-bold mb-1" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Founder&rsquo;s Collection</h2>
       <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "var(--c-accent)", fontFamily: "Georgia, serif" }}>
         Gathered with Love
       </p>
-      <p className="mb-8 max-w-lg text-sm italic" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
-        This is an early selection from a much larger collection. More pieces are being photographed and added regularly.
+      <p className="mb-8 max-w-lg text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
+        This is an early selection from a much larger collection. More pieces are being photographed and will be added.
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {foundersCollection.map((piece) => (

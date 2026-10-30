@@ -27,7 +27,6 @@ export const foundersCollection: GalleryPiece[] = [
   { src: "/gallery/founders/blue-green-marbled-mug-founders-collection_024.jpg", alt: "Blue-green marbled mug with a white rim. Handmade pottery from the Founder's Collection at Pottery Post." },
   { src: "/gallery/founders/rust-tan-ash-drip-mug-founders-collection_025.jpg", alt: "Rust and tan mug with an ash drip glaze. Handmade pottery from the Founder's Collection at Pottery Post." },
   { src: "/gallery/founders/slate-blue-carved-botanical-bowl-founders-collection_026.jpg", alt: "Slate-blue bowl with a carved botanical branch pattern. Handmade pottery from the Founder's Collection at Pottery Post." },
-  { src: "/gallery/founders/blue-grey-carved-lotus-bowl-founders-collection_027.jpg", alt: "Blue-grey bowl with a carved lotus petal pattern. Handmade pottery from the Founder's Collection at Pottery Post." },
   { src: "/gallery/founders/green-brown-embossed-leaf-tumbler-founders-collection_028.jpg", alt: "Tumbler with a green rim and dark brown body with embossed leaves. Handmade pottery from the Founder's Collection at Pottery Post." },
   { src: "/gallery/founders/green-red-rim-lidded-jar-founders-collection_029.jpg", alt: "Lidded stoneware jar in green with a red-brown rim and drip detailing. Handmade pottery from the Founder's Collection at Pottery Post." },
 ];
