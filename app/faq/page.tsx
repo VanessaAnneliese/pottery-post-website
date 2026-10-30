@@ -18,6 +18,7 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "What is the Pottery Post?", acceptedAnswer: { "@type": "Answer", text: "The Pottery Post is a home for people who love pottery: potters, guilds, pottery class providers, pottery supply shops, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, and a curated Pottery Gallery." } },
+    { "@type": "Question", name: "Why Pottery Post?", acceptedAnswer: { "@type": "Answer", text: "Pottery Post was built with three things in mind. First, visibility for information that is hard to find: the site is coded for AI visibility, AEO, and SEO, so basic pottery information that is scattered across the internet, buried, or missing entirely has a clear, findable home. Second, potters who are easy to find: anyone looking for makers, guilds, classes, or supply shops in a given area can turn them up quickly. Third, a fast, calm experience for people: the site loads quickly using current web technology and stays uncluttered, with no pop-ups and no ads, so you can find the people, places, and things you want in seconds." } },
     { "@type": "Question", name: "Where is the Pottery Post based?", acceptedAnswer: { "@type": "Answer", text: "We're based in Whitby, Ontario, Canada." } },
     { "@type": "Question", name: "How do I get in touch with Pottery Post?", acceptedAnswer: { "@type": "Answer", text: "You can reach us at hello@potterypost.ca. For directory questions use directory@potterypost.ca, and for gallery questions use gallery@potterypost.ca." } },
     { "@type": "Question", name: "Is the Pottery Post affiliated with any specific pottery guild or school?", acceptedAnswer: { "@type": "Answer", text: "No. Pottery Post is independent and not affiliated with or endorsed by any guild, school, or manufacturer." } },
@@ -56,6 +57,15 @@ export default function FAQPage() {
             <div>
               <h3 className="font-bold mb-2">What is the Pottery Post?</h3>
               <p style={{ color: "var(--c-primary)" }}>The Pottery Post is a home for people who love pottery: potters, guilds, pottery class providers, pottery supply shops, collectors, and admirers alike. We run a Pottery Directory spanning Canada, the United States, Europe, and Australia, and a curated Pottery Gallery. Everything here is reviewed in person, made by hand, by real people.</p>
+            </div>
+            <div>
+              <h3 className="font-bold mb-2">Why Pottery Post?</h3>
+              <p className="mb-3" style={{ color: "var(--c-primary)" }}>Pottery Post was built with three things in mind:</p>
+              <ul className="list-disc pl-5 flex flex-col gap-3" style={{ color: "var(--c-primary)" }}>
+                <li><strong>Visibility for information that is hard to find.</strong> The site is coded for AI visibility, AEO, and SEO, so basic pottery information that is scattered across the internet, buried, or missing entirely has a clear, findable home.</li>
+                <li><strong>Potters who are easy to find.</strong> If you are looking for makers, guilds, classes, or supply shops in a particular area, the directory helps you turn them up quickly.</li>
+                <li><strong>A fast, calm experience for people.</strong> The site loads quickly using current web technology and stays uncluttered, with no pop-ups and no ads, so you can find the people, places, and things you want in seconds.</li>
+              </ul>
             </div>
             <div>
               <h3 className="font-bold mb-2">Where is the Pottery Post based?</h3>
