@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   return (
     <>
-    <QuoteBlock quote={<>There is a quiet in<br />beautiful pottery that settles<br />something inside you.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
+    <QuoteBlock quote={<>There is a quiet in<span className="hidden md:inline"><br /></span>{" "}beautiful pottery that settles<span className="hidden md:inline"><br /></span>{" "}something inside you.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured
@@ -89,7 +89,7 @@ export default function GalleryPage() {
         View past galleries
       </Link>
     </section>
-    <QuoteBlock quote={<>Well-made pottery stops you.<br />You don&rsquo;t know why.<br />You just can&rsquo;t look away.</>} />
+    <QuoteBlock quote={<>Well-made pottery stops you.<span className="hidden md:inline"><br /></span>{" "}You don&rsquo;t know why.<span className="hidden md:inline"><br /></span>{" "}You just can&rsquo;t look away.</>} />
     </>
   );
 }

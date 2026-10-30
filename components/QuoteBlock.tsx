@@ -39,7 +39,7 @@ export default function QuoteBlock({ quote, className }: { quote: ReactNode; cla
     typeof quote === "string"
       ? splitQuote(quote, 3).map((line, i) => (
           <Fragment key={i}>
-            {i > 0 && <br />}
+            {i > 0 && <><span className="hidden md:inline"><br /></span>{" "}</>}
             {line}
           </Fragment>
         ))

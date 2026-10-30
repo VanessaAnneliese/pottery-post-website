@@ -450,7 +450,7 @@ function DirectoryContent() {
 
   return (
     <>
-    {selectedType === null && <QuoteBlock quote={<>A bowl made by hand<br />carries something no factory can<br />put into it. The particular attention<br />of a particular person, on a<br />particular day, who decided to<br />make something beautiful.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
+    {selectedType === null && <QuoteBlock quote={<>A bowl made by hand<span className="hidden md:inline"><br /></span>{" "}carries something no factory can<span className="hidden md:inline"><br /></span>{" "}put into it. The particular attention<span className="hidden md:inline"><br /></span>{" "}of a particular person, on a<span className="hidden md:inline"><br /></span>{" "}particular day, who decided to<span className="hidden md:inline"><br /></span>{" "}make something beautiful.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "guilds" && <QuoteBlock quote="When potters gather, the energy in the room is its own kind of fire." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "potters" && <QuoteBlock quote="What a potter makes with their hands, they first made with their whole self." className="pt-24 md:pt-32 pb-12 md:pb-16" />}
     {selectedType === "classes" && <QuoteBlock quote="There is a version of you that exists only when your hands are in clay. A pottery class is how you meet them." className="pt-24 md:pt-32 pb-12 md:pb-16" />}

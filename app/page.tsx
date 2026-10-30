@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       <h1 className="sr-only">Pottery Post: Pottery Directory, Gallery and Travel Journal for Makers and Admirers</h1>
-      <QuoteBlock quote={<>For ten thousand years,<br />humans have been putting their<br />hands in clay. Something in us has<br />never stopped needing to.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
+      <QuoteBlock quote={<>For ten thousand years,<span className="hidden md:inline"><br /></span>{" "}humans have been putting their<span className="hidden md:inline"><br /></span>{" "}hands in clay. Something in us has<span className="hidden md:inline"><br /></span>{" "}never stopped needing to.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
 
       {/* Directory CTA */}
       <section className="relative pt-16 md:pt-20 pb-12 md:pb-16 px-6 text-center" style={{ background: "var(--c-tan)" }}>
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </section>
 
-      <QuoteBlock quote={<>Things made with love,<br />by hand, deserve to be seen,<br />shared, and celebrated.</>} className="pt-16 md:pt-20 pb-12 md:pb-16" />
+      <QuoteBlock quote={<>Things made with love,<span className="hidden md:inline"><br /></span>{" "}by hand, deserve to be seen,<span className="hidden md:inline"><br /></span>{" "}shared, and celebrated.</>} className="pt-16 md:pt-20 pb-12 md:pb-16" />
 
       {/* Featured Gallery Preview */}
       <section className="pt-16 md:pt-20 pb-12 md:pb-16 px-6 max-w-6xl mx-auto">
@@ -91,7 +91,7 @@ export default function Home() {
         </p>
       </section>
 
-      <QuoteBlock quote={<>Pottery asks nothing<br />of the world except the chance<br />to make something true.</>} className="pt-16 md:pt-20 pb-24 md:pb-32" />
+      <QuoteBlock quote={<>Pottery asks nothing<span className="hidden md:inline"><br /></span>{" "}of the world except the chance<span className="hidden md:inline"><br /></span>{" "}to make something true.</>} className="pt-16 md:pt-20 pb-24 md:pb-32" />
     </>
   );
 }
