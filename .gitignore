@@ -45,3 +45,6 @@ chat-logs/
 
 # Extracted site quotes (personal reference, not shipped)
 /quotes.md
+
+# Working assets (full-size originals, crops, mapping) — web copies live in public/
+pottery-post_assets/

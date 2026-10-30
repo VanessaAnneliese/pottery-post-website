@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
+import { foundersCollection } from "@/lib/gallery-data";
 
 export const metadata: Metadata = {
   title: "Pottery Gallery | Handmade Ceramics Curated with Love",
@@ -24,7 +25,6 @@ export default function GalleryPage() {
         Featured
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>Pottery Gallery</h1>
-      <p className="mb-6 text-sm tracking-widest uppercase" style={{ color: "var(--c-accent-deep)", letterSpacing: "0.15em", fontFamily: "system-ui, sans-serif" }}>The first collection is being curated and will be live soon.</p>
       <p className="mb-4 max-w-lg" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         Each piece here was made by hand, by someone who cares deeply about what they make. They were gathered with love. This first collection is the Founder&rsquo;s Collection. Future collections will rotate early Spring and Fall and via potter submissions.
       </p>
@@ -34,15 +34,21 @@ export default function GalleryPage() {
       <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "var(--c-accent)", fontFamily: "Georgia, serif" }}>
         Gathered with Love
       </p>
+      <p className="mb-8 max-w-lg text-sm italic" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
+        This is an early selection from a much larger collection. More pieces are being photographed and added regularly.
+      </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-        {Array.from({ length: 6 }, (_, i) => (
-          <div
-            key={i}
-            className="flex items-center justify-center rounded-sm text-sm tracking-widest uppercase"
-            style={{ background: "var(--c-white)", color: "var(--c-muted)", aspectRatio: "1 / 1", fontFamily: "system-ui, sans-serif" }}
-          >
-            Piece {["I","II","III","IV","V","VI"][i]}
-          </div>
+        {foundersCollection.map((piece) => (
+          <img
+            key={piece.src}
+            src={piece.src}
+            alt={piece.alt}
+            loading="lazy"
+            width={1000}
+            height={1000}
+            className="w-full h-auto rounded-sm"
+            style={{ aspectRatio: "1 / 1", objectFit: "cover", background: "var(--c-white)" }}
+          />
         ))}
       </div>
     </section>
