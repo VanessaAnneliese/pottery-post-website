@@ -29,3 +29,10 @@ export const foundersCollection: GalleryPiece[] = [
   { src: "/gallery/founders/green-brown-embossed-leaf-tumbler-founders-collection_028.jpg", alt: "Tumbler with a green rim and dark brown body with embossed leaves. Handmade pottery from the Founder's Collection at Pottery Post." },
   { src: "/gallery/founders/green-red-rim-lidded-jar-founders-collection_029.jpg", alt: "Lidded stoneware jar in green with a red-brown rim and drip detailing. Handmade pottery from the Founder's Collection at Pottery Post." },
 ];
+
+// Pieces featured in the homepage gallery preview, in order.
+// The homepage shows the first 8 on desktop and the first 4 on mobile.
+// To choose which pieces appear, edit this list: reorder it, change the
+// slice, or replace it with an explicit pick, e.g.
+//   export const featuredPieces = [foundersCollection[2], foundersCollection[5], ...];
+export const featuredPieces: GalleryPiece[] = foundersCollection.slice(0, 8);

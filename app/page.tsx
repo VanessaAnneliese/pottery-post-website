@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
+import { featuredPieces } from "@/lib/gallery-data";
 
 export const metadata: Metadata = {
   title: "Pottery Post | Directory, Gallery & Travel Journal for Pottery Lovers",
@@ -14,17 +15,6 @@ export const metadata: Metadata = {
     url: "https://www.potterypost.ca",
   },
 };
-
-function PlaceholderPiece({ label }: { label: string }) {
-  return (
-    <div
-      className="flex items-center justify-center rounded-sm text-sm tracking-widest uppercase"
-      style={{ background: "var(--c-white)", color: "var(--c-muted)", aspectRatio: "1 / 1", minHeight: "160px", fontFamily: "system-ui, sans-serif" }}
-    >
-      {label}
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -66,20 +56,23 @@ export default function Home() {
             Featured
           </p>
           <h2 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>Pottery Gallery</h2>
-          <p className="mt-2 text-sm" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>The first collection is being curated and will be live soon.</p>
         </div>
         <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "var(--c-primary)", fontFamily: "Georgia, serif" }}>
           Gathered with Love
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <PlaceholderPiece label="Piece I" />
-          <PlaceholderPiece label="Piece II" />
-          <PlaceholderPiece label="Piece III" />
-          <PlaceholderPiece label="Piece IV" />
-          <PlaceholderPiece label="Piece V" />
-          <PlaceholderPiece label="Piece VI" />
-          <PlaceholderPiece label="Piece VII" />
-          <PlaceholderPiece label="Piece VIII" />
+          {featuredPieces.slice(0, 8).map((piece, i) => (
+            <img
+              key={piece.src}
+              src={piece.src}
+              alt={piece.alt}
+              loading="lazy"
+              width={1000}
+              height={1000}
+              className={`w-full h-auto rounded-sm${i >= 4 ? " hidden md:block" : ""}`}
+              style={{ aspectRatio: "1 / 1", objectFit: "cover", background: "var(--c-white)" }}
+            />
+          ))}
         </div>
         <div className="mt-6 text-center">
           <Link href="/gallery" className="text-sm tracking-widest uppercase underline" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
