@@ -41,6 +41,12 @@ export default function TermsPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Copying and Reuse</h2>
+          <p className="mb-3">Building the Pottery Directory and Pottery Postmarks, and keeping them accurate, takes real and ongoing work. The listings, the descriptions we write, and the regional information are the result of that effort, and we ask that you treat them accordingly.</p>
+          <p>You are welcome to link to our pages and to share an individual listing or fact the way you would any web page. You may not, however, scrape, harvest, or copy the directory or Postmarks in bulk, whether with automated tools or by hand, or reproduce, republish, resell, or build a competing directory from a substantial part of our content, without our written permission. If a listing is your own business, you are of course free to use your own information however you like.</p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Pottery Gallery</h2>
           <p>The Pottery Gallery is a curated collection of handmade pottery presented for appreciation only. Pieces are not for sale by Pottery Post. Potters who submit work to the Gallery are responsible for all shipping costs to deliver their piece to Pottery Post. Pottery Post is not responsible for any loss or damage that occurs during shipping to us. We recommend using a tracked, insured courier service. Please retain your shipping documentation.</p>
         </div>
