@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
-import { featuredPieces } from "@/lib/gallery-data";
+import { featuredDesktop, featuredMobile } from "@/lib/gallery-data";
 
 export const metadata: Metadata = {
   title: "Pottery Post | Directory, Gallery & Travel Journal for Pottery Lovers",
@@ -60,8 +60,9 @@ export default function Home() {
         <p className="text-sm tracking-widest uppercase mb-6 font-bold" style={{ color: "var(--c-primary)", fontFamily: "Georgia, serif" }}>
           Gathered with Love
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {featuredPieces.slice(0, 8).map((piece, i) => (
+        {/* Desktop: 8 featured pieces */}
+        <div className="hidden md:grid grid-cols-4 gap-4">
+          {featuredDesktop.map((piece) => (
             <img
               key={piece.src}
               src={piece.src}
@@ -69,7 +70,22 @@ export default function Home() {
               loading="lazy"
               width={1000}
               height={1000}
-              className={`w-full h-auto rounded-sm${i >= 4 ? " hidden md:block" : ""}`}
+              className="w-full h-auto rounded-sm"
+              style={{ aspectRatio: "1 / 1", objectFit: "cover", background: "var(--c-white)" }}
+            />
+          ))}
+        </div>
+        {/* Mobile: 4 featured pieces */}
+        <div className="grid grid-cols-2 gap-4 md:hidden">
+          {featuredMobile.map((piece) => (
+            <img
+              key={piece.src}
+              src={piece.src}
+              alt={piece.alt}
+              loading="lazy"
+              width={1000}
+              height={1000}
+              className="w-full h-auto rounded-sm"
               style={{ aspectRatio: "1 / 1", objectFit: "cover", background: "var(--c-white)" }}
             />
           ))}

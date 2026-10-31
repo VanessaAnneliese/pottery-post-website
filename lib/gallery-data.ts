@@ -30,9 +30,20 @@ export const foundersCollection: GalleryPiece[] = [
   { src: "/gallery/founders/green-red-rim-lidded-jar-founders-collection_029.jpg", alt: "Lidded stoneware jar in green with a red-brown rim and drip detailing. Handmade pottery from the Founder's Collection at Pottery Post." },
 ];
 
-// Pieces featured in the homepage gallery preview, in order.
-// The homepage shows the first 8 on desktop and the first 4 on mobile.
-// To choose which pieces appear, edit this list: reorder it, change the
-// slice, or replace it with an explicit pick, e.g.
-//   export const featuredPieces = [foundersCollection[2], foundersCollection[5], ...];
-export const featuredPieces: GalleryPiece[] = foundersCollection.slice(0, 8);
+// Look up a Founder's Collection piece by its number (the _NNN in the filename).
+function piece(n: number): GalleryPiece | undefined {
+  const tag = `_${String(n).padStart(3, "0")}.jpg`;
+  return foundersCollection.find((p) => p.src.includes(tag));
+}
+
+// Pieces featured in the homepage gallery preview, chosen separately for
+// desktop (8) and mobile (4), each shown in the order listed here.
+// To change the selection, edit the number lists below (the _NNN piece number,
+// shown in each filename and in pottery-post_assets/gallery-founders-mapping.txt).
+export const featuredDesktop: GalleryPiece[] = [3, 14, 28, 18, 15, 21, 20, 6]
+  .map(piece)
+  .filter((p): p is GalleryPiece => Boolean(p));
+
+export const featuredMobile: GalleryPiece[] = [3, 20, 26, 9]
+  .map(piece)
+  .filter((p): p is GalleryPiece => Boolean(p));
