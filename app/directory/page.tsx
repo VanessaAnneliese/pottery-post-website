@@ -4,8 +4,10 @@ import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { guilds, potters, suppliers, teachingStudios } from "@/lib/directory-data";
-import { groupByProvince, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-utils";
+import { groupByProvince, listingKey, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-utils";
 import QuoteBlock from "@/components/QuoteBlock";
+import FavoriteHeart from "@/components/FavoriteHeart";
+import { useFavorites } from "@/lib/favorites";
 
 type DirectoryType = "guilds" | "potters" | "suppliers" | "classes" | "kiln";
 
@@ -74,7 +76,7 @@ function GuildCard({ guild }: { guild: Guild }) {
     <div className="py-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{guild.name}</p>
+          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{guild.name}<FavoriteHeart listingKey={listingKey(guild)} name={guild.name} /></p>
           <p className="text-sm mt-1" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{guild.city}, {guild.province}</p>
           {guild.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{guild.bio}</p>}
         </div>
@@ -93,7 +95,7 @@ function PotterCard({ potter }: { potter: Potter }) {
     <div className="py-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{potter.name}{potter.studio ? `, ${potter.studio}` : ""}</p>
+          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{potter.name}{potter.studio ? `, ${potter.studio}` : ""}<FavoriteHeart listingKey={listingKey(potter)} name={potter.name} /></p>
           {potter.guild && <p className="text-xs mt-0.5" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>{potter.guild}</p>}
           <p className="text-sm mt-1" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{potter.city}, {potter.province}</p>
           {potter.offersClasses && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>Offers Classes</p>}
@@ -114,7 +116,7 @@ function TeachingStudioCard({ studio }: { studio: TeachingStudio }) {
     <div className="py-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{studio.name}</p>
+          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{studio.name}<FavoriteHeart listingKey={listingKey(studio)} name={studio.name} /></p>
           <p className="text-sm mt-1" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{studio.city}, {studio.province}</p>
           {studio.offersKilnSharing && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>Community Kiln</p>}
           {studio.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{studio.bio}</p>}
@@ -134,7 +136,7 @@ function SupplierCard({ supplier }: { supplier: Supplier }) {
     <div className="py-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{supplier.name}</p>
+          <p className="font-bold" style={{ fontFamily: "Georgia, serif" }}>{supplier.name}<FavoriteHeart listingKey={listingKey(supplier)} name={supplier.name} /></p>
           <p className="text-sm mt-1" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>{supplier.city}, {supplier.province}</p>
           {supplier.offersKilnSharing && <p className="text-xs mt-1 tracking-widest uppercase" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>Community Kiln</p>}
           {supplier.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{supplier.bio}</p>}
@@ -278,6 +280,8 @@ function DirectoryContent() {
     () => searchParams.get("province")
   );
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+  const favorites = useFavorites();
 
   // Sync URL params → state when a new search is submitted (even from within the directory page)
   // This pattern is intentional: URL changes (from search) need to reset filter state.
@@ -413,6 +417,15 @@ function DirectoryContent() {
   const kilnStudiosByProvince = groupByProvince(letterFilter(filteredKilnStudios));
   const kilnSuppliersByProvince = groupByProvince(letterFilter(filteredKilnSuppliers));
 
+  // Favorites: saved listings across all regions/categories (device-local).
+  const isFavorite = (i: { name: string; city: string; province: string; country: Country }) =>
+    favorites.has(listingKey(i));
+  const favGuilds = groupByProvince(guilds.filter(isFavorite));
+  const favPotters = groupByProvince(potters.filter(isFavorite));
+  const favStudios = groupByProvince(teachingStudios.filter(isFavorite));
+  const favSuppliers = groupByProvince(suppliers.filter(isFavorite));
+  const hasFavoritesShown = favGuilds.length + favPotters.length + favStudios.length + favSuppliers.length > 0;
+
   const provinceSource = [
     ...(selectedType !== "potters" && selectedType !== "suppliers" && selectedType !== "classes" && selectedType !== "kiln" ? guilds : []),
     ...(selectedType !== "guilds" && selectedType !== "suppliers" && selectedType !== "kiln" ? potters : []),
@@ -435,6 +448,7 @@ function DirectoryContent() {
   }, [selectedProvince, provinces]);
 
   function handleTypeClick(type: DirectoryType) {
+    setShowFavoritesOnly(false);
     setSelectedType(selectedType === type ? null : type);
     // Keep the province selection when switching category; a province with no
     // entries in the new category is cleared by the safety effect below.
@@ -442,6 +456,7 @@ function DirectoryContent() {
   }
 
   function handleRegionClick(code: Country) {
+    setShowFavoritesOnly(false);
     if (selectedRegion === code) return; // already selected, radio-button behaviour
     setSelectedRegion(code);
     setSelectedProvince(null);
@@ -491,9 +506,18 @@ function DirectoryContent() {
         Every addition and update is made by hand, by a real person. Please allow up to 48 hours.
       </p>
 
+      {/* Row 0: Favorites */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        <NavButton
+          label={`My Favorites (${favorites.size})`}
+          active={showFavoritesOnly}
+          onClick={() => setShowFavoritesOnly((v) => !v)}
+        />
+      </div>
+
       {/* Row 1: Type filter */}
       <div className="flex flex-wrap gap-2 mb-4 mt-3 pb-4 border-b" style={{ borderColor: "var(--c-surface)" }}>
-        <NavButton label="All" active={selectedType === null} onClick={() => { setSelectedType(null); setSelectedProvince(null); setSelectedLetter(null); }} />
+        <NavButton label="All" active={selectedType === null} onClick={() => { setShowFavoritesOnly(false); setSelectedType(null); setSelectedProvince(null); setSelectedLetter(null); }} />
         <NavButton label="Guilds" active={selectedType === "guilds"} onClick={() => handleTypeClick("guilds")} />
         <NavButton label="Potters" active={selectedType === "potters"} onClick={() => handleTypeClick("potters")} />
         <NavButton label="Classes" active={selectedType === "classes"} onClick={() => handleTypeClick("classes")} />
@@ -516,7 +540,7 @@ function DirectoryContent() {
               key={p}
               label={p}
               active={selectedProvince === p}
-              onClick={() => { setSelectedProvince(selectedProvince === p ? null : p); setSelectedLetter(null); }}
+              onClick={() => { setShowFavoritesOnly(false); setSelectedProvince(selectedProvince === p ? null : p); setSelectedLetter(null); }}
             />
           ))}
         </div>
@@ -530,7 +554,7 @@ function DirectoryContent() {
           return (
             <button
               key={letter}
-              onClick={() => available && setSelectedLetter(active ? null : letter)}
+              onClick={() => { setShowFavoritesOnly(false); if (available) setSelectedLetter(active ? null : letter); }}
               className="w-7 h-7 text-xs font-bold rounded-sm transition-colors"
               style={{
                 fontFamily: "system-ui, sans-serif",
@@ -551,7 +575,85 @@ function DirectoryContent() {
         <QuoteBlock quote="In the hills of North Carolina, families have passed a pottery wheel from grandmother to grandchild for two hundred years. The clay is the same. The river is the same. The love that goes into it is the same. Some things refuse to be lost." className="my-8" />
       )}
       {/* Content */}
-      {!selectedRegion ? (
+      {showFavoritesOnly ? (
+        <>
+          {hasFavoritesShown ? (
+            <>
+              <p className="mb-8 text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
+                Saved privately on this device, no account, no sign-in. Clearing your browser data clears them.
+              </p>
+              {favGuilds.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold mt-12 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Guilds</h2>
+                  {favGuilds.map(({ province, country, items }) => (
+                    <div key={`fav-guild-${province}`}>
+                      <ProvinceSection province={province} country={country} />
+                      {groupByCity(items).map(({ city, items: cityItems }) => (
+                        <div key={city}>
+                          <CitySection city={city} />
+                          {cityItems.map((guild) => <GuildCard key={guild.name} guild={guild} />)}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </>
+              )}
+              {favPotters.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold mt-12 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Potters</h2>
+                  {favPotters.map(({ province, country, items }) => (
+                    <div key={`fav-potter-${province}`}>
+                      <ProvinceSection province={province} country={country} />
+                      {groupByCity(items).map(({ city, items: cityItems }) => (
+                        <div key={city}>
+                          <CitySection city={city} />
+                          {cityItems.map((potter) => <PotterCard key={potter.name} potter={potter} />)}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </>
+              )}
+              {favStudios.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold mt-12 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Pottery Classes</h2>
+                  {favStudios.map(({ province, country, items }) => (
+                    <div key={`fav-studio-${province}`}>
+                      <ProvinceSection province={province} country={country} />
+                      {groupByCity(items).map(({ city, items: cityItems }) => (
+                        <div key={city}>
+                          <CitySection city={city} />
+                          {cityItems.map((studio) => <TeachingStudioCard key={studio.name} studio={studio} />)}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </>
+              )}
+              {favSuppliers.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold mt-12 mb-2" style={{ fontFamily: "Georgia, serif", color: "var(--c-accent)" }}>Supply Shops</h2>
+                  {favSuppliers.map(({ province, country, items }) => (
+                    <div key={`fav-supplier-${province}`}>
+                      <ProvinceSection province={province} country={country} />
+                      {groupByCity(items).map(({ city, items: cityItems }) => (
+                        <div key={city}>
+                          <CitySection city={city} />
+                          {cityItems.map((supplier) => <SupplierCard key={supplier.name} supplier={supplier} />)}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </>
+              )}
+            </>
+          ) : (
+            <p className="py-8 max-w-lg" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif", lineHeight: "1.75" }}>
+              No favorites yet. Tap the heart beside any business to save it here, so you can come back for the address or phone whenever you need it. Your favorites are kept privately on this device, with no account and no sign-in; the trade-off is they live in this browser, so clearing your browsing data will clear them.
+            </p>
+          )}
+        </>
+      ) : !selectedRegion ? (
         <>
           {REGIONS.map(({ code }) => (
             <RegionBlock

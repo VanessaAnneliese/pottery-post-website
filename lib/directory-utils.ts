@@ -2,6 +2,13 @@ export type { Country, Guild, Potter, TeachingStudio, Supplier } from "./directo
 
 import type { Country } from "./directory-data";
 
+// A durable key for a listing, built from fields unlikely to change, used to
+// save it to device-local favorites (see lib/favorites.ts).
+export function listingKey(l: { name: string; city: string; province: string; country: string }): string {
+  const norm = (s: string) => (s ?? "").trim().toLowerCase().replace(/\s+/g, " ");
+  return [l.country, norm(l.province), norm(l.city), norm(l.name)].join("|");
+}
+
 export function groupByProvince<T extends { province: string; country: Country }>(
   items: T[]
 ): { province: string; country: Country; items: T[] }[] {
