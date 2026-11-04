@@ -1,53 +1,15 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import QuoteBlock from "@/components/QuoteBlock";
 
-const MAX_PHOTOS = 2;
-const MAX_SIZE_MB = 2;
-const MAX_SIZE_BYTES = MAX_SIZE_MB * 1024 * 1024;
-
 export default function UpdateListingPage() {
-  const [photos, setPhotos] = useState<File[]>([]);
-  const [photoError, setPhotoError] = useState<string | null>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
-  function handlePhotos(e: React.ChangeEvent<HTMLInputElement>) {
-    const incoming = Array.from(e.target.files ?? []);
-    const oversized = incoming.filter((f) => f.size > MAX_SIZE_BYTES);
-    if (oversized.length > 0) {
-      setPhotoError(`Each photo must be under ${MAX_SIZE_MB}MB. Please choose a smaller file.`);
-      e.target.value = "";
-      return;
-    }
-    setPhotoError(null);
-    const combined = [...photos, ...incoming].slice(0, MAX_PHOTOS);
-    setPhotos(combined);
-    syncInput(combined);
-    e.target.value = "";
-  }
-
-  function removePhoto(index: number) {
-    const updated = photos.filter((_, i) => i !== index);
-    setPhotos(updated);
-    syncInput(updated);
-    setPhotoError(null);
-  }
-
-  function syncInput(files: File[]) {
-    if (!fileInputRef.current) return;
-    const dt = new DataTransfer();
-    files.forEach((f) => dt.items.add(f));
-    fileInputRef.current.files = dt.files;
-  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
     const formData = new FormData(e.currentTarget);
-    formData.delete("photos");
-    photos.forEach((f) => formData.append("photos", f));
     const res = await fetch("/api/update-listing", { method: "POST", body: formData });
     setStatus(res.ok ? "success" : "error");
   }
@@ -61,7 +23,7 @@ export default function UpdateListingPage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Update Your Listing</h1>
       <p className="mb-10" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
-        Already listed in the directory? Use this form to update your information or add photos. All changes are reviewed before going live.
+        Already listed in the directory? Use this form to update your information. All changes are reviewed before going live.
       </p>
 
       {status === "success" ? (
@@ -141,39 +103,6 @@ export default function UpdateListingPage() {
               className="border-b py-2 bg-transparent outline-none text-base resize-none"
               style={{ borderColor: "var(--c-muted)", color: "var(--c-primary-deep)", fontFamily: "system-ui, sans-serif" }}
             />
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <label className="text-xs tracking-widest uppercase" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>
-              Photos of Your Work, optional, up to 2 images
-            </label>
-            <p className="text-xs" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
-              JPG or PNG, max 2MB each.
-            </p>
-
-            {photos.length > 0 && (
-              <ul className="flex flex-col gap-2">
-                {photos.map((file, i) => (
-                  <li key={i} className="flex items-center justify-between gap-4 text-sm py-1 border-b" style={{ borderColor: "var(--c-surface)", color: "var(--c-primary-deep)", fontFamily: "system-ui, sans-serif" }}>
-                    <span className="truncate">{file.name}</span>
-                    <button type="button" onClick={() => removePhoto(i)} className="text-xs tracking-widest uppercase shrink-0" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
-                      Remove
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {photoError && (
-              <p className="text-xs" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>{photoError}</p>
-            )}
-
-            {photos.length < MAX_PHOTOS && (
-              <label className="inline-block self-start px-6 py-2 text-xs tracking-widest uppercase font-bold rounded-sm cursor-pointer" style={{ background: "var(--c-surface)", color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>
-                {photos.length === 0 ? "Choose Photos" : "Add Another"}
-                <input ref={fileInputRef} type="file" name="photos" accept="image/jpeg,image/png" multiple className="hidden" onChange={handlePhotos} />
-              </label>
-            )}
           </div>
 
           {status === "error" && (

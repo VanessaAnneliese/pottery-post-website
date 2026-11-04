@@ -37,7 +37,7 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Pottery Directory</h2>
-          <p>Directory listings are submitted by potters, guilds, those offering pottery classes, and pottery supply shops and are reviewed before publication. We reserve the right to decline, edit, or remove any listing at our discretion. By submitting a listing, you represent that the information provided is accurate and that you have the right to share it. You grant Pottery Post a non-exclusive, royalty-free licence to display your submitted information and images on the Site.</p>
+          <p>Directory listings are submitted by potters, guilds, those offering pottery classes, and pottery supply shops and are reviewed before publication. We reserve the right to decline, edit, or remove any listing at our discretion. By submitting a listing, you represent that the information provided is accurate and that you have the right to share it. You grant Pottery Post a non-exclusive, royalty-free licence to display your submitted information on the Site.</p>
         </div>
 
         <div>

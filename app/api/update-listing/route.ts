@@ -18,15 +18,6 @@ export async function POST(request: NextRequest) {
   const bio = data.get("bio") as string;
   const notes = data.get("notes") as string;
 
-  const photoFiles = data.getAll("photos") as File[];
-  const validPhotos = photoFiles.filter((f) => f.size > 0);
-  const attachments = await Promise.all(
-    validPhotos.map(async (f) => ({
-      filename: f.name,
-      content: Buffer.from(await f.arrayBuffer()),
-    }))
-  );
-
   const html = `
     <h2>Directory Listing Update Request</h2>
     <table cellpadding="6" cellspacing="0">
@@ -50,7 +41,6 @@ export async function POST(request: NextRequest) {
     replyTo: email,
     subject: `Pottery Post Directory Update: ${name}`,
     html,
-    attachments: attachments.length > 0 ? attachments : undefined,
   });
 
   if (error) {

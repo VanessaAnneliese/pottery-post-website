@@ -28,7 +28,6 @@ const faqSchema = {
     { "@type": "Question", name: "How long does it take for my listing to appear?", acceptedAnswer: { "@type": "Answer", text: "Every listing is reviewed and added by a real person. Please allow some time; we do our best to work through submissions promptly." } },
     { "@type": "Question", name: "How do I update my directory listing?", acceptedAnswer: { "@type": "Answer", text: "Use the Update Your Listing form at potterypost.ca/directory/update and fill in only the fields you need changed." } },
     { "@type": "Question", name: "Can I request to be removed from the directory?", acceptedAnswer: { "@type": "Answer", text: "Yes. Visit the Update Your Listing page and use the Remove your listing option at the bottom of the form." } },
-    { "@type": "Question", name: "Can I add a photo to my directory listing?", acceptedAnswer: { "@type": "Answer", text: "Yes. You can include two photos of your work when submitting or updating your listing. Photos must be JPG or PNG and under 2MB each." } },
     { "@type": "Question", name: "Can my pottery guild be listed in the directory?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. Use the Add Your Listing form and select Guild as your listing type. We welcome guilds from Canada, the United States, Europe, and Australia." } },
     { "@type": "Question", name: "I offer pottery classes. Can I be listed?", acceptedAnswer: { "@type": "Answer", text: "Yes. Use the Add Your Listing form and select Class / Teaching Studio as your listing type. We list individual potters who teach, studio collectives, and dedicated teaching spaces." } },
     { "@type": "Question", name: "Can my pottery supply shop be listed?", acceptedAnswer: { "@type": "Answer", text: "Yes. We list pottery supply shops that sell clay, glazes, tools, kilns, and related supplies to potters. Use the Add Your Listing form and select Supply Shop." } },
@@ -110,10 +109,6 @@ export default function FAQPage() {
             <div>
               <h3 className="font-bold mb-2">Can I request to be removed from the directory?</h3>
               <p style={{ color: "var(--c-primary)" }}>Yes. Visit the <a href="/directory/update" className="underline" style={{ color: "var(--c-teal)" }}>Update Your Listing</a> page and use the &ldquo;Remove your listing&rdquo; option at the bottom of the form.</p>
-            </div>
-            <div>
-              <h3 className="font-bold mb-2">Can I add a photo to my listing?</h3>
-              <p style={{ color: "var(--c-primary)" }}>Yes. You can include two photos of your work when submitting or updating your listing. Photos must be JPG or PNG and under 2MB each.</p>
             </div>
           </div>
         </div>
