@@ -29,7 +29,7 @@ export default function GalleryPage() {
         Each piece here was made by hand, by someone who cares deeply about what they make. They were gathered with love. This first collection is the Founder&rsquo;s Collection. Future collections will list each potter by name, with a link to their Pottery Directory listing.
       </p>
       <p className="mb-12 max-w-lg text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
-        Please note: none of these pieces are for sale at Pottery Post, where possible, please contact potters for inquiries.
+        Please note: none of these pieces are for sale at Pottery Post.
       </p>
       <p className="text-xs tracking-widest uppercase mb-3" style={{ color: "var(--c-accent)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Gathered with Love
