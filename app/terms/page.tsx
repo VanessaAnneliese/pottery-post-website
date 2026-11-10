@@ -60,6 +60,16 @@ export default function TermsPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Photos and Content</h2>
+          <p className="mb-3">The photographs in our gallery that show pieces from Vanessa&rsquo;s personal pottery collection were taken by Vanessa and are copyright Anneliese Designs. The pottery in those photos is the original work of the potters who made it. Each piece is credited to its maker wherever the maker is known.</p>
+          <p className="mb-3">If you are a potter and you would like a photo of your work credited differently, linked to your own site, or taken down, just contact us. We will update or remove it promptly.</p>
+          <p className="mb-3">When gallery submissions are open, potters who submit photos keep full ownership of both their photos and their work. By submitting, they give Pottery Post permission to show the photos on this Site and in Pottery Post&rsquo;s own social media posts promoting the Site, always with credit. They can ask for their photos to be removed at any time.</p>
+          <p className="mb-3">By submitting, a potter confirms that they made the work shown and that they either took the photos themselves or have permission to share them.</p>
+          <p className="mb-3">Please do not copy, download, or reuse gallery photos without permission from the photo&rsquo;s owner.</p>
+          <p>For any credit or removal request, contact us at <a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.ca</a>.</p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Pottery Postmarks: Travel Content Disclaimer</h2>
           <p className="mb-3">The Pottery Postmarks section of this Site contains travel guides, destination recommendations, studio listings, road trip itineraries, and related editorial content (collectively, &ldquo;Travel Content&rdquo;). This Travel Content is provided for general informational and inspirational purposes only. It does not constitute professional travel advice.</p>
           <p className="mb-3">Travel conditions change. Studios, galleries, museums, and other venues referenced in our Travel Content may alter their hours, close temporarily or permanently, change admission requirements, or become inaccessible without notice. Pottery Post makes no representation that any venue, route, or destination described on this Site will be open, accessible, or as described at the time of your visit. You are solely responsible for independently verifying current information before travelling.</p>

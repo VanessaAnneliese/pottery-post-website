@@ -40,16 +40,20 @@ export default function GalleryPage() {
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {foundersCollection.map((piece) => (
-          <img
-            key={piece.src}
-            src={piece.src}
-            alt={piece.alt}
-            loading="lazy"
-            width={1000}
-            height={1000}
-            className="w-full h-auto rounded-sm"
-            style={{ aspectRatio: "1 / 1", objectFit: "cover", background: "var(--c-white)" }}
-          />
+          <figure key={piece.src}>
+            <img
+              src={piece.src}
+              alt={piece.alt}
+              loading="lazy"
+              width={1000}
+              height={1000}
+              className="w-full h-auto rounded-sm"
+              style={{ aspectRatio: "1 / 1", objectFit: "cover", background: "var(--c-white)" }}
+            />
+            <figcaption className="mt-1.5 text-xs" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
+              {piece.maker ? `Made by ${piece.maker}. ` : ""}Photo: {piece.photoCredit ?? "Anneliese Designs"}
+            </figcaption>
+          </figure>
         ))}
       </div>
     </section>

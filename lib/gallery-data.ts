@@ -1,4 +1,12 @@
-export type GalleryPiece = { src: string; alt: string };
+export type GalleryPiece = {
+  src: string;
+  alt: string;
+  // The potter who made the piece, shown as "Made by ..." when known.
+  maker?: string;
+  // Who took the photo. Defaults to "Anneliese Designs" (Vanessa's collection photos);
+  // set this to the potter's name for potter-submitted collection photos.
+  photoCredit?: string;
+};
 
 export const foundersCollection: GalleryPiece[] = [
   { src: "/gallery/founders/copper-brown-tree-of-life-planter-founders-collection_001.jpg", alt: "Copper-brown stoneware planter with a tree-of-life motif, holding a trailing pothos plant. Handmade pottery from the Founder's Collection at Pottery Post." },
