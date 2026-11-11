@@ -7,12 +7,12 @@ import FavoritesLink from "@/components/FavoritesLink";
 export const metadata: Metadata = {
   title: { absolute: "Pottery Post | The Pottery Directory for Makers and Admirers" },
   description:
-    "A directory that makes potters, guilds, pottery classes, and supply shops easy to find by area. A clear home for pottery information, with no pop-ups and no ads.",
+    "A pottery directory spanning Canada, the US, Europe, and Australia. Find potters, guilds, classes, community kilns, and supply shops by area, with no pop-ups and no ads.",
   alternates: { canonical: "https://www.potterypost.ca" },
   openGraph: {
     title: "Pottery Post | The Pottery Directory for Makers and Admirers",
     description:
-      "A directory that makes potters, guilds, pottery classes, and supply shops easy to find by area. A clear home for pottery information, with no pop-ups and no ads.",
+      "A pottery directory spanning Canada, the US, Europe, and Australia. Find potters, guilds, classes, community kilns, and supply shops by area, with no pop-ups and no ads.",
     url: "https://www.potterypost.ca",
   },
 };
