@@ -77,9 +77,11 @@ export default function GalleryPage() {
               className="w-full h-auto rounded-sm"
               style={{ aspectRatio: "1 / 1", objectFit: "cover", background: "var(--c-white)" }}
             />
-            <figcaption className="mt-1.5 text-xs" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
-              {piece.maker ? `Made by ${piece.maker}. ` : ""}Photo: {piece.photoCredit ?? "Anneliese Designs"}
-            </figcaption>
+            {piece.maker && (
+              <figcaption className="mt-1.5 text-xs" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
+                Made by {piece.maker}
+              </figcaption>
+            )}
           </figure>
         ))}
       </div>

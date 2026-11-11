@@ -5,14 +5,14 @@ import { featuredDesktop, featuredMobile } from "@/lib/gallery-data";
 import FavoritesLink from "@/components/FavoritesLink";
 
 export const metadata: Metadata = {
-  title: "Pottery Post | Directory, Gallery & Travel Journal for Pottery Lovers",
+  title: { absolute: "Pottery Post | The Pottery Directory for Makers and Admirers" },
   description:
-    "Discover potters, pottery guilds, classes, and supply shops across Canada, the US, Europe, and Australia. Plus a curated pottery gallery and the Pottery Postmarks travel journal.",
+    "A directory that makes potters, guilds, pottery classes, and supply shops easy to find by area. A clear home for pottery information, with no pop-ups and no ads.",
   alternates: { canonical: "https://www.potterypost.ca" },
   openGraph: {
-    title: "Pottery Post | Directory, Gallery & Travel Journal for Pottery Lovers",
+    title: "Pottery Post | The Pottery Directory for Makers and Admirers",
     description:
-      "Discover potters, pottery guilds, classes, and supply shops across Canada, the US, Europe, and Australia.",
+      "A directory that makes potters, guilds, pottery classes, and supply shops easy to find by area. A clear home for pottery information, with no pop-ups and no ads.",
     url: "https://www.potterypost.ca",
   },
 };
