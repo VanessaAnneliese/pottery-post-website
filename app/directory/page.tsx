@@ -453,7 +453,7 @@ function DirectoryContent() {
     ...(selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes" && selectedType !== "kiln" ? suppliers : []),
     ...(selectedType === "classes" || selectedType === null ? teachingStudios : []),
     ...(selectedType === "kiln" ? [...teachingStudios.filter(s => s.offersKilnSharing), ...suppliers.filter(s => s.offersKilnSharing)] : []),
-  ].filter((i) => !selectedRegion || textQuery || i.country === selectedRegion);
+  ].filter((i) => !selectedRegion || i.country === selectedRegion);
 
   const provinces = Array.from(new Set(provinceSource.map((i) => i.province))).sort();
 
@@ -540,11 +540,11 @@ function DirectoryContent() {
             onClick={() => { setShowFavoritesOnly(true); scrollToResults(); }}
             aria-label="Jump to my favorites"
             title="Jump to my favorites"
-            className="inline-flex items-center justify-center w-9 h-9 rounded-sm transition-colors text-[var(--c-primary)] hover:text-[var(--c-light)] hover:bg-[var(--c-primary)]"
-            style={{ background: "var(--c-surface)" }}
+            className="px-3 py-2 rounded-sm transition-colors cursor-pointer inline-flex items-center justify-center hover:bg-[var(--c-tan-2)]"
+            style={{ background: "var(--c-surface)", color: "var(--c-primary)" }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-              <path d="M12 5v14M19 12l-7 7-7-7" />
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+              <path d="M6 9l6 6 6-6" />
             </svg>
           </button>
         )}
@@ -567,8 +567,8 @@ function DirectoryContent() {
         ))}
       </div>
 
-      {/* Province sub-nav */}
-      {selectedRegion && provinces.length > 0 && (
+      {/* Province sub-nav (hidden during a text search, which spans all regions) */}
+      {selectedRegion && !textQuery && provinces.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-4 pb-4 pt-2 border-b" style={{ borderColor: "var(--c-surface)" }}>
           {provinces.map((p) => (
             <NavButton
