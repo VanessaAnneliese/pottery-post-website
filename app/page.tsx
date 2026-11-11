@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <>
       <h1 className="sr-only">Pottery Post: Pottery Directory, Gallery and Travel Journal for Makers and Admirers</h1>
-      <QuoteBlock quote={<>For ten thousand years,<span className="hidden md:inline"><br /></span>{" "}humans have been putting their<span className="hidden md:inline"><br /></span>{" "}hands in clay. Something in us has<span className="hidden md:inline"><br /></span>{" "}never stopped needing to.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
+      <QuoteBlock fitContent quote={<>For ten thousand years,<span className="hidden md:inline"><br /></span>{" "}humans have been putting their<span className="hidden md:inline"><br /></span>{" "}hands in clay. Something in us has<span className="hidden md:inline"><br /></span>{" "}never stopped needing to.</>} className="pt-14 md:pt-32 pb-8 md:pb-16" />
 
       {/* Directory CTA */}
-      <section className="relative pt-16 md:pt-20 pb-12 md:pb-16 px-6 text-center" style={{ background: "var(--c-tan)" }}>
+      <section className="relative pt-[38px] md:pt-[70px] pb-12 md:pb-16 px-6 text-center" style={{ background: "var(--c-tan)" }}>
         <div className="absolute inset-x-0 top-0 h-64 md:h-96 pointer-events-none" style={{ background: "linear-gradient(to bottom, var(--c-light), transparent)", zIndex: 0 }} />
         <div className="absolute inset-x-0 bottom-0 h-64 md:h-96 pointer-events-none" style={{ background: "linear-gradient(to top, var(--c-light), transparent)", zIndex: 0 }} />
         <div style={{ position: "relative", zIndex: 1 }}>

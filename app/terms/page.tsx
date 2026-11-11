@@ -41,6 +41,13 @@ export default function TermsPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Listings</h2>
+          <p className="mb-3">The information in each directory listing, such as its name, description, and any other details the business provides, belongs to the business that submitted it, and we show it with permission.</p>
+          <p className="mb-3">Businesses are responsible for keeping their own listing information accurate. You can change or remove your listing at any time by contacting us at <a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.ca</a> or by using the Update Your Listing form.</p>
+          <p>Please do not copy or reuse listing content without permission from the business it belongs to.</p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Copying and Reuse</h2>
           <p className="mb-3">Building the Pottery Directory and Pottery Postmarks, and keeping them accurate, takes real and ongoing work. The listings, the descriptions we write, and the regional information are the result of that effort, and we ask that you treat them accordingly.</p>
           <p>You are welcome to link to our pages and to share an individual listing or fact the way you would any web page. You may not, however, scrape, harvest, or copy the directory or Postmarks in bulk, whether with automated tools or by hand, or reproduce, republish, resell, or build a competing directory from a substantial part of our content, without our written permission. If a listing is your own business, you are of course free to use your own information however you like.</p>

@@ -54,12 +54,13 @@ export default function PostmarksPage() {
   return (
     <>
       <QuoteBlock
+        fitContent
         quote={<>The best pottery finds you<span className="hidden md:inline"><br /></span>{" "}when you&rsquo;re already<span className="hidden md:inline"><br /></span>{" "}somewhere beautiful.<span className="hidden md:inline"><br /></span>{" "}Going looking is even better.</>}
-        className="pt-24 md:pt-32 pb-12 md:pb-16"
+        className="pt-14 md:pt-32 pb-8 md:pb-16"
       />
 
       {/* Header */}
-      <section className="pt-16 md:pt-20 pb-4 px-6 max-w-4xl mx-auto">
+      <section className="pt-[38px] md:pt-[70px] pb-4 px-6 max-w-4xl mx-auto">
         <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
           The Pottery Post
         </p>

@@ -57,10 +57,10 @@ export default function Footer() {
             </nav>
           </div>
           <p className="text-xs text-center md:text-right">
-            &copy; {new Date().getFullYear()} {siteConfig.brandName}
-            <span className="hidden md:inline">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-            <br className="md:hidden" />
-            Website Design by {siteConfig.designCredit}
+            <span className="lg:whitespace-nowrap">{siteConfig.brandName} is created, designed and maintained by {siteConfig.designCredit}.</span>
+            {" "}
+            <br className="hidden lg:block" />
+            <span className="lg:whitespace-nowrap">&copy; {new Date().getFullYear()} {siteConfig.designCredit}. All rights reserved.</span>
           </p>
         </div>
 

@@ -1,7 +1,11 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+let resendClient: Resend | null = null;
+function getResend(): Resend {
+  if (!resendClient) resendClient = new Resend(process.env.RESEND_API_KEY);
+  return resendClient;
+}
 
 export async function POST(request: NextRequest) {
   const data = await request.formData();
@@ -35,7 +39,7 @@ export async function POST(request: NextRequest) {
     </table>
   `;
 
-  const { error } = await resend.emails.send({
+  const { error } = await getResend().emails.send({
     from: "Pottery Post <directory@potterypost.ca>",
     to: "anneliesedesigns@gmail.com",
     replyTo: email,

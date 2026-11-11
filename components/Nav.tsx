@@ -20,7 +20,7 @@ export default function Nav() {
     <header style={{ background: "var(--c-tan)" }} className="px-6">
 
       {/* ── Mobile layout ── */}
-      <div className="flex flex-col items-center py-5 gap-4 md:hidden">
+      <div className="flex flex-col items-center py-10 gap-4 md:hidden">
         <Link href="/" style={{ textDecoration: "none" }}>
           <LogoMark
             logoColor="var(--c-primary)"
@@ -39,7 +39,7 @@ export default function Nav() {
       </div>
 
       {/* ── Desktop layout ── */}
-      <div className="hidden md:flex flex-col items-center py-6 gap-4">
+      <div className="hidden md:flex flex-col items-center py-10 gap-4">
         <Link href="/" style={{ textDecoration: "none" }}>
           <LogoMark
             logoColor="var(--c-primary)"
