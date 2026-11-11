@@ -16,9 +16,20 @@ const articles = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.ca" },
+    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
+    { "@type": "ListItem", position: 3, name: "Travel Guide", item: "https://www.potterypost.ca/postmarks/travel-guide" },
+  ],
+};
+
 export default function TravelGuidePage() {
   return (
     <section className="py-12 md:py-20 px-6 max-w-4xl mx-auto">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Breadcrumb */}
       <p className="text-xs tracking-widest uppercase mb-12" style={{ color: "var(--c-teal)", letterSpacing: "0.3em", fontFamily: "system-ui, sans-serif" }}>
         <Link href="/postmarks" className="hover:text-[var(--c-teal-deep)] transition-colors">Pottery Postmarks</Link>
