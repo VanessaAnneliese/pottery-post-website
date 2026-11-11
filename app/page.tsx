@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteBlock from "@/components/QuoteBlock";
 import { featuredDesktop, featuredMobile } from "@/lib/gallery-data";
+import FavoritesLink from "@/components/FavoritesLink";
 
 export const metadata: Metadata = {
   title: "Pottery Post | Directory, Gallery & Travel Journal for Pottery Lovers",
@@ -43,6 +44,9 @@ export default function Home() {
             <Link href="/directory/submit" className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm bg-[var(--c-surface)] hover:bg-[var(--c-tan-2)] transition-colors" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>
               Add your listing
             </Link>
+          </div>
+          <div className="mt-5 flex justify-center">
+            <FavoritesLink />
           </div>
         </div>
       </section>

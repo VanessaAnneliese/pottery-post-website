@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { guilds, potters, suppliers, teachingStudios } from "@/lib/directory-data";
@@ -81,7 +81,7 @@ function GuildCard({ guild }: { guild: Guild }) {
           {guild.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{guild.bio}</p>}
         </div>
         {guild.website && (
-          <a href={guild.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
+          <a href={guild.website} target="_blank" rel="ugc nofollow noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -102,7 +102,7 @@ function PotterCard({ potter }: { potter: Potter }) {
           {potter.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{potter.bio}</p>}
         </div>
         {potter.website && (
-          <a href={potter.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
+          <a href={potter.website} target="_blank" rel="ugc nofollow noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -122,7 +122,7 @@ function TeachingStudioCard({ studio }: { studio: TeachingStudio }) {
           {studio.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{studio.bio}</p>}
         </div>
         {studio.website && (
-          <a href={studio.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
+          <a href={studio.website} target="_blank" rel="ugc nofollow noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -142,7 +142,7 @@ function SupplierCard({ supplier }: { supplier: Supplier }) {
           {supplier.bio && <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{supplier.bio}</p>}
         </div>
         {supplier.website && (
-          <a href={supplier.website} target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
+          <a href={supplier.website} target="_blank" rel="ugc nofollow noopener noreferrer" className="text-xs tracking-widest uppercase underline shrink-0" style={{ color: "var(--c-teal)", fontFamily: "system-ui, sans-serif" }}>
             Website
           </a>
         )}
@@ -282,6 +282,17 @@ function DirectoryContent() {
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const favorites = useFavorites();
+  const resultsRef = useRef<HTMLElement>(null);
+
+  // Scroll to the results list. A double requestAnimationFrame lets the DOM
+  // update (and lets Next finish its own scroll handling) before we jump.
+  function scrollToResults() {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  }
 
   // Sync URL params → state when a new search is submitted (even from within the directory page)
   // This pattern is intentional: URL changes (from search) need to reset filter state.
@@ -290,6 +301,16 @@ function DirectoryContent() {
     setSelectedRegion((searchParams.get("region") as Country | null) ?? "CA");
     setSelectedProvince(searchParams.get("province"));
     setSelectedLetter(null);
+
+    // ?favorites=1 opens favorites view and jumps to the results.
+    if (searchParams.get("favorites") === "1") {
+      setShowFavoritesOnly(true);
+      scrollToResults();
+    } else if ((searchParams.get("q") ?? "").trim()) {
+      // A text search exits favorites view and jumps to the matching results.
+      setShowFavoritesOnly(false);
+      scrollToResults();
+    }
 
     // Auto-select type button when query is a known category keyword
     const q = (searchParams.get("q") ?? "").trim().toLowerCase();
@@ -347,42 +368,42 @@ function DirectoryContent() {
   }
 
   const filteredGuilds = sortByLocation(guilds
-    .filter((g) => !selectedRegion || g.country === selectedRegion)
+    .filter((g) => !selectedRegion || textQuery || g.country === selectedRegion)
     .filter((g) => !selectedProvince || g.province === selectedProvince)
     .filter((g) => matchesQuery(g, GUILD_TAGS)));
 
   const filteredPotters = sortByLocation(potters
-    .filter((p) => !selectedRegion || p.country === selectedRegion)
+    .filter((p) => !selectedRegion || textQuery || p.country === selectedRegion)
     .filter((p) => !selectedProvince || p.province === selectedProvince)
     .filter((p) => matchesQuery(p, POTTER_TAGS)));
 
   // Class potters: start fresh from potters so "class" in query always finds them
   const filteredClassPotters = sortByLocation(potters
-    .filter((p) => !selectedRegion || p.country === selectedRegion)
+    .filter((p) => !selectedRegion || textQuery || p.country === selectedRegion)
     .filter((p) => !selectedProvince || p.province === selectedProvince)
     .filter((p) => p.offersClasses)
     .filter((p) => matchesQuery(p, CLASS_TAGS)));
 
   const filteredSuppliers = sortByLocation(suppliers
-    .filter((s) => !selectedRegion || s.country === selectedRegion)
+    .filter((s) => !selectedRegion || textQuery || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince)
     .filter((s) => matchesQuery(s, SUPPLIER_TAGS)));
 
   // Teaching studios: always match class-related search words
   const filteredTeachingStudios = sortByLocation(teachingStudios
-    .filter((s) => !selectedRegion || s.country === selectedRegion)
+    .filter((s) => !selectedRegion || textQuery || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince)
     .filter((s) => matchesQuery(s, CLASS_TAGS)));
 
   // Kiln sharing: studios and suppliers with offersKilnSharing
   const filteredKilnStudios = sortByLocation(teachingStudios
-    .filter((s) => !selectedRegion || s.country === selectedRegion)
+    .filter((s) => !selectedRegion || textQuery || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince)
     .filter((s) => s.offersKilnSharing)
     .filter((s) => matchesQuery(s, KILN_TAGS)));
 
   const filteredKilnSuppliers = sortByLocation(suppliers
-    .filter((s) => !selectedRegion || s.country === selectedRegion)
+    .filter((s) => !selectedRegion || textQuery || s.country === selectedRegion)
     .filter((s) => !selectedProvince || s.province === selectedProvince)
     .filter((s) => s.offersKilnSharing)
     .filter((s) => matchesQuery(s, KILN_TAGS)));
@@ -432,7 +453,7 @@ function DirectoryContent() {
     ...(selectedType !== "guilds" && selectedType !== "potters" && selectedType !== "classes" && selectedType !== "kiln" ? suppliers : []),
     ...(selectedType === "classes" || selectedType === null ? teachingStudios : []),
     ...(selectedType === "kiln" ? [...teachingStudios.filter(s => s.offersKilnSharing), ...suppliers.filter(s => s.offersKilnSharing)] : []),
-  ].filter((i) => !selectedRegion || i.country === selectedRegion);
+  ].filter((i) => !selectedRegion || textQuery || i.country === selectedRegion);
 
   const provinces = Array.from(new Set(provinceSource.map((i) => i.province))).sort();
 
@@ -507,12 +528,26 @@ function DirectoryContent() {
       </p>
 
       {/* Row 0: Favorites */}
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap items-center gap-2 mb-4">
         <NavButton
           label={`My Favorites (${favorites.size})`}
           active={showFavoritesOnly}
           onClick={() => setShowFavoritesOnly((v) => !v)}
         />
+        {favorites.size > 0 && (
+          <button
+            type="button"
+            onClick={() => { setShowFavoritesOnly(true); scrollToResults(); }}
+            aria-label="Jump to my favorites"
+            title="Jump to my favorites"
+            className="inline-flex items-center justify-center w-9 h-9 rounded-sm transition-colors text-[var(--c-primary)] hover:text-[var(--c-light)] hover:bg-[var(--c-primary)]"
+            style={{ background: "var(--c-surface)" }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+              <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
+          </button>
+        )}
       </div>
 
       {/* Row 1: Type filter */}
@@ -569,7 +604,7 @@ function DirectoryContent() {
         })}
       </div>
     </section>
-    <section className="px-6 pb-12 md:pb-20 max-w-4xl mx-auto">
+    <section ref={resultsRef} className="px-6 pb-12 md:pb-20 max-w-4xl mx-auto">
       {/* NC quote */}
       {selectedRegion === "US" && selectedProvince === "North Carolina" && (
         <QuoteBlock quote="In the hills of North Carolina, families have passed a pottery wheel from grandmother to grandchild for two hundred years. The clay is the same. The river is the same. The love that goes into it is the same. Some things refuse to be lost." className="my-8" />

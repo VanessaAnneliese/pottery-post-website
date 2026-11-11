@@ -116,7 +116,9 @@ function SearchFormInner({ defaultOpen = false, label }: { defaultOpen?: boolean
     if (region) params.set("region", region);
     if (province) params.set("province", province);
     if (q) params.set("q", q);
-    router.push(`/directory?${params.toString()}`);
+    // scroll: false lets the directory page handle the jump to results itself,
+    // so Next's default scroll-to-top does not override it.
+    router.push(`/directory?${params.toString()}`, { scroll: false });
     setQuery("");
   }
 
