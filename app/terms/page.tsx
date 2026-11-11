@@ -68,7 +68,7 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Photos and Content</h2>
-          <p className="mb-3">The photographs in our gallery that show pieces from Vanessa&rsquo;s personal pottery collection were taken by Vanessa and are copyright Anneliese Designs. The pottery in those photos is the original work of the potters who made it. Each piece is credited to its maker wherever the maker is known.</p>
+          <p className="mb-3">The photographs in our gallery that show pieces from Vanessa&rsquo;s personal pottery collection are copyright Anneliese Designs. The pottery in those photos is the original work of the potters who made it. Each piece is credited to its maker wherever the maker is known.</p>
           <p className="mb-3">If you are a potter and you would like a photo of your work credited differently, linked to your own site, or taken down, just contact us. We will update or remove it promptly.</p>
           <p className="mb-3">When gallery submissions are open, potters who submit photos keep full ownership of both their photos and their work. By submitting, they give Pottery Post permission to show the photos on this Site and in Pottery Post&rsquo;s own social media posts promoting the Site, always with credit. They can ask for their photos to be removed at any time.</p>
           <p className="mb-3">By submitting, a potter confirms that they made the work shown and that they either took the photos themselves or have permission to share them.</p>
