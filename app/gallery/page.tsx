@@ -16,9 +16,36 @@ export const metadata: Metadata = {
   },
 };
 
+const gallerySchema = {
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  name: "Pottery Gallery",
+  url: "https://www.potterypost.ca/gallery",
+  description:
+    "A curated gallery of handmade pottery, gathered with love by The Pottery Post and verified in person. The current collection is the Founder's Collection.",
+  isPartOf: { "@type": "WebSite", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  image: foundersCollection.map((p) => ({
+    "@type": "ImageObject",
+    contentUrl: `https://www.potterypost.ca${p.src}`,
+    caption: p.alt,
+    creditText: p.photoCredit ?? "Anneliese Designs",
+  })),
+};
+
+const galleryBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.ca" },
+    { "@type": "ListItem", position: 2, name: "Pottery Gallery", item: "https://www.potterypost.ca/gallery" },
+  ],
+};
+
 export default function GalleryPage() {
   return (
     <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(gallerySchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(galleryBreadcrumbSchema) }} />
     <QuoteBlock quote={<>There is a quiet in<span className="hidden md:inline"><br /></span>{" "}beautiful pottery that settles<span className="hidden md:inline"><br /></span>{" "}something inside you.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
     <section className="py-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>

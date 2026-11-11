@@ -24,21 +24,12 @@ export const metadata: Metadata = {
     description:
       "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia, and a gallery that celebrates the pieces they make.",
     url: "https://www.potterypost.ca",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Pottery Post | For Makers and Admirers",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pottery Post | For Makers and Admirers",
     description:
       "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia.",
-    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "https://www.potterypost.ca",
@@ -53,6 +44,9 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  verification: {
+    google: "ld9PbYNNq5Scc6tWiANpIoSK2rtrsMsmtIsAjVDmyQM",
   },
 };
 

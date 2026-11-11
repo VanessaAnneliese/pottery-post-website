@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { guilds, potters, type Guild, type Potter } from "@/lib/directory-data";
+
+export const metadata: Metadata = {
+  title: "Search the Directory",
+  description:
+    "Search The Pottery Post directory for potters, pottery guilds, pottery classes, and pottery supply shops by name, town, province, or state.",
+  alternates: { canonical: "https://www.potterypost.ca/search" },
+  robots: { index: false, follow: true },
+};
 
 function highlight(text: string, query: string) {
   if (!query) return text;
@@ -28,7 +37,7 @@ function GuildResult({ guild, query }: { guild: Guild; query: string }) {
         <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{highlight(guild.bio, query)}</p>
       )}
       {guild.website && (
-        <a href={guild.website} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-xs tracking-widest uppercase underline" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
+        <a href={guild.website} target="_blank" rel="ugc nofollow noopener noreferrer" className="inline-block mt-2 text-xs tracking-widest uppercase underline" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
           Website
         </a>
       )}
@@ -50,7 +59,7 @@ function PotterResult({ potter, query }: { potter: Potter; query: string }) {
         <p className="text-sm mt-2" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>{highlight(potter.bio, query)}</p>
       )}
       {potter.website && (
-        <a href={potter.website} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-xs tracking-widest uppercase underline" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
+        <a href={potter.website} target="_blank" rel="ugc nofollow noopener noreferrer" className="inline-block mt-2 text-xs tracking-widest uppercase underline" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
           Website
         </a>
       )}
