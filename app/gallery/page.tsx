@@ -46,8 +46,8 @@ export default function GalleryPage() {
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(gallerySchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(galleryBreadcrumbSchema) }} />
-    <QuoteBlock quote={<>There is a quiet in<span className="hidden md:inline"><br /></span>{" "}beautiful pottery that settles<span className="hidden md:inline"><br /></span>{" "}something inside you.</>} className="pt-24 md:pt-32 pb-12 md:pb-16" />
-    <section className="py-20 px-6 max-w-6xl mx-auto">
+    <QuoteBlock quote={<>There is a quiet in<span className="hidden md:inline"><br /></span>{" "}beautiful pottery that settles<span className="hidden md:inline"><br /></span>{" "}something inside you.</>} className="pt-14 md:pt-32 pb-8 md:pb-16" />
+    <section className="pt-[38px] md:pt-[70px] pb-20 px-6 max-w-6xl mx-auto">
       <p className="text-xs tracking-widest uppercase mb-2" style={{ color: "var(--c-muted)", letterSpacing: "0.35em", fontFamily: "system-ui, sans-serif" }}>
         Featured
       </p>
