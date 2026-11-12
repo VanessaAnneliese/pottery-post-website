@@ -48,3 +48,6 @@ chat-logs/
 
 # Working assets (full-size originals, crops, mapping) — web copies live in public/
 pottery-post_assets/
+
+# Local paid-listings store (dev fallback)
+.data

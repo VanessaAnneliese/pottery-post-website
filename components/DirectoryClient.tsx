@@ -3,8 +3,16 @@
 import { useState, useEffect, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { guilds, potters, suppliers, teachingStudios } from "@/lib/directory-data";
 import { groupByProvince, listingKey, type Guild, type Potter, type Supplier, type TeachingStudio, type Country } from "@/lib/directory-utils";
+
+// Seed + live listings are merged in the server component (app/directory/page.tsx)
+// and passed in as props, so the paid pipeline's published listings appear here.
+type DirectoryData = {
+  guilds: Guild[];
+  potters: Potter[];
+  teachingStudios: TeachingStudio[];
+  suppliers: Supplier[];
+};
 import QuoteBlock from "@/components/QuoteBlock";
 import FavoriteHeart from "@/components/FavoriteHeart";
 import { useFavorites } from "@/lib/favorites";
@@ -270,7 +278,7 @@ function RegionBlock({
   );
 }
 
-function DirectoryContent() {
+function DirectoryContent({ guilds, potters, teachingStudios, suppliers }: DirectoryData) {
   const searchParams = useSearchParams();
   const [selectedType, setSelectedType] = useState<DirectoryType | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<Country | null>(
@@ -849,10 +857,10 @@ function DirectoryContent() {
   );
 }
 
-export default function DirectoryPage() {
+export default function DirectoryClient(props: DirectoryData) {
   return (
     <Suspense>
-      <DirectoryContent />
+      <DirectoryContent {...props} />
     </Suspense>
   );
 }
