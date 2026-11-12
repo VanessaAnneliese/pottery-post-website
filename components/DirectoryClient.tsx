@@ -529,7 +529,7 @@ function DirectoryContent({ guilds, potters, teachingStudios, suppliers }: Direc
         </div>
       </div>
       <p className="mb-3 max-w-lg" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
-        The Pottery Post&rsquo;s Pottery Directory spans three continents. Know a pottery guild, potter, pottery class, community kiln, or pottery supply shop who should be here? Send them our way.
+        The Pottery Post&rsquo;s Pottery Directory is multi-continent, spanning Canada, the United States, Europe, and Australia. Know a pottery guild, potter, pottery class, community kiln, or pottery supply shop who should be here? Send them our way.
       </p>
       <p className="mb-10 max-w-lg text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         Every addition and update is made by hand, by a real person. Please allow up to 48 hours.
