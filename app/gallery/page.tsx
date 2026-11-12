@@ -53,7 +53,7 @@ export default function GalleryPage() {
       </p>
       <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: "Georgia, serif", color: "var(--c-primary)" }}>Pottery Gallery</h1>
       <p className="mb-4 max-w-lg" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
-        Each piece here was made by hand, by someone who cares deeply about what they make. They were gathered with love. This first collection is the Founder&rsquo;s Collection. Future collections will list each potter by name, with a link to their Pottery Directory listing.
+        Each piece here was made by hand, by someone who cares deeply about what they make. They were gathered with love. This first collection is the Founder&rsquo;s Collection. Future collections will be selected from submissions by potters and list each potter by name, with a link to their Pottery Directory listing.
       </p>
       <p className="mb-12 max-w-lg text-sm italic" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         Please note: none of these pieces are for sale at Pottery Post.

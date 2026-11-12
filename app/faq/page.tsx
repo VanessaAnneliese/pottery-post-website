@@ -23,7 +23,7 @@ const faqSchema = {
     { "@type": "Question", name: "How do I get in touch with Pottery Post?", acceptedAnswer: { "@type": "Answer", text: "You can reach us at hello@potterypost.ca. For directory questions use directory@potterypost.ca, and for gallery questions use gallery@potterypost.ca." } },
     { "@type": "Question", name: "Is the Pottery Post affiliated with any specific pottery guild or school?", acceptedAnswer: { "@type": "Answer", text: "No. Pottery Post is independent and not affiliated with or endorsed by any guild, school, or manufacturer." } },
     { "@type": "Question", name: "How do I add myself to the Pottery Directory?", acceptedAnswer: { "@type": "Answer", text: "Use the Add Your Listing form at potterypost.ca/directory/submit. Every submission is reviewed by hand before it goes live." } },
-    { "@type": "Question", name: "Is it free to be listed in the Pottery Directory?", acceptedAnswer: { "@type": "Answer", text: "Yes, completely. Listing in the Pottery Post directory is free." } },
+    { "@type": "Question", name: "Is it free to be listed in the Pottery Directory?", acceptedAnswer: { "@type": "Answer", text: "Listings added before February 1, 2027 are free, indefinitely. From February 1, 2027, a new listing carries a small annual fee of $5 a year. Most listings are free, and the small fee simply helps keep the Pottery Post ad-free and independent. If you were listed before Feb. 1, 2027, nothing changes, your listing stays free." } },
     { "@type": "Question", name: "I didn't add my business. How is it listed here?", acceptedAnswer: { "@type": "Answer", text: "We build the directory by hand, finding potters, studios, and pottery supply shops from their own public information and adding them at no cost. You're here because you make something worth finding. You were added free, and you'll stay free: our thanks for being exactly the kind of potter, studio, or shop this directory is for. If you'd like to update your details or be removed, use the Update Your Listing form at potterypost.ca/directory/update anytime." } },
     { "@type": "Question", name: "How long does it take for my listing to appear?", acceptedAnswer: { "@type": "Answer", text: "Every listing is reviewed and added by a real person. Please allow some time; we do our best to work through submissions promptly." } },
     { "@type": "Question", name: "How do I update my directory listing?", acceptedAnswer: { "@type": "Answer", text: "Use the Update Your Listing form at potterypost.ca/directory/update and fill in only the fields you need changed." } },
@@ -92,7 +92,7 @@ export default function FAQPage() {
             </div>
             <div>
               <h3 className="font-bold mb-2">Is it free to be listed?</h3>
-              <p style={{ color: "var(--c-primary)" }}>Yes, completely. Listing in the Pottery Post directory is free.</p>
+              <p style={{ color: "var(--c-primary)" }}>Listings added before February 1, 2027 are free, indefinitely. From February 1, 2027, a new listing carries a small annual fee of $5 a year. Most listings are free, and the small fee simply helps keep the Pottery Post ad-free and independent. If you were listed before Feb. 1, 2027, nothing changes, your listing stays free.</p>
             </div>
             <div>
               <h3 className="font-bold mb-2">I didn&rsquo;t add my business. How is it listed here?</h3>
