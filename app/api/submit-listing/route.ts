@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
 
   const { error } = await getResend().emails.send({
     from: "Pottery Post <submissions@potterypost.directory>",
-    to: "anneliesedesigns@gmail.com",
+    to: "anneliesedesigns@icloud.com",
     replyTo: email,
     subject: `Pottery Post Directory Submission: ${name}`,
     html,

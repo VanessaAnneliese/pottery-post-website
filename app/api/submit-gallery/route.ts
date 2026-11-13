@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
 
   const { error } = await getResend().emails.send({
     from: "Pottery Post Gallery <submissions@potterypost.directory>",
-    to: "anneliesedesigns@gmail.com",
+    to: "anneliesedesigns@icloud.com",
     replyTo: email,
     subject: `Pottery Post Gallery Submission: ${name}${title ? `: ${title}` : ""}`,
     html,
