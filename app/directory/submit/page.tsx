@@ -72,8 +72,11 @@ export default function SubmitPage() {
       <p className="mb-4" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
         Submit your information to be listed in the directory. All submissions are reviewed before going live.
       </p>
-      <p className="mb-10 text-sm" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>
+      <p className="mb-3 text-sm" style={{ color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}>
         <strong>Free to join before February 1, 2027</strong>, and free indefinitely once you&rsquo;re in. New listings after that date are $5 a year, which keeps the directory ad-free and independent.
+      </p>
+      <p className="mb-10 text-sm" style={{ color: "var(--c-muted)", fontFamily: "system-ui, sans-serif" }}>
+        Being listed puts your business in the structured, machine-readable format that search engines and AI assistants (ChatGPT, Claude, Perplexity, Google AI) read and cite. Clean pages, no ads, and built from the ground up to be found and recommended, not buried. <a href="/faq" className="underline" style={{ color: "var(--c-teal)" }}>More on how that works</a>.
       </p>
 
       {canceled && status !== "success" && (
