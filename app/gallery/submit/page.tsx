@@ -200,7 +200,7 @@ export default function GallerySubmitPage() {
 
           {status === "error" && (
             <p className="text-sm" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
-              Something went wrong, please try again or email us at gallery@potterypost.ca
+              Something went wrong, please try again or email us at submissions@potterypost.directory
             </p>
           )}
 

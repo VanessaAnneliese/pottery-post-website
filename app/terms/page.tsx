@@ -43,7 +43,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Listings</h2>
           <p className="mb-3">The information in each directory listing, such as its name, description, and any other details the business provides, belongs to the business that submitted it, and we show it with permission.</p>
-          <p className="mb-3">Businesses are responsible for keeping their own listing information accurate. You can change or remove your listing at any time by contacting us at <a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.ca</a> or by using the Update Your Listing form.</p>
+          <p className="mb-3">Businesses are responsible for keeping their own listing information accurate. You can change or remove your listing at any time by contacting us at <a href="mailto:hello@potterypost.directory" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.directory</a> or by using the Update Your Listing form.</p>
           <p>Please do not copy or reuse listing content without permission from the business it belongs to.</p>
         </div>
 
@@ -73,7 +73,7 @@ export default function TermsPage() {
           <p className="mb-3">When gallery submissions are open, potters who submit photos keep full ownership of both their photos and their work. By submitting, they give Pottery Post permission to show the photos on this Site and in Pottery Post&rsquo;s own social media posts promoting the Site, always with credit. They can ask for their photos to be removed at any time.</p>
           <p className="mb-3">By submitting, a potter confirms that they made the work shown and that they either took the photos themselves or have permission to share them.</p>
           <p className="mb-3">Please do not copy, download, or reuse gallery photos without permission from the photo&rsquo;s owner.</p>
-          <p>For any credit or removal request, contact us at <a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.ca</a>.</p>
+          <p>For any credit or removal request, contact us at <a href="mailto:hello@potterypost.directory" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.directory</a>.</p>
         </div>
 
         <div>
@@ -109,7 +109,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Contact Us</h2>
           <p>If you have questions about these Terms of Use, please contact us at:</p>
-          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.ca</a></p>
+          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:hello@potterypost.directory" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.directory</a></p>
         </div>
 
       </div>

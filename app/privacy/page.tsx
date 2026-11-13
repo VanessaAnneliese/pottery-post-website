@@ -82,7 +82,7 @@ export default function PrivacyPage() {
         <div>
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "Georgia, serif" }}>Contact Us</h2>
           <p>If you have questions or concerns about this Privacy Policy or our handling of your personal information, please contact us at:</p>
-          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:hello@potterypost.ca" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.ca</a></p>
+          <p className="mt-3"><strong>Pottery Post</strong><br />Whitby, Ontario, Canada<br /><a href="mailto:hello@potterypost.directory" className="underline" style={{ color: "var(--c-teal)" }}>hello@potterypost.directory</a></p>
         </div>
 
       </div>

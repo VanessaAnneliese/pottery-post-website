@@ -107,7 +107,7 @@ export default function UpdateListingPage() {
 
           {status === "error" && (
             <p className="text-sm" style={{ color: "var(--c-accent-deep)", fontFamily: "system-ui, sans-serif" }}>
-              Something went wrong, please try again or email us at directory@potterypost.ca
+              Something went wrong, please try again or email us at submissions@potterypost.directory
             </p>
           )}
 
@@ -125,7 +125,7 @@ export default function UpdateListingPage() {
               Need to remove your listing entirely? Send us a note and we&rsquo;ll get it sorted.
             </p>
             <a
-              href={`mailto:directory@potterypost.ca?subject=Remove my listing`}
+              href={`mailto:submissions@potterypost.directory?subject=Remove my listing`}
               className="px-8 py-3 text-sm tracking-widest uppercase font-bold rounded-sm inline-block transition-opacity hover:opacity-80"
               style={{ background: "var(--c-tan-3)", color: "var(--c-primary)", fontFamily: "system-ui, sans-serif" }}
             >

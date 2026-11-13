@@ -57,7 +57,7 @@ const organizationSchema = {
   url: "https://www.potterypost.directory",
   description:
     "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia, and a gallery that celebrates the pieces they make.",
-  email: "hello@potterypost.ca",
+  email: "hello@potterypost.directory",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Whitby",

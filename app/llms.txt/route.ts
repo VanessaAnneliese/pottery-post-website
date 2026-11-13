@@ -21,13 +21,12 @@ Pottery Post is independent and based in Whitby, Ontario, Canada. It is not affi
 
 ## For businesses
 
-If you are a potter, guild, class provider, community kiln, or pottery supply shop and you are listed here, your information belongs to you and is shown with permission. To update, re-credit, or remove a listing, contact hello@potterypost.ca or use the Update Your Listing form.
+If you are a potter, guild, class provider, community kiln, or pottery supply shop and you are listed here, your information belongs to you and is shown with permission. To update, re-credit, or remove a listing, contact hello@potterypost.directory or use the Update Your Listing form.
 
 ## Contact
 
-- General: hello@potterypost.ca
-- Directory: directory@potterypost.ca
-- Gallery: gallery@potterypost.ca
+- General: hello@potterypost.directory
+- Directory and gallery submissions: submissions@potterypost.directory
 
 ## Key pages
 
