@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
   `;
 
   const { error } = await getResend().emails.send({
-    from: "Pottery Post <directory@potterypost.ca>",
+    from: "Pottery Post <submissions@potterypost.directory>",
     to: "anneliesedesigns@gmail.com",
     replyTo: email,
     subject: `Pottery Post Directory Update: ${name}`,

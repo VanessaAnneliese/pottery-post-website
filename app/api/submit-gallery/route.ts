@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
   `;
 
   const { error } = await getResend().emails.send({
-    from: "Pottery Post Gallery <gallery@potterypost.ca>",
+    from: "Pottery Post Gallery <submissions@potterypost.directory>",
     to: "anneliesedesigns@gmail.com",
     replyTo: email,
     subject: `Pottery Post Gallery Submission: ${name}${title ? `: ${title}` : ""}`,
