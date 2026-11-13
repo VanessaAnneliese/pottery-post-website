@@ -26,7 +26,8 @@ If you are a potter, guild, class provider, community kiln, or pottery supply sh
 ## Contact
 
 - General: hello@potterypost.directory
-- Directory and gallery submissions: submissions@potterypost.directory
+- Directory submissions: submissions@potterypost.directory
+- Gallery submissions: gallery-submissions@potterypost.directory
 
 ## Key pages
 
