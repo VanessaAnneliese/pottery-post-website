@@ -3,7 +3,7 @@
 # Site context — Pottery Post
 
 **This site:** Pottery Post — tagline "For Makers & Admirers". Design credit: Anneliese Designs.
-- **Domain:** https://www.potterypost.ca — **LIVE / public**
+- **Domain:** https://www.potterypost.directory (primary, **LIVE / public**). potterypost.ca (apex + www) 308-redirects here; the .ca hostnames stay attached to Vercel for SSL. Email stays on @potterypost.ca. (GSC Change of Address from the old .ca property is being set up.)
 - **Repo:** https://github.com/VanessaAnneliese/pottery-post-website
 - **Vercel:** own project. **package.json name:** `pottery-post`
 - **Nav labels:** Pottery Directory / Pottery Gallery / Pottery Postmarks

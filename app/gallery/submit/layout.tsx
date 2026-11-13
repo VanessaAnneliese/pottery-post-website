@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     title: "Submit Your Work | Pottery Gallery | Pottery Post",
     description:
       "Submit your handmade pottery for consideration in The Pottery Post gallery. Each collection is open to submissions.",
-    url: "https://www.potterypost.ca/gallery/submit",
+    url: "https://www.potterypost.directory/gallery/submit",
   },
   alternates: {
-    canonical: "https://www.potterypost.ca/gallery/submit",
+    canonical: "https://www.potterypost.directory/gallery/submit",
   },
 };
 

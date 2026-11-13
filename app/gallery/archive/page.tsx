@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Gallery Archive | Past Pottery Collections",
   description:
     "Browse past Pottery Post gallery collections, a growing record of handmade pottery celebrated over the years. Every past collection is preserved here.",
-  alternates: { canonical: "https://www.potterypost.ca/gallery/archive" },
+  alternates: { canonical: "https://www.potterypost.directory/gallery/archive" },
   openGraph: {
     title: "Gallery Archive | Past Pottery Collections | Pottery Post",
     description:
       "Browse past Pottery Post gallery collections, a growing record of handmade pottery celebrated over the years.",
-    url: "https://www.potterypost.ca/gallery/archive",
+    url: "https://www.potterypost.directory/gallery/archive",
   },
 };
 

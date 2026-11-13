@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     title: "Update Your Listing | Pottery Directory | Pottery Post",
     description:
       "Update your existing listing in The Pottery Post pottery directory.",
-    url: "https://www.potterypost.ca/directory/update",
+    url: "https://www.potterypost.directory/directory/update",
   },
   alternates: {
-    canonical: "https://www.potterypost.ca/directory/update",
+    canonical: "https://www.potterypost.directory/directory/update",
   },
   robots: {
     index: false,

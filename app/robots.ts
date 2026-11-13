@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://www.potterypost.ca/sitemap.xml",
+    sitemap: "https://www.potterypost.directory/sitemap.xml",
   };
 }

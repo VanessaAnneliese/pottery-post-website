@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Top Pottery Destinations | Pottery Postmarks",
   description: "The studio towns, kiln trails, and pottery districts worth travelling for, across North America, the UK, Europe, and Australia.",
-  alternates: { canonical: "https://www.potterypost.ca/postmarks/destinations" },
+  alternates: { canonical: "https://www.potterypost.directory/postmarks/destinations" },
 };
 
 const articles = [
@@ -20,9 +20,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.ca" },
-    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
-    { "@type": "ListItem", position: 3, name: "Destinations", item: "https://www.potterypost.ca/postmarks/destinations" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.directory" },
+    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.directory/postmarks" },
+    { "@type": "ListItem", position: 3, name: "Destinations", item: "https://www.potterypost.directory/postmarks/destinations" },
   ],
 };
 

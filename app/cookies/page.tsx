@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description: "Cookie policy for The Pottery Post, how we use cookies on our website.",
-  alternates: { canonical: "https://www.potterypost.ca/cookies" },
+  alternates: { canonical: "https://www.potterypost.directory/cookies" },
   robots: { index: false },
 };
 

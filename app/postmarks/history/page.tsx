@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Historical Pottery & Heritage | Pottery Postmarks",
   description: "The stories behind the clay. Ancient traditions, family lineages, the towns where pottery never left, and the makers who kept something alive that the world could have easily lost.",
-  alternates: { canonical: "https://www.potterypost.ca/postmarks/history" },
+  alternates: { canonical: "https://www.potterypost.directory/postmarks/history" },
 };
 
 const articles = [
@@ -20,9 +20,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.ca" },
-    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
-    { "@type": "ListItem", position: 3, name: "History", item: "https://www.potterypost.ca/postmarks/history" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.directory" },
+    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.directory/postmarks" },
+    { "@type": "ListItem", position: 3, name: "History", item: "https://www.potterypost.directory/postmarks/history" },
   ],
 };
 

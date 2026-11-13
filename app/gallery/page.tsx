@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "Pottery Gallery | Handmade Ceramics Curated with Love",
   description:
     "A curated gallery of handmade pottery, gathered with love by The Pottery Post. Collections rotate in early Spring and Fall. Every piece is verified in person.",
-  alternates: { canonical: "https://www.potterypost.ca/gallery" },
+  alternates: { canonical: "https://www.potterypost.directory/gallery" },
   openGraph: {
     title: "Pottery Gallery | Handmade Ceramics Curated with Love | Pottery Post",
     description:
       "A curated gallery of handmade pottery, gathered with love. Collections rotate in early Spring and Fall. Every piece is verified in person.",
-    url: "https://www.potterypost.ca/gallery",
+    url: "https://www.potterypost.directory/gallery",
   },
 };
 
@@ -20,13 +20,13 @@ const gallerySchema = {
   "@context": "https://schema.org",
   "@type": "ImageGallery",
   name: "Pottery Gallery",
-  url: "https://www.potterypost.ca/gallery",
+  url: "https://www.potterypost.directory/gallery",
   description:
     "A curated gallery of handmade pottery, gathered with love by The Pottery Post and verified in person. The current collection is the Founder's Collection.",
-  isPartOf: { "@type": "WebSite", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  isPartOf: { "@type": "WebSite", name: "Pottery Post", url: "https://www.potterypost.directory" },
   image: foundersCollection.map((p) => ({
     "@type": "ImageObject",
-    contentUrl: `https://www.potterypost.ca${p.src}`,
+    contentUrl: `https://www.potterypost.directory${p.src}`,
     caption: p.alt,
     creditText: p.photoCredit ?? "Anneliese Designs",
   })),
@@ -36,8 +36,8 @@ const galleryBreadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.ca" },
-    { "@type": "ListItem", position: 2, name: "Pottery Gallery", item: "https://www.potterypost.ca/gallery" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.directory" },
+    { "@type": "ListItem", position: 2, name: "Pottery Gallery", item: "https://www.potterypost.directory/gallery" },
   ],
 };
 

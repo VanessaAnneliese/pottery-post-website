@@ -6,7 +6,7 @@ import ShareBar from "@/components/ShareBar";
 export const metadata: Metadata = {
   title: "Seagrove, North Carolina: A Town Built on Clay | The Pottery Traveler's Guide",
   description: "More than a hundred pottery studios within eight miles of town. A guide to Seagrove, North Carolina, the most concentrated pottery community in America.",
-  alternates: { canonical: "https://www.potterypost.ca/postmarks/travel-guide/seagrove" },
+  alternates: { canonical: "https://www.potterypost.directory/postmarks/travel-guide/seagrove" },
 };
 
 const articleSchema = {
@@ -14,15 +14,15 @@ const articleSchema = {
   "@type": "Article",
   headline: "Seagrove, North Carolina: A Town Built on Clay",
   description: "More than a hundred pottery studios within eight miles of town. A guide to Seagrove, North Carolina, the most concentrated pottery community in America.",
-  url: "https://www.potterypost.ca/postmarks/travel-guide/seagrove",
+  url: "https://www.potterypost.directory/postmarks/travel-guide/seagrove",
   datePublished: "2026-06-24",
-  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.directory" },
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
-      { "@type": "ListItem", position: 2, name: "Travel Guide", item: "https://www.potterypost.ca/postmarks/travel-guide" },
-      { "@type": "ListItem", position: 3, name: "Seagrove, North Carolina", item: "https://www.potterypost.ca/postmarks/travel-guide/seagrove" },
+      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.directory/postmarks" },
+      { "@type": "ListItem", position: 2, name: "Travel Guide", item: "https://www.potterypost.directory/postmarks/travel-guide" },
+      { "@type": "ListItem", position: 3, name: "Seagrove, North Carolina", item: "https://www.potterypost.directory/postmarks/travel-guide/seagrove" },
     ],
   },
 };
@@ -115,7 +115,7 @@ export default function SeagrovePage() {
       </section>
 
       <section className="px-6 max-w-3xl mx-auto pb-8">
-        <ShareBar url="https://www.potterypost.ca/postmarks/travel-guide/seagrove" title="Seagrove, North Carolina: A Town Built on Clay" />
+        <ShareBar url="https://www.potterypost.directory/postmarks/travel-guide/seagrove" title="Seagrove, North Carolina: A Town Built on Clay" />
       </section>
 
       <QuoteBlock quote={<>A hundred studios within<span className="hidden md:inline"><br /></span>{" "}eight miles of town. Seagrove<span className="hidden md:inline"><br /></span>{" "}is a place that never stopped<span className="hidden md:inline"><br /></span>{" "}making things by hand.</>} />

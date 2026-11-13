@@ -6,7 +6,7 @@ import ShareBar from "@/components/ShareBar";
 export const metadata: Metadata = {
   title: "Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment | Pottery Post",
   description: "A one-day pottery road trip through the Niagara Escarpment wine country, from Hamilton's studio arts scene to the heritage galleries of Niagara-on-the-Lake.",
-  alternates: { canonical: "https://www.potterypost.ca/postmarks/road-trips/hamilton-to-niagara" },
+  alternates: { canonical: "https://www.potterypost.directory/postmarks/road-trips/hamilton-to-niagara" },
 };
 
 const articleSchema = {
@@ -14,15 +14,15 @@ const articleSchema = {
   "@type": "Article",
   headline: "Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment",
   description: "A one-day pottery road trip through the Niagara Escarpment wine country, from Hamilton's studio arts scene to the heritage galleries of Niagara-on-the-Lake.",
-  url: "https://www.potterypost.ca/postmarks/road-trips/hamilton-to-niagara",
+  url: "https://www.potterypost.directory/postmarks/road-trips/hamilton-to-niagara",
   datePublished: "2026-06-24",
-  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.directory" },
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
-      { "@type": "ListItem", position: 2, name: "Road Trips", item: "https://www.potterypost.ca/postmarks/road-trips" },
-      { "@type": "ListItem", position: 3, name: "Hamilton to Niagara-on-the-Lake", item: "https://www.potterypost.ca/postmarks/road-trips/hamilton-to-niagara" },
+      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.directory/postmarks" },
+      { "@type": "ListItem", position: 2, name: "Road Trips", item: "https://www.potterypost.directory/postmarks/road-trips" },
+      { "@type": "ListItem", position: 3, name: "Hamilton to Niagara-on-the-Lake", item: "https://www.potterypost.directory/postmarks/road-trips/hamilton-to-niagara" },
     ],
   },
 };
@@ -167,7 +167,7 @@ export default function HamiltonToNiagaraPage() {
       </section>
 
       <section className="px-6 max-w-3xl mx-auto pb-8">
-        <ShareBar url="https://www.potterypost.ca/postmarks/road-trips/hamilton-to-niagara" title="Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment" />
+        <ShareBar url="https://www.potterypost.directory/postmarks/road-trips/hamilton-to-niagara" title="Hamilton to Niagara-on-the-Lake: A Pottery Drive Along the Escarpment" />
       </section>
 
       <QuoteBlock quote={<>Niagara has been shaping this<span className="hidden md:inline"><br /></span>{" "}land for twelve thousand years.<span className="hidden md:inline"><br /></span>{" "}The potters along the way are<span className="hidden md:inline"><br /></span>{" "}simply carrying the work on.</>} />

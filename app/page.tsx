@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: { absolute: "Pottery Post | A Pottery Directory for Makers & Admirers" },
   description:
     "A simple, ad-free pottery directory spanning Canada, the US, Europe, and Australia. Find potters, guilds, classes, community kilns, and supply shops by area.",
-  alternates: { canonical: "https://www.potterypost.ca" },
+  alternates: { canonical: "https://www.potterypost.directory" },
   openGraph: {
     title: "Pottery Post | A Pottery Directory for Makers & Admirers",
     description:
       "A simple, ad-free pottery directory spanning Canada, the US, Europe, and Australia. Find potters, guilds, classes, community kilns, and supply shops by area.",
-    url: "https://www.potterypost.ca",
+    url: "https://www.potterypost.directory",
   },
 };
 

@@ -10,7 +10,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.potterypost.ca"),
+  metadataBase: new URL("https://www.potterypost.directory"),
   title: {
     default: "Pottery Post | For Makers and Admirers",
     template: "%s | Pottery Post",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Pottery Post | For Makers and Admirers",
     description:
       "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia, and a gallery that celebrates the pieces they make.",
-    url: "https://www.potterypost.ca",
+    url: "https://www.potterypost.directory",
   },
   twitter: {
     card: "summary_large_image",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia.",
   },
   alternates: {
-    canonical: "https://www.potterypost.ca",
+    canonical: "https://www.potterypost.directory",
   },
   robots: {
     index: true,
@@ -54,7 +54,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Pottery Post",
-  url: "https://www.potterypost.ca",
+  url: "https://www.potterypost.directory",
   description:
     "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia, and a gallery that celebrates the pieces they make.",
   email: "hello@potterypost.ca",
@@ -70,13 +70,13 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Pottery Post",
-  url: "https://www.potterypost.ca",
+  url: "https://www.potterypost.directory",
   description: "A directory of potters, pottery guilds, pottery classes, and pottery supply shops across Canada, the United States, Europe, and Australia.",
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://www.potterypost.ca/directory?q={search_term_string}",
+      urlTemplate: "https://www.potterypost.directory/directory?q={search_term_string}",
     },
     "query-input": "required name=search_term_string",
   },

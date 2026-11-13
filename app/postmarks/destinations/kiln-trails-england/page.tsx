@@ -6,7 +6,7 @@ import ShareBar from "@/components/ShareBar";
 export const metadata: Metadata = {
   title: "The Kiln Trails of England | Top Pottery Destinations",
   description: "From the industrial heartland of Stoke-on-Trent to the studio potters of Cornwall and the Cotswolds, a guide to England's two great pottery pilgrimages.",
-  alternates: { canonical: "https://www.potterypost.ca/postmarks/destinations/kiln-trails-england" },
+  alternates: { canonical: "https://www.potterypost.directory/postmarks/destinations/kiln-trails-england" },
 };
 
 const articleSchema = {
@@ -14,15 +14,15 @@ const articleSchema = {
   "@type": "Article",
   headline: "The Kiln Trails of England",
   description: "From the industrial heartland of Stoke-on-Trent to the studio potters of Cornwall and the Cotswolds, a guide to England's two great pottery pilgrimages.",
-  url: "https://www.potterypost.ca/postmarks/destinations/kiln-trails-england",
+  url: "https://www.potterypost.directory/postmarks/destinations/kiln-trails-england",
   datePublished: "2026-06-24",
-  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.directory" },
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
-      { "@type": "ListItem", position: 2, name: "Destinations", item: "https://www.potterypost.ca/postmarks/destinations" },
-      { "@type": "ListItem", position: 3, name: "The Kiln Trails of England", item: "https://www.potterypost.ca/postmarks/destinations/kiln-trails-england" },
+      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.directory/postmarks" },
+      { "@type": "ListItem", position: 2, name: "Destinations", item: "https://www.potterypost.directory/postmarks/destinations" },
+      { "@type": "ListItem", position: 3, name: "The Kiln Trails of England", item: "https://www.potterypost.directory/postmarks/destinations/kiln-trails-england" },
     ],
   },
 };
@@ -122,7 +122,7 @@ export default function KilnTrailsEnglandPage() {
       </section>
 
       <section className="px-6 max-w-3xl mx-auto pb-8">
-        <ShareBar url="https://www.potterypost.ca/postmarks/destinations/kiln-trails-england" title="The Kiln Trails of England" />
+        <ShareBar url="https://www.potterypost.directory/postmarks/destinations/kiln-trails-england" title="The Kiln Trails of England" />
       </section>
 
       <QuoteBlock quote={<>The bottle ovens are still<span className="hidden md:inline"><br /></span>{" "}standing. Some things built<span className="hidden md:inline"><br /></span>{" "}around clay outlast the<span className="hidden md:inline"><br /></span>{" "}industry that made them.</>} />

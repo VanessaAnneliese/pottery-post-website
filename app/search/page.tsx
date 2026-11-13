@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Search the Directory",
   description:
     "Search The Pottery Post directory for potters, pottery guilds, pottery classes, and pottery supply shops by name, town, province, or state.",
-  alternates: { canonical: "https://www.potterypost.ca/search" },
+  alternates: { canonical: "https://www.potterypost.directory/search" },
   robots: { index: false, follow: true },
 };
 

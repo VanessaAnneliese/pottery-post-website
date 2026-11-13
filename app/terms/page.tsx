@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description: "Terms of use for The Pottery Post website and directory.",
-  alternates: { canonical: "https://www.potterypost.ca/terms" },
+  alternates: { canonical: "https://www.potterypost.directory/terms" },
   robots: { index: false },
 };
 

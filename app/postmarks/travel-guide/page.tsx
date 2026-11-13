@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Pottery Traveler's Guide | Pottery Postmarks",
   description: "A curated guide to finding pottery wherever you go. The studios worth seeking out, the towns built around clay, the shops and galleries that make a detour worthwhile.",
-  alternates: { canonical: "https://www.potterypost.ca/postmarks/travel-guide" },
+  alternates: { canonical: "https://www.potterypost.directory/postmarks/travel-guide" },
 };
 
 const articles = [
@@ -20,9 +20,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.ca" },
-    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
-    { "@type": "ListItem", position: 3, name: "Travel Guide", item: "https://www.potterypost.ca/postmarks/travel-guide" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.directory" },
+    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.directory/postmarks" },
+    { "@type": "ListItem", position: 3, name: "Travel Guide", item: "https://www.potterypost.directory/postmarks/travel-guide" },
   ],
 };
 

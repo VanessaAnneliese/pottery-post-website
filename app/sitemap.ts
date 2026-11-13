@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://www.potterypost.ca";
+  const base = "https://www.potterypost.directory";
 
   return [
     {

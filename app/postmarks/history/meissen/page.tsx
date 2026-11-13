@@ -6,7 +6,7 @@ import ShareBar from "@/components/ShareBar";
 export const metadata: Metadata = {
   title: "The King Who Traded Soldiers for Porcelain | Historical Pottery & Heritage",
   description: "How Augustus the Strong's obsession with Chinese porcelain led to the imprisonment of an alchemist, the founding of Meissen, and the birth of European porcelain.",
-  alternates: { canonical: "https://www.potterypost.ca/postmarks/history/meissen" },
+  alternates: { canonical: "https://www.potterypost.directory/postmarks/history/meissen" },
 };
 
 const articleSchema = {
@@ -14,15 +14,15 @@ const articleSchema = {
   "@type": "Article",
   headline: "The King Who Traded Soldiers for Porcelain",
   description: "How Augustus the Strong's obsession with Chinese porcelain led to the imprisonment of an alchemist, the founding of Meissen, and the birth of European porcelain.",
-  url: "https://www.potterypost.ca/postmarks/history/meissen",
+  url: "https://www.potterypost.directory/postmarks/history/meissen",
   datePublished: "2026-06-24",
-  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.ca" },
+  publisher: { "@type": "Organization", name: "Pottery Post", url: "https://www.potterypost.directory" },
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
-      { "@type": "ListItem", position: 2, name: "History", item: "https://www.potterypost.ca/postmarks/history" },
-      { "@type": "ListItem", position: 3, name: "The King Who Traded Soldiers for Porcelain", item: "https://www.potterypost.ca/postmarks/history/meissen" },
+      { "@type": "ListItem", position: 1, name: "Pottery Postmarks", item: "https://www.potterypost.directory/postmarks" },
+      { "@type": "ListItem", position: 2, name: "History", item: "https://www.potterypost.directory/postmarks/history" },
+      { "@type": "ListItem", position: 3, name: "The King Who Traded Soldiers for Porcelain", item: "https://www.potterypost.directory/postmarks/history/meissen" },
     ],
   },
 };
@@ -122,7 +122,7 @@ export default function MeissenPage() {
       </section>
 
       <section className="px-6 max-w-3xl mx-auto pb-8">
-        <ShareBar url="https://www.potterypost.ca/postmarks/history/meissen" title="The King Who Traded Soldiers for Porcelain" />
+        <ShareBar url="https://www.potterypost.directory/postmarks/history/meissen" title="The King Who Traded Soldiers for Porcelain" />
       </section>
 
       <QuoteBlock quote="The Arcanum was held in China for a thousand years. It lasted eight years in a castle in Saxony." />

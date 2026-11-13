@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Mapped Pottery Travel Itineraries | Pottery Postmarks",
   description: "Full road trip routes planned around pottery, by region, by season, by what you're looking for. Studio visits, galleries, local potters, and the best places to stop along the way.",
-  alternates: { canonical: "https://www.potterypost.ca/postmarks/road-trips" },
+  alternates: { canonical: "https://www.potterypost.directory/postmarks/road-trips" },
 };
 
 const articles = [
@@ -20,9 +20,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.ca" },
-    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.ca/postmarks" },
-    { "@type": "ListItem", position: 3, name: "Road Trips", item: "https://www.potterypost.ca/postmarks/road-trips" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.potterypost.directory" },
+    { "@type": "ListItem", position: 2, name: "Pottery Postmarks", item: "https://www.potterypost.directory/postmarks" },
+    { "@type": "ListItem", position: 3, name: "Road Trips", item: "https://www.potterypost.directory/postmarks/road-trips" },
   ],
 };
 
