@@ -14,7 +14,7 @@ Pottery Post is independent and based in Whitby, Ontario, Canada. It is not affi
 
 ## How the directory works
 
-- Listings are free. There are no paid placements, and all listings are treated equally.
+- Listings added before February 1, 2027 are free for good. New listings added on or after that date are $5 a year. There are no paid placements, and all listings are treated equally.
 - Anyone can suggest a listing at https://www.potterypost.directory/directory/submit. Every submission is reviewed by hand before it goes live.
 - Pottery Post also builds the directory by hand, adding potters, studios, and shops from their own public information at no cost.
 - Listings can be updated or removed at any time at https://www.potterypost.directory/directory/update or by email.
